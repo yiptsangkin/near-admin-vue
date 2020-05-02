@@ -7,8 +7,10 @@ export interface CacheRouteConfig {
     componentPath: string
 }
 
-declare global {
-    interface Window {
-        Logline: any
-    }
+export interface UserInfo {
+    avatar: string,
+    userName: string,
+    role: string,
+    roleName: string,
+    gender: number
 }

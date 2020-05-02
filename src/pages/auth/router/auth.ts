@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
-import {CacheRouteConfig} from '@/global.d'
+import {CacheRouteConfig} from '@js/core/type'
 const Auth = () => import('../view/Auth.vue')
 
 Vue.use(VueRouter)

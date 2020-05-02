@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Root from '@js/root'
+import Root from '@js/core/root'
 
 export default Vue.extend({
     name: 'App',

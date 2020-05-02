@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/auth'
-import utils from '@js/utils'
+import utils from '@js/core/utils'
 
 router.beforeEach((to, from, next) => {
     const title = to.meta.title

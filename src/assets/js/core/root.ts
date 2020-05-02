@@ -1,4 +1,4 @@
-import utils from '@js/utils'
+import utils from './utils'
 
 export default {
     name: 'Root',
