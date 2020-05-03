@@ -99,8 +99,8 @@ try {
         ])
 
         if (response.targetLang.length === 0) {
-            console.warn(chalk.yellow(`Warning: No target file selected. Default locale 'zh-cn'`))
-            response.targetLang = ['zh_CN']
+            console.warn(chalk.yellow(`Warning: No target file selected. Default locale 'zh-cn, zh-tw, en, ja, ko'`))
+            response.targetLang = ['zh_CN', 'zh_TW', 'en_US', 'ja_JP', 'ko_KR']
         }
         // base locale file
         const baseFile = require(translateBasePath)
