@@ -20,7 +20,6 @@ const getTranslate = async function (opt) {
                 opt.obj[i] = result
             }
         }
-        opt.obj.locale = opt.to
         return opt.obj
     } else if (typeof opt.obj === 'object') {
         for (let key in opt.obj) {
@@ -36,7 +35,6 @@ const getTranslate = async function (opt) {
                 }
             }
         }
-        opt.obj.locale = opt.to
         return opt.obj
     } else {
         const result = await translate([opt.obj], {
@@ -107,6 +105,7 @@ try {
                     to: localeCode
                 })
                 spinner.succeed(`${item} completed`)
+                result.locale = localeCode
                 console.log(result)
             })
 
