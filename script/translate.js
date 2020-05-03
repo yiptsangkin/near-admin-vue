@@ -50,13 +50,24 @@ const getTranslate = async function (opt) {
     }
 }
 
-let optPath
-let curPath = process.cwd().replace('/script',  '')
+const withBaseFile = function (str) {
+    return ['locale_BASE.ts', 'locale_MAP.ts'].indexOf(str) === -1
+}
 
-optPath = `${curPath}/src/assets/js/locale/locale_MAP.ts`
-translateBasePath = `${curPath}/src/assets/js/locale/locale_BASE.ts`
+const curPath = process.cwd().replace('/script',  '')
+const basePath = `${curPath}/src/assets/js/locale`
+const optPath = `${basePath}/locale_MAP.ts`
+const translateBasePath = `${basePath}/locale_BASE.ts`
+const corePath = `${curPath}/src/assets/js/core`
 
 try {
+    // remove all locale file (without locale_BASE.ts and locale_MAP.ts)
+    const deleteFileList = fs.readdirSync(basePath)
+    deleteFileList.forEach(function (item) {
+        if (withBaseFile(item)) {
+            fs.unlinkSync(`${basePath}/${item}`)
+        }
+    })
     const optObj =  fs.statSync(optPath)
     const isFile = optObj.isFile()
     let localeConfig
@@ -88,28 +99,69 @@ try {
         ])
 
         if (response.targetLang.length === 0) {
-            console.log(chalk.red(`Error: No target file selected`))
-        } else {
-            // base locale file
-            const baseFile = require(translateBasePath)
-            const spinner = ora()
-            response.targetLang.forEach(async function (item) {
-                // tips loading
-                spinner.text = `translating ${item}...`
-                spinner.start()
-                let localeCode = localeConfig[item].locale
-                let targetFile = JSON.parse(JSON.stringify(baseFile))
-                let result = await getTranslate({
-                    obj: targetFile,
-                    from: baseFile.locale,
-                    to: localeCode
-                })
-                spinner.succeed(`${item} completed`)
-                result.locale = localeCode
-                console.log(result)
-            })
-
+            console.warn(chalk.yellow(`Warning: No target file selected. Default locale 'zh-cn'`))
+            response.targetLang = ['zh_CN']
         }
+        // base locale file
+        const baseFile = require(translateBasePath)
+        const spinner = ora()
+        for (let i = 0; i < response.targetLang.length; i++) {
+            let item = response.targetLang[i]
+            let index = i
+            // tips loading
+            spinner.text = `translating ${item}...`
+            spinner.start()
+            let localeCode = localeConfig[item].locale
+            let targetFile = JSON.parse(JSON.stringify(baseFile))
+            let result = await getTranslate({
+                obj: targetFile,
+                from: baseFile.locale,
+                to: localeCode
+            })
+            result.locale = localeCode
+            let resultText = JSON.stringify(result, null, 4)
+            const keyList = resultText.match(/\".*?\":/g)
+            keyList.forEach(function (item) {
+                resultText = resultText.replace(item, item.replace(/\"/g, ''))
+            })
+            resultText = resultText.replace(/\"/g, '\'')
+            // save locale file
+            let finalText = `export default ${resultText}\n`
+            try {
+                fs.writeFileSync(`${basePath}/${item}.ts`, finalText)
+                spinner.succeed(`${item} completed`)
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        // if all completed
+        spinner.succeed(`all completed`)
+        const currentLocaleList = fs.readdirSync(basePath)
+        let antdLocale = []
+        let customerLocale = []
+        let antdOpt = []
+        let customerOpt = []
+        let declareList = []
+        currentLocaleList.forEach(function (citem) {
+            if (withBaseFile(citem)) {
+                let defaultName = citem.split('.')[0]
+                let antdName = defaultName.replace('_', '')
+                let customerName = `customer${antdName.charAt(0).toUpperCase()}${antdName.slice(1)}`
+                antdLocale.push(`import ${antdName} from 'ant-design-vue/lib/locale-provider/${defaultName}'`)
+                customerLocale.push(`import ${customerName} from '@js/locale/${defaultName}'`)
+                antdOpt.push(`[${antdName}.locale]: ${antdName}`)
+                customerOpt.push(`[${antdName}.locale]: ${customerName}`)
+                declareList.push(`declare module 'ant-design-vue/lib/locale-provider/${defaultName}' {\n    const ${defaultName}: any\n    export default ${defaultName}\n}\n`)
+            }
+        })
+        // read lang.tpl
+        let tplFileCtx = fs.readFileSync(`${corePath}/lang.tpl`, 'utf-8')
+        tplFileCtx = tplFileCtx.replace('<% importTpl %>', `${antdLocale.join('\n')}\n${customerLocale.join('\n')}`)
+            .replace('<% exportAntdTpl %>', `${antdOpt.join(',\n    ')}`)
+            .replace('<% exportCustomerTpl %>', `${customerOpt.join(',\n        ')}`)
+        fs.writeFileSync(`${corePath}/lang.ts`, tplFileCtx)
+        fs.writeFileSync(`${curPath}/src/lang.d.ts`, declareList.join('\n'))
+        console.log(chalk.green('translate success'))
     }()
 } catch (e) {
     console.log(chalk.red(e))

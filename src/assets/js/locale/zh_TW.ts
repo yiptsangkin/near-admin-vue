@@ -1,18 +1,18 @@
 export default {
-    locale: 'en',
+    locale: 'zh-tw',
     LoginForm: {
-        loginBtn: 'log in',
+        loginBtn: '登錄',
         forget: {
-            forgetPwd: 'forget password',
-            forgetAccount: 'Forgot account'
+            forgetPwd: '忘記密碼',
+            forgetAccount: '忘記賬號'
         },
         role: [
             {
-                name: 'Doctors',
+                name: '醫生',
                 value: '0'
             },
             {
-                name: 'Pregnant woman',
+                name: '孕婦',
                 value: '1'
             }
         ]
