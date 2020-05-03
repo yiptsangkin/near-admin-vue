@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "ora": "^4.0.4"
+  }
+}

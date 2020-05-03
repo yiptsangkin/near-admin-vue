@@ -1,5 +1,5 @@
 <template>
-    <a-config-provider :locale="gloablLocale[locale].antdLocale">
+    <a-config-provider :locale="gloablLocale[locale]">
         <div class="n-main-ctx">
             <router-view></router-view>
         </div>

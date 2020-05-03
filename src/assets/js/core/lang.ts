@@ -5,10 +5,6 @@ import customerEnUs from '@js/locale/en_US'
 
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
 
-interface GlobalLocaleChild {
-    antdLocale: any
-}
-
 interface GlobalLocale {
     [key: string]: any
 }
@@ -18,17 +14,9 @@ interface I18nOption {
     messages: any
 }
 
-const zhCNObj: GlobalLocaleChild = {
-    antdLocale: zhCN
-}
-
-const enUSObj: GlobalLocaleChild = {
-    antdLocale: enUS
-}
-
 const globalLocaleObj: GlobalLocale = {
-    [zhCN.locale]: zhCNObj,
-    [enUS.locale]: enUSObj
+    [zhCN.locale]: zhCN,
+    [enUS.locale]: enUS
 }
 
 const i18nOpt: I18nOption = {
