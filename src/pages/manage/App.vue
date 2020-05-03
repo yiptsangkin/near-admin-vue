@@ -1,5 +1,5 @@
 <template>
-    <a-config-provider :locale="lang">
+    <a-config-provider :locale="gloablLocale[locale].antdLocale">
         <div class="n-main-ctx">
             <router-view></router-view>
         </div>
@@ -21,7 +21,8 @@ export default Vue.extend({
     },
     computed: {
         ...mapGetters([
-            'lang'
+            'locale',
+            'gloablLocale'
         ])
     }
 })

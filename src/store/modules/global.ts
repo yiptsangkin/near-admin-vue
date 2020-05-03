@@ -1,12 +1,14 @@
 import {UserInfo} from '@js/core/type'
-import zhCN from 'ant-design-vue/lib/locale-provider/zh_CN'
+import lang from '@js/core/lang'
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
+const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
 
 interface State {
     userInfo: UserInfo,
-    lang: string
+    locale: any,
+    gloablLocale: any
 }
 
 interface Getter {
@@ -21,15 +23,19 @@ const state: State = {
         roleName: '',
         gender: 0
     },
-    lang: zhCN
+    locale: CACHE_LOCALE,
+    gloablLocale: lang.globalLocaleObj
 }
 
 const getters: Getter = {
     userInfo: (getterState: State) => {
         return getterState.userInfo
     },
-    lang: (getterState: State) => {
-        return getterState.lang
+    locale: (getterState: State) => {
+        return getterState.locale
+    },
+    gloablLocale: (getterState: State) => {
+        return getterState.gloablLocale
     }
 }
 

@@ -52,7 +52,6 @@ const prodConfig ={
                 image: path.resolve(__dirname, './src/assets/images/sprite/sprite.png'),
                 css: path.resolve(__dirname, './src/assets/css/sprite.css')
             },
-            // 样式文件中调用雪碧图地址写法
             apiOptions: {
                 cssImageRef: '../images/sprite/sprite.png'
             },
@@ -76,16 +75,15 @@ const devConfig = {
     plugins: [
         new SpriteSmithPlugin({
             src: {
-                cwd: path.resolve(__dirname, './src/assets/image/icon/'),
+                cwd: path.resolve(__dirname, './src/assets/images/icon/'),
                 glob: '**/*.png'
             },
             target: {
-                image: path.resolve(__dirname, './src/assets/image/sprite/sprite.png'),
+                image: path.resolve(__dirname, './src/assets/images/sprite/sprite.png'),
                 css: path.resolve(__dirname, './src/assets/css/sprite.css')
             },
-            // 样式文件中调用雪碧图地址写法
             apiOptions: {
-                cssImageRef: '../image/sprite/sprite.png'
+                cssImageRef: '../images/sprite/sprite.png'
             },
             spritesmithOptions: {
                 algorithm: 'left-right',
@@ -140,6 +138,15 @@ const vueConfig = {
             .set('@store', path.resolve('src/store'))
             .set('@mock', path.resolve('src/mock'))
             .set('@css', path.resolve('src/assets/css'))
+    },
+    pwa: {
+        iconPaths: {
+            favicon32: 'static/pwa/icons/favicon-32x32.png',
+            favicon16: 'static/pwa/icons/favicon-16x16.png',
+            appleTouchIcon: 'static/pwa/icons/apple-touch-icon-152x152.png',
+            maskIcon: 'static/pwa/icons/safari-pinned-tab.svg',
+            msTileImage: 'static/pwa/icons/msapplication-icon-144x144.png'
+        }
     },
     devServer: {
         historyApiFallback: {

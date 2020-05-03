@@ -10,7 +10,7 @@ import Base from '@js/core/base'
 export default Vue.extend({
     name: 'Manage',
     extends: Base,
-    data() {
+    data () {
         return {}
     }
 })

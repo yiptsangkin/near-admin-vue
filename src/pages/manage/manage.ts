@@ -3,11 +3,14 @@ import App from './App.vue'
 import router from './router/manage'
 import utils from '@js/core/utils'
 import store from '@store/index'
+import VueI18n from 'vue-i18n'
+import lang from '@js/core/lang'
 
 // antd component
 import {
     Button,
-    ConfigProvider
+    ConfigProvider,
+    DatePicker
 } from 'ant-design-vue'
 
 Vue.config.productionTip = false;
@@ -15,6 +18,11 @@ Vue.config.productionTip = false;
 // import antd
 Vue.component(Button.name, Button)
 Vue.component(ConfigProvider.name, ConfigProvider)
+Vue.component(DatePicker.name, DatePicker)
+
+// vue-i18n
+Vue.use(VueI18n)
+const i18n = new VueI18n(lang.i18nOpt)
 
 router.beforeEach((to, from, next) => {
     const title = to.meta.title
@@ -26,9 +34,9 @@ router.beforeEach((to, from, next) => {
     next()
 })
 
-
 new Vue({
     render: (h) => h(App),
     store,
-    router
+    router,
+    i18n
 }).$mount('#app');
