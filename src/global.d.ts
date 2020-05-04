@@ -3,7 +3,7 @@ interface Window {
 }
 declare module 'logline'
 
-declare var dict: any
+declare module 'dict'
 
 declare module 'apiConfig'
 
