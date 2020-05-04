@@ -5,8 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "uat": "BUILD_ENV=uat vue-cli-service build",
-    "prod": "BUILD_ENV=prod vue-cli-service build",
+    "build": "vue-cli-service build",
+    "uat:build": "BUILD_ENV=uat vue-cli-service build",
+    "prod:build": "BUILD_ENV=prod vue-cli-service build",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "commit": "git-cz",

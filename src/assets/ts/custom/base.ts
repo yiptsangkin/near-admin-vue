@@ -9,7 +9,7 @@ export default {
     },
     methods: {
         showGlobalSaveHotKey (): void {
-            console.log(`you press crtl+s, and method named 'showGlobalSaveHotKey' is triggered`)
+            console.log(`You press crtl+s, the method named 'showGlobalSaveHotKey' is triggered`)
         }
     }
 }
