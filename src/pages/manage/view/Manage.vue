@@ -5,11 +5,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import CoreBase from '@ts/core/base'
 import Base from '@ts/custom/base'
 
 export default Vue.extend({
     name: 'Manage',
-    extends: Base,
+    mixins: [CoreBase, Base],
     data () {
         return {}
     }

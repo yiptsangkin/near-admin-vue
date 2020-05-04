@@ -1,9 +1,15 @@
-import Base from '@ts/core/base'
-
 export default {
+    props: {
+    },
+    components: {
+    },
     data () {
         return {
-            ...Base.dataOpt
+        }
+    },
+    methods: {
+        showGlobalSaveHotKey (): void {
+            console.log(`you press crtl+s, and method named 'showGlobalSaveHotKey' is triggered`)
         }
     }
 }
