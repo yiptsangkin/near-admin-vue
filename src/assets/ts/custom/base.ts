@@ -1,4 +1,4 @@
-import Base from '@js/core/base'
+import Base from '@ts/core/base'
 
 export default {
     data () {

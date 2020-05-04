@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/manage'
-import utils from '@js/core/utils'
+import utils from '@ts/core/utils'
 import store from '@store/index'
 import VueI18n from 'vue-i18n'
-import lang from '@js/core/lang'
+import lang from '@ts/core/lang'
 
 // antd component
 import {

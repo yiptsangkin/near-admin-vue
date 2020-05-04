@@ -19,11 +19,11 @@
       "@/*": [
         "src/*"
       ],
-      "@js/*": [
-        "src/assets/js/*"
+      "@ts/*": [
+        "src/assets/ts/*"
       ],
       "@api/*": [
-        "src/assets/js/api/*"
+        "src/assets/ts/api/*"
       ],
       "@store/*": [
         "src/store/*"

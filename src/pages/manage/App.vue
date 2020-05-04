@@ -8,8 +8,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Root from '@js/core/root'
-import utils from '@js/core/utils'
+import Root from '@ts/core/root'
+import utils from '@ts/core/utils'
 import { mapGetters } from 'vuex'
 
 export default Vue.extend({
@@ -28,6 +28,7 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="css">
+<style lang="scss">
     @import '../../assets/font/iconfont/iconfont.css';
+    @import '../../assets/scss/core/base.scss';
 </style>

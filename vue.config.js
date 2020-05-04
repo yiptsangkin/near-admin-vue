@@ -61,8 +61,8 @@ const prodConfig ={
             }
         }),
         new webpack.ProvidePlugin({
-            dict: [path.resolve(path.join(__dirname, 'src/assets/js/custom/dict.ts')), 'default'],
-            comConfig: [path.resolve(path.join(__dirname, 'src/assets/js/custom/config.ts')), 'default']
+            dict: [path.resolve(path.join(__dirname, 'src/assets/ts/custom/dict.ts')), 'default'],
+            comConfig: [path.resolve(path.join(__dirname, 'src/assets/ts/custom/config.ts')), 'default']
         })
     ],
     externals: {
@@ -90,13 +90,12 @@ const devConfig = {
             }
         }),
         new webpack.ProvidePlugin({
-            dict: [path.resolve(path.join(__dirname, 'src/assets/js/custom/dict.ts')), 'default'],
-            comConfig: [path.resolve(path.join(__dirname, 'src/assets/js/custom/config.ts')), 'default']
+            dict: [path.resolve(path.join(__dirname, 'src/assets/ts/custom/dict.ts')), 'default'],
+            comConfig: [path.resolve(path.join(__dirname, 'src/assets/ts/custom/config.ts')), 'default']
         })
     ],
     externals: {
-        apiConfig: 'window.apiConfig',
-        AMap: 'window.AMap'
+        apiConfig: 'window.apiConfig'
     }
 }
 
@@ -131,8 +130,8 @@ const vueConfig = {
         config.resolve.alias
             .set('vue$', 'vue/dist/vue.esm.js')
             .set('@', path.resolve('src'))
-            .set('@api', path.resolve('src/assets/js/api'))
-            .set('@js', path.resolve('src/assets/js'))
+            .set('@api', path.resolve('src/assets/ts/api'))
+            .set('@ts', path.resolve('src/assets/ts'))
             .set('@store', path.resolve('src/store'))
             .set('@mock', path.resolve('src/mock'))
             .set('@css', path.resolve('src/assets/css'))

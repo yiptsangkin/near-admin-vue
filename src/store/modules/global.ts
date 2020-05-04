@@ -1,5 +1,5 @@
-import {UserInfo} from '@js/core/type'
-import lang from '@js/core/lang'
+import {UserInfo} from '@ts/core/type'
+import lang from '@ts/core/lang'
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`

@@ -12,22 +12,25 @@ module.exports = {
             let pathList = entry.split('/')
             let baseConfig = require('.' + entry)
             pathList.splice(-1)
+            // api config for the corresponding environment
+            switch (process.env.BUILD_ENV) {
+                case 'prod':
+                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigProd.js`]
+                    break
+                case 'uat':
+                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigUat.js`]
+                    break
+                case 'dev':
+                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigDev.js`]
+                    break
+                default:
+                    // default dev api config
+                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigDev.js`]
+            }
             let pathname = pathList.slice(-1)[0]
             let chunks
             if (process.env.NODE_ENV === 'production') {
                 chunks = ['chunk-vendors', 'chunk-common', `vendor-${pathname}`, pathname]
-                // api config for the corresponding environment
-                switch (process.env.BUILD_ENV) {
-                    case 'prod':
-                        baseConfig.externals.apiconfig.url = [`/static/js/apiConfigProd.js`]
-                        break
-                    case 'uat':
-                        baseConfig.externals.apiconfig.url = [`/static/js/apiConfig.js`]
-                        break
-                    default:
-                        // default uat api config
-                        baseConfig.externals.apiconfig.url = [`/static/js/apiConfig.js`]
-                }
             } else {
                 chunks = ['chunk-vendors', 'chunk-common', 'vendor-' + pathname, 'mock', pathname]
             }

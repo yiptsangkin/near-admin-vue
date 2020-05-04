@@ -7,6 +7,6 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    @import "../../../assets/scss/custom/auth";
 </style>
