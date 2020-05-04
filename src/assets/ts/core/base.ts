@@ -34,7 +34,7 @@ export default {
                 self.initBusListener()
             }
         },
-        triggerEvent (methodName, params, hotKey, isWildcard): void {
+        triggerEvent (methodName, params, hotKey): void {
             const self = this
             if (self[methodName]) {
                 self[methodName](params, hotKey)
@@ -46,17 +46,10 @@ export default {
                 const hotKey = utils.getHotKeyStringList(e)
                 const hotKeyPathObj = HotKeyConfig[hotKey]
                 if (hotKeyPathObj) {
-                    const hotKeyEventList = hotKeyPathObj[self.pagePath] || []
-                    let hotKeyWildcardList = []
-                    // check if have wildcard
-                    if (hotKeyPathObj.hasOwnProperty('*')) {
-                        hotKeyWildcardList = hotKeyPathObj['*']
-                    }
-                    hotKeyWildcardList.forEach((item) => {
-                        self.triggerEvent(item.method, item.params, hotKey, true)
-                    })
+                    const hotKeyWildcardList = hotKeyPathObj['*'] || []
+                    const hotKeyEventList = hotKeyWildcardList.concat(hotKeyPathObj[self.pagePath] || [])
                     hotKeyEventList.forEach((item) => {
-                        self.triggerEvent(item.method, item.params, hotKey, false)
+                        self.triggerEvent(item.method, item.params, hotKey)
                     })
                 }
             })
