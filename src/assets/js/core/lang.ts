@@ -3,11 +3,11 @@ import jaJP from 'ant-design-vue/lib/locale-provider/ja_JP'
 import koKR from 'ant-design-vue/lib/locale-provider/ko_KR'
 import zhCN from 'ant-design-vue/lib/locale-provider/zh_CN'
 import zhTW from 'ant-design-vue/lib/locale-provider/zh_TW'
-import customerEnUS from '@js/locale/en_US'
-import customerJaJP from '@js/locale/ja_JP'
-import customerKoKR from '@js/locale/ko_KR'
-import customerZhCN from '@js/locale/zh_CN'
-import customerZhTW from '@js/locale/zh_TW'
+import customEnUS from '@js/locale/en_US.ts'
+import customJaJP from '@js/locale/ja_JP.ts'
+import customKoKR from '@js/locale/ko_KR.ts'
+import customZhCN from '@js/locale/zh_CN.ts'
+import customZhTW from '@js/locale/zh_TW.ts'
 
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
 
@@ -31,11 +31,11 @@ const globalLocaleObj: GlobalLocale = {
 const i18nOpt: I18nOption = {
     locale: CACHE_LOCALE,
     messages: {
-        [enUS.locale]: customerEnUS,
-        [jaJP.locale]: customerJaJP,
-        [koKR.locale]: customerKoKR,
-        [zhCN.locale]: customerZhCN,
-        [zhTW.locale]: customerZhTW
+        [enUS.locale]: customEnUS,
+        [jaJP.locale]: customJaJP,
+        [koKR.locale]: customKoKR,
+        [zhCN.locale]: customZhCN,
+        [zhTW.locale]: customZhTW
     }
 }
 

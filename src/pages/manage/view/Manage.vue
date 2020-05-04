@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Base from '@js/core/base'
+import Base from '@js/custom/base'
 
 export default Vue.extend({
     name: 'Manage',

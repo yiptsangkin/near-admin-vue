@@ -61,9 +61,8 @@ const prodConfig ={
             }
         }),
         new webpack.ProvidePlugin({
-            dict: [path.resolve(path.join(__dirname, 'src/assets/js/dict.js')), 'default'],
-            buildConfig: [path.resolve(path.join(__dirname, 'build/config.js'))],
-            comConfig: [path.resolve(path.join(__dirname, 'src/assets/js/config.js')), 'default']
+            dict: [path.resolve(path.join(__dirname, 'src/assets/js/custom/dict.ts')), 'default'],
+            comConfig: [path.resolve(path.join(__dirname, 'src/assets/js/custom/config.ts')), 'default']
         })
     ],
     externals: {
@@ -91,9 +90,8 @@ const devConfig = {
             }
         }),
         new webpack.ProvidePlugin({
-            dict: [path.resolve(path.join(__dirname, 'src/assets/js/dict.js')), 'default'],
-            buildConfig: [path.resolve(path.join(__dirname, 'build/config.js'))],
-            comConfig: [path.resolve(path.join(__dirname, 'src/assets/js/config.js')), 'default']
+            dict: [path.resolve(path.join(__dirname, 'src/assets/js/custom/dict.ts')), 'default'],
+            comConfig: [path.resolve(path.join(__dirname, 'src/assets/js/custom/config.ts')), 'default']
         })
     ],
     externals: {

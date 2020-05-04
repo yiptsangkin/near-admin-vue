@@ -138,27 +138,27 @@ try {
         spinner.succeed(`all completed`)
         const currentLocaleList = fs.readdirSync(basePath)
         let antdLocale = []
-        let customerLocale = []
+        let customLocale = []
         let antdOpt = []
-        let customerOpt = []
+        let customOpt = []
         let declareList = []
         currentLocaleList.forEach(function (citem) {
             if (withBaseFile(citem)) {
                 let defaultName = citem.split('.')[0]
                 let antdName = defaultName.replace('_', '')
-                let customerName = `customer${antdName.charAt(0).toUpperCase()}${antdName.slice(1)}`
+                let customerName = `custom${antdName.charAt(0).toUpperCase()}${antdName.slice(1)}`
                 antdLocale.push(`import ${antdName} from 'ant-design-vue/lib/locale-provider/${defaultName}'`)
-                customerLocale.push(`import ${customerName} from '@js/locale/${defaultName}'`)
+                customLocale.push(`import ${customerName} from '@js/locale/${citem}'`)
                 antdOpt.push(`[${antdName}.locale]: ${antdName}`)
-                customerOpt.push(`[${antdName}.locale]: ${customerName}`)
+                customOpt.push(`[${antdName}.locale]: ${customerName}`)
                 declareList.push(`declare module 'ant-design-vue/lib/locale-provider/${defaultName}' {\n    const ${defaultName}: any\n    export default ${defaultName}\n}\n`)
             }
         })
         // read lang.tpl
         let tplFileCtx = fs.readFileSync(`${corePath}/lang.tpl`, 'utf-8')
-        tplFileCtx = tplFileCtx.replace('<% importTpl %>', `${antdLocale.join('\n')}\n${customerLocale.join('\n')}`)
+        tplFileCtx = tplFileCtx.replace('<% importTpl %>', `${antdLocale.join('\n')}\n${customLocale.join('\n')}`)
             .replace('<% exportAntdTpl %>', `${antdOpt.join(',\n    ')}`)
-            .replace('<% exportCustomerTpl %>', `${customerOpt.join(',\n        ')}`)
+            .replace('<% exportCustomerTpl %>', `${customOpt.join(',\n        ')}`)
         fs.writeFileSync(`${corePath}/lang.ts`, tplFileCtx)
         fs.writeFileSync(`${curPath}/src/lang.d.ts`, declareList.join('\n'))
         console.log(chalk.green('translate success'))
