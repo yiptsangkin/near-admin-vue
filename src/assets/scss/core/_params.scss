@@ -1,0 +1,269 @@
+/** grey level **/
+$grep: black;
+$grey-0: hsl(0, 0, 0);
+$grey-1: lighten($grey-0, 6.66%);
+$grey-2: lighten($grey-0, 6.66*2%);
+$grey-3: lighten($grey-0, 6.66*3%);
+$grey-4: lighten($grey-0, 6.66*4%);
+$grey-5: lighten($grey-0, 6.66*5%);
+$grey-6: lighten($grey-0, 6.66*6%);
+$grey-7: lighten($grey-0, 6.66*7%);
+$grey-8: lighten($grey-0, 6.66*8%);
+$grey-9: lighten($grey-0, 6.66*9%);
+$grey-a: lighten($grey-0, 6.66*10%);
+$grey-b: lighten($grey-0, 6.66*11%);
+$grey-c: lighten($grey-0, 6.66*12%);
+$grey-d: lighten($grey-0, 6.66*13%);
+$grey-e: lighten($grey-0, 6.66*14%);
+$grey-f: lighten($grey-0, 6.66*15%);
+
+/** blue level **/
+$blue: hsl(209, 91, 100-91/2);
+$blue-0: hsl(209, 91, 0);
+$blue-1: lighten($blue-0, 6.66%);
+$blue-2: lighten($blue-0, 6.66*2%);
+$blue-3: lighten($blue-0, 6.66*3%);
+$blue-4: lighten($blue-0, 6.66*4%);
+$blue-5: lighten($blue-0, 6.66*5%);
+$blue-6: lighten($blue-0, 6.66*6%);
+$blue-7: lighten($blue-0, 6.66*7%);
+$blue-8: lighten($blue-0, 6.66*8%);
+$blue-9: lighten($blue-0, 6.66*9%);
+$blue-a: lighten($blue-0, 6.66*10%);
+$blue-b: lighten($blue-0, 6.66*11%);
+$blue-c: lighten($blue-0, 6.66*12%);
+$blue-d: lighten($blue-0, 6.66*13%);
+$blue-e: lighten($blue-0, 6.66*14%);
+$blue-f: lighten($blue-0, 6.66*15%);
+
+/** purple level **/
+$purple: hsl(265, 78, 82-78/2);
+$purple-0: hsl(265, 78, 0);
+$purple-1: lighten($purple-0, 6.66%);
+$purple-2: lighten($purple-0, 6.66*2%);
+$purple-3: lighten($purple-0, 6.66*3%);
+$purple-4: lighten($purple-0, 6.66*4%);
+$purple-5: lighten($purple-0, 6.66*5%);
+$purple-6: lighten($purple-0, 6.66*6%);
+$purple-7: lighten($purple-0, 6.66*7%);
+$purple-8: lighten($purple-0, 6.66*8%);
+$purple-9: lighten($purple-0, 6.66*9%);
+$purple-a: lighten($purple-0, 6.66*10%);
+$purple-b: lighten($purple-0, 6.66*11%);
+$purple-c: lighten($purple-0, 6.66*12%);
+$purple-d: lighten($purple-0, 6.66*13%);
+$purple-e: lighten($purple-0, 6.66*14%);
+$purple-f: lighten($purple-0, 6.66*15%);
+
+/** cyan level **/
+$cyan: hsl(180, 90, 76-90/2);
+$cyan-0: hsl(180, 90, 0);
+$cyan-1: lighten($cyan-0, 6.66%);
+$cyan-2: lighten($cyan-0, 6.66*2%);
+$cyan-3: lighten($cyan-0, 6.66*3%);
+$cyan-4: lighten($cyan-0, 6.66*4%);
+$cyan-5: lighten($cyan-0, 6.66*5%);
+$cyan-6: lighten($cyan-0, 6.66*6%);
+$cyan-7: lighten($cyan-0, 6.66*7%);
+$cyan-8: lighten($cyan-0, 6.66*8%);
+$cyan-9: lighten($cyan-0, 6.66*9%);
+$cyan-a: lighten($cyan-0, 6.66*10%);
+$cyan-b: lighten($cyan-0, 6.66*11%);
+$cyan-c: lighten($cyan-0, 6.66*12%);
+$cyan-d: lighten($cyan-0, 6.66*13%);
+$cyan-e: lighten($cyan-0, 6.66*14%);
+$cyan-f: lighten($cyan-0, 6.66*15%);
+
+/** green level **/
+$green: hsl(100, 87, 77-87/2);
+$green-0: hsl(100, 87, 0);
+$green-1: lighten($green-0, 6.66%);
+$green-2: lighten($green-0, 6.66*2%);
+$green-3: lighten($green-0, 6.66*3%);
+$green-4: lighten($green-0, 6.66*4%);
+$green-5: lighten($green-0, 6.66*5%);
+$green-6: lighten($green-0, 6.66*6%);
+$green-7: lighten($green-0, 6.66*7%);
+$green-8: lighten($green-0, 6.66*8%);
+$green-9: lighten($green-0, 6.66*9%);
+$green-a: lighten($green-0, 6.66*10%);
+$green-b: lighten($green-0, 6.66*11%);
+$green-c: lighten($green-0, 6.66*12%);
+$green-d: lighten($green-0, 6.66*13%);
+$green-e: lighten($green-0, 6.66*14%);
+$green-f: lighten($green-0, 6.66*15%);
+
+/** magenta level **/
+$magenta: hsl(327, 80, 92-80/2);
+$magenta-0: hsl(327, 80, 0);
+$magenta-1: lighten($magenta-0, 6.66%);
+$magenta-2: lighten($magenta-0, 6.66*2%);
+$magenta-3: lighten($magenta-0, 6.66*3%);
+$magenta-4: lighten($magenta-0, 6.66*4%);
+$magenta-5: lighten($magenta-0, 6.66*5%);
+$magenta-6: lighten($magenta-0, 6.66*6%);
+$magenta-7: lighten($magenta-0, 6.66*7%);
+$magenta-8: lighten($magenta-0, 6.66*8%);
+$magenta-9: lighten($magenta-0, 6.66*9%);
+$magenta-a: lighten($magenta-0, 6.66*10%);
+$magenta-b: lighten($magenta-0, 6.66*11%);
+$magenta-c: lighten($magenta-0, 6.66*12%);
+$magenta-d: lighten($magenta-0, 6.66*13%);
+$magenta-e: lighten($magenta-0, 6.66*14%);
+$magenta-f: lighten($magenta-0, 6.66*15%);
+
+/** red level **/
+$red: hsl(357, 86, 96-86/2);
+$red-0: hsl(357, 86, 0);
+$red-1: lighten($red-0, 6.66%);
+$red-2: lighten($red-0, 6.66*2%);
+$red-3: lighten($red-0, 6.66*3%);
+$red-4: lighten($red-0, 6.66*4%);
+$red-5: lighten($red-0, 6.66*5%);
+$red-6: lighten($red-0, 6.66*6%);
+$red-7: lighten($red-0, 6.66*7%);
+$red-8: lighten($red-0, 6.66*8%);
+$red-9: lighten($red-0, 6.66*9%);
+$red-a: lighten($red-0, 6.66*10%);
+$red-b: lighten($red-0, 6.66*11%);
+$red-c: lighten($red-0, 6.66*12%);
+$red-d: lighten($red-0, 6.66*13%);
+$red-e: lighten($red-0, 6.66*14%);
+$red-f: lighten($red-0, 6.66*15%);
+
+/** orange level **/
+$orange: hsl(31, 91, 98-91/2);
+$orange-0: hsl(31, 91, 0);
+$orange-1: lighten($orange-0, 6.66%);
+$orange-2: lighten($orange-0, 6.66*2%);
+$orange-3: lighten($orange-0, 6.66*3%);
+$orange-4: lighten($orange-0, 6.66*4%);
+$orange-5: lighten($orange-0, 6.66*5%);
+$orange-6: lighten($orange-0, 6.66*6%);
+$orange-7: lighten($orange-0, 6.66*7%);
+$orange-8: lighten($orange-0, 6.66*8%);
+$orange-9: lighten($orange-0, 6.66*9%);
+$orange-a: lighten($orange-0, 6.66*10%);
+$orange-b: lighten($orange-0, 6.66*11%);
+$orange-c: lighten($orange-0, 6.66*12%);
+$orange-d: lighten($orange-0, 6.66*13%);
+$orange-e: lighten($orange-0, 6.66*14%);
+$orange-f: lighten($orange-0, 6.66*15%);
+
+/** yellow level **/
+$yellow: hsl(52, 82, 98-82/2);
+$yellow-0: hsl(52, 82, 0);
+$yellow-1: lighten($yellow-0, 6.66%);
+$yellow-2: lighten($yellow-0, 6.66*2%);
+$yellow-3: lighten($yellow-0, 6.66*3%);
+$yellow-4: lighten($yellow-0, 6.66*4%);
+$yellow-5: lighten($yellow-0, 6.66*5%);
+$yellow-6: lighten($yellow-0, 6.66*6%);
+$yellow-7: lighten($yellow-0, 6.66*7%);
+$yellow-8: lighten($yellow-0, 6.66*8%);
+$yellow-9: lighten($yellow-0, 6.66*9%);
+$yellow-a: lighten($yellow-0, 6.66*10%);
+$yellow-b: lighten($yellow-0, 6.66*11%);
+$yellow-c: lighten($yellow-0, 6.66*12%);
+$yellow-d: lighten($yellow-0, 6.66*13%);
+$yellow-e: lighten($yellow-0, 6.66*14%);
+$yellow-f: lighten($yellow-0, 6.66*15%);
+
+/** volcano level **/
+$volcano: hsl(15, 89, 98-89/2);
+$volcano-0: hsl(15, 89, 0);
+$volcano-1: lighten($volcano-0, 6.66%);
+$volcano-2: lighten($volcano-0, 6.66*2%);
+$volcano-3: lighten($volcano-0, 6.66*3%);
+$volcano-4: lighten($volcano-0, 6.66*4%);
+$volcano-5: lighten($volcano-0, 6.66*5%);
+$volcano-6: lighten($volcano-0, 6.66*6%);
+$volcano-7: lighten($volcano-0, 6.66*7%);
+$volcano-8: lighten($volcano-0, 6.66*8%);
+$volcano-9: lighten($volcano-0, 6.66*9%);
+$volcano-a: lighten($volcano-0, 6.66*10%);
+$volcano-b: lighten($volcano-0, 6.66*11%);
+$volcano-c: lighten($volcano-0, 6.66*12%);
+$volcano-d: lighten($volcano-0, 6.66*13%);
+$volcano-e: lighten($volcano-0, 6.66*14%);
+$volcano-f: lighten($volcano-0, 6.66*15%);
+
+/** geekblue level **/
+$geekblue: hsl(228, 80, 92-80/2);
+$geekblue-0: hsl(228, 80, 0);
+$geekblue-1: lighten($geekblue-0, 6.66%);
+$geekblue-2: lighten($geekblue-0, 6.66*2%);
+$geekblue-3: lighten($geekblue-0, 6.66*3%);
+$geekblue-4: lighten($geekblue-0, 6.66*4%);
+$geekblue-5: lighten($geekblue-0, 6.66*5%);
+$geekblue-6: lighten($geekblue-0, 6.66*6%);
+$geekblue-7: lighten($geekblue-0, 6.66*7%);
+$geekblue-8: lighten($geekblue-0, 6.66*8%);
+$geekblue-9: lighten($geekblue-0, 6.66*9%);
+$geekblue-a: lighten($geekblue-0, 6.66*10%);
+$geekblue-b: lighten($geekblue-0, 6.66*11%);
+$geekblue-c: lighten($geekblue-0, 6.66*12%);
+$geekblue-d: lighten($geekblue-0, 6.66*13%);
+$geekblue-e: lighten($geekblue-0, 6.66*14%);
+$geekblue-f: lighten($geekblue-0, 6.66*15%);
+
+/** lime level **/
+$lime: hsl(77, 92, 85-92/2);
+$lime-0: hsl(77, 92, 0);
+$lime-1: lighten($lime-0, 6.66%);
+$lime-2: lighten($lime-0, 6.66*2%);
+$lime-3: lighten($lime-0, 6.66*3%);
+$lime-4: lighten($lime-0, 6.66*4%);
+$lime-5: lighten($lime-0, 6.66*5%);
+$lime-6: lighten($lime-0, 6.66*6%);
+$lime-7: lighten($lime-0, 6.66*7%);
+$lime-8: lighten($lime-0, 6.66*8%);
+$lime-9: lighten($lime-0, 6.66*9%);
+$lime-a: lighten($lime-0, 6.66*10%);
+$lime-b: lighten($lime-0, 6.66*11%);
+$lime-c: lighten($lime-0, 6.66*12%);
+$lime-d: lighten($lime-0, 6.66*13%);
+$lime-e: lighten($lime-0, 6.66*14%);
+$lime-f: lighten($lime-0, 6.66*15%);
+
+/** gold level **/
+$gold: hsl(40, 92, 98-92/2);
+$gold-0: hsl(40, 92, 0);
+$gold-1: lighten($gold-0, 6.66%);
+$gold-2: lighten($gold-0, 6.66*2%);
+$gold-3: lighten($gold-0, 6.66*3%);
+$gold-4: lighten($gold-0, 6.66*4%);
+$gold-5: lighten($gold-0, 6.66*5%);
+$gold-6: lighten($gold-0, 6.66*6%);
+$gold-7: lighten($gold-0, 6.66*7%);
+$gold-8: lighten($gold-0, 6.66*8%);
+$gold-9: lighten($gold-0, 6.66*9%);
+$gold-a: lighten($gold-0, 6.66*10%);
+$gold-b: lighten($gold-0, 6.66*11%);
+$gold-c: lighten($gold-0, 6.66*12%);
+$gold-d: lighten($gold-0, 6.66*13%);
+$gold-e: lighten($gold-0, 6.66*14%);
+$gold-f: lighten($gold-0, 6.66*15%);
+
+/** pink level **/
+$pink: hsl(327, 80, 92-80/2);
+$pink-0: hsl(327, 80, 0);
+$pink-1: lighten($pink-0, 6.66%);
+$pink-2: lighten($pink-0, 6.66*2%);
+$pink-3: lighten($pink-0, 6.66*3%);
+$pink-4: lighten($pink-0, 6.66*4%);
+$pink-5: lighten($pink-0, 6.66*5%);
+$pink-6: lighten($pink-0, 6.66*6%);
+$pink-7: lighten($pink-0, 6.66*7%);
+$pink-8: lighten($pink-0, 6.66*8%);
+$pink-9: lighten($pink-0, 6.66*9%);
+$pink-a: lighten($pink-0, 6.66*10%);
+$pink-b: lighten($pink-0, 6.66*11%);
+$pink-c: lighten($pink-0, 6.66*12%);
+$pink-d: lighten($pink-0, 6.66*13%);
+$pink-e: lighten($pink-0, 6.66*14%);
+$pink-f: lighten($pink-0, 6.66*15%);
+
+
+
+

@@ -10,7 +10,7 @@ module.exports = {
 
         glob.sync(globPath).forEach(function (entry) {
             let pathList = entry.split('/')
-            let baseConfig = require('.' + entry)
+            let baseConfig = require(`.${entry}`)
             pathList.splice(-1)
             // api config for the corresponding environment
             switch (process.env.BUILD_ENV) {

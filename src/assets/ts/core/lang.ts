@@ -1,3 +1,4 @@
+import {GlobalLocale, I18nOption} from '@ts/core/type'
 import enUS from 'ant-design-vue/lib/locale-provider/en_US'
 import jaJP from 'ant-design-vue/lib/locale-provider/ja_JP'
 import koKR from 'ant-design-vue/lib/locale-provider/ko_KR'
@@ -10,15 +11,6 @@ import customZhCN from '@ts/locale/zh_CN.ts'
 import customZhTW from '@ts/locale/zh_TW.ts'
 
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
-
-interface GlobalLocale {
-    [key: string]: any
-}
-
-interface I18nOption {
-    locale: string,
-    messages: any
-}
 
 const globalLocaleObj: GlobalLocale = {
     [enUS.locale]: enUS,

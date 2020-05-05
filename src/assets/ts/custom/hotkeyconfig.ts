@@ -1,16 +1,4 @@
-interface HotKeyDetailConfig {
-    name: string,
-    method: any,
-    params?: any
-}
-
-interface HotKeyEffectPath {
-    [key: string]: HotKeyDetailConfig[]
-}
-
-interface HotKeyConfig {
-    [key: string]: HotKeyEffectPath
-}
+import {HotKeyConfig} from '@ts/core/type'
 
 const hotkeyconfig: HotKeyConfig = {
     'ctrl+s': {
@@ -18,10 +6,10 @@ const hotkeyconfig: HotKeyConfig = {
         // if you use wildcard, write the method in custom/base.ts
         '*': [
             {
-                name: 'global \'Ctrl+S\' event',
+                name: `global 'Ctrl+S' event`,
                 method: 'showGlobalSaveHotKey',
                 params: {
-                    message: 'you have pressed \'Ctrl+S\''
+                    message: `you have pressed 'Ctrl+S'`
                 }
             }
         ],
@@ -29,13 +17,13 @@ const hotkeyconfig: HotKeyConfig = {
         // if you don't use wildcard but page path, write the method in page component SFC
         'core/home/HomePage': [
             {
-                name: 'HomePage \'Ctrl+S\' event',
+                name: `HomePage 'Ctrl+S' event`,
                 method: 'showHomePageSaveHotKey'
             }
         ],
         'core/setting/Setting': [
             {
-                name: 'Setting \'Ctrl+S\' event',
+                name: `Setting 'Ctrl+S' event`,
                 method: 'showHomePageSaveHotKey'
             },
             {
@@ -47,7 +35,7 @@ const hotkeyconfig: HotKeyConfig = {
     'ctrl+e': {
         'core/logline/Logline': [
             {
-                name: 'Logline \'Ctrl+S\' event',
+                name: `Logline 'Ctrl+S' event`,
                 method: 'showExportSuccess'
             }
         ]

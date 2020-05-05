@@ -135,6 +135,8 @@ const vueConfig = {
             .set('@store', path.resolve('src/store'))
             .set('@mock', path.resolve('src/mock'))
             .set('@css', path.resolve('src/assets/css'))
+            .set('@scss', path.resolve('src/assets/scss'))
+            .set('@font', path.resolve('src/assets/font'))
     },
     pwa: {
         iconPaths: {

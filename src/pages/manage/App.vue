@@ -7,28 +7,20 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Root from '@ts/core/root'
-import utils from '@ts/core/utils'
-import { mapGetters } from 'vuex'
+    import Vue from 'vue'
+    import CoreRoot from '@ts/core/root'
+    import Root from '@ts/custom/root'
 
-export default Vue.extend({
-    name: 'App',
-    extends: Root,
-    created () {
-        // global log tool
-        window.Logline = utils.loglineObj
-    },
-    computed: {
-        ...mapGetters([
-            'locale',
-            'gloablLocale'
-        ])
-    }
-})
+    export default Vue.extend({
+        name: 'App',
+        mixins: [CoreRoot, Root]
+    })
 </script>
 
+<style lang="css">
+    @import '~@font/iconfont/iconfont.css';
+</style>
+
 <style lang="scss">
-    @import '../../assets/font/iconfont/iconfont.css';
-    @import '../../assets/scss/core/base.scss';
+    @import '~@scss/custom/index.scss';
 </style>

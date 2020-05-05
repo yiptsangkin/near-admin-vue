@@ -1,26 +1,9 @@
 import apiConfig from 'apiConfig'
-
-interface SysInfo {
-    name: string,          // system name
-    appId?: string,        // system app id
-    appSecret?: string,    // system app secret
-    apiHost: string,       // system api host
-    noNeedCheckRightPath: string[]   // no need to check if user have rigth to visit
-}
-
-interface BuildSwitch {
-    isMock: boolean,    // if use local mock
-    isHotKey: boolean,  // if use global hot key
-    isBreadCrumb: boolean    // if show bread crumb
-}
-
-interface ComConfig {
-    sysInfo: SysInfo,
-    buildSwitch: BuildSwitch
-}
+import {ComConfig} from '@ts/core/type'
 
 const sysInfo = {
-    name: 'near-admin',
+    name: 'Near-Admin',
+    logo: '/static/images/logo/logo.png',
     appId: apiConfig.appId,
     appSecret: apiConfig.appSecret,
     apiHost: apiConfig.apiHost,

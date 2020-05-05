@@ -2,7 +2,7 @@
 
 import Bus from '@ts/core/eventbus'
 import { mapGetters } from 'vuex'
-import HotKeyConfig from '@ts/core/hotkeyconfig'
+import HotKeyConfig from '@ts/custom/hotkeyconfig'
 import utils from '@ts/core/utils'
 
 export default {

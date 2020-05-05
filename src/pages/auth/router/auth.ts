@@ -1,15 +1,19 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
 import {CacheRouteConfig} from '@ts/core/type'
-const Auth = () => import('../view/Auth.vue')
+const Login = () => import('../view/Login.vue')
 
 Vue.use(VueRouter)
 
 const routesConfig: RouteConfig[] = [
     {
         path: '/',
-        name: 'Auth',
-        component: Auth
+        redirect: '/login'
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login
     }
 ];
 

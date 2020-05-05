@@ -13,7 +13,8 @@ import {
     DatePicker
 } from 'ant-design-vue'
 
-Vue.config.productionTip = false;
+// config
+Vue.config.productionTip = false
 
 // import antd
 Vue.component(Button.name, Button)
@@ -39,4 +40,4 @@ new Vue({
     store,
     router,
     i18n
-}).$mount('#app');
+}).$mount('#app')

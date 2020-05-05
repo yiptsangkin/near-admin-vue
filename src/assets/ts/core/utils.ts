@@ -1,9 +1,5 @@
 import Logline from 'logline'
-
-interface HadKey {
-    isKey: boolean,
-    name: string
-}
+import {HadKey} from '@ts/core/type'
 
 const loglineObj: object = {
     setLog (modules: string, logtype: string, desc: string, data: string): void {

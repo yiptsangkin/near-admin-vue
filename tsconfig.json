@@ -30,6 +30,15 @@
       ],
       "@mock/*": [
         "src/mock/*"
+      ],
+      "~@scss/*": [
+        "src/assets/scss/*"
+      ],
+      "@css/*": [
+        "src/assets/css/*"
+      ],
+      "@font/*": [
+        "src/assets/font/*"
       ]
     },
     "lib": [
