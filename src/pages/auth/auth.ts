@@ -10,7 +10,8 @@ import lang from '@ts/core/lang'
 import {
     ConfigProvider,
     Row,
-    Col
+    Col,
+    Tabs
 } from 'ant-design-vue'
 
 // config
@@ -20,6 +21,8 @@ Vue.config.productionTip = false
 Vue.component(Row.name, Row)
 Vue.component(Col.name, Col)
 Vue.component(ConfigProvider.name, ConfigProvider)
+Vue.component(Tabs.name, Tabs)
+Vue.component(Tabs.TabPane.name, Tabs.TabPane)
 
 // vue-i18n
 Vue.use(VueI18n)

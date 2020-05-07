@@ -3,7 +3,8 @@ import {ComConfig} from '@ts/core/type'
 
 const sysInfo = {
     name: 'Near-Admin',
-    logo: '/static/images/logo/logo.png',
+    logo: '/static/images/logo/logo.svg',
+    description: '一款基于Vue和Ant Design的好用中后台前端开发框架',
     appId: apiConfig.appId,
     appSecret: apiConfig.appSecret,
     apiHost: apiConfig.apiHost,

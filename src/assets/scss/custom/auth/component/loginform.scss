@@ -1,0 +1,11 @@
+@import "~@scss/core/params";
+
+.n-login-form{
+  width: 368px;
+  background-color: $grey-f;
+  margin: 0 auto;
+  text-align: center;
+  .n-login-tabs{
+    display: inline-block;
+  }
+}

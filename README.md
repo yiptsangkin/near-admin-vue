@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="320" src="https://github.com/yiptsangkin/doc-image/blob/master/project-logo.png?raw=true">
+  <img width="320" src="https://raw.githubusercontent.com/yiptsangkin/doc-image/573fb1269eeed4fcae9403ddf6ddad44d0e66a39/logo.svg?token=AC3MONH54MQLQUTQ55Y67IK6WOQSQ">
 </p>
 
 <p align="center">

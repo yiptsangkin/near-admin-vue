@@ -40,6 +40,7 @@ export interface HadKey {
 interface SysInfo {
     name: string,          // system name
     logo?: string,         // system logo
+    description?: string,  // system description
     appId?: string,        // system app id
     appSecret?: string,    // system app secret
     apiHost: string,       // system api host

@@ -1,0 +1,43 @@
+<svg id="组_1" data-name="组 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="498" height="345" viewBox="0 0 498 345">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #34495e;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: #325043;
+        opacity: 0.5;
+      }
+
+      .cls-5 {
+        fill: #41b783;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="117.5" y1="345" x2="117.5" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#41b783"/>
+      <stop offset="1" stop-color="#c6ffe6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="379.5" y1="265" x2="379.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c6ffe6"/>
+      <stop offset="1" stop-color="#41b783"/>
+    </linearGradient>
+  </defs>
+  <path id="矩形_1" data-name="矩形 1" class="cls-1" d="M154.237,113H373L343.571,233H127Z"/>
+  <path id="矩形_2" data-name="矩形 2" class="cls-2" d="M153,80h82L80,345H0Z"/>
+  <path id="矩形_2_拷贝" data-name="矩形 2 拷贝" class="cls-3" d="M418,0h80L344,265H261Z"/>
+  <path id="矩形_2_拷贝_3" data-name="矩形 2 拷贝 3" class="cls-4" d="M234,80H153L260,265h82Z"/>
+  <path id="矩形_2_拷贝_2" data-name="矩形 2 拷贝 2" class="cls-5" d="M235,80H154L261,265h82Z"/>
+</svg>
