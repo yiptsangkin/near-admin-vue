@@ -148,7 +148,7 @@ try {
                 let antdName = defaultName.replace('_', '')
                 let customerName = `custom${antdName.charAt(0).toUpperCase()}${antdName.slice(1)}`
                 antdLocale.push(`import ${antdName} from 'ant-design-vue/lib/locale-provider/${defaultName}'`)
-                customLocale.push(`import ${customerName} from '@ts/locale/${citem}'`)
+                customLocale.push(`import ${customerName} from '@locale/${citem}'`)
                 antdOpt.push(`[${antdName}.locale]: ${antdName}`)
                 customOpt.push(`[${antdName}.locale]: ${customerName}`)
                 declareList.push(`declare module 'ant-design-vue/lib/locale-provider/${defaultName}' {\n    const ${defaultName}: any\n    export default ${defaultName}\n}\n`)

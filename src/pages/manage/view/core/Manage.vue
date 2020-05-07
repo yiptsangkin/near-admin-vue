@@ -5,8 +5,8 @@
 
 <script lang="ts">
     import Vue from 'vue'
-    import CoreBase from '@ts/core/base'
-    import Base from '@ts/custom/base'
+    import CoreBase from '@core/base'
+    import Base from '@custom/base'
 
     export default Vue.extend({
         name: 'Manage',

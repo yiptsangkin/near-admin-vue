@@ -4,8 +4,15 @@
   width: 368px;
   background-color: $grey-f;
   margin: 0 auto;
-  text-align: center;
-  .n-login-tabs{
-    display: inline-block;
+  .n-login-tabs-wrp{
+    text-align: center;
+    .n-login-tabs{
+      ::v-deep .ant-tabs-bar{
+        display: inline-block;
+      }
+    }
+  }
+  .n-login-option{
+    text-align: left;
   }
 }

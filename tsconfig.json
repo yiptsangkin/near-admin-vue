@@ -19,8 +19,14 @@
       "@/*": [
         "src/*"
       ],
-      "@ts/*": [
-        "src/assets/ts/*"
+      "@core/*": [
+        "src/assets/ts/core/*"
+      ],
+      "@custom/*": [
+        "src/assets/ts/custom/*"
+      ],
+      "@locale/*": [
+        "src/assets/ts/locale/*"
       ],
       "@api/*": [
         "src/assets/ts/api/*"

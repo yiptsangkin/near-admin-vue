@@ -1,20 +1,10 @@
 export default {
     locale: 'zh-tw',
     LoginForm: {
-        loginBtn: '登錄',
-        forget: {
-            forgetPwd: '忘記密碼',
-            forgetAccount: '忘記賬號'
-        },
-        role: [
-            {
-                name: '醫生',
-                value: '0'
-            },
-            {
-                name: '孕婦',
-                value: '1'
-            }
-        ]
+        accountPlaceholder: '請輸入賬號',
+        passwordPlaceholder: '請輸入密碼',
+        autoLogin: '自動登錄',
+        forgetBtn: '忘記密碼',
+        loginBtn: '登錄'
     }
 }

@@ -8,8 +8,8 @@
 
 <script lang="ts">
     import Vue from 'vue'
-    import CoreRoot from '@ts/core/root'
-    import Root from '@ts/custom/root'
+    import CoreRoot from '@core/root'
+    import Root from '@custom/root'
 
     export default Vue.extend({
         name: 'App',
@@ -17,10 +17,10 @@
     })
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
     @import '~@font/iconfont/iconfont.css';
 </style>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '~@scss/custom/index.scss';
 </style>

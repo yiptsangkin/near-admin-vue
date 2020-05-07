@@ -1,20 +1,10 @@
 export default {
     locale: 'en',
     LoginForm: {
-        loginBtn: 'log in',
-        forget: {
-            forgetPwd: 'forget password',
-            forgetAccount: 'Forgot account'
-        },
-        role: [
-            {
-                name: 'Doctors',
-                value: '0'
-            },
-            {
-                name: 'Pregnant woman',
-                value: '1'
-            }
-        ]
+        accountPlaceholder: 'Please input Username',
+        passwordPlaceholder: 'Please enter the password',
+        autoLogin: 'auto login',
+        forgetBtn: 'forget password',
+        loginBtn: 'log in'
     }
 }

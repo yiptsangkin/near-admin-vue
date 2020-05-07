@@ -1,17 +1,22 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/auth'
-import utils from '@ts/core/utils'
+import utils from '@core/utils'
 import store from '@store/index'
 import VueI18n from 'vue-i18n'
-import lang from '@ts/core/lang'
+import lang from '@core/lang'
 
 // antd component
 import {
     ConfigProvider,
     Row,
     Col,
-    Tabs
+    Tabs,
+    FormModel,
+    Input,
+    Icon,
+    Checkbox,
+    Button
 } from 'ant-design-vue'
 
 // config
@@ -23,6 +28,13 @@ Vue.component(Col.name, Col)
 Vue.component(ConfigProvider.name, ConfigProvider)
 Vue.component(Tabs.name, Tabs)
 Vue.component(Tabs.TabPane.name, Tabs.TabPane)
+Vue.component(FormModel.name, FormModel)
+Vue.component(FormModel.Item.name, FormModel.Item)
+Vue.component(Input.name, Input)
+Vue.component(Icon.name, Icon)
+Vue.component(Checkbox.name, Checkbox)
+Vue.component(Checkbox.Group.name, Checkbox.Group)
+Vue.component(Button.name, Button)
 
 // vue-i18n
 Vue.use(VueI18n)

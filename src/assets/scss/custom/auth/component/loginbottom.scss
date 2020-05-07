@@ -1,0 +1,13 @@
+@import "~@scss/core/params";
+
+.n-login-bottom{
+  .n-login-option{
+    text-align: left;
+    .n-login-forget{
+      float: right;
+    }
+  }
+  .n-login-submit{
+    margin-top: 24px;
+  }
+}

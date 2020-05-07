@@ -6,7 +6,7 @@
             <a-col class="n-sys-logo">
                 <img :src="comConfig.sysInfo.logo" alt="">
             </a-col>
-            <al-col class="n-sys-name">{{ comConfig.sysInfo.name }}</al-col>
+            <a-col class="n-sys-name">{{ comConfig.sysInfo.name }}</a-col>
         </a-row>
         <a-row class="n-login-logo-description">
             {{ comConfig.sysInfo.description }}
@@ -20,7 +20,7 @@
 
 <script>
     import { mapGetters } from 'vuex'
-    import LoginForm from '../component/login/LoginForm'
+    const LoginForm = () => import('../component/login/LoginForm')
     export default {
         name: 'Login',
         components: {

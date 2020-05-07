@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve:translate": "node script/translate.js && vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "build": "vue-cli-service build",
     "uat:build": "BUILD_ENV=uat vue-cli-service build",

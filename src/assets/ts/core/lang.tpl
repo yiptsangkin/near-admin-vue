@@ -1,4 +1,4 @@
-import {GlobalLocale, I18nOption} from '@ts/core/type'
+import {GlobalLocale, I18nOption} from '@core/type'
 <% importTpl %>
 
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'

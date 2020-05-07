@@ -1,6 +1,6 @@
-import {UserInfo} from '@ts/core/type'
-import lang from '@ts/core/lang'
-import comConfig, {ComConfig} from '@ts/custom/config'
+import {UserInfo} from '@core/type'
+import lang from '@core/lang'
+import comConfig, {ComConfig} from '@custom/config'
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`

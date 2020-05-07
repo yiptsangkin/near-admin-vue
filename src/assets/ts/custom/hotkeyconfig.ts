@@ -1,4 +1,4 @@
-import {HotKeyConfig} from '@ts/core/type'
+import {HotKeyConfig} from '@core/type'
 
 const hotkeyconfig: HotKeyConfig = {
     'ctrl+s': {

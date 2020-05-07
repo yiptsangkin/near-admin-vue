@@ -1,28 +1,42 @@
 <template>
     <div class="n-login-form">
-        <a-tabs :default-active-key="defaultKey" class="n-login-tabs">
-            <a-tab-pane :tab="item.name" v-for="item in tabPaneList" :key="item.key">
-            </a-tab-pane>
-        </a-tabs>
+        <div class="n-login-tabs-wrp">
+            <a-tabs :default-active-key="defaultKey" class="n-login-tabs">
+                <a-tab-pane :tab="item.name" v-for="item in tabPaneList" :key="item.key">
+                    <component :is="item.component"></component>
+                </a-tab-pane>
+            </a-tabs>
+            <login-bottom></login-bottom>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
     import Vue from 'vue'
+    const LoginByAccount = () => import('./LoginByAccount.vue')
+    const LoginByPhone = () => import('./LoginByPhone.vue')
+    const LoginBottom = () => import('./LoginBottom.vue')
 
     export default Vue.extend({
         name: 'LoginForm',
+        components: {
+            LoginByAccount,
+            LoginByPhone,
+            LoginBottom
+        },
         data () {
             return {
                 defaultKey: 1,
                 tabPaneList: [
                     {
                         key: 1,
-                        name: '账户密码登录'
+                        name: '账户密码登录',
+                        component: LoginByAccount
                     },
                     {
                         key: 2,
-                        name: '手机号登录'
+                        name: '手机号登录',
+                        component: LoginByPhone
                     }
                 ]
             }

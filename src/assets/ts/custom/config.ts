@@ -1,5 +1,5 @@
 import apiConfig from 'apiConfig'
-import {ComConfig} from '@ts/core/type'
+import {ComConfig} from '@core/type'
 
 const sysInfo = {
     name: 'Near-Admin',
