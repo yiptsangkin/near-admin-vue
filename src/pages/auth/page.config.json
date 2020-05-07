@@ -1,5 +1,5 @@
 {
-  "title": "near-admin",
+  "title": "Near-Admin",
   "externals": {
     "polyfill": {
       "type": "js",
