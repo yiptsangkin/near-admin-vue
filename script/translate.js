@@ -8,46 +8,36 @@ const ora = require('ora')
 
 const ableLang = getAllCode()
 const getTranslate = async function (opt) {
-    if (Array.isArray(opt.obj)) {
-        for (let i = 0; i < opt.obj.length; i++) {
-            const result = await getTranslate({
-                tld: opt.tld || 'cn',
-                from: opt.from || 'auto',
-                to: opt.to || 'zh-cn',
-                obj: opt.obj[i]
-            })
-            if (typeof result === 'string') {
-                opt.obj[i] = result
-            }
-        }
-        return opt.obj
-    } else if (typeof opt.obj === 'object') {
+    let strList = []
+    if (typeof opt.obj === 'object') {
         for (let key in opt.obj) {
             if (key !== 'locale') {
                 const result = await getTranslate({
-                    tld: opt.tld || 'cn',
-                    from: opt.from || 'auto',
-                    to: opt.to || 'zh-cn',
                     obj: opt.obj[key]
                 })
                 if (typeof result === 'string') {
-                    opt.obj[key] = result
+                    strList.push(result)
+                } else if (Array.isArray(result)) {
+                    strList = strList.concat(result)
                 }
             }
         }
-        return opt.obj
-    } else {
-        const result = await translate([opt.obj], {
-            tld: opt.tld || 'cn',
-            from: opt.from || 'auto',
-            to: opt.to || 'zh-cn'
-        })
-        if (Array.isArray(result.data)) {
-            return parseMultiple(result.data[0])
-        } else {
-            return result.data
+    } else if (Array.isArray(opt.obj)) {
+        for (let i = 0; i < opt.obj.length; i++) {
+            const result = await getTranslate({
+                obj: opt.obj[i]
+            })
+            if (typeof result === 'string') {
+                strList.push(result)
+            } else if (Array.isArray(result)) {
+                strList = strList.concat(result)
+            }
         }
+        return strList
+    } else {
+        return opt.obj
     }
+    return strList
 }
 
 const withBaseFile = function (str) {
@@ -107,24 +97,44 @@ try {
         const spinner = ora()
         for (let i = 0; i < response.targetLang.length; i++) {
             let item = response.targetLang[i]
-            let index = i
             // tips loading
             spinner.text = `translating ${item}...`
             spinner.start()
             let localeCode = localeConfig[item].locale
             let targetFile = JSON.parse(JSON.stringify(baseFile))
-            let result = await getTranslate({
-                obj: targetFile,
-                from: baseFile.locale,
-                to: localeCode
+            const srcResult = await getTranslate({
+                obj: targetFile
             })
-            result.locale = localeCode
-            let resultText = JSON.stringify(result, null, 4)
-            const keyList = resultText.match(/\".*?\":/g)
-            keyList.forEach(function (item) {
-                resultText = resultText.replace(item, item.replace(/\"/g, ''))
+            // translate all string
+            const finalResult = await translate(srcResult, {
+                tld: 'cn',
+                from: baseFile.locale || 'auto',
+                to: localeCode || 'zh-cn'
             })
-            resultText = resultText.replace(/\"/g, '\'')
+            let translatedList = []
+            finalResult.data.forEach(function (item) {
+                translatedList = translatedList.concat(parseMultiple(item))
+            })
+            targetFile.locale = localeCode
+            let resultText = JSON.stringify(targetFile,null, 4)
+            const keyList = resultText.match(/".*?":/g)
+            const keyFirstList = Object.keys(targetFile)
+            keyList.forEach(function (citem) {
+                const emptyItem = citem.replace(/[":]/g, '')
+                if (
+                    (!/-/.test(citem) && keyFirstList.indexOf(emptyItem) === -1 && citem.toLowerCase() !== citem)
+                    ||
+                    // object's key and without character '-'
+                    (!/-/.test(citem) && keyFirstList.indexOf(emptyItem) !== -1)
+                ) {
+                    resultText = resultText.replace(citem, citem.replace(/"/g, ''))
+                }
+            })
+            resultText = resultText.replace(/"/g, '\'')
+            // replace translate info
+            srcResult.forEach(function (citem, cindex) {
+                resultText = resultText.replace(citem, translatedList[cindex])
+            })
             // save locale file
             let finalText = `export default ${resultText}\n`
             try {

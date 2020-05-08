@@ -3,15 +3,14 @@
         <a-form-model :model="formModel">
             <a-form-model-item>
                 <a-input v-model="formModel.account.value" :placeholder="$t(formModel.account.placeholder)">
-                    <a-icon slot="prefix" :type="formModel.account.prefixIconType" style=""/>
+                    <a-icon slot="prefix" :type="formModel.account.prefixIconType" class="primary-color"/>
                 </a-input>
             </a-form-model-item>
             <a-form-model-item>
                 <a-input v-model="formModel.password.value" :placeholder="$t(formModel.password.placeholder)" :type="formModel.password.inputType">
-                    <a-icon slot="prefix" :type="formModel.password.prefixIconType" style=""/>
+                    <a-icon slot="prefix" :type="formModel.password.prefixIconType" class="primary-color"/>
                 </a-input>
             </a-form-model-item>
-
         </a-form-model>
     </div>
 </template>

@@ -1,10 +1,11 @@
 import apiConfig from 'apiConfig'
 import {ComConfig} from '@core/type'
+import dict from '@custom/dict';
 
 const sysInfo = {
     name: 'Near-Admin',
     logo: '/static/images/logo/logo.svg',
-    description: '一款基于Vue和Ant Design的好用中后台前端开发框架',
+    description: dict.localeObj.sysInfo.sysIntro,
     appId: apiConfig.appId,
     appSecret: apiConfig.appSecret,
     apiHost: apiConfig.apiHost,

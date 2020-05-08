@@ -2,7 +2,7 @@
     <div class="n-login-form">
         <div class="n-login-tabs-wrp">
             <a-tabs :default-active-key="defaultKey" class="n-login-tabs">
-                <a-tab-pane :tab="item.name" v-for="item in tabPaneList" :key="item.key">
+                <a-tab-pane :tab="$t(item.name)" v-for="item in tabPaneList" :key="item.key">
                     <component :is="item.component"></component>
                 </a-tab-pane>
             </a-tabs>
@@ -16,6 +16,7 @@
     const LoginByAccount = () => import('./LoginByAccount.vue')
     const LoginByPhone = () => import('./LoginByPhone.vue')
     const LoginBottom = () => import('./LoginBottom.vue')
+    import dict from '@custom/dict'
 
     export default Vue.extend({
         name: 'LoginForm',
@@ -30,12 +31,12 @@
                 tabPaneList: [
                     {
                         key: 1,
-                        name: '账户密码登录',
+                        name: dict.localeObj.loginForm.byAccountBtn,
                         component: LoginByAccount
                     },
                     {
                         key: 2,
-                        name: '手机号登录',
+                        name: dict.localeObj.loginForm.byPhoneBtn,
                         component: LoginByPhone
                     }
                 ]

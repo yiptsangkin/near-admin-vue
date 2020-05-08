@@ -1,6 +1,6 @@
 <template>
     <div class="n-login-bottom">
-        <div class="n-login-option">
+        <div class="n-login-option clear">
             <a-checkbox-group v-model="formModel.autoLogin.pickedLists">
                 <a-checkbox :value="formModel.autoLogin.value" name="autologin">
                     {{ $t(formModel.autoLogin.placeholder) }}

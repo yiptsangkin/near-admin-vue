@@ -1,11 +1,16 @@
 export default {
     localeObj: {
+        sysInfo: {
+          sysIntro: 'sysInfo.sysIntro'
+        },
         loginForm: {
-            accountPlaceholder: 'LoginForm.accountPlaceholder',
-            passwordPlaceholder: 'LoginForm.passwordPlaceholder',
-            autoLoginPlaceholder: 'LoginForm.autoLogin',
-            forgetBtn: 'LoginForm.forgetBtn',
-            loginBtn: 'LoginForm.loginBtn'
+            byAccountBtn: 'loginForm.byAccountBtn',
+            byPhoneBtn: 'loginForm.byPhoneBtn',
+            accountPlaceholder: 'loginForm.accountPlaceholder',
+            passwordPlaceholder: 'loginForm.passwordPlaceholder',
+            autoLoginPlaceholder: 'loginForm.autoLogin',
+            forgetBtn: 'loginForm.forgetBtn',
+            loginBtn: 'loginForm.loginBtn'
         }
     }
 }

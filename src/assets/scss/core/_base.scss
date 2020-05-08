@@ -20,3 +20,14 @@ html, body, button, input, select, textarea{
 [v-cloak] {
   display: none;
 }
+
+.clear{
+  zoom:1;
+  &:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+  }
+}
