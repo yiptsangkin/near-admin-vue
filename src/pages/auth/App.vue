@@ -17,10 +17,10 @@
     })
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
     @import '~@font/iconfont/iconfont.css';
 </style>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import '~@scss/custom/index.scss';
 </style>

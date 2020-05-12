@@ -1,18 +1,25 @@
 @import "~@scss/core/params";
 
 .n-login-form{
-  width: 368px;
+  min-width: 368px;
+  display: inline-block;
   background-color: $grey-f;
-  margin: 0 auto;
+   margin-top: 24px;
   .n-login-tabs-wrp{
     text-align: center;
     .n-login-tabs{
       ::v-deep .ant-tabs-bar{
         display: inline-block;
       }
+      ::v-deep .ant-tabs-content{
+        text-align: left;
+      }
     }
   }
   .n-login-option{
     text-align: left;
+  }
+  ::v-deep .ant-tabs-content{
+    padding-top: 8px;
   }
 }

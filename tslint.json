@@ -31,6 +31,7 @@
         "multiline": "never",
         "singleline": "never"
       }
-    ]
+    ],
+    "object-literal-key-quotes": [true, "as-needed"]
   }
 }

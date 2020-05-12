@@ -10,7 +10,9 @@ export default {
             passwordPlaceholder: 'loginForm.passwordPlaceholder',
             autoLoginPlaceholder: 'loginForm.autoLogin',
             forgetBtn: 'loginForm.forgetBtn',
-            loginBtn: 'loginForm.loginBtn'
+            loginBtn: 'loginForm.loginBtn',
+            accountEmptyErr: 'loginForm.byAccountTip.emptyErr',
+            passwordEmptyErr: 'loginForm.byPasswordTip.emptyErr'
         }
     }
 }

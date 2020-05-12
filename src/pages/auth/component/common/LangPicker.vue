@@ -1,0 +1,74 @@
+<template>
+    <div class="n-global-locale">
+        <a-dropdown :trigger="['click']">
+            <a-icon type="global" class="n-locale-icon"/>
+            <a-menu slot="overlay" @click="pickLocale" class="n-lang-menu" v-model="currentSelectedKeys">
+                <a-menu-item v-for="(item, index) in ableLocaleList" :key="item.locale">
+                    <a target="_blank" rel="noopener noreferrer">{{ item.flag }} {{ ableLocaleMap[item.locale].localeMap[item.locale] }}</a>
+                </a-menu-item>
+            </a-menu>
+        </a-dropdown>
+    </div>
+</template>
+
+<script lang="ts">
+    import Vue from 'vue';
+    import {mapGetters, mapActions} from 'vuex'
+    import CountryFlag from '@core/countryflag'
+
+    interface PickerEvent {
+        key: string
+    }
+
+    export default Vue.extend({
+        name: 'LangPicker',
+        data () {
+            return {
+                currentSelectedKeys: []
+            }
+        },
+        computed: {
+            ...mapGetters([
+               'locale'
+            ]),
+            ableLocaleList () {
+                const self = this
+                const newAbleList: object[] = []
+                const localeObj = self.$i18n.messages
+                Object.keys(localeObj).forEach((key) => {
+                    newAbleList.push({
+                        // @ts-ignore
+                        flag: `${new CountryFlag().getFlayByChar(localeObj[key].country)}`,
+                        locale: key
+                    })
+                })
+                return newAbleList
+            },
+            ableLocaleMap () {
+                const self = this
+                return self.$i18n.messages
+            }
+        },
+        methods: {
+            pickLocale (e: PickerEvent) {
+                const self = this
+                self.$i18n.locale = e.key
+                // @ts-ignore
+                self.currentSelectedKeys = [e.key]
+                // cache in localStorge
+                localStorage.setItem('nearAdminLang', e.key)
+                // update vuex state
+                self.$store.dispatch('changeLocale', e.key)
+            }
+        },
+        created () {
+            const self = this
+            // @ts-ignore
+            self.currentSelectedKeys = [self.locale]
+        }
+    })
+</script>
+
+<style lang="scss" scoped>
+    @import '~@scss/custom/auth/component/langpicker.scss';
+</style>

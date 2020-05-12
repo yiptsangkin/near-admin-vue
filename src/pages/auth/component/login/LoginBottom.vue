@@ -11,7 +11,7 @@
             </a>
         </div>
         <div class="n-login-submit">
-            <a-button type="primary" block size="large">{{ $t(formModel.loginBtn.text) }}</a-button>
+            <a-button type="primary" block size="large" @click="toLogin">{{ $t(formModel.loginBtn.text) }}</a-button>
         </div>
     </div>
 </template>
@@ -49,6 +49,12 @@
                 }
             }
             return data
+        },
+        methods: {
+            toLogin () {
+                const self = this
+                self.$emit('login')
+            }
         }
     });
 </script>

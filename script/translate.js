@@ -11,7 +11,7 @@ const getTranslate = async function (opt) {
     let strList = []
     if (typeof opt.obj === 'object') {
         for (let key in opt.obj) {
-            if (key !== 'locale') {
+            if (key !== 'locale' && key !== 'country') {
                 const result = await getTranslate({
                     obj: opt.obj[key]
                 })
@@ -116,17 +116,11 @@ try {
                 translatedList = translatedList.concat(parseMultiple(item))
             })
             targetFile.locale = localeCode
+            targetFile.country = item.split('_')[1]
             let resultText = JSON.stringify(targetFile,null, 4)
             const keyList = resultText.match(/".*?":/g)
-            const keyFirstList = Object.keys(targetFile)
             keyList.forEach(function (citem) {
-                const emptyItem = citem.replace(/[":]/g, '')
-                if (
-                    (!/-/.test(citem) && keyFirstList.indexOf(emptyItem) === -1 && citem.toLowerCase() !== citem)
-                    ||
-                    // object's key and without character '-'
-                    (!/-/.test(citem) && keyFirstList.indexOf(emptyItem) !== -1)
-                ) {
+                if (!/-/.test(citem)) {
                     resultText = resultText.replace(citem, citem.replace(/"/g, ''))
                 }
             })

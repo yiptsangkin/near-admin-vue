@@ -2,11 +2,11 @@
     <div class="n-login-form">
         <div class="n-login-tabs-wrp">
             <a-tabs :default-active-key="defaultKey" class="n-login-tabs">
-                <a-tab-pane :tab="$t(item.name)" v-for="item in tabPaneList" :key="item.key">
-                    <component :is="item.component"></component>
+                <a-tab-pane :tab="$t(item.name)" v-for="(item, index) in tabPaneList" :key="item.key">
+                    <component ref="form-detail" :is="item.component"></component>
                 </a-tab-pane>
             </a-tabs>
-            <login-bottom></login-bottom>
+            <login-bottom @login="toLogin"></login-bottom>
         </div>
     </div>
 </template>
@@ -40,6 +40,19 @@
                         component: LoginByPhone
                     }
                 ]
+            }
+        },
+        methods: {
+            toLogin () {
+                const self = this
+                const formDetail = self.$refs['form-detail']
+                if (Array.isArray(formDetail) && formDetail) {
+                    const formRef = 'formModel'
+                    // @ts-ignore
+                    formDetail[0].$refs[formRef].validate((valid: any) => {
+                        console.log(valid)
+                    })
+                }
             }
         }
     })

@@ -1,6 +1,7 @@
 import {UserInfo} from '@core/type'
 import lang from '@core/lang'
 import comConfig, {ComConfig} from '@custom/config'
+import {ActionContext} from 'vuex'
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
@@ -45,7 +46,21 @@ const getters: Getter = {
     }
 }
 
+const mutations = {
+    changeLocale: (mutationState: State, locale: string) => {
+        mutationState.locale = locale
+    }
+}
+
+const actions = {
+    changeLocale: (context: ActionContext<State, State>, locale: string) => {
+        context.commit('changeLocale', locale)
+    }
+}
+
 export default {
     state,
-    getters
+    getters,
+    mutations,
+    actions
 }

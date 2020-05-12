@@ -18,7 +18,8 @@ import {
     Checkbox,
     Button,
     Dropdown,
-    Menu
+    Menu,
+    Form
 } from 'ant-design-vue'
 
 // config
@@ -40,6 +41,7 @@ Vue.component(Button.name, Button)
 Vue.component(Dropdown.name, Dropdown)
 Vue.component(Menu.name, Menu)
 Vue.component(Menu.Item.name, Menu.Item)
+Vue.component(Form.name, Form)
 
 // vue-i18n
 Vue.use(VueI18n)
