@@ -2,28 +2,37 @@ export default {
     locale: 'fa',
     country: 'IR',
     sysInfo: {
-        sysIntro: 'یک چارچوب توسعه جلویی با کاربرد آسان و مبتنی بر Vue و Ant Design'
+        sysIntro: 'چارچوب توسعه جلویی مفید مبتنی بر Vue و Design Design'
     },
     loginForm: {
         byAccountBtn: 'ورود به سیستم رمز عبور حساب',
         byPhoneBtn: 'ورود به شماره تلفن',
-        accountPlaceholder: 'لطفاً وارد حساب شوید',
+        accountPlaceholder: 'لطفا نام کاربری را وارد کنید',
         passwordPlaceholder: 'لطفا رمز عبور را وارد کنید',
-        autoLogin: 'ورود به سیستم خودکار',
-        forgetBtn: 'رمز عبور را فراموش کرده اید',
-        loginBtn: 'ورود',
+        autoLogin: 'ورود خودکار',
+        forgetBtn: 'فراموشی رمز عبور',
+        loginBtn: 'وارد شدن',
         byAccountTip: {
             emptyErr: 'حساب نمی تواند خالی باشد'
         },
         byPasswordTip: {
             emptyErr: 'رمز عبور نمی تواند خالی باشد'
-        }
+        },
+        byValidTip: {
+            emptyErr: 'کد تأیید باید پر شود'
+        },
+        sendMsg: {
+            repeatErr: 'بارها و بارها ارسال نشود'
+        },
+        phonePlaceholder: 'لطفا شماره تلفن را وارد کنید',
+        validPlaceholder: 'کپچا',
+        validBtn: 'کد تأیید را دریافت کنید'
     },
     localeMap: {
         ar: 'عربی',
         bg: 'بلغاری',
         ca: 'کاتالان',
-        cs: 'چک',
+        cs: 'کشور چک',
         da: 'دانمارکی',
         de: 'آلمانی',
         el: 'یونانی',
@@ -58,7 +67,7 @@ export default {
         'pt-br': 'پرتغالی برزیل',
         pt: 'پرتغالی اروپا',
         ro: 'رومانیایی',
-        ru: 'روسی',
+        ru: 'زبان روسی',
         sk: 'اسلواکی',
         sl: 'اسلوونیایی',
         sr: 'صربی',

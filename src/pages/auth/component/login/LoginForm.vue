@@ -1,9 +1,9 @@
 <template>
     <div class="n-login-form">
         <div class="n-login-tabs-wrp">
-            <a-tabs :default-active-key="defaultKey" class="n-login-tabs">
-                <a-tab-pane :tab="$t(item.name)" v-for="(item, index) in tabPaneList" :key="item.key">
-                    <component ref="form-detail" :is="item.component"></component>
+            <a-tabs v-model="activatedKey" :default-active-key="defaultKey" class="n-login-tabs">
+                <a-tab-pane :title="$t(item.name)" :tab="$t(item.name)" v-for="(item, index) in tabPaneList" :key="item.key">
+                    <component :ref="`form-detail-${index+1}`" :is="item.component"></component>
                 </a-tab-pane>
             </a-tabs>
             <login-bottom @login="toLogin"></login-bottom>
@@ -28,6 +28,7 @@
         data () {
             return {
                 defaultKey: 1,
+                activatedKey: 1,
                 tabPaneList: [
                     {
                         key: 1,
@@ -45,11 +46,12 @@
         methods: {
             toLogin () {
                 const self = this
-                const formDetail = self.$refs['form-detail']
+                const formDetail = self.$refs[`form-detail-${self.activatedKey}`]
                 if (Array.isArray(formDetail) && formDetail) {
                     const formRef = 'formModel'
                     // @ts-ignore
-                    formDetail[0].$refs[formRef].validate((valid: any) => {
+                    const formObj = formDetail[0].$refs[formRef]
+                    formObj.validate((valid: any) => {
                         console.log(valid)
                     })
                 }

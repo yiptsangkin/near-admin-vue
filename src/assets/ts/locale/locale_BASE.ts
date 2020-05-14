@@ -17,7 +17,16 @@ module.exports = {
         },
         byPasswordTip: {
             emptyErr: '密码不能为空'
-        }
+        },
+        byValidTip: {
+            emptyErr: '验证码不能为空'
+        },
+        sendMsg: {
+            repeatErr: '请勿重复发送'
+        },
+        phonePlaceholder: '请输入手机号',
+        validPlaceholder: '验证码',
+        validBtn: '获取验证码'
     },
     localeMap: {
         ar: '阿拉伯文',

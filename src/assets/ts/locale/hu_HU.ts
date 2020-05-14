@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Fiók jelszó bejelentkezés',
         byPhoneBtn: 'Telefonszám bejelentkezés',
-        accountPlaceholder: 'Kérjük, adja meg a fiókot',
+        accountPlaceholder: 'Kérjük, írja be a felhasználónevet',
         passwordPlaceholder: 'Kérjük, írja be a jelszót',
-        autoLogin: 'Automatikus bejelentkezés',
-        forgetBtn: 'Elfelejtett jelszó',
+        autoLogin: 'automatikus bejelentkezés',
+        forgetBtn: 'elfelejtett jelszo',
         loginBtn: 'Belépés',
         byAccountTip: {
             emptyErr: 'A fiók nem lehet üres'
         },
         byPasswordTip: {
-            emptyErr: 'A jelszó nem lehet üres'
-        }
+            emptyErr: 'a jelszó nem lehet üres'
+        },
+        byValidTip: {
+            emptyErr: 'az ellenőrző kódot ki kell tölteni'
+        },
+        sendMsg: {
+            repeatErr: 'Ne küldjön többször'
+        },
+        phonePlaceholder: 'Kérjük, írja be a telefonszámot',
+        validPlaceholder: 'Captcha',
+        validBtn: 'kérjen ellenőrző kódot'
     },
     localeMap: {
         ar: 'arab',
@@ -29,17 +38,17 @@ export default {
         el: 'görög',
         'en-gb': 'angol',
         en: 'angol',
-        es: 'spanyol nyelv',
+        es: 'spanyol',
         et: 'észt',
         fa: 'perzsa',
         fi: 'finn',
-        fr: 'francia',
-        he: 'héber nyelv',
+        fr: 'Francia',
+        he: 'héber',
         hi: 'hindi',
         hr: 'horvát',
-        hu: 'magyar',
+        hu: 'Magyar',
         hy: 'örmény',
-        id: 'Indonéz nyelven',
+        id: 'indonéz',
         is: 'izlandi',
         it: 'olasz ',
         ja: 'japán',
@@ -50,25 +59,25 @@ export default {
         mk: 'macedóniai',
         'mn-mn': 'mongol',
         'ms-my': 'maláj',
-        nb: 'norvég nyelven',
+        nb: 'norvég',
         'ne-np': 'nepáli',
         'nl-be': 'flamand',
         nl: 'holland',
-        pl: 'lengyel',
-        'pt-br': 'Brazil portugál',
+        pl: 'fényesít',
+        'pt-br': 'Brazil-Portugál',
         pt: 'Európai portugál',
         ro: 'román',
-        ru: 'orosz',
-        sk: 'szlovák nyelv',
+        ru: 'orosz nyelv',
+        sk: 'szlovák',
         sl: 'szlovén',
-        sr: 'szerb nyelv',
+        sr: 'szerb',
         sv: 'svéd',
-        ta: 'tamil nyelven',
+        ta: 'tamil',
         th: 'thai',
-        tr: 'török ​​nyelv',
+        tr: 'török',
         uk: 'ukrán',
-        vi: 'vietnami nyelven',
+        vi: 'vietnami',
         'zh-cn': 'Egyszerűsített kínai',
-        'zh-tw': 'Hagyományos kínai'
+        'zh-tw': 'tradicionális kínai'
     }
 }

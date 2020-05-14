@@ -2,45 +2,54 @@ export default {
     locale: 'sv',
     country: 'SE',
     sysInfo: {
-        sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
+        sysIntro: 'En enkel att använda front-end-utvecklingsram baserad på Vue and Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Inloggning för konto lösenord',
         byPhoneBtn: 'Telefonnummer inloggning',
-        accountPlaceholder: 'Vänligen ange konto',
+        accountPlaceholder: 'Ange användarnamn',
         passwordPlaceholder: 'Ange lösenordet',
-        autoLogin: 'Auto-inloggning',
-        forgetBtn: 'Glömt lösenord',
-        loginBtn: 'Logga in',
+        autoLogin: 'automatisk inloggning',
+        forgetBtn: 'Glöm lösenord',
+        loginBtn: 'logga in',
         byAccountTip: {
             emptyErr: 'Kontot kan inte vara tomt'
         },
         byPasswordTip: {
-            emptyErr: 'Lösenordet kan inte vara tomt'
-        }
+            emptyErr: 'lösenordet kan inte vara tomt'
+        },
+        byValidTip: {
+            emptyErr: 'verifieringskoden måste fyllas i'
+        },
+        sendMsg: {
+            repeatErr: 'Skicka inte upprepade gånger'
+        },
+        phonePlaceholder: 'Ange telefonnummer',
+        validPlaceholder: 'Captcha',
+        validBtn: 'få verifieringskod'
     },
     localeMap: {
         ar: 'Arabiska',
         bg: 'bulgariska',
-        ca: 'Katalanska',
-        cs: 'Czech',
+        ca: 'katalansk',
+        cs: 'tjeck',
         da: 'danska',
         de: 'tysk',
         el: 'grekisk',
-        'en-gb': 'engelska',
-        en: 'engelska',
+        'en-gb': 'engelsk',
+        en: 'engelsk',
         es: 'spanska',
         et: 'estniska',
         fa: 'Persiska',
         fi: 'finska',
         fr: 'franska',
-        he: 'hebreiska',
+        he: 'Hebrew',
         hi: 'Hindi',
-        hr: 'kroatiska',
+        hr: 'Kroatisk',
         hu: 'ungerska',
         hy: 'armeniska',
-        id: 'indonesiska språket',
-        is: 'isländska',
+        id: 'indonesiska',
+        is: 'isländsk',
         it: 'italiensk ',
         ja: 'japansk',
         kn: 'kannada',
@@ -50,25 +59,25 @@ export default {
         mk: 'makedonska',
         'mn-mn': 'mongoliska',
         'ms-my': 'Malay',
-        nb: 'norska',
+        nb: 'Norwegian',
         'ne-np': 'Nepali',
         'nl-be': 'flamländska',
         nl: 'Dutch',
-        pl: 'polska',
+        pl: 'putsa',
         'pt-br': 'Brasiliansk portugisisk',
         pt: 'Europeiska portugisiska',
         ro: 'rumänska',
-        ru: 'ryska',
-        sk: 'slovakiska',
+        ru: 'ryska språket',
+        sk: 'Slovak',
         sl: 'slovenska',
-        sr: 'serbiska språket',
-        sv: 'Svenska',
-        ta: 'Tamil språk',
+        sr: 'Serbiska',
+        sv: 'svenska',
+        ta: 'Tamil',
         th: 'Thai',
-        tr: 'turkiska språket',
+        tr: 'Turkish',
         uk: 'ukrainska',
-        vi: 'vietnamesiska språket',
-        'zh-cn': 'Förenklad kinesisk',
-        'zh-tw': 'Traditionell kines'
+        vi: 'vietnames',
+        'zh-cn': 'Förenklad kinesiska',
+        'zh-tw': 'traditionell kinesiska'
     }
 }

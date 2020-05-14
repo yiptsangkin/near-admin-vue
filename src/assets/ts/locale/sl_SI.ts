@@ -7,29 +7,38 @@ export default {
     loginForm: {
         byAccountBtn: 'Prijava gesla za račun',
         byPhoneBtn: 'Prijava telefonske številke',
-        accountPlaceholder: 'Vnesite račun',
+        accountPlaceholder: 'Vnesite uporabniško ime',
         passwordPlaceholder: 'Vnesite geslo',
-        autoLogin: 'Samodejna prijava',
-        forgetBtn: 'Pozabljeno geslo',
-        loginBtn: 'Prijava',
+        autoLogin: 'samodejna prijava',
+        forgetBtn: 'pozabite geslo',
+        loginBtn: 'Vpiši se',
         byAccountTip: {
             emptyErr: 'Račun ne more biti prazen'
         },
         byPasswordTip: {
-            emptyErr: 'Geslo ne more biti prazno'
-        }
+            emptyErr: 'Polje za geslo ne sme biti prazno'
+        },
+        byValidTip: {
+            emptyErr: 'verifikacijsko kodo je treba izpolniti'
+        },
+        sendMsg: {
+            repeatErr: 'Ne pošiljajte večkrat'
+        },
+        phonePlaceholder: 'Vnesite telefonsko številko',
+        validPlaceholder: 'Captcha',
+        validBtn: 'pridobite verifikacijsko kodo'
     },
     localeMap: {
-        ar: 'Arabščina',
+        ar: 'arabsko',
         bg: 'Bolgarščina',
         ca: 'Katalonski',
         cs: 'Češki',
         da: 'Danščina',
         de: 'Nemško',
         el: 'Grško',
-        'en-gb': 'Angleščina',
-        en: 'Angleščina',
-        es: 'Španščina',
+        'en-gb': 'angleščina',
+        en: 'angleščina',
+        es: 'španski',
         et: 'Estonščina',
         fa: 'Perzijski',
         fi: 'Finščina',
@@ -58,9 +67,9 @@ export default {
         'pt-br': 'Brazilska portugalščina',
         pt: 'Evropski portugalski',
         ro: 'Romunščina',
-        ru: 'Ruski',
+        ru: 'ruski jezik',
         sk: 'Slovaška',
-        sl: 'Slovensko',
+        sl: 'Slovenščina',
         sr: 'Srbsko',
         sv: 'Švedski',
         ta: 'Tamilščina',
@@ -68,7 +77,7 @@ export default {
         tr: 'Turško',
         uk: 'Ukrajinščina',
         vi: 'Vietnamščina',
-        'zh-cn': 'Poenostavljeni Kitajci',
-        'zh-tw': 'Tradicionalni Kitajci'
+        'zh-cn': 'Poenostavljena kitajščina',
+        'zh-tw': 'tradicionalno kitajsko'
     }
 }

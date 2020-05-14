@@ -17,7 +17,16 @@ export default {
         },
         byPasswordTip: {
             emptyErr: 'password can not be blank'
-        }
+        },
+        byValidTip: {
+            emptyErr: 'verification code must be filled'
+        },
+        sendMsg: {
+            repeatErr: 'Do not send repeatedly'
+        },
+        phonePlaceholder: 'Please enter phone number',
+        validPlaceholder: 'Captcha',
+        validBtn: 'get verification code'
     },
     localeMap: {
         ar: 'Arabic',

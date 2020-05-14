@@ -8,6 +8,7 @@ import lang from '@core/lang'
 
 // antd component
 import {
+    Input,
     Button,
     ConfigProvider,
     DatePicker
@@ -17,6 +18,7 @@ import {
 Vue.config.productionTip = false
 
 // import antd
+Vue.component(Input.name, Input)
 Vue.component(Button.name, Button)
 Vue.component(ConfigProvider.name, ConfigProvider)
 Vue.component(DatePicker.name, DatePicker)

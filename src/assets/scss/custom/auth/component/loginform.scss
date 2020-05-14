@@ -1,15 +1,17 @@
 @import "~@scss/core/params";
+@import "~@scss/core/mixins";
 
 .n-login-form{
-  min-width: 368px;
+  width: 368px;
   display: inline-block;
   background-color: $grey-f;
-   margin-top: 24px;
+  margin-top: 24px;
   .n-login-tabs-wrp{
     text-align: center;
     .n-login-tabs{
       ::v-deep .ant-tabs-bar{
         display: inline-block;
+        max-width: 368px;
       }
       ::v-deep .ant-tabs-content{
         text-align: left;
@@ -21,5 +23,14 @@
   }
   ::v-deep .ant-tabs-content{
     padding-top: 8px;
+  }
+  ::v-deep .n-valid-btn{
+    button {
+      width: 100%;
+      @include ellipse(1);
+    }
+  }
+  ::v-deep .ant-tabs-content{
+    width: 100%;
   }
 }

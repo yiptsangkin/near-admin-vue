@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Innskráning aðgangsorðs reiknings',
         byPhoneBtn: 'Innskráning símanúmera',
-        accountPlaceholder: 'Vinsamlegast sláðu inn reikning',
+        accountPlaceholder: 'Vinsamlegast sláðu inn notandanafn',
         passwordPlaceholder: 'Vinsamlegast sláðu inn lykilorðið',
-        autoLogin: 'Sjálfvirk innskráning',
-        forgetBtn: 'Gleymt lykilorð',
-        loginBtn: 'Innskráning',
+        autoLogin: 'sjálfvirk innskráning',
+        forgetBtn: 'gleymdu lykilorðinu',
+        loginBtn: 'skrá inn',
         byAccountTip: {
             emptyErr: 'Reikningur getur ekki verið tómur'
         },
         byPasswordTip: {
-            emptyErr: 'Lykilorð getur ekki verið tómt'
-        }
+            emptyErr: 'lykilorð getur ekki verið tómt'
+        },
+        byValidTip: {
+            emptyErr: 'þarf að fylla staðfestingarkóða'
+        },
+        sendMsg: {
+            repeatErr: 'Ekki senda hvað eftir annað'
+        },
+        phonePlaceholder: 'Vinsamlegast sláðu inn símanúmer',
+        validPlaceholder: 'Captcha',
+        validBtn: 'fá staðfestingarkóða'
     },
     localeMap: {
         ar: 'Arabíska',
@@ -25,19 +34,19 @@ export default {
         ca: 'Katalónska',
         cs: 'Tékknesk',
         da: 'Dönsku',
-        de: 'Þýsku',
+        de: 'þýska, Þjóðverji, þýskur',
         el: 'Gríska',
         'en-gb': 'Enska',
         en: 'Enska',
-        es: 'Spænsku',
-        et: 'Eistnesku',
+        es: 'spænska, spænskt',
+        et: 'eistneska, eisti, eistneskur',
         fa: 'Persneska',
         fi: 'Finnskt',
         fr: 'Frönsku',
         he: 'Hebreska',
         hi: 'Hindí',
         hr: 'Króatíska',
-        hu: 'Ungverska',
+        hu: 'ungverska, Ungverji, ungverskt',
         hy: 'Armenska',
         id: 'Indónesískt',
         is: 'Íslensku',
@@ -58,7 +67,7 @@ export default {
         'pt-br': 'Brasilískar portúgölsku',
         pt: 'Evrópskir portúgölskir',
         ro: 'Rúmenska',
-        ru: 'Rússnesku',
+        ru: 'rússneska',
         sk: 'Slóvakíu',
         sl: 'Slóvenía',
         sr: 'Serbneska',
@@ -69,6 +78,6 @@ export default {
         uk: 'Úkraínska',
         vi: 'Víetnamska',
         'zh-cn': 'Einfaldað kínverska',
-        'zh-tw': 'Hefðbundin kínverska'
+        'zh-tw': 'hefðbundinn kínverskur'
     }
 }

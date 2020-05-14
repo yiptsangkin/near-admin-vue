@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Konto parooli sisselogimine',
         byPhoneBtn: 'Telefoninumbri sisselogimine',
-        accountPlaceholder: 'Palun sisesta konto',
+        accountPlaceholder: 'Sisestage kasutajanimi',
         passwordPlaceholder: 'Sisestage parool',
-        autoLogin: 'Automaatne sisselogimine',
-        forgetBtn: 'Unustasin parooli',
+        autoLogin: 'automaatne sisselogimine',
+        forgetBtn: 'unusta parool',
         loginBtn: 'Logi sisse',
         byAccountTip: {
             emptyErr: 'Konto ei saa olla tühi'
         },
         byPasswordTip: {
-            emptyErr: 'Parool ei tohi olla tühi'
-        }
+            emptyErr: 'parool ei tohi olla tühi'
+        },
+        byValidTip: {
+            emptyErr: 'kontrollkood peab olema täidetud'
+        },
+        sendMsg: {
+            repeatErr: 'Ärge saatke korduvalt'
+        },
+        phonePlaceholder: 'Sisestage telefoninumber',
+        validPlaceholder: 'Captcha',
+        validBtn: 'hankige kinnituskood'
     },
     localeMap: {
         ar: 'Araabia keeles',
@@ -27,8 +36,8 @@ export default {
         da: 'Taanlane',
         de: 'Saksa keeles',
         el: 'Kreeka keel',
-        'en-gb': 'Inglise keeles',
-        en: 'Inglise keeles',
+        'en-gb': 'Inglise',
+        en: 'Inglise',
         es: 'Hispaania keeles',
         et: 'Eestlane',
         fa: 'Pärsia',
@@ -58,7 +67,7 @@ export default {
         'pt-br': 'Brasiilia portugali keel',
         pt: 'Euroopa portugali keel',
         ro: 'Rumeenlane',
-        ru: 'Vene keeles',
+        ru: 'Vene keel',
         sk: 'Slovaki keeles',
         sl: 'Sloveen',
         sr: 'Serbia keel',
@@ -69,6 +78,6 @@ export default {
         uk: 'Ukrainlane',
         vi: 'Vietnami keel',
         'zh-cn': 'Lihtsustatud hiina keel',
-        'zh-tw': 'Traditsiooniline hiina keel'
+        'zh-tw': 'traditsiooniline hiina keel'
     }
 }

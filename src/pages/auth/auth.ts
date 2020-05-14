@@ -19,13 +19,14 @@ import {
     Button,
     Dropdown,
     Menu,
-    Form
+    Form,
+    message
 } from 'ant-design-vue'
 
 // config
 Vue.config.productionTip = false
 
-// import antd
+// import antd component
 Vue.component(Row.name, Row)
 Vue.component(Col.name, Col)
 Vue.component(ConfigProvider.name, ConfigProvider)
@@ -33,15 +34,17 @@ Vue.component(Tabs.name, Tabs)
 Vue.component(Tabs.TabPane.name, Tabs.TabPane)
 Vue.component(FormModel.name, FormModel)
 Vue.component(FormModel.Item.name, FormModel.Item)
-Vue.component(Input.name, Input)
 Vue.component(Icon.name, Icon)
 Vue.component(Checkbox.name, Checkbox)
 Vue.component(Checkbox.Group.name, Checkbox.Group)
+Vue.component(Input.name, Input)
 Vue.component(Button.name, Button)
 Vue.component(Dropdown.name, Dropdown)
 Vue.component(Menu.name, Menu)
 Vue.component(Menu.Item.name, Menu.Item)
 Vue.component(Form.name, Form)
+// import antd directive
+Vue.prototype.$message = message
 
 // vue-i18n
 Vue.use(VueI18n)

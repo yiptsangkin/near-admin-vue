@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Account wachtwoord login',
         byPhoneBtn: 'Telefoonnummer login',
-        accountPlaceholder: 'Voer een account in',
-        passwordPlaceholder: 'Voer het wachtwoord in',
-        autoLogin: 'Automatisch inloggen',
-        forgetBtn: 'Wachtwoord vergeten',
-        loginBtn: 'Inloggen',
+        accountPlaceholder: 'Voer gebruikersnaam in',
+        passwordPlaceholder: 'Vul alstublieft het wachtwoord in',
+        autoLogin: 'Automatische login',
+        forgetBtn: 'wachtwoord vergeten',
+        loginBtn: 'Log in',
         byAccountTip: {
             emptyErr: 'Account mag niet leeg zijn'
         },
         byPasswordTip: {
-            emptyErr: 'Wachtwoord mag niet leeg zijn'
-        }
+            emptyErr: 'wachtwoord mag niet leeg zijn'
+        },
+        byValidTip: {
+            emptyErr: 'verificatiecode moet worden ingevuld'
+        },
+        sendMsg: {
+            repeatErr: 'Verzend niet herhaaldelijk'
+        },
+        phonePlaceholder: 'Voer een telefoonnummer in',
+        validPlaceholder: 'Captcha',
+        validBtn: 'krijg verificatiecode'
     },
     localeMap: {
         ar: 'Arabisch',
@@ -25,7 +34,7 @@ export default {
         ca: 'Catalaans',
         cs: 'Tsjechisch',
         da: 'Deens',
-        de: 'Duits',
+        de: 'Duitse',
         el: 'Grieks',
         'en-gb': 'Engels',
         en: 'Engels',
@@ -57,8 +66,8 @@ export default {
         pl: 'Pools',
         'pt-br': 'Braziliaans Portugees',
         pt: 'Europees Portugees',
-        ro: 'Roemeens',
-        ru: 'Russisch',
+        ro: 'Roemeense',
+        ru: 'Russische taal',
         sk: 'Slowaaks',
         sl: 'Sloveens',
         sr: 'Servisch',
@@ -69,6 +78,6 @@ export default {
         uk: 'Oekraïens',
         vi: 'Vietnamees',
         'zh-cn': 'Vereenvoudigd Chinees',
-        'zh-tw': 'Traditioneel Chinees'
+        'zh-tw': 'traditioneel Chinees'
     }
 }

@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'アカウントパスワードログイン',
         byPhoneBtn: '電話番号ログイン',
-        accountPlaceholder: 'アカウントを入力してください',
+        accountPlaceholder: 'ユーザー名を入力してください',
         passwordPlaceholder: 'パスワードを入力してください',
         autoLogin: '自動ログイン',
         forgetBtn: 'パスワードを忘れた',
-        loginBtn: 'ログイン',
+        loginBtn: 'ログインする',
         byAccountTip: {
             emptyErr: 'アカウントを空にすることはできません'
         },
         byPasswordTip: {
-            emptyErr: 'パスワードは空にできません'
-        }
+            emptyErr: 'パスワードは空白にできません'
+        },
+        byValidTip: {
+            emptyErr: '確認コードを入力する必要があります'
+        },
+        sendMsg: {
+            repeatErr: '繰り返し送信しないでください'
+        },
+        phonePlaceholder: '電話番号を入力してください',
+        validPlaceholder: 'キャプチャ',
+        validBtn: '確認コードを取得'
     },
     localeMap: {
         ar: 'アラビア語',
@@ -25,7 +34,7 @@ export default {
         ca: 'カタロニア語',
         cs: 'チェコ人',
         da: 'デンマーク語',
-        de: 'ドイツ語',
+        de: 'ドイツ人',
         el: 'ギリシャ人',
         'en-gb': '英語',
         en: '英語',
@@ -41,28 +50,28 @@ export default {
         hy: 'アルメニア人',
         id: 'インドネシア語',
         is: 'アイスランド語',
-        it: 'イタリア人 ',
-        ja: '日本人',
+        it: 'イタリアの ',
+        ja: '日本語',
         kn: 'カンナダ語',
-        ko: '韓国人',
+        ko: '韓国語',
         'ku-iq': '中央クルド語',
         lv: '中央クルド語',
-        mk: 'マケドニア語',
+        mk: 'マケドニアの',
         'mn-mn': 'モンゴル語',
         'ms-my': 'マレー語',
         nb: 'ノルウェー語',
         'ne-np': 'ネパール語',
         'nl-be': 'フラマン語',
-        nl: 'オランダ語',
-        pl: 'ポーランド語',
-        'pt-br': 'ブラジル系ポルトガル語',
+        nl: 'オランダの',
+        pl: '研磨',
+        'pt-br': 'ブラジルポルトガル語',
         pt: '欧州ポルトガル語',
         ro: 'ルーマニア語',
         ru: 'ロシア語',
         sk: 'スロバキア',
         sl: 'スロベニア語',
         sr: 'セルビア語',
-        sv: 'スウェーデン人',
+        sv: 'スウェーデンの',
         ta: 'タミル語',
         th: 'タイ人',
         tr: 'トルコ語',

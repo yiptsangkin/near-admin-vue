@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Логін пароля облікового запису',
         byPhoneBtn: 'Вхід в телефонний номер',
-        accountPlaceholder: 'Будь ласка, введіть обліковий запис',
+        accountPlaceholder: 'Введіть ім&#39;я користувача',
         passwordPlaceholder: 'Введіть пароль',
-        autoLogin: 'Автоматичний вхід',
-        forgetBtn: 'Забули пароль',
-        loginBtn: 'Вхід',
+        autoLogin: 'автоматичний вхід',
+        forgetBtn: 'забути пароль',
+        loginBtn: 'увійти',
         byAccountTip: {
             emptyErr: 'Обліковий запис не може бути порожнім'
         },
         byPasswordTip: {
-            emptyErr: 'Пароль не може бути порожнім'
-        }
+            emptyErr: 'порожній пароль не може бути'
+        },
+        byValidTip: {
+            emptyErr: 'Код підтвердження повинен бути заповнений'
+        },
+        sendMsg: {
+            repeatErr: 'Не надсилайте повторно'
+        },
+        phonePlaceholder: 'Введіть номер телефону',
+        validPlaceholder: 'Captcha',
+        validBtn: 'отримати код підтвердження'
     },
     localeMap: {
         ar: 'Арабською',
@@ -58,7 +67,7 @@ export default {
         'pt-br': 'Португальська Бразилія',
         pt: 'Європейська Португальська',
         ro: 'Румунська',
-        ru: 'Російська',
+        ru: 'російська мова',
         sk: 'Словацька',
         sl: 'Словенська',
         sr: 'Сербська',
@@ -68,7 +77,7 @@ export default {
         tr: 'Турецька',
         uk: 'Українська',
         vi: 'В’єтнамці',
-        'zh-cn': 'Спрощена китайська',
-        'zh-tw': 'Традиційна китайська'
+        'zh-cn': 'Спрощена Китайська',
+        'zh-tw': 'традиційна китайська'
     }
 }

@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Konto adgangskode login',
         byPhoneBtn: 'Telefonnummer login',
-        accountPlaceholder: 'Indtast venligst konto',
+        accountPlaceholder: 'Indtast brugernavn',
         passwordPlaceholder: 'Indtast adgangskoden',
-        autoLogin: 'Auto login',
-        forgetBtn: 'Glemt adgangskode',
-        loginBtn: 'Log in',
+        autoLogin: 'automatisk login',
+        forgetBtn: 'glemme adgangskode',
+        loginBtn: 'Log på',
         byAccountTip: {
             emptyErr: 'Kontoen kan ikke være tom'
         },
         byPasswordTip: {
-            emptyErr: 'Adgangskoden kan ikke være tom'
-        }
+            emptyErr: 'adgangskode kan ikke være tomt'
+        },
+        byValidTip: {
+            emptyErr: 'verifikationskode skal udfyldes'
+        },
+        sendMsg: {
+            repeatErr: 'Send ikke gentagne gange'
+        },
+        phonePlaceholder: 'Indtast venligst telefonnummer',
+        validPlaceholder: 'Captcha',
+        validBtn: 'få bekræftelseskode'
     },
     localeMap: {
         ar: 'arabisk',
@@ -29,12 +38,12 @@ export default {
         el: 'græsk',
         'en-gb': 'engelsk',
         en: 'engelsk',
-        es: 'spansk sprog',
+        es: 'spansk',
         et: 'estisk',
         fa: 'persisk',
         fi: 'Finsk',
         fr: 'fransk',
-        he: 'hebraisk sprog',
+        he: 'Hebrew',
         hi: 'Hindi',
         hr: 'Kroatisk',
         hu: 'ungarsk',
@@ -50,25 +59,25 @@ export default {
         mk: 'makedonsk',
         'mn-mn': 'Mongolsk',
         'ms-my': 'Malay',
-        nb: 'norsk',
+        nb: 'Norsk',
         'ne-np': 'nepalesisk',
         'nl-be': 'Flamsk',
-        nl: 'Hollandsk',
-        pl: 'polsk',
+        nl: 'hollandsk',
+        pl: 'Polere',
         'pt-br': 'Brasiliansk portugisisk',
         pt: 'Europæisk portugisisk',
         ro: 'rumænsk',
-        ru: 'russisk',
-        sk: 'slovakisk sprog',
+        ru: 'russisk sprog',
+        sk: 'slovakisk',
         sl: 'slovensk',
-        sr: 'serbisk sprog',
+        sr: 'serbisk',
         sv: 'Svensk',
-        ta: 'Tamil sprog',
+        ta: 'Tamil',
         th: 'Thai',
-        tr: 'tyrkiske sprog',
+        tr: 'tyrkisk',
         uk: 'ukrainsk',
-        vi: 'Vietnamesisk sprog',
+        vi: 'Vietnamesisk',
         'zh-cn': 'Forenklet kinesisk',
-        'zh-tw': 'Traditionel kinesisk'
+        'zh-tw': 'traditionelt kinesisk'
     }
 }

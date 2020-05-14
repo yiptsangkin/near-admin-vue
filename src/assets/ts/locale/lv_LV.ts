@@ -2,22 +2,31 @@ export default {
     locale: 'lv',
     country: 'LV',
     sysInfo: {
-        sysIntro: 'Viegli lietojams priekšplāna izstrādes ietvars, kas balstīts uz Vue un Ant Design'
+        sysIntro: 'Viegli lietojams priekšējās daļas izstrādes ietvars, kas balstīts uz Vue un Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',
         byPhoneBtn: 'Tālruņa numura pieteikšanās',
-        accountPlaceholder: 'Lūdzu, ievadiet kontu',
+        accountPlaceholder: 'Lūdzu, ievadiet lietotājvārdu',
         passwordPlaceholder: 'Lūdzu, ievadiet paroli',
-        autoLogin: 'Automātiska pieteikšanās',
-        forgetBtn: 'Aizmirsu paroli',
-        loginBtn: 'Pieteikšanās',
+        autoLogin: 'auto pieteikšanās',
+        forgetBtn: 'aizmirst paroli',
+        loginBtn: 'Pieslēgties',
         byAccountTip: {
             emptyErr: 'Konts nedrīkst būt tukšs'
         },
         byPasswordTip: {
-            emptyErr: 'Parole nedrīkst būt tukša'
-        }
+            emptyErr: 'parole nedrīkst būt tukša'
+        },
+        byValidTip: {
+            emptyErr: 'verifikācijas kods ir jāaizpilda'
+        },
+        sendMsg: {
+            repeatErr: 'Nesūtiet atkārtoti'
+        },
+        phonePlaceholder: 'Lūdzu, ievadiet tālruņa numuru',
+        validPlaceholder: 'Captcha',
+        validBtn: 'saņemt verifikācijas kodu'
     },
     localeMap: {
         ar: 'Arābu valodā',
@@ -27,8 +36,8 @@ export default {
         da: 'Dāņu',
         de: 'Vācu',
         el: 'Grieķu',
-        'en-gb': 'Angliski',
-        en: 'Angliski',
+        'en-gb': 'Angļu',
+        en: 'Angļu',
         es: 'Spāņu valoda',
         et: 'Igauņu',
         fa: 'Persiešu',
@@ -58,7 +67,7 @@ export default {
         'pt-br': 'Brazīlijas portugāļi',
         pt: 'Eiropas portugāļi',
         ro: 'Rumāņu',
-        ru: 'Krievu',
+        ru: 'krievu valoda',
         sk: 'Slovāku',
         sl: 'Slovēņu',
         sr: 'Serbu',
@@ -69,6 +78,6 @@ export default {
         uk: 'Ukraiņu',
         vi: 'Vjetnamiešu',
         'zh-cn': 'Vienkāršota ķīniešu valoda',
-        'zh-tw': 'Tradicionālā ķīniešu valoda'
+        'zh-tw': 'tradicionālā ķīniešu'
     }
 }

@@ -7,39 +7,48 @@ export default {
     loginForm: {
         byAccountBtn: 'Login password account',
         byPhoneBtn: 'Accesso al numero di telefono',
-        accountPlaceholder: 'Per favore, inserisci un account',
+        accountPlaceholder: 'Inserisci il nome utente',
         passwordPlaceholder: 'Per favore inserisci la password',
-        autoLogin: 'Login automatico',
-        forgetBtn: 'Password dimenticata',
-        loginBtn: 'Entra',
+        autoLogin: 'login automatico',
+        forgetBtn: 'dimenticare la password',
+        loginBtn: 'accesso',
         byAccountTip: {
             emptyErr: 'L&#39;account non può essere vuoto'
         },
         byPasswordTip: {
-            emptyErr: 'La password non può essere vuota'
-        }
+            emptyErr: 'la password non può essere vuota'
+        },
+        byValidTip: {
+            emptyErr: 'il codice di verifica deve essere compilato'
+        },
+        sendMsg: {
+            repeatErr: 'Non inviare più volte'
+        },
+        phonePlaceholder: 'Inserisci il numero di telefono',
+        validPlaceholder: 'Captcha',
+        validBtn: 'ottieni il codice di verifica'
     },
     localeMap: {
-        ar: 'arabo',
+        ar: 'Arabo',
         bg: 'bulgaro',
         ca: 'catalano',
         cs: 'ceco',
         da: 'danese',
-        de: 'tedesco',
+        de: 'Tedesco',
         el: 'greco',
         'en-gb': 'inglese',
         en: 'inglese',
-        es: 'lingua spagnola',
+        es: 'spagnolo',
         et: 'estone',
         fa: 'persiano',
         fi: 'finlandese',
         fr: 'francese',
-        he: 'lingua ebraica',
+        he: 'ebraico',
         hi: 'hindi',
         hr: 'croato',
         hu: 'ungherese',
         hy: 'armeno',
-        id: 'lingua indonesiana',
+        id: 'indonesiano',
         is: 'islandese',
         it: 'italiano ',
         ja: 'giapponese',
@@ -50,25 +59,25 @@ export default {
         mk: 'macedone',
         'mn-mn': 'mongolo',
         'ms-my': 'malese',
-        nb: 'lingua norvegese',
+        nb: 'norvegese',
         'ne-np': 'Nepali',
         'nl-be': 'fiammingo',
         nl: 'olandese',
         pl: 'polacco',
-        'pt-br': 'Portoghese brasiliano',
+        'pt-br': 'Portoghese Brasiliano',
         pt: 'Portoghese europeo',
         ro: 'rumeno',
-        ru: 'russo',
-        sk: 'lingua slovacca',
+        ru: 'lingua russa',
+        sk: 'slovacco',
         sl: 'sloveno',
-        sr: 'lingua serba',
+        sr: 'serbo',
         sv: 'svedese',
-        ta: 'lingua tamil',
-        th: 'Thai',
-        tr: 'lingua turca',
+        ta: 'Tamil',
+        th: 'tailandese',
+        tr: 'Turco',
         uk: 'ucraino',
-        vi: 'lingua vietnamita',
+        vi: 'vietnamita',
         'zh-cn': 'Cinese semplificato',
-        'zh-tw': 'Cinese tradizionale'
+        'zh-tw': 'cinese tradizionale'
     }
 }

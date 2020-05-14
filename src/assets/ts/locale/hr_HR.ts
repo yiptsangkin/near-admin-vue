@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Prijava zaporke računa',
         byPhoneBtn: 'Prijava telefonskog broja',
-        accountPlaceholder: 'Unesite račun',
+        accountPlaceholder: 'Unesite korisničko ime',
         passwordPlaceholder: 'Molimo unesite lozinku',
-        autoLogin: 'Automatska prijava',
+        autoLogin: 'automatska prijava',
         forgetBtn: 'Zaboravili ste lozinku',
-        loginBtn: 'Prijavi se',
+        loginBtn: 'prijaviti se',
         byAccountTip: {
             emptyErr: 'Račun ne može biti prazan'
         },
         byPasswordTip: {
-            emptyErr: 'Lozinka ne može biti prazna'
-        }
+            emptyErr: 'prazna lozinka ne može biti'
+        },
+        byValidTip: {
+            emptyErr: 'verifikacijski kod mora biti ispunjen'
+        },
+        sendMsg: {
+            repeatErr: 'Ne šaljite više puta'
+        },
+        phonePlaceholder: 'Unesite broj telefona',
+        validPlaceholder: 'Captcha',
+        validBtn: 'nabavite kontrolni kôd'
     },
     localeMap: {
         ar: 'arapski',
@@ -27,19 +36,19 @@ export default {
         da: 'danski',
         de: 'njemački',
         el: 'grčki',
-        'en-gb': 'engleski',
-        en: 'engleski',
-        es: 'španjolski jezik',
+        'en-gb': 'Engleski',
+        en: 'Engleski',
+        es: 'španjolski',
         et: 'estonski',
         fa: 'persijski',
         fi: 'finski',
-        fr: 'Francuzi',
-        he: 'hebrejski jezik',
+        fr: 'francuski',
+        he: 'hebrejski',
         hi: 'hindski',
-        hr: 'hrvatski',
+        hr: 'Hrvatski',
         hu: 'madžarski',
-        hy: 'jermenski',
-        id: 'indonezijski jezik',
+        hy: 'Armenac',
+        id: 'indonezijski',
         is: 'islandski',
         it: 'talijanski ',
         ja: 'japanski',
@@ -50,25 +59,25 @@ export default {
         mk: 'makedonski',
         'mn-mn': 'mongolski',
         'ms-my': 'malajski',
-        nb: 'Norveški jezik',
+        nb: 'norveški',
         'ne-np': 'nepalski',
         'nl-be': 'flamanski',
         nl: 'Nizozemac',
-        pl: 'poljski',
+        pl: 'Polirati',
         'pt-br': 'Brazilski portugalski',
         pt: 'Europski portugalski',
         ro: 'rumunski',
-        ru: 'ruski',
-        sk: 'slovački jezik',
+        ru: 'ruski jezik',
+        sk: 'slovački',
         sl: 'Slovenac',
-        sr: 'srpski jezik',
+        sr: 'srpski',
         sv: 'švedski',
-        ta: 'tamilski jezik',
+        ta: 'Tamil',
         th: 'Tajlandska',
-        tr: 'Turski jezik',
+        tr: 'turski',
         uk: 'ukrajinski',
-        vi: 'Vijetnamski jezik',
+        vi: 'vijetnamski',
         'zh-cn': 'Pojednostavljeni Kinezi',
-        'zh-tw': 'Tradicionalni Kinezi'
+        'zh-tw': 'tradicionalni kineski'
     }
 }

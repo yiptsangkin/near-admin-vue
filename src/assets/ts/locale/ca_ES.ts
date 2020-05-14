@@ -2,22 +2,31 @@ export default {
     locale: 'ca',
     country: 'ES',
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament de front-end fàcil d’utilitzar basat en Vue and Ant Design'
+        sysIntro: 'Un marc de desenvolupament front-end senzill basat en Vue and Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Inici de sessió de la contrasenya del compte',
         byPhoneBtn: 'Inici de sessió del número de telèfon',
-        accountPlaceholder: 'Introduïu el compte',
+        accountPlaceholder: 'Introduïu el nom d&#39;usuari',
         passwordPlaceholder: 'Introduïu la contrasenya',
-        autoLogin: 'Inici de sessió automàtica',
-        forgetBtn: 'Contrasenya oblidada',
-        loginBtn: 'Inicieu la sessió',
+        autoLogin: 'inicio de sessió automàtica',
+        forgetBtn: 'oblidar la contrasenya',
+        loginBtn: 'iniciar Sessió',
         byAccountTip: {
             emptyErr: 'El compte no pot estar buit'
         },
         byPasswordTip: {
-            emptyErr: 'La contrasenya no pot estar buida'
-        }
+            emptyErr: 'la contrasenya no pot estar en blanc'
+        },
+        byValidTip: {
+            emptyErr: 'Cal omplir el codi de verificació'
+        },
+        sendMsg: {
+            repeatErr: 'No envieu repetidament'
+        },
+        phonePlaceholder: 'Introduïu el número de telèfon',
+        validPlaceholder: 'Captcha',
+        validBtn: 'obtenir codi de verificació'
     },
     localeMap: {
         ar: 'Àrab',
@@ -58,7 +67,7 @@ export default {
         'pt-br': 'Portuguès brasiler',
         pt: 'Portuguès europeu',
         ro: 'Romanès',
-        ru: 'Rus',
+        ru: 'llenguatge Rús',
         sk: 'Eslovac',
         sl: 'Eslovè',
         sr: 'Serbi',
@@ -69,6 +78,6 @@ export default {
         uk: 'Ucraïnès',
         vi: 'Vietnamita',
         'zh-cn': 'Xinès simplificat',
-        'zh-tw': 'Xinès tradicional'
+        'zh-tw': 'xinés tradicional'
     }
 }

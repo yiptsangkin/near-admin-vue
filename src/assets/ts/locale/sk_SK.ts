@@ -7,17 +7,26 @@ export default {
     loginForm: {
         byAccountBtn: 'Prihlasovacie heslo účtu',
         byPhoneBtn: 'Prihlasovanie telefónneho čísla',
-        accountPlaceholder: 'Zadajte účet',
+        accountPlaceholder: 'Zadajte používateľské meno',
         passwordPlaceholder: 'Zadajte heslo',
-        autoLogin: 'Automatické prihlásenie',
-        forgetBtn: 'Zabudnuté heslo',
-        loginBtn: 'prihlásiť',
+        autoLogin: 'automatické prihlásenie',
+        forgetBtn: 'zabudnuté heslo',
+        loginBtn: 'Prihlásiť sa',
         byAccountTip: {
             emptyErr: 'Účet nemôže byť prázdny'
         },
         byPasswordTip: {
-            emptyErr: 'Heslo nemôže byť prázdne'
-        }
+            emptyErr: 'heslo nemôže byť prázdne'
+        },
+        byValidTip: {
+            emptyErr: 'musí sa vyplniť verifikačný kód'
+        },
+        sendMsg: {
+            repeatErr: 'Nezasielať opakovane'
+        },
+        phonePlaceholder: 'Zadajte telefónne číslo',
+        validPlaceholder: 'captcha',
+        validBtn: 'získať overovací kód'
     },
     localeMap: {
         ar: 'arabčina',
@@ -27,9 +36,9 @@ export default {
         da: 'dánsky',
         de: 'Nemec',
         el: 'grécky',
-        'en-gb': 'angličtina',
-        en: 'angličtina',
-        es: 'španielsky jazyk',
+        'en-gb': 'Angličtina',
+        en: 'Angličtina',
+        es: 'španielsky',
         et: 'estónsky',
         fa: 'perzský',
         fi: 'fínsky',
@@ -39,7 +48,7 @@ export default {
         hr: 'chorvátsky',
         hu: 'maďarský',
         hy: 'arménsky',
-        id: 'indonézština',
+        id: 'indonézsky',
         is: 'islandský',
         it: 'taliansky ',
         ja: 'japonský',
@@ -50,7 +59,7 @@ export default {
         mk: 'macedónsky',
         'mn-mn': 'mongolský',
         'ms-my': 'malajský',
-        nb: 'nórsky jazyk',
+        nb: 'nórsky',
         'ne-np': 'nepálsky',
         'nl-be': 'flámsky',
         nl: 'holandský',
@@ -58,17 +67,17 @@ export default {
         'pt-br': 'Brazílska portugalčina',
         pt: 'Európska portugalčina',
         ro: 'rumunský',
-        ru: 'ruský',
-        sk: 'slovenského jazyk',
+        ru: 'ruský jazyk',
+        sk: 'slovenský',
         sl: 'slovinčina',
-        sr: 'srbský jazyk',
+        sr: 'srbský',
         sv: 'švédsky',
-        ta: 'tamil jazyk',
+        ta: 'tamil',
         th: 'thai',
-        tr: 'turkish language',
+        tr: 'turecký',
         uk: 'ukrajinský',
-        vi: 'vietnamský jazyk',
+        vi: 'vietnamský',
         'zh-cn': 'Zjednodušená čínština',
-        'zh-tw': 'Tradičná čínština'
+        'zh-tw': 'tradičná čínština'
     }
 }

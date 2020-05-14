@@ -17,7 +17,16 @@ export default {
         },
         byPasswordTip: {
             emptyErr: '密碼不能為空'
-        }
+        },
+        byValidTip: {
+            emptyErr: '驗證碼不能為空'
+        },
+        sendMsg: {
+            repeatErr: '請勿重複發送'
+        },
+        phonePlaceholder: '請輸入手機號',
+        validPlaceholder: '驗證碼',
+        validBtn: '獲取驗證碼'
     },
     localeMap: {
         ar: '阿拉伯文',
