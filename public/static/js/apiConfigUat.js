@@ -1,2 +1,3 @@
 var apiConfig = {
+    apiHost: ''
 }

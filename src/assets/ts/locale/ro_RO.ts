@@ -22,11 +22,18 @@ export default {
             emptyErr: 'codul de verificare trebuie completat'
         },
         sendMsg: {
-            repeatErr: 'Nu trimiteți în mod repetat'
+            repeatErr: 'Nu trimiteți în mod repetat',
+            success: 'Obțineți succes',
+            codeTip: 'Codul dvs. de verificare este'
         },
         phonePlaceholder: 'Vă rugăm să introduceți numărul de telefon',
         validPlaceholder: 'Captcha',
-        validBtn: 'obțineți codul de verificare'
+        validBtn: 'obțineți codul de verificare',
+        loginSuccess: 'autentificare reușită'
+    },
+    requestInfo: {
+        withoutUrl: 'Adresa solicitării nu poate fi goală',
+        networkErr: 'Solicitarea rețelei a eșuat. Încercați din nou mai târziu'
     },
     localeMap: {
         ar: 'arabic',

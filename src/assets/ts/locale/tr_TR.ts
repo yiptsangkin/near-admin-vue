@@ -22,11 +22,18 @@ export default {
             emptyErr: 'doğrulama kodu doldurulmalıdır'
         },
         sendMsg: {
-            repeatErr: 'Tekrar tekrar gönderme'
+            repeatErr: 'Tekrar tekrar gönderme',
+            success: 'Başarı elde edin',
+            codeTip: 'Doğrulama kodunuz'
         },
         phonePlaceholder: 'Lütfen telefon numarasını girin',
         validPlaceholder: 'Captcha',
-        validBtn: 'doğrulama kodunu al'
+        validBtn: 'doğrulama kodunu al',
+        loginSuccess: 'giriş başarılı'
+    },
+    requestInfo: {
+        withoutUrl: 'İstek adresi boş olamaz',
+        networkErr: 'Ağ isteği başarısız oldu, lütfen daha sonra tekrar deneyin'
     },
     localeMap: {
         ar: 'Arapça',

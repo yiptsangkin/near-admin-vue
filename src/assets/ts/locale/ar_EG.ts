@@ -22,11 +22,18 @@ export default {
             emptyErr: 'يجب ملء رمز التحقق'
         },
         sendMsg: {
-            repeatErr: 'لا ترسل بشكل متكرر'
+            repeatErr: 'لا ترسل بشكل متكرر',
+            success: 'أحصل على النجاح',
+            codeTip: 'رمز التحقق الخاص بك هو'
         },
         phonePlaceholder: 'يرجى إدخال رقم الهاتف',
         validPlaceholder: 'كلمة التحقق',
-        validBtn: 'الحصول على رمز التحقق'
+        validBtn: 'الحصول على رمز التحقق',
+        loginSuccess: 'نجح تسجيل الدخول'
+    },
+    requestInfo: {
+        withoutUrl: 'لا يمكن أن يكون عنوان الطلب فارغًا',
+        networkErr: 'فشل طلب الشبكة ، يرجى المحاولة مرة أخرى في وقت لاحق'
     },
     localeMap: {
         ar: 'عربى',

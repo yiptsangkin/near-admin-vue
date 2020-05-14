@@ -22,11 +22,18 @@ module.exports = {
             emptyErr: '验证码不能为空'
         },
         sendMsg: {
-            repeatErr: '请勿重复发送'
+            repeatErr: '请勿重复发送',
+            success: '获取成功',
+            codeTip: '您的验证码为'
         },
         phonePlaceholder: '请输入手机号',
         validPlaceholder: '验证码',
-        validBtn: '获取验证码'
+        validBtn: '获取验证码',
+        loginSuccess: '登录成功'
+    },
+    requestInfo: {
+        withoutUrl: '请求地址不能为空',
+        networkErr: '网络请求失败，请稍后重试'
     },
     localeMap: {
         ar: '阿拉伯文',

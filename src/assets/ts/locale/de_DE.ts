@@ -22,11 +22,18 @@ export default {
             emptyErr: 'Bestätigungscode muss ausgefüllt werden'
         },
         sendMsg: {
-            repeatErr: 'Nicht wiederholt senden'
+            repeatErr: 'Nicht wiederholt senden',
+            success: 'Erfolg haben',
+            codeTip: 'Ihr Bestätigungscode lautet'
         },
         phonePlaceholder: 'Bitte geben Sie die Telefonnummer ein',
         validPlaceholder: 'Captcha',
-        validBtn: 'Bestätigungscode erhalten'
+        validBtn: 'Bestätigungscode erhalten',
+        loginSuccess: 'Anmeldung erfolgreich'
+    },
+    requestInfo: {
+        withoutUrl: 'Die Anforderungsadresse darf nicht leer sein',
+        networkErr: 'Netzwerkanforderung fehlgeschlagen, versuchen Sie es später erneut'
     },
     localeMap: {
         ar: 'Arabisch',

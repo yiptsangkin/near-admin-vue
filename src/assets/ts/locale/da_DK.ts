@@ -22,11 +22,18 @@ export default {
             emptyErr: 'verifikationskode skal udfyldes'
         },
         sendMsg: {
-            repeatErr: 'Send ikke gentagne gange'
+            repeatErr: 'Send ikke gentagne gange',
+            success: 'Få succes',
+            codeTip: 'Din bekræftelseskode er'
         },
         phonePlaceholder: 'Indtast venligst telefonnummer',
         validPlaceholder: 'Captcha',
-        validBtn: 'få bekræftelseskode'
+        validBtn: 'få bekræftelseskode',
+        loginSuccess: 'login er vellykket'
+    },
+    requestInfo: {
+        withoutUrl: 'Anmodningsadresse kan ikke være tom',
+        networkErr: 'Netværksanmodning mislykkedes. Prøv igen senere'
     },
     localeMap: {
         ar: 'arabisk',

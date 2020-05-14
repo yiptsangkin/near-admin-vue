@@ -22,11 +22,18 @@ export default {
             emptyErr: 'musí sa vyplniť verifikačný kód'
         },
         sendMsg: {
-            repeatErr: 'Nezasielať opakovane'
+            repeatErr: 'Nezasielať opakovane',
+            success: 'Získajte úspech',
+            codeTip: 'Váš verifikačný kód je'
         },
         phonePlaceholder: 'Zadajte telefónne číslo',
         validPlaceholder: 'captcha',
-        validBtn: 'získať overovací kód'
+        validBtn: 'získať overovací kód',
+        loginSuccess: 'prihlásenie úspešné'
+    },
+    requestInfo: {
+        withoutUrl: 'Adresa žiadosti nemôže byť prázdna',
+        networkErr: 'Žiadosť o sieť zlyhala, skúste to znova neskôr'
     },
     localeMap: {
         ar: 'arabčina',

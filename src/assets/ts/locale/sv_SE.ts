@@ -22,11 +22,18 @@ export default {
             emptyErr: 'verifieringskoden måste fyllas i'
         },
         sendMsg: {
-            repeatErr: 'Skicka inte upprepade gånger'
+            repeatErr: 'Skicka inte upprepade gånger',
+            success: 'Få framgång',
+            codeTip: 'Din verifieringskod är'
         },
         phonePlaceholder: 'Ange telefonnummer',
         validPlaceholder: 'Captcha',
-        validBtn: 'få verifieringskod'
+        validBtn: 'få verifieringskod',
+        loginSuccess: 'inloggningen lyckades'
+    },
+    requestInfo: {
+        withoutUrl: 'Begäran om adress kan inte vara tom',
+        networkErr: 'Nätverksbegäran misslyckades, försök igen senare'
     },
     localeMap: {
         ar: 'Arabiska',

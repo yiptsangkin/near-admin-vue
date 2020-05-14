@@ -22,11 +22,18 @@ export default {
             emptyErr: 'código de verificação deve ser preenchido'
         },
         sendMsg: {
-            repeatErr: 'Não envie repetidamente'
+            repeatErr: 'Não envie repetidamente',
+            success: 'Obtenha sucesso',
+            codeTip: 'Seu código de verificação é'
         },
         phonePlaceholder: 'Digite o número de telefone',
         validPlaceholder: 'CAPTCHA',
-        validBtn: 'obter código de verificação'
+        validBtn: 'obter código de verificação',
+        loginSuccess: 'login bem sucedido'
+    },
+    requestInfo: {
+        withoutUrl: 'O endereço de solicitação não pode estar vazio',
+        networkErr: 'A solicitação de rede falhou. Tente novamente mais tarde'
     },
     localeMap: {
         ar: 'árabe',

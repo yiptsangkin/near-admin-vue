@@ -17,6 +17,7 @@
     const LoginByPhone = () => import('./LoginByPhone.vue')
     const LoginBottom = () => import('./LoginBottom.vue')
     import dict from '@custom/dict'
+    import api from '@api/auth/apiMethod'
 
     export default Vue.extend({
         name: 'LoginForm',
@@ -44,7 +45,7 @@
             }
         },
         methods: {
-            toLogin () {
+            async toLogin () {
                 const self = this
                 const formDetail = self.$refs[`form-detail-${self.activatedKey}`]
                 if (Array.isArray(formDetail) && formDetail) {
@@ -52,9 +53,56 @@
                     // @ts-ignore
                     const formObj = formDetail[0].$refs[formRef]
                     formObj.validate((valid: any) => {
-                        console.log(valid)
+                        if (valid) {
+                            // check success
+                            if (self.activatedKey === 1) {
+                                // @ts-ignore
+                                const username: string = formDetail[0].formModel.account.value
+                                // @ts-ignore
+                                const password: string = formDetail[0].formModel.password.value
+                                api.checkLoginByAccount({
+                                    data: {
+                                        username,
+                                        password
+                                    },
+                                    success: (res: any) => {
+                                        self.$message.success(self.$t(dict.localeObj.loginForm.loginSuccess) as string)
+                                        const timer = setTimeout(() => {
+                                            self.toManage()
+                                            clearTimeout(timer)
+                                        }, 2000)
+                                    },
+                                    fail: (res: any) => {
+                                        self.$message.error(res.message)
+                                    }
+                                })
+                            } else if (self.activatedKey === 2) {
+                                // @ts-ignore
+                                const inputCode: string = formDetail[0].formModel.valid.value
+                                api.checkLoginByPhone({
+                                    data: {
+                                        inputCode,
+                                        // @ts-ignore
+                                        validCode: formDetail[0].validCode
+                                    },
+                                    success: (res: any) => {
+                                        self.$message.success(self.$t(dict.localeObj.loginForm.loginSuccess) as string)
+                                        const timer = setTimeout( () => {
+                                            self.toManage()
+                                            clearTimeout(timer)
+                                        }, 2000)
+                                    },
+                                    fail: (res: any) => {
+                                        self.$message.error(res.message)
+                                    }
+                                })
+                            }
+                        }
                     })
                 }
+            },
+            toManage () {
+                window.location.href = '/manage'
             }
         }
     })

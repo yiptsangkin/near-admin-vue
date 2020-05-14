@@ -22,11 +22,18 @@ export default {
             emptyErr: 'kod weryfikacyjny musi zostać wypełniony'
         },
         sendMsg: {
-            repeatErr: 'Nie wysyłaj wielokrotnie'
+            repeatErr: 'Nie wysyłaj wielokrotnie',
+            success: 'Uzyskaj sukces',
+            codeTip: 'Twój kod weryfikacyjny to'
         },
         phonePlaceholder: 'Proszę podać numer telefonu',
         validPlaceholder: 'Captcha',
-        validBtn: 'uzyskaj kod weryfikacyjny'
+        validBtn: 'uzyskaj kod weryfikacyjny',
+        loginSuccess: 'Logowanie zakończone sukcesem'
+    },
+    requestInfo: {
+        withoutUrl: 'Adres żądania nie może być pusty',
+        networkErr: 'Żądanie sieci nie powiodło się, spróbuj ponownie później'
     },
     localeMap: {
         ar: 'arabski',

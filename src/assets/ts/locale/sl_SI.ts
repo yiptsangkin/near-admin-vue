@@ -22,11 +22,18 @@ export default {
             emptyErr: 'verifikacijsko kodo je treba izpolniti'
         },
         sendMsg: {
-            repeatErr: 'Ne pošiljajte večkrat'
+            repeatErr: 'Ne pošiljajte večkrat',
+            success: 'Pridobite uspeh',
+            codeTip: 'Vaša potrditvena koda je'
         },
         phonePlaceholder: 'Vnesite telefonsko številko',
         validPlaceholder: 'Captcha',
-        validBtn: 'pridobite verifikacijsko kodo'
+        validBtn: 'pridobite verifikacijsko kodo',
+        loginSuccess: 'prijava uspešna'
+    },
+    requestInfo: {
+        withoutUrl: 'Naslov zahteve ne more biti prazen',
+        networkErr: 'Zahteva po omrežju ni uspela. Poskusite pozneje znova'
     },
     localeMap: {
         ar: 'arabsko',

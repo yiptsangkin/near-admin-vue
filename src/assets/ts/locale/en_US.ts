@@ -22,11 +22,18 @@ export default {
             emptyErr: 'verification code must be filled'
         },
         sendMsg: {
-            repeatErr: 'Do not send repeatedly'
+            repeatErr: 'Do not send repeatedly',
+            success: 'Get success',
+            codeTip: 'Your verification code is'
         },
         phonePlaceholder: 'Please enter phone number',
         validPlaceholder: 'Captcha',
-        validBtn: 'get verification code'
+        validBtn: 'get verification code',
+        loginSuccess: 'login successful'
+    },
+    requestInfo: {
+        withoutUrl: 'Request address cannot be empty',
+        networkErr: 'Network request failed, please try again later'
     },
     localeMap: {
         ar: 'Arabic',

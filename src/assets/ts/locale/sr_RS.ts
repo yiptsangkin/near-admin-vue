@@ -22,11 +22,18 @@ export default {
             emptyErr: 'верификациони код мора бити попуњен'
         },
         sendMsg: {
-            repeatErr: 'Не шаљите више пута'
+            repeatErr: 'Не шаљите више пута',
+            success: 'Добити успех',
+            codeTip: 'Ваш верификациони код је'
         },
         phonePlaceholder: 'Молимо унесите број телефона',
         validPlaceholder: 'Цаптцха',
-        validBtn: 'набавите верификациони код'
+        validBtn: 'набавите верификациони код',
+        loginSuccess: 'пријављивање успешно'
+    },
+    requestInfo: {
+        withoutUrl: 'Адреса захтева не може бити празна',
+        networkErr: 'Захтев за мрежу није успео. Покушајте поново касније'
     },
     localeMap: {
         ar: 'Арапски',

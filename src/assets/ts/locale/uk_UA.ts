@@ -22,11 +22,18 @@ export default {
             emptyErr: 'Код підтвердження повинен бути заповнений'
         },
         sendMsg: {
-            repeatErr: 'Не надсилайте повторно'
+            repeatErr: 'Не надсилайте повторно',
+            success: 'Отримайте успіх',
+            codeTip: 'Ваш код підтвердження'
         },
         phonePlaceholder: 'Введіть номер телефону',
         validPlaceholder: 'Captcha',
-        validBtn: 'отримати код підтвердження'
+        validBtn: 'отримати код підтвердження',
+        loginSuccess: 'вхід вдалий'
+    },
+    requestInfo: {
+        withoutUrl: 'Адреса запиту не може бути порожньою',
+        networkErr: 'Помилка підключення до мережі. Повторіть спробу пізніше'
     },
     localeMap: {
         ar: 'Арабською',

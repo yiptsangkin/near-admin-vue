@@ -22,11 +22,18 @@ export default {
             emptyErr: 'सत्यापन कोड भरना होगा'
         },
         sendMsg: {
-            repeatErr: 'बार-बार मत भेजो'
+            repeatErr: 'बार-बार मत भेजो',
+            success: 'सफलता पाओ',
+            codeTip: 'आपका सत्यापन कोड है'
         },
         phonePlaceholder: 'कृपया फ़ोन नंबर दर्ज करें',
         validPlaceholder: 'कैप्चा',
-        validBtn: 'सत्यापन कोड प्राप्त करें'
+        validBtn: 'सत्यापन कोड प्राप्त करें',
+        loginSuccess: 'सफलतापूर्ण प्रवेश'
+    },
+    requestInfo: {
+        withoutUrl: 'अनुरोध पता खाली नहीं हो सकता',
+        networkErr: 'नेटवर्क अनुरोध विफल हुआ, कृपया बाद में पुनः प्रयास करें'
     },
     localeMap: {
         ar: 'अरबी',

@@ -55,7 +55,8 @@ interface BuildSwitch {
 
 export interface ComConfig {
     sysInfo: SysInfo,
-    buildSwitch: BuildSwitch
+    buildSwitch: BuildSwitch,
+    apiHost: string
 }
 
 // I18N
@@ -66,4 +67,33 @@ export interface GlobalLocale {
 export interface I18nOption {
     locale: string,
     messages: any
+}
+
+// Request
+export interface ReqType {
+    headers?: any,
+    responseType?: | 'arraybuffer' | 'blob' | 'document' | 'json' | 'text' | 'stream',
+    method?: string,
+    timeout?: number,
+    data?: any,
+    url?: string,
+    success?: any,
+    fail?: any,
+    error?: any
+}
+
+// Response
+export interface ResType {
+    code: number,
+    data: any,
+    message: string,
+    timestamp: number
+}
+
+// Logline
+export interface LoglineParams {
+    module?: string,
+    logType: string,
+    desc: string,
+    data: any
 }

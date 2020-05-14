@@ -34,6 +34,7 @@
     import dict from '@custom/dict'
     import {CommonInput} from '@core/formtype'
     import {mapGetters} from 'vuex'
+    import api from '@api/auth/apiMethod'
 
     interface FormModel {
         account: CommonInput,
@@ -49,7 +50,8 @@
         formModel: FormModel,
         validBtn?: any,
         isSendMsg?: boolean,
-        lastSeconds: number
+        lastSeconds: number,
+        validCode: string | undefined | null
     }
 
     export default Vue.extend({
@@ -73,7 +75,8 @@
                     btnText: dict.localeObj.loginForm.validBtn
                 },
                 isSendMsg: false,
-                lastSeconds: dict.commonObj.loginForm.sendMsgGap
+                lastSeconds: dict.commonObj.loginForm.sendMsgGap,
+                validCode: null
             }
             return data
         },
@@ -125,6 +128,7 @@
                     localStorage.setItem('msgSendTime', new Date().getTime().toString())
                     self.isSendMsg = true
                     self.startTimer()
+                    self.toSendMsg()
                 }
             },
             getLastSeconds () {
@@ -157,6 +161,18 @@
                         self.lastSeconds = dict.commonObj.loginForm.sendMsgGap
                     }
                 }, 1000)
+            },
+            async toSendMsg () {
+                const self = this
+                await api.getSendMsg({
+                    success: (res: any) => {
+                        self.$notification.success({
+                            message: self.$t(dict.localeObj.loginForm.getMsgSuccess) as string,
+                            description: `${self.$t(dict.localeObj.loginForm.getMsgTip)}：${res.msgCode}`
+                        })
+                        self.validCode = res.msgCode
+                    }
+                })
             }
         }
     })

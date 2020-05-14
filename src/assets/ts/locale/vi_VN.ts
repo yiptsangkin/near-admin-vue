@@ -22,11 +22,18 @@ export default {
             emptyErr: 'mã xác minh phải được điền'
         },
         sendMsg: {
-            repeatErr: 'Không gửi nhiều lần'
+            repeatErr: 'Không gửi nhiều lần',
+            success: 'Nhận thành công',
+            codeTip: 'Mã xác minh của bạn là'
         },
         phonePlaceholder: 'Vui lòng nhập số điện thoại',
         validPlaceholder: 'mã ngẫu nhiên',
-        validBtn: 'lấy mã xác minh'
+        validBtn: 'lấy mã xác minh',
+        loginSuccess: 'đăng nhập thành công'
+    },
+    requestInfo: {
+        withoutUrl: 'Địa chỉ yêu cầu không thể để trống',
+        networkErr: 'Yêu cầu mạng không thành công, vui lòng thử lại sau'
     },
     localeMap: {
         ar: 'tiếng Ả Rập',

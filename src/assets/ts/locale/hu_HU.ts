@@ -22,11 +22,18 @@ export default {
             emptyErr: 'az ellenőrző kódot ki kell tölteni'
         },
         sendMsg: {
-            repeatErr: 'Ne küldjön többször'
+            repeatErr: 'Ne küldjön többször',
+            success: 'Szerezz sikert',
+            codeTip: 'Az ellenőrző kódod:'
         },
         phonePlaceholder: 'Kérjük, írja be a telefonszámot',
         validPlaceholder: 'Captcha',
-        validBtn: 'kérjen ellenőrző kódot'
+        validBtn: 'kérjen ellenőrző kódot',
+        loginSuccess: 'sikeres belépés'
+    },
+    requestInfo: {
+        withoutUrl: 'A kérelem címe nem lehet üres',
+        networkErr: 'A hálózati kérés sikertelen, kérjük, próbálkozzon később újra'
     },
     localeMap: {
         ar: 'arab',

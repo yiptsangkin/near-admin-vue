@@ -22,11 +22,18 @@ export default {
             emptyErr: 'verificatiecode moet worden ingevuld'
         },
         sendMsg: {
-            repeatErr: 'Verzend niet herhaaldelijk'
+            repeatErr: 'Verzend niet herhaaldelijk',
+            success: 'Krijg succes',
+            codeTip: 'Uw verificatiecode is'
         },
         phonePlaceholder: 'Voer een telefoonnummer in',
         validPlaceholder: 'Captcha',
-        validBtn: 'krijg verificatiecode'
+        validBtn: 'krijg verificatiecode',
+        loginSuccess: 'Succesvol ingelogd'
+    },
+    requestInfo: {
+        withoutUrl: 'Verzoekadres mag niet leeg zijn',
+        networkErr: 'Netwerkverzoek mislukt, probeer het later opnieuw'
     },
     localeMap: {
         ar: 'Arabisch',

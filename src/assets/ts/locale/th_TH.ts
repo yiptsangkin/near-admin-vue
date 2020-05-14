@@ -22,11 +22,18 @@ export default {
             emptyErr: 'ต้องกรอกรหัสยืนยัน'
         },
         sendMsg: {
-            repeatErr: 'อย่าส่งซ้ำ ๆ'
+            repeatErr: 'อย่าส่งซ้ำ ๆ',
+            success: 'รับความสำเร็จ',
+            codeTip: 'รหัสยืนยันของคุณคือ'
         },
         phonePlaceholder: 'กรุณาใส่หมายเลขโทรศัพท์',
         validPlaceholder: 'แจ้งลบความคิดเห็น',
-        validBtn: 'รับรหัสยืนยัน'
+        validBtn: 'รับรหัสยืนยัน',
+        loginSuccess: 'เข้าสู่ระบบสำเร็จ'
+    },
+    requestInfo: {
+        withoutUrl: 'ที่อยู่คำขอไม่สามารถว่างเปล่า',
+        networkErr: 'คำขอเครือข่ายล้มเหลวโปรดลองอีกครั้งในภายหลัง'
     },
     localeMap: {
         ar: 'ภาษาอาหรับ',

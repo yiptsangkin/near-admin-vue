@@ -22,11 +22,18 @@ export default {
             emptyErr: 'کد تأیید باید پر شود'
         },
         sendMsg: {
-            repeatErr: 'بارها و بارها ارسال نشود'
+            repeatErr: 'بارها و بارها ارسال نشود',
+            success: 'موفقیت کسب کنید',
+            codeTip: 'کد تأیید صحت شماست'
         },
         phonePlaceholder: 'لطفا شماره تلفن را وارد کنید',
         validPlaceholder: 'کپچا',
-        validBtn: 'کد تأیید را دریافت کنید'
+        validBtn: 'کد تأیید را دریافت کنید',
+        loginSuccess: 'ورود به سیستم موفق شد'
+    },
+    requestInfo: {
+        withoutUrl: 'آدرس درخواست خالی نیست',
+        networkErr: 'درخواست شبکه انجام نشد ، لطفا بعدا دوباره امتحان کنید'
     },
     localeMap: {
         ar: 'عربی',

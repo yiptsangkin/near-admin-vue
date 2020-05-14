@@ -22,11 +22,18 @@ export default {
             emptyErr: 'kontrollkood peab olema täidetud'
         },
         sendMsg: {
-            repeatErr: 'Ärge saatke korduvalt'
+            repeatErr: 'Ärge saatke korduvalt',
+            success: 'Saa edu',
+            codeTip: 'Teie kinnituskood on'
         },
         phonePlaceholder: 'Sisestage telefoninumber',
         validPlaceholder: 'Captcha',
-        validBtn: 'hankige kinnituskood'
+        validBtn: 'hankige kinnituskood',
+        loginSuccess: 'sisselogimine õnnestus'
+    },
+    requestInfo: {
+        withoutUrl: 'Taotluse aadress ei tohi olla tühi',
+        networkErr: 'Võrgu taotlus nurjus, proovige hiljem uuesti'
     },
     localeMap: {
         ar: 'Araabia keeles',

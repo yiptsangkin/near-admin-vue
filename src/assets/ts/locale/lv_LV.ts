@@ -22,11 +22,18 @@ export default {
             emptyErr: 'verifikācijas kods ir jāaizpilda'
         },
         sendMsg: {
-            repeatErr: 'Nesūtiet atkārtoti'
+            repeatErr: 'Nesūtiet atkārtoti',
+            success: 'Gūstiet panākumus',
+            codeTip: 'Jūsu verifikācijas kods ir'
         },
         phonePlaceholder: 'Lūdzu, ievadiet tālruņa numuru',
         validPlaceholder: 'Captcha',
-        validBtn: 'saņemt verifikācijas kodu'
+        validBtn: 'saņemt verifikācijas kodu',
+        loginSuccess: 'pieteikšanās veiksmīga'
+    },
+    requestInfo: {
+        withoutUrl: 'Pieprasījuma adreses lauks nedrīkst būt tukšs',
+        networkErr: 'Tīkla pieprasījums neizdevās, lūdzu, vēlāk mēģiniet vēlreiz'
     },
     localeMap: {
         ar: 'Arābu valodā',

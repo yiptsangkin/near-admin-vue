@@ -22,11 +22,18 @@ export default {
             emptyErr: 'varmennuskoodi on täytettävä'
         },
         sendMsg: {
-            repeatErr: 'Älä lähetä toistuvasti'
+            repeatErr: 'Älä lähetä toistuvasti',
+            success: 'Hanki menestys',
+            codeTip: 'Vahvistuskoodisi on'
         },
         phonePlaceholder: 'Anna puhelinnumero',
         validPlaceholder: 'Captcha',
-        validBtn: 'hanki vahvistuskoodi'
+        validBtn: 'hanki vahvistuskoodi',
+        loginSuccess: 'kirjautuminen onnistui'
+    },
+    requestInfo: {
+        withoutUrl: 'Pyyntöosoite ei voi olla tyhjä',
+        networkErr: 'Verkkopyyntö epäonnistui, yritä myöhemmin uudelleen'
     },
     localeMap: {
         ar: 'arabialainen',

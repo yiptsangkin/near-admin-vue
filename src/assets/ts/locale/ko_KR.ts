@@ -22,11 +22,18 @@ export default {
             emptyErr: '인증 코드를 작성해야합니다'
         },
         sendMsg: {
-            repeatErr: '반복해서 보내지 마십시오'
+            repeatErr: '반복해서 보내지 마십시오',
+            success: '성공',
+            codeTip: '인증 코드는'
         },
         phonePlaceholder: '전화 번호를 입력하십시오',
         validPlaceholder: '보안 문자',
-        validBtn: '인증 코드 받기'
+        validBtn: '인증 코드 받기',
+        loginSuccess: '성공적 로그인'
+    },
+    requestInfo: {
+        withoutUrl: '요청 주소는 비워 둘 수 없습니다',
+        networkErr: '네트워크 요청이 실패했습니다. 나중에 다시 시도하십시오'
     },
     localeMap: {
         ar: '아라비아 말',

@@ -22,11 +22,18 @@ export default {
             emptyErr: '驗證碼不能為空'
         },
         sendMsg: {
-            repeatErr: '請勿重複發送'
+            repeatErr: '請勿重複發送',
+            success: '獲取成功',
+            codeTip: '您的驗證碼為'
         },
         phonePlaceholder: '請輸入手機號',
         validPlaceholder: '驗證碼',
-        validBtn: '獲取驗證碼'
+        validBtn: '獲取驗證碼',
+        loginSuccess: '登錄成功'
+    },
+    requestInfo: {
+        withoutUrl: '請求地址不能為空',
+        networkErr: '網絡請求失敗，請稍後重試'
     },
     localeMap: {
         ar: '阿拉伯文',

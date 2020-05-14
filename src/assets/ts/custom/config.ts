@@ -19,6 +19,7 @@ const buildSwitch = {
 }
 
 const comConfig: ComConfig = {
+    apiHost: apiConfig.apiHost,
     sysInfo,
     buildSwitch
 }

@@ -22,11 +22,18 @@ export default {
             emptyErr: 'þarf að fylla staðfestingarkóða'
         },
         sendMsg: {
-            repeatErr: 'Ekki senda hvað eftir annað'
+            repeatErr: 'Ekki senda hvað eftir annað',
+            success: 'Fáðu árangur',
+            codeTip: 'Staðfestingarkóðinn þinn er'
         },
         phonePlaceholder: 'Vinsamlegast sláðu inn símanúmer',
         validPlaceholder: 'Captcha',
-        validBtn: 'fá staðfestingarkóða'
+        validBtn: 'fá staðfestingarkóða',
+        loginSuccess: 'innskráning tókst'
+    },
+    requestInfo: {
+        withoutUrl: 'Heimilisfang beiðninnar má ekki vera tómt',
+        networkErr: 'Netbeiðni mistókst. Vinsamlegast reyndu aftur seinna'
     },
     localeMap: {
         ar: 'Arabíska',

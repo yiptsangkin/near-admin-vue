@@ -22,11 +22,18 @@ export default {
             emptyErr: 'Cal omplir el codi de verificació'
         },
         sendMsg: {
-            repeatErr: 'No envieu repetidament'
+            repeatErr: 'No envieu repetidament',
+            success: 'Obté èxit',
+            codeTip: 'El vostre codi de verificació és'
         },
         phonePlaceholder: 'Introduïu el número de telèfon',
         validPlaceholder: 'Captcha',
-        validBtn: 'obtenir codi de verificació'
+        validBtn: 'obtenir codi de verificació',
+        loginSuccess: 'Inici de sessió correcta'
+    },
+    requestInfo: {
+        withoutUrl: 'L&#39;adreça de la sol·licitud no pot estar buida',
+        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més endavant'
     },
     localeMap: {
         ar: 'Àrab',

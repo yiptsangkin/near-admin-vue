@@ -22,11 +22,18 @@ export default {
             emptyErr: 'ಪರಿಶೀಲನಾ ಕೋಡ್ ಅನ್ನು ಭರ್ತಿ ಮಾಡಬೇಕು'
         },
         sendMsg: {
-            repeatErr: 'ಪದೇ ಪದೇ ಕಳುಹಿಸಬೇಡಿ'
+            repeatErr: 'ಪದೇ ಪದೇ ಕಳುಹಿಸಬೇಡಿ',
+            success: 'ಯಶಸ್ಸು ಪಡೆಯಿರಿ',
+            codeTip: 'ನಿಮ್ಮ ಪರಿಶೀಲನಾ ಕೋಡ್ ಆಗಿದೆ'
         },
         phonePlaceholder: 'ದಯವಿಟ್ಟು ಫೋನ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ',
         validPlaceholder: 'ಕ್ಯಾಪ್ಚಾ',
-        validBtn: 'ಪರಿಶೀಲನೆ ಕೋಡ್ ಪಡೆಯಿರಿ'
+        validBtn: 'ಪರಿಶೀಲನೆ ಕೋಡ್ ಪಡೆಯಿರಿ',
+        loginSuccess: 'ಲಾಗಿನ್ ಯಶಸ್ವಿಯಾಗಿದೆ'
+    },
+    requestInfo: {
+        withoutUrl: 'ವಿನಂತಿ ವಿಳಾಸ ಖಾಲಿಯಾಗಿರಬಾರದು',
+        networkErr: 'ನೆಟ್‌ವರ್ಕ್ ವಿನಂತಿ ವಿಫಲವಾಗಿದೆ, ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ'
     },
     localeMap: {
         ar: 'ಅರೇಬಿಕ್',

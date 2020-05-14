@@ -22,11 +22,18 @@ export default {
             emptyErr: '確認コードを入力する必要があります'
         },
         sendMsg: {
-            repeatErr: '繰り返し送信しないでください'
+            repeatErr: '繰り返し送信しないでください',
+            success: '成功する',
+            codeTip: '確認コードは'
         },
         phonePlaceholder: '電話番号を入力してください',
         validPlaceholder: 'キャプチャ',
-        validBtn: '確認コードを取得'
+        validBtn: '確認コードを取得',
+        loginSuccess: 'ログイン成功'
+    },
+    requestInfo: {
+        withoutUrl: 'リクエストアドレスは空にできません',
+        networkErr: 'ネットワークリクエストが失敗しました。しばらくしてからもう一度お試しください'
     },
     localeMap: {
         ar: 'アラビア語',

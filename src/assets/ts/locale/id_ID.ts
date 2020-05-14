@@ -22,11 +22,18 @@ export default {
             emptyErr: 'kode verifikasi harus diisi'
         },
         sendMsg: {
-            repeatErr: 'Jangan kirim berulang kali'
+            repeatErr: 'Jangan kirim berulang kali',
+            success: 'Dapatkan kesuksesan',
+            codeTip: 'Kode verifikasi Anda adalah'
         },
         phonePlaceholder: 'Silakan masukkan nomor telepon',
         validPlaceholder: 'Captcha',
-        validBtn: 'dapatkan kode verifikasi'
+        validBtn: 'dapatkan kode verifikasi',
+        loginSuccess: 'login berhasil'
+    },
+    requestInfo: {
+        withoutUrl: 'Alamat permintaan tidak boleh kosong',
+        networkErr: 'Permintaan jaringan gagal, silakan coba lagi nanti'
     },
     localeMap: {
         ar: 'Arab',

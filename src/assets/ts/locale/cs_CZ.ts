@@ -22,11 +22,18 @@ export default {
             emptyErr: 'musí být vyplněn ověřovací kód'
         },
         sendMsg: {
-            repeatErr: 'Neposílejte opakovaně'
+            repeatErr: 'Neposílejte opakovaně',
+            success: 'Získejte úspěch',
+            codeTip: 'Váš ověřovací kód je'
         },
         phonePlaceholder: 'Zadejte telefonní číslo',
         validPlaceholder: 'Captcha',
-        validBtn: 'získat ověřovací kód'
+        validBtn: 'získat ověřovací kód',
+        loginSuccess: 'přihlášení úspěšné'
+    },
+    requestInfo: {
+        withoutUrl: 'Adresa požadavku nemůže být prázdná',
+        networkErr: 'Žádost o síť selhala, zkuste to znovu později'
     },
     localeMap: {
         ar: 'arabština',

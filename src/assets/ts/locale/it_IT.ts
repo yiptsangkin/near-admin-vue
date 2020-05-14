@@ -22,11 +22,18 @@ export default {
             emptyErr: 'il codice di verifica deve essere compilato'
         },
         sendMsg: {
-            repeatErr: 'Non inviare più volte'
+            repeatErr: 'Non inviare più volte',
+            success: 'Ottieni successo',
+            codeTip: 'Il tuo codice di verifica è'
         },
         phonePlaceholder: 'Inserisci il numero di telefono',
         validPlaceholder: 'Captcha',
-        validBtn: 'ottieni il codice di verifica'
+        validBtn: 'ottieni il codice di verifica',
+        loginSuccess: 'accesso riuscito'
+    },
+    requestInfo: {
+        withoutUrl: 'L&#39;indirizzo della richiesta non può essere vuoto',
+        networkErr: 'Richiesta di rete non riuscita, riprovare più tardi'
     },
     localeMap: {
         ar: 'Arabo',

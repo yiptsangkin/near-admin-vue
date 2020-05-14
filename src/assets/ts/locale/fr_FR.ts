@@ -22,11 +22,18 @@ export default {
             emptyErr: 'le code de vérification doit être rempli'
         },
         sendMsg: {
-            repeatErr: 'Ne pas envoyer à plusieurs reprises'
+            repeatErr: 'Ne pas envoyer à plusieurs reprises',
+            success: 'Obtenez le succès',
+            codeTip: 'Votre code de vérification est'
         },
         phonePlaceholder: 'Veuillez entrer le numéro de téléphone',
         validPlaceholder: 'Captcha',
-        validBtn: 'obtenir le code de vérification'
+        validBtn: 'obtenir le code de vérification',
+        loginSuccess: 'connexion réussie'
+    },
+    requestInfo: {
+        withoutUrl: 'L&#39;adresse de la demande ne peut pas être vide',
+        networkErr: 'La demande de réseau a échoué, veuillez réessayer plus tard'
     },
     localeMap: {
         ar: 'arabe',

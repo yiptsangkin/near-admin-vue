@@ -22,11 +22,18 @@ export default {
             emptyErr: 'հաստատման ծածկագիրը պետք է լրացվի'
         },
         sendMsg: {
-            repeatErr: 'Մի քանի անգամ ուղարկեք'
+            repeatErr: 'Մի քանի անգամ ուղարկեք',
+            success: 'Ստացեք հաջողություն',
+            codeTip: 'Ձեր հաստատման կոդն է'
         },
         phonePlaceholder: 'Մուտքագրեք հեռախոսի համարը',
         validPlaceholder: 'Կապտչա',
-        validBtn: 'ստացեք հաստատման կոդ'
+        validBtn: 'ստացեք հաստատման կոդ',
+        loginSuccess: 'մուտքը հաջող է'
+    },
+    requestInfo: {
+        withoutUrl: 'Հայցի հասցեն չի կարող դատարկ լինել',
+        networkErr: 'Networkանցի հարցումը ձախողվեց, փորձեք ավելի ուշ'
     },
     localeMap: {
         ar: 'Արաբերեն',
