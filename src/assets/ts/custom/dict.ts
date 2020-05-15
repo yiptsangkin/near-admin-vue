@@ -29,6 +29,9 @@ export default {
     commonObj: {
         loginForm: {
             sendMsgGap: 10
+        },
+        copyright: {
+            githubUrl: 'https://github.com/yiptsangkin/near-admin-vue'
         }
     }
 }

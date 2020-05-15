@@ -3,6 +3,11 @@
 .n-login-ctx{
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  .n-login-main-ctx{
+    flex: 1;
+  }
   .n-login-logo-wrp{
     text-align: center;
     margin-top: 12px;
