@@ -105,6 +105,9 @@ const vueConfig = {
     // 配置merge
     configureWebpack: process.env.NODE_ENV === 'production' ? prodConfig : devConfig,
     css: {
+        extract: {
+            ignoreOrder: true
+        },
         loaderOptions: {
             less: {
                 lessOptions: {

@@ -86,5 +86,27 @@ export default {
         vi: 'vietnamský',
         'zh-cn': 'Zjednodušená čínština',
         'zh-tw': 'tradičná čínština'
+    },
+    menuObj: {
+        basicFeature: 'Základné schopnosti',
+        cpUse: 'Použitie komponentov',
+        childMenu: {
+            0: 'Rámcové základné schopnosti',
+            '0-0': 'Funkcia rámu',
+            '0-0-0': 'Konfigurácia projektu',
+            '0-0-1': 'Protokol front-end',
+            '0-0-2': 'Miestne falošné',
+            '0-0-3': 'globalizácia',
+            '0-0-4': 'Dátový slovník',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'sada nástrojov',
+            '0-0-7': 'Riadenie prístupu',
+            '0-0-8': 'klávesová skratka',
+            '0-1': 'Funkcia stránky',
+            '0-1-0': 'Komponentová stránka',
+            '0-1-1': 'url',
+            '0-1-2': 'Stránka bez povolenia',
+            '0-1-3': '404 strán'
+        }
     }
 }

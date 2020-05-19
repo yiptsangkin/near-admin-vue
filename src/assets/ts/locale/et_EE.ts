@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnami keel',
         'zh-cn': 'Lihtsustatud hiina keel',
         'zh-tw': 'traditsiooniline hiina keel'
+    },
+    menuObj: {
+        basicFeature: 'Põhivõime',
+        cpUse: 'Komponentide kasutamine',
+        childMenu: {
+            0: 'Raami põhilised võimalused',
+            '0-0': 'Raami funktsioon',
+            '0-0-0': 'Projekti konfiguratsioon',
+            '0-0-1': 'Esiosa logi',
+            '0-0-2': 'Kohalik pilk',
+            '0-0-3': 'globaliseerumine',
+            '0-0-4': 'Andmesõnastik',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Tööriistakomplekt',
+            '0-0-7': 'Juurdepääsu kontroll',
+            '0-0-8': 'kiirklahv',
+            '0-1': 'Lehe funktsioon',
+            '0-1-0': 'Komponentide leht',
+            '0-1-1': 'url leht',
+            '0-1-2': 'Lubade leht puudub',
+            '0-1-3': '404 lk'
+        }
     }
 }

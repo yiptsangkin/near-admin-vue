@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnamščina',
         'zh-cn': 'Poenostavljena kitajščina',
         'zh-tw': 'tradicionalno kitajsko'
+    },
+    menuObj: {
+        basicFeature: 'Osnovna sposobnost',
+        cpUse: 'Uporaba komponent',
+        childMenu: {
+            0: 'Osnovne zmožnosti okvirja',
+            '0-0': 'Funkcija okvira',
+            '0-0-0': 'Konfiguracija projekta',
+            '0-0-1': 'Sprednji dnevnik',
+            '0-0-2': 'Lokalni posmeh',
+            '0-0-3': 'globalizacija',
+            '0-0-4': 'Podatkovni slovar',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Nabor orodij',
+            '0-0-7': 'Nadzor dostopa',
+            '0-0-8': 'vroča tipka',
+            '0-1': 'Funkcija strani',
+            '0-1-0': 'Stran s sestavnimi deli',
+            '0-1-1': 'stran URL',
+            '0-1-2': 'Ni dovoljene strani',
+            '0-1-3': '404 strani'
+        }
     }
 }

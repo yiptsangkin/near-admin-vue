@@ -144,7 +144,7 @@ const sendReq = async (params: ReqType) => {
                     console.log('request fail')
                 }
             }
-            return result
+            return resData
         } catch (e) {
             loglineObj.setLog({
                 logType: 'error',
@@ -190,7 +190,7 @@ const sendReq = async (params: ReqType) => {
                     console.log('request fail')
                 }
             }
-            return result
+            return resData
         } catch (e) {
             loglineObj.setLog({
                 logType: 'error',
@@ -235,7 +235,7 @@ const sendReq = async (params: ReqType) => {
                     console.log('request fail')
                 }
             }
-            return result
+            return resData
         } catch (e) {
             loglineObj.setLog({
                 logType: 'error',
@@ -281,7 +281,7 @@ const sendReq = async (params: ReqType) => {
                     console.log('request fail')
                 }
             }
-            return result
+            return resData
         } catch (e) {
             loglineObj.setLog({
                 logType: 'error',

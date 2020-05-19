@@ -86,5 +86,27 @@ export default {
         vi: 'Vjetnamiešu',
         'zh-cn': 'Vienkāršota ķīniešu valoda',
         'zh-tw': 'tradicionālā ķīniešu'
+    },
+    menuObj: {
+        basicFeature: 'Pamata spējas',
+        cpUse: 'Komponentu lietošana',
+        childMenu: {
+            0: 'Ietvara pamata iespējas',
+            '0-0': 'Rāmja funkcija',
+            '0-0-0': 'Projekta konfigurācija',
+            '0-0-1': 'Sākuma žurnāls',
+            '0-0-2': 'Vietējie izspēles',
+            '0-0-3': 'globalizācija',
+            '0-0-4': 'Datu vārdnīca',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Rīku komplekts',
+            '0-0-7': 'Piekļuves kontrole',
+            '0-0-8': 'karstais taustiņš',
+            '0-1': 'Lapas funkcija',
+            '0-1-0': 'Komponentu lapa',
+            '0-1-1': 'url lapa',
+            '0-1-2': 'Nav atļauju lapas',
+            '0-1-3': '404 lpp'
+        }
     }
 }

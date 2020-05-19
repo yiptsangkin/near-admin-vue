@@ -7,3 +7,5 @@ declare module 'dict'
 
 declare module 'apiConfig'
 
+declare module 'comConfig'
+

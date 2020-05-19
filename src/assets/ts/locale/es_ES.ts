@@ -86,5 +86,27 @@ export default {
         vi: 'vietnamita',
         'zh-cn': 'Chino simplificado',
         'zh-tw': 'chino tradicional'
+    },
+    menuObj: {
+        basicFeature: 'Habilidad básica',
+        cpUse: 'Uso de componentes',
+        childMenu: {
+            0: 'Capacidades básicas del marco',
+            '0-0': 'Función de marco',
+            '0-0-0': 'Configuración del proyecto',
+            '0-0-1': 'Registro de front-end',
+            '0-0-2': 'Simulacro local',
+            '0-0-3': 'globalización',
+            '0-0-4': 'Diccionario de datos',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Conjunto de herramientas',
+            '0-0-7': 'Control de acceso',
+            '0-0-8': 'tecla de acceso rápido',
+            '0-1': 'Función de página',
+            '0-1-0': 'Página componente',
+            '0-1-1': 'página de url',
+            '0-1-2': 'Página sin permiso',
+            '0-1-3': '404 páginas'
+        }
     }
 }

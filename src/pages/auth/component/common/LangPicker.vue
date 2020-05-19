@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-    import Vue from 'vue';
+    import Vue from 'vue'
     import {mapGetters, mapActions} from 'vuex'
     import CountryFlag from '@core/countryflag'
 
@@ -50,6 +50,9 @@
             }
         },
         methods: {
+            ...mapActions([
+                'changeLocale'
+            ]),
             pickLocale (e: PickerEvent) {
                 const self = this
                 self.$i18n.locale = e.key
@@ -58,7 +61,8 @@
                 // cache in localStorge
                 localStorage.setItem('nearAdminLang', e.key)
                 // update vuex state
-                self.$store.dispatch('changeLocale', e.key)
+                // @ts-ignore
+                self.changeLocale(e.key)
             }
         },
         created () {

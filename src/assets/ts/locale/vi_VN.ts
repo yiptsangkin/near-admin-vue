@@ -86,5 +86,27 @@ export default {
         vi: 'Tiếng Việt',
         'zh-cn': 'Tiếng Trung giản thể',
         'zh-tw': 'truyền thống Trung Quốc'
+    },
+    menuObj: {
+        basicFeature: 'Khả năng cơ bản',
+        cpUse: 'Thành phần sử dụng',
+        childMenu: {
+            0: 'Khung khả năng cơ bản',
+            '0-0': 'Chức năng khung',
+            '0-0-0': 'Cấu hình dự án',
+            '0-0-1': 'Nhật ký kết thúc',
+            '0-0-2': 'Mock địa phương',
+            '0-0-3': 'toàn cầu hóa',
+            '0-0-4': 'Từ điển dữ liệu',
+            '0-0-5': 'Sự kiện',
+            '0-0-6': 'Bộ công cụ',
+            '0-0-7': 'Kiểm soát truy cập',
+            '0-0-8': 'chìa khóa nóng',
+            '0-1': 'Chức năng trang',
+            '0-1-0': 'Trang thành phần',
+            '0-1-1': 'trang url',
+            '0-1-2': 'Không có trang cho phép',
+            '0-1-3': '404 trang'
+        }
     }
 }

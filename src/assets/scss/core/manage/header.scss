@@ -1,0 +1,30 @@
+@import "../params";
+@import "../../custom/theme/theme";
+
+.n-layout-header{
+  height: 50px;
+  background-color: $grey-f;
+  box-shadow: rgba($grey-0, 0.08) 0px 1px 4px 0px;
+  z-index: 1;
+  padding: 0;
+  display: flex;
+  line-height: 50px;
+  .n-header-ham{
+    width: 50px;
+    height: 100%;
+    background-color: $primary-color;
+    cursor: pointer;
+    color: $grey-f;
+    text-align: center;
+  }
+  .n-header-sys-name{
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .n-header-nav{
+    ::v-deep .ant-menu-horizontal{
+      line-height: 49px;
+    }
+  }
+}

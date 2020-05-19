@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnam',
         'zh-cn': 'Basitleştirilmiş Çince',
         'zh-tw': 'Geleneksel çince'
+    },
+    menuObj: {
+        basicFeature: 'Temel yetenek',
+        cpUse: 'Bileşen kullanımı',
+        childMenu: {
+            0: 'Çerçeve temel özellikleri',
+            '0-0': 'Çerçeve işlevi',
+            '0-0-0': 'Proje yapılandırması',
+            '0-0-1': 'Ön uç günlüğü',
+            '0-0-2': 'Yerel alay',
+            '0-0-3': 'küreselleşme',
+            '0-0-4': 'Bilgi sözlüğü',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Araç Seti',
+            '0-0-7': 'Giriş kontrolu',
+            '0-0-8': 'kısayol tuşu',
+            '0-1': 'Sayfa işlevi',
+            '0-1-0': 'Bileşen sayfası',
+            '0-1-1': 'url sayfası',
+            '0-1-2': 'İzin sayfası yok',
+            '0-1-3': '404 sayfa'
+        }
     }
 }

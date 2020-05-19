@@ -86,5 +86,27 @@ export default {
         vi: 'vietnamita',
         'zh-cn': 'Cinese semplificato',
         'zh-tw': 'cinese tradizionale'
+    },
+    menuObj: {
+        basicFeature: 'Abilità di base',
+        cpUse: 'Uso dei componenti',
+        childMenu: {
+            0: 'Funzionalità di base del framework',
+            '0-0': 'Funzione frame',
+            '0-0-0': 'Configurazione del progetto',
+            '0-0-1': 'Registro front-end',
+            '0-0-2': 'Derisione locale',
+            '0-0-3': 'globalizzazione',
+            '0-0-4': 'Dizionario dei dati',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Set di attrezzi',
+            '0-0-7': 'Controllo di accesso',
+            '0-0-8': 'tasto di scelta rapida',
+            '0-1': 'Funzione di pagina',
+            '0-1-0': 'Pagina dei componenti',
+            '0-1-1': 'pagina URL',
+            '0-1-2': 'Nessuna pagina di autorizzazione',
+            '0-1-3': '404 pagine'
+        }
     }
 }

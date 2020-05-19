@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnamesisk',
         'zh-cn': 'Forenklet kinesisk',
         'zh-tw': 'traditionelt kinesisk'
+    },
+    menuObj: {
+        basicFeature: 'Grundlæggende evne',
+        cpUse: 'Brug af komponenter',
+        childMenu: {
+            0: 'Grundlæggende kapacitetsrammer',
+            '0-0': 'Rammefunktion',
+            '0-0-0': 'Projektkonfiguration',
+            '0-0-1': 'Front-end log',
+            '0-0-2': 'Lokal hån',
+            '0-0-3': 'globalisering',
+            '0-0-4': 'Data ordbog',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Toolset',
+            '0-0-7': 'Adgangskontrol',
+            '0-0-8': 'genvejstast',
+            '0-1': 'Sidefunktion',
+            '0-1-0': 'Komponent side',
+            '0-1-1': 'url-side',
+            '0-1-2': 'Ingen tilladelsesside',
+            '0-1-3': '404 sider'
+        }
     }
 }

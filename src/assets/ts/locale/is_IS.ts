@@ -86,5 +86,27 @@ export default {
         vi: 'Víetnamska',
         'zh-cn': 'Einfaldað kínverska',
         'zh-tw': 'hefðbundinn kínverskur'
+    },
+    menuObj: {
+        basicFeature: 'Grunngeta',
+        cpUse: 'Notkun íhluta',
+        childMenu: {
+            0: 'Grindargeta ramma',
+            '0-0': 'Rammaaðgerð',
+            '0-0-0': 'Uppsetning verkefnis',
+            '0-0-1': 'Framan endaskrá',
+            '0-0-2': 'Local spot',
+            '0-0-3': 'alþjóðavæðingin',
+            '0-0-4': 'Gagnabók',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Verkfæri',
+            '0-0-7': 'Aðgangsstýring',
+            '0-0-8': 'heitur lykill',
+            '0-1': 'Síðuaðgerð',
+            '0-1-0': 'Íhlutasíða',
+            '0-1-1': 'url síðu',
+            '0-1-2': 'Engin leyfissíða',
+            '0-1-3': '404 blaðsíður'
+        }
     }
 }

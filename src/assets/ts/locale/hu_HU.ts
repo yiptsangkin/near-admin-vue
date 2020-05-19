@@ -86,5 +86,27 @@ export default {
         vi: 'vietnami',
         'zh-cn': 'Egyszerűsített kínai',
         'zh-tw': 'tradicionális kínai'
+    },
+    menuObj: {
+        basicFeature: 'Alapvető képesség',
+        cpUse: 'Az alkatrészek használata',
+        childMenu: {
+            0: 'Keret alapvető képességek',
+            '0-0': 'Keret funkció',
+            '0-0-0': 'Projekt konfiguráció',
+            '0-0-1': 'Elülső napló',
+            '0-0-2': 'Helyi ál',
+            '0-0-3': 'globalizáció',
+            '0-0-4': 'Adat szótár',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'eszközkészlet',
+            '0-0-7': 'Hozzáférés-szabályozás',
+            '0-0-8': 'gyorsbillentyű',
+            '0-1': 'Oldal funkció',
+            '0-1-0': 'Alkatrész oldal',
+            '0-1-1': 'url oldal',
+            '0-1-2': 'Nincs engedélyezési oldal',
+            '0-1-3': '404 oldal'
+        }
     }
 }

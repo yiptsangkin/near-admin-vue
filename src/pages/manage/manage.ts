@@ -5,27 +5,46 @@ import utils from '@core/utils'
 import store from '@store/index'
 import VueI18n from 'vue-i18n'
 import lang from '@core/lang'
+import mock from '@mock/index'
 
 // antd component
 import {
-    Input,
-    Button,
     ConfigProvider,
-    DatePicker
+    Layout,
+    Icon,
+    Row,
+    Col,
+    Menu
 } from 'ant-design-vue'
+import comConfig from '@custom/config';
 
 // config
 Vue.config.productionTip = false
 
 // import antd
-Vue.component(Input.name, Input)
-Vue.component(Button.name, Button)
 Vue.component(ConfigProvider.name, ConfigProvider)
-Vue.component(DatePicker.name, DatePicker)
+Vue.component(Layout.name, Layout)
+Vue.component(Layout.Sider.name, Layout.Sider)
+Vue.component(Layout.Header.name, Layout.Header)
+Vue.component(Layout.Content.name, Layout.Content)
+Vue.component(Layout.Footer.name, Layout.Footer)
+Vue.component(Icon.name, Icon)
+Vue.component(Row.name, Row)
+Vue.component(Col.name, Col)
+Vue.component(Menu.name, Menu)
+Vue.component(Menu.Item.name, Menu.Item)
+Vue.component(Menu.ItemGroup.name, Menu.ItemGroup)
+Vue.component(Menu.SubMenu.name, Menu.SubMenu)
 
 // vue-i18n
 Vue.use(VueI18n)
 const i18n = new VueI18n(lang.i18nOpt)
+
+// mockjs
+if (comConfig.buildSwitch.isMock) {
+    Vue.use(mock as any)
+}
+
 
 router.beforeEach((to, from, next) => {
     const title = to.meta.title

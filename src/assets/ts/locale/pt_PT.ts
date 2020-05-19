@@ -19,7 +19,7 @@ export default {
             emptyErr: 'a senha não pode ficar em branco'
         },
         byValidTip: {
-            emptyErr: 'código de verificação deve ser preenchido'
+            emptyErr: 'o código de verificação deve ser preenchido'
         },
         sendMsg: {
             repeatErr: 'Não envie repetidamente',
@@ -86,5 +86,27 @@ export default {
         vi: 'vietnamita',
         'zh-cn': 'Chinês simplificado',
         'zh-tw': 'chinês tradicional'
+    },
+    menuObj: {
+        basicFeature: 'Habilidade básica',
+        cpUse: 'Uso de componentes',
+        childMenu: {
+            0: 'Recursos básicos da estrutura',
+            '0-0': 'Função de quadro',
+            '0-0-0': 'Configuração do projeto',
+            '0-0-1': 'Log de front-end',
+            '0-0-2': 'Simulação local',
+            '0-0-3': 'globalização',
+            '0-0-4': 'Dicionário de dados',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Conjunto de ferramentas',
+            '0-0-7': 'Controle de acesso',
+            '0-0-8': 'tecla de atalho',
+            '0-1': 'Função de página',
+            '0-1-0': 'Página componente',
+            '0-1-1': 'página de URL',
+            '0-1-2': 'Nenhuma página de permissão',
+            '0-1-3': '404 páginas'
+        }
     }
 }

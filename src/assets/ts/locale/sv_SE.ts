@@ -86,5 +86,27 @@ export default {
         vi: 'vietnames',
         'zh-cn': 'Förenklad kinesiska',
         'zh-tw': 'traditionell kinesiska'
+    },
+    menuObj: {
+        basicFeature: 'Grundläggande förmåga',
+        cpUse: 'Komponentanvändning',
+        childMenu: {
+            0: 'Framework grundläggande funktioner',
+            '0-0': 'Ramfunktion',
+            '0-0-0': 'Projektkonfiguration',
+            '0-0-1': 'Främre logg',
+            '0-0-2': 'Lokal håna',
+            '0-0-3': 'globaliseringen',
+            '0-0-4': 'Data ordbok',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Toolset',
+            '0-0-7': 'Åtkomstkontroll',
+            '0-0-8': 'snabbtangent',
+            '0-1': 'Sidfunktion',
+            '0-1-0': 'Komponent sida',
+            '0-1-1': 'url-sida',
+            '0-1-2': 'Ingen behörighetssida',
+            '0-1-3': '404 sidor'
+        }
     }
 }

@@ -1,0 +1,12 @@
+@import "../params";
+@import "../../custom/theme/theme";
+
+.n-manage-ctx{
+  height: 100%;
+}
+
+.n-layout-wrp{
+  height: 100%;
+  .n-layout-content{}
+  .n-layout-footer{}
+}

@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnamese',
         'zh-cn': 'Simplified Chinese',
         'zh-tw': 'traditional Chinese'
+    },
+    menuObj: {
+        basicFeature: 'Basic ability',
+        cpUse: 'Component use',
+        childMenu: {
+            0: 'Framework basic capabilities',
+            '0-0': 'Frame function',
+            '0-0-0': 'Project configuration',
+            '0-0-1': 'Front-end log',
+            '0-0-2': 'Local mock',
+            '0-0-3': 'globalization',
+            '0-0-4': 'Data Dictionary',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Toolset',
+            '0-0-7': 'Access control',
+            '0-0-8': 'hot key',
+            '0-1': 'Page function',
+            '0-1-0': 'Component page',
+            '0-1-1': 'url page',
+            '0-1-2': 'No permission page',
+            '0-1-3': '404 pages'
+        }
     }
 }

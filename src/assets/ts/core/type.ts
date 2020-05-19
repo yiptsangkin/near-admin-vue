@@ -97,3 +97,24 @@ export interface LoglineParams {
     desc: string,
     data: any
 }
+
+// Common Response
+export interface ComRespone {
+    code: number,
+    message: string,
+    timestamp: number,
+    data: any
+}
+
+// Menu List
+interface NavList {
+    name: string,
+    path?: string,
+    icon?: string,
+    groupName?: string,
+    child?: NavList[]
+}
+
+export interface MenuList {
+    menuList: NavList[]
+}

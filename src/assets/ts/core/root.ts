@@ -7,8 +7,6 @@ export default {
     data () {
         return {}
     },
-    methods: {
-    },
     created () {
         // global log tool
         window.Logline = utils.loglineObj

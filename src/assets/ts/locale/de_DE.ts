@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnamesisch',
         'zh-cn': 'Vereinfachtes Chinesisch',
         'zh-tw': 'traditionelles Chinesisch'
+    },
+    menuObj: {
+        basicFeature: 'Grundlegende Fähigkeit',
+        cpUse: 'Verwendung von Komponenten',
+        childMenu: {
+            0: 'Grundlegende Framework-Funktionen',
+            '0-0': 'Rahmenfunktion',
+            '0-0-0': 'Projektkonfiguration',
+            '0-0-1': 'Front-End-Protokoll',
+            '0-0-2': 'Lokale Verspottung',
+            '0-0-3': 'Globalisierung',
+            '0-0-4': 'Datenwörterbuch',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Toolset',
+            '0-0-7': 'Zugangskontrolle',
+            '0-0-8': 'Hotkey',
+            '0-1': 'Seitenfunktion',
+            '0-1-0': 'Komponentenseite',
+            '0-1-1': 'URL-Seite',
+            '0-1-2': 'Keine Berechtigungsseite',
+            '0-1-3': '404 Seiten'
+        }
     }
 }

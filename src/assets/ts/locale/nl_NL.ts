@@ -22,7 +22,7 @@ export default {
             emptyErr: 'verificatiecode moet worden ingevuld'
         },
         sendMsg: {
-            repeatErr: 'Verzend niet herhaaldelijk',
+            repeatErr: 'Stuur niet herhaaldelijk',
             success: 'Krijg succes',
             codeTip: 'Uw verificatiecode is'
         },
@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnamees',
         'zh-cn': 'Vereenvoudigd Chinees',
         'zh-tw': 'traditioneel Chinees'
+    },
+    menuObj: {
+        basicFeature: 'Basisvaardigheid',
+        cpUse: 'Gebruik van componenten',
+        childMenu: {
+            0: 'Framework basismogelijkheden',
+            '0-0': 'Frame functie',
+            '0-0-0': 'Projectconfiguratie',
+            '0-0-1': 'Front-end logboek',
+            '0-0-2': 'Lokale mock',
+            '0-0-3': 'globalisering',
+            '0-0-4': 'Data woordenboek',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Toolset',
+            '0-0-7': 'Toegangscontrole',
+            '0-0-8': 'sneltoets',
+            '0-1': 'Paginafunctie',
+            '0-1-0': 'Component pagina',
+            '0-1-1': 'url pagina',
+            '0-1-2': 'Geen toestemmingspagina',
+            '0-1-3': '404 pagina&#39;s'
+        }
     }
 }

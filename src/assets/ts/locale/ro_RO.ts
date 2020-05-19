@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnameză',
         'zh-cn': 'Chineză simplificată',
         'zh-tw': 'chineză tradițională'
+    },
+    menuObj: {
+        basicFeature: 'Abilitatea de bază',
+        cpUse: 'Utilizarea componentelor',
+        childMenu: {
+            0: 'Capacitățile de bază ale cadrului',
+            '0-0': 'Funcția cadru',
+            '0-0-0': 'Configurarea proiectului',
+            '0-0-1': 'Jurnal front-end',
+            '0-0-2': 'Batjocura locală',
+            '0-0-3': 'globalizarea',
+            '0-0-4': 'Dicționar de date',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Set de scule',
+            '0-0-7': 'Controlul accesului',
+            '0-0-8': 'cheie rapidă',
+            '0-1': 'Funcția paginii',
+            '0-1-0': 'Pagina componentă',
+            '0-1-1': 'pagina URL',
+            '0-1-2': 'Fără permisiune',
+            '0-1-3': '404 pagini'
+        }
     }
 }

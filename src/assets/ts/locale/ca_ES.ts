@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'L&#39;adreça de la sol·licitud no pot estar buida',
-        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més endavant'
+        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més tard'
     },
     localeMap: {
         ar: 'Àrab',
@@ -86,5 +86,27 @@ export default {
         vi: 'Vietnamita',
         'zh-cn': 'Xinès simplificat',
         'zh-tw': 'xinés tradicional'
+    },
+    menuObj: {
+        basicFeature: 'Capacitat bàsica',
+        cpUse: 'Ús de components',
+        childMenu: {
+            0: 'Capacitats bàsiques del marc',
+            '0-0': 'Funció del fotograma',
+            '0-0-0': 'Configuració del projecte',
+            '0-0-1': 'Registre front-end',
+            '0-0-2': 'Mofa local',
+            '0-0-3': 'globalització',
+            '0-0-4': 'Diccionari de dades',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Conjunt d’eines',
+            '0-0-7': 'Control d&#39;accés',
+            '0-0-8': 'tecla calent',
+            '0-1': 'Funció de pàgina',
+            '0-1-0': 'Pàgina de components',
+            '0-1-1': 'url pàgina',
+            '0-1-2': 'Sense pàgina de permís',
+            '0-1-3': '404 pàgines'
+        }
     }
 }

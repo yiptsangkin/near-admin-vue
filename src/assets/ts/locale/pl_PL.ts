@@ -86,5 +86,27 @@ export default {
         vi: 'wietnamski',
         'zh-cn': 'Chiński uproszczony',
         'zh-tw': 'tradycyjne chińskie'
+    },
+    menuObj: {
+        basicFeature: 'Podstawowa umiejętność',
+        cpUse: 'Wykorzystanie komponentu',
+        childMenu: {
+            0: 'Podstawowe możliwości środowiska',
+            '0-0': 'Funkcja ramki',
+            '0-0-0': 'Konfiguracja projektu',
+            '0-0-1': 'Dziennik front-end',
+            '0-0-2': 'Lokalna makieta',
+            '0-0-3': 'globalizacja',
+            '0-0-4': 'Słownik danych',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'Zestaw narzędzi',
+            '0-0-7': 'Kontrola dostępu',
+            '0-0-8': 'Klawisz skrótu',
+            '0-1': 'Funkcja strony',
+            '0-1-0': 'Strona komponentu',
+            '0-1-1': 'strona URL',
+            '0-1-2': 'Brak strony zezwolenia',
+            '0-1-3': '404 strony'
+        }
     }
 }

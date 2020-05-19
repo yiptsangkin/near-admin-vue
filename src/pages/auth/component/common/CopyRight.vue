@@ -17,7 +17,7 @@
         name: 'CopyRight',
         data() {
             return {
-                dict: dict
+                dict
             }
         }
     });

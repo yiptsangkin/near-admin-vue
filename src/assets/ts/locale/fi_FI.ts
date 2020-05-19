@@ -6,7 +6,7 @@ export default {
     },
     loginForm: {
         byAccountBtn: 'Tilin salasanan kirjautuminen',
-        byPhoneBtn: 'Puhelinnumeron kirjautuminen',
+        byPhoneBtn: 'Puhelinnumero sisäänkirjautuminen',
         accountPlaceholder: 'Anna käyttäjätunnus',
         passwordPlaceholder: 'Anna salasana',
         autoLogin: 'automaattinen sisäänkirjautuminen',
@@ -86,5 +86,27 @@ export default {
         vi: 'vietnam',
         'zh-cn': 'Yksinkertaistettu kiina',
         'zh-tw': 'perinteinen kiina'
+    },
+    menuObj: {
+        basicFeature: 'Peruskyky',
+        cpUse: 'Komponenttien käyttö',
+        childMenu: {
+            0: 'Kehyksen perusominaisuudet',
+            '0-0': 'Kehystoiminto',
+            '0-0-0': 'Projektin kokoonpano',
+            '0-0-1': 'Etuosan loki',
+            '0-0-2': 'Paikallinen pilkka',
+            '0-0-3': 'globalisaatio',
+            '0-0-4': 'Tietojen sanakirja',
+            '0-0-5': 'EventBus',
+            '0-0-6': 'työkalusarja',
+            '0-0-7': 'Kulunvalvonta',
+            '0-0-8': 'pikanäppäin',
+            '0-1': 'Sivutoiminto',
+            '0-1-0': 'Komponenttisivu',
+            '0-1-1': 'URL-sivu',
+            '0-1-2': 'Ei lupa-sivua',
+            '0-1-3': '404 sivua'
+        }
     }
 }

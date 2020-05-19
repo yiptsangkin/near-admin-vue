@@ -1,0 +1,12 @@
+@import "../params";
+@import "../../custom/theme/theme";
+
+.n-layout-sider{
+  background-color: $grey-f9;
+  ::v-deep .ant-menu{
+    background-color: unset;
+  }
+  .n-layout-sider-menu{
+    width: 200px;
+  }
+}
