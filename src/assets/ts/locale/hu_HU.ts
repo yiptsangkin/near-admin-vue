@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url oldal',
             '0-1-2': 'Nincs engedélyezési oldal',
             '0-1-3': '404 oldal'
+        },
+        defaultMenu: {
+            home: 'itthon'
+        },
+        errorTip: {
+            notfoundTip: 'Nem található elem ezen az úton',
+            emptyErr: 'A komponens elérési útja nincs konfigurálva'
         }
     }
 }

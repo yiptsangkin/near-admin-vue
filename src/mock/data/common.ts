@@ -79,12 +79,12 @@ export const getUserMenu = (req: any): ComRespone => {
                                     child: [
                                         {
                                             name: 'menuObj.childMenu.0-0-0',
-                                            path: '',
+                                            path: 'demo/HelloWorld',
                                             icon: ''
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-1',
-                                            path: '',
+                                            path: 'demo/HelloWorld2',
                                             icon: ''
                                         },
                                         {

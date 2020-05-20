@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url sayfası',
             '0-1-2': 'İzin sayfası yok',
             '0-1-3': '404 sayfa'
+        },
+        defaultMenu: {
+            home: 'Ev'
+        },
+        errorTip: {
+            notfoundTip: 'Bu yol altında hiçbir bileşen bulunamadı',
+            emptyErr: 'Bileşen yolu yapılandırılmadı'
         }
     }
 }

@@ -1,7 +1,8 @@
-import {UserInfo, MenuList} from '@core/type'
+import {UserInfo, MenuList, CpInfo} from '@core/type'
 import lang from '@core/lang'
 import comConfig, {ComConfig} from '@custom/config'
 import {ActionContext} from 'vuex'
+import dict from '@custom/dict';
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
@@ -14,7 +15,10 @@ interface State {
     comConfig: ComConfig,
     menuObj: MenuList,
     curMenu: number[],
-    defaultIndexs: string[]
+    defaultIndexs: string[],
+    curTagList: CpInfo[],
+    curTagIndex: number,
+    rightPathList: string[]
 }
 
 interface Getter {
@@ -36,7 +40,16 @@ const state: State = {
         menuList: []
     },
     curMenu: [0],
-    defaultIndexs: []
+    defaultIndexs: [],
+    curTagList: [
+        {
+            component: 'core/home/HomePage',
+            title: dict.localeObj.menuObj.defaultMenu.home,
+            navIndex: '-1'
+        }
+    ],
+    curTagIndex: 0,
+    rightPathList: ['demo/HelloWorld', 'demo/HelloWorld2']
 }
 
 const getters: Getter = {
@@ -60,6 +73,15 @@ const getters: Getter = {
     },
     defaultIndexs: (getterState: State) => {
         return getterState.defaultIndexs
+    },
+    curTagList: (getterState: State) => {
+        return getterState.curTagList
+    },
+    curTagIndex: (getterState: State) => {
+        return getterState.curTagIndex
+    },
+    rightPathList: (getterState: State) => {
+        return getterState.rightPathList
     }
 }
 
@@ -75,6 +97,22 @@ const mutations = {
     },
     changeDefaultIndexs: (mutationState: State, curSideMenu: string[]) => {
         mutationState.defaultIndexs = curSideMenu
+    },
+    addCurTag: (mutationState: State, cpInfo: CpInfo) => {
+        mutationState.curTagList.push(cpInfo)
+    },
+    removeCurTag: (mutationState: State, cpInfo: CpInfo) => {
+        if (cpInfo.idx || cpInfo.idx === 0) {
+            mutationState.curTagList.splice(cpInfo.idx, 1)
+        }
+    },
+    updateCurTag: (mutationState: State, cpInfo: CpInfo) => {
+        if (cpInfo.idx || cpInfo.idx === 0) {
+            mutationState.curTagList[cpInfo.idx] = cpInfo
+        }
+    },
+    changeCurTagIndex: (mutationState: State, tagIndex: number) => {
+        mutationState.curTagIndex = tagIndex
     }
 }
 
@@ -90,6 +128,18 @@ const actions = {
     },
     changeDefaultIndexs: (context: ActionContext<State, State>, curSideMenu: string[]) => {
         context.commit('changeDefaultIndexs', curSideMenu)
+    },
+    changeTag: (context: ActionContext<State, State>, tagOp: any) => {
+        if (tagOp.op === 'add') {
+            context.commit('addCurTag', tagOp.cpInfo)
+        } else if (tagOp.op === 'remove') {
+            context.commit('removeCurTag', tagOp.cpInfo)
+        } else if (tagOp.op === 'update') {
+            context.commit('updateCurTag', tagOp.cpInfo)
+        }
+    },
+    changeCurTagIndex: (context: ActionContext<State, State>, tagIndex: number) => {
+        context.commit('changeCurTagIndex', tagIndex)
     }
 }
 

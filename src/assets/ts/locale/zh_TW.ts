@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url頁面',
             '0-1-2': '無權限頁面',
             '0-1-3': '404頁面'
+        },
+        defaultMenu: {
+            home: '首頁'
+        },
+        errorTip: {
+            notfoundTip: '未找到該路徑下的組件',
+            emptyErr: '未配置組件路徑'
         }
     }
 }

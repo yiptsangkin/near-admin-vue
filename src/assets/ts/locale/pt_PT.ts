@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'página de URL',
             '0-1-2': 'Nenhuma página de permissão',
             '0-1-3': '404 páginas'
+        },
+        defaultMenu: {
+            home: 'Casa'
+        },
+        errorTip: {
+            notfoundTip: 'Nenhum componente encontrado neste caminho',
+            emptyErr: 'Caminho do componente não configurado'
         }
     }
 }

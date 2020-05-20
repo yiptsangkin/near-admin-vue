@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url lapa',
             '0-1-2': 'Nav atļauju lapas',
             '0-1-3': '404 lpp'
+        },
+        defaultMenu: {
+            home: 'Mājas'
+        },
+        errorTip: {
+            notfoundTip: 'Šajā ceļā nav atrasts neviens komponents',
+            emptyErr: 'Komponenta ceļš nav konfigurēts'
         }
     }
 }

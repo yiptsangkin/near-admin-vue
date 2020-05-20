@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url-sida',
             '0-1-2': 'Ingen behörighetssida',
             '0-1-3': '404 sidor'
+        },
+        defaultMenu: {
+            home: 'Hem'
+        },
+        errorTip: {
+            notfoundTip: 'Ingen komponent hittades under denna sökväg',
+            emptyErr: 'Komponentväg inte konfigurerad'
         }
     }
 }

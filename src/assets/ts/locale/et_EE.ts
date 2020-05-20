@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url leht',
             '0-1-2': 'Lubade leht puudub',
             '0-1-3': '404 lk'
+        },
+        defaultMenu: {
+            home: 'Kodu'
+        },
+        errorTip: {
+            notfoundTip: 'Selle tee alt ei leitud ühtegi komponenti',
+            emptyErr: 'Komponendi tee pole konfigureeritud'
         }
     }
 }

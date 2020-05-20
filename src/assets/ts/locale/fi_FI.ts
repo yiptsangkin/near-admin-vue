@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'URL-sivu',
             '0-1-2': 'Ei lupa-sivua',
             '0-1-3': '404 sivua'
+        },
+        defaultMenu: {
+            home: 'Koti'
+        },
+        errorTip: {
+            notfoundTip: 'Tätä polkua ei löytynyt',
+            emptyErr: 'Komponenttipolkua ei ole määritetty'
         }
     }
 }

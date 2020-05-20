@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url pagina',
             '0-1-2': 'Geen toestemmingspagina',
             '0-1-3': '404 pagina&#39;s'
+        },
+        defaultMenu: {
+            home: 'Huis'
+        },
+        errorTip: {
+            notfoundTip: 'Geen onderdeel gevonden onder dit pad',
+            emptyErr: 'Componentpad niet geconfigureerd'
         }
     }
 }

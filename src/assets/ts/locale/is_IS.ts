@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url síðu',
             '0-1-2': 'Engin leyfissíða',
             '0-1-3': '404 blaðsíður'
+        },
+        defaultMenu: {
+            home: 'Heim'
+        },
+        errorTip: {
+            notfoundTip: 'Enginn hluti fannst undir þessari slóð',
+            emptyErr: 'Íhlutaslóð ekki stillt'
         }
     }
 }

@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'stran URL',
             '0-1-2': 'Ni dovoljene strani',
             '0-1-3': '404 strani'
+        },
+        defaultMenu: {
+            home: 'Domov'
+        },
+        errorTip: {
+            notfoundTip: 'Pod to potjo ni mogoče najti nobene komponente',
+            emptyErr: 'Pot komponente ni konfigurirana'
         }
     }
 }

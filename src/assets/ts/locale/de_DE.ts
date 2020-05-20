@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'URL-Seite',
             '0-1-2': 'Keine Berechtigungsseite',
             '0-1-3': '404 Seiten'
+        },
+        defaultMenu: {
+            home: 'Zuhause'
+        },
+        errorTip: {
+            notfoundTip: 'Unter diesem Pfad wurde keine Komponente gefunden',
+            emptyErr: 'Komponentenpfad nicht konfiguriert'
         }
     }
 }

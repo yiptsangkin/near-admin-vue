@@ -112,9 +112,18 @@ interface NavList {
     path?: string,
     icon?: string,
     groupName?: string,
+    params?: any,
     child?: NavList[]
 }
 
 export interface MenuList {
     menuList: NavList[]
+}
+
+export interface CpInfo {
+    idx?: number,
+    component: string,
+    title: string,
+    navIndex: string,
+    params?: any
 }

@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'halaman url',
             '0-1-2': 'Tidak ada halaman izin',
             '0-1-3': '404 halaman'
+        },
+        defaultMenu: {
+            home: 'Rumah'
+        },
+        errorTip: {
+            notfoundTip: 'Tidak ada komponen yang ditemukan di bawah jalur ini',
+            emptyErr: 'Jalur komponen tidak dikonfigurasi'
         }
     }
 }

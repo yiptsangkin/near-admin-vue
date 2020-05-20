@@ -24,6 +24,15 @@ export default {
         },
         requestInfo: {
             withoutUrl: 'requestInfo.withoutUrl'
+        },
+        menuObj: {
+            defaultMenu: {
+                home: 'menuObj.defaultMenu.home'
+            },
+            errorTip: {
+                notfoundTip: 'menuObj.errorTip.notfoundTip',
+                emptyErr: 'menuObj.errorTip.emptyErr'
+            }
         }
     },
     commonObj: {

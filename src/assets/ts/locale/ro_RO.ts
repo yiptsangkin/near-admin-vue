@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'pagina URL',
             '0-1-2': 'Fără permisiune',
             '0-1-3': '404 pagini'
+        },
+        defaultMenu: {
+            home: 'Acasă'
+        },
+        errorTip: {
+            notfoundTip: 'Nici o componentă nu a fost găsită sub această cale',
+            emptyErr: 'Calea componentă nu este configurată'
         }
     }
 }

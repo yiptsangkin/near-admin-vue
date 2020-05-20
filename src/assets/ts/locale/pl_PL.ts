@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'strona URL',
             '0-1-2': 'Brak strony zezwolenia',
             '0-1-3': '404 strony'
+        },
+        defaultMenu: {
+            home: 'Dom'
+        },
+        errorTip: {
+            notfoundTip: 'Nie znaleziono komponentu pod tą ścieżką',
+            emptyErr: 'Ścieżka komponentu nie została skonfigurowana'
         }
     }
 }

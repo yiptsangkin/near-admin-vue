@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url pàgina',
             '0-1-2': 'Sense pàgina de permís',
             '0-1-3': '404 pàgines'
+        },
+        defaultMenu: {
+            home: 'Inici'
+        },
+        errorTip: {
+            notfoundTip: 'No s&#39;ha trobat component d&#39;aquesta ruta',
+            emptyErr: 'Ruta del component no configurada'
         }
     }
 }

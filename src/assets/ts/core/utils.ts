@@ -299,12 +299,39 @@ const sendReq = async (params: ReqType) => {
             return e
         }
     }
+}
 
+const decodeParams = (params: string): any => {
+    try {
+        return JSON.parse(decodeURIComponent(params))
+    } catch (e) {
+        return {}
+    }
+}
+
+const encodeParams = (params: any): string => {
+    try {
+        return encodeURIComponent(JSON.stringify(params))
+    } catch (e) {
+        return ''
+    }
+}
+
+const isUrl = (str: string): boolean => {
+    const urlReg = /^((http:\/\/)|(https:\/\/))/g
+    if (urlReg.test(str)) {
+        return true
+    } else {
+        return false
+    }
 }
 
 export default {
     loglineObj,
     setPageTitle,
     getHotKeyStringList,
-    sendReq
+    sendReq,
+    decodeParams,
+    encodeParams,
+    isUrl
 }

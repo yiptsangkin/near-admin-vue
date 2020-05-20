@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url-side',
             '0-1-2': 'Ingen tilladelsesside',
             '0-1-3': '404 sider'
+        },
+        defaultMenu: {
+            home: 'Hjem'
+        },
+        errorTip: {
+            notfoundTip: 'Der blev ikke fundet nogen komponent under denne sti',
+            emptyErr: 'Komponentsti ikke konfigureret'
         }
     }
 }

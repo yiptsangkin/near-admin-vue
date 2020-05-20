@@ -6,6 +6,7 @@ import store from '@store/index'
 import VueI18n from 'vue-i18n'
 import lang from '@core/lang'
 import mock from '@mock/index'
+import AsyncComputed from 'vue-async-computed'
 
 // antd component
 import {
@@ -14,7 +15,8 @@ import {
     Icon,
     Row,
     Col,
-    Menu
+    Menu,
+    message
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -35,6 +37,8 @@ Vue.component(Menu.name, Menu)
 Vue.component(Menu.Item.name, Menu.Item)
 Vue.component(Menu.ItemGroup.name, Menu.ItemGroup)
 Vue.component(Menu.SubMenu.name, Menu.SubMenu)
+// import antd directive
+Vue.prototype.$message = message
 
 // vue-i18n
 Vue.use(VueI18n)
@@ -45,6 +49,8 @@ if (comConfig.buildSwitch.isMock) {
     Vue.use(mock as any)
 }
 
+// async computed
+Vue.use(AsyncComputed)
 
 router.beforeEach((to, from, next) => {
     const title = to.meta.title

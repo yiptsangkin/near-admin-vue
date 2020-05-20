@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'trang url',
             '0-1-2': 'Không có trang cho phép',
             '0-1-3': '404 trang'
+        },
+        defaultMenu: {
+            home: 'Trang Chủ'
+        },
+        errorTip: {
+            notfoundTip: 'Không tìm thấy thành phần nào dưới đường dẫn này',
+            emptyErr: 'Đường dẫn thành phần không được cấu hình'
         }
     }
 }

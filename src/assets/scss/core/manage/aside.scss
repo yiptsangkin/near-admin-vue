@@ -3,6 +3,7 @@
 
 .n-layout-sider{
   background-color: $grey-f9;
+  overflow-y: auto;
   ::v-deep .ant-menu{
     background-color: unset;
   }

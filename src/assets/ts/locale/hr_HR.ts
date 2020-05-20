@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'URL adresa',
             '0-1-2': 'Nema dopuštene stranice',
             '0-1-3': '404 stranice'
+        },
+        defaultMenu: {
+            home: 'Dom'
+        },
+        errorTip: {
+            notfoundTip: 'Pod ovom stazom nije pronađena nijedna komponenta',
+            emptyErr: 'Put komponente nije konfiguriran'
         }
     }
 }

@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'url',
             '0-1-2': 'Žádná stránka povolení',
             '0-1-3': '404 stránek'
+        },
+        defaultMenu: {
+            home: 'Domov'
+        },
+        errorTip: {
+            notfoundTip: 'Pod touto cestou nebyla nalezena žádná součást',
+            emptyErr: 'Cesta komponenty není nakonfigurována'
         }
     }
 }

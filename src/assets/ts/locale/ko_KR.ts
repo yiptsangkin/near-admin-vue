@@ -107,6 +107,13 @@ export default {
             '0-1-1': 'URL 페이지',
             '0-1-2': '권한 페이지가 없습니다',
             '0-1-3': '404 페이지'
+        },
+        defaultMenu: {
+            home: '집'
+        },
+        errorTip: {
+            notfoundTip: '이 경로에 구성 요소가 없습니다.',
+            emptyErr: '구성 요소 경로가 구성되지 않았습니다'
         }
     }
 }
