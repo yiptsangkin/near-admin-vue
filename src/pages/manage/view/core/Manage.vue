@@ -10,7 +10,7 @@
                         <keep-alive :include="curTagList.map(function(e){const o = e.component.split('/'); if (!e.pk) return o[o.length-1]; return `${o[o.length-1]}-${e.pk}`}).toString()">
                             <component
                                     ref="active-cp"
-                                    :is="isExist ? activeComponent : noFound"
+                                    :is="activeComponent"
                                     :key="curTagList[curTagIndex].pk"
                                     :cp-params="curTagList[curTagIndex].params"
                                     :page-path="curTagList[curTagIndex].component"
@@ -50,7 +50,6 @@
         },
         data () {
             return {
-                isExist: true
             }
         },
         computed: {
@@ -58,13 +57,10 @@
                 'curTagList',
                 'curTagIndex',
                 'rightPathList'
-            ]),
-            noFound () {
-                return NoFound
-            }
+            ])
         },
         asyncComputed: {
-            activeComponent () {
+            async activeComponent () {
                 const self = this
                 let activeCp
                 const curCp = self.curTagList[self.curTagIndex]
@@ -74,23 +70,24 @@
                     // is created by directive
                     const isApiNew = curCp.params ? curCp.params.apiNew : false
                     if (ableList.indexOf(curCp.component) !== -1 || isApiNew) {
-                        activeCp = (): any => ({
-                            component: import('../' + curCp.component).then((res: any) => {
-                                // set new component name
-                                res.default.options.name = curCp.cacheName
-                                return res.default
-                            }).catch((e: any) => {
-                                self.isExist = false
-                                self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.notfoundTip)} <<${curCp.component}>>`)
-                            }),
-                            delay: 200,
-                            timeout: 3000
-                        })
+                        try {
+                            const pageCp = await import('../' + curCp.component)
+                            pageCp.default.options.name = curCp.cacheName
+                            const cpAsync = new Promise((resolve) => {
+                                resolve(pageCp)
+                            })
+                            activeCp = (): any => ({
+                                component: cpAsync,
+                                delay: 200,
+                                timeout: 3000
+                            })
+                        } catch (e) {
+                            activeCp = NoFound
+                            self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.notfoundTip)} <<${curCp.component}>>`)
+                        }
                     } else {
                         activeCp = NoRight
                     }
-                } else {
-                    self.isExist = false
                 }
                 return activeCp
             }
@@ -103,8 +100,6 @@
             ]),
             changeCp (cpInfo: CpInfo, byMenu: boolean = true) {
                 const self = this
-                // default exist
-                self.isExist = true
                 // if empty component, return false
                 if (!cpInfo.component) {
                     self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.emptyErr)}`)

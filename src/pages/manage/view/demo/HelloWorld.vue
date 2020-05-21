@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ cpParams.hello }}
+        <a-input v-model="a"></a-input>
     </div>
 </template>
 
