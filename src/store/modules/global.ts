@@ -3,10 +3,12 @@ import lang from '@core/lang'
 import comConfig, {ComConfig} from '@custom/config'
 import {ActionContext} from 'vuex'
 import dict from '@custom/dict';
+import utils from '@core/utils';
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
+const RDN_KEY = utils.randomCharacter(6)
 
 interface State {
     userInfo: UserInfo, // user info status
@@ -45,7 +47,9 @@ const state: State = {
         {
             component: 'core/home/HomePage',
             title: dict.localeObj.menuObj.defaultMenu.home,
-            navIndex: '-1'
+            navIndex: '-1',
+            pk: RDN_KEY,
+            cacheName: `HomPage-${RDN_KEY}`
         }
     ],
     curTagIndex: 0,

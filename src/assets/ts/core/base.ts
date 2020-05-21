@@ -10,6 +10,8 @@ export default {
     props: {
         pagePath: {
             type: String
+        },
+        cpParams: {
         }
     },
     components: {},
@@ -55,7 +57,7 @@ export default {
             })
         }
     },
-    created () {
+    mounted () {
         const self = this
         self.bindHotKeyEvent()
     }

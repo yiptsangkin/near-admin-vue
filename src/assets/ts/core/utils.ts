@@ -326,6 +326,17 @@ const isUrl = (str: string): boolean => {
     }
 }
 
+const randomCharacter = (rdn: number): string => {
+    const newList = []
+    const characterList = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+        'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    for (let i = 0; i < rdn; i++) {
+        const rdnChar = characterList[parseInt((Math.random() * characterList.length).toString(), 10)]
+        newList.push(i === 0 ? rdnChar : rdnChar.toLowerCase())
+    }
+    return newList.join('')
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -333,5 +344,6 @@ export default {
     sendReq,
     decodeParams,
     encodeParams,
-    isUrl
+    isUrl,
+    randomCharacter
 }

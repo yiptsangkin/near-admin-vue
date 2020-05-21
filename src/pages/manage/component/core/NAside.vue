@@ -20,8 +20,8 @@
                                         <span slot="title" :title="$t(sitem.name)"><a-icon :type="sitem.icon" v-if="sitem.icon"/><span>{{ $t(sitem.name) }}</span></span>
                                         <template v-for="(ssitem, ssindex) in sitem.child || []">
                                             <a-menu-item
-                                                    :key="`sub-${index}-${sindex}-${ssindex}`"
-                                                    :nav-index="`sub-${index}-${sindex}-${ssindex}`"
+                                                    :key="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
+                                                    :nav-index="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
                                                     :cp-path="ssitem.path"
                                                     :params-detail="encodeParams(ssitem.params)"
                                                     :cp-name="ssitem.name"
@@ -33,8 +33,8 @@
                                 </template>
                                 <template v-else>
                                     <a-menu-item
-                                            :key="`sub-${index}-${sindex}`"
-                                            :nav-index="`sub-${index}-${sindex}`"
+                                            :key="`menu-${curMenu}-sub-${index}-${sindex}`"
+                                            :nav-index="`menu-${curMenu}-sub-${index}-${sindex}`"
                                             :cp-path="sitem.path"
                                             :params-detail="encodeParams(sitem.params)"
                                             :cp-name="sitem.name"
@@ -52,8 +52,8 @@
                                         <span slot="title" :title="$t(sitem.name)"><a-icon :type="sitem.icon" v-if="sitem.icon"/><span>{{ $t(sitem.name) }}</span></span>
                                         <template v-for="(ssitem, ssindex) in sitem.child || []">
                                             <a-menu-item
-                                                    :key="`sub-${index}-${sindex}-${ssindex}`"
-                                                    :nav-index="`sub-${index}-${sindex}-${ssindex}`"
+                                                    :key="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
+                                                    :nav-index="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
                                                     :cp-path="ssitem.path"
                                                     :params-detail="encodeParams(ssitem.params)"
                                                     :cp-name="ssitem.name"
@@ -65,8 +65,8 @@
                                 </template>
                                 <template v-else>
                                     <a-menu-item
-                                            :key="`sub-${index}-${sindex}`"
-                                            :nav-index="`sub-${index}-${sindex}`"
+                                            :key="`menu-${curMenu}-sub-${index}-${sindex}`"
+                                            :nav-index="`menu-${curMenu}-sub-${index}-${sindex}`"
                                             :cp-path="sitem.path"
                                             :params-detail="encodeParams(sitem.params)"
                                             :cp-name="sitem.name"
@@ -80,8 +80,8 @@
                 </template>
                 <template v-else>
                     <a-menu-item
-                            :key="`menu-${index}`"
-                            :nav-index="`menu-${index}`"
+                            :key="`menu-${curMenu}-${index}`"
+                            :nav-index="`menu-${curMenu}-${index}`"
                             :cp-path="item.path"
                             :cp-name="item.name"
                             :params-detail="encodeParams(item.params)"
@@ -137,7 +137,7 @@
                             component: cpPath,
                             title: cpTitle,
                             navIndex: cpIndex,
-                            params: menuParams ? utils.decodeParams(menuParams) : null
+                            params: menuParams || null
                         } as CpInfo)
                     }
                 } else if (cpIndex !== '-1') {

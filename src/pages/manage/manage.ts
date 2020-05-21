@@ -16,7 +16,8 @@ import {
     Row,
     Col,
     Menu,
-    message
+    message,
+    Input
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -37,6 +38,7 @@ Vue.component(Menu.name, Menu)
 Vue.component(Menu.Item.name, Menu.Item)
 Vue.component(Menu.ItemGroup.name, Menu.ItemGroup)
 Vue.component(Menu.SubMenu.name, Menu.SubMenu)
+Vue.component(Input.name, Input)
 // import antd directive
 Vue.prototype.$message = message
 

@@ -7,8 +7,14 @@
                 <a-layout-content class="n-layout-content">
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
-                        <keep-alive :include="curTagList.map(function(e){let o = e.component.split('/'); return o[o.length-1]}).toString()">
-                            <component ref="active-cp" :is="isExist ? activeComponent : noFound"></component>
+                        <keep-alive :include="curTagList.map(function(e){const o = e.component.split('/'); if (!e.pk) return o[o.length-1]; return `${o[o.length-1]}-${e.pk}`}).toString()">
+                            <component
+                                    ref="active-cp"
+                                    :is="isExist ? activeComponent : noFound"
+                                    :key="curTagList[curTagIndex].pk"
+                                    :cp-params="curTagList[curTagIndex].params"
+                                    :page-path="curTagList[curTagIndex].component"
+                            ></component>
                         </keep-alive>
                     </div>
                 </a-layout-content>
@@ -62,7 +68,6 @@
                 const self = this
                 let activeCp
                 const curCp = self.curTagList[self.curTagIndex]
-                console.log(curCp)
                 // check right path
                 const ableList = self.rightPathList.concat(comConfig.sysInfo.noNeedCheckRightPath)
                 if (curCp.component) {
@@ -71,13 +76,15 @@
                     if (ableList.indexOf(curCp.component) !== -1 || isApiNew) {
                         activeCp = (): any => ({
                             component: import('../' + curCp.component).then((res: any) => {
+                                // set new component name
+                                res.default.options.name = curCp.cacheName
                                 return res.default
                             }).catch((e: any) => {
                                 self.isExist = false
                                 self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.notfoundTip)} <<${curCp.component}>>`)
                             }),
                             delay: 200,
-                            timeout: 10000
+                            timeout: 3000
                         })
                     } else {
                         activeCp = NoRight
@@ -105,10 +112,13 @@
                 }
                 // check if component is url
                 const isCpUrl = utils.isUrl(cpInfo.component)
-                const cpExistIdx = self.cpExistIndex(cpInfo.component)
+                const {idx: cpExistIdx, pk: cpKey} = self.cpExistIndex(cpInfo)
                 // diff way to show tag
                 if (cpExistIdx === -1) {
                     // new component page
+                    cpInfo.pk = cpKey
+                    const cpPathList = cpInfo.component.split('/')
+                    cpInfo.cacheName = `${cpPathList[cpPathList.length - 1]}-${cpKey}`
                     self.changeTag({
                         op: 'add',
                         cpInfo
@@ -126,15 +136,47 @@
                     self.changeDefaultIndexs([`@bytag@${cpInfo.navIndex}`])
                 }
             },
-            cpExistIndex (cpName: string) {
+            cpExistIndex (cpInfo: CpInfo) {
                 const self = this
+                let needCacheSame = false
+                let cpParams
+                try {
+                    cpParams = JSON.stringify(cpInfo.params)
+                } catch (e) {
+                    cpParams = '{}'
+                }
                 for (let i = 0; i < self.curTagList.length; i++) {
                     const item = self.curTagList[i]
-                    if (item.component === cpName) {
-                        return i
+                    // if page component name, navIndex, title, params is same
+                    let itemParams
+                    try {
+                        itemParams = JSON.stringify(item.params)
+                    } catch (e) {
+                        itemParams = '{}'
+                    }
+                    if (item.component === cpInfo.component) {
+                        if (item.navIndex === cpInfo.navIndex && item.title === cpInfo.title && itemParams === cpParams) {
+                            return {
+                                idx: i,
+                                pk: item.pk
+                            }
+                        } else {
+                            needCacheSame = true
+                        }
                     }
                 }
-                return -1
+                if (needCacheSame) {
+                    return {
+                        idx: -1,
+                        pk: utils.randomCharacter(6)
+                    }
+                } else {
+                    return {
+                        idx: -1,
+                        pk: utils.randomCharacter(6)
+                    }
+                }
+
             },
         }
     })

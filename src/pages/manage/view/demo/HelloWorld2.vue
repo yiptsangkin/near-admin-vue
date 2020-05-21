@@ -1,20 +1,17 @@
 <template>
     <div>
-        {{ cpParams.hello }}
+        123123123123123123
     </div>
 </template>
 
 <script lang="ts">
     import Vue from 'vue'
-    import CoreBase from '@core/base'
-    import Base from '@custom/base'
 
     export default Vue.extend({
-        name: 'HelloWorld',
-        mixins: [CoreBase, Base],
+        name: 'HelloWorld2',
         data() {
             return {
-                a: ''
+                b: '1'
             }
         }
     })

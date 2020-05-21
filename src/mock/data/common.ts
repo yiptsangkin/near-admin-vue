@@ -80,7 +80,10 @@ export const getUserMenu = (req: any): ComRespone => {
                                         {
                                             name: 'menuObj.childMenu.0-0-0',
                                             path: 'demo/HelloWorld',
-                                            icon: ''
+                                            icon: '',
+                                            params: {
+                                                hello: '123'
+                                            }
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-1',
@@ -159,7 +162,97 @@ export const getUserMenu = (req: any): ComRespone => {
                     name: 'menuObj.cpUse',
                     path: '',
                     icon: '',
-                    child: []
+                    child: [
+                        {
+                            name: 'menuObj.childMenu.0',
+                            path: '',
+                            icon: '',
+                            child: [
+                                {
+                                    name: 'menuObj.childMenu.0-0',
+                                    path: '',
+                                    icon: '',
+                                    child: [
+                                        {
+                                            name: 'menuObj.childMenu.0-0-0',
+                                            path: 'demo/HelloWorld',
+                                            icon: '',
+                                            params: {
+                                                hello: '456'
+                                            }
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-1',
+                                            path: 'demo/HelloWorld2',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-2',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-3',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-4',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-5',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-6',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-7',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-0-8',
+                                            path: '',
+                                            icon: ''
+                                        }
+                                    ]
+                                },
+                                {
+                                    name: 'menuObj.childMenu.0-1',
+                                    path: '',
+                                    icon: '',
+                                    child: [
+                                        {
+                                            name: 'menuObj.childMenu.0-1-0',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-1-1',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-1-2',
+                                            path: '',
+                                            icon: ''
+                                        },
+                                        {
+                                            name: 'menuObj.childMenu.0-1-3',
+                                            path: '',
+                                            icon: ''
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },

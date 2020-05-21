@@ -10,7 +10,6 @@ export default {
         ]),
         async getUserMenu () {
             const self = this
-            console.log(self.changeMenu)
             await api.getUserMenu({
                 success (res) {
                     self.changeMenu(res)

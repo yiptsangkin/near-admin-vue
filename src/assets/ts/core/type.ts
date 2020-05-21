@@ -125,5 +125,7 @@ export interface CpInfo {
     component: string,
     title: string,
     navIndex: string,
-    params?: any
+    params?: any,
+    cacheName?: string,
+    pk?: string | number | boolean
 }
