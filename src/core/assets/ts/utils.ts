@@ -337,6 +337,37 @@ const randomCharacter = (rdn: number): string => {
     return newList.join('')
 }
 
+const isRegExp = (v: any): boolean => {
+    return Object.prototype.toString.call(v) === '[object RegExp]'
+}
+
+const arrayRemove = (arr: any[], item: any): any[] | void => {
+    if (arr.length) {
+        const index = arr.indexOf(item)
+        if (index > -1) {
+            return arr.splice(index, 1)
+        }
+    }
+}
+
+const isDef = (v: any) => {
+    return v !== undefined && v !== null
+}
+
+const isAsyncPlaceholder = (node: any) => {
+    return node.isComment && node.asyncFactory
+}
+
+const getFirstComponentChild = (children: any) => {
+    if (Array.isArray(children)) {
+        for (const c of children) {
+            if (isDef(c) && (isDef(c.componentOptions) || isAsyncPlaceholder(c))) {
+                return c
+            }
+        }
+    }
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -345,5 +376,8 @@ export default {
     decodeParams,
     encodeParams,
     isUrl,
-    randomCharacter
+    randomCharacter,
+    isRegExp,
+    arrayRemove,
+    getFirstComponentChild
 }

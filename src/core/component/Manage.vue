@@ -8,7 +8,7 @@
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
                         <div @click="getInfo">get info</div>
-                        <keep-alive ref="keep-alive-cp" :include="curTagList.map(function(e){const o = e.component.split('/'); return `${o[o.length-1]}-${e.pk}`; }).toString()">
+                        <n-keep-alive ref="keep-alive-cp" :include="curTagList.map(function(e){const o = e.component.split('/'); return `${o[o.length-1]}-${e.pk}`; }).toString()">
                             <component
                                     ref="active-cp"
                                     :is="activeComponent"
@@ -16,7 +16,7 @@
                                     :cp-params="curTagList[curTagIndex].params"
                                     :page-path="curTagList[curTagIndex].component"
                             ></component>
-                        </keep-alive>
+                        </n-keep-alive>
                     </div>
                 </a-layout-content>
             </a-layout>
@@ -35,11 +35,12 @@
     import NTag from '@corecp/NTag.vue'
     import NoRight from '@corecp/NNoRight.vue'
     import NoFound from '@corecp/NNoFound.vue'
+    import NKeepAlive from '@corecp/NKeepAlive'
     import {CpInfo} from '@corets/type'
     import utils from '@corets/utils'
     import {mapActions, mapGetters} from 'vuex'
-    import comConfig from '@custom/config';
-    import dict from '@custom/dict';
+    import comConfig from '@custom/config'
+    import dict from '@custom/dict'
 
     export default Vue.extend({
         name: 'Manage',
@@ -47,7 +48,8 @@
         components: {
             NAside,
             NHeader,
-            NTag
+            NTag,
+            NKeepAlive
         },
         data () {
             return {
@@ -178,8 +180,7 @@
 
             },
             getInfo () {
-                const self = this
-                console.log(self.$refs['active-cp'].$parent)
+                console.log('hello')
             }
         }
     })
