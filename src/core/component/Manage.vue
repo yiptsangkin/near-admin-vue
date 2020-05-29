@@ -164,12 +164,12 @@
                 if (needCacheSame) {
                     return {
                         idx: -1,
-                        pk: utils.randomCharacter(6)
+                        pk: cpInfo.pk || utils.randomCharacter(6)
                     }
                 } else {
                     return {
                         idx: -1,
-                        pk: utils.randomCharacter(6)
+                        pk: cpInfo.pk || utils.randomCharacter(6)
                     }
                 }
             }

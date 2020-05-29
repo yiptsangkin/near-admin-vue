@@ -137,7 +137,8 @@
                             component: cpPath,
                             title: cpTitle,
                             navIndex: cpIndex,
-                            params: menuParams || null
+                            params: menuParams || null,
+                            pk: cpIndex
                         } as CpInfo)
                     }
                 } else if (cpIndex !== '-1') {

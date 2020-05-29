@@ -77,7 +77,7 @@ export const getUserMenu = (req: any): ComRespone => {
         'background:#dbaf05 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
         'background:transparent'
     )
-    console.log(`%c ${JSON.stringify(req, null, 4)} %c`,
+    console.log(`%c ${JSON.stringify(req, null, 4)}`,
         'color: #dbaf05;')
     return {
         code: 0,
