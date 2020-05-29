@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
-import {CacheRouteConfig} from '@core/type'
+import {CacheRouteConfig} from '@corets/type'
 const Login = () => import('../view/Login.vue')
 
 Vue.use(VueRouter)

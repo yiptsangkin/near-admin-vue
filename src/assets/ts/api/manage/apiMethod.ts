@@ -1,6 +1,6 @@
 import apiUrl from './apiUrl'
-import utils from '@core/utils'
-import {ReqType, ResType} from '@core/type'
+import utils from '@corets/utils'
+import {ReqType, ResType} from '@corets/type'
 
 const getUserMenu = async (reqType: ReqType) => {
     reqType.method = 'POST'

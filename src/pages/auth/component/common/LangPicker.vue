@@ -14,7 +14,7 @@
 <script lang="ts">
     import Vue from 'vue'
     import {mapGetters, mapActions} from 'vuex'
-    import CountryFlag from '@core/countryflag'
+    import CountryFlag from '@corets/countryflag'
 
     interface PickerEvent {
         key: string

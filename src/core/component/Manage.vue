@@ -7,7 +7,8 @@
                 <a-layout-content class="n-layout-content">
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
-                        <keep-alive :include="curTagList.map(function(e){const o = e.component.split('/'); if (!e.pk) return o[o.length-1]; return `${o[o.length-1]}-${e.pk}`}).toString()">
+                        <div @click="getInfo">get info</div>
+                        <keep-alive :include="curTagList.map(function(e){const o = e.component.split('/'); return `${o[o.length-1]}-${e.pk}`; }).toString()">
                             <component
                                     ref="active-cp"
                                     :is="activeComponent"
@@ -28,14 +29,14 @@
     // @ts-nocheck
 
     import Vue from 'vue'
-    import CoreBase from '@core/base'
-    import NAside from '../../component/core/NAside.vue'
-    import NHeader from '../../component/core/NHeader.vue'
-    import NTag from '../../component/core/NTag.vue'
-    import NoRight from '../../component/core/NNoRight.vue'
-    import NoFound from '../../component/core/NNoFound.vue'
-    import {CpInfo} from '@core/type'
-    import utils from '@core/utils'
+    import CoreBase from '@corets/base'
+    import NAside from '@corecp/NAside.vue'
+    import NHeader from '@corecp/NHeader.vue'
+    import NTag from '@corecp/NTag.vue'
+    import NoRight from '@corecp/NNoRight.vue'
+    import NoFound from '@corecp/NNoFound.vue'
+    import {CpInfo} from '@corets/type'
+    import utils from '@corets/utils'
     import {mapActions, mapGetters} from 'vuex'
     import comConfig from '@custom/config';
     import dict from '@custom/dict';
@@ -72,14 +73,15 @@
                     if (ableList.indexOf(curCp.component) !== -1 || isApiNew) {
                         try {
                             const pageCp = await import('../' + curCp.component)
+                            pageCp.default.extendOptions.name = curCp.cacheName
                             pageCp.default.options.name = curCp.cacheName
+                            pageCp.default.sealedOptions.name = curCp.cacheName
                             const cpAsync = new Promise((resolve) => {
                                 resolve(pageCp)
                             })
                             activeCp = (): any => ({
                                 component: cpAsync,
-                                delay: 200,
-                                timeout: 3000
+                                delay: 200
                             })
                         } catch (e) {
                             activeCp = NoFound
@@ -173,10 +175,14 @@
                 }
 
             },
+            getInfo () {
+                const self = this
+                console.log(self.$refs['active-cp'])
+            }
         }
     })
 </script>
 
 <style lang="scss" scoped>
-    @import '~@scss/core/manage/manage.scss'
+    @import '~@corescss/manage/manage.scss'
 </style>

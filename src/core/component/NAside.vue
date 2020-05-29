@@ -97,8 +97,8 @@
 <script lang="ts">
     import Vue from 'vue'
     import { mapGetters, mapActions } from 'vuex'
-    import utils from '@core/utils'
-    import {CpInfo} from '@core/type'
+    import utils from '@corets/utils'
+    import {CpInfo} from '@corets/type'
 
     export default Vue.extend({
         name: 'NAside',
@@ -165,5 +165,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '~@scss/core/manage/aside.scss'
+    @import '~@corescss/manage/aside.scss'
 </style>

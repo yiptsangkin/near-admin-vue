@@ -1,9 +1,9 @@
-import {UserInfo, MenuList, CpInfo} from '@core/type'
-import lang from '@core/lang'
+import {UserInfo, MenuList, CpInfo} from '@corets/type'
+import lang from '@corets/lang'
 import comConfig, {ComConfig} from '@custom/config'
 import {ActionContext} from 'vuex'
 import dict from '@custom/dict';
-import utils from '@core/utils';
+import utils from '@corets/utils';
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
@@ -49,7 +49,7 @@ const state: State = {
             title: dict.localeObj.menuObj.defaultMenu.home,
             navIndex: '-1',
             pk: RDN_KEY,
-            cacheName: `HomPage-${RDN_KEY}`
+            cacheName: `HomePage-${RDN_KEY}`
         }
     ],
     curTagIndex: 0,

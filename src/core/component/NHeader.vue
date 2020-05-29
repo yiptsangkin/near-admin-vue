@@ -44,5 +44,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '~@scss/core/manage/header.scss'
+    @import '~@corescss/manage/header.scss'
 </style>

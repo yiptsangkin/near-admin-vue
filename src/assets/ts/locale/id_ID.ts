@@ -2,7 +2,7 @@ export default {
     locale: 'id',
     country: 'ID',
     sysInfo: {
-        sysIntro: 'Kerangka pengembangan front-end yang mudah digunakan berdasarkan Vue dan Ant Design'
+        sysIntro: 'Kerangka pengembangan front-end yang berguna berdasarkan Vue dan Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Login kata sandi akun',

@@ -2,7 +2,7 @@ export default {
     locale: 'fa',
     country: 'IR',
     sysInfo: {
-        sysIntro: 'یک چارچوب توسعه جلویی با کاربرد آسان و مبتنی بر Vue و Ant Design'
+        sysIntro: 'یک چارچوب توسعه جلویی آسان برای استفاده مبتنی بر Vue و Ant Design'
     },
     loginForm: {
         byAccountBtn: 'ورود به سیستم رمز عبور حساب',

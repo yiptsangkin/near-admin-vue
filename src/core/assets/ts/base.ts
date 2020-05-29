@@ -1,9 +1,9 @@
 // @ts-nocheck
 
-import Bus from '@core/eventbus'
+import Bus from '@corets/eventbus'
 import { mapGetters } from 'vuex'
 import HotKeyConfig from '@custom/hotkeyconfig'
-import utils from '@core/utils'
+import utils from '@corets/utils'
 
 export default {
     name: 'CoreBase',

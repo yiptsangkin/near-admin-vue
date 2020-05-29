@@ -48,7 +48,7 @@ const curPath = process.cwd().replace('/script',  '')
 const basePath = `${curPath}/src/assets/ts/locale`
 const optPath = `${basePath}/locale_MAP.ts`
 const translateBasePath = `${basePath}/locale_BASE.ts`
-const corePath = `${curPath}/src/assets/ts/core`
+const corePath = `${curPath}/src/core/assets/ts`
 
 try {
     // remove all locale file (without locale_BASE.ts and locale_MAP.ts)

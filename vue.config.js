@@ -122,6 +122,7 @@ const vueConfig = {
         }
     },
     chainWebpack: config => {
+        // if active analyze
         if (process.env.ANALYZE) {
             config
                 .plugin('webpack-bundle-analyzer')
@@ -129,24 +130,31 @@ const vueConfig = {
                     .BundleAnalyzerPlugin)
                 .end()
         }
+        // copy public file
         config
             .plugin('copy')
             .tap(options => {
                 options[0][0].ignore.push('basic.html')
                 return options
             })
+        // alias
         config.resolve.alias
             .set('vue$', 'vue/dist/vue.esm.js')
             .set('@', path.resolve('src'))
             .set('@api', path.resolve('src/assets/ts/api'))
             .set('@locale', path.resolve('src/assets/ts/locale'))
-            .set('@core', path.resolve('src/assets/ts/core'))
+            .set('@corets', path.resolve('src/core/assets/ts'))
+            .set('@corecp', path.resolve('src/core/component'))
             .set('@custom', path.resolve('src/assets/ts/custom'))
             .set('@store', path.resolve('src/store'))
             .set('@mock', path.resolve('src/mock'))
             .set('@css', path.resolve('src/assets/css'))
             .set('@scss', path.resolve('src/assets/scss'))
+            .set('@corescss', path.resolve('src/core/assets/scss'))
             .set('@font', path.resolve('src/assets/font'))
+        // ignore *.tpl or it will throw a warning
+        config.module.rule('tpl').test(/\.tpl?$/).use('file-loader')
+            .loader('file-loader')
     },
     pwa: {
         iconPaths: {

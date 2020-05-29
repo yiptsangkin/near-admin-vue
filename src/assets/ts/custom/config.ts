@@ -1,5 +1,5 @@
 import apiConfig from 'apiConfig'
-import {ComConfig} from '@core/type'
+import {ComConfig} from '@corets/type'
 import dict from '@custom/dict';
 
 const sysInfo = {

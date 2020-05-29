@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
-import {CacheRouteConfig} from '@core/type'
-const Manage = () => import('../view/core/Manage.vue')
+import {CacheRouteConfig} from '@corets/type'
+const Manage = () => import('@corecp/Manage.vue')
 
 Vue.use(VueRouter)
 

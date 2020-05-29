@@ -1,8 +1,13 @@
-import {ComRespone} from '@core/type'
+import {ComRespone} from '@corets/type'
 
 export const getSendMsg = (req: any): ComRespone => {
-    console.log('%c here is mock request', 'color: yellow')
-    console.log(`%c ${JSON.stringify(req, null, 4)}`, 'color: yellow')
+    console.log(
+        `%c near-admin %c here mock request %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#dbaf05 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+    )
+    console.log(`%c ${JSON.stringify(req, null, 4)}`, 'color: #dbaf05')
     return {
         code: 0,
         message: '获取成功',
@@ -14,8 +19,13 @@ export const getSendMsg = (req: any): ComRespone => {
 }
 
 export const checkLoginByAccount = (req: any): ComRespone => {
-    console.log('%c here is mock request', 'color: yellow')
-    console.log(`%c ${JSON.stringify(req, null, 4)}`, 'color: yellow')
+    console.log(
+        `%c near-admin %c here mock request %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#dbaf05 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+    )
+    console.log(`%c ${JSON.stringify(req, null, 4)}`, 'color: #dbaf05')
     const body = JSON.parse(req.body || '{}')
     if (body.username === 'admin' && body.password === '123456') {
         return {
@@ -35,8 +45,13 @@ export const checkLoginByAccount = (req: any): ComRespone => {
 }
 
 export const checkLoginByPhone = (req: any): ComRespone => {
-    console.log('%c here is mock request', 'color: yellow')
-    console.log(`%c ${JSON.stringify(req, null, 4)}`, 'color: yellow')
+    console.log(
+        `%c near-admin %c here mock request %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#dbaf05 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+    )
+    console.log(`%c ${JSON.stringify(req, null, 4)}`, 'color: #dbaf05')
     const body = JSON.parse(req.body || '{}')
     if (body.inputCode === body.validCode) {
         return {
@@ -56,8 +71,14 @@ export const checkLoginByPhone = (req: any): ComRespone => {
 }
 
 export const getUserMenu = (req: any): ComRespone => {
-    console.log('%c here is mock request', 'color: yellow')
-    console.log(`%c ${JSON.stringify(req, null, 4)}`, 'color: yellow')
+    console.log(
+        `%c near-admin %c here mock request %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#dbaf05 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+    )
+    console.log(`%c ${JSON.stringify(req, null, 4)} %c`,
+        'color: #dbaf05;')
     return {
         code: 0,
         data: {

@@ -1,4 +1,4 @@
-import {GlobalLocale, I18nOption} from '@core/type'
+import {GlobalLocale, I18nOption} from '@corets/type'
 import arEG from 'ant-design-vue/lib/locale-provider/ar_EG'
 import bgBG from 'ant-design-vue/lib/locale-provider/bg_BG'
 import caES from 'ant-design-vue/lib/locale-provider/ca_ES'

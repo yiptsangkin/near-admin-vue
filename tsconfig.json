@@ -19,8 +19,11 @@
       "@/*": [
         "src/*"
       ],
-      "@core/*": [
-        "src/assets/ts/core/*"
+      "@corets/*": [
+        "src/core/assets/ts/*"
+      ],
+      "@corecp/*": [
+        "src/core/component/*"
       ],
       "@custom/*": [
         "src/assets/ts/custom/*"
@@ -39,6 +42,9 @@
       ],
       "~@scss/*": [
         "src/assets/scss/*"
+      ],
+      "~@corescss/*": [
+        "src/core/assets/scss/*"
       ],
       "@css/*": [
         "src/assets/css/*"

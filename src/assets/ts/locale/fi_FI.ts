@@ -6,7 +6,7 @@ export default {
     },
     loginForm: {
         byAccountBtn: 'Tilin salasanan kirjautuminen',
-        byPhoneBtn: 'Puhelinnumero sisäänkirjautuminen',
+        byPhoneBtn: 'Puhelinnumeron kirjautuminen',
         accountPlaceholder: 'Anna käyttäjätunnus',
         passwordPlaceholder: 'Anna salasana',
         autoLogin: 'automaattinen sisäänkirjautuminen',

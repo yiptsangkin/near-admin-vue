@@ -34,5 +34,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '~@scss/core/manage/tag.scss'
+    @import '~@corescss/manage/tag.scss'
 </style>

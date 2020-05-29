@@ -2,7 +2,7 @@ export default {
     locale: 'pt',
     country: 'PT',
     sysInfo: {
-        sysIntro: 'Uma estrutura de desenvolvimento front-end fácil de usar, baseada no Vue e Ant Design'
+        sysIntro: 'Uma estrutura de desenvolvimento de front-end fácil de usar, baseada no Vue e Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Login da senha da conta',
@@ -19,7 +19,7 @@ export default {
             emptyErr: 'a senha não pode ficar em branco'
         },
         byValidTip: {
-            emptyErr: 'o código de verificação deve ser preenchido'
+            emptyErr: 'código de verificação deve ser preenchido'
         },
         sendMsg: {
             repeatErr: 'Não envie repetidamente',

@@ -113,7 +113,7 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Aucun composant trouvé sous ce chemin',
-            emptyErr: 'Chemin du composant non configuré'
+            emptyErr: 'Chemin de composant non configuré'
         }
     }
 }

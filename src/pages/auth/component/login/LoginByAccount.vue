@@ -18,7 +18,7 @@
 <script lang="ts">
     import Vue from 'vue'
     import dict from '@custom/dict'
-    import {CommonInput} from '@core/formtype'
+    import {CommonInput} from '@corets/formtype'
     import {mapGetters} from 'vuex'
 
     interface FormModel {

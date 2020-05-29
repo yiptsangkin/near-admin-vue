@@ -8,7 +8,7 @@
 
 <script lang="ts">
     import Vue from 'vue'
-    import CoreRoot from '@core/root'
+    import CoreRoot from '@corets/root'
     import Root from '@custom/root'
     import ManageRoot from '@custom/mroot'
 

@@ -1,6 +1,7 @@
 <template>
     <div>
-        <a-input v-model="b"></a-input>
+        123131232
+        <a-input v-model="a"></a-input>
     </div>
 </template>
 
@@ -10,11 +11,11 @@
     import Base from '@custom/base'
 
     export default Vue.extend({
-        name: 'HelloWorld',
+        name: 'HelloWorld2',
         mixins: [CoreBase, Base],
         data() {
             return {
-                b: ''
+                a: ''
             }
         }
     })

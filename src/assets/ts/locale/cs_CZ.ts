@@ -2,7 +2,7 @@ export default {
     locale: 'cs',
     country: 'CZ',
     sysInfo: {
-        sysIntro: 'Snadno použitelný front-end vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Užitečný front-end vývojový rámec založený na Vue a Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Přihlašovací heslo k účtu',

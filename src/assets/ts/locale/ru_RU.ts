@@ -6,7 +6,7 @@ export default {
     },
     loginForm: {
         byAccountBtn: 'Логин пароль логин',
-        byPhoneBtn: 'Номер телефона логин',
+        byPhoneBtn: 'Логин по номеру телефона',
         accountPlaceholder: 'Пожалуйста, введите имя пользователя',
         passwordPlaceholder: 'Пожалуйста, введите пароль',
         autoLogin: 'автоматическая авторизация',

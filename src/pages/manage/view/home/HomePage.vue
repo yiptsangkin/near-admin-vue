@@ -1,5 +1,7 @@
 <template>
-    <div>home</div>
+    <div>
+        <a-input v-model="a"></a-input>
+    </div>
 </template>
 
 <script lang="ts">
@@ -8,7 +10,9 @@
     export default Vue.extend({
         name: 'HomePage',
         data() {
-            return {}
+            return {
+                a: ''
+            }
         }
     })
 </script>

@@ -1,5 +1,5 @@
 import Logline from 'logline'
-import {HadKey, ReqType, LoglineParams} from '@core/type'
+import {HadKey, ReqType, LoglineParams} from '@corets/type'
 import axios, {AxiosRequestConfig} from 'axios'
 import dict from '@custom/dict'
 import Vue from 'vue'
