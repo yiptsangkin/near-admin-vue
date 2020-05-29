@@ -152,9 +152,6 @@ const vueConfig = {
             .set('@scss', path.resolve('src/assets/scss'))
             .set('@corescss', path.resolve('src/core/assets/scss'))
             .set('@font', path.resolve('src/assets/font'))
-        // ignore *.tpl or it will throw a warning
-        config.module.rule('tpl').test(/\.tpl?$/).use('file-loader')
-            .loader('file-loader')
     },
     pwa: {
         iconPaths: {

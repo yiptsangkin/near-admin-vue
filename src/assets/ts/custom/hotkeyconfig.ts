@@ -15,13 +15,13 @@ const hotkeyconfig: HotKeyConfig = {
         ],
         // page component path means the hot key config will effect only equal to current page component path
         // if you don't use wildcard but page path, write the method in page component SFC
-        'core/home/HomePage': [
+        'home/HomePage': [
             {
                 name: `HomePage 'Ctrl+S' event`,
                 method: 'showHomePageSaveHotKey'
             }
         ],
-        'core/setting/Setting': [
+        'setting/Setting': [
             {
                 name: `Setting 'Ctrl+S' event`,
                 method: 'showHomePageSaveHotKey'
@@ -33,7 +33,7 @@ const hotkeyconfig: HotKeyConfig = {
         ]
     },
     'ctrl+e': {
-        'core/logline/Logline': [
+        'logline/Logline': [
             {
                 name: `Logline 'Ctrl+S' event`,
                 method: 'showExportSuccess'

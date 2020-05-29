@@ -45,7 +45,7 @@ const state: State = {
     defaultIndexs: [],
     curTagList: [
         {
-            component: 'core/home/HomePage',
+            component: 'home/HomePage',
             title: dict.localeObj.menuObj.defaultMenu.home,
             navIndex: '-1',
             pk: RDN_KEY,

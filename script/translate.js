@@ -159,7 +159,7 @@ try {
             }
         })
         // read lang.tpl
-        let tplFileCtx = fs.readFileSync(`${corePath}/lang.tpl`, 'utf-8')
+        let tplFileCtx = fs.readFileSync(`${curPath}/script/tpl/lang/lang.tpl`, 'utf-8')
         tplFileCtx = tplFileCtx.replace('<% importTpl %>', `${antdLocale.join('\n')}\n${customLocale.join('\n')}`)
             .replace('<% exportAntdTpl %>', `${antdOpt.join(',\n    ')}`)
             .replace('<% exportCustomerTpl %>', `${customOpt.join(',\n        ')}`)

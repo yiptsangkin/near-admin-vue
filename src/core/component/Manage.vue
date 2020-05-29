@@ -8,7 +8,7 @@
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
                         <div @click="getInfo">get info</div>
-                        <keep-alive :include="curTagList.map(function(e){const o = e.component.split('/'); return `${o[o.length-1]}-${e.pk}`; }).toString()">
+                        <keep-alive ref="keep-alive-cp" :include="curTagList.map(function(e){const o = e.component.split('/'); return `${o[o.length-1]}-${e.pk}`; }).toString()">
                             <component
                                     ref="active-cp"
                                     :is="activeComponent"
@@ -72,7 +72,9 @@
                     const isApiNew = curCp.params ? curCp.params.apiNew : false
                     if (ableList.indexOf(curCp.component) !== -1 || isApiNew) {
                         try {
-                            const pageCp = await import('../' + curCp.component)
+                            const pageCp = await import(
+                                '@/pages/' + (dict.commonObj.managePath || 'manage') + '/view/' + curCp.component + '.vue'
+                            )
                             pageCp.default.extendOptions.name = curCp.cacheName
                             pageCp.default.options.name = curCp.cacheName
                             pageCp.default.sealedOptions.name = curCp.cacheName
@@ -177,7 +179,7 @@
             },
             getInfo () {
                 const self = this
-                console.log(self.$refs['active-cp'])
+                console.log(self.$refs['active-cp'].$parent)
             }
         }
     })
