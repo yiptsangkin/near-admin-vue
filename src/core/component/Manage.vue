@@ -7,8 +7,9 @@
                 <a-layout-content class="n-layout-content">
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
-                        <div @click="getInfo">get info</div>
-                        <n-keep-alive ref="keep-alive-cp" :include="curTagList.map(function(e){const o = e.component.split('/'); return `${o[o.length-1]}-${e.pk}`; }).toString()">
+                        <n-keep-alive ref="keep-alive-cp"
+                                      :include="curTagList.map((e) => {return `${e.pk}`}).toString()"
+                        >
                             <component
                                     ref="active-cp"
                                     :is="activeComponent"
@@ -29,7 +30,7 @@
     // @ts-nocheck
 
     import Vue from 'vue'
-    import CoreBase from '@corets/base'
+    import ManageBase from '@corets/mbase'
     import NAside from '@corecp/NAside.vue'
     import NHeader from '@corecp/NHeader.vue'
     import NTag from '@corecp/NTag.vue'
@@ -44,7 +45,7 @@
 
     export default Vue.extend({
         name: 'Manage',
-        mixins: [CoreBase],
+        mixins: [ManageBase],
         components: {
             NAside,
             NHeader,
@@ -77,15 +78,11 @@
                             const pageCp = await import(
                                 '@/pages/' + (dict.commonObj.managePath || 'manage') + '/view/' + curCp.component + '.vue'
                             )
-                            pageCp.default.extendOptions.name = curCp.cacheName
-                            pageCp.default.options.name = curCp.cacheName
-                            pageCp.default.sealedOptions.name = curCp.cacheName
                             const cpAsync = new Promise((resolve) => {
                                 resolve(pageCp)
                             })
                             activeCp = (): any => ({
-                                component: cpAsync,
-                                delay: 200
+                                component: cpAsync
                             })
                         } catch (e) {
                             activeCp = NoFound
@@ -118,8 +115,6 @@
                 if (cpExistIdx === -1) {
                     // new component page
                     cpInfo.pk = cpKey
-                    const cpPathList = cpInfo.component.split('/')
-                    cpInfo.cacheName = `${cpPathList[cpPathList.length - 1]}-${cpKey}`
                     self.changeTag({
                         op: 'add',
                         cpInfo
@@ -177,10 +172,6 @@
                         pk: utils.randomCharacter(6)
                     }
                 }
-
-            },
-            getInfo () {
-                console.log('hello')
             }
         }
     })

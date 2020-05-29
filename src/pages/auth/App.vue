@@ -9,11 +9,10 @@
 <script lang="ts">
     import Vue from 'vue'
     import CoreRoot from '@corets/root'
-    import Root from '@custom/root'
 
     export default Vue.extend({
         name: 'App',
-        mixins: [CoreRoot, Root]
+        mixins: [CoreRoot]
     })
 </script>
 

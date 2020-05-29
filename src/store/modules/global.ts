@@ -48,8 +48,7 @@ const state: State = {
             component: 'home/HomePage',
             title: dict.localeObj.menuObj.defaultMenu.home,
             navIndex: '-1',
-            pk: RDN_KEY,
-            cacheName: `HomePage-${RDN_KEY}`
+            pk: RDN_KEY
         }
     ],
     curTagIndex: 0,

@@ -6,15 +6,20 @@ function getComponentName (opts) {
     return opts && (opts.Ctor.options.name || opts.tag)
 }
 
-function matches (pattern, name) {
-    if (Array.isArray(pattern)) {
-        return pattern.indexOf(name) > -1
-    } else if (typeof pattern === 'string') {
-        return pattern.split(',').indexOf(name) > -1
-    } else if (utils.isRegExp(pattern)) {
-        return pattern.test(name)
+function matches (pattern, key, name): boolean {
+    function matchesValue(value) {
+        if (Array.isArray(pattern)) {
+            return pattern.indexOf(value) > -1
+        } else if (typeof pattern === 'string') {
+            return pattern.split(',').indexOf(value) > -1
+        } else if (utils.isRegExp(pattern)) {
+            return pattern.test(value)
+        }
+        /* istanbul ignore next */
+        return false
     }
-    return false
+
+    return (key && matchesValue(key)) || matchesValue(name);
 }
 
 function pruneCache (keepAliveInstance, filter) {
@@ -23,7 +28,7 @@ function pruneCache (keepAliveInstance, filter) {
         const cachedNode = cache[key]
         if (cachedNode) {
             const name = getComponentName(cachedNode.componentOptions)
-            if (name && !filter(name)) {
+            if (name && !filter(key, name)) {
                 pruneCacheEntry(cache, key, keys, _vnode)
             }
         }
@@ -60,6 +65,12 @@ export default {
         }
     },
 
+    data () {
+        return {
+            cacheId: ''
+        }
+    },
+
     created () {
         this.cache = Object.create(null)
         this.keys = []
@@ -73,35 +84,41 @@ export default {
 
     mounted () {
         this.$watch('include', (val) => {
-            pruneCache(this, (name) => matches(val, name))
+            pruneCache(this, (key, name) => matches(val, key, name))
         })
         this.$watch('exclude', (val) => {
-            pruneCache(this, (name) => !matches(val, name))
+            pruneCache(this, (key, name) => !matches(val, key, name))
         })
     },
 
     render () {
-        console.log('#####')
         const slot = this.$slots.default
         const vnode = utils.getFirstComponentChild(slot)
         const componentOptions = vnode && vnode.componentOptions
+        if (componentOptions && componentOptions.Ctor && componentOptions.Ctor.cid) {
+            if (this.cacheId === componentOptions.Ctor.cid) {
+                return vnode
+            }
+            this.cacheId = componentOptions.Ctor.cid
+        }
         if (componentOptions) {
             // check pattern
             const name = getComponentName(componentOptions)
+            const key = vnode.key == null
+                ? componentOptions.Ctor.cid + (componentOptions.tag ? `::${componentOptions.tag}` : '')
+                : vnode.key
             const { include, exclude } = this
             if (
                 // not included
-                (include && (!name || !matches(include, name))) ||
+                (include && (!name || !matches(include, key, name))) ||
                 // excluded
-                (exclude && name && matches(exclude, name))
+                (exclude && name && matches(exclude, key, name))
             ) {
                 return vnode
             }
 
             const { cache, keys } = this
-            const key = vnode.key == null
-                ? componentOptions.Ctor.cid + (componentOptions.tag ? `::${componentOptions.tag}` : '')
-                : vnode.key
+
             if (cache[key]) {
                 vnode.componentInstance = cache[key].componentInstance
                 utils.arrayRemove(keys, key)
