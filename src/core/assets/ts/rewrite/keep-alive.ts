@@ -49,6 +49,8 @@ function pruneCacheEntry (
     utils.arrayRemove(keys, key)
 }
 
+let isFinalUpdateCount = 1
+
 export default {
     name: 'keep-alive',
     abstract: true,
@@ -67,7 +69,7 @@ export default {
 
     data () {
         return {
-            cacheId: ''
+            count: 0
         }
     },
 
@@ -95,13 +97,15 @@ export default {
         const slot = this.$slots.default
         const vnode = utils.getFirstComponentChild(slot)
         const componentOptions = vnode && vnode.componentOptions
-        if (componentOptions && componentOptions.Ctor && componentOptions.Ctor.cid) {
-            if (this.cacheId === componentOptions.Ctor.cid) {
-                return vnode
-            }
-            this.cacheId = componentOptions.Ctor.cid
-        }
         if (componentOptions) {
+            // because key will set faster than component
+            // so here need to count when it is 2, means the component is update
+            isFinalUpdateCount++
+            if (isFinalUpdateCount !== 2) {
+                return undefined
+            } else {
+                isFinalUpdateCount = 0
+            }
             // check pattern
             const name = getComponentName(componentOptions)
             const key = vnode.key == null

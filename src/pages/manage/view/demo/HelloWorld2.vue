@@ -1,6 +1,5 @@
 <template>
     <div>
-        123131232
         <a-input v-model="a"></a-input>
     </div>
 </template>
