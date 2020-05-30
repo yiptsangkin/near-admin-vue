@@ -124,7 +124,8 @@ export interface CpInfo {
     idx?: number,
     component: string,
     title: string,
-    navIndex: string,
+    navIndex?: string,
     params?: any,
-    pk?: string | number | boolean
+    pk?: string | number | boolean,
+    apiNew?: boolean
 }

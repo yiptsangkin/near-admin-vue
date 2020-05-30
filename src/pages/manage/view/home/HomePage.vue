@@ -1,4 +1,5 @@
 <template>
+    <div>{{ cpParams }}</div>
 </template>
 
 <script lang="ts">

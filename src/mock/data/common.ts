@@ -100,15 +100,12 @@ export const getUserMenu = (req: any): ComRespone => {
                                     child: [
                                         {
                                             name: 'menuObj.childMenu.0-0-0',
-                                            path: 'demo/HelloWorld',
-                                            icon: '',
-                                            params: {
-                                                hello: '123'
-                                            }
+                                            path: '',
+                                            icon: ''
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-1',
-                                            path: 'demo/HelloWorld2',
+                                            path: '',
                                             icon: ''
                                         },
                                         {
@@ -196,15 +193,12 @@ export const getUserMenu = (req: any): ComRespone => {
                                     child: [
                                         {
                                             name: 'menuObj.childMenu.0-0-0',
-                                            path: 'demo/HelloWorld',
-                                            icon: '',
-                                            params: {
-                                                hello: '456'
-                                            }
+                                            path: '',
+                                            icon: ''
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-1',
-                                            path: 'demo/HelloWorld2',
+                                            path: '',
                                             icon: ''
                                         },
                                         {

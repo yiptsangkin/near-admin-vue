@@ -6,6 +6,7 @@ import store from '@store/index'
 import VueI18n from 'vue-i18n'
 import lang from '@corets/lang'
 import mock from '@mock/index'
+import plugin from '@corets/plugin'
 import AsyncComputed from 'vue-async-computed'
 
 // antd component
@@ -53,6 +54,8 @@ if (comConfig.buildSwitch.isMock) {
 
 // async computed
 Vue.use(AsyncComputed)
+// custom plugin
+Vue.use(plugin)
 
 router.beforeEach((to, from, next) => {
     const title = to.meta.title

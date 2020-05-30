@@ -7,9 +7,7 @@
                 <a-layout-content class="n-layout-content">
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
-                        <n-keep-alive ref="keep-alive-cp" @completed="changeCache"
-                            :include="curTagList.map((e) => {return `${e.pk}`}).toString()"
-                        >
+                        <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
                             <component
                                     ref="active-cp"
                                     :is="activeComponent"
@@ -44,7 +42,7 @@
     import dict from '@custom/dict'
 
     export default Vue.extend({
-        name: 'Manage',
+        name: 'NManage',
         mixins: [ManageBase],
         components: {
             NAside,
@@ -52,16 +50,18 @@
             NTag,
             NKeepAlive
         },
-        data () {
-            return {
-            }
-        },
         computed: {
             ...mapGetters([
                 'curTagList',
                 'curTagIndex',
                 'rightPathList'
-            ])
+            ]),
+            cacheCp () {
+                const self = this
+                return self.curTagList.map((e) => {
+                    return `${e.pk}`
+                }).toString()
+            }
         },
         asyncComputed: {
             async activeComponent () {
@@ -172,14 +172,6 @@
                         pk: cpInfo.pk || utils.randomCharacter(6)
                     }
                 }
-            },
-            changeCache (e) {
-                const self = this
-                const curCp = self.curTagList[self.curTagIndex]
-                const cpNameList = curCp.component.split('/')
-                const cpName = cpNameList[cpNameList.length - 1]
-                console.log(cpName, curCp.pk, e.tag)
-                console.log(e)
             }
         }
     })

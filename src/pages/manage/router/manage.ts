@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
 import {CacheRouteConfig} from '@corets/type'
-const Manage = () => import('@corecp/Manage.vue')
+const NManage = () => import('@corecp/NManage.vue')
 
 Vue.use(VueRouter)
 
@@ -9,7 +9,7 @@ const routesConfig: RouteConfig[] = [
     {
         path: '/',
         name: 'Manage',
-        component: Manage
+        component: NManage
     }
 ];
 
