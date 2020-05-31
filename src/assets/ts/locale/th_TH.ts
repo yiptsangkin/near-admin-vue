@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'ไม่พบองค์ประกอบภายใต้เส้นทางนี้',
             emptyErr: 'ไม่ได้กำหนดค่าเส้นทางของส่วนประกอบ'
         }
+    },
+    tagObj: {
+        closeAll: 'ปิดทั้งหมด',
+        errorTip: {
+            homePageCloseError: 'ไม่อนุญาตให้ปิดโฮมเพจ'
+        }
     }
 }

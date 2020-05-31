@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Nie znaleziono komponentu pod tą ścieżką',
             emptyErr: 'Ścieżka komponentu nie została skonfigurowana'
         }
+    },
+    tagObj: {
+        closeAll: 'Zamknij wszystko',
+        errorTip: {
+            homePageCloseError: 'Strona główna nie może zostać zamknięta'
+        }
     }
 }

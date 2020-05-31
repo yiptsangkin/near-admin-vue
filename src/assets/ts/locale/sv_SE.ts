@@ -2,7 +2,7 @@ export default {
     locale: 'sv',
     country: 'SE',
     sysInfo: {
-        sysIntro: 'En enkel att använda front-end-utvecklingsram baserad på Vue and Ant Design'
+        sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Inloggning för konto lösenord',
@@ -114,6 +114,12 @@ export default {
         errorTip: {
             notfoundTip: 'Ingen komponent hittades under denna sökväg',
             emptyErr: 'Komponentväg inte konfigurerad'
+        }
+    },
+    tagObj: {
+        closeAll: 'Stäng alla',
+        errorTip: {
+            homePageCloseError: 'Hemsidan får inte stängas'
         }
     }
 }

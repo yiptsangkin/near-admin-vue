@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Selle tee alt ei leitud ühtegi komponenti',
             emptyErr: 'Komponendi tee pole konfigureeritud'
         }
+    },
+    tagObj: {
+        closeAll: 'Sulgege kõik',
+        errorTip: {
+            homePageCloseError: 'Kodulehte ei tohi sulgeda'
+        }
     }
 }

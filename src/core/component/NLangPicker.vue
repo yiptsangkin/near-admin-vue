@@ -21,7 +21,7 @@
     }
 
     export default Vue.extend({
-        name: 'LangPicker',
+        name: 'NLangPicker',
         data () {
             return {
                 currentSelectedKeys: []

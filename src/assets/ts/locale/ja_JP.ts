@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'このパスの下にコンポーネントが見つかりません',
             emptyErr: 'コンポーネントパスが構成されていません'
         }
+    },
+    tagObj: {
+        closeAll: 'すべて閉じる',
+        errorTip: {
+            homePageCloseError: 'ホームページを閉じることはできません'
+        }
     }
 }

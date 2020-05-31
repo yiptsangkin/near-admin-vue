@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Geen onderdeel gevonden onder dit pad',
             emptyErr: 'Componentpad niet geconfigureerd'
         }
+    },
+    tagObj: {
+        closeAll: 'Sluit alles',
+        errorTip: {
+            homePageCloseError: 'Homepage mag niet sluiten'
+        }
     }
 }

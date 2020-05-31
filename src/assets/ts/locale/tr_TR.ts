@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Bu yol altında hiçbir bileşen bulunamadı',
             emptyErr: 'Bileşen yolu yapılandırılmadı'
         }
+    },
+    tagObj: {
+        closeAll: 'Hepsini kapat',
+        errorTip: {
+            homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor'
+        }
     }
 }

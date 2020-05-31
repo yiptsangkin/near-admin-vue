@@ -121,11 +121,23 @@ export interface MenuList {
 }
 
 export interface CpInfo {
-    idx?: number,
     component: string,
     title: string,
     navIndex?: string,
     params?: any,
     pk?: string | number | boolean,
     apiNew?: boolean
+}
+
+export interface ClosePageOpt {
+    // close page type
+    // 1. 'cur': close current tag;
+    // 2. 'right': close right tag;
+    // 3. 'other': close other tag;
+    // 4. 'all': close all tag
+    type?: string,
+    // current tag index
+    idx: number,
+    // after close tag, where it will go, enter the target index
+    target?: number
 }

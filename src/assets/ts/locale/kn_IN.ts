@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'ಈ ಮಾರ್ಗದಲ್ಲಿ ಯಾವುದೇ ಘಟಕ ಕಂಡುಬಂದಿಲ್ಲ',
             emptyErr: 'ಕಾಂಪೊನೆಂಟ್ ಪಥವನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡಿಲ್ಲ'
         }
+    },
+    tagObj: {
+        closeAll: 'ಎಲ್ಲವನ್ನೂ ಮುಚ್ಚಿ',
+        errorTip: {
+            homePageCloseError: 'ಮುಖಪುಟವನ್ನು ಮುಚ್ಚಲು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ'
+        }
     }
 }

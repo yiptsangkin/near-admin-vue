@@ -115,5 +115,11 @@ export default {
             notfoundTip: '未找到该路径下的组件',
             emptyErr: '未配置组件路径'
         }
+    },
+    tagObj: {
+        closeAll: '关闭全部',
+        errorTip: {
+            homePageCloseError: '首页不允许关闭'
+        }
     }
 }

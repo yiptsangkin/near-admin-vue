@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Tätä polkua ei löytynyt',
             emptyErr: 'Komponenttipolkua ei ole määritetty'
         }
+    },
+    tagObj: {
+        closeAll: 'Sulje kaikki',
+        errorTip: {
+            homePageCloseError: 'Kotisivua ei saa sulkea'
+        }
     }
 }

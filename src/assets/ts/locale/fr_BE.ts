@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Aucun composant trouvé sous ce chemin',
             emptyErr: 'Chemin de composant non configuré'
         }
+    },
+    tagObj: {
+        closeAll: 'Ferme tout',
+        errorTip: {
+            homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à fermer'
+        }
     }
 }

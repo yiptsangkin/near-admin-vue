@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Няма намерен компонент под този път',
             emptyErr: 'Пътят на компонента не е конфигуриран'
         }
+    },
+    tagObj: {
+        closeAll: 'Затвори всички',
+        errorTip: {
+            homePageCloseError: 'Не е разрешено затварянето на началната страница'
+        }
     }
 }

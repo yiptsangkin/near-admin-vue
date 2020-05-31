@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Pod to potjo ni mogoče najti nobene komponente',
             emptyErr: 'Pot komponente ni konfigurirana'
         }
+    },
+    tagObj: {
+        closeAll: 'Zapri vse',
+        errorTip: {
+            homePageCloseError: 'Domače strani ni dovoljeno zapreti'
+        }
     }
 }

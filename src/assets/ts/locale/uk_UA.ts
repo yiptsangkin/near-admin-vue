@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Під цим контуром не знайдено жодного компонента',
             emptyErr: 'Шлях компонента не налаштований'
         }
+    },
+    tagObj: {
+        closeAll: 'Закрити всіх',
+        errorTip: {
+            homePageCloseError: 'Не можна закривати домашню сторінку'
+        }
     }
 }

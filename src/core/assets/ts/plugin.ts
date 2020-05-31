@@ -1,5 +1,5 @@
 import store from '@store/index'
-import {CpInfo} from '@corets/type'
+import {CpInfo, ClosePageOpt} from '@corets/type'
 import {mapActions} from 'vuex'
 import utils from '@corets/utils';
 
@@ -29,6 +29,12 @@ const pluginObj = {
             self.changeTag({
                 op: 'add',
                 cpInfo
+            })
+        }
+        Vue.prototype.$closepage = (closeOpt: ClosePageOpt) => {
+            self.changeTag({
+                op: 'remove',
+                closeOpt
             })
         }
     }

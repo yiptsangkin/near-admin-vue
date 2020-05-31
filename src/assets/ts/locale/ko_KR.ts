@@ -115,5 +115,11 @@ export default {
             notfoundTip: '이 경로에 구성 요소가 없습니다.',
             emptyErr: '구성 요소 경로가 구성되지 않았습니다'
         }
+    },
+    tagObj: {
+        closeAll: '모두 닫기',
+        errorTip: {
+            homePageCloseError: '홈페이지를 닫을 수 없습니다'
+        }
     }
 }

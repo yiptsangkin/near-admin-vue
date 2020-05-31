@@ -11,12 +11,16 @@
                 </a-menu-item>
             </a-menu>
         </div>
+        <div class="n-header-right-part">
+            <n-lang-picker></n-lang-picker>
+        </div>
     </a-layout-header>
 </template>
 
 <script lang="ts">
     import Vue from 'vue'
     import { mapGetters, mapActions } from 'vuex'
+    const NLangPicker = () => import('@corecp/NLangPicker.vue')
 
     export default Vue.extend({
         name: 'NHeader',
@@ -26,6 +30,9 @@
               'menuObj',
               'curMenu'
           ])
+        },
+        components: {
+            NLangPicker
         },
         data () {
             return {

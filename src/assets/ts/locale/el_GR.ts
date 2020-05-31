@@ -2,7 +2,7 @@ export default {
     locale: 'el',
     country: 'GR',
     sysInfo: {
-        sysIntro: 'Ένα εύχρηστο πλαίσιο ανάπτυξης front-end βασισμένο στο Vue και το Ant Design'
+        sysIntro: 'Ένα εύχρηστο πλαίσιο ανάπτυξης front-end με βάση το Vue και το Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Σύνδεση κωδικού πρόσβασης λογαριασμού',
@@ -112,8 +112,14 @@ export default {
             home: 'Σπίτι'
         },
         errorTip: {
-            notfoundTip: 'Δεν βρέθηκε κανένα στοιχείο σε αυτήν τη διαδρομή',
-            emptyErr: 'Η διαδρομή του στοιχείου δεν έχει ρυθμιστεί'
+            notfoundTip: 'Δεν βρέθηκε κανένα στοιχείο κάτω από αυτήν τη διαδρομή',
+            emptyErr: 'Η διαδρομή του στοιχείου δεν έχει διαμορφωθεί'
+        }
+    },
+    tagObj: {
+        closeAll: 'Κλείσ&#39;τα όλα',
+        errorTip: {
+            homePageCloseError: 'Δεν επιτρέπεται το κλείσιμο της αρχικής σελίδας'
         }
     }
 }

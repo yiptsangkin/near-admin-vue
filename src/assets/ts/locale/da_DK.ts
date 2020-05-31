@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Der blev ikke fundet nogen komponent under denne sti',
             emptyErr: 'Komponentsti ikke konfigureret'
         }
+    },
+    tagObj: {
+        closeAll: 'Luk alle',
+        errorTip: {
+            homePageCloseError: 'Hjemmesiden må ikke lukke'
+        }
     }
 }

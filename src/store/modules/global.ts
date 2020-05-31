@@ -1,9 +1,9 @@
-import {UserInfo, MenuList, CpInfo} from '@corets/type'
+import {UserInfo, MenuList, CpInfo, ClosePageOpt} from '@corets/type'
 import lang from '@corets/lang'
 import comConfig, {ComConfig} from '@custom/config'
 import {ActionContext} from 'vuex'
-import dict from '@custom/dict';
-import utils from '@corets/utils';
+import dict from '@custom/dict'
+import utils from '@corets/utils'
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
@@ -102,17 +102,31 @@ const mutations = {
         mutationState.defaultIndexs = curSideMenu
     },
     addCurTag: (mutationState: State, cpInfo: CpInfo) => {
-        mutationState.curTagList.push(cpInfo)
+        // insert after cur tag index
+        if (cpInfo.params && cpInfo.params.apiNew) {
+            // if api new page, add it to the last tag
+            mutationState.curTagList.push(cpInfo)
+            mutationState.curTagIndex = mutationState.curTagList.length - 1
+        } else {
+            // else add it the cur tag' next position
+            mutationState.curTagList.splice(mutationState.curTagIndex + 1, 0, cpInfo)
+            mutationState.curTagIndex++
+        }
     },
-    removeCurTag: (mutationState: State, cpInfo: CpInfo) => {
-        if (cpInfo.idx || cpInfo.idx === 0) {
-            mutationState.curTagList.splice(cpInfo.idx, 1)
+    removeCurTag: (mutationState: State, closeOpt: ClosePageOpt) => {
+        if (closeOpt.idx) {
+            mutationState.curTagList.splice(closeOpt.idx, 1)
+            if (!closeOpt.target) {
+                if (closeOpt.idx <= mutationState.curTagIndex) {
+                    mutationState.curTagIndex--
+                }
+            } else {
+                mutationState.curTagIndex = closeOpt.target
+            }
         }
     },
     updateCurTag: (mutationState: State, cpInfo: CpInfo) => {
-        if (cpInfo.idx || cpInfo.idx === 0) {
-            mutationState.curTagList[cpInfo.idx] = cpInfo
-        }
+        console.log(cpInfo)
     },
     changeCurTagIndex: (mutationState: State, tagIndex: number) => {
         mutationState.curTagIndex = tagIndex
@@ -136,7 +150,7 @@ const actions = {
         if (tagOp.op === 'add') {
             context.commit('addCurTag', tagOp.cpInfo)
         } else if (tagOp.op === 'remove') {
-            context.commit('removeCurTag', tagOp.cpInfo)
+            context.commit('removeCurTag', tagOp.closeOpt)
         } else if (tagOp.op === 'update') {
             context.commit('updateCurTag', tagOp.cpInfo)
         }

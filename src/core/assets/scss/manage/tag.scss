@@ -1,29 +1,48 @@
 @import "~@scss/custom/theme/theme";
+@import "~@corescss/params.scss";
 
 .n-tag{
   height: 32px;
   line-height: 32px;
   background-color: lighten($primary-color, 48%);
   overflow-y: hidden;
+  position: relative;
   .n-tag-scroll-hider{
     white-space: nowrap;
     height: 48px;
     overflow-x: auto;
+    padding-right: 32px;
+    span{
+      display: inline-block;
+      padding: 0 12px;
+      border-right: 2px solid rgba($primary-color, 0.2);
+      &:hover, &.cur{
+        background-color: lighten($primary-color, 32%);
+        cursor: pointer;
+      }
+      &:last-child{
+        border-right: 0;
+      }
+      .n-tag-close{
+        font-size: 10px;
+        margin-left: 12px;
+      }
+    }
   }
-  span{
-    display: inline-block;
-    padding: 0 12px;
-    border-right: 2px solid rgba($primary-color, 0.2);
-    &:hover, &.cur{
-      background-color: lighten($primary-color, 32%);
-      cursor: pointer;
-    }
-    &:last-child{
-      border-right: 0;
-    }
-    .n-tag-close{
-      font-size: 10px;
-      margin-left: 12px;
-    }
+  .n-tag-dropdown{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-color: $grey-f;
+    line-height: 32px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
   }
+}
+
+.n-tag-dropdown-menu{
+  min-width: 120px;
 }

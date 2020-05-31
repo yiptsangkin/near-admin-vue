@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Pod ovom stazom nije pronađena nijedna komponenta',
             emptyErr: 'Put komponente nije konfiguriran'
         }
+    },
+    tagObj: {
+        closeAll: 'Zatvori sve',
+        errorTip: {
+            homePageCloseError: 'Nije dopušteno zatvaranje početne stranice'
+        }
     }
 }

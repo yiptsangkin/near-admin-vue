@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Không tìm thấy thành phần nào dưới đường dẫn này',
             emptyErr: 'Đường dẫn thành phần không được cấu hình'
         }
+    },
+    tagObj: {
+        closeAll: 'Đóng tất cả',
+        errorTip: {
+            homePageCloseError: 'Trang chủ không được phép đóng'
+        }
     }
 }

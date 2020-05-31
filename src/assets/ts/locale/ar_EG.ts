@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'لم يتم العثور على مكون تحت هذا المسار',
             emptyErr: 'لم يتم تكوين مسار المكون'
         }
+    },
+    tagObj: {
+        closeAll: 'إغلاق الكل',
+        errorTip: {
+            homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية'
+        }
     }
 }

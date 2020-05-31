@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'No component found under this path',
             emptyErr: 'Component path not configured'
         }
+    },
+    tagObj: {
+        closeAll: 'Close all',
+        errorTip: {
+            homePageCloseError: 'Homepage is not allowed to close'
+        }
     }
 }

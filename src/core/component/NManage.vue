@@ -34,7 +34,7 @@
     import NTag from '@corecp/NTag.vue'
     import NoRight from '@corecp/NNoRight.vue'
     import NoFound from '@corecp/NNoFound.vue'
-    import NKeepAlive from '@corecp/NKeepAlive'
+    import NKeepAlive from '@corecp/NKeepAlive.vue'
     import {CpInfo} from '@corets/type'
     import utils from '@corets/utils'
     import {mapActions, mapGetters} from 'vuex'
@@ -119,9 +119,6 @@
                         op: 'add',
                         cpInfo
                     })
-                    // pick last tag
-                    const lastIdx = self.curTagList.length - 1
-                    self.changeCurTagIndex(lastIdx)
                 } else {
                     // old component page
                     self.changeCurTagIndex(cpExistIdx)
@@ -151,7 +148,7 @@
                         itemParams = '{}'
                     }
                     if (item.component === cpInfo.component) {
-                        if (item.navIndex === cpInfo.navIndex && item.title === cpInfo.title && itemParams === cpParams) {
+                        if (item.pk === cpInfo.pk) {
                             return {
                                 idx: i,
                                 pk: item.pk

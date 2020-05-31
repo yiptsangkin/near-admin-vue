@@ -115,5 +115,11 @@ export default {
             notfoundTip: '未找到該路徑下的組件',
             emptyErr: '未配置組件路徑'
         }
+    },
+    tagObj: {
+        closeAll: '關閉全部',
+        errorTip: {
+            homePageCloseError: '首頁不允許關閉'
+        }
     }
 }

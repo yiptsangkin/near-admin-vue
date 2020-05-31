@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'No se encontraron componentes bajo esta ruta',
             emptyErr: 'Ruta de componente no configurada'
         }
+    },
+    tagObj: {
+        closeAll: 'Cierra todo',
+        errorTip: {
+            homePageCloseError: 'La página de inicio no puede cerrar'
+        }
     }
 }

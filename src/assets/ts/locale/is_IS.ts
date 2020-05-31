@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Enginn hluti fannst undir þessari slóð',
             emptyErr: 'Íhlutaslóð ekki stillt'
         }
+    },
+    tagObj: {
+        closeAll: 'Lokaðu öllu',
+        errorTip: {
+            homePageCloseError: 'Heimasíðunni er ekki leyft að loka'
+        }
     }
 }

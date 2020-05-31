@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'L&#39;adreça de la sol·licitud no pot estar buida',
-        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més endavant'
+        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més tard'
     },
     localeMap: {
         ar: 'Àrab',
@@ -114,6 +114,12 @@ export default {
         errorTip: {
             notfoundTip: 'No s&#39;ha trobat component d&#39;aquesta ruta',
             emptyErr: 'Ruta del component no configurada'
+        }
+    },
+    tagObj: {
+        closeAll: 'Tanca tot',
+        errorTip: {
+            homePageCloseError: 'La pàgina d&#39;inici no es pot tancar'
         }
     }
 }

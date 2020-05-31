@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'इस पथ के तहत कोई घटक नहीं मिला',
             emptyErr: 'घटक पथ कॉन्फ़िगर नहीं किया गया'
         }
+    },
+    tagObj: {
+        closeAll: 'सब बंद करें',
+        errorTip: {
+            homePageCloseError: 'मुखपृष्ठ को बंद करने की अनुमति नहीं है'
+        }
     }
 }

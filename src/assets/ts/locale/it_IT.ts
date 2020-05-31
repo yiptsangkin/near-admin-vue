@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Nessun componente trovato in questo percorso',
             emptyErr: 'Percorso del componente non configurato'
         }
+    },
+    tagObj: {
+        closeAll: 'Chiudi tutto',
+        errorTip: {
+            homePageCloseError: 'La home page non è autorizzata a chiudere'
+        }
     }
 }

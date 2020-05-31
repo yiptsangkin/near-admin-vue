@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Pod touto cestou sa nenašiel žiadny komponent',
             emptyErr: 'Cesta komponentu nie je nakonfigurovaná'
         }
+    },
+    tagObj: {
+        closeAll: 'Zatvorte všetko',
+        errorTip: {
+            homePageCloseError: 'Domovská stránka nesmie byť zavretá'
+        }
     }
 }

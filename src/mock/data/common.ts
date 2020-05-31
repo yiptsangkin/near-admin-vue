@@ -100,22 +100,22 @@ export const getUserMenu = (req: any): ComRespone => {
                                     child: [
                                         {
                                             name: 'menuObj.childMenu.0-0-0',
-                                            path: '',
+                                            path: 'home/HomePage',
                                             icon: ''
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-1',
-                                            path: '',
+                                            path: 'home/HomePage',
                                             icon: ''
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-2',
-                                            path: '',
+                                            path: 'home/HomePage',
                                             icon: ''
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-3',
-                                            path: '',
+                                            path: 'home/HomePage',
                                             icon: ''
                                         },
                                         {

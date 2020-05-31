@@ -2,7 +2,7 @@ export default {
     locale: 'cs',
     country: 'CZ',
     sysInfo: {
-        sysIntro: 'Užitečný front-end vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Snadno použitelný front-end vývojový rámec založený na Vue a Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Přihlašovací heslo k účtu',
@@ -114,6 +114,12 @@ export default {
         errorTip: {
             notfoundTip: 'Pod touto cestou nebyla nalezena žádná součást',
             emptyErr: 'Cesta komponenty není nakonfigurována'
+        }
+    },
+    tagObj: {
+        closeAll: 'Zavřete vše',
+        errorTip: {
+            homePageCloseError: 'Domovská stránka nesmí být zavřena'
         }
     }
 }

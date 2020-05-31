@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Компонент не найден по этому пути',
             emptyErr: 'Путь к компоненту не настроен'
         }
+    },
+    tagObj: {
+        closeAll: 'Закрыть все',
+        errorTip: {
+            homePageCloseError: 'Домашняя страница не может закрываться'
+        }
     }
 }

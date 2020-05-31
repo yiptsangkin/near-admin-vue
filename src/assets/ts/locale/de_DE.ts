@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Unter diesem Pfad wurde keine Komponente gefunden',
             emptyErr: 'Komponentenpfad nicht konfiguriert'
         }
+    },
+    tagObj: {
+        closeAll: 'Alle schließen',
+        errorTip: {
+            homePageCloseError: 'Die Homepage darf nicht geschlossen werden'
+        }
     }
 }

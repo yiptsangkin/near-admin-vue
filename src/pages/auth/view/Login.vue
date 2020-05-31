@@ -1,7 +1,7 @@
 <template>
     <div class="n-login-ctx">
         <a-row class="n-login-lang-wrp">
-            <lang-picker></lang-picker>
+            <n-lang-picker></n-lang-picker>
         </a-row>
         <a-row class="n-login-main-ctx">
             <a-row class="n-login-logo-wrp" :gutter="[18, 0]">
@@ -26,13 +26,13 @@
 <script>
     import { mapGetters } from 'vuex'
     const LoginForm = () => import('../component/login/LoginForm')
-    const LangPicker = () => import('../component/common/LangPicker')
+    const NLangPicker = () => import('@corecp/NLangPicker.vue')
     const CopyRight = () => import('../component/common/CopyRight')
     export default {
         name: 'Login',
         components: {
             LoginForm,
-            LangPicker,
+            NLangPicker,
             CopyRight
         },
         computed: {

@@ -2,7 +2,7 @@ export default {
     locale: 'mk',
     country: 'MK',
     sysInfo: {
-        sysIntro: 'Лесна за употреба рамка за развој на предната страна, заснована на дизајн на Vue и мравка'
+        sysIntro: 'Лесна за употреба предна рамка за развој, заснована на дизајн на Vue и мравка'
     },
     loginForm: {
         byAccountBtn: 'Најава за лозинка на сметката',
@@ -114,6 +114,12 @@ export default {
         errorTip: {
             notfoundTip: 'Не се најде компонента под овој пат',
             emptyErr: 'Патеката на компонентата не е конфигурирана'
+        }
+    },
+    tagObj: {
+        closeAll: 'Затвори ги сите',
+        errorTip: {
+            homePageCloseError: 'Не е дозволено затворање на почетната страница'
         }
     }
 }

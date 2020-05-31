@@ -33,6 +33,12 @@ export default {
                 notfoundTip: 'menuObj.errorTip.notfoundTip',
                 emptyErr: 'menuObj.errorTip.emptyErr'
             }
+        },
+        tagObj: {
+            closeAll: 'tagObj.closeAll',
+            errorTip: {
+                homePageCloseError: 'tagObj.errorTip.homePageCloseError'
+            }
         }
     },
     commonObj: {

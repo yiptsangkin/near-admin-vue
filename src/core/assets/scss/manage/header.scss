@@ -27,4 +27,10 @@
       line-height: 49px;
     }
   }
+  .n-header-right-part{
+    flex: 1;
+    ::v-deep .n-locale-icon{
+      margin: 0 17px;
+    }
+  }
 }

@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Šajā ceļā nav atrasts neviens komponents',
             emptyErr: 'Komponenta ceļš nav konfigurēts'
         }
+    },
+    tagObj: {
+        closeAll: 'Aizveriet visu',
+        errorTip: {
+            homePageCloseError: 'Mājas lapu nav atļauts aizvērt'
+        }
     }
 }

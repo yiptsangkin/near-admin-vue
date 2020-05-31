@@ -2,7 +2,7 @@ export default {
     locale: 'fa',
     country: 'IR',
     sysInfo: {
-        sysIntro: 'یک چارچوب توسعه جلویی آسان برای استفاده مبتنی بر Vue و Ant Design'
+        sysIntro: 'چارچوب توسعه جلویی مفید مبتنی بر Vue و طراحی مورچه'
     },
     loginForm: {
         byAccountBtn: 'ورود به سیستم رمز عبور حساب',
@@ -114,6 +114,12 @@ export default {
         errorTip: {
             notfoundTip: 'هیچ مؤلفه ای تحت این مسیر یافت نشد',
             emptyErr: 'مسیر کامپوننت پیکربندی نشده است'
+        }
+    },
+    tagObj: {
+        closeAll: 'همه را ببند',
+        errorTip: {
+            homePageCloseError: 'صفحه اصلی مجاز به بسته شدن نیست'
         }
     }
 }

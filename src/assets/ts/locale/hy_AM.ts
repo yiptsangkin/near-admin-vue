@@ -115,5 +115,11 @@ export default {
             notfoundTip: 'Ոչ մի բաղադրիչ չի գտնվել այս ուղու տակ',
             emptyErr: 'Բաղադրիչի ուղին կազմաձևված չէ'
         }
+    },
+    tagObj: {
+        closeAll: 'Փակեք բոլորը',
+        errorTip: {
+            homePageCloseError: 'Հիմնական էջը չի թույլատրվում փակել'
+        }
     }
 }

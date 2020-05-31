@@ -2,7 +2,7 @@ export default {
     locale: 'hu',
     country: 'HU',
     sysInfo: {
-        sysIntro: 'Könnyen használható front-end fejlesztési keret, amely a Vue és Ant Design alapú'
+        sysIntro: 'Hasznos front-end fejlesztési keret, amely a Vue és Ant Design alapú'
     },
     loginForm: {
         byAccountBtn: 'Fiók jelszó bejelentkezés',
@@ -114,6 +114,12 @@ export default {
         errorTip: {
             notfoundTip: 'Nem található elem ezen az úton',
             emptyErr: 'A komponens elérési útja nincs konfigurálva'
+        }
+    },
+    tagObj: {
+        closeAll: 'Zárjon be mindent',
+        errorTip: {
+            homePageCloseError: 'A honlapot nem szabad bezárni'
         }
     }
 }
