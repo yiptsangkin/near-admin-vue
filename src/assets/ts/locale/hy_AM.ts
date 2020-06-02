@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Փակեք բոլորը',
+        closeAll: 'Փակեք բոլոր ներդիրները',
+        closeCur: 'Փակեք ընթացիկ ներդիրը',
+        closeOther: 'Փակեք այլ պիտակները',
+        closeRight: 'Փակեք աջ պիտակը',
+        singlePage: 'Անկախ էջ',
+        refreshPage: 'թարմացնել էջը',
         errorTip: {
             homePageCloseError: 'Հիմնական էջը չի թույլատրվում փակել'
         }

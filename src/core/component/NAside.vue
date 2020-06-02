@@ -111,7 +111,7 @@
         },
         watch: {
             defaultIndexs (n, o) {
-                const self = this
+                const self = this as any
                 if (!n || !n[0] || typeof n[0] !== 'string') {
                     // check if have value
                     return false
@@ -157,7 +157,7 @@
                 'changeDefaultIndexs'
             ]),
             handlerSelect ({key}: {key: string}) {
-                const self = this
+                const self = this as any
                 self.changeDefaultIndexs([key])
             },
             encodeParams: utils.encodeParams

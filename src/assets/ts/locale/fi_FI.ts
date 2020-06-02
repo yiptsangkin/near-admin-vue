@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Sulje kaikki',
+        closeAll: 'Sulje kaikki välilehdet',
+        closeCur: 'Sulje nykyinen välilehti',
+        closeOther: 'Sulje muut tunnisteet',
+        closeRight: 'Sulje oikea tarra',
+        singlePage: 'Itsenäinen sivu',
+        refreshPage: 'Päivitä sivu',
         errorTip: {
             homePageCloseError: 'Kotisivua ei saa sulkea'
         }

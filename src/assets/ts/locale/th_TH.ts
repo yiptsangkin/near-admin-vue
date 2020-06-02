@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'ปิดทั้งหมด',
+        closeAll: 'ปิดแท็บทั้งหมด',
+        closeCur: 'ปิดแท็บปัจจุบัน',
+        closeOther: 'ปิดแท็กอื่น ๆ',
+        closeRight: 'ปิดฉลากด้านขวา',
+        singlePage: 'หน้าอิสระ',
+        refreshPage: 'รีเฟรชหน้า',
         errorTip: {
             homePageCloseError: 'ไม่อนุญาตให้ปิดโฮมเพจ'
         }

@@ -43,7 +43,7 @@
                'changeCurMenu'
             ]),
             changeMenu ({key}: {key: any}) {
-                const self = this
+                const self = this as any
                 self.changeCurMenu([key])
             }
         }

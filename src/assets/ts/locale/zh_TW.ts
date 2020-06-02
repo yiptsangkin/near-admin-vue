@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: '關閉全部',
+        closeAll: '關閉全部標籤',
+        closeCur: '關閉當前標籤',
+        closeOther: '關閉其他標籤',
+        closeRight: '關閉右側標籤',
+        singlePage: '獨立頁面',
+        refreshPage: '刷新頁面',
         errorTip: {
             homePageCloseError: '首頁不允許關閉'
         }

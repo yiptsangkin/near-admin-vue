@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'सब बंद करें',
+        closeAll: 'सभी टैब को बंद करें',
+        closeCur: 'वर्तमान टैब बंद करें',
+        closeOther: 'अन्य टैग बंद करें',
+        closeRight: 'दायाँ लेबल बंद करें',
+        singlePage: 'स्वतंत्र पृष्ठ',
+        refreshPage: 'पृष्ठ ताज़ा करें',
         errorTip: {
             homePageCloseError: 'मुखपृष्ठ को बंद करने की अनुमति नहीं है'
         }

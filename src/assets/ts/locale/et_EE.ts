@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Sulgege kõik',
+        closeAll: 'Sulgege kõik sakid',
+        closeCur: 'Sulgege praegune sakk',
+        closeOther: 'Sulgege muud sildid',
+        closeRight: 'Sulgege parem silt',
+        singlePage: 'Iseseisev leht',
+        refreshPage: 'värskenda lehte',
         errorTip: {
             homePageCloseError: 'Kodulehte ei tohi sulgeda'
         }

@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'ಎಲ್ಲವನ್ನೂ ಮುಚ್ಚಿ',
+        closeAll: 'ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮುಚ್ಚಿ',
+        closeCur: 'ಪ್ರಸ್ತುತ ಟ್ಯಾಬ್ ಅನ್ನು ಮುಚ್ಚಿ',
+        closeOther: 'ಇತರ ಟ್ಯಾಗ್‌ಗಳನ್ನು ಮುಚ್ಚಿ',
+        closeRight: 'ಬಲ ಲೇಬಲ್ ಮುಚ್ಚಿ',
+        singlePage: 'ಸ್ವತಂತ್ರ ಪುಟ',
+        refreshPage: 'ಪುಟವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ',
         errorTip: {
             homePageCloseError: 'ಮುಖಪುಟವನ್ನು ಮುಚ್ಚಲು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ'
         }

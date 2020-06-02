@@ -116,7 +116,7 @@ const mutations = {
     removeCurTag: (mutationState: State, closeOpt: ClosePageOpt) => {
         if (closeOpt.idx) {
             mutationState.curTagList.splice(closeOpt.idx, 1)
-            if (!closeOpt.target) {
+            if (!closeOpt.target && closeOpt.target !== 0) {
                 if (closeOpt.idx <= mutationState.curTagIndex) {
                     mutationState.curTagIndex--
                 }

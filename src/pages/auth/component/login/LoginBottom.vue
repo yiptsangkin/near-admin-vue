@@ -52,7 +52,7 @@
         },
         methods: {
             toLogin () {
-                const self = this
+                const self = this as any
                 self.$emit('login')
             }
         }

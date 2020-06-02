@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'すべて閉じる',
+        closeAll: 'すべてのタブを閉じる',
+        closeCur: '現在のタブを閉じる',
+        closeOther: '他のタグを閉じる',
+        closeRight: '右のラベルを閉じる',
+        singlePage: '独立したページ',
+        refreshPage: 'ページの更新',
         errorTip: {
             homePageCloseError: 'ホームページを閉じることはできません'
         }

@@ -46,19 +46,16 @@
         },
         methods: {
             async toLogin () {
-                const self = this
+                const self = this as any
                 const formDetail = self.$refs[`form-detail-${self.activatedKey}`]
                 if (Array.isArray(formDetail) && formDetail) {
                     const formRef = 'formModel'
-                    // @ts-ignore
                     const formObj = formDetail[0].$refs[formRef]
                     formObj.validate((valid: any) => {
                         if (valid) {
                             // check success
                             if (self.activatedKey === 1) {
-                                // @ts-ignore
                                 const username: string = formDetail[0].formModel.account.value
-                                // @ts-ignore
                                 const password: string = formDetail[0].formModel.password.value
                                 api.checkLoginByAccount({
                                     data: {
@@ -77,12 +74,10 @@
                                     }
                                 })
                             } else if (self.activatedKey === 2) {
-                                // @ts-ignore
                                 const inputCode: string = formDetail[0].formModel.valid.value
                                 api.checkLoginByPhone({
                                     data: {
                                         inputCode,
-                                        // @ts-ignore
                                         validCode: formDetail[0].validCode
                                     },
                                     success: (res: any) => {

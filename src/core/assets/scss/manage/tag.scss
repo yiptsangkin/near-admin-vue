@@ -16,6 +16,11 @@
       display: inline-block;
       padding: 0 12px;
       border-right: 2px solid rgba($primary-color, 0.2);
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
       &:hover, &.cur{
         background-color: lighten($primary-color, 32%);
         cursor: pointer;

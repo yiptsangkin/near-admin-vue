@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'همه را ببند',
+        closeAll: 'همهی زبانهها را ببندید',
+        closeCur: 'برگه فعلی را ببندید',
+        closeOther: 'برچسب های دیگر را ببندید',
+        closeRight: 'برچسب سمت راست را ببندید',
+        singlePage: 'صفحه مستقل',
+        refreshPage: 'صفحه را رفرش کن',
         errorTip: {
             homePageCloseError: 'صفحه اصلی مجاز به بسته شدن نیست'
         }

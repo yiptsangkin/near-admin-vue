@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Затворите све',
+        closeAll: 'Затворите све картице',
+        closeCur: 'Затворите тренутну картицу',
+        closeOther: 'Затворите остале ознаке',
+        closeRight: 'Затворите десну налепницу',
+        singlePage: 'Независна страница',
+        refreshPage: 'освежи страна',
         errorTip: {
             homePageCloseError: 'Није дозвољено затварање почетне странице'
         }

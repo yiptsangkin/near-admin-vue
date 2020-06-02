@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Stäng alla',
+        closeAll: 'Stäng alla flikar',
+        closeCur: 'Stäng den aktuella fliken',
+        closeOther: 'Stäng andra taggar',
+        closeRight: 'Stäng höger etikett',
+        singlePage: 'Oberoende sida',
+        refreshPage: 'uppdatera sida',
         errorTip: {
             homePageCloseError: 'Hemsidan får inte stängas'
         }

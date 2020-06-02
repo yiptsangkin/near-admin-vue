@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'إغلاق الكل',
+        closeAll: 'أغلق جميع علامات التبويب',
+        closeCur: 'أغلق علامة التبويب الحالية',
+        closeOther: 'أغلق العلامات الأخرى',
+        closeRight: 'أغلق التسمية اليمنى',
+        singlePage: 'صفحة مستقلة',
+        refreshPage: 'إعادة تحميل الصفحة',
         errorTip: {
             homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية'
         }

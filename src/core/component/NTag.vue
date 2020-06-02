@@ -29,6 +29,7 @@
     import Vue from 'vue'
     import {mapGetters} from 'vuex'
     import dict from '@custom/dict'
+    import bus from '@corets/eventbus'
 
     export default Vue.extend({
         name: 'NTag',
@@ -44,50 +45,83 @@
                 'curTagIndex'
             ]),
             currentSelectedKeys () {
-                const self = this
+                const self = this as any
                 return [self.curTagIndex]
             }
         },
         watch: {
             curTagList (val) {
                 // watch tag list to judge if will show the tag dropdown
-                const self = this
+                const self = this as any
                 self.$nextTick(() => {
-                    let spanLength = 0
-                    const tagDomList = self.$el.querySelectorAll('.n-tag-scroll-hider span')
-                    for (const item of tagDomList) {
-                        spanLength += item.clientWidth
-                    }
-                    const borderLength = (tagDomList.length - 1) * 2
+                    const sumTagWidth = self.getTagDomLength()
                     const tagWrpDom = self.$el
                     // 32 is the n-tag-scroll-hider's padding
-                    if (tagWrpDom.clientWidth < (spanLength + borderLength + 32)) {
-                        // @ts-ignore
+                    if (tagWrpDom.clientWidth < sumTagWidth) {
                         self.showDropDown = true
                     } else {
-                        // @ts-ignore
                         self.showDropDown = false
                     }
+                    self.moveTagToCenter()
                 })
             }
         },
         methods: {
             changeCp (idx: number) {
-                const self = this
+                const self = this as any
                 self.$emit('change-cp', self.curTagList[idx], false)
+                self.$nextTick(() => {
+                    self.moveTagToCenter()
+                })
             },
-            showContextMenu () {
-                console.log('ctxmenu')
+            showContextMenu (e: any) {
+                bus.$emit('tagCtxMenu', {
+                    x: e.clientX,
+                    y: e.offsetY
+                })
             },
             closeTag (idx: number) {
-                const self = this;
+                const self = this as any;
                 if (idx === 0) {
                     self.$message.warn(self.$t(dict.localeObj.tagObj.errorTip.homePageCloseError).toString());
                 } else {
-                    // @ts-ignore
                     self.$closepage({
                         idx
-                    });
+                    })
+                }
+            },
+            getTagDomLength () {
+                const self = this as any
+                let spanLength = 0
+                const tagDomList = self.$el.querySelectorAll('.n-tag-scroll-hider span')
+                for (const item of tagDomList) {
+                    spanLength += item.clientWidth
+                }
+                const borderLength = (tagDomList.length - 1) * 2
+                return (spanLength + borderLength + 32)
+            },
+            curTagDistFromLeft (idx: number) {
+                // to move tag to center position
+                const self = this as any
+                let spanLength = 0
+                let spanCount = 0
+                const tagDomList = self.$el.querySelectorAll('.n-tag-scroll-hider span')
+                for (let i = 0; i < tagDomList.length; i++) {
+                    const item = tagDomList[i]
+                    if (i < self.curTagIndex) {
+                        spanLength += item.clientWidth
+                        spanCount++
+                    }
+                }
+                const borderLength = (spanCount - 1) * 2
+                return spanLength + borderLength
+            },
+            moveTagToCenter () {
+                const self = this as any
+                const tagLeftDist = self.curTagDistFromLeft(self.curTagIndex)
+                const tagBar = self.$el.querySelector('.n-tag-scroll-hider')
+                if (tagBar) {
+                    tagBar.scrollLeft = tagLeftDist
                 }
             }
         }

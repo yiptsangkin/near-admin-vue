@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: '모두 닫기',
+        closeAll: '모든 탭을 닫습니다',
+        closeCur: '현재 탭을 닫습니다',
+        closeOther: '다른 태그 닫기',
+        closeRight: '오른쪽 라벨 닫기',
+        singlePage: '독립 페이지',
+        refreshPage: '페이지 새로 고침',
         errorTip: {
             homePageCloseError: '홈페이지를 닫을 수 없습니다'
         }

@@ -1,4 +1,5 @@
 <template>
+    <button @click="addNewPage">add new page</button>
 </template>
 
 <script lang="ts">
@@ -8,7 +9,20 @@
 
     export default Vue.extend({
         name: 'HomePage',
-        mixins: [CoreBase, Base]
+        mixins: [CoreBase, Base],
+        data () {
+            return {
+            }
+        },
+        methods: {
+            addNewPage () {
+                const self = this as any
+                self.$newpage({
+                    component: 'home/HomePage',
+                    title: 'test'
+                })
+            }
+        }
     })
 </script>
 

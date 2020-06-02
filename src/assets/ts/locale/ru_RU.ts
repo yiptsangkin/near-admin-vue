@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Закрыть все',
+        closeAll: 'Закройте все вкладки',
+        closeCur: 'Закрыть текущую вкладку',
+        closeOther: 'Закрыть другие теги',
+        closeRight: 'Закрыть правую метку',
+        singlePage: 'Независимая страница',
+        refreshPage: 'обновить страницу',
         errorTip: {
             homePageCloseError: 'Домашняя страница не может закрываться'
         }

@@ -30,7 +30,7 @@ class CountryFlag {
 
     public getFlayByChar (char: string) {
         // check if exist '-'
-        const self = this
+        const self = this as any
         let countryCode
         if (/-/g.test(char)) {
             // split by '-'
@@ -43,7 +43,6 @@ class CountryFlag {
             countryCode = 'HK'
         }
         for (const str of countryCode) {
-            // @ts-ignore
             flagStr += self.characterMap[str]
         }
         return flagStr

@@ -32,12 +32,11 @@
                'locale'
             ]),
             ableLocaleList () {
-                const self = this
+                const self = this as any
                 const newAbleList: object[] = []
                 const localeObj = self.$i18n.messages
                 Object.keys(localeObj).forEach((key) => {
                     newAbleList.push({
-                        // @ts-ignore
                         flag: `${new CountryFlag().getFlayByChar(localeObj[key].country)}`,
                         locale: key
                     })
@@ -45,7 +44,7 @@
                 return newAbleList
             },
             ableLocaleMap () {
-                const self = this
+                const self = this as any
                 return self.$i18n.messages
             }
         },
@@ -54,20 +53,17 @@
                 'changeLocale'
             ]),
             pickLocale (e: PickerEvent) {
-                const self = this
+                const self = this as any
                 self.$i18n.locale = e.key
-                // @ts-ignore
                 self.currentSelectedKeys = [e.key]
                 // cache in localStorge
                 localStorage.setItem('nearAdminLang', e.key)
                 // update vuex state
-                // @ts-ignore
                 self.changeLocale(e.key)
             }
         },
         created () {
-            const self = this
-            // @ts-ignore
+            const self = this as any
             self.currentSelectedKeys = [self.locale]
         }
     })

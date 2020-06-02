@@ -88,20 +88,19 @@
         watch: {
             locale () {
                 // change locale to initRules for i18n show
-                const self = this
-                // @ts-ignore
+                const self = this as any
                 self.$refs.formModel.clearValidate()
                 self.initRules()
             }
         },
         created () {
-            const self = this
+            const self = this as any
             self.initRules()
             self.getLastSeconds()
         },
         methods: {
             initRules () {
-                const self = this
+                const self = this as any
                 self.formModel.rules = {
                     ['account.value']: [
                         {
@@ -120,9 +119,8 @@
                 }
             },
             sendMsg () {
-                const self = this
+                const self = this as any
                 if (self.isSendMsg) {
-                    // @ts-ignore
                     self.$message.warn(self.$t(dict.localeObj.loginForm.repeatSendMsgWarn))
                 } else {
                     localStorage.setItem('msgSendTime', new Date().getTime().toString())
@@ -132,7 +130,7 @@
                 }
             },
             getLastSeconds () {
-                const self = this
+                const self = this as any
                 const msgSendTime = localStorage.getItem('msgSendTime')
                 if (msgSendTime) {
                     // if have msgSendTime
@@ -151,7 +149,7 @@
                 }
             },
             startTimer () {
-                const self = this
+                const self = this as any
                 const timer = setInterval(() => {
                     self.lastSeconds--
                     if (self.lastSeconds <= 0) {
@@ -163,7 +161,7 @@
                 }, 1000)
             },
             async toSendMsg () {
-                const self = this
+                const self = this as any
                 await api.getSendMsg({
                     success: (res: any) => {
                         self.$notification.success({

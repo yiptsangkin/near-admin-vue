@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: '关闭全部',
+        closeAll: '关闭全部标签',
+        closeCur: '关闭当前标签',
+        closeOther: '关闭其他标签',
+        closeRight: '关闭右侧标签',
+        singlePage: '独立页面',
+        refreshPage: '刷新页面',
         errorTip: {
             homePageCloseError: '首页不允许关闭'
         }

@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Zatvori sve',
+        closeAll: 'Zatvorite sve kartice',
+        closeCur: 'Zatvorite trenutnu karticu',
+        closeOther: 'Zatvorite ostale oznake',
+        closeRight: 'Zatvori desnu naljepnicu',
+        singlePage: 'Nezavisna stranica',
+        refreshPage: 'osvježiti stranicu',
         errorTip: {
             homePageCloseError: 'Nije dopušteno zatvaranje početne stranice'
         }

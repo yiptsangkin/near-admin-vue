@@ -1,6 +1,6 @@
 <template>
     <a-config-provider :locale="gloablLocale[locale]">
-        <div class="n-main-ctx">
+        <div class="n-main-ctx ovh">
             <router-view></router-view>
         </div>
     </a-config-provider>

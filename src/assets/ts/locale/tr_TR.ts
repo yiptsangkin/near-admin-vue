@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Hepsini kapat',
+        closeAll: 'Tüm sekmeleri kapat',
+        closeCur: 'Geçerli sekmeyi kapat',
+        closeOther: 'Diğer etiketleri kapat',
+        closeRight: 'Sağ etiketi kapat',
+        singlePage: 'Bağımsız sayfa',
+        refreshPage: 'sayfayı yenile',
         errorTip: {
             homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor'
         }

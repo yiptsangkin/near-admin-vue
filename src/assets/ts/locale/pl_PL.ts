@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Zamknij wszystko',
+        closeAll: 'Zamknąć wszystkie zakładki',
+        closeCur: 'Zamknij bieżącą kartę',
+        closeOther: 'Zamknij inne tagi',
+        closeRight: 'Zamknij prawą etykietę',
+        singlePage: 'Niezależna strona',
+        refreshPage: 'Odśwież stronę',
         errorTip: {
             homePageCloseError: 'Strona główna nie może zostać zamknięta'
         }

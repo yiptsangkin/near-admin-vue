@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Затвори ги сите',
+        closeAll: 'Затворете ги сите јазичиња',
+        closeCur: 'Затворете го тековното јазиче',
+        closeOther: 'Затворете други ознаки',
+        closeRight: 'Затворете ја десната етикета',
+        singlePage: 'Независна страница',
+        refreshPage: 'освежи страница',
         errorTip: {
             homePageCloseError: 'Не е дозволено затворање на почетната страница'
         }

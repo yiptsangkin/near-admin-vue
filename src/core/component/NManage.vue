@@ -5,6 +5,7 @@
             <a-layout>
                 <n-aside @change-cp="changeCp"></n-aside>
                 <a-layout-content class="n-layout-content">
+                    <n-tag-content-menu></n-tag-content-menu>
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
                         <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
@@ -32,6 +33,7 @@
     import NAside from '@corecp/NAside.vue'
     import NHeader from '@corecp/NHeader.vue'
     import NTag from '@corecp/NTag.vue'
+    import NTagContentMenu from '@corecp/./NTagContentMenu.vue'
     import NoRight from '@corecp/NNoRight.vue'
     import NoFound from '@corecp/NNoFound.vue'
     import NKeepAlive from '@corecp/NKeepAlive.vue'
@@ -48,7 +50,8 @@
             NAside,
             NHeader,
             NTag,
-            NKeepAlive
+            NKeepAlive,
+            NTagContentMenu
         },
         computed: {
             ...mapGetters([
@@ -57,7 +60,7 @@
                 'rightPathList'
             ]),
             cacheCp () {
-                const self = this
+                const self = this as any
                 return self.curTagList.map((e) => {
                     return `${e.pk}`
                 }).toString()
@@ -65,7 +68,7 @@
         },
         asyncComputed: {
             async activeComponent () {
-                const self = this
+                const self = this as any
                 let activeCp
                 const curCp = self.curTagList[self.curTagIndex]
                 // check right path
@@ -102,7 +105,7 @@
                 'changeDefaultIndexs'
             ]),
             changeCp (cpInfo: CpInfo, byMenu: boolean = true) {
-                const self = this
+                const self = this as any
                 // if empty component, return false
                 if (!cpInfo.component) {
                     self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.emptyErr)}`)
@@ -130,7 +133,7 @@
                 }
             },
             cpExistIndex (cpInfo: CpInfo) {
-                const self = this
+                const self = this as any
                 let needCacheSame = false
                 let cpParams
                 try {

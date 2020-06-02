@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Zatvorte všetko',
+        closeAll: 'Zatvorte všetky karty',
+        closeCur: 'Zatvorte aktuálnu kartu',
+        closeOther: 'Zatvorte ďalšie značky',
+        closeRight: 'Zatvorte pravý štítok',
+        singlePage: 'Nezávislá stránka',
+        refreshPage: 'obnovovacia stránka',
         errorTip: {
             homePageCloseError: 'Domovská stránka nesmie byť zavretá'
         }

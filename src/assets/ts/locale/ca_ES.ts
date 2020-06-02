@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Tanca tot',
+        closeAll: 'Tanqueu totes les pestanyes',
+        closeCur: 'Tanqueu la pestanya actual',
+        closeOther: 'Tanqueu altres etiquetes',
+        closeRight: 'Tanca l&#39;etiqueta dreta',
+        singlePage: 'Pàgina independent',
+        refreshPage: 'pàgina d’actualització',
         errorTip: {
             homePageCloseError: 'La pàgina d&#39;inici no es pot tancar'
         }

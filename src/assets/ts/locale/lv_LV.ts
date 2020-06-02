@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Aizveriet visu',
+        closeAll: 'Aizveriet visas cilnes',
+        closeCur: 'Aizveriet pašreizējo cilni',
+        closeOther: 'Aizveriet citus tagus',
+        closeRight: 'Aizveriet labo etiķeti',
+        singlePage: 'Neatkarīga lapa',
+        refreshPage: 'atsvaidzināt lapu',
         errorTip: {
             homePageCloseError: 'Mājas lapu nav atļauts aizvērt'
         }

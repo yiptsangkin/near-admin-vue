@@ -64,19 +64,18 @@
         watch: {
             locale () {
                 // change locale to initRules for i18n show
-                const self = this
-                // @ts-ignore
+                const self = this as any
                 self.$refs.formModel.clearValidate()
                 self.initRules()
             }
         },
         created () {
-            const self = this
+            const self = this as any
             self.initRules()
         },
         methods: {
             initRules () {
-                const self = this
+                const self = this as any
                 self.formModel.rules = {
                     ['account.value']: [
                         {

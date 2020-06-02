@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Закрити всіх',
+        closeAll: 'Закрийте всі вкладки',
+        closeCur: 'Закрийте поточну вкладку',
+        closeOther: 'Закрийте інші теги',
+        closeRight: 'Закрийте праву етикетку',
+        singlePage: 'Незалежна сторінка',
+        refreshPage: 'оновити сторінку',
         errorTip: {
             homePageCloseError: 'Не можна закривати домашню сторінку'
         }

@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Luk alle',
+        closeAll: 'Luk alle faner',
+        closeCur: 'Luk den aktuelle fane',
+        closeOther: 'Luk andre tags',
+        closeRight: 'Luk højre etiket',
+        singlePage: 'Uafhængig side',
+        refreshPage: 'opdater side',
         errorTip: {
             homePageCloseError: 'Hjemmesiden må ikke lukke'
         }

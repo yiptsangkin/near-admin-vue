@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Lokaðu öllu',
+        closeAll: 'Lokaðu öllum flipum',
+        closeCur: 'Lokaðu núverandi flipa',
+        closeOther: 'Lokaðu öðrum merkjum',
+        closeRight: 'Lokaðu hægri merkimiða',
+        singlePage: 'Sjálfstæð síðu',
+        refreshPage: 'hressa síðu',
         errorTip: {
             homePageCloseError: 'Heimasíðunni er ekki leyft að loka'
         }

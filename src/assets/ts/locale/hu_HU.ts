@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Zárjon be mindent',
+        closeAll: 'Zárja be az összes fület',
+        closeCur: 'Zárja be az aktuális fület',
+        closeOther: 'Zárjon be más címkéket',
+        closeRight: 'Zárja be a jobb címkét',
+        singlePage: 'Független oldal',
+        refreshPage: 'frisssítsd az oldalt',
         errorTip: {
             homePageCloseError: 'A honlapot nem szabad bezárni'
         }

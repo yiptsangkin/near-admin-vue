@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'அனைத்தையும் மூடு',
+        closeAll: 'எல்லா தாவல்களையும் மூடு',
+        closeCur: 'தற்போதைய தாவலை மூடு',
+        closeOther: 'பிற குறிச்சொற்களை மூடு',
+        closeRight: 'வலது லேபிளை மூடு',
+        singlePage: 'சுயாதீனமான பக்கம்',
+        refreshPage: 'பக்கத்தைப் புதுப்பிக்கவும்',
         errorTip: {
             homePageCloseError: 'முகப்புப்பக்கத்தை மூட அனுமதிக்கப்படவில்லை'
         }

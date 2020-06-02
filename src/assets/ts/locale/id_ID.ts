@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Tutup semua',
+        closeAll: 'Tutup semua tab',
+        closeCur: 'Tutup tab saat ini',
+        closeOther: 'Tutup tag lain',
+        closeRight: 'Tutup label kanan',
+        singlePage: 'Halaman independen',
+        refreshPage: 'refresh halaman',
         errorTip: {
             homePageCloseError: 'Beranda tidak diizinkan untuk ditutup'
         }

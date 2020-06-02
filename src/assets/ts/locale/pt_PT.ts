@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Feche tudo',
+        closeAll: 'Feche todas as guias',
+        closeCur: 'Feche a guia atual',
+        closeOther: 'Fechar outras tags',
+        closeRight: 'Fechar etiqueta direita',
+        singlePage: 'Página independente',
+        refreshPage: 'atualizar a página',
         errorTip: {
             homePageCloseError: 'A página inicial não tem permissão para fechar'
         }

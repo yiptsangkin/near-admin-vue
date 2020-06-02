@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Sluit alles',
+        closeAll: 'Sluit alle tabbladen',
+        closeCur: 'Sluit het huidige tabblad',
+        closeOther: 'Sluit andere tags',
+        closeRight: 'Sluit rechter label',
+        singlePage: 'Onafhankelijke pagina',
+        refreshPage: 'pagina hernieuwen',
         errorTip: {
             homePageCloseError: 'Homepage mag niet sluiten'
         }

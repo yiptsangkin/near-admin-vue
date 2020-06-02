@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Chiudi tutto',
+        closeAll: 'Chiudi tutte le schede',
+        closeCur: 'Chiudi la scheda corrente',
+        closeOther: 'Chiudi altri tag',
+        closeRight: 'Chiudi l&#39;etichetta destra',
+        singlePage: 'Pagina indipendente',
+        refreshPage: 'aggiorna pagina',
         errorTip: {
             homePageCloseError: 'La home page non è autorizzata a chiudere'
         }

@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Close all',
+        closeAll: 'Close all tabs',
+        closeCur: 'Close the current tab',
+        closeOther: 'Close other tags',
+        closeRight: 'Close right label',
+        singlePage: 'Independent page',
+        refreshPage: 'refresh page',
         errorTip: {
             homePageCloseError: 'Homepage is not allowed to close'
         }

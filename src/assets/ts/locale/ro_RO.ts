@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Inchide tot',
+        closeAll: 'Inchide toate filele',
+        closeCur: 'Închideți fila curentă',
+        closeOther: 'Închideți alte etichete',
+        closeRight: 'Închideți eticheta din dreapta',
+        singlePage: 'Pagina independentă',
+        refreshPage: 'Reîmprospătare pagină',
         errorTip: {
             homePageCloseError: 'Pagina de pornire nu are voie să se închidă'
         }

@@ -36,6 +36,11 @@ export default {
         },
         tagObj: {
             closeAll: 'tagObj.closeAll',
+            closeCur: 'tagObj.closeCur',
+            closeOther: 'tagObj.closeOther',
+            closeRight: 'tagObj.closeRight',
+            singlePage: 'tagObj.singlePage',
+            refreshPage: 'tagObj.refreshPage',
             errorTip: {
                 homePageCloseError: 'tagObj.errorTip.homePageCloseError'
             }

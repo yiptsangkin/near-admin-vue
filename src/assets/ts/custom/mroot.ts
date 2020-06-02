@@ -9,7 +9,7 @@ export default {
             'changeMenu'
         ]),
         async getUserMenu () {
-            const self = this
+            const self = this as any
             await api.getUserMenu({
                 success (res) {
                     self.changeMenu(res)
@@ -18,7 +18,7 @@ export default {
         }
     },
     created () {
-        const self = this
+        const self = this as any
         self.getUserMenu()
     }
 }

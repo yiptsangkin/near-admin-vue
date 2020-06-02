@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Đóng tất cả',
+        closeAll: 'Đóng tất cả cửa sổ',
+        closeCur: 'Đóng tab hiện tại',
+        closeOther: 'Đóng các thẻ khác',
+        closeRight: 'Đóng nhãn bên phải',
+        singlePage: 'Trang độc lập',
+        refreshPage: 'làm mới trang',
         errorTip: {
             homePageCloseError: 'Trang chủ không được phép đóng'
         }

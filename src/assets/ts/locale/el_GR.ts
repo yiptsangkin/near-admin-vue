@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Κλείσ&#39;τα όλα',
+        closeAll: 'Κλείστε όλες τις καρτέλες',
+        closeCur: 'Κλείστε την τρέχουσα καρτέλα',
+        closeOther: 'Κλείστε άλλες ετικέτες',
+        closeRight: 'Κλείσιμο δεξιάς ετικέτας',
+        singlePage: 'Ανεξάρτητη σελίδα',
+        refreshPage: 'ανανεώστε τη σελίδα',
         errorTip: {
             homePageCloseError: 'Δεν επιτρέπεται το κλείσιμο της αρχικής σελίδας'
         }

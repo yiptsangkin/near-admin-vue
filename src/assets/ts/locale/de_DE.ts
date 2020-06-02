@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Alle schließen',
+        closeAll: 'Alle Fenster schließen',
+        closeCur: 'Schließen Sie die aktuelle Registerkarte',
+        closeOther: 'Schließen Sie andere Tags',
+        closeRight: 'Schließen Sie das rechte Etikett',
+        singlePage: 'Unabhängige Seite',
+        refreshPage: 'Seite neu laden',
         errorTip: {
             homePageCloseError: 'Die Homepage darf nicht geschlossen werden'
         }

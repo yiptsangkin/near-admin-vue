@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Ferme tout',
+        closeAll: 'Fermer tous les onglets',
+        closeCur: 'Fermer l&#39;onglet actuel',
+        closeOther: 'Fermer d&#39;autres balises',
+        closeRight: 'Fermer l&#39;étiquette de droite',
+        singlePage: 'Page indépendante',
+        refreshPage: 'rafraîchir la page',
         errorTip: {
             homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à fermer'
         }

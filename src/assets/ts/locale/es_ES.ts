@@ -117,7 +117,12 @@ export default {
         }
     },
     tagObj: {
-        closeAll: 'Cierra todo',
+        closeAll: 'Cierra todas las pestañas',
+        closeCur: 'Cerrar la pestaña actual',
+        closeOther: 'Cerrar otras etiquetas',
+        closeRight: 'Cerrar etiqueta derecha',
+        singlePage: 'Página independiente',
+        refreshPage: 'actualizar página',
         errorTip: {
             homePageCloseError: 'La página de inicio no puede cerrar'
         }
