@@ -101,7 +101,10 @@ export const getUserMenu = (req: any): ComRespone => {
                                         {
                                             name: 'menuObj.childMenu.0-0-0',
                                             path: 'home/HomePage',
-                                            icon: ''
+                                            icon: '',
+                                            params: {
+                                                checkSave: true
+                                            }
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-1',
@@ -116,7 +119,10 @@ export const getUserMenu = (req: any): ComRespone => {
                                         {
                                             name: 'menuObj.childMenu.0-0-3',
                                             path: 'home/HomePage',
-                                            icon: ''
+                                            icon: '',
+                                            params: {
+                                                checkSave: true
+                                            }
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-4',

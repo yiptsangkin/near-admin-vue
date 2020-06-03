@@ -19,7 +19,7 @@ export default {
             emptyErr: 'a senha não pode ficar em branco'
         },
         byValidTip: {
-            emptyErr: 'código de verificação deve ser preenchido'
+            emptyErr: 'o código de verificação deve ser preenchido'
         },
         sendMsg: {
             repeatErr: 'Não envie repetidamente',
@@ -125,6 +125,8 @@ export default {
         refreshPage: 'atualizar a página',
         errorTip: {
             homePageCloseError: 'A página inicial não tem permissão para fechar'
-        }
+        },
+        checkSave: 'Deseja fechar a página?(Verifique se o conteúdo da página do rótulo vermelho foi salvo)',
+        cancelClose: 'Operação fechada cancelada'
     }
 }

@@ -125,6 +125,8 @@ export default {
         refreshPage: 'sayfayı yenile',
         errorTip: {
             homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor'
-        }
+        },
+        checkSave: 'Sayfayı kapatmak istiyor musunuz?(Lütfen kırmızı etiket sayfasının içeriğinin kaydedildiğinden emin olun)',
+        cancelClose: 'Kapalı işlem iptal edildi'
     }
 }

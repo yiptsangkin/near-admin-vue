@@ -125,6 +125,8 @@ export default {
         refreshPage: 'refresh halaman',
         errorTip: {
             homePageCloseError: 'Beranda tidak diizinkan untuk ditutup'
-        }
+        },
+        checkSave: 'Apakah Anda ingin menutup halaman?(Pastikan konten halaman label merah telah disimpan)',
+        cancelClose: 'Operasi tertutup dibatalkan'
     }
 }

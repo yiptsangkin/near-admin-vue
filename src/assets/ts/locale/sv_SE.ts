@@ -2,7 +2,7 @@ export default {
     locale: 'sv',
     country: 'SE',
     sysInfo: {
-        sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
+        sysIntro: 'En enkel att använda front-end-utvecklingsram baserad på Vue and Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Inloggning för konto lösenord',
@@ -125,6 +125,8 @@ export default {
         refreshPage: 'uppdatera sida',
         errorTip: {
             homePageCloseError: 'Hemsidan får inte stängas'
-        }
+        },
+        checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan med röd etikett har sparats)',
+        cancelClose: 'Stängd operation avbruten'
     }
 }

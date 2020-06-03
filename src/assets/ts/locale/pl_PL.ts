@@ -125,6 +125,8 @@ export default {
         refreshPage: 'Odśwież stronę',
         errorTip: {
             homePageCloseError: 'Strona główna nie może zostać zamknięta'
-        }
+        },
+        checkSave: 'Czy chcesz zamknąć stronę?(Upewnij się, że treść strony z czerwoną etykietą została zapisana)',
+        cancelClose: 'Zamknięta operacja anulowana'
     }
 }

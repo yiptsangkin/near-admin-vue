@@ -3,8 +3,7 @@ import App from './App.vue'
 import router from './router/manage'
 import utils from '@corets/utils'
 import store from '@store/index'
-import VueI18n from 'vue-i18n'
-import lang from '@corets/lang'
+import i18n from '@corets/lang'
 import mock from '@mock/index'
 import plugin from '@corets/plugin'
 import AsyncComputed from 'vue-async-computed'
@@ -19,7 +18,8 @@ import {
     Menu,
     message,
     Input,
-    Dropdown
+    Dropdown,
+    Modal
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -42,12 +42,12 @@ Vue.component(Menu.ItemGroup.name, Menu.ItemGroup)
 Vue.component(Menu.SubMenu.name, Menu.SubMenu)
 Vue.component(Input.name, Input)
 Vue.component(Dropdown.name, Dropdown)
+
+// here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue
+Vue.use(Modal)
 // import antd directive
 Vue.prototype.$message = message
-
-// vue-i18n
-Vue.use(VueI18n)
-const i18n = new VueI18n(lang.i18nOpt)
+Vue.prototype.$confirm = Modal.confirm
 
 // mockjs
 if (comConfig.buildSwitch.isMock) {

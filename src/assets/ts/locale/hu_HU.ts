@@ -125,6 +125,8 @@ export default {
         refreshPage: 'frisssítsd az oldalt',
         errorTip: {
             homePageCloseError: 'A honlapot nem szabad bezárni'
-        }
+        },
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került)',
+        cancelClose: 'A zárt művelet megszakítva'
     }
 }

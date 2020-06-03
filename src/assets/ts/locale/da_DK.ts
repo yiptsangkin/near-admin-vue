@@ -125,6 +125,8 @@ export default {
         refreshPage: 'opdater side',
         errorTip: {
             homePageCloseError: 'Hjemmesiden må ikke lukke'
-        }
+        },
+        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet på siden med rød etiket er gemt)',
+        cancelClose: 'Lukket operation annulleret'
     }
 }

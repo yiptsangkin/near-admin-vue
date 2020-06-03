@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'L&#39;adreça de la sol·licitud no pot estar buida',
-        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més tard'
+        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més endavant'
     },
     localeMap: {
         ar: 'Àrab',
@@ -125,6 +125,8 @@ export default {
         refreshPage: 'pàgina d’actualització',
         errorTip: {
             homePageCloseError: 'La pàgina d&#39;inici no es pot tancar'
-        }
+        },
+        checkSave: 'Voleu tancar la pàgina?(Assegureu-vos que s’ha desat el contingut de la pàgina de l’etiqueta vermella)',
+        cancelClose: 'S&#39;ha cancel·lat l&#39;operació tancada'
     }
 }

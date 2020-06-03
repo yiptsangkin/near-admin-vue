@@ -125,6 +125,8 @@ export default {
         refreshPage: 'osveži stran',
         errorTip: {
             homePageCloseError: 'Domače strani ni dovoljeno zapreti'
-        }
+        },
+        checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je vsebina rdeče strani z nalepkami shranjena)',
+        cancelClose: 'Zaprto delovanje je preklicano'
     }
 }

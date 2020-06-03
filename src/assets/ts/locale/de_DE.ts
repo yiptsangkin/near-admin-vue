@@ -125,6 +125,8 @@ export default {
         refreshPage: 'Seite neu laden',
         errorTip: {
             homePageCloseError: 'Die Homepage darf nicht geschlossen werden'
-        }
+        },
+        checkSave: 'Möchten Sie die Seite schließen?(Bitte stellen Sie sicher, dass der Inhalt der Red Label-Seite gespeichert wurde.)',
+        cancelClose: 'Geschlossener Betrieb abgebrochen'
     }
 }

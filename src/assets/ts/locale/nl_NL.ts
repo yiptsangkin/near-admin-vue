@@ -120,11 +120,13 @@ export default {
         closeAll: 'Sluit alle tabbladen',
         closeCur: 'Sluit het huidige tabblad',
         closeOther: 'Sluit andere tags',
-        closeRight: 'Sluit rechter label',
+        closeRight: 'Sluit het rechter label',
         singlePage: 'Onafhankelijke pagina',
         refreshPage: 'pagina hernieuwen',
         errorTip: {
             homePageCloseError: 'Homepage mag niet sluiten'
-        }
+        },
+        checkSave: 'Wil je de pagina sluiten?(Zorg ervoor dat de inhoud van de rode labelpagina is opgeslagen)',
+        cancelClose: 'Gesloten operatie geannuleerd'
     }
 }

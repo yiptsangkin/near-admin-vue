@@ -125,6 +125,8 @@ export default {
         refreshPage: 'osvježiti stranicu',
         errorTip: {
             homePageCloseError: 'Nije dopušteno zatvaranje početne stranice'
-        }
+        },
+        checkSave: 'Želite li zatvoriti stranicu?(Provjerite je li sadržaj crvene stranice s oznakom spremljen)',
+        cancelClose: 'Zatvorena operacija otkazana'
     }
 }

@@ -125,6 +125,8 @@ export default {
         refreshPage: 'refresh page',
         errorTip: {
             homePageCloseError: 'Homepage is not allowed to close'
-        }
+        },
+        checkSave: 'Do you want to close the page?(Please make sure that the content of the red label page has been saved)',
+        cancelClose: 'Closed operation canceled'
     }
 }

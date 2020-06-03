@@ -125,6 +125,8 @@ module.exports = {
         refreshPage: '刷新页面',
         errorTip: {
             homePageCloseError: '首页不允许关闭'
-        }
+        },
+        checkSave: '是否关闭页面？（请确保标红标签页面内容已经保存）',
+        cancelClose: '已取消关闭操作'
     }
 }

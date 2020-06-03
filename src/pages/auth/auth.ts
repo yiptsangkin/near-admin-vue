@@ -3,8 +3,7 @@ import App from './App.vue'
 import router from './router/auth'
 import utils from '@corets/utils'
 import store from '@store/index'
-import VueI18n from 'vue-i18n'
-import lang from '@corets/lang'
+import i18n from '@corets/lang'
 import mock from '@mock/index'
 
 // antd component
@@ -49,10 +48,6 @@ Vue.component(Form.name, Form)
 // import antd directive
 Vue.prototype.$message = message
 Vue.prototype.$notification = notification
-
-// vue-i18n
-Vue.use(VueI18n)
-const i18n = new VueI18n(lang.i18nOpt)
 
 // mockjs
 if (comConfig.buildSwitch.isMock) {

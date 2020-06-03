@@ -125,6 +125,8 @@ export default {
         refreshPage: 'aggiorna pagina',
         errorTip: {
             homePageCloseError: 'La home page non è autorizzata a chiudere'
-        }
+        },
+        checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina dell&#39;etichetta rossa sia stato salvato)',
+        cancelClose: 'Operazione chiusa annullata'
     }
 }

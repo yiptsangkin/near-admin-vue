@@ -3,11 +3,37 @@
 
 .n-layout-sider{
   background-color: $grey-f9;
-  overflow-y: auto;
+  position: relative;
+  .n-aside-wrp{
+    overflow-y: auto;
+    height: 100%;
+  }
   ::v-deep .ant-menu{
     background-color: unset;
   }
   .n-layout-sider-menu{
     width: 200px;
+  }
+}
+
+.n-aside-shrink-btn{
+  position: absolute;
+  right:-14px;
+  font-size: 12px;
+  color: $grey-f;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.12s ease;
+  -webkit-transition: all 0.12s ease;
+  height: 66px;
+  border-bottom: 8px solid transparent;
+  border-right: none;
+  border-left: 14px solid lighten($primary-color, 30%);
+  border-top: 8px solid transparent;
+  cursor: pointer;
+  .shrink-arrow{
+    margin-left: -14px;
+    top: 16px;
+    position: relative;
   }
 }

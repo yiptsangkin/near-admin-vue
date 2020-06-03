@@ -125,6 +125,8 @@ export default {
         refreshPage: 'atsvaidzināt lapu',
         errorTip: {
             homePageCloseError: 'Mājas lapu nav atļauts aizvērt'
-        }
+        },
+        checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, vai sarkanās etiķetes lapas saturs ir saglabāts.)',
+        cancelClose: 'Slēgtā darbība atcelta'
     }
 }

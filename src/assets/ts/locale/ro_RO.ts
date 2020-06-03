@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'Adresa solicitării nu poate fi goală',
-        networkErr: 'Solicitarea rețelei nu a reușit'
+        networkErr: 'Solicitarea rețelei a eșuat. Încercați din nou mai târziu'
     },
     localeMap: {
         ar: 'arabic',
@@ -112,7 +112,7 @@ export default {
             home: 'Acasă'
         },
         errorTip: {
-            notfoundTip: 'Nicio componentă nu a fost găsită sub această cale',
+            notfoundTip: 'Nici o componentă nu a fost găsită sub această cale',
             emptyErr: 'Calea componentă nu este configurată'
         }
     },
@@ -125,6 +125,8 @@ export default {
         refreshPage: 'Reîmprospătare pagină',
         errorTip: {
             homePageCloseError: 'Pagina de pornire nu are voie să se închidă'
-        }
+        },
+        checkSave: 'Vrei să închizi pagina?(Vă rugăm să vă asigurați că conținutul paginii cu eticheta roșie a fost salvat)',
+        cancelClose: 'Operațiunea închisă a fost anulată'
     }
 }

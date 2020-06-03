@@ -125,6 +125,8 @@ export default {
         refreshPage: '페이지 새로 고침',
         errorTip: {
             homePageCloseError: '홈페이지를 닫을 수 없습니다'
-        }
+        },
+        checkSave: '페이지를 닫으시겠습니까?(레드 라벨 페이지의 내용이 저장되었는지 확인하십시오)',
+        cancelClose: '닫힌 작업 취소'
     }
 }

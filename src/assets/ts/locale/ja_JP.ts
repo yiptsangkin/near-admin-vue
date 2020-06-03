@@ -125,6 +125,8 @@ export default {
         refreshPage: 'ページの更新',
         errorTip: {
             homePageCloseError: 'ホームページを閉じることはできません'
-        }
+        },
+        checkSave: 'ページを閉じますか？（赤いラベルページのコンテンツが保存されていることを確認してください）',
+        cancelClose: 'クローズドオペレーションがキャンセルされました'
     }
 }

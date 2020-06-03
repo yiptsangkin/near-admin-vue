@@ -2,7 +2,7 @@ export default {
     locale: 'fa',
     country: 'IR',
     sysInfo: {
-        sysIntro: 'چارچوب توسعه جلویی مفید مبتنی بر Vue و طراحی مورچه'
+        sysIntro: 'یک چارچوب توسعه جلویی با کاربرد آسان و مبتنی بر Vue و Ant Design'
     },
     loginForm: {
         byAccountBtn: 'ورود به سیستم رمز عبور حساب',
@@ -125,6 +125,8 @@ export default {
         refreshPage: 'صفحه را رفرش کن',
         errorTip: {
             homePageCloseError: 'صفحه اصلی مجاز به بسته شدن نیست'
-        }
+        },
+        checkSave: 'آیا می خواهید صفحه را ببندید؟(لطفاً اطمینان حاصل کنید که محتوای صفحه برچسب قرمز ذخیره شده است)',
+        cancelClose: 'عملیات بسته لغو شد'
     }
 }

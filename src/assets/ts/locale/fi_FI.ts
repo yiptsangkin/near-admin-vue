@@ -125,6 +125,8 @@ export default {
         refreshPage: 'Päivitä sivu',
         errorTip: {
             homePageCloseError: 'Kotisivua ei saa sulkea'
-        }
+        },
+        checkSave: 'Haluatko sulkea sivun?(Varmista, että punaisen tarran sivun sisältö on tallennettu)',
+        cancelClose: 'Lopetettu toiminta peruutettu'
     }
 }

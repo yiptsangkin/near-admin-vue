@@ -32,6 +32,9 @@
         font-size: 10px;
         margin-left: 12px;
       }
+      &.n-tag-warning{
+        background-color: $red-e;
+      }
     }
   }
   .n-tag-dropdown{

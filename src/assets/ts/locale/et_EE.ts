@@ -125,6 +125,8 @@ export default {
         refreshPage: 'värskenda lehte',
         errorTip: {
             homePageCloseError: 'Kodulehte ei tohi sulgeda'
-        }
+        },
+        checkSave: 'Kas soovite lehe sulgeda?(Veenduge, et punase sildi lehe sisu oleks salvestatud)',
+        cancelClose: 'Suletud operatsioon tühistati'
     }
 }

@@ -125,6 +125,8 @@ export default {
         refreshPage: 'إعادة تحميل الصفحة',
         errorTip: {
             homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية'
-        }
+        },
+        checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة التصنيف الأحمر)',
+        cancelClose: 'تم إلغاء العملية المغلقة'
     }
 }

@@ -125,6 +125,8 @@ export default {
         refreshPage: '刷新頁面',
         errorTip: {
             homePageCloseError: '首頁不允許關閉'
-        }
+        },
+        checkSave: '是否關閉頁面？（請確保標紅標籤頁面內容已經保存）',
+        cancelClose: '已取消關閉操作'
     }
 }

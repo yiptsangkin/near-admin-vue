@@ -1,3 +1,5 @@
+import VueI18n from 'vue-i18n'
+import Vue from 'vue'
 import {GlobalLocale, I18nOption} from '@corets/type'
 <% importTpl %>
 
@@ -14,7 +16,15 @@ const i18nOpt: I18nOption = {
     }
 }
 
-export default {
-    globalLocaleObj,
-    i18nOpt
+Vue.use(VueI18n)
+const i18n = new VueI18n(i18nOpt)
+const i18nObj = new Vue({
+    i18n
+})
+
+export default i18n
+
+export {
+    i18nObj,
+    globalLocaleObj
 }

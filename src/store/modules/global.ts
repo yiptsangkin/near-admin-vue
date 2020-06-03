@@ -1,14 +1,54 @@
 import {UserInfo, MenuList, CpInfo, ClosePageOpt} from '@corets/type'
-import lang from '@corets/lang'
+import {globalLocaleObj, i18nObj} from '@corets/lang'
 import comConfig, {ComConfig} from '@custom/config'
 import {ActionContext} from 'vuex'
 import dict from '@custom/dict'
 import utils from '@corets/utils'
+import Vue from 'vue'
 
 const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
 const RDN_KEY = utils.randomCharacter(6)
+
+const rmTagOp = (rmTagState: State, closeOpt: ClosePageOpt) => {
+    switch (closeOpt.type) {
+        case 'right':
+            const rmLength = rmTagState.curTagList.length - 1 - closeOpt.idx
+            rmTagState.curTagList.splice(closeOpt.idx + 1, rmLength)
+            if (!closeOpt.target || closeOpt.target === 0) {
+                if (closeOpt.idx <= state.curTagIndex) {
+                    rmTagState.curTagIndex = closeOpt.idx
+                }
+            } else {
+                rmTagState.curTagIndex = closeOpt.target
+            }
+            break
+        case 'other':
+            if (closeOpt.idx === 0) {
+                rmTagState.curTagList = [rmTagState.curTagList[0]]
+                rmTagState.curTagIndex = 0
+            } else {
+                rmTagState.curTagList = [rmTagState.curTagList[0], rmTagState.curTagList[closeOpt.idx]]
+                rmTagState.curTagIndex = 1
+            }
+            break
+        case 'all':
+            rmTagState.curTagList = [rmTagState.curTagList[0]]
+            rmTagState.curTagIndex = 0
+            break
+        // default is type 'cur'
+        default:
+            rmTagState.curTagList.splice(closeOpt.idx, 1)
+            if (!closeOpt.target || closeOpt.target === 0) {
+                if (closeOpt.idx <= state.curTagIndex) {
+                    rmTagState.curTagIndex--
+                }
+            } else {
+                rmTagState.curTagIndex = closeOpt.target
+            }
+    }
+}
 
 interface State {
     userInfo: UserInfo, // user info status
@@ -20,7 +60,9 @@ interface State {
     defaultIndexs: string[],
     curTagList: CpInfo[],
     curTagIndex: number,
-    rightPathList: string[]
+    rightPathList: string[],
+    shrinkLeftMenu: boolean,
+    saveWarning: boolean
 }
 
 interface Getter {
@@ -36,7 +78,7 @@ const state: State = {
         gender: 0
     },
     locale: CACHE_LOCALE,
-    gloablLocale: lang.globalLocaleObj,
+    gloablLocale: globalLocaleObj,
     comConfig,
     menuObj: {
         menuList: []
@@ -52,7 +94,9 @@ const state: State = {
         }
     ],
     curTagIndex: 0,
-    rightPathList: ['demo/HelloWorld', 'demo/HelloWorld2']
+    rightPathList: [],
+    shrinkLeftMenu: false,
+    saveWarning: false
 }
 
 const getters: Getter = {
@@ -85,6 +129,12 @@ const getters: Getter = {
     },
     rightPathList: (getterState: State) => {
         return getterState.rightPathList
+    },
+    shrinkLeftMenu: (getterState: State) => {
+        return getterState.shrinkLeftMenu
+    },
+    saveWarning: (getterSate: State) => {
+        return getterSate.saveWarning
     }
 }
 
@@ -114,14 +164,60 @@ const mutations = {
         }
     },
     removeCurTag: (mutationState: State, closeOpt: ClosePageOpt) => {
-        if (closeOpt.idx) {
-            mutationState.curTagList.splice(closeOpt.idx, 1)
-            if (!closeOpt.target && closeOpt.target !== 0) {
-                if (closeOpt.idx <= mutationState.curTagIndex) {
-                    mutationState.curTagIndex--
-                }
+        const self = Vue.prototype
+        if (closeOpt.idx || closeOpt.idx === 0) {
+            // alert if check save or not
+            const curOpCp = mutationState.curTagList[closeOpt.idx]
+            let checkSaveFlag = false
+
+            switch (closeOpt.type) {
+                case 'cur':
+                    checkSaveFlag = curOpCp.params && curOpCp.params.checkSave
+                    break
+                case 'right':
+                    const rightList = mutationState.curTagList.slice(closeOpt.idx + 1, mutationState.curTagList.length)
+                    for (const item of rightList) {
+                        if (item.params && item.params.checkSave) {
+                            checkSaveFlag = true
+                            break
+                        }
+                    }
+                    break
+                case 'other':
+                    for (let i = 1; i < mutationState.curTagList.length; i++) {
+                        const item = mutationState.curTagList[i]
+                        if (i !== closeOpt.idx && item.params && item.params.checkSave) {
+                            checkSaveFlag = true
+                            break
+                        }
+                    }
+                    break
+                case 'all':
+                    for (let i = 1; i < mutationState.curTagList.length; i++) {
+                        const item = mutationState.curTagList[i]
+                        if (item.params && item.params.checkSave) {
+                            checkSaveFlag = true
+                            break
+                        }
+                    }
+                    break
+            }
+
+            if (checkSaveFlag) {
+                mutationState.saveWarning = true
+                self.$confirm({
+                    content: i18nObj.$t(dict.localeObj.tagObj.checkSave),
+                    onOk () {
+                        rmTagOp(mutationState, closeOpt)
+                        mutationState.saveWarning = false
+                    },
+                    onCancel () {
+                        self.$message.info(i18nObj.$t(dict.localeObj.tagObj.cancelClose))
+                        mutationState.saveWarning = false
+                    }
+                })
             } else {
-                mutationState.curTagIndex = closeOpt.target
+                rmTagOp(mutationState, closeOpt)
             }
         }
     },
@@ -130,6 +226,12 @@ const mutations = {
     },
     changeCurTagIndex: (mutationState: State, tagIndex: number) => {
         mutationState.curTagIndex = tagIndex
+    },
+    changeShrinkLeftMenu: (mutationState: State, isShrink: boolean) => {
+        mutationState.shrinkLeftMenu = isShrink
+    },
+    chageSaveWarning: (mutationState: State, saveWarning: boolean) => {
+        mutationState.saveWarning = saveWarning
     }
 }
 
@@ -157,6 +259,12 @@ const actions = {
     },
     changeCurTagIndex: (context: ActionContext<State, State>, tagIndex: number) => {
         context.commit('changeCurTagIndex', tagIndex)
+    },
+    changeShrinkLeftMenu: (context: ActionContext<State, State>, isShrink: boolean) => {
+        context.commit('changeShrinkLeftMenu', isShrink)
+    },
+    chageSaveWarning: (context: ActionContext<State, State>, saveWarning: boolean) => {
+        context.commit('chageSaveWarning', saveWarning)
     }
 }
 

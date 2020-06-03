@@ -119,12 +119,14 @@ export default {
     tagObj: {
         closeAll: 'Fermer tous les onglets',
         closeCur: 'Fermer l&#39;onglet actuel',
-        closeOther: 'Fermer d&#39;autres balises',
+        closeOther: 'Fermer les autres balises',
         closeRight: 'Fermer l&#39;étiquette de droite',
         singlePage: 'Page indépendante',
         refreshPage: 'rafraîchir la page',
         errorTip: {
             homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à fermer'
-        }
+        },
+        checkSave: 'Voulez-vous fermer la page?(Veuillez vous assurer que le contenu de la page d&#39;étiquette rouge a été enregistré)',
+        cancelClose: 'Opération fermée annulée'
     }
 }

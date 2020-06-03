@@ -4,9 +4,12 @@
             <span
                     v-for="(item, index) in curTagList"
                     :key="index"
-                    :class="[curTagIndex === index ? 'cur' : '']"
+                    :class="[
+                         curTagIndex === index ? 'cur' : '',
+                         saveWarning && item.params && item.params.checkSave ? 'n-tag-warning' : ''
+                     ]"
                     @click="changeCp(index)"
-                    @contextmenu.prevent="showContextMenu"
+                    @contextmenu.prevent="showContextMenu($event, index)"
             >
                 {{ $t(item.title) }}<a-icon class="n-tag-close" type="close" @click.stop="closeTag(index)"/>
             </span>
@@ -42,7 +45,8 @@
         computed: {
             ...mapGetters([
                 'curTagList',
-                'curTagIndex'
+                'curTagIndex',
+                'saveWarning'
             ]),
             currentSelectedKeys () {
                 const self = this as any
@@ -74,10 +78,11 @@
                     self.moveTagToCenter()
                 })
             },
-            showContextMenu (e: any) {
+            showContextMenu (e: any, idx: any) {
                 bus.$emit('tagCtxMenu', {
                     x: e.clientX,
-                    y: e.offsetY
+                    y: e.offsetY,
+                    idx
                 })
             },
             closeTag (idx: number) {

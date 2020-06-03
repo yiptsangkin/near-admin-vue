@@ -125,6 +125,8 @@ export default {
         refreshPage: 'obnovovacia stránka',
         errorTip: {
             homePageCloseError: 'Domovská stránka nesmie byť zavretá'
-        }
+        },
+        checkSave: 'Chcete stránku zavrieť?(Skontrolujte, či bol obsah stránky s červeným štítkom uložený)',
+        cancelClose: 'Zatvorená operácia bola zrušená'
     }
 }

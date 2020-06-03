@@ -125,6 +125,8 @@ export default {
         refreshPage: 'hressa síðu',
         errorTip: {
             homePageCloseError: 'Heimasíðunni er ekki leyft að loka'
-        }
+        },
+        checkSave: 'Viltu loka síðunni?(Gakktu úr skugga um að innihald rauðu merkimiðasíðunnar hafi verið vistað)',
+        cancelClose: 'Lokað aðgerð hætt'
     }
 }

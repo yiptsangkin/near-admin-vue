@@ -125,6 +125,8 @@ export default {
         refreshPage: 'obnovit stránku',
         errorTip: {
             homePageCloseError: 'Domovská stránka nesmí být zavřena'
-        }
+        },
+        checkSave: 'Chcete stránku zavřít?(Ujistěte se, že byl obsah stránky s červeným štítkem uložen.)',
+        cancelClose: 'Uzavřená operace zrušena'
     }
 }

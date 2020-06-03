@@ -43,7 +43,9 @@ export default {
             refreshPage: 'tagObj.refreshPage',
             errorTip: {
                 homePageCloseError: 'tagObj.errorTip.homePageCloseError'
-            }
+            },
+            checkSave: 'tagObj.checkSave',
+            cancelClose: 'tagObj.cancelClose'
         }
     },
     commonObj: {
