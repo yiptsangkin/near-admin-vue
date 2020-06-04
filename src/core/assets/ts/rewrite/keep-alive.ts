@@ -106,7 +106,7 @@ export default {
             // when change two component, because key will set faster than component
             // so here need to count when it is 2, means the component is update
             // when reload a some component, not need to load this logistic
-            if (!/Reload/g.test(key)) {
+            if (!/NOnceTime/g.test(key)) {
                 isFinalUpdateCount++
                 if (isFinalUpdateCount !== 2) {
                     return undefined

@@ -183,7 +183,7 @@
                     updateOpt: {
                         idx,
                         updateCpInfo: {
-                            pk: `Reload${utils.randomCharacter(6)}`
+                            pk: `NOnceTime-${utils.randomCharacter(6)}`
                         }
                     }
                 })
