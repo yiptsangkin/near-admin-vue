@@ -49,6 +49,7 @@ export default {
         }
     },
     commonObj: {
+        authPath: 'auth',
         managePath: 'manage',
         loginForm: {
             sendMsgGap: 10

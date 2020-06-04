@@ -97,7 +97,7 @@
                 }
             },
             toManage () {
-                window.location.href = '/manage'
+                window.location.href = `/${dict.commonObj.managePath}`
             }
         }
     })

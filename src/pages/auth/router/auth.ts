@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
 import {CacheRouteConfig} from '@corets/type'
+import dict from '@custom/dict';
 const Login = () => import('../view/Login.vue')
 
 Vue.use(VueRouter)
@@ -19,15 +20,15 @@ const routesConfig: RouteConfig[] = [
 
 const routerOpt: RouterOptions = {
     mode: 'history',
-    base: '/auth',
+    base: `/${dict.commonObj.authPath}`,
     routes: routesConfig
 }
 
-const routesList: string = localStorage.getItem('asyncRoute') || ''
+const routesList: string = localStorage.getItem(`${dict.commonObj.authPath}AsyncRoute`) || ''
 let newRoutesList: CacheRouteConfig[]
 try {
     newRoutesList = JSON.parse(routesList)
-    if (!Array.isArray(routesList)) {
+    if (!Array.isArray(newRoutesList)) {
         newRoutesList = []
     }
 } catch (e) {

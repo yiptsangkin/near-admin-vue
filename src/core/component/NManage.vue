@@ -37,7 +37,7 @@
     import NoRight from '@corecp/NNoRight.vue'
     import NoFound from '@corecp/NNoFound.vue'
     import NKeepAlive from '@corecp/NKeepAlive.vue'
-    import {CpInfo} from '@corets/type'
+    import {CacheRouteConfig, CpInfo} from '@corets/type';
     import utils from '@corets/utils'
     import {mapActions, mapGetters} from 'vuex'
     import comConfig from '@custom/config'
@@ -173,8 +173,47 @@
                     }
                 }
             },
-            singlePage () {
-                console.log('single')
+            singlePage (idx) {
+                const self = this
+                const curCp = self.curTagList[idx]
+                const curInitCp = self.$refs['active-cp']
+                const curCpName = curInitCp.$options.name
+                const propsData = curInitCp.$options.propsData
+                const routesList = localStorage.getItem(`${dict.commonObj.managePath}AsyncRoute`)
+                let routesListObj: CacheRouteConfig[]
+                try {
+                    routesListObj = JSON.parse(routesList)
+                    if (!Array.isArray(routesList)) {
+                        routesListObj = []
+                    }
+                } catch (e) {
+                    routesListObj = []
+                }
+                let hadCp = false
+                let cpIndex
+                for (let i = 0; i < routesListObj.length; i++) {
+                    const item = routesListObj[i]
+                    if (item.name === curCp.$options.name) {
+                        hadCp = true
+                        cpIndex = i
+                        break
+                    }
+                }
+                if (!hadCp) {
+                    routesListObj.push({
+                        path: `/${curCpName}`.toLowerCase(),
+                        name: curCpName,
+                        componentPath: curCp.component,
+                        props: propsData
+                    })
+                } else {
+                    // update params
+                    routesListObj[cpIndex].props = propsData
+                }
+                // persisted router
+                localStorage.setItem(`${dict.commonObj.managePath}AsyncRoute`, JSON.stringify(routesListObj))
+                // redirect to new browser tag
+                window.open(`/${dict.commonObj.managePath}/${curCpName}`.toLowerCase())
             },
             refreshPage (idx) {
                 const self = this
