@@ -1,4 +1,4 @@
-import {UserInfo, MenuList, CpInfo, ClosePageOpt} from '@corets/type'
+import {UserInfo, MenuList, CpInfo, ClosePageOpt, UpdatePageOpt} from '@corets/type'
 import {globalLocaleObj, i18nObj} from '@corets/lang'
 import comConfig, {ComConfig} from '@custom/config'
 import {ActionContext} from 'vuex'
@@ -221,8 +221,11 @@ const mutations = {
             }
         }
     },
-    updateCurTag: (mutationState: State, cpInfo: CpInfo) => {
-        console.log(cpInfo)
+    updateCurTag: (mutationState: State, updatePageOpt: UpdatePageOpt) => {
+        for (const key of Object.keys(updatePageOpt.updateCpInfo)) {
+            // @ts-ignore
+            mutationState.curTagList[updatePageOpt.idx][key] = updatePageOpt.updateCpInfo[key]
+        }
     },
     changeCurTagIndex: (mutationState: State, tagIndex: number) => {
         mutationState.curTagIndex = tagIndex
@@ -254,7 +257,7 @@ const actions = {
         } else if (tagOp.op === 'remove') {
             context.commit('removeCurTag', tagOp.closeOpt)
         } else if (tagOp.op === 'update') {
-            context.commit('updateCurTag', tagOp.cpInfo)
+            context.commit('updateCurTag', tagOp.updateOpt)
         }
     },
     changeCurTagIndex: (context: ActionContext<State, State>, tagIndex: number) => {

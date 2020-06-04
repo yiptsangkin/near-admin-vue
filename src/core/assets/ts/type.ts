@@ -141,3 +141,8 @@ export interface ClosePageOpt {
     // after close tag, where it will go, enter the target index
     target?: number
 }
+
+export interface UpdatePageOpt {
+    idx: number,
+    updateCpInfo: CpInfo
+}

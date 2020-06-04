@@ -1,5 +1,5 @@
 <template>
-    <button @click="addNewPage">add new page</button>
+    <a-input v-model="helloworld"></a-input>
 </template>
 
 <script lang="ts">
@@ -12,6 +12,7 @@
         mixins: [CoreBase, Base],
         data () {
             return {
+                helloworld: 'hello'
             }
         },
         methods: {
@@ -22,6 +23,11 @@
                     title: 'test'
                 })
             }
+        },
+        created () {
+            const self = this as any
+            console.log('created again')
+            self.helloworld = 'hi'
         }
     })
 </script>

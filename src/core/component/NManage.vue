@@ -5,7 +5,7 @@
             <a-layout>
                 <n-aside @change-cp="changeCp"></n-aside>
                 <a-layout-content class="n-layout-content">
-                    <n-tag-content-menu></n-tag-content-menu>
+                    <n-tag-content-menu @single="singlePage" @refresh="refreshPage"></n-tag-content-menu>
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
                         <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
@@ -172,6 +172,21 @@
                         pk: cpInfo.pk || utils.randomCharacter(6)
                     }
                 }
+            },
+            singlePage () {
+                console.log('single')
+            },
+            refreshPage (idx) {
+                const self = this
+                self.changeTag({
+                    op: 'update',
+                    updateOpt: {
+                        idx,
+                        updateCpInfo: {
+                            pk: `Reload${utils.randomCharacter(6)}`
+                        }
+                    }
+                })
             }
         }
     })

@@ -16,7 +16,7 @@
             <a-menu-item key="single">
                 <a target="_blank" rel="noopener noreferrer">{{ $t(dict.localeObj.tagObj.singlePage) }}</a>
             </a-menu-item>
-            <a-menu-item key="refresh">
+            <a-menu-item key="refresh" v-if="curTagIndex === curCtxPos.idx">
                 <a target="_blank" rel="noopener noreferrer">{{ $t(dict.localeObj.tagObj.refreshPage) }}</a>
             </a-menu-item>
         </a-menu>
@@ -73,10 +73,20 @@
             },
             selectItem ({key}: {key: string}) {
                 const self = this as any
-                self.$closepage({
-                    idx: self.curCtxPos.idx,
-                    type: key
-                })
+                if (['single', 'refresh'].indexOf(key) === -1) {
+                    self.$closepage({
+                        idx: self.curCtxPos.idx,
+                        type: key
+                    })
+                } else {
+                    // single page and refresh
+                    if (key === 'single') {
+                        self.$emit('single', self.curCtxPos.idx)
+                    } else if (key === 'refresh') {
+                        self.$emit('refresh', self.curCtxPos.idx)
+                    }
+                }
+
                 self.showCtxMenu = false
             }
         },
