@@ -78,9 +78,14 @@
                     const isApiNew = curCp.params ? curCp.params.apiNew : false
                     if (ableList.indexOf(curCp.component) !== -1 || isApiNew) {
                         try {
-                            const pageCp = await import(
-                                '@/pages/' + (dict.commonObj.managePath || 'manage') + '/view/' + curCp.component + '.vue'
-                            )
+                            let pageCp
+                            if (!curCp.isUrl) {
+                                pageCp = await import(
+                                    '@/pages/' + (dict.commonObj.managePath || 'manage') + '/view/' + curCp.component + '.vue'
+                                    )
+                            }  else {
+                                pageCp = await import('@corecp/NWebView.vue')
+                            }
                             const cpAsync = new Promise((resolve) => {
                                 resolve(pageCp)
                             })
@@ -88,6 +93,7 @@
                                 component: cpAsync
                             })
                         } catch (e) {
+                            console.log(e)
                             activeCp = NoFound
                             self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.notfoundTip)} <<${curCp.component}>>`)
                         }
@@ -96,6 +102,22 @@
                     }
                 }
                 return activeCp
+            }
+        },
+        watch: {
+            curTagList () {
+                const self = this as any
+                // watch curTagList, if switch isCache is on, then cache the tagList
+                if (comConfig.buildSwitch.isCache) {
+                    localStorage.setItem('nearAdminTagList', JSON.stringify(self.curTagList))
+                }
+            },
+            curTagIndex () {
+                const self = this as any
+                // watch curTagIndex, if switch isCache is on, then cache the curTagIndex
+                if (comConfig.buildSwitch.isCache) {
+                    localStorage.setItem('nearAdminTagIndex', JSON.stringify(self.curTagIndex))
+                }
             }
         },
         methods: {
@@ -112,7 +134,24 @@
                     return false
                 }
                 // check if component is url
-                const isCpUrl = utils.isUrl(cpInfo.component)
+                if (!cpInfo.isUrl) {
+                    const isCpUrl = utils.isUrl(cpInfo.component)
+                    if (isCpUrl) {
+                        // modify componet to 'WebView' and add params dataUrl
+                        if (cpInfo.params) {
+                            cpInfo.params.dataUrl = cpInfo.component
+                        } else {
+                            cpInfo.params = {
+                                dataUrl: cpInfo.component
+                            }
+                        }
+                        cpInfo.params.apiNew = true
+                        cpInfo.component = 'WebView'
+                        cpInfo.isUrl = true
+                    } else {
+                        cpInfo.isUrl = false
+                    }
+                }
                 const {idx: cpExistIdx, pk: cpKey} = self.cpExistIndex(cpInfo)
                 // diff way to show tag
                 if (cpExistIdx === -1) {
@@ -176,44 +215,49 @@
             singlePage (idx) {
                 const self = this
                 const curCp = self.curTagList[idx]
-                const curInitCp = self.$refs['active-cp']
-                const curCpName = curInitCp.$options.name
-                const propsData = curInitCp.$options.propsData
-                const routesList = localStorage.getItem(`${dict.commonObj.managePath}AsyncRoute`)
-                let routesListObj: CacheRouteConfig[]
-                try {
-                    routesListObj = JSON.parse(routesList)
-                    if (!Array.isArray(routesList)) {
+                if (curCp.isUrl) {
+                    // if is url component, directly open a url
+                    window.open(curCp.params.dataUrl)
+                } else {
+                    const curInitCp = self.$refs['active-cp']
+                    const curCpName = curInitCp.$options.name
+                    const propsData = curInitCp.$options.propsData
+                    const routesList = localStorage.getItem(`${dict.commonObj.managePath}AsyncRoute`)
+                    let routesListObj: CacheRouteConfig[]
+                    try {
+                        routesListObj = JSON.parse(routesList)
+                        if (!Array.isArray(routesList)) {
+                            routesListObj = []
+                        }
+                    } catch (e) {
                         routesListObj = []
                     }
-                } catch (e) {
-                    routesListObj = []
-                }
-                let hadCp = false
-                let cpIndex
-                for (let i = 0; i < routesListObj.length; i++) {
-                    const item = routesListObj[i]
-                    if (item.name === curCp.$options.name) {
-                        hadCp = true
-                        cpIndex = i
-                        break
+                    let hadCp = false
+                    let cpIndex
+                    for (let i = 0; i < routesListObj.length; i++) {
+                        const item = routesListObj[i]
+                        if (item.name === curCp.$options.name) {
+                            hadCp = true
+                            cpIndex = i
+                            break
+                        }
                     }
+                    if (!hadCp) {
+                        routesListObj.push({
+                            path: `/${curCpName}`.toLowerCase(),
+                            name: curCpName,
+                            componentPath: curCp.component,
+                            props: propsData
+                        })
+                    } else {
+                        // update params
+                        routesListObj[cpIndex].props = propsData
+                    }
+                    // persisted router
+                    localStorage.setItem(`${dict.commonObj.managePath}AsyncRoute`, JSON.stringify(routesListObj))
+                    // redirect to new browser tag
+                    window.open(`/${dict.commonObj.managePath}/${curCpName}`.toLowerCase())
                 }
-                if (!hadCp) {
-                    routesListObj.push({
-                        path: `/${curCpName}`.toLowerCase(),
-                        name: curCpName,
-                        componentPath: curCp.component,
-                        props: propsData
-                    })
-                } else {
-                    // update params
-                    routesListObj[cpIndex].props = propsData
-                }
-                // persisted router
-                localStorage.setItem(`${dict.commonObj.managePath}AsyncRoute`, JSON.stringify(routesListObj))
-                // redirect to new browser tag
-                window.open(`/${dict.commonObj.managePath}/${curCpName}`.toLowerCase())
             },
             refreshPage (idx) {
                 const self = this

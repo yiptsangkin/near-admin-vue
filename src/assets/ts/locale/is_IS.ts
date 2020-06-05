@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Viltu loka síðunni?(Gakktu úr skugga um að innihald rauðu merkimiðasíðunnar hafi verið vistað)',
         cancelClose: 'Lokað aðgerð hætt'
+    },
+    personalCenter: {
+        frontendLog: 'Framan endaskrá',
+        customSetting: 'Sérsniðnar stillingar',
+        logout: 'Útskrá'
     }
 }

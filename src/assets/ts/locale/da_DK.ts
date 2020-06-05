@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Vil du lukke siden?(Sørg for, at indholdet på siden med rød etiket er gemt)',
         cancelClose: 'Lukket operation annulleret'
+    },
+    personalCenter: {
+        frontendLog: 'Front-end log',
+        customSetting: 'Personlige indstillinger',
+        logout: 'Log ud'
     }
 }

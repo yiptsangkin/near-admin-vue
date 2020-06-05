@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Vrei să închizi pagina?(Vă rugăm să vă asigurați că conținutul paginii cu eticheta roșie a fost salvat)',
         cancelClose: 'Operațiunea închisă a fost anulată'
+    },
+    personalCenter: {
+        frontendLog: 'Jurnal front-end',
+        customSetting: 'Setări personalizate',
+        logout: 'Sign out'
     }
 }

@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Kas soovite lehe sulgeda?(Veenduge, et punase sildi lehe sisu oleks salvestatud)',
         cancelClose: 'Suletud operatsioon tühistati'
+    },
+    personalCenter: {
+        frontendLog: 'Esiosa logi',
+        customSetting: 'Isikupärastatud seaded',
+        logout: 'Logi välja'
     }
 }

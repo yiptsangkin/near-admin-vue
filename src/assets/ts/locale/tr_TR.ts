@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Sayfayı kapatmak istiyor musunuz?(Lütfen kırmızı etiket sayfasının içeriğinin kaydedildiğinden emin olun)',
         cancelClose: 'Kapalı işlem iptal edildi'
+    },
+    personalCenter: {
+        frontendLog: 'Ön uç günlüğü',
+        customSetting: 'Kişiselleştirilmiş ayarlar',
+        logout: 'oturumu Kapat'
     }
 }

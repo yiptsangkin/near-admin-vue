@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Möchten Sie die Seite schließen?(Bitte stellen Sie sicher, dass der Inhalt der Red Label-Seite gespeichert wurde.)',
         cancelClose: 'Geschlossener Betrieb abgebrochen'
+    },
+    personalCenter: {
+        frontendLog: 'Front-End-Protokoll',
+        customSetting: 'Personalisierte Einstellungen',
+        logout: 'Ausloggen'
     }
 }

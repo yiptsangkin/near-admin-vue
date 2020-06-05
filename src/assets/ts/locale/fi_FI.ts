@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Haluatko sulkea sivun?(Varmista, että punaisen tarran sivun sisältö on tallennettu)',
         cancelClose: 'Lopetettu toiminta peruutettu'
+    },
+    personalCenter: {
+        frontendLog: 'Etuosan loki',
+        customSetting: 'Henkilökohtaiset asetukset',
+        logout: 'Kirjaudu ulos'
     }
 }

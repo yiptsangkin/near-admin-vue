@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Želite li zatvoriti stranicu?(Provjerite je li sadržaj crvene stranice s oznakom spremljen)',
         cancelClose: 'Zatvorena operacija otkazana'
+    },
+    personalCenter: {
+        frontendLog: 'Prednji zapisnik',
+        customSetting: 'Personalizirane postavke',
+        logout: 'odjavi se'
     }
 }

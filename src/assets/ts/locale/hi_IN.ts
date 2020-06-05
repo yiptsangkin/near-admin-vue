@@ -2,7 +2,7 @@ export default {
     locale: 'hi',
     country: 'IN',
     sysInfo: {
-        sysIntro: 'Vue और चींटी डिजाइन पर आधारित एक आसान-से-उपयोग वाला फ्रंट-एंड डेवलपमेंट फ्रेमवर्क'
+        sysIntro: 'Vue और Ant Design पर आधारित एक आसान-से-उपयोग वाला फ्रंट-एंड डेवलपमेंट फ्रेमवर्क'
     },
     loginForm: {
         byAccountBtn: 'खाता पासवर्ड लॉगिन',
@@ -124,9 +124,14 @@ export default {
         singlePage: 'स्वतंत्र पृष्ठ',
         refreshPage: 'पृष्ठ ताज़ा करें',
         errorTip: {
-            homePageCloseError: 'मुखपृष्ठ बंद करने की अनुमति नहीं है'
+            homePageCloseError: 'मुखपृष्ठ को बंद करने की अनुमति नहीं है'
         },
         checkSave: 'क्या आप पृष्ठ को बंद करना चाहते हैं?(कृपया सुनिश्चित करें कि लाल लेबल पृष्ठ की सामग्री सहेज ली गई है)',
         cancelClose: 'बंद ऑपरेशन रद्द'
+    },
+    personalCenter: {
+        frontendLog: 'फ्रंट-एंड लॉग',
+        customSetting: 'व्यक्तिगत सेटिंग्स',
+        logout: 'प्रस्थान करें'
     }
 }

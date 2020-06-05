@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Chcete stránku zavrieť?(Skontrolujte, či bol obsah stránky s červeným štítkom uložený)',
         cancelClose: 'Zatvorená operácia bola zrušená'
+    },
+    personalCenter: {
+        frontendLog: 'Protokol front-end',
+        customSetting: 'Prispôsobené nastavenia',
+        logout: 'Odhlásiť Sa'
     }
 }

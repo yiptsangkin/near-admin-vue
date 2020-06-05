@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'ページを閉じますか？（赤いラベルページのコンテンツが保存されていることを確認してください）',
         cancelClose: 'クローズドオペレーションがキャンセルされました'
+    },
+    personalCenter: {
+        frontendLog: 'フロントエンドログ',
+        customSetting: 'パーソナライズ設定',
+        logout: 'サインアウト'
     }
 }

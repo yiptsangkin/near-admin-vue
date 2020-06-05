@@ -124,9 +124,14 @@ export default {
         singlePage: 'Pagina indipendente',
         refreshPage: 'aggiorna pagina',
         errorTip: {
-            homePageCloseError: 'La home page non è autorizzata a chiudere'
+            homePageCloseError: 'La homepage non è autorizzata a chiudere'
         },
         checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina dell&#39;etichetta rossa sia stato salvato)',
         cancelClose: 'Operazione chiusa annullata'
+    },
+    personalCenter: {
+        frontendLog: 'Registro front-end',
+        customSetting: 'Impostazioni personalizzate',
+        logout: 'disconnessione'
     }
 }

@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Do you want to close the page?(Please make sure that the content of the red label page has been saved)',
         cancelClose: 'Closed operation canceled'
+    },
+    personalCenter: {
+        frontendLog: 'Front-end log',
+        customSetting: 'Personalized settings',
+        logout: 'sign out'
     }
 }

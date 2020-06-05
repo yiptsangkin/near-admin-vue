@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Voulez-vous fermer la page?(Veuillez vous assurer que le contenu de la page d&#39;étiquette rouge a été enregistré)',
         cancelClose: 'Opération fermée annulée'
+    },
+    personalCenter: {
+        frontendLog: 'Journal frontal',
+        customSetting: 'Paramètres personnalisés',
+        logout: 'Déconnexion'
     }
 }

@@ -9,6 +9,12 @@
   padding: 0;
   display: flex;
   line-height: 50px;
+  .n-com-head-func{
+    &:hover{
+      cursor: pointer;
+      background-color: lighten($primary-color, 48%);
+    }
+  }
   .n-header-ham{
     width: 50px;
     height: 100%;
@@ -29,8 +35,78 @@
   }
   .n-header-right-part{
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     ::v-deep .n-locale-icon{
-      margin: 0 17px;
+      display: block;
+      padding: 0 17px;
+      height: 50px;
+      line-height: 50px;
     }
+  }
+  .n-user-avatar{
+    width: 50px;
+    height: 50px;
+    padding-top: 9px;
+    img{
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.n-user-info-pannel{
+  width: 280px;
+  background-color: $grey-f;
+  .n-user-info-basic{
+    display: flex;
+    padding: 10px 12px;
+    border-bottom: 1px solid $grey-e4;
+    .n-user-info-avater{
+      img{
+        display: block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+      }
+    }
+    .n-user-info-desc{
+      line-height: 1.2;
+      margin-left: 12px;
+      font-size: 12px;
+      font-weight: bold;
+      .n-user-info-name{
+        color: $primary-color;
+      }
+    }
+  }
+  .n-user-menu-func{
+    padding: 2px 0;
+    .ant-menu-item{
+      line-height: 28px;
+      height: 28px;
+      font-size: 12px;
+      margin-bottom: 0;
+      margin-top: 0;
+      margin: 2px 0;
+      &-active{
+        background-color: lighten($primary-color, 48%);
+      }
+      .anticon{
+        margin-right: 6px;
+      }
+    }
+  }
+  .n-user-menu-logout{
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid $grey-e4;
+    cursor: pointer;
   }
 }

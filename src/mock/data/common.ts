@@ -100,7 +100,7 @@ export const getUserMenu = (req: any): ComRespone => {
                                     child: [
                                         {
                                             name: 'menuObj.childMenu.0-0-0',
-                                            path: 'home/HomePage',
+                                            path: 'https://vuejs.org',
                                             icon: '',
                                             params: {
                                                 checkSave: true
@@ -108,7 +108,7 @@ export const getUserMenu = (req: any): ComRespone => {
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-1',
-                                            path: 'home/HomePage',
+                                            path: 'https://antdv.com',
                                             icon: ''
                                         },
                                         {

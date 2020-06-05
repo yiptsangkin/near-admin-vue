@@ -10,6 +10,25 @@ const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
 const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
 const RDN_KEY = utils.randomCharacter(6)
+const defaultTagList = [
+    {
+        component: 'home/HomePage',
+        title: dict.localeObj.menuObj.defaultMenu.home,
+        navIndex: '-1',
+        pk: RDN_KEY
+    }
+]
+
+let cacheTagList
+let cacheTagIndex
+
+if (comConfig.buildSwitch.isCache) {
+    cacheTagList = JSON.parse(localStorage.getItem('nearAdminTagList') || JSON.stringify(defaultTagList))
+    cacheTagIndex = JSON.parse(localStorage.getItem('nearAdminTagIndex') || '0')
+} else {
+    cacheTagList = []
+    cacheTagIndex = 0
+}
 
 const rmTagOp = (rmTagState: State, closeOpt: ClosePageOpt) => {
     switch (closeOpt.type) {
@@ -72,9 +91,9 @@ interface Getter {
 const state: State = {
     userInfo: {
         avatar: DEFAULT_MALE_AVATAR,
-        userName: '',
-        role: '',
-        roleName: '',
+        userName: 'nearyip',
+        role: 'admin',
+        roleName: 'admin',
         gender: 0
     },
     locale: CACHE_LOCALE,
@@ -85,15 +104,8 @@ const state: State = {
     },
     curMenu: [0],
     defaultIndexs: [],
-    curTagList: [
-        {
-            component: 'home/HomePage',
-            title: dict.localeObj.menuObj.defaultMenu.home,
-            navIndex: '-1',
-            pk: RDN_KEY
-        }
-    ],
-    curTagIndex: 0,
+    curTagList: cacheTagList,
+    curTagIndex: cacheTagIndex,
     rightPathList: [],
     shrinkLeftMenu: false,
     saveWarning: false
@@ -157,6 +169,8 @@ const mutations = {
             // if api new page, add it to the last tag
             mutationState.curTagList.push(cpInfo)
             mutationState.curTagIndex = mutationState.curTagList.length - 1
+            // set menu index to null
+            mutationState.defaultIndexs = []
         } else {
             // else add it the cur tag' next position
             mutationState.curTagList.splice(mutationState.curTagIndex + 1, 0, cpInfo)

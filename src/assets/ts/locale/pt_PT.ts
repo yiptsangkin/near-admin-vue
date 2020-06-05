@@ -19,7 +19,7 @@ export default {
             emptyErr: 'a senha não pode ficar em branco'
         },
         byValidTip: {
-            emptyErr: 'o código de verificação deve ser preenchido'
+            emptyErr: 'código de verificação deve ser preenchido'
         },
         sendMsg: {
             repeatErr: 'Não envie repetidamente',
@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Deseja fechar a página?(Verifique se o conteúdo da página do rótulo vermelho foi salvo)',
         cancelClose: 'Operação fechada cancelada'
+    },
+    personalCenter: {
+        frontendLog: 'Log de front-end',
+        customSetting: 'Configurações personalizadas',
+        logout: 'Sair'
     }
 }

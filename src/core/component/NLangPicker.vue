@@ -1,6 +1,6 @@
 <template>
     <div class="n-global-locale">
-        <a-dropdown :trigger="['click']">
+        <a-dropdown :trigger="['hover']">
             <a-icon type="global" class="n-locale-icon"/>
             <a-menu slot="overlay" @click="pickLocale" class="n-lang-menu" v-model="currentSelectedKeys">
                 <a-menu-item v-for="(item, index) in ableLocaleList" :key="item.locale">

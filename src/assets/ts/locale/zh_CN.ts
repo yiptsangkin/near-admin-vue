@@ -128,5 +128,10 @@ export default {
         },
         checkSave: '是否关闭页面？（请确保标红标签页面内容已经保存）',
         cancelClose: '已取消关闭操作'
+    },
+    personalCenter: {
+        frontendLog: '前端日志',
+        customSetting: '个性化设置',
+        logout: '退出登录'
     }
 }

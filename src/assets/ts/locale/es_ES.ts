@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'La dirección de solicitud no puede estar vacía',
-        networkErr: 'Error en la solicitud de red, intente nuevamente'
+        networkErr: 'Error en la solicitud de red, intente más tarde'
     },
     localeMap: {
         ar: 'Arábica',
@@ -126,7 +126,12 @@ export default {
         errorTip: {
             homePageCloseError: 'La página de inicio no puede cerrar'
         },
-        checkSave: '¿Quieres cerrar la página?(Asegúrese de que el contenido de la página de etiqueta roja se haya guardado)',
+        checkSave: '¿Quieres cerrar la página?(Asegúrese de que se haya guardado el contenido de la página de etiqueta roja)',
         cancelClose: 'Operación cerrada cancelada'
+    },
+    personalCenter: {
+        frontendLog: 'Registro de front-end',
+        customSetting: 'Configuraciones personalizadas',
+        logout: 'desconectar'
     }
 }

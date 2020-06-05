@@ -2,7 +2,7 @@ export default {
     locale: 'sv',
     country: 'SE',
     sysInfo: {
-        sysIntro: 'En enkel att använda front-end-utvecklingsram baserad på Vue and Ant Design'
+        sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Inloggning för konto lösenord',
@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan med röd etikett har sparats)',
         cancelClose: 'Stängd operation avbruten'
+    },
+    personalCenter: {
+        frontendLog: 'Främre logg',
+        customSetting: 'Personliga inställningar',
+        logout: 'logga ut'
     }
 }

@@ -10,7 +10,7 @@ module.exports = {
 
         glob.sync(globPath).forEach(function (entry) {
             let pathList = entry.split('/')
-            let baseConfig = require(`.${entry}`)
+            const baseConfig = require(`.${entry}`)
             pathList.splice(-1)
             // api config for the corresponding environment
             switch (process.env.BUILD_ENV) {
@@ -27,12 +27,12 @@ module.exports = {
                     // default dev api config
                     baseConfig.externals.apiconfig.url = [`/static/js/apiConfigDev.js`]
             }
-            let pathname = pathList.slice(-1)[0]
+            const pathname = pathList.slice(-1)[0]
             let chunks
             if (process.env.NODE_ENV === 'production') {
                 chunks = ['chunk-vendors', 'chunk-common', `vendor-${pathname}`, pathname]
             } else {
-                chunks = ['chunk-vendors', 'chunk-common', 'vendor-' + pathname, 'mock', pathname]
+                chunks = ['chunk-vendors', 'chunk-common', `vendor-${pathname}`, 'mock', pathname]
             }
             entries[pathname] = Object.assign({
                 entry: `${pathList.join('/')}/${pathname}.ts`,
@@ -51,7 +51,7 @@ module.exports = {
         let devRewriteUrl = [
         ]
         chunks.forEach(function (item, index) {
-            let newName = 'vendor-' + item
+            const newName = 'vendor-' + item
             chunksPlugin[item] = {
                 name: newName,
                 test: (module) => {

@@ -15,7 +15,8 @@ const sysInfo = {
 const buildSwitch = {
     isMock: true,
     isHotKey: true,
-    isBreadCrumb: true
+    isBreadCrumb: true,
+    isCache: true
 }
 
 const comConfig: ComConfig = {

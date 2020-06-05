@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Wil je de pagina sluiten?(Zorg ervoor dat de inhoud van de rode labelpagina is opgeslagen)',
         cancelClose: 'Gesloten operatie geannuleerd'
+    },
+    personalCenter: {
+        frontendLog: 'Front-end logboek',
+        customSetting: 'Persoonlijke instellingen',
+        logout: 'afmelden'
     }
 }

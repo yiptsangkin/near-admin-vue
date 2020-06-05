@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je vsebina rdeče strani z nalepkami shranjena)',
         cancelClose: 'Zaprto delovanje je preklicano'
+    },
+    personalCenter: {
+        frontendLog: 'Sprednji dnevnik',
+        customSetting: 'Prilagojene nastavitve',
+        logout: 'Odjava'
     }
 }

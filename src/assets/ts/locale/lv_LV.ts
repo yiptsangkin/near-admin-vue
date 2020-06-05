@@ -2,7 +2,7 @@ export default {
     locale: 'lv',
     country: 'LV',
     sysInfo: {
-        sysIntro: 'Viegli lietojams priekšējās daļas izstrādes ietvars, kas balstīts uz Vue un Ant Design'
+        sysIntro: 'Viegli lietojams priekšplāna izstrādes ietvars, kas balstīts uz Vue un Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',
@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, vai sarkanās etiķetes lapas saturs ir saglabāts.)',
         cancelClose: 'Slēgtā darbība atcelta'
+    },
+    personalCenter: {
+        frontendLog: 'Sākuma žurnāls',
+        customSetting: 'Personalizētie iestatījumi',
+        logout: 'izrakstīties'
     }
 }

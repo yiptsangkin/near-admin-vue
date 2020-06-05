@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة التصنيف الأحمر)',
         cancelClose: 'تم إلغاء العملية المغلقة'
+    },
+    personalCenter: {
+        frontendLog: 'سجل الواجهة الأمامية',
+        customSetting: 'الإعدادات الشخصية',
+        logout: 'خروج'
     }
 }

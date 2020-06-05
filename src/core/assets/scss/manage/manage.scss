@@ -7,6 +7,12 @@
 
 .n-layout-wrp{
   height: 100%;
-  .n-layout-content{}
+  .n-layout-content{
+    display: flex;
+    flex-direction: column;
+    .n-component-page{
+      flex: 1;
+    }
+  }
   .n-layout-footer{}
 }

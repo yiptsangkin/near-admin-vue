@@ -2,7 +2,7 @@ export default {
     locale: 'hu',
     country: 'HU',
     sysInfo: {
-        sysIntro: 'Hasznos front-end fejlesztési keret, amely a Vue és Ant Design alapú'
+        sysIntro: 'Könnyen használható front-end fejlesztési keret, amely a Vue és Ant Design alapú'
     },
     loginForm: {
         byAccountBtn: 'Fiók jelszó bejelentkezés',
@@ -126,7 +126,12 @@ export default {
         errorTip: {
             homePageCloseError: 'A honlapot nem szabad bezárni'
         },
-        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került)',
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a vörös címke oldal tartalma mentésre került-e.)',
         cancelClose: 'A zárt művelet megszakítva'
+    },
+    personalCenter: {
+        frontendLog: 'Elülső napló',
+        customSetting: 'Személyre szabott beállítások',
+        logout: 'kijelentkezés'
     }
 }

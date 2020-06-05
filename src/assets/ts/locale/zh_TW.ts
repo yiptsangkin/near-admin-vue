@@ -128,5 +128,10 @@ export default {
         },
         checkSave: '是否關閉頁面？（請確保標紅標籤頁面內容已經保存）',
         cancelClose: '已取消關閉操作'
+    },
+    personalCenter: {
+        frontendLog: '前端日誌',
+        customSetting: '個性化設置',
+        logout: '退出登錄'
     }
 }

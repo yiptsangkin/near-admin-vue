@@ -2,7 +2,7 @@ export default {
     locale: 'vi',
     country: 'VN',
     sysInfo: {
-        sysIntro: 'Khung phát triển front-end hữu ích dựa trên Vue và Ant Design'
+        sysIntro: 'Khung phát triển front-end dễ sử dụng dựa trên Vue và Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Đăng nhập mật khẩu tài khoản',
@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Bạn có muốn đóng trang?(Vui lòng đảm bảo rằng nội dung của trang nhãn đỏ đã được lưu)',
         cancelClose: 'Đã hủy hoạt động'
+    },
+    personalCenter: {
+        frontendLog: 'Nhật ký kết thúc',
+        customSetting: 'Cài đặt được cá nhân hóa',
+        logout: 'đăng xuất'
     }
 }

@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Czy chcesz zamknąć stronę?(Upewnij się, że treść strony z czerwoną etykietą została zapisana)',
         cancelClose: 'Zamknięta operacja anulowana'
+    },
+    personalCenter: {
+        frontendLog: 'Dziennik front-end',
+        customSetting: 'Spersonalizowane ustawienia',
+        logout: 'Wyloguj się'
     }
 }

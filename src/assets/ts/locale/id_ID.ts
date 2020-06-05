@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Apakah Anda ingin menutup halaman?(Pastikan konten halaman label merah telah disimpan)',
         cancelClose: 'Operasi tertutup dibatalkan'
+    },
+    personalCenter: {
+        frontendLog: 'Log front-end',
+        customSetting: 'Pengaturan yang dipersonalisasi',
+        logout: 'keluar'
     }
 }

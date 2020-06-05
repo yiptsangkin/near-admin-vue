@@ -112,7 +112,7 @@ export default {
             home: 'Domov'
         },
         errorTip: {
-            notfoundTip: 'Pod touto cestou nebyla nalezena žádná součást',
+            notfoundTip: 'Pod touto cestou nebyl nalezen žádný komponent',
             emptyErr: 'Cesta komponenty není nakonfigurována'
         }
     },
@@ -128,5 +128,10 @@ export default {
         },
         checkSave: 'Chcete stránku zavřít?(Ujistěte se, že byl obsah stránky s červeným štítkem uložen.)',
         cancelClose: 'Uzavřená operace zrušena'
+    },
+    personalCenter: {
+        frontendLog: 'Protokol front-end',
+        customSetting: 'Přizpůsobená nastavení',
+        logout: 'odhlásit se'
     }
 }

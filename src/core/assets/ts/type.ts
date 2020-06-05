@@ -50,7 +50,8 @@ interface SysInfo {
 interface BuildSwitch {
     isMock: boolean,    // if use local mock
     isHotKey: boolean,  // if use global hot key
-    isBreadCrumb: boolean    // if show bread crumb
+    isBreadCrumb: boolean,    // if show bread crumb
+    isCache: boolean
 }
 
 export interface ComConfig {
@@ -125,6 +126,7 @@ export interface CpInfo {
     title: string,
     navIndex?: string,
     params?: any,
+    isUrl?: boolean,
     pk?: string | number | boolean,
     apiNew?: boolean
 }

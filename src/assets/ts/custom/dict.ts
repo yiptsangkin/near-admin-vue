@@ -46,11 +46,17 @@ export default {
             },
             checkSave: 'tagObj.checkSave',
             cancelClose: 'tagObj.cancelClose'
+        },
+        personalCenter: {
+            frontendLog: 'personalCenter.frontendLog',
+            customSetting: 'personalCenter.customSetting',
+            logout: 'personalCenter.logout'
         }
     },
     commonObj: {
         authPath: 'auth',
         managePath: 'manage',
+        loglinePath: 'logline/Logline',
         loginForm: {
             sendMsgGap: 10
         },
