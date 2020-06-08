@@ -15,7 +15,10 @@ const defaultTagList = [
         component: 'home/HomePage',
         title: dict.localeObj.menuObj.defaultMenu.home,
         navIndex: '-1',
-        pk: RDN_KEY
+        pk: RDN_KEY,
+        params: {
+            isAffix: true
+        }
     }
 ]
 
@@ -31,10 +34,21 @@ if (comConfig.buildSwitch.isCache) {
 }
 
 const rmTagOp = (rmTagState: State, closeOpt: ClosePageOpt) => {
+    const self = Vue.prototype
+    const targetList: CpInfo[] = []
     switch (closeOpt.type) {
         case 'right':
             const rmLength = rmTagState.curTagList.length - 1 - closeOpt.idx
+            // get affix tag in remove items
+            for (let i = closeOpt.idx + 1; i < closeOpt.idx + rmLength + 1; i++) {
+                const item = rmTagState.curTagList[i]
+                if (item.params && item.params.isAffix) {
+                    targetList.push(item)
+                }
+            }
             rmTagState.curTagList.splice(closeOpt.idx + 1, rmLength)
+            // add affix items
+            rmTagState.curTagList = rmTagState.curTagList.concat(targetList)
             if (!closeOpt.target || closeOpt.target === 0) {
                 if (closeOpt.idx <= state.curTagIndex) {
                     rmTagState.curTagIndex = closeOpt.idx
@@ -44,6 +58,13 @@ const rmTagOp = (rmTagState: State, closeOpt: ClosePageOpt) => {
             }
             break
         case 'other':
+            // get affix tag in remove items
+            for (let i = 1; i < rmTagState.curTagList.length; i++) {
+                const item = rmTagState.curTagList[i]
+                if (item.params && item.params.isAffix && i !== closeOpt.idx) {
+                    targetList.push(item)
+                }
+            }
             if (closeOpt.idx === 0) {
                 rmTagState.curTagList = [rmTagState.curTagList[0]]
                 rmTagState.curTagIndex = 0
@@ -51,20 +72,34 @@ const rmTagOp = (rmTagState: State, closeOpt: ClosePageOpt) => {
                 rmTagState.curTagList = [rmTagState.curTagList[0], rmTagState.curTagList[closeOpt.idx]]
                 rmTagState.curTagIndex = 1
             }
+            rmTagState.curTagList = rmTagState.curTagList.concat(targetList)
             break
         case 'all':
+            // get affix tag in remove items
+            for (let i = 1; i < rmTagState.curTagList.length; i++) {
+                const item = rmTagState.curTagList[i]
+                if (item.params && item.params.isAffix) {
+                    targetList.push(item)
+                }
+            }
             rmTagState.curTagList = [rmTagState.curTagList[0]]
             rmTagState.curTagIndex = 0
+            rmTagState.curTagList = rmTagState.curTagList.concat(targetList)
             break
         // default is type 'cur'
         default:
-            rmTagState.curTagList.splice(closeOpt.idx, 1)
-            if (!closeOpt.target || closeOpt.target === 0) {
-                if (closeOpt.idx <= state.curTagIndex) {
-                    rmTagState.curTagIndex--
-                }
+            const targetTag = rmTagState.curTagList[closeOpt.idx]
+            if (targetTag.params && targetTag.params.isAffix) {
+                self.$message.warn(i18nObj.$t(dict.localeObj.tagObj.errorTip.affixPageCloseError))
             } else {
-                rmTagState.curTagIndex = closeOpt.target
+                rmTagState.curTagList.splice(closeOpt.idx, 1)
+                if (!closeOpt.target || closeOpt.target === 0) {
+                    if (closeOpt.idx <= state.curTagIndex) {
+                        rmTagState.curTagIndex--
+                    }
+                } else {
+                    rmTagState.curTagIndex = closeOpt.target
+                }
             }
     }
 }
@@ -182,16 +217,13 @@ const mutations = {
         if (closeOpt.idx || closeOpt.idx === 0) {
             // alert if check save or not
             const curOpCp = mutationState.curTagList[closeOpt.idx]
-            let checkSaveFlag = false
+            let checkSaveFlag: boolean | undefined = false
 
             switch (closeOpt.type) {
-                case 'cur':
-                    checkSaveFlag = curOpCp.params && curOpCp.params.checkSave
-                    break
                 case 'right':
                     const rightList = mutationState.curTagList.slice(closeOpt.idx + 1, mutationState.curTagList.length)
                     for (const item of rightList) {
-                        if (item.params && item.params.checkSave) {
+                        if (item.params && item.params.checkSave && !item.params.isAffix) {
                             checkSaveFlag = true
                             break
                         }
@@ -200,7 +232,7 @@ const mutations = {
                 case 'other':
                     for (let i = 1; i < mutationState.curTagList.length; i++) {
                         const item = mutationState.curTagList[i]
-                        if (i !== closeOpt.idx && item.params && item.params.checkSave) {
+                        if (i !== closeOpt.idx && item.params && item.params.checkSave && !item.params.isAffix) {
                             checkSaveFlag = true
                             break
                         }
@@ -209,12 +241,14 @@ const mutations = {
                 case 'all':
                     for (let i = 1; i < mutationState.curTagList.length; i++) {
                         const item = mutationState.curTagList[i]
-                        if (item.params && item.params.checkSave) {
+                        if (item.params && item.params.checkSave && !item.params.isAffix) {
                             checkSaveFlag = true
                             break
                         }
                     }
                     break
+                default:
+                    checkSaveFlag = curOpCp.params && curOpCp.params.checkSave && !curOpCp.params.isAffix
             }
 
             if (checkSaveFlag) {

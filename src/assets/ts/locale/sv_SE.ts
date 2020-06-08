@@ -123,8 +123,12 @@ export default {
         closeRight: 'Stäng höger etikett',
         singlePage: 'Oberoende sida',
         refreshPage: 'uppdatera sida',
+        affixPage: 'Fast sida',
+        cancelAffixPage: 'Lossa',
         errorTip: {
-            homePageCloseError: 'Hemsidan får inte stängas'
+            homePageCloseError: 'Hemsidan får inte stängas',
+            affixPageCloseError: 'Fast sida får inte stängas',
+            homePageAffixError: 'Hemsidan kan inte lossas'
         },
         checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan med röd etikett har sparats)',
         cancelClose: 'Stängd operation avbruten'

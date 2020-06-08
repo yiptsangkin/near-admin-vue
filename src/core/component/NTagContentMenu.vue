@@ -1,7 +1,7 @@
 <template>
     <div ref="ctx-menu" class="n-tag-ctx-menu-wrp" v-if="showCtxMenu" :style="curCtxPosStyle">
         <a-menu class="n-tag-ctx-menu" @select="selectItem">
-            <a-menu-item key="cur" v-if="curCtxPos.idx !== 0">
+            <a-menu-item key="cur" v-if="curCtxPos.idx !== 0 && !(curTagList[curCtxPos.idx].params && curTagList[curCtxPos.idx].params.isAffix)">
                 <a target="_blank" rel="noopener noreferrer">{{ $t(dict.localeObj.tagObj.closeCur) }}</a>
             </a-menu-item>
             <a-menu-item key="right" v-if="curCtxPos.idx !== curTagList.length - 1">
@@ -18,6 +18,11 @@
             </a-menu-item>
             <a-menu-item key="refresh" v-if="curTagIndex === curCtxPos.idx">
                 <a target="_blank" rel="noopener noreferrer">{{ $t(dict.localeObj.tagObj.refreshPage) }}</a>
+            </a-menu-item>
+            <a-menu-item key="affix">
+                <a target="_blank" rel="noopener noreferrer">
+                    {{ (curTagList[curCtxPos.idx].params && curTagList[curCtxPos.idx].params.isAffix) ? $t(dict.localeObj.tagObj.cancelAffixPage) : $t(dict.localeObj.tagObj.affixPage) }}
+                </a>
             </a-menu-item>
         </a-menu>
     </div>
@@ -73,7 +78,7 @@
             },
             selectItem ({key}: {key: string}) {
                 const self = this as any
-                if (['single', 'refresh'].indexOf(key) === -1) {
+                if (['single', 'refresh', 'affix'].indexOf(key) === -1) {
                     self.$closepage({
                         idx: self.curCtxPos.idx,
                         type: key
@@ -84,6 +89,8 @@
                         self.$emit('single', self.curCtxPos.idx)
                     } else if (key === 'refresh') {
                         self.$emit('refresh', self.curCtxPos.idx)
+                    } else if (key === 'affix') {
+                        self.$emit('affix', self.curCtxPos.idx)
                     }
                 }
 

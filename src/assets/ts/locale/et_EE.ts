@@ -123,8 +123,12 @@ export default {
         closeRight: 'Sulgege parem silt',
         singlePage: 'Iseseisev leht',
         refreshPage: 'värskenda lehte',
+        affixPage: 'Fikseeritud leht',
+        cancelAffixPage: 'Vabastage',
         errorTip: {
-            homePageCloseError: 'Kodulehte ei tohi sulgeda'
+            homePageCloseError: 'Kodulehte ei tohi sulgeda',
+            affixPageCloseError: 'Fikseeritud lehte ei tohi sulgeda',
+            homePageAffixError: 'Kodulehte ei saa lahti siduda'
         },
         checkSave: 'Kas soovite lehe sulgeda?(Veenduge, et punase sildi lehe sisu oleks salvestatud)',
         cancelClose: 'Suletud operatsioon tühistati'

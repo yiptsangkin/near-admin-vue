@@ -123,8 +123,12 @@ export default {
         closeRight: 'Zatvori desnu naljepnicu',
         singlePage: 'Nezavisna stranica',
         refreshPage: 'osvježiti stranicu',
+        affixPage: 'Fiksna stranica',
+        cancelAffixPage: 'Raskovati',
         errorTip: {
-            homePageCloseError: 'Nije dopušteno zatvaranje početne stranice'
+            homePageCloseError: 'Nije dopušteno zatvaranje početne stranice',
+            affixPageCloseError: 'Fiksna stranica nije dopuštena za zatvaranje',
+            homePageAffixError: 'Početna stranica se ne može ukloniti'
         },
         checkSave: 'Želite li zatvoriti stranicu?(Provjerite je li sadržaj crvene stranice s oznakom spremljen)',
         cancelClose: 'Zatvorena operacija otkazana'

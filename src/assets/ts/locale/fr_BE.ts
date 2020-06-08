@@ -123,8 +123,12 @@ export default {
         closeRight: 'Fermer l&#39;étiquette de droite',
         singlePage: 'Page indépendante',
         refreshPage: 'rafraîchir la page',
+        affixPage: 'Page fixe',
+        cancelAffixPage: 'Détacher',
         errorTip: {
-            homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à fermer'
+            homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à fermer',
+            affixPageCloseError: 'La page fixe n&#39;est pas autorisée à fermer',
+            homePageAffixError: 'La page d&#39;accueil ne peut pas être détachée'
         },
         checkSave: 'Voulez-vous fermer la page?(Veuillez vous assurer que le contenu de la page d&#39;étiquette rouge a été enregistré)',
         cancelClose: 'Opération fermée annulée'

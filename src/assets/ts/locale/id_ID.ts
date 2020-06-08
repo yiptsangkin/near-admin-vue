@@ -123,8 +123,12 @@ export default {
         closeRight: 'Tutup label kanan',
         singlePage: 'Halaman independen',
         refreshPage: 'refresh halaman',
+        affixPage: 'Halaman tetap',
+        cancelAffixPage: 'Membuka peniti',
         errorTip: {
-            homePageCloseError: 'Beranda tidak diizinkan untuk ditutup'
+            homePageCloseError: 'Beranda tidak diizinkan untuk ditutup',
+            affixPageCloseError: 'Halaman yang diperbaiki tidak diizinkan untuk ditutup',
+            homePageAffixError: 'Beranda tidak dapat dibatalkan sematannya'
         },
         checkSave: 'Apakah Anda ingin menutup halaman?(Pastikan konten halaman label merah telah disimpan)',
         cancelClose: 'Operasi tertutup dibatalkan'

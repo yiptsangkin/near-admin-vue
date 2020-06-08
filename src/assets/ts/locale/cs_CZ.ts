@@ -112,7 +112,7 @@ export default {
             home: 'Domov'
         },
         errorTip: {
-            notfoundTip: 'Pod touto cestou nebyl nalezen žádný komponent',
+            notfoundTip: 'Pod touto cestou nebyla nalezena žádná součást',
             emptyErr: 'Cesta komponenty není nakonfigurována'
         }
     },
@@ -123,8 +123,12 @@ export default {
         closeRight: 'Zavřete pravý štítek',
         singlePage: 'Nezávislá stránka',
         refreshPage: 'obnovit stránku',
+        affixPage: 'Opravená stránka',
+        cancelAffixPage: 'Uvolnit',
         errorTip: {
-            homePageCloseError: 'Domovská stránka nesmí být zavřena'
+            homePageCloseError: 'Domovská stránka nesmí být zavřena',
+            affixPageCloseError: 'Opravená stránka není dovolena zavřít',
+            homePageAffixError: 'Domovská stránka nelze odepnout'
         },
         checkSave: 'Chcete stránku zavřít?(Ujistěte se, že byl obsah stránky s červeným štítkem uložen.)',
         cancelClose: 'Uzavřená operace zrušena'

@@ -121,14 +121,21 @@ export interface MenuList {
     menuList: NavList[]
 }
 
+interface CpParams {
+    apiNew?: boolean,
+    withoutCache?: boolean,
+    isAffix?: boolean,
+    checkSave?: boolean,
+    dataUrl?: string
+}
+
 export interface CpInfo {
     component: string,
     title: string,
     navIndex?: string,
-    params?: any,
+    params?: CpParams,
     isUrl?: boolean,
     pk?: string | number | boolean,
-    apiNew?: boolean
 }
 
 export interface ClosePageOpt {

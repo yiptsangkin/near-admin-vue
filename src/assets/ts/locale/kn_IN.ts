@@ -123,8 +123,12 @@ export default {
         closeRight: 'ಬಲ ಲೇಬಲ್ ಮುಚ್ಚಿ',
         singlePage: 'ಸ್ವತಂತ್ರ ಪುಟ',
         refreshPage: 'ಪುಟವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ',
+        affixPage: 'ಸ್ಥಿರ ಪುಟ',
+        cancelAffixPage: 'ಅನ್ಪಿನ್ ಮಾಡಿ',
         errorTip: {
-            homePageCloseError: 'ಮುಖಪುಟವನ್ನು ಮುಚ್ಚಲು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ'
+            homePageCloseError: 'ಮುಖಪುಟವನ್ನು ಮುಚ್ಚಲು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ',
+            affixPageCloseError: 'ಸ್ಥಿರ ಪುಟವನ್ನು ಮುಚ್ಚಲು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ',
+            homePageAffixError: 'ಮುಖಪುಟವನ್ನು ಪಿನ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ'
         },
         checkSave: 'ನೀವು ಪುಟವನ್ನು ಮುಚ್ಚಲು ಬಯಸುವಿರಾ?(ದಯವಿಟ್ಟು ಕೆಂಪು ಲೇಬಲ್ ಪುಟದ ವಿಷಯವನ್ನು ಉಳಿಸಲಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ)',
         cancelClose: 'ಮುಚ್ಚಿದ ಕಾರ್ಯಾಚರಣೆ ರದ್ದುಗೊಂಡಿದೆ'

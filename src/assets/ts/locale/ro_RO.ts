@@ -112,7 +112,7 @@ export default {
             home: 'Acasă'
         },
         errorTip: {
-            notfoundTip: 'Nici o componentă nu a fost găsită sub această cale',
+            notfoundTip: 'Nicio componentă nu a fost găsită sub această cale',
             emptyErr: 'Calea componentă nu este configurată'
         }
     },
@@ -123,8 +123,12 @@ export default {
         closeRight: 'Închideți eticheta din dreapta',
         singlePage: 'Pagina independentă',
         refreshPage: 'Reîmprospătare pagină',
+        affixPage: 'Pagină fixă',
+        cancelAffixPage: 'Anulați fixarea',
         errorTip: {
-            homePageCloseError: 'Pagina de pornire nu are voie să se închidă'
+            homePageCloseError: 'Pagina de inceput nu are voie sa se inchida',
+            affixPageCloseError: 'Pagina fixă ​​nu are voie să se închidă',
+            homePageAffixError: 'Pagina de pornire nu poate fi anulată'
         },
         checkSave: 'Vrei să închizi pagina?(Vă rugăm să vă asigurați că conținutul paginii cu eticheta roșie a fost salvat)',
         cancelClose: 'Operațiunea închisă a fost anulată'

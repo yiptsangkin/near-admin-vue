@@ -123,10 +123,14 @@ export default {
         closeRight: 'Luk højre etiket',
         singlePage: 'Uafhængig side',
         refreshPage: 'opdater side',
+        affixPage: 'Fast side',
+        cancelAffixPage: 'Frigør',
         errorTip: {
-            homePageCloseError: 'Hjemmesiden må ikke lukke'
+            homePageCloseError: 'Hjemmesiden må ikke lukke',
+            affixPageCloseError: 'Den faste side må ikke lukke',
+            homePageAffixError: 'Hjemmesiden kan ikke afspændes'
         },
-        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet på siden med rød etiket er gemt)',
+        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af siden med rød etiket er gemt)',
         cancelClose: 'Lukket operation annulleret'
     },
     personalCenter: {

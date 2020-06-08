@@ -6,12 +6,12 @@
                     :key="index"
                     :class="[
                          curTagIndex === index ? 'cur' : '',
-                         saveWarning && item.params && item.params.checkSave ? 'n-tag-warning' : ''
+                         saveWarning && item.params && item.params.checkSave && !item.params.isAffix ? 'n-tag-warning' : ''
                      ]"
                     @click="changeCp(index)"
                     @contextmenu.prevent="showContextMenu($event, index)"
             >
-                {{ $t(item.title) }}<a-icon class="n-tag-close" type="close" @click.stop="closeTag(index)"/>
+                <i class="n-tag-affix" v-if="(item.params && item.params.isAffix)"></i>{{ $t(item.title) }}<a-icon v-if="!(item.params && item.params.isAffix)" class="n-tag-close" type="close" @click.stop="closeTag(index)"/>
             </span>
         </div>
         <a-dropdown class="n-tag-dropdown" v-if="showDropDown">

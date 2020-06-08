@@ -2,7 +2,7 @@ export default {
     locale: 'tr',
     country: 'TR',
     sysInfo: {
-        sysIntro: 'Vue ve Ant Design tabanlı kullanımı kolay bir ön uç geliştirme çerçevesi'
+        sysIntro: 'Vue ve Ant Design&#39;a dayalı kullanımı kolay bir ön uç geliştirme çerçevesi'
     },
     loginForm: {
         byAccountBtn: 'Hesap şifresi girişi',
@@ -123,8 +123,12 @@ export default {
         closeRight: 'Sağ etiketi kapat',
         singlePage: 'Bağımsız sayfa',
         refreshPage: 'sayfayı yenile',
+        affixPage: 'Sabit sayfa',
+        cancelAffixPage: 'sabitlemesini',
         errorTip: {
-            homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor'
+            homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor',
+            affixPageCloseError: 'Sabit sayfanın kapanmasına izin verilmiyor',
+            homePageAffixError: 'Ana sayfanın sabitlemesi kaldırılamaz'
         },
         checkSave: 'Sayfayı kapatmak istiyor musunuz?(Lütfen kırmızı etiket sayfasının içeriğinin kaydedildiğinden emin olun)',
         cancelClose: 'Kapalı işlem iptal edildi'

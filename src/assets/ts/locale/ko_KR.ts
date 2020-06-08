@@ -101,7 +101,7 @@ export default {
             '0-0-5': '이벤트 버스',
             '0-0-6': '툴셋',
             '0-0-7': '액세스 제어',
-            '0-0-8': '핫키',
+            '0-0-8': '단축키',
             '0-1': '페이지 기능',
             '0-1-0': '구성 요소 페이지',
             '0-1-1': 'URL 페이지',
@@ -123,8 +123,12 @@ export default {
         closeRight: '오른쪽 라벨 닫기',
         singlePage: '독립 페이지',
         refreshPage: '페이지 새로 고침',
+        affixPage: '고정 페이지',
+        cancelAffixPage: '고정 해제',
         errorTip: {
-            homePageCloseError: '홈페이지를 닫을 수 없습니다'
+            homePageCloseError: '홈페이지를 닫을 수 없습니다',
+            affixPageCloseError: '고정 페이지를 닫을 수 없습니다',
+            homePageAffixError: '홈페이지를 고정 해제 할 수 없습니다'
         },
         checkSave: '페이지를 닫으시겠습니까?(레드 라벨 페이지의 내용이 저장되었는지 확인하십시오)',
         cancelClose: '닫힌 작업 취소'

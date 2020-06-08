@@ -123,10 +123,14 @@ export default {
         closeRight: 'Zárja be a jobb címkét',
         singlePage: 'Független oldal',
         refreshPage: 'frisssítsd az oldalt',
+        affixPage: 'Rögzített oldal',
+        cancelAffixPage: 'Kibont',
         errorTip: {
-            homePageCloseError: 'A honlapot nem szabad bezárni'
+            homePageCloseError: 'A honlapot nem szabad bezárni',
+            affixPageCloseError: 'A rögzített oldal nem zárható be',
+            homePageAffixError: 'A honlap nem oldható meg'
         },
-        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a vörös címke oldal tartalma mentésre került-e.)',
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került)',
         cancelClose: 'A zárt művelet megszakítva'
     },
     personalCenter: {

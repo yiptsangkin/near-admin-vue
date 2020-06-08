@@ -123,8 +123,12 @@ export default {
         closeRight: '關閉右側標籤',
         singlePage: '獨立頁面',
         refreshPage: '刷新頁面',
+        affixPage: '固定頁面',
+        cancelAffixPage: '取消固定',
         errorTip: {
-            homePageCloseError: '首頁不允許關閉'
+            homePageCloseError: '首頁不允許關閉',
+            affixPageCloseError: '固定頁不允許關閉',
+            homePageAffixError: '首頁無法取消固定'
         },
         checkSave: '是否關閉頁面？（請確保標紅標籤頁面內容已經保存）',
         cancelClose: '已取消關閉操作'

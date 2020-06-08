@@ -123,10 +123,14 @@ export default {
         closeRight: 'Cerrar etiqueta derecha',
         singlePage: 'Página independiente',
         refreshPage: 'actualizar página',
+        affixPage: 'Página fija',
+        cancelAffixPage: 'Desprender',
         errorTip: {
-            homePageCloseError: 'La página de inicio no puede cerrar'
+            homePageCloseError: 'La página de inicio no puede cerrar',
+            affixPageCloseError: 'No se permite cerrar la página fija',
+            homePageAffixError: 'La página de inicio no se puede desanclar'
         },
-        checkSave: '¿Quieres cerrar la página?(Asegúrese de que se haya guardado el contenido de la página de etiqueta roja)',
+        checkSave: '¿Quieres cerrar la página?(Asegúrese de que el contenido de la página de etiqueta roja se haya guardado)',
         cancelClose: 'Operación cerrada cancelada'
     },
     personalCenter: {

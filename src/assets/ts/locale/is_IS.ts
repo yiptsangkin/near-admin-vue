@@ -123,8 +123,12 @@ export default {
         closeRight: 'Lokaðu hægri merkimiða',
         singlePage: 'Sjálfstæð síðu',
         refreshPage: 'hressa síðu',
+        affixPage: 'Fast blaðsíða',
+        cancelAffixPage: 'Tappa af',
         errorTip: {
-            homePageCloseError: 'Heimasíðunni er ekki leyft að loka'
+            homePageCloseError: 'Heimasíðunni er ekki leyft að loka',
+            affixPageCloseError: 'Óheimilt er að loka fastri síðu',
+            homePageAffixError: 'Ekki er hægt að aftengja heimasíðuna'
         },
         checkSave: 'Viltu loka síðunni?(Gakktu úr skugga um að innihald rauðu merkimiðasíðunnar hafi verið vistað)',
         cancelClose: 'Lokað aðgerð hætt'

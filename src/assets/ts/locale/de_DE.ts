@@ -123,8 +123,12 @@ export default {
         closeRight: 'Schließen Sie das rechte Etikett',
         singlePage: 'Unabhängige Seite',
         refreshPage: 'Seite neu laden',
+        affixPage: 'Feste Seite',
+        cancelAffixPage: 'Lösen Sie den Stift',
         errorTip: {
-            homePageCloseError: 'Die Homepage darf nicht geschlossen werden'
+            homePageCloseError: 'Die Homepage darf nicht geschlossen werden',
+            affixPageCloseError: 'Feste Seite darf nicht geschlossen werden',
+            homePageAffixError: 'Die Homepage kann nicht entfernt werden'
         },
         checkSave: 'Möchten Sie die Seite schließen?(Bitte stellen Sie sicher, dass der Inhalt der Red Label-Seite gespeichert wurde.)',
         cancelClose: 'Geschlossener Betrieb abgebrochen'

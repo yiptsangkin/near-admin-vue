@@ -123,8 +123,12 @@ export default {
         closeRight: 'برچسب سمت راست را ببندید',
         singlePage: 'صفحه مستقل',
         refreshPage: 'صفحه را رفرش کن',
+        affixPage: 'صفحه ثابت',
+        cancelAffixPage: 'باز کردن',
         errorTip: {
-            homePageCloseError: 'صفحه اصلی مجاز به بسته شدن نیست'
+            homePageCloseError: 'صفحه اصلی مجاز به بسته شدن نیست',
+            affixPageCloseError: 'صفحه ثابت مجاز به بسته شدن نیست',
+            homePageAffixError: 'صفحه اصلی قابل برداشتن نیست'
         },
         checkSave: 'آیا می خواهید صفحه را ببندید؟(لطفاً اطمینان حاصل کنید که محتوای صفحه برچسب قرمز ذخیره شده است)',
         cancelClose: 'عملیات بسته لغو شد'

@@ -123,8 +123,12 @@ export default {
         closeRight: 'Zatvorte pravý štítok',
         singlePage: 'Nezávislá stránka',
         refreshPage: 'obnovovacia stránka',
+        affixPage: 'Opravená stránka',
+        cancelAffixPage: 'uvoľniť',
         errorTip: {
-            homePageCloseError: 'Domovská stránka nesmie byť zavretá'
+            homePageCloseError: 'Domovská stránka nesmie byť zavretá',
+            affixPageCloseError: 'Opravená stránka sa nesmie uzavrieť',
+            homePageAffixError: 'Domovská stránka nemôže byť pripnutá'
         },
         checkSave: 'Chcete stránku zavrieť?(Skontrolujte, či bol obsah stránky s červeným štítkom uložený)',
         cancelClose: 'Zatvorená operácia bola zrušená'

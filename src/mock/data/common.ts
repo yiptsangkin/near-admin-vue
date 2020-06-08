@@ -103,6 +103,7 @@ export const getUserMenu = (req: any): ComRespone => {
                                             path: 'https://vuejs.org',
                                             icon: '',
                                             params: {
+                                                isAffix: true,
                                                 checkSave: true
                                             }
                                         },

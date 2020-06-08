@@ -123,8 +123,12 @@ export default {
         closeRight: 'Փակեք աջ պիտակը',
         singlePage: 'Անկախ էջ',
         refreshPage: 'թարմացնել էջը',
+        affixPage: 'Հաստատուն էջ',
+        cancelAffixPage: 'Unpin',
         errorTip: {
-            homePageCloseError: 'Հիմնական էջը չի թույլատրվում փակել'
+            homePageCloseError: 'Հիմնական էջը չի թույլատրվում փակել',
+            affixPageCloseError: 'Հաստատուն էջը չի թույլատրվում փակել',
+            homePageAffixError: 'Հիմնական էջը չի կարող աննկատելի լինել'
         },
         checkSave: 'Doանկանո՞ւմ եք փակել էջը:(Համոզվեք, որ կարմիր պիտակի էջի բովանդակությունը պահպանված է)',
         cancelClose: 'Փակ գործողությունը չեղարկվեց'

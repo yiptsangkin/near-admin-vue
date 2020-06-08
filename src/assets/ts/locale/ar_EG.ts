@@ -123,8 +123,12 @@ export default {
         closeRight: 'أغلق التسمية اليمنى',
         singlePage: 'صفحة مستقلة',
         refreshPage: 'إعادة تحميل الصفحة',
+        affixPage: 'الصفحة الثابتة',
+        cancelAffixPage: 'إلغاء التثبيت',
         errorTip: {
-            homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية'
+            homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية',
+            affixPageCloseError: 'لا يسمح بإغلاق الصفحة الثابتة',
+            homePageAffixError: 'لا يمكن إلغاء تثبيت الصفحة الرئيسية'
         },
         checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة التصنيف الأحمر)',
         cancelClose: 'تم إلغاء العملية المغلقة'

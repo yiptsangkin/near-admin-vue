@@ -2,7 +2,7 @@ export default {
     locale: 'lv',
     country: 'LV',
     sysInfo: {
-        sysIntro: 'Viegli lietojams priekšplāna izstrādes ietvars, kas balstīts uz Vue un Ant Design'
+        sysIntro: 'Viegli lietojams priekšējās daļas izstrādes ietvars, kas balstīts uz Vue un Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',
@@ -123,8 +123,12 @@ export default {
         closeRight: 'Aizveriet labo etiķeti',
         singlePage: 'Neatkarīga lapa',
         refreshPage: 'atsvaidzināt lapu',
+        affixPage: 'Fiksēta lapa',
+        cancelAffixPage: 'Atspraust',
         errorTip: {
-            homePageCloseError: 'Mājas lapu nav atļauts aizvērt'
+            homePageCloseError: 'Mājas lapu nav atļauts aizvērt',
+            affixPageCloseError: 'Fiksēto lapu nav atļauts aizvērt',
+            homePageAffixError: 'Mājaslapu nevar atsaistīt'
         },
         checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, vai sarkanās etiķetes lapas saturs ir saglabāts.)',
         cancelClose: 'Slēgtā darbība atcelta'

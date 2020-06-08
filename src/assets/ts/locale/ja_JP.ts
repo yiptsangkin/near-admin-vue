@@ -123,8 +123,12 @@ export default {
         closeRight: '右のラベルを閉じる',
         singlePage: '独立したページ',
         refreshPage: 'ページの更新',
+        affixPage: '固定ページ',
+        cancelAffixPage: '固定を解除',
         errorTip: {
-            homePageCloseError: 'ホームページを閉じることはできません'
+            homePageCloseError: 'ホームページを閉じることはできません',
+            affixPageCloseError: '固定ページは閉じることができません',
+            homePageAffixError: 'ホームページの固定を解除できません'
         },
         checkSave: 'ページを閉じますか？（赤いラベルページのコンテンツが保存されていることを確認してください）',
         cancelClose: 'クローズドオペレーションがキャンセルされました'

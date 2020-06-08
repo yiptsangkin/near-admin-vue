@@ -123,8 +123,12 @@ export default {
         closeRight: 'Zamknij prawą etykietę',
         singlePage: 'Niezależna strona',
         refreshPage: 'Odśwież stronę',
+        affixPage: 'Naprawiono stronę',
+        cancelAffixPage: 'Odpiąć',
         errorTip: {
-            homePageCloseError: 'Strona główna nie może zostać zamknięta'
+            homePageCloseError: 'Strona główna nie może zostać zamknięta',
+            affixPageCloseError: 'Naprawiona strona nie może zostać zamknięta',
+            homePageAffixError: 'Strona główna nie może zostać odpięta'
         },
         checkSave: 'Czy chcesz zamknąć stronę?(Upewnij się, że treść strony z czerwoną etykietą została zapisana)',
         cancelClose: 'Zamknięta operacja anulowana'

@@ -123,8 +123,12 @@ export default {
         closeRight: 'ปิดฉลากด้านขวา',
         singlePage: 'หน้าอิสระ',
         refreshPage: 'รีเฟรชหน้า',
+        affixPage: 'แก้ไขหน้า',
+        cancelAffixPage: 'เลิกตรึง',
         errorTip: {
-            homePageCloseError: 'ไม่อนุญาตให้ปิดโฮมเพจ'
+            homePageCloseError: 'ไม่อนุญาตให้ปิดโฮมเพจ',
+            affixPageCloseError: 'ไม่อนุญาตให้ปิดหน้าถาวร',
+            homePageAffixError: 'ไม่สามารถยกเลิกการโฮมเพจได้'
         },
         checkSave: 'คุณต้องการปิดหน้านี้หรือไม่?(โปรดตรวจสอบให้แน่ใจว่าได้บันทึกเนื้อหาของหน้าป้ายแดงแล้ว)',
         cancelClose: 'ยกเลิกการดำเนินการปิด'

@@ -123,8 +123,12 @@ export default {
         closeRight: 'Sluit het rechter label',
         singlePage: 'Onafhankelijke pagina',
         refreshPage: 'pagina hernieuwen',
+        affixPage: 'Vaste pagina',
+        cancelAffixPage: 'Maak los',
         errorTip: {
-            homePageCloseError: 'Homepage mag niet sluiten'
+            homePageCloseError: 'Homepage mag niet sluiten',
+            affixPageCloseError: 'Vaste pagina mag niet sluiten',
+            homePageAffixError: 'Homepage kan niet worden losgemaakt'
         },
         checkSave: 'Wil je de pagina sluiten?(Zorg ervoor dat de inhoud van de rode labelpagina is opgeslagen)',
         cancelClose: 'Gesloten operatie geannuleerd'

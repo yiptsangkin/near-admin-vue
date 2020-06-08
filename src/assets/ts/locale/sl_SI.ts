@@ -123,8 +123,12 @@ export default {
         closeRight: 'Zaprite desno nalepko',
         singlePage: 'Neodvisna stran',
         refreshPage: 'osveži stran',
+        affixPage: 'Fiksna stran',
+        cancelAffixPage: 'Odklopite',
         errorTip: {
-            homePageCloseError: 'Domače strani ni dovoljeno zapreti'
+            homePageCloseError: 'Domače strani ni dovoljeno zapreti',
+            affixPageCloseError: 'Fiksne strani ni dovoljeno zapreti',
+            homePageAffixError: 'Domače strani ni mogoče odlepiti'
         },
         checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je vsebina rdeče strani z nalepkami shranjena)',
         cancelClose: 'Zaprto delovanje je preklicano'

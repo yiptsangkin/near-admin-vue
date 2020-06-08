@@ -2,7 +2,7 @@ export default {
     locale: 'ca',
     country: 'ES',
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament de front-end fàcil d’utilitzar basat en Vue and Ant Design'
+        sysIntro: 'Un marc de desenvolupament front-end senzill basat en Vue and Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Inici de sessió de la contrasenya del compte',
@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'L&#39;adreça de la sol·licitud no pot estar buida',
-        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més tard'
+        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més endavant'
     },
     localeMap: {
         ar: 'Àrab',
@@ -123,8 +123,12 @@ export default {
         closeRight: 'Tanca l&#39;etiqueta dreta',
         singlePage: 'Pàgina independent',
         refreshPage: 'pàgina d’actualització',
+        affixPage: 'Pàgina fixada',
+        cancelAffixPage: 'Desaconseguir',
         errorTip: {
-            homePageCloseError: 'La pàgina d&#39;inici no es pot tancar'
+            homePageCloseError: 'La pàgina d&#39;inici no es pot tancar',
+            affixPageCloseError: 'No es pot tancar la pàgina corregida',
+            homePageAffixError: 'La pàgina d&#39;inici no es pot anul·lar'
         },
         checkSave: 'Voleu tancar la pàgina?(Assegureu-vos que s’ha desat el contingut de la pàgina de l’etiqueta vermella)',
         cancelClose: 'S&#39;ha cancel·lat l&#39;operació tancada'

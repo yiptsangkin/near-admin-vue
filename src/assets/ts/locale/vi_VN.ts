@@ -123,8 +123,12 @@ export default {
         closeRight: 'Đóng nhãn bên phải',
         singlePage: 'Trang độc lập',
         refreshPage: 'làm mới trang',
+        affixPage: 'Trang cố định',
+        cancelAffixPage: 'Bỏ ghim',
         errorTip: {
-            homePageCloseError: 'Trang chủ không được phép đóng'
+            homePageCloseError: 'Trang chủ không được phép đóng',
+            affixPageCloseError: 'Trang cố định không được phép đóng',
+            homePageAffixError: 'Trang chủ không thể được bỏ ghim'
         },
         checkSave: 'Bạn có muốn đóng trang?(Vui lòng đảm bảo rằng nội dung của trang nhãn đỏ đã được lưu)',
         cancelClose: 'Đã hủy hoạt động'

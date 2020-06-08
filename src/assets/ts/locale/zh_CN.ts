@@ -123,8 +123,12 @@ export default {
         closeRight: '关闭右侧标签',
         singlePage: '独立页面',
         refreshPage: '刷新页面',
+        affixPage: '固定页面',
+        cancelAffixPage: '取消固定',
         errorTip: {
-            homePageCloseError: '首页不允许关闭'
+            homePageCloseError: '首页不允许关闭',
+            affixPageCloseError: '固定页不允许关闭',
+            homePageAffixError: '首页无法取消固定'
         },
         checkSave: '是否关闭页面？（请确保标红标签页面内容已经保存）',
         cancelClose: '已取消关闭操作'

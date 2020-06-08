@@ -123,8 +123,12 @@ export default {
         closeRight: 'Close right label',
         singlePage: 'Independent page',
         refreshPage: 'refresh page',
+        affixPage: 'Fixed page',
+        cancelAffixPage: 'Unpin',
         errorTip: {
-            homePageCloseError: 'Homepage is not allowed to close'
+            homePageCloseError: 'Homepage is not allowed to close',
+            affixPageCloseError: 'Fixed page is not allowed to close',
+            homePageAffixError: 'Homepage cannot be unpinned'
         },
         checkSave: 'Do you want to close the page?(Please make sure that the content of the red label page has been saved)',
         cancelClose: 'Closed operation canceled'

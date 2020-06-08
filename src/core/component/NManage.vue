@@ -5,7 +5,7 @@
             <a-layout>
                 <n-aside @change-cp="changeCp"></n-aside>
                 <a-layout-content class="n-layout-content">
-                    <n-tag-content-menu @single="singlePage" @refresh="refreshPage"></n-tag-content-menu>
+                    <n-tag-content-menu @single="singlePage" @refresh="refreshPage" @affix="affixPage"></n-tag-content-menu>
                     <n-tag @change-cp="changeCp"></n-tag>
                     <div class="n-component-page">
                         <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
@@ -61,8 +61,10 @@
             ]),
             cacheCp () {
                 const self = this as any
-                return self.curTagList.map((e) => {
-                    return `${e.pk}`
+                return self.curTagList.map((e: CpInfo) => {
+                    if (!(e.params && e.params.withoutCache)) {
+                        return `${e.pk}`
+                    }
                 }).toString()
             }
         },
@@ -128,6 +130,7 @@
             ]),
             changeCp (cpInfo: CpInfo, byMenu: boolean = true) {
                 const self = this as any
+                cpInfo = self.formateCpParams(cpInfo)
                 // if empty component, return false
                 if (!cpInfo.component) {
                     self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.emptyErr)}`)
@@ -212,6 +215,20 @@
                     }
                 }
             },
+            formateCpParams (cpInfo: CpInfo): CpInfo {
+                if (cpInfo.params) {
+                    cpInfo.params.isAffix = cpInfo.params.isAffix || false
+                    cpInfo.params.withoutCache = cpInfo.params.withoutCache || false
+                    cpInfo.params.checkSave = cpInfo.params.checkSave || false
+                } else {
+                    cpInfo.params = {
+                        isAffix: false,
+                        withoutCache: false,
+                        checkSave: false
+                    }
+                }
+                return cpInfo
+            },
             singlePage (idx) {
                 const self = this
                 const curCp = self.curTagList[idx]
@@ -257,6 +274,30 @@
                     localStorage.setItem(`${dict.commonObj.managePath}AsyncRoute`, JSON.stringify(routesListObj))
                     // redirect to new browser tag
                     window.open(`/${dict.commonObj.managePath}/${curCpName}`.toLowerCase())
+                }
+            },
+            affixPage (idx) {
+                const self = this
+                const targetCp = Object.assign({}, self.curTagList[idx])
+                if (targetCp.navIndex === '-1') {
+                    self.$message.warn(self.$t(dict.localeObj.tagObj.errorTip.homePageAffixError))
+                } else {
+                    if (targetCp.params) {
+                        targetCp.params.isAffix = !targetCp.params.isAffix
+                    } else {
+                        targetCp.params = {
+                            isAffix: true
+                        }
+                    }
+                    self.changeTag({
+                        op: 'update',
+                        updateOpt: {
+                            idx,
+                            updateCpInfo: {
+                                params: targetCp.params
+                            }
+                        }
+                    })
                 }
             },
             refreshPage (idx) {

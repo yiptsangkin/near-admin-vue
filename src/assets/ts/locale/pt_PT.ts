@@ -123,8 +123,12 @@ export default {
         closeRight: 'Fechar etiqueta direita',
         singlePage: 'Página independente',
         refreshPage: 'atualizar a página',
+        affixPage: 'Página fixa',
+        cancelAffixPage: 'Soltar',
         errorTip: {
-            homePageCloseError: 'A página inicial não tem permissão para fechar'
+            homePageCloseError: 'A página inicial não tem permissão para fechar',
+            affixPageCloseError: 'Página fixa não tem permissão para fechar',
+            homePageAffixError: 'A página inicial não pode ser desmarcada'
         },
         checkSave: 'Deseja fechar a página?(Verifique se o conteúdo da página do rótulo vermelho foi salvo)',
         cancelClose: 'Operação fechada cancelada'

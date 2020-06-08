@@ -123,8 +123,12 @@ export default {
         closeRight: 'Chiudi l&#39;etichetta destra',
         singlePage: 'Pagina indipendente',
         refreshPage: 'aggiorna pagina',
+        affixPage: 'Pagina fissa',
+        cancelAffixPage: 'Sblocca',
         errorTip: {
-            homePageCloseError: 'La homepage non è autorizzata a chiudere'
+            homePageCloseError: 'La home page non è autorizzata a chiudere',
+            affixPageCloseError: 'La pagina fissa non può chiudere',
+            homePageAffixError: 'La home page non può essere annullata'
         },
         checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina dell&#39;etichetta rossa sia stato salvato)',
         cancelClose: 'Operazione chiusa annullata'

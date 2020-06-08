@@ -123,8 +123,12 @@ export default {
         closeRight: 'Sulje oikea tarra',
         singlePage: 'Itsenäinen sivu',
         refreshPage: 'Päivitä sivu',
+        affixPage: 'Kiinteä sivu',
+        cancelAffixPage: 'Irrota',
         errorTip: {
-            homePageCloseError: 'Kotisivua ei saa sulkea'
+            homePageCloseError: 'Kotisivua ei saa sulkea',
+            affixPageCloseError: 'Kiinteää sivua ei saa sulkea',
+            homePageAffixError: 'Kotisivua ei voi irrottaa'
         },
         checkSave: 'Haluatko sulkea sivun?(Varmista, että punaisen tarran sivun sisältö on tallennettu)',
         cancelClose: 'Lopetettu toiminta peruutettu'

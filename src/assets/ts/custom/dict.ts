@@ -41,8 +41,12 @@ export default {
             closeRight: 'tagObj.closeRight',
             singlePage: 'tagObj.singlePage',
             refreshPage: 'tagObj.refreshPage',
+            affixPage: 'tagObj.affixPage',
+            cancelAffixPage: 'tagObj.cancelAffixPage',
             errorTip: {
-                homePageCloseError: 'tagObj.errorTip.homePageCloseError'
+                homePageCloseError: 'tagObj.errorTip.homePageCloseError',
+                affixPageCloseError: 'tagObj.errorTip.affixPageCloseError',
+                homePageAffixError: 'tagObj.errorTip.homePageAffixError'
             },
             checkSave: 'tagObj.checkSave',
             cancelClose: 'tagObj.cancelClose'

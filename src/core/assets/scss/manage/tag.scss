@@ -35,6 +35,15 @@
       &.n-tag-warning{
         background-color: $red-e;
       }
+      .n-tag-affix{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        vertical-align: middle;
+        margin-right: 6px;
+      }
     }
   }
   .n-tag-dropdown{

@@ -123,8 +123,12 @@ export default {
         closeRight: 'Закрийте праву етикетку',
         singlePage: 'Незалежна сторінка',
         refreshPage: 'оновити сторінку',
+        affixPage: 'Виправлена ​​сторінка',
+        cancelAffixPage: 'Відкрутити',
         errorTip: {
-            homePageCloseError: 'Не можна закривати домашню сторінку'
+            homePageCloseError: 'Не можна закривати домашню сторінку',
+            affixPageCloseError: 'Фіксовану сторінку заборонено закривати',
+            homePageAffixError: 'Не можна відкріпити домашню сторінку'
         },
         checkSave: 'Ви хочете закрити сторінку?(Переконайтеся, що вміст червоної сторінки з етикетками було збережено)',
         cancelClose: 'Закрита операція скасована'
