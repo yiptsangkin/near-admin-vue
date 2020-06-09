@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Jurnal front-end',
         customSetting: 'Setări personalizate',
         logout: 'Sign out'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Ne pare rău, pagina pe care ați vizitat-o ​​nu există',
+            notrightTip: 'Ne pare rău, nu aveți permisiunea de a accesa această pagină',
+            noserviceTip: 'Ne pare rău, ceva nu a mers corect cu serverul. Încercați din nou mai târziu'
+        },
+        btnText: 'Închideți pagina'
     }
 }

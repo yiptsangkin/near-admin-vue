@@ -119,7 +119,7 @@ export const getUserMenu = (req: any): ComRespone => {
                                         },
                                         {
                                             name: 'menuObj.childMenu.0-0-3',
-                                            path: 'home/HomePage',
+                                            path: 'home/HomePage2',
                                             icon: '',
                                             params: {
                                                 checkSave: true

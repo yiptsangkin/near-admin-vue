@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Registro front-end',
         customSetting: 'Impostazioni personalizzate',
         logout: 'disconnessione'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Siamo spiacenti, la pagina visitata non esiste',
+            notrightTip: 'Siamo spiacenti, non sei autorizzato ad accedere a questa pagina',
+            noserviceTip: 'Spiacenti, si è verificato un problema con il server, riprova più tardi'
+        },
+        btnText: 'Chiudi pagina'
     }
 }

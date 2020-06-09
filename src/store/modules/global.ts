@@ -102,6 +102,11 @@ const rmTagOp = (rmTagState: State, closeOpt: ClosePageOpt) => {
                 }
             }
     }
+    // change default index
+    const curIndex = rmTagState.curTagList[rmTagState.curTagIndex].navIndex
+    if (curIndex) {
+        rmTagState.defaultIndexs = [curIndex]
+    }
 }
 
 interface State {
@@ -141,7 +146,7 @@ const state: State = {
     defaultIndexs: [],
     curTagList: cacheTagList,
     curTagIndex: cacheTagIndex,
-    rightPathList: [],
+    rightPathList: ['home/HomePage2'],
     shrinkLeftMenu: false,
     saveWarning: false
 }
@@ -205,7 +210,9 @@ const mutations = {
             mutationState.curTagList.push(cpInfo)
             mutationState.curTagIndex = mutationState.curTagList.length - 1
             // set menu index to null
-            mutationState.defaultIndexs = []
+            if (cpInfo.navIndex) {
+                mutationState.defaultIndexs = [cpInfo.navIndex]
+            }
         } else {
             // else add it the cur tag' next position
             mutationState.curTagList.splice(mutationState.curTagIndex + 1, 0, cpInfo)

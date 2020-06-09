@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Registre front-end',
         customSetting: 'Configuració personalitzada',
         logout: 'tanca sessió'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Ho sentim, la pàgina que heu visitat no existeix',
+            notrightTip: 'Ho sentim, no teniu permís per accedir a aquesta pàgina',
+            noserviceTip: 'Ho sentim, va passar alguna cosa malament amb el servidor. Torneu-ho a provar més endavant'
+        },
+        btnText: 'Tanca la pàgina'
     }
 }

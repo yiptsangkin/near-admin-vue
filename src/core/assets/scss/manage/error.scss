@@ -1,0 +1,23 @@
+.n-not-found-wrp{
+  height: 100%;
+  position: relative;
+}
+.n-not-found{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  .n-not-found-icon {
+    img{
+      width: 500px;
+      display: block;
+    }
+  }
+  .n-not-found-tip{
+    text-align: center;
+  }
+  .n-not-found-op{
+    text-align: center;
+    margin-top: 64px;
+  }
+}

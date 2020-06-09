@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Log front-end',
         customSetting: 'Pengaturan yang dipersonalisasi',
         logout: 'keluar'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Maaf, halaman yang Anda kunjungi tidak ada',
+            notrightTip: 'Maaf, Anda tidak memiliki izin untuk mengakses halaman ini',
+            noserviceTip: 'Maaf, ada masalah dengan server, silakan coba lagi nanti'
+        },
+        btnText: 'Tutup halaman'
     }
 }

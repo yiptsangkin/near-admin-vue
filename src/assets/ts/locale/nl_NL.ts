@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Front-end logboek',
         customSetting: 'Persoonlijke instellingen',
         logout: 'afmelden'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Sorry, de door u bezochte pagina bestaat niet',
+            notrightTip: 'Sorry, je hebt geen toestemming om deze pagina te openen',
+            noserviceTip: 'Er is helaas iets misgegaan met de server. Probeer het later opnieuw'
+        },
+        btnText: 'Sluit pagina'
     }
 }

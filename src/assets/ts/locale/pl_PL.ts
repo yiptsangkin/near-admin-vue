@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Dziennik front-end',
         customSetting: 'Spersonalizowane ustawienia',
         logout: 'Wyloguj się'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Przepraszamy, odwiedzona strona nie istnieje',
+            notrightTip: 'Przepraszamy, nie masz uprawnień dostępu do tej strony',
+            noserviceTip: 'Niestety, coś poszło nie tak z serwerem, spróbuj ponownie później'
+        },
+        btnText: 'Zamknij stronę'
     }
 }

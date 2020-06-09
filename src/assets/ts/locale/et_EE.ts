@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Esiosa logi',
         customSetting: 'Isikupärastatud seaded',
         logout: 'Logi välja'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Vabandust, teie külastatud lehte pole olemas',
+            notrightTip: 'Kahjuks pole teil sellel lehel juurdepääsu luba',
+            noserviceTip: 'Kahjuks läks serveriga midagi valesti, proovige hiljem uuesti'
+        },
+        btnText: 'Sulge leht'
     }
 }

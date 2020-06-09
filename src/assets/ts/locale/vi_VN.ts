@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Nhật ký kết thúc',
         customSetting: 'Cài đặt được cá nhân hóa',
         logout: 'đăng xuất'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Xin lỗi, trang bạn truy cập không tồn tại',
+            notrightTip: 'Xin lỗi, bạn không có quyền truy cập trang này',
+            noserviceTip: 'Xin lỗi, đã xảy ra lỗi với máy chủ, vui lòng thử lại sau'
+        },
+        btnText: 'Đóng trang'
     }
 }

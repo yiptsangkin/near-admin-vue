@@ -67,5 +67,13 @@ export default {
         copyright: {
             githubUrl: 'https://github.com/yiptsangkin/near-admin-vue'
         }
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'errorPage.errorTip.notfoundTip',
+            notrightTip: 'errorPage.errorTip.notrightTip',
+            noserviceTip: 'errorPage.errorTip.noserviceTip'
+        },
+        btnText: 'errorPage.btnText'
     }
 }

@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Prednji zapisnik',
         customSetting: 'Personalizirane postavke',
         logout: 'odjavi se'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Nažalost, stranica koju ste posjetili ne postoji',
+            notrightTip: 'Nažalost, nemate dozvolu za pristup ovoj stranici',
+            noserviceTip: 'Nažalost, nešto nije u redu s poslužiteljem. Pokušajte ponovo kasnije'
+        },
+        btnText: 'Zatvori stranicu'
     }
 }

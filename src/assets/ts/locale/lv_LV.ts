@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Sākuma žurnāls',
         customSetting: 'Personalizētie iestatījumi',
         logout: 'izrakstīties'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Atvainojiet, jūsu apmeklētā lapa neeksistē',
+            notrightTip: 'Atvainojiet, jums nav atļaujas piekļūt šai lapai',
+            noserviceTip: 'Atvainojiet, kaut kas neizdevās ar serveri, lūdzu, vēlāk mēģiniet vēlreiz'
+        },
+        btnText: 'Aizvērt lapu'
     }
 }

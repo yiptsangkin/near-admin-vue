@@ -137,5 +137,13 @@ export default {
         frontendLog: 'フロントエンドログ',
         customSetting: 'パーソナライズ設定',
         logout: 'サインアウト'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'アクセスしたページは存在しません',
+            notrightTip: 'このページにアクセスする権限がありません',
+            noserviceTip: 'サーバーで問題が発生しました。しばらくしてからもう一度お試しください'
+        },
+        btnText: 'ページを閉じる'
     }
 }

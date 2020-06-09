@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Front-end log',
         customSetting: 'Personalized settings',
         logout: 'sign out'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Sorry, the page you visited does not exist',
+            notrightTip: 'Sorry, you do not have permission to access this page',
+            noserviceTip: 'Sorry, something went wrong with the server, please try again later'
+        },
+        btnText: 'Close page'
     }
 }

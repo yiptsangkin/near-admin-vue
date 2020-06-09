@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Främre logg',
         customSetting: 'Personliga inställningar',
         logout: 'logga ut'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Den sidan du besökte finns inte',
+            notrightTip: 'Tyvärr har du inte behörighet att komma åt den här sidan',
+            noserviceTip: 'Tyvärr, något gick fel med servern, försök igen senare'
+        },
+        btnText: 'Stäng sidan'
     }
 }

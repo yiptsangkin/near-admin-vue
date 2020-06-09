@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Protokol front-end',
         customSetting: 'Prispôsobené nastavenia',
         logout: 'Odhlásiť Sa'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Ľutujeme, stránka, ktorú ste navštívili, neexistuje',
+            notrightTip: 'Ľutujeme, nemáte povolenie na prístup na túto stránku',
+            noserviceTip: 'Ľutujeme, ale na serveri sa vyskytla chyba, skúste to znova neskôr'
+        },
+        btnText: 'Zavrieť stránku'
     }
 }

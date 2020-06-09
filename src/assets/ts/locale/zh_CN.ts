@@ -137,5 +137,13 @@ export default {
         frontendLog: '前端日志',
         customSetting: '个性化设置',
         logout: '退出登录'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: '抱歉，你访问的页面不存在',
+            notrightTip: '抱歉，你没有权限访问该页面',
+            noserviceTip: '抱歉，服务器发生了问题，请稍后重试'
+        },
+        btnText: '关闭页面'
     }
 }

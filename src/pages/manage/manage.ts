@@ -19,7 +19,8 @@ import {
     message,
     Input,
     Dropdown,
-    Modal
+    Modal,
+    Button
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -42,6 +43,7 @@ Vue.component(Menu.ItemGroup.name, Menu.ItemGroup)
 Vue.component(Menu.SubMenu.name, Menu.SubMenu)
 Vue.component(Input.name, Input)
 Vue.component(Dropdown.name, Dropdown)
+Vue.component(Button.name, Button)
 
 // here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue
 Vue.use(Modal)

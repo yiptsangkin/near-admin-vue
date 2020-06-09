@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Elülső napló',
         customSetting: 'Személyre szabott beállítások',
         logout: 'kijelentkezés'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Sajnáljuk, a meglátogatott oldal nem létezik',
+            notrightTip: 'Sajnáljuk, de nincs jogosultsága erre az oldalra belépni',
+            noserviceTip: 'Sajnáljuk, valami nem sikerült a szerverrel, próbálkozzon később újra'
+        },
+        btnText: 'Bezárja az oldalt'
     }
 }

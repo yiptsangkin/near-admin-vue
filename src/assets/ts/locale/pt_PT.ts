@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Log de front-end',
         customSetting: 'Configurações personalizadas',
         logout: 'Sair'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Desculpe, a página que você visitou não existe',
+            notrightTip: 'Desculpe, você não tem permissão para acessar esta página',
+            noserviceTip: 'Desculpe, ocorreu um erro com o servidor. Tente novamente mais tarde'
+        },
+        btnText: 'Fechar página'
     }
 }

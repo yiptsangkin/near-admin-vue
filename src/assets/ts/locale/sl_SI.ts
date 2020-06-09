@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Sprednji dnevnik',
         customSetting: 'Prilagojene nastavitve',
         logout: 'Odjava'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Žal stran, ki ste jo obiskali, ne obstaja',
+            notrightTip: 'Žal nimate dovoljenja za dostop do te strani',
+            noserviceTip: 'Žal je prišlo do napake s strežnikom, poskusite pozneje'
+        },
+        btnText: 'Zapri stran'
     }
 }

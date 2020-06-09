@@ -137,5 +137,13 @@ export default {
         frontendLog: 'سجل الواجهة الأمامية',
         customSetting: 'الإعدادات الشخصية',
         logout: 'خروج'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'عذرا ، الصفحة التي زرتها غير موجودة',
+            notrightTip: 'عذرا ، ليس لديك إذن للوصول إلى هذه الصفحة',
+            noserviceTip: 'عذرًا ، حدث خطأ في الخادم ، يرجى المحاولة مرة أخرى لاحقًا'
+        },
+        btnText: 'أغلق الصفحة'
     }
 }

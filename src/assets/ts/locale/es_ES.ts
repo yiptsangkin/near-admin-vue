@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Registro de front-end',
         customSetting: 'Configuraciones personalizadas',
         logout: 'desconectar'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Lo sentimos, la página que visitaste no existe',
+            notrightTip: 'Lo sentimos, no tienes permiso para acceder a esta página',
+            noserviceTip: 'Lo sentimos, algo salió mal con el servidor, intente nuevamente más tarde'
+        },
+        btnText: 'Cerrar página'
     }
 }

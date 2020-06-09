@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Framan endaskrá',
         customSetting: 'Sérsniðnar stillingar',
         logout: 'Útskrá'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Því miður, síðan sem þú heimsóttir er ekki til',
+            notrightTip: 'Því miður, þú hefur ekki leyfi til að fá aðgang að þessari síðu',
+            noserviceTip: 'Því miður, eitthvað fór úrskeiðis við netþjóninn, vinsamlegast reyndu aftur seinna'
+        },
+        btnText: 'Loka síðu'
     }
 }

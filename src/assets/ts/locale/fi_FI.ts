@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Etuosan loki',
         customSetting: 'Henkilökohtaiset asetukset',
         logout: 'Kirjaudu ulos'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Valitettavasti käymääsi sivua ei ole',
+            notrightTip: 'Valitettavasti sinulla ei ole lupaa päästä tälle sivulle',
+            noserviceTip: 'Jokin meni pieleen palvelimen kanssa, yritä myöhemmin uudelleen'
+        },
+        btnText: 'Sulje sivu'
     }
 }

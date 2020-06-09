@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Front-end log',
         customSetting: 'Personlige indstillinger',
         logout: 'Log ud'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Beklager, den side, du har besøgt, findes ikke',
+            notrightTip: 'Beklager, du har ikke tilladelse til at få adgang til denne side',
+            noserviceTip: 'Beklager, der gik noget galt med serveren. Prøv igen senere'
+        },
+        btnText: 'Luk side'
     }
 }

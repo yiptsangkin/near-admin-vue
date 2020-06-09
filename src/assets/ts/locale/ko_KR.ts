@@ -137,5 +137,13 @@ export default {
         frontendLog: '프론트 엔드 로그',
         customSetting: '개인 설정',
         logout: '로그 아웃'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: '방문한 페이지가 없습니다.',
+            notrightTip: '죄송합니다.이 페이지에 액세스 할 수있는 권한이 없습니다',
+            noserviceTip: '죄송합니다. 서버에 문제가 있습니다. 나중에 다시 시도하십시오'
+        },
+        btnText: '페이지 닫기'
     }
 }

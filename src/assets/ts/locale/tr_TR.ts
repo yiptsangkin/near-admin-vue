@@ -137,5 +137,13 @@ export default {
         frontendLog: 'Ön uç günlüğü',
         customSetting: 'Kişiselleştirilmiş ayarlar',
         logout: 'oturumu Kapat'
+    },
+    errorPage: {
+        errorTip: {
+            notfoundTip: 'Üzgünüz, ziyaret ettiğiniz sayfa mevcut değil',
+            notrightTip: 'Üzgünüz, bu sayfaya erişim izniniz yok',
+            noserviceTip: 'Maalesef, sunucuda bir sorun oluştu, lütfen daha sonra tekrar deneyin'
+        },
+        btnText: 'Sayfayı kapat'
     }
 }
