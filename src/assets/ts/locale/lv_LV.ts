@@ -2,7 +2,7 @@ export default {
     locale: 'lv',
     country: 'LV',
     sysInfo: {
-        sysIntro: 'Viegli lietojams priekšējās daļas izstrādes ietvars, kas balstīts uz Vue un Ant Design'
+        sysIntro: 'Viegli lietojams priekšplāna izstrādes ietvars, kas balstīts uz Vue un Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',

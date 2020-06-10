@@ -141,7 +141,7 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Désolé, la page que vous avez visitée n&#39;existe pas',
-            notrightTip: 'Désolé, vous n&#39;êtes pas autorisé à accéder à cette page',
+            notrightTip: 'Désolé, vous n&#39;avez pas la permission d&#39;accéder à cette page',
             noserviceTip: 'Désolé, un problème est survenu avec le serveur, veuillez réessayer plus tard'
         },
         btnText: 'Fermer la page'

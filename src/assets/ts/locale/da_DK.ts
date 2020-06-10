@@ -128,9 +128,9 @@ export default {
         errorTip: {
             homePageCloseError: 'Hjemmesiden må ikke lukke',
             affixPageCloseError: 'Den faste side må ikke lukke',
-            homePageAffixError: 'Hjemmesiden kan ikke afspændes'
+            homePageAffixError: 'Hjemmesiden kan ikke afmonteres'
         },
-        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af siden med rød etiket er gemt)',
+        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet på siden med rød etiket er gemt)',
         cancelClose: 'Lukket operation annulleret'
     },
     personalCenter: {

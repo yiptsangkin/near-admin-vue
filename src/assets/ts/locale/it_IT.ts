@@ -128,7 +128,7 @@ export default {
         errorTip: {
             homePageCloseError: 'La home page non è autorizzata a chiudere',
             affixPageCloseError: 'La pagina fissa non può chiudere',
-            homePageAffixError: 'La home page non può essere annullata'
+            homePageAffixError: 'Non è possibile sbloccare la home page'
         },
         checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina dell&#39;etichetta rossa sia stato salvato)',
         cancelClose: 'Operazione chiusa annullata'

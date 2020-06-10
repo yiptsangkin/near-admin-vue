@@ -8,8 +8,18 @@ module.exports = {
         // get multi pages's entry and template
         let entries = {}
 
-        glob.sync(globPath).forEach(function (entry) {
-            let pathList = entry.split('/')
+        let finalEntries = []
+        const entriesListByCmd = process.env.ENTRYS ? process.env.ENTRYS.split(',') : []
+        if (entriesListByCmd.length > 0) {
+            entriesListByCmd.forEach(function (item) {
+                finalEntries.push(`./src/pages/${item}/page.config.json`)
+            })
+        } else {
+            finalEntries = glob.sync(globPath)
+        }
+
+        finalEntries.forEach(function (entry) {
+            const pathList = entry.split('/')
             const baseConfig = require(`.${entry}`)
             pathList.splice(-1)
             // api config for the corresponding environment

@@ -11,6 +11,8 @@
     "uat:build": "BUILD_ENV=uat vue-cli-service build",
     "prod:build": "BUILD_ENV=prod vue-cli-service build",
     "analyze:build": "ANALYZE=true vue-cli-service build",
+    "single:build": "node script/singleoperate.js build",
+    "single:serve": "node script/singleoperate.js serve",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "commit": "git-cz",

@@ -75,10 +75,9 @@ try {
     } else {
         console.log(chalk.red(`Error: ${optPath} is not a file`))
     }
-    let response
     void async function () {
         // select target language
-        response = await prompts([
+        const response = await prompts([
             {
                 type: 'multiselect',
                 name: 'targetLang',

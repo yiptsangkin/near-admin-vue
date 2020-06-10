@@ -2,7 +2,7 @@ export default {
     locale: 'ca',
     country: 'ES',
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament front-end senzill basat en Vue and Ant Design'
+        sysIntro: 'Un marc de desenvolupament de front-end fàcil d’utilitzar basat en Vue and Ant Design'
     },
     loginForm: {
         byAccountBtn: 'Inici de sessió de la contrasenya del compte',

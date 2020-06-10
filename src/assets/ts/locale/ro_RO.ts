@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'Adresa solicitării nu poate fi goală',
-        networkErr: 'Solicitarea rețelei a eșuat. Încercați din nou mai târziu'
+        networkErr: 'Solicitarea rețelei nu a reușit'
     },
     localeMap: {
         ar: 'arabic',
@@ -112,7 +112,7 @@ export default {
             home: 'Acasă'
         },
         errorTip: {
-            notfoundTip: 'Nicio componentă nu a fost găsită sub această cale',
+            notfoundTip: 'Nici o componentă nu a fost găsită sub această cale',
             emptyErr: 'Calea componentă nu este configurată'
         }
     },
@@ -126,7 +126,7 @@ export default {
         affixPage: 'Pagină fixă',
         cancelAffixPage: 'Anulați fixarea',
         errorTip: {
-            homePageCloseError: 'Pagina de inceput nu are voie sa se inchida',
+            homePageCloseError: 'Pagina de pornire nu are voie să se închidă',
             affixPageCloseError: 'Pagina fixă ​​nu are voie să se închidă',
             homePageAffixError: 'Pagina de pornire nu poate fi anulată'
         },

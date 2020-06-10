@@ -127,7 +127,7 @@ export default {
         cancelAffixPage: 'uvoľniť',
         errorTip: {
             homePageCloseError: 'Domovská stránka nesmie byť zavretá',
-            affixPageCloseError: 'Opravená stránka sa nesmie uzavrieť',
+            affixPageCloseError: 'Opravená stránka sa nesmie zavrieť',
             homePageAffixError: 'Domovská stránka nemôže byť pripnutá'
         },
         checkSave: 'Chcete stránku zavrieť?(Skontrolujte, či bol obsah stránky s červeným štítkom uložený)',

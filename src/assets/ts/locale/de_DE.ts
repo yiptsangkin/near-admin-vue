@@ -141,7 +141,7 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Die von Ihnen besuchte Seite ist leider nicht vorhanden',
-            notrightTip: 'Leider haben Sie keine Berechtigung, auf diese Seite zuzugreifen',
+            notrightTip: 'Sie haben leider keine Berechtigung, auf diese Seite zuzugreifen',
             noserviceTip: 'Entschuldigung, mit dem Server ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut'
         },
         btnText: 'Seite schließen'

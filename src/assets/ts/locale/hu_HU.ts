@@ -130,7 +130,7 @@ export default {
             affixPageCloseError: 'A rögzített oldal nem zárható be',
             homePageAffixError: 'A honlap nem oldható meg'
         },
-        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került)',
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a vörös címke oldal tartalma mentésre került-e.)',
         cancelClose: 'A zárt művelet megszakítva'
     },
     personalCenter: {
