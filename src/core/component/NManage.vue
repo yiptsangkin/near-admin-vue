@@ -78,7 +78,10 @@
                 if (curCp.component) {
                     // is created by directive
                     const isApiNew = curCp.params ? curCp.params.apiNew : false
-                    if (ableList.indexOf(curCp.component) !== -1 || isApiNew) {
+                    if (
+                        ableList.indexOf(curCp.component) !== -1
+                        || (curCp.params && ableList.indexOf(curCp.params.dataUrl) !== -1)
+                        || isApiNew) {
                         try {
                             let pageCp
                             if (!curCp.isUrl) {
@@ -88,6 +91,7 @@
                             }  else {
                                 pageCp = await import('@corecp/NWebView.vue')
                             }
+                            pageCp.default.staticKey = curCp.pk
                             const cpAsync = new Promise((resolve) => {
                                 resolve(pageCp)
                             })
@@ -95,11 +99,12 @@
                                 component: cpAsync
                             })
                         } catch (e) {
-                            console.log(e)
+                            NoFound.staticKey = curCp.pk
                             activeCp = NoFound
                             self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.notfoundTip)} <<${curCp.component}>>`)
                         }
                     } else {
+                        NoRight.staticKey = curCp.pk
                         activeCp = NoRight
                     }
                 }
@@ -148,7 +153,6 @@
                                 dataUrl: cpInfo.component
                             }
                         }
-                        cpInfo.params.apiNew = true
                         cpInfo.component = 'WebView'
                         cpInfo.isUrl = true
                     } else {
@@ -302,12 +306,15 @@
             },
             refreshPage (idx) {
                 const self = this
+                const activeCp = self.$refs['active-cp']
+                const newKey = utils.randomCharacter(6)
+                activeCp.$vnode.componentOptions.Ctor.staticKey = newKey
                 self.changeTag({
                     op: 'update',
                     updateOpt: {
                         idx,
                         updateCpInfo: {
-                            pk: `NOnceTime-${utils.randomCharacter(6)}`
+                            pk: newKey
                         }
                     }
                 })

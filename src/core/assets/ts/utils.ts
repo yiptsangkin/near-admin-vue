@@ -326,6 +326,18 @@ const isUrl = (str: string): boolean => {
     }
 }
 
+const isEmpty = (val: any): boolean => {
+    if (Array.isArray(val)) {
+        if (val.length > 0) {
+            return false
+        } else {
+            return true
+        }
+    } else {
+        return !(val !== undefined && val !== null && val !== '')
+    }
+}
+
 const randomCharacter = (rdn: number): string => {
     const newList = []
     const characterList = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
@@ -379,5 +391,6 @@ export default {
     randomCharacter,
     isRegExp,
     arrayRemove,
-    getFirstComponentChild
+    getFirstComponentChild,
+    isEmpty
 }

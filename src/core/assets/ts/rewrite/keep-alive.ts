@@ -49,8 +49,6 @@ function pruneCacheEntry (
     utils.arrayRemove(keys, key)
 }
 
-let isFinalUpdateCount = 1
-
 export default {
     name: 'keep-alive',
     abstract: true,
@@ -103,16 +101,12 @@ export default {
             const key = vnode.key == null
                 ? componentOptions.Ctor.cid + (componentOptions.tag ? `::${componentOptions.tag}` : '')
                 : vnode.key
-            // when change two component, because key will set faster than component
-            // so here need to count when it is 2, means the component is update
-            // when reload a some component, not need to load this logistic
-            if (!/NOnceTime/g.test(key)) {
-                isFinalUpdateCount++
-                if (isFinalUpdateCount !== 2) {
-                    return undefined
-                } else {
-                    isFinalUpdateCount = 0
-                }
+            // when change two component, key will set faster than component, so front component's key will be change,
+            // here set a freeze key when change a component, when static key equal to current key
+            // return vnode
+            const staticKey = componentOptions.Ctor.staticKey
+            if (staticKey !== key) {
+                return undefined
             }
             const { include, exclude } = this
             if (

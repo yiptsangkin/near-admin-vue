@@ -144,7 +144,7 @@ const state: State = {
     defaultIndexs: [],
     curTagList: cacheTagList,
     curTagIndex: cacheTagIndex,
-    rightPathList: ['home/HomePage2'],
+    rightPathList: [],
     shrinkLeftMenu: false,
     saveWarning: false
 }
@@ -288,6 +288,9 @@ const mutations = {
     },
     changeUserInfo: (mutationState: State, userInfo: UserInfo) => {
         mutationState.userInfo = userInfo
+    },
+    changeRightPathList: (mutationState: State, rightPathList: string[]) => {
+        mutationState.rightPathList = rightPathList
     }
 }
 
@@ -321,6 +324,9 @@ const actions = {
     },
     changeShrinkLeftMenu: (context: ActionContext<State, State>, isShrink: boolean) => {
         context.commit('changeShrinkLeftMenu', isShrink)
+    },
+    changeRightPathList: (context: ActionContext<State, State>, rightPathList: string[]) => {
+        context.commit('changeRightPathList', rightPathList)
     }
 }
 
