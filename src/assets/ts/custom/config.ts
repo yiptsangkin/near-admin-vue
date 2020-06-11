@@ -9,7 +9,7 @@ const sysInfo = {
     appId: apiConfig.appId,
     appSecret: apiConfig.appSecret,
     apiHost: apiConfig.apiHost,
-    noNeedCheckRightPath: ['home/HomePage', 'setting/Setting', 'logline/Logline']
+    noNeedCheckRightPath: ['home/HomePage', 'setting/Setting', 'logline/Logline', 'WebView']
 }
 
 const buildSwitch = {
