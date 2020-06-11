@@ -7,6 +7,7 @@ import i18n from '@corets/lang'
 import mock from '@mock/index'
 import plugin from '@corets/plugin'
 import AsyncComputed from 'vue-async-computed'
+import directives from '@custom/directives'
 
 // antd component
 import {
@@ -47,9 +48,16 @@ Vue.component(Button.name, Button)
 
 // here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue
 Vue.use(Modal)
+
 // import antd directive
 Vue.prototype.$message = message
 Vue.prototype.$confirm = Modal.confirm
+
+// custom directives
+Object.keys(directives).forEach((item) => {
+    // @ts-ignore
+    Vue.directive(item, directives[item])
+})
 
 // mockjs
 if (comConfig.buildSwitch.isMock) {

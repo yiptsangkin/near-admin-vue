@@ -9,6 +9,14 @@ const getUserMenu = async (reqType: ReqType) => {
     return result
 }
 
+const getUserInfo = async (reqType: ReqType) => {
+    reqType.method = 'POST'
+    reqType.url = apiUrl.getUserInfo
+    const result = await utils.sendReq(reqType)
+    return result
+}
+
 export default {
-    getUserMenu
+    getUserMenu,
+    getUserInfo
 }

@@ -6,8 +6,6 @@ import dict from '@custom/dict'
 import utils from '@corets/utils'
 import Vue from 'vue'
 
-const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
-const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
 const CACHE_LOCALE = localStorage.getItem('nearAdminLang') || 'zh-cn'
 const RDN_KEY = utils.randomCharacter(6)
 const defaultTagList = [
@@ -130,10 +128,10 @@ interface Getter {
 
 const state: State = {
     userInfo: {
-        avatar: DEFAULT_MALE_AVATAR,
-        userName: 'nearyip',
-        role: 'admin',
-        roleName: 'admin',
+        avatar: '',
+        userName: '',
+        role: '',
+        roleName: '',
         gender: 0
     },
     locale: CACHE_LOCALE,
@@ -288,8 +286,8 @@ const mutations = {
     changeShrinkLeftMenu: (mutationState: State, isShrink: boolean) => {
         mutationState.shrinkLeftMenu = isShrink
     },
-    chageSaveWarning: (mutationState: State, saveWarning: boolean) => {
-        mutationState.saveWarning = saveWarning
+    changeUserInfo: (mutationState: State, userInfo: UserInfo) => {
+        mutationState.userInfo = userInfo
     }
 }
 
@@ -299,6 +297,9 @@ const actions = {
     },
     changeMenu: (context: ActionContext<State, State>, menuObj: MenuList) => {
         context.commit('changeMenu', menuObj)
+    },
+    changeUserInfo: (context: ActionContext<State, State>, userObj: UserInfo) => {
+        context.commit('changeUserInfo', userObj)
     },
     changeCurMenu: (context: ActionContext<State, State>, curMenu: number[]) => {
         context.commit('changeCurMenu', curMenu)
@@ -320,9 +321,6 @@ const actions = {
     },
     changeShrinkLeftMenu: (context: ActionContext<State, State>, isShrink: boolean) => {
         context.commit('changeShrinkLeftMenu', isShrink)
-    },
-    chageSaveWarning: (context: ActionContext<State, State>, saveWarning: boolean) => {
-        context.commit('chageSaveWarning', saveWarning)
     }
 }
 

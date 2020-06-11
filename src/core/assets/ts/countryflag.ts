@@ -28,7 +28,7 @@ class CountryFlag {
         Z: this.getEmojiByUnicode(0x1F1FF)
     }
 
-    public getFlayByChar (char: string) {
+    public getFlagByChar (char: string) {
         // check if exist '-'
         const self = this as any
         let countryCode

@@ -37,7 +37,7 @@
                 const localeObj = self.$i18n.messages
                 Object.keys(localeObj).forEach((key) => {
                     newAbleList.push({
-                        flag: `${new CountryFlag().getFlayByChar(localeObj[key].country)}`,
+                        flag: `${new CountryFlag().getFlagByChar(localeObj[key].country)}`,
                         locale: key
                     })
                 })

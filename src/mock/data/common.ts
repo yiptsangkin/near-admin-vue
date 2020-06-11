@@ -1,5 +1,8 @@
 import {ComRespone} from '@corets/type'
 
+const DEFAULT_MALE_AVATAR = `/static/images/common/default_handsome.jpg`
+const DEFAULT_FEMALE_AVATAR = `/static/images/common/default_beauty.jpg`
+
 export const getSendMsg = (req: any): ComRespone => {
     console.log(
         `%c near-admin %c here mock request %c`,
@@ -279,6 +282,29 @@ export const getUserMenu = (req: any): ComRespone => {
             ]
         },
         message: 'get menu list successful',
+        timestamp: new Date().getTime()
+    }
+}
+
+export const getUserInfo = (req: any): ComRespone => {
+    console.log(
+        `%c near-admin %c here mock request %c`,
+        'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+        'background:#dbaf05 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+        'background:transparent'
+    )
+    console.log(`%c ${JSON.stringify(req, null, 4)}`,
+        'color: #dbaf05;')
+    return {
+        code: 0,
+        data: {
+            avatar: DEFAULT_MALE_AVATAR,
+            userName: 'nearyip',
+            role: 'admin',
+            roleName: 'Administrator',
+            gender: 0
+        },
+        message: '获取成功',
         timestamp: new Date().getTime()
     }
 }

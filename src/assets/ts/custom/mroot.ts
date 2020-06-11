@@ -6,13 +6,22 @@ import {mapActions} from 'vuex'
 export default {
     methods: {
         ...mapActions([
-            'changeMenu'
+            'changeMenu',
+            'changeUserInfo'
         ]),
-        async getUserMenu () {
+        getUserMenu () {
             const self = this as any
-            await api.getUserMenu({
+            api.getUserMenu({
                 success (res) {
                     self.changeMenu(res)
+                }
+            })
+        },
+        getUserInfo () {
+            const self = this as any
+            api.getUserInfo({
+                success (res) {
+                    self.changeUserInfo(res)
                 }
             })
         }
@@ -20,5 +29,6 @@ export default {
     created () {
         const self = this as any
         self.getUserMenu()
+        self.getUserInfo()
     }
 }
