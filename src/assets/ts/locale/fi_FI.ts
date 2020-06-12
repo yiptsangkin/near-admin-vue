@@ -2,7 +2,7 @@ export default {
     locale: 'fi',
     country: 'FI',
     sysInfo: {
-        sysIntro: 'Helppo käyttää käyttöliittymäkehitystä, joka perustuu Vue- ja Ant-suunnitteluun'
+        sysIntro: 'Helppo käyttää käyttöliittymäkehitystä, joka perustuu vue- ja Ant-suunnitteluun'
     },
     loginForm: {
         byAccountBtn: 'Tilin salasanan kirjautuminen',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Peruskyky',
         cpUse: 'Komponenttien käyttö',
         childMenu: {
-            0: 'Kehyksen perusominaisuudet',
-            '0-0': 'Kehystoiminto',
-            '0-0-0': 'Projektin kokoonpano',
-            '0-0-1': 'Etuosan loki',
-            '0-0-2': 'Paikallinen pilkka',
-            '0-0-3': 'globalisaatio',
-            '0-0-4': 'Tietojen sanakirja',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'työkalusarja',
-            '0-0-7': 'Kulunvalvonta',
-            '0-0-8': 'pikanäppäin',
-            '0-1': 'Sivutoiminto',
-            '0-1-0': 'Komponenttisivu',
-            '0-1-1': 'URL-sivu',
-            '0-1-2': 'Ei lupa-sivua',
-            '0-1-3': '404 sivua'
+            0: 'Peruskehys',
+            1: 'Peruskyky',
+            '0-0': 'Vue',
+            '0-1': 'Muurahaissuunnittelu',
+            '1-0': 'Kehystoiminto',
+            '1-0-0': 'Projektin kokoonpano',
+            '1-0-1': 'Etuosan loki',
+            '1-0-2': 'Paikallinen pilkka',
+            '1-0-3': 'globalisaatio',
+            '1-0-4': 'Tietojen sanakirja',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'työkalusarja',
+            '1-0-7': 'Kulunvalvonta',
+            '1-0-8': 'pikanäppäin',
+            '1-1': 'Sivutoiminto',
+            '1-1-0': 'Komponenttisivu',
+            '1-1-1': 'URL-sivu',
+            '1-1-2': 'Ei lupa-sivua',
+            '1-1-3': '404 sivua'
         },
         defaultMenu: {
             home: 'Koti'

@@ -2,7 +2,7 @@ export default {
     locale: 'vi',
     country: 'VN',
     sysInfo: {
-        sysIntro: 'Khung phát triển front-end dễ sử dụng dựa trên Vue và Ant Design'
+        sysIntro: 'Khung phát triển front-end dễ sử dụng dựa trên Vue và Thiết kế kiến'
     },
     loginForm: {
         byAccountBtn: 'Đăng nhập mật khẩu tài khoản',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Khả năng cơ bản',
         cpUse: 'Thành phần sử dụng',
         childMenu: {
-            0: 'Khung khả năng cơ bản',
-            '0-0': 'Chức năng khung',
-            '0-0-0': 'Cấu hình dự án',
-            '0-0-1': 'Nhật ký kết thúc',
-            '0-0-2': 'Mock địa phương',
-            '0-0-3': 'toàn cầu hóa',
-            '0-0-4': 'Từ điển dữ liệu',
-            '0-0-5': 'Sự kiện',
-            '0-0-6': 'Bộ công cụ',
-            '0-0-7': 'Kiểm soát truy cập',
-            '0-0-8': 'chìa khóa nóng',
-            '0-1': 'Chức năng trang',
-            '0-1-0': 'Trang thành phần',
-            '0-1-1': 'trang url',
-            '0-1-2': 'Không có trang cho phép',
-            '0-1-3': '404 trang'
+            0: 'Khung cơ bản',
+            1: 'Khả năng cơ bản',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Chức năng khung',
+            '1-0-0': 'Cấu hình dự án',
+            '1-0-1': 'Nhật ký kết thúc',
+            '1-0-2': 'Mock địa phương',
+            '1-0-3': 'toàn cầu hóa',
+            '1-0-4': 'Từ điển dữ liệu',
+            '1-0-5': 'Sự kiện',
+            '1-0-6': 'Bộ công cụ',
+            '1-0-7': 'Kiểm soát truy cập',
+            '1-0-8': 'chìa khóa nóng',
+            '1-1': 'Chức năng trang',
+            '1-1-0': 'Trang thành phần',
+            '1-1-1': 'trang url',
+            '1-1-2': 'Không có trang cho phép',
+            '1-1-3': '404 trang'
         },
         defaultMenu: {
             home: 'Trang Chủ'

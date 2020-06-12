@@ -2,7 +2,7 @@ export default {
     locale: 'hu',
     country: 'HU',
     sysInfo: {
-        sysIntro: 'Könnyen használható front-end fejlesztési keret, amely a Vue és Ant Design alapú'
+        sysIntro: 'Könnyen használható front-end fejlesztési keret, amely a Vue és Hangya tervezés alapú'
     },
     loginForm: {
         byAccountBtn: 'Fiók jelszó bejelentkezés',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Alapvető képesség',
         cpUse: 'Az alkatrészek használata',
         childMenu: {
-            0: 'Keret alapvető képességek',
-            '0-0': 'Keret funkció',
-            '0-0-0': 'Projekt konfiguráció',
-            '0-0-1': 'Elülső napló',
-            '0-0-2': 'Helyi ál',
-            '0-0-3': 'globalizáció',
-            '0-0-4': 'Adat szótár',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'eszközkészlet',
-            '0-0-7': 'Hozzáférés-szabályozás',
-            '0-0-8': 'gyorsbillentyű',
-            '0-1': 'Oldal funkció',
-            '0-1-0': 'Alkatrész oldal',
-            '0-1-1': 'url oldal',
-            '0-1-2': 'Nincs engedélyezési oldal',
-            '0-1-3': '404 oldal'
+            0: 'Alapvető keret',
+            1: 'Alapvető képesség',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Keret funkció',
+            '1-0-0': 'Projekt konfiguráció',
+            '1-0-1': 'Elülső napló',
+            '1-0-2': 'Helyi ál',
+            '1-0-3': 'globalizáció',
+            '1-0-4': 'Adat szótár',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'eszközkészlet',
+            '1-0-7': 'Hozzáférés-szabályozás',
+            '1-0-8': 'gyorsbillentyű',
+            '1-1': 'Oldal funkció',
+            '1-1-0': 'Alkatrész oldal',
+            '1-1-1': 'url oldal',
+            '1-1-2': 'Nincs engedélyezési oldal',
+            '1-1-3': '404 oldal'
         },
         defaultMenu: {
             home: 'itthon'
@@ -130,7 +133,7 @@ export default {
             affixPageCloseError: 'A rögzített oldal nem zárható be',
             homePageAffixError: 'A honlap nem oldható meg'
         },
-        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a vörös címke oldal tartalma mentésre került-e.)',
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került)',
         cancelClose: 'A zárt művelet megszakítva'
     },
     personalCenter: {
@@ -141,7 +144,7 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Sajnáljuk, a meglátogatott oldal nem létezik',
-            notrightTip: 'Sajnáljuk, de nincs jogosultsága erre az oldalra belépni',
+            notrightTip: 'Sajnáljuk, de nincs engedélyed az oldal elérésére',
             noserviceTip: 'Sajnáljuk, valami nem sikerült a szerverrel, próbálkozzon később újra'
         },
         btnText: 'Bezárja az oldalt'

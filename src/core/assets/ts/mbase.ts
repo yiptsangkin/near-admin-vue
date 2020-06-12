@@ -36,6 +36,7 @@ export default {
         initBusListener (): void {
             const self = this as any
             Bus.$off('windowKeyup').$on('windowKeyup', (e: KeyboardEvent) => {
+                console.log(e)
                 const hotKey = utils.getHotKeyStringList(e)
                 const hotKeyPathObj = HotKeyConfig[hotKey]
                 if (hotKeyPathObj) {

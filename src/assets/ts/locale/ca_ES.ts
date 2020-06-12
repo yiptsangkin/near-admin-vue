@@ -2,7 +2,7 @@ export default {
     locale: 'ca',
     country: 'ES',
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament de front-end fàcil d’utilitzar basat en Vue and Ant Design'
+        sysIntro: 'Un marc de desenvolupament de front-end fàcil d’utilitzar basat en Vue and Disseny de formigues'
     },
     loginForm: {
         byAccountBtn: 'Inici de sessió de la contrasenya del compte',
@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'L&#39;adreça de la sol·licitud no pot estar buida',
-        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més endavant'
+        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més tard'
     },
     localeMap: {
         ar: 'Àrab',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Capacitat bàsica',
         cpUse: 'Ús de components',
         childMenu: {
-            0: 'Capacitats bàsiques del marc',
-            '0-0': 'Funció del fotograma',
-            '0-0-0': 'Configuració del projecte',
-            '0-0-1': 'Registre front-end',
-            '0-0-2': 'Mofa local',
-            '0-0-3': 'globalització',
-            '0-0-4': 'Diccionari de dades',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Conjunt d’eines',
-            '0-0-7': 'Control d&#39;accés',
-            '0-0-8': 'tecla calent',
-            '0-1': 'Funció de pàgina',
-            '0-1-0': 'Pàgina de components',
-            '0-1-1': 'url pàgina',
-            '0-1-2': 'Sense pàgina de permís',
-            '0-1-3': '404 pàgines'
+            0: 'Marc bàsic',
+            1: 'Capacitat bàsica',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Funció del fotograma',
+            '1-0-0': 'Configuració del projecte',
+            '1-0-1': 'Registre front-end',
+            '1-0-2': 'Mofa local',
+            '1-0-3': 'globalització',
+            '1-0-4': 'Diccionari de dades',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Conjunt d’eines',
+            '1-0-7': 'Control d&#39;accés',
+            '1-0-8': 'tecla calent',
+            '1-1': 'Funció de pàgina',
+            '1-1-0': 'Pàgina de components',
+            '1-1-1': 'url pàgina',
+            '1-1-2': 'Sense pàgina de permís',
+            '1-1-3': '404 pàgines'
         },
         defaultMenu: {
             home: 'Inici'

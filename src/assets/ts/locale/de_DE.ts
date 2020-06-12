@@ -2,7 +2,7 @@ export default {
     locale: 'de',
     country: 'DE',
     sysInfo: {
-        sysIntro: 'Ein benutzerfreundliches Front-End-Entwicklungsframework, das auf Vue und Ant Design basiert'
+        sysIntro: 'Ein benutzerfreundliches Front-End-Entwicklungsframework, das auf Vue und Ameisendesign basiert'
     },
     loginForm: {
         byAccountBtn: 'Konto Passwort Login',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Grundlegende Fähigkeit',
         cpUse: 'Verwendung von Komponenten',
         childMenu: {
-            0: 'Grundlegende Framework-Funktionen',
-            '0-0': 'Rahmenfunktion',
-            '0-0-0': 'Projektkonfiguration',
-            '0-0-1': 'Front-End-Protokoll',
-            '0-0-2': 'Lokale Verspottung',
-            '0-0-3': 'Globalisierung',
-            '0-0-4': 'Datenwörterbuch',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Toolset',
-            '0-0-7': 'Zugangskontrolle',
-            '0-0-8': 'Hotkey',
-            '0-1': 'Seitenfunktion',
-            '0-1-0': 'Komponentenseite',
-            '0-1-1': 'URL-Seite',
-            '0-1-2': 'Keine Berechtigungsseite',
-            '0-1-3': '404 Seiten'
+            0: 'Grundgerüst',
+            1: 'Grundlegende Fähigkeit',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Rahmenfunktion',
+            '1-0-0': 'Projektkonfiguration',
+            '1-0-1': 'Front-End-Protokoll',
+            '1-0-2': 'Lokale Verspottung',
+            '1-0-3': 'Globalisierung',
+            '1-0-4': 'Datenwörterbuch',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Zugangskontrolle',
+            '1-0-8': 'Hotkey',
+            '1-1': 'Seitenfunktion',
+            '1-1-0': 'Komponentenseite',
+            '1-1-1': 'URL-Seite',
+            '1-1-2': 'Keine Berechtigungsseite',
+            '1-1-3': '404 Seiten'
         },
         defaultMenu: {
             home: 'Zuhause'

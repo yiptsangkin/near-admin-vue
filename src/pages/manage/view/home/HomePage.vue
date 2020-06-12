@@ -1,5 +1,4 @@
 <template>
-    <a-input v-model="helloworld"></a-input>
 </template>
 
 <script lang="ts">
@@ -9,26 +8,7 @@
 
     export default Vue.extend({
         name: 'HomePage',
-        mixins: [CoreBase, Base],
-        data () {
-            return {
-                helloworld: 'hello'
-            }
-        },
-        methods: {
-            addNewPage () {
-                const self = this as any
-                self.$newpage({
-                    component: 'home/HomePage',
-                    title: 'test'
-                })
-            }
-        },
-        created () {
-            const self = this as any
-            console.log('created again')
-            self.helloworld = 'hi'
-        }
+        mixins: [CoreBase, Base]
     })
 </script>
 

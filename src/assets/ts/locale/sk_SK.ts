@@ -2,7 +2,7 @@ export default {
     locale: 'sk',
     country: 'SK',
     sysInfo: {
-        sysIntro: 'Ľahko použiteľný front-end vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Ľahko použiteľný front-end vývojový rámec založený na Vue a Mravec dizajn'
     },
     loginForm: {
         byAccountBtn: 'Prihlasovacie heslo účtu',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Základné schopnosti',
         cpUse: 'Použitie komponentov',
         childMenu: {
-            0: 'Rámcové základné schopnosti',
-            '0-0': 'Funkcia rámu',
-            '0-0-0': 'Konfigurácia projektu',
-            '0-0-1': 'Protokol front-end',
-            '0-0-2': 'Miestne falošné',
-            '0-0-3': 'globalizácia',
-            '0-0-4': 'Dátový slovník',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'sada nástrojov',
-            '0-0-7': 'Riadenie prístupu',
-            '0-0-8': 'klávesová skratka',
-            '0-1': 'Funkcia stránky',
-            '0-1-0': 'Komponentová stránka',
-            '0-1-1': 'url',
-            '0-1-2': 'Stránka bez povolenia',
-            '0-1-3': '404 strán'
+            0: 'Základný rámec',
+            1: 'Základné schopnosti',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Funkcia rámu',
+            '1-0-0': 'Konfigurácia projektu',
+            '1-0-1': 'Protokol front-end',
+            '1-0-2': 'Miestne falošné',
+            '1-0-3': 'globalizácia',
+            '1-0-4': 'Dátový slovník',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'sada nástrojov',
+            '1-0-7': 'Riadenie prístupu',
+            '1-0-8': 'klávesová skratka',
+            '1-1': 'Funkcia stránky',
+            '1-1-0': 'Komponentová stránka',
+            '1-1-1': 'url',
+            '1-1-2': 'Stránka bez povolenia',
+            '1-1-3': '404 strán'
         },
         defaultMenu: {
             home: 'Domov'

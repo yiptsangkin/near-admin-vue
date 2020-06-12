@@ -4,7 +4,15 @@
             <a-icon type="global" class="n-locale-icon"/>
             <a-menu slot="overlay" @click="pickLocale" class="n-lang-menu" v-model="currentSelectedKeys">
                 <a-menu-item v-for="(item, index) in ableLocaleList" :key="item.locale">
-                    <a target="_blank" rel="noopener noreferrer">{{ item.flag }} {{ ableLocaleMap[item.locale].localeMap[item.locale] }}</a>
+                    <a target="_blank" rel="noopener noreferrer">
+                        <template v-if="deviceInfo !== 'Windows'">
+                            <span class="n-lang-flag">{{ item.flag }}</span>
+                        </template>
+                        <template v-else>
+                            <span class="n-lang-tag">{{ item.locale.toUpperCase() }}</span>
+                        </template>
+                        {{ ableLocaleMap[item.locale].localeMap[item.locale] }}
+                    </a>
                 </a-menu-item>
             </a-menu>
         </a-dropdown>
@@ -15,6 +23,7 @@
     import Vue from 'vue'
     import {mapGetters, mapActions} from 'vuex'
     import CountryFlag from '@corets/countryflag'
+    import utils from '@corets/utils'
 
     interface PickerEvent {
         key: string
@@ -24,7 +33,8 @@
         name: 'NLangPicker',
         data () {
             return {
-                currentSelectedKeys: []
+                currentSelectedKeys: [],
+                deviceInfo: utils.getDeviceInfo('machine')
             }
         },
         computed: {
@@ -70,5 +80,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '~@scss/custom/auth/component/langpicker.scss';
+    @import '~@corescss/auth/langpicker.scss';
 </style>

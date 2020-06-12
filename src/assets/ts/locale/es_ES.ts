@@ -2,7 +2,7 @@ export default {
     locale: 'es',
     country: 'ES',
     sysInfo: {
-        sysIntro: 'Un marco de desarrollo front-end fácil de usar basado en Vue y Ant Design'
+        sysIntro: 'Un marco de desarrollo front-end fácil de usar basado en Vue y Diseño de hormigas'
     },
     loginForm: {
         byAccountBtn: 'Inicio de sesión con contraseña de cuenta',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Habilidad básica',
         cpUse: 'Uso de componentes',
         childMenu: {
-            0: 'Capacidades básicas del marco',
-            '0-0': 'Función de marco',
-            '0-0-0': 'Configuración del proyecto',
-            '0-0-1': 'Registro de front-end',
-            '0-0-2': 'Simulacro local',
-            '0-0-3': 'globalización',
-            '0-0-4': 'Diccionario de datos',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Conjunto de herramientas',
-            '0-0-7': 'Control de acceso',
-            '0-0-8': 'tecla de acceso rápido',
-            '0-1': 'Función de página',
-            '0-1-0': 'Página componente',
-            '0-1-1': 'página de url',
-            '0-1-2': 'Página sin permiso',
-            '0-1-3': '404 páginas'
+            0: 'Marco básico',
+            1: 'Habilidad básica',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Función de marco',
+            '1-0-0': 'Configuración del proyecto',
+            '1-0-1': 'Registro de front-end',
+            '1-0-2': 'Simulacro local',
+            '1-0-3': 'globalización',
+            '1-0-4': 'Diccionario de datos',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Conjunto de herramientas',
+            '1-0-7': 'Control de acceso',
+            '1-0-8': 'tecla de acceso rápido',
+            '1-1': 'Función de página',
+            '1-1-0': 'Página componente',
+            '1-1-1': 'página de url',
+            '1-1-2': 'Página sin permiso',
+            '1-1-3': '404 páginas'
         },
         defaultMenu: {
             home: 'Casa'
@@ -130,7 +133,7 @@ export default {
             affixPageCloseError: 'No se permite cerrar la página fija',
             homePageAffixError: 'La página de inicio no se puede desanclar'
         },
-        checkSave: '¿Quieres cerrar la página?(Asegúrese de que se haya guardado el contenido de la página de etiqueta roja)',
+        checkSave: '¿Quieres cerrar la página?(Asegúrese de que el contenido de la página de etiqueta roja se haya guardado)',
         cancelClose: 'Operación cerrada cancelada'
     },
     personalCenter: {

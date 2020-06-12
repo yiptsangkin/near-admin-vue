@@ -63,11 +63,12 @@
                                         password
                                     },
                                     success: (res: any) => {
-                                        self.$message.success(self.$t(dict.localeObj.loginForm.loginSuccess) as string)
-                                        const timer = setTimeout(() => {
+                                        self.$message.success(
+                                            self.$t(dict.localeObj.loginForm.loginSuccess) as string,
+                                            2
+                                        ).then(() => {
                                             self.toManage()
-                                            clearTimeout(timer)
-                                        }, 2000)
+                                        })
                                     },
                                     fail: (res: any) => {
                                         self.$message.error(res.message)
@@ -81,11 +82,12 @@
                                         validCode: formDetail[0].validCode
                                     },
                                     success: (res: any) => {
-                                        self.$message.success(self.$t(dict.localeObj.loginForm.loginSuccess) as string)
-                                        const timer = setTimeout( () => {
+                                        self.$message.success(
+                                            self.$t(dict.localeObj.loginForm.loginSuccess) as string,
+                                            2
+                                        ).then(() => {
                                             self.toManage()
-                                            clearTimeout(timer)
-                                        }, 2000)
+                                        })
                                     },
                                     fail: (res: any) => {
                                         self.$message.error(res.message)

@@ -2,7 +2,7 @@ export default {
     locale: 'et',
     country: 'EE',
     sysInfo: {
-        sysIntro: 'Vue ja Ant Designil põhinev hõlpsasti kasutatav esiotsa arendusraamistik'
+        sysIntro: 'Vue ja Sipelgakujundusil põhinev hõlpsasti kasutatav esiotsa arendusraamistik'
     },
     loginForm: {
         byAccountBtn: 'Konto parooli sisselogimine',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Põhivõime',
         cpUse: 'Komponentide kasutamine',
         childMenu: {
-            0: 'Raami põhilised võimalused',
-            '0-0': 'Raami funktsioon',
-            '0-0-0': 'Projekti konfiguratsioon',
-            '0-0-1': 'Esiosa logi',
-            '0-0-2': 'Kohalik pilk',
-            '0-0-3': 'globaliseerumine',
-            '0-0-4': 'Andmesõnastik',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Tööriistakomplekt',
-            '0-0-7': 'Juurdepääsu kontroll',
-            '0-0-8': 'kiirklahv',
-            '0-1': 'Lehe funktsioon',
-            '0-1-0': 'Komponentide leht',
-            '0-1-1': 'url leht',
-            '0-1-2': 'Lubade leht puudub',
-            '0-1-3': '404 lk'
+            0: 'Põhiraamistik',
+            1: 'Põhivõime',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Raami funktsioon',
+            '1-0-0': 'Projekti konfiguratsioon',
+            '1-0-1': 'Esiosa logi',
+            '1-0-2': 'Kohalik pilk',
+            '1-0-3': 'globaliseerumine',
+            '1-0-4': 'Andmesõnastik',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Tööriistakomplekt',
+            '1-0-7': 'Juurdepääsu kontroll',
+            '1-0-8': 'kiirklahv',
+            '1-1': 'Lehe funktsioon',
+            '1-1-0': 'Komponentide leht',
+            '1-1-1': 'url leht',
+            '1-1-2': 'Lubade leht puudub',
+            '1-1-3': '404 lk'
         },
         defaultMenu: {
             home: 'Kodu'

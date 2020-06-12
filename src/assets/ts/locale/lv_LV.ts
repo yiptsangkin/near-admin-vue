@@ -2,7 +2,7 @@ export default {
     locale: 'lv',
     country: 'LV',
     sysInfo: {
-        sysIntro: 'Viegli lietojams priekšplāna izstrādes ietvars, kas balstīts uz Vue un Ant Design'
+        sysIntro: 'Viegli lietojams priekšplāna izstrādes ietvars, kas balstīts uz Vue un Skudru dizains'
     },
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Pamata spējas',
         cpUse: 'Komponentu lietošana',
         childMenu: {
-            0: 'Ietvara pamata iespējas',
-            '0-0': 'Rāmja funkcija',
-            '0-0-0': 'Projekta konfigurācija',
-            '0-0-1': 'Sākuma žurnāls',
-            '0-0-2': 'Vietējie izspēles',
-            '0-0-3': 'globalizācija',
-            '0-0-4': 'Datu vārdnīca',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Rīku komplekts',
-            '0-0-7': 'Piekļuves kontrole',
-            '0-0-8': 'karstais taustiņš',
-            '0-1': 'Lapas funkcija',
-            '0-1-0': 'Komponentu lapa',
-            '0-1-1': 'url lapa',
-            '0-1-2': 'Nav atļauju lapas',
-            '0-1-3': '404 lpp'
+            0: 'Pamata ietvars',
+            1: 'Pamata spējas',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Rāmja funkcija',
+            '1-0-0': 'Projekta konfigurācija',
+            '1-0-1': 'Sākuma žurnāls',
+            '1-0-2': 'Vietējie izspēles',
+            '1-0-3': 'globalizācija',
+            '1-0-4': 'Datu vārdnīca',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Rīku komplekts',
+            '1-0-7': 'Piekļuves kontrole',
+            '1-0-8': 'karstais taustiņš',
+            '1-1': 'Lapas funkcija',
+            '1-1-0': 'Komponentu lapa',
+            '1-1-1': 'url lapa',
+            '1-1-2': 'Nav atļauju lapas',
+            '1-1-3': '404 lpp'
         },
         defaultMenu: {
             home: 'Mājas'

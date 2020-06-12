@@ -2,7 +2,7 @@ export default {
     locale: 'it',
     country: 'IT',
     sysInfo: {
-        sysIntro: 'Un framework di sviluppo front-end di facile utilizzo basato su Vue e Ant Design'
+        sysIntro: 'Un framework di sviluppo front-end di facile utilizzo basato su Vue e Design della formica'
     },
     loginForm: {
         byAccountBtn: 'Login password account',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Abilità di base',
         cpUse: 'Uso dei componenti',
         childMenu: {
-            0: 'Funzionalità di base del framework',
-            '0-0': 'Funzione frame',
-            '0-0-0': 'Configurazione del progetto',
-            '0-0-1': 'Registro front-end',
-            '0-0-2': 'Derisione locale',
-            '0-0-3': 'globalizzazione',
-            '0-0-4': 'Dizionario dei dati',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Set di attrezzi',
-            '0-0-7': 'Controllo di accesso',
-            '0-0-8': 'tasto di scelta rapida',
-            '0-1': 'Funzione di pagina',
-            '0-1-0': 'Pagina dei componenti',
-            '0-1-1': 'pagina URL',
-            '0-1-2': 'Nessuna pagina di autorizzazione',
-            '0-1-3': '404 pagine'
+            0: 'Quadro di base',
+            1: 'Abilità di base',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Funzione frame',
+            '1-0-0': 'Configurazione del progetto',
+            '1-0-1': 'Registro front-end',
+            '1-0-2': 'Derisione locale',
+            '1-0-3': 'globalizzazione',
+            '1-0-4': 'Dizionario dei dati',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Set di attrezzi',
+            '1-0-7': 'Controllo di accesso',
+            '1-0-8': 'tasto di scelta rapida',
+            '1-1': 'Funzione di pagina',
+            '1-1-0': 'Pagina dei componenti',
+            '1-1-1': 'pagina URL',
+            '1-1-2': 'Nessuna pagina di autorizzazione',
+            '1-1-3': '404 pagine'
         },
         defaultMenu: {
             home: 'Casa'

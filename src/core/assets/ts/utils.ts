@@ -380,6 +380,70 @@ const getFirstComponentChild = (children: any) => {
     }
 }
 
+const getDeviceInfo = (qt: 'browser' | 'machine') => {
+    const userAgent = window.navigator.userAgent
+    if (qt === 'browser') {
+        const isOpera = userAgent.indexOf('Opera') > -1
+        const isIE = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1 && !isOpera
+        const isFF = userAgent.indexOf('Firefox') > -1
+        const isSafari = userAgent.indexOf('Safari') > -1
+        const isChrome = userAgent.indexOf('Chrome') > -1
+        const isEdge = userAgent.indexOf('Edge') > -1
+        if (isIE) {
+            const reIE = new RegExp('MSIE (\\d+\\.\\d+);')
+            reIE.test(userAgent)
+            const ieVersion = parseFloat(RegExp.$1)
+            return `IE${ieVersion}`
+        } else if (isFF) {
+            return 'Firefox'
+        } else if (isOpera) {
+            return 'Opera'
+        } else if (isChrome) {
+            return 'Chrome'
+        } else if (isEdge) {
+            return 'Edge'
+        } else if (isSafari) {
+            return 'Safari'
+        } else {
+            return 'Unknown'
+        }
+    } else if (qt === 'machine') {
+        const isAndroid = userAgent.indexOf('Android') > -1
+        const isIphone = userAgent.indexOf('iPhone') > -1
+        const isIpad = userAgent.indexOf('iPad') > -1
+        const isMac = /macintosh|mac os x/i.test(userAgent)
+        const isWindows = userAgent.indexOf('win64') >= 0 || userAgent.indexOf('wow64') >= 0
+        if (isAndroid) {
+            return 'Android'
+        } else if (isIphone) {
+            return 'Iphone'
+        } else if (isIpad) {
+            return 'Ipad'
+        } else if (isMac) {
+            return 'OSX'
+        } else if (isWindows) {
+            return 'Windows'
+        } else {
+            return 'Unknown'
+        }
+    } else {
+        console.warn('no match query type')
+    }
+}
+
+const fullScreenCtl = (tp: boolean) => {
+    const ele = document.documentElement
+    if (tp) {
+        if (ele.requestFullscreen) {
+            ele.requestFullscreen()
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen()
+        }
+    }
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -392,5 +456,7 @@ export default {
     isRegExp,
     arrayRemove,
     getFirstComponentChild,
-    isEmpty
+    isEmpty,
+    getDeviceInfo,
+    fullScreenCtl
 }

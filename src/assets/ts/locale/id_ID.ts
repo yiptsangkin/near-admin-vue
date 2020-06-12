@@ -2,7 +2,7 @@ export default {
     locale: 'id',
     country: 'ID',
     sysInfo: {
-        sysIntro: 'Kerangka pengembangan front-end yang mudah digunakan berdasarkan Vue dan Ant Design'
+        sysIntro: 'Kerangka pengembangan front-end yang mudah digunakan berdasarkan Vue dan Desain Semut'
     },
     loginForm: {
         byAccountBtn: 'Login kata sandi akun',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Kemampuan dasar',
         cpUse: 'Penggunaan komponen',
         childMenu: {
-            0: 'Kerangka kerja kemampuan dasar',
-            '0-0': 'Fungsi bingkai',
-            '0-0-0': 'Konfigurasi proyek',
-            '0-0-1': 'Log front-end',
-            '0-0-2': 'Tiruan lokal',
-            '0-0-3': 'globalisasi',
-            '0-0-4': 'Kamus data',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Toolset',
-            '0-0-7': 'Kontrol akses',
-            '0-0-8': 'kunci panas',
-            '0-1': 'Fungsi halaman',
-            '0-1-0': 'Halaman komponen',
-            '0-1-1': 'halaman url',
-            '0-1-2': 'Tidak ada halaman izin',
-            '0-1-3': '404 halaman'
+            0: 'Kerangka dasar',
+            1: 'Kemampuan dasar',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Fungsi bingkai',
+            '1-0-0': 'Konfigurasi proyek',
+            '1-0-1': 'Log front-end',
+            '1-0-2': 'Tiruan lokal',
+            '1-0-3': 'globalisasi',
+            '1-0-4': 'Kamus data',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Kontrol akses',
+            '1-0-8': 'kunci panas',
+            '1-1': 'Fungsi halaman',
+            '1-1-0': 'Halaman komponen',
+            '1-1-1': 'halaman url',
+            '1-1-2': 'Tidak ada halaman izin',
+            '1-1-3': '404 halaman'
         },
         defaultMenu: {
             home: 'Rumah'

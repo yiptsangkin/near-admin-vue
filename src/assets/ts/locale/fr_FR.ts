@@ -2,7 +2,7 @@ export default {
     locale: 'fr',
     country: 'FR',
     sysInfo: {
-        sysIntro: 'Un framework de développement frontal facile à utiliser basé sur Vue et Ant Design'
+        sysIntro: 'Un framework de développement frontal facile à utiliser basé sur Vue et Conception de fourmi'
     },
     loginForm: {
         byAccountBtn: 'Connexion au mot de passe du compte',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Capacité de base',
         cpUse: 'Utilisation des composants',
         childMenu: {
-            0: 'Fonctionnalités de base du framework',
-            '0-0': 'Fonction de trame',
-            '0-0-0': 'Configuration du projet',
-            '0-0-1': 'Journal frontal',
-            '0-0-2': 'Maquette locale',
-            '0-0-3': 'mondialisation',
-            '0-0-4': 'Dictionnaire de données',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Jeu d&#39;outils',
-            '0-0-7': 'Contrôle d&#39;accès',
-            '0-0-8': 'touche de raccourci',
-            '0-1': 'Fonction de page',
-            '0-1-0': 'Page de composant',
-            '0-1-1': 'page d&#39;url',
-            '0-1-2': 'Aucune page d&#39;autorisation',
-            '0-1-3': '404 pages'
+            0: 'Cadre de base',
+            1: 'Capacité de base',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Fonction de trame',
+            '1-0-0': 'Configuration du projet',
+            '1-0-1': 'Journal frontal',
+            '1-0-2': 'Maquette locale',
+            '1-0-3': 'mondialisation',
+            '1-0-4': 'Dictionnaire de données',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Jeu d&#39;outils',
+            '1-0-7': 'Contrôle d&#39;accès',
+            '1-0-8': 'touche de raccourci',
+            '1-1': 'Fonction de page',
+            '1-1-0': 'Page de composant',
+            '1-1-1': 'page d&#39;url',
+            '1-1-2': 'Aucune page d&#39;autorisation',
+            '1-1-3': '404 pages'
         },
         defaultMenu: {
             home: 'Accueil'
@@ -141,7 +144,7 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Désolé, la page que vous avez visitée n&#39;existe pas',
-            notrightTip: 'Désolé, vous n&#39;avez pas la permission d&#39;accéder à cette page',
+            notrightTip: 'Désolé, vous n&#39;êtes pas autorisé à accéder à cette page',
             noserviceTip: 'Désolé, un problème est survenu avec le serveur, veuillez réessayer plus tard'
         },
         btnText: 'Fermer la page'

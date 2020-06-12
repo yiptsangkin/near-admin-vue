@@ -152,6 +152,7 @@ const vueConfig = {
             .set('@scss', path.resolve('src/assets/scss'))
             .set('@corescss', path.resolve('src/core/assets/scss'))
             .set('@font', path.resolve('src/assets/font'))
+            .set('@corestore', path.resolve('src/core/store'))
     },
     pwa: {
         iconPaths: {

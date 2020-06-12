@@ -2,7 +2,7 @@ export default {
     locale: 'nl',
     country: 'NL',
     sysInfo: {
-        sysIntro: 'Een eenvoudig te gebruiken front-end ontwikkelraamwerk gebaseerd op Vue en Ant Design'
+        sysIntro: 'Een eenvoudig te gebruiken front-end ontwikkelraamwerk gebaseerd op Vue en Mier ontwerp'
     },
     loginForm: {
         byAccountBtn: 'Account wachtwoord login',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Basisvaardigheid',
         cpUse: 'Gebruik van componenten',
         childMenu: {
-            0: 'Framework basismogelijkheden',
-            '0-0': 'Frame functie',
-            '0-0-0': 'Projectconfiguratie',
-            '0-0-1': 'Front-end logboek',
-            '0-0-2': 'Lokale mock',
-            '0-0-3': 'globalisering',
-            '0-0-4': 'Data woordenboek',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Toolset',
-            '0-0-7': 'Toegangscontrole',
-            '0-0-8': 'sneltoets',
-            '0-1': 'Paginafunctie',
-            '0-1-0': 'Component pagina',
-            '0-1-1': 'url pagina',
-            '0-1-2': 'Geen toestemmingspagina',
-            '0-1-3': '404 pagina&#39;s'
+            0: 'Basiskader',
+            1: 'Basisvaardigheid',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Frame functie',
+            '1-0-0': 'Projectconfiguratie',
+            '1-0-1': 'Front-end logboek',
+            '1-0-2': 'Lokale mock',
+            '1-0-3': 'globalisering',
+            '1-0-4': 'Data woordenboek',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Toegangscontrole',
+            '1-0-8': 'sneltoets',
+            '1-1': 'Paginafunctie',
+            '1-1-0': 'Component pagina',
+            '1-1-1': 'url pagina',
+            '1-1-2': 'Geen toestemmingspagina',
+            '1-1-3': '404 pagina&#39;s'
         },
         defaultMenu: {
             home: 'Huis'

@@ -51,6 +51,9 @@
       ],
       "@font/*": [
         "src/assets/font/*"
+      ],
+      "@corestore/*": [
+        "src/core/store/*"
       ]
     },
     "lib": [

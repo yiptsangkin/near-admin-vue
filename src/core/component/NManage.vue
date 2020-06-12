@@ -112,13 +112,6 @@
             }
         },
         watch: {
-            curTagList () {
-                const self = this as any
-                // watch curTagList, if switch isCache is on, then cache the tagList
-                if (comConfig.buildSwitch.isCache) {
-                    localStorage.setItem('nearAdminTagList', JSON.stringify(self.curTagList))
-                }
-            },
             curTagIndex () {
                 const self = this as any
                 // watch curTagIndex, if switch isCache is on, then cache the curTagIndex

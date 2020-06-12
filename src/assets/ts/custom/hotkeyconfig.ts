@@ -39,6 +39,14 @@ const hotkeyconfig: HotKeyConfig = {
                 method: 'showExportSuccess'
             }
         ]
+    },
+    esc: {
+        '*': [
+            {
+                name: `change full screen status 'Esc' event`,
+                method: 'setFullScreen',
+            }
+        ]
     }
 }
 

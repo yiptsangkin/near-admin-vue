@@ -116,7 +116,7 @@
           ])
         },
         watch: {
-            defaultIndexs (n, o) {
+            defaultIndexs (n) {
                 const self = this as any
                 if (!n || !n[0] || typeof n[0] !== 'string') {
                     // check if have value
@@ -126,10 +126,7 @@
                 const notFromMenuReg = /@bytag@/g
                 const isNotFromMenu = notFromMenuReg.test(n)
                 n[0] = n[0].replace('@bytag@', '')
-                const paramsSplitList = n[0].split('@longgap@')
-                const path = paramsSplitList[0]
-                const pathSplitList = path.split('@gap@')
-                const cpIndex = pathSplitList[0]
+                const cpIndex = n[0]
                 const existMenu = self.$el.querySelector(`li[nav-index="${cpIndex}"]`)
 
                 // check if side menu exist index
@@ -147,15 +144,7 @@
                             pk: cpIndex
                         } as CpInfo)
                     }
-                } else if (cpIndex !== '-1') {
-                    // not homepage
-                    const apiParams = utils.decodeParams(paramsSplitList[1] || '')
-                    console.log('api create')
-                } else {
-                    // homepage
-                    console.log('to homepage')
                 }
-
             }
         },
         methods: {

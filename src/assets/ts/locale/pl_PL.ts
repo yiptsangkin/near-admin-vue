@@ -2,7 +2,7 @@ export default {
     locale: 'pl',
     country: 'PL',
     sysInfo: {
-        sysIntro: 'Łatwy w użyciu front-end framework programistyczny oparty na Vue i Ant Design'
+        sysIntro: 'Łatwy w użyciu front-end framework programistyczny oparty na Vue i Projekt mrówki'
     },
     loginForm: {
         byAccountBtn: 'Hasło logowania do konta',
@@ -91,22 +91,25 @@ export default {
         basicFeature: 'Podstawowa umiejętność',
         cpUse: 'Wykorzystanie komponentu',
         childMenu: {
-            0: 'Podstawowe możliwości środowiska',
-            '0-0': 'Funkcja ramki',
-            '0-0-0': 'Konfiguracja projektu',
-            '0-0-1': 'Dziennik front-end',
-            '0-0-2': 'Lokalna makieta',
-            '0-0-3': 'globalizacja',
-            '0-0-4': 'Słownik danych',
-            '0-0-5': 'EventBus',
-            '0-0-6': 'Zestaw narzędzi',
-            '0-0-7': 'Kontrola dostępu',
-            '0-0-8': 'Klawisz skrótu',
-            '0-1': 'Funkcja strony',
-            '0-1-0': 'Strona komponentu',
-            '0-1-1': 'strona URL',
-            '0-1-2': 'Brak strony zezwolenia',
-            '0-1-3': '404 strony'
+            0: 'Podstawowe ramy',
+            1: 'Podstawowa umiejętność',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Funkcja ramki',
+            '1-0-0': 'Konfiguracja projektu',
+            '1-0-1': 'Dziennik front-end',
+            '1-0-2': 'Lokalna makieta',
+            '1-0-3': 'globalizacja',
+            '1-0-4': 'Słownik danych',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Zestaw narzędzi',
+            '1-0-7': 'Kontrola dostępu',
+            '1-0-8': 'Klawisz skrótu',
+            '1-1': 'Funkcja strony',
+            '1-1-0': 'Strona komponentu',
+            '1-1-1': 'strona URL',
+            '1-1-2': 'Brak strony zezwolenia',
+            '1-1-3': '404 strony'
         },
         defaultMenu: {
             home: 'Dom'

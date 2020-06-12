@@ -136,6 +136,7 @@ export interface CpInfo {
     params?: CpParams,
     isUrl?: boolean,
     pk?: string | number | boolean,
+    breadList?: any[]
 }
 
 export interface ClosePageOpt {
