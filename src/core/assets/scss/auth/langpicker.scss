@@ -1,0 +1,32 @@
+@import "~@scss/custom/theme/theme.scss";
+
+.n-global-locale{
+  text-align: right;
+  .n-locale-icon{
+    font-size: 16px;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.n-lang-menu{
+  height: 240px;
+  overflow-y: auto;
+  .n-lang-tag{
+    display: inline-block;
+    min-width: 28px;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 6px;
+    border-radius: 2px;
+    color: $grey-f;
+    text-align: center;
+    background-color: $primary-color;
+    font-size: 11px;
+    margin-right: 6px;
+  }
+  .n-lang-flag{
+    display: inline-block;
+    margin-right: 6px;
+  }
+}
