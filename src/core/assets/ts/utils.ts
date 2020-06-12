@@ -89,7 +89,7 @@ const getHotKeyStringList = (e: KeyboardEvent): string => {
             keyStringList.push(item.name)
         }
     })
-    keyStringList.push(e.key)
+    keyStringList.push(e.key.toLowerCase())
     return keyStringList.join('+')
 }
 

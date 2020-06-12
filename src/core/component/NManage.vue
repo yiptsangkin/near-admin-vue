@@ -29,7 +29,8 @@
     // @ts-nocheck
 
     import Vue from 'vue'
-    import ManageBase from '@corets/mbase'
+    import CoreManageBase from '@corets/mbase'
+    import ManageBase from '@custom/mbase'
     import NAside from '@corecp/NAside.vue'
     import NHeader from '@corecp/NHeader.vue'
     import NTag from '@corecp/NTag.vue'
@@ -45,7 +46,7 @@
 
     export default Vue.extend({
         name: 'NManage',
-        mixins: [ManageBase],
+        mixins: [CoreManageBase, ManageBase],
         components: {
             NAside,
             NHeader,

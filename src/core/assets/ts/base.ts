@@ -12,5 +12,13 @@ export default {
         return {
             dict
         }
+    },
+    methods: {
+        triggerEvent (methodName, params, hotKey): void {
+            const self = this as any
+            if (self[methodName]) {
+                self[methodName](params, hotKey)
+            }
+        }
     }
 }

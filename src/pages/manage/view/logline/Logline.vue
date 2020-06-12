@@ -12,6 +12,11 @@
         data () {
             return {
             }
+        },
+        methods: {
+            exportLog () {
+                console.log('to export log file')
+            }
         }
     })
 </script>

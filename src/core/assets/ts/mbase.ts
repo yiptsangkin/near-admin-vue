@@ -1,8 +1,8 @@
 // @ts-nocheck
 import utils from './utils'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import Bus from '@corets/eventbus';
-import HotKeyConfig from '@corets/type';
+import hotKeyConfig from '@custom/hotkeyconfig';
 
 export default {
     created () {
@@ -27,23 +27,18 @@ export default {
                 self.initBusListener()
             }
         },
-        triggerEvent (methodName, params, hotKey): void {
-            const self = this as any
-            if (self[methodName]) {
-                self[methodName](params, hotKey)
-            }
-        },
         initBusListener (): void {
             const self = this as any
             Bus.$off('windowKeyup').$on('windowKeyup', (e: KeyboardEvent) => {
-                console.log(e)
                 const hotKey = utils.getHotKeyStringList(e)
-                const hotKeyPathObj = HotKeyConfig[hotKey]
+                const hotKeyPathObj = hotKeyConfig[hotKey]
+                const activeCp = self.$refs['active-cp']
                 if (hotKeyPathObj) {
                     const hotKeyWildcardList = hotKeyPathObj['*'] || []
-                    const hotKeyEventList = hotKeyWildcardList.concat(hotKeyPathObj[self.pagePath] || [])
-                    hotKeyEventList.forEach((item) => {
-                        self.triggerEvent(item.method, item.params, hotKey)
+                    const hotKeyPageList = hotKeyPathObj[activeCp.pagePath] || []
+                    const allHotKeyList = hotKeyWildcardList.concat(hotKeyPageList)
+                    allHotKeyList.forEach((item) => {
+                        activeCp.triggerEvent(item.method, item.params, hotKey)
                     })
                 }
             })
