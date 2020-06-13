@@ -99,7 +99,6 @@
             setFullScreen() {
                 const self = this as any
                 utils.fullScreenCtl(!self.isFullScreen)
-                self.changeFullScreen(!self.isFullScreen)
             }
         }
     });

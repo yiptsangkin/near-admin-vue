@@ -13,10 +13,14 @@ export default {
         ...mapGetters([
             'locale',
             'gloablLocale',
-            'comConfig'
+            'comConfig',
+            'isFullScreen'
         ])
     },
     methods: {
+        ...mapActions([
+           'changeFullScreen'
+        ]),
         bindHotKeyEvent (): void {
             const self = this as any
             if (self.comConfig.buildSwitch.isHotKey) {
@@ -24,11 +28,16 @@ export default {
                     e.preventDefault()
                     Bus.$emit('windowKeyup', e)
                 }
-                self.initBusListener()
             }
+        },
+        bindResizeEvent (): void {
+          window.onresize = (e: Event) => {
+              Bus.$emit('windowResize')
+          }
         },
         initBusListener (): void {
             const self = this as any
+            // listen key up event
             Bus.$off('windowKeyup').$on('windowKeyup', (e: KeyboardEvent) => {
                 const hotKey = utils.getHotKeyStringList(e)
                 const hotKeyPathObj = hotKeyConfig[hotKey]
@@ -42,10 +51,16 @@ export default {
                     })
                 }
             })
+            // listen resize event
+            Bus.$off('windowResize').$on('windowResize', (e: KeyboardEvent) => {
+                self.changeFullScreen(!self.isFullScreen)
+            })
         }
     },
     mounted () {
         const self = this as any
         self.bindHotKeyEvent()
+        self.initBusListener()
+        self.bindResizeEvent()
     }
 }
