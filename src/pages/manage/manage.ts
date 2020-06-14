@@ -21,7 +21,8 @@ import {
     Input,
     Dropdown,
     Modal,
-    Button
+    Button,
+    Breadcrumb
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -45,6 +46,8 @@ Vue.component(Menu.SubMenu.name, Menu.SubMenu)
 Vue.component(Input.name, Input)
 Vue.component(Dropdown.name, Dropdown)
 Vue.component(Button.name, Button)
+Vue.component(Breadcrumb.name, Breadcrumb)
+Vue.component(Breadcrumb.Item.name, Breadcrumb.Item)
 
 // here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue
 Vue.use(Modal)

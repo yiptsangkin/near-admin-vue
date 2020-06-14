@@ -111,7 +111,10 @@ export interface ComRespone {
 interface NavList {
     name: string,
     path?: string,
-    icon?: string | object,
+    icon?: string | {
+        value: string,
+        type: 'common' | 'aicon'
+    },
     groupName?: string,
     params?: any,
     child?: NavList[]

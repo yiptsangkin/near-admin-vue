@@ -7,7 +7,17 @@
         <div class="n-header-nav">
             <a-menu mode="horizontal" :selectedKeys="curMenu" @select="changeMenu">
                 <a-menu-item :key="index" v-for="(item, index) in menuObj.menuList">
-                    <a-icon :type="item.icon" v-if="item.icon"/>
+                    <template v-if="(typeof item.icon) === 'string'">
+                        <a-icon :type="item.icon" v-if="item.icon"/>
+                    </template>
+                    <template v-else>
+                        <template v-if="item.icon.type === 'aicon'">
+                            <a-icon :type="item.icon.value" v-if="item.icon.value"/>
+                        </template>
+                        <template v-else>
+                            <span :class="`anticon iconfont ${item.icon.value}`" v-if="item.icon.value"></span>
+                        </template>
+                    </template>
                     {{ $t(item.name) }}
                 </a-menu-item>
             </a-menu>

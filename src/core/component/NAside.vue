@@ -11,14 +11,40 @@
                 <template v-for="(item, index) in (menuObj.menuList[curMenu] ? (menuObj.menuList[curMenu].child || []) : [])">
                     <template v-if="item.child && item.child.length > 0">
                         <a-sub-menu :key="`menu-${index}`" :nav-index="`menu-${index}`">
-                            <span slot="title" :title="$t(item.name)"><a-icon :type="item.icon" v-if="item.icon"/><span>{{ $t(item.name) }}</span></span>
+                            <span slot="title" :title="$t(item.name)">
+                                <template v-if="(typeof item.icon) === 'string'">
+                                    <a-icon :type="item.icon" v-if="item.icon"/>
+                                </template>
+                                <template v-else>
+                                    <template v-if="item.icon.type === 'aicon'">
+                                        <a-icon :type="item.icon.value" v-if="item.icon.value"/>
+                                    </template>
+                                    <template v-else>
+                                        <span :class="`anticon iconfont ${item.icon.value}`" v-if="item.icon.value"></span>
+                                    </template>
+                                </template>
+                                <span>{{ $t(item.name) }}</span>
+                            </span>
                             <!-- if have group name -->
                             <a-menu-item-group v-if="item.groupName" :key="`group-${index}`" :nav-index="`group-${index}`">
                                 <template slot="title"><span>{{ $t(item.groupName) }}</span></template>
                                 <template v-for="(sitem, sindex) in item.child || []">
                                     <template v-if="sitem.child && sitem.child.length > 0">
                                         <a-sub-menu :key="`sub-${index}-${sindex}`" :nav-index="`sub-${index}-${sindex}`">
-                                            <span slot="title" :title="$t(sitem.name)"><a-icon :type="sitem.icon" v-if="sitem.icon"/><span>{{ $t(sitem.name) }}</span></span>
+                                            <span slot="title" :title="$t(sitem.name)">
+                                                <template v-if="(typeof sitem.icon) === 'string'">
+                                                    <a-icon :type="sitem.icon" v-if="sitem.icon"/>
+                                                </template>
+                                                <template v-else>
+                                                    <template v-if="sitem.icon.type === 'aicon'">
+                                                        <a-icon :type="sitem.icon.value" v-if="sitem.icon.value"/>
+                                                    </template>
+                                                    <template v-else>
+                                                        <span :class="`anticon iconfont ${sitem.icon.value}`" v-if="sitem.icon.value"></span>
+                                                    </template>
+                                                </template>
+                                                <span>{{ $t(sitem.name) }}</span>
+                                            </span>
                                             <template v-for="(ssitem, ssindex) in sitem.child || []">
                                                 <a-menu-item
                                                         :key="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
@@ -50,7 +76,20 @@
                                 <template v-for="(sitem, sindex) in item.child || []">
                                     <template v-if="sitem.child && sitem.child.length > 0">
                                         <a-sub-menu :key="`sub-${index}-${sindex}`" :nav-index="`sub-${index}-${sindex}`">
-                                            <span slot="title" :title="$t(sitem.name)"><a-icon :type="sitem.icon" v-if="sitem.icon"/><span>{{ $t(sitem.name) }}</span></span>
+                                            <span slot="title" :title="$t(sitem.name)">
+                                                <template v-if="(typeof sitem.icon) === 'string'">
+                                                    <a-icon :type="sitem.icon" v-if="sitem.icon"/>
+                                                </template>
+                                                <template v-else>
+                                                    <template v-if="sitem.icon.type === 'aicon'">
+                                                        <a-icon :type="sitem.icon.value" v-if="sitem.icon.value"/>
+                                                    </template>
+                                                    <template v-else>
+                                                        <span :class="`anticon iconfont ${sitem.icon.value}`" v-if="sitem.icon.value"></span>
+                                                    </template>
+                                                </template>
+                                                <span>{{ $t(sitem.name) }}</span>
+                                            </span>
                                             <template v-for="(ssitem, ssindex) in sitem.child || []">
                                                 <a-menu-item
                                                         :key="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
@@ -125,8 +164,7 @@
                 // check if click by tag, if true, no need to emit change-cp
                 const notFromMenuReg = /@bytag@/g
                 const isNotFromMenu = notFromMenuReg.test(n)
-                n[0] = n[0].replace('@bytag@', '')
-                const cpIndex = n[0]
+                const cpIndex = n[0].replace('@bytag@', '')
                 const existMenu = self.$el.querySelector(`li[nav-index="${cpIndex}"]`)
 
                 // check if side menu exist index
@@ -141,7 +179,8 @@
                             title: cpTitle,
                             navIndex: cpIndex,
                             params: menuParams || null,
-                            pk: cpIndex
+                            pk: cpIndex,
+                            breadList: self.getBreadList(cpIndex)
                         } as CpInfo)
                     }
                 }
@@ -160,6 +199,23 @@
             changeShrink () {
                 const self = this as any
                 self.changeShrinkLeftMenu(!self.shrinkLeftMenu)
+            },
+            getBreadList (navIndex: string) {
+                const self = this as any
+                const navIndexList = navIndex.split('-sub-')
+                const topMenuIndex = navIndexList[0].split('-')[1]
+                const asideMenuIndexList = navIndexList[1].split('-')
+                const breadList = []
+
+                const topMenuObj = self.menuObj.menuList[topMenuIndex]
+                let temMenuList = topMenuObj.child
+                breadList.push(topMenuObj)
+                asideMenuIndexList.forEach((item, index) => {
+                    const temMenuObj = temMenuList[item]
+                    temMenuList = temMenuObj.child
+                    breadList.push(temMenuObj)
+                })
+                return breadList
             }
         }
     })

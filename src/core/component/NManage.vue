@@ -7,6 +7,7 @@
                 <a-layout-content class="n-layout-content">
                     <n-tag-content-menu @single="singlePage" @refresh="refreshPage" @affix="affixPage"></n-tag-content-menu>
                     <n-tag @change-cp="changeCp"></n-tag>
+                    <n-bread-crumb :cp-bread="curTagList[curTagIndex].breadList" v-if="comConfig.buildSwitch.isBreadCrumb"></n-bread-crumb>
                     <div class="n-component-page">
                         <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
                             <component
@@ -33,12 +34,13 @@
     import ManageBase from '@custom/mbase'
     import NAside from '@corecp/NAside.vue'
     import NHeader from '@corecp/NHeader.vue'
+    import NBreadCrumb from '@corecp/NBreadCrumb.vue'
     import NTag from '@corecp/NTag.vue'
     import NTagContentMenu from '@corecp/./NTagContentMenu.vue'
     import NoRight from '@corecp/NNoRight.vue'
     import NoFound from '@corecp/NNoFound.vue'
     import NKeepAlive from '@corecp/NKeepAlive.vue'
-    import {CacheRouteConfig, CpInfo} from '@corets/type';
+    import {CacheRouteConfig, CpInfo} from '@corets/type'
     import utils from '@corets/utils'
     import {mapActions, mapGetters} from 'vuex'
     import comConfig from '@custom/config'
@@ -52,7 +54,8 @@
             NHeader,
             NTag,
             NKeepAlive,
-            NTagContentMenu
+            NTagContentMenu,
+            NBreadCrumb
         },
         computed: {
             ...mapGetters([

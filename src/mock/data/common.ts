@@ -94,7 +94,7 @@ export const getUserMenu = (req: any): ComRespone => {
                         {
                             name: 'menuObj.childMenu.0',
                             path: '',
-                            icon: '',
+                            icon: 'appstore',
                             child: [
                                 {
                                     name: 'menuObj.childMenu.0-0',
@@ -111,7 +111,7 @@ export const getUserMenu = (req: any): ComRespone => {
                         {
                             name: 'menuObj.childMenu.1',
                             path: '',
-                            icon: '',
+                            icon: 'calculator',
                             child: [
                                 {
                                     name: 'menuObj.childMenu.1-0',
