@@ -66,7 +66,8 @@ export default {
         },
         copyright: {
             githubUrl: 'https://github.com/yiptsangkin/near-admin-vue'
-        }
+        },
+        shrinkThresholdValue: 800
     },
     errorPage: {
         errorTip: {
