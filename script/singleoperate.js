@@ -62,10 +62,32 @@ try {
                 ])
             }
 
+            let clean
+            if (operator === 'build') {
+                clean = await prompts([
+                    {
+                        type: 'select',
+                        name: 'targetClean',
+                        instructions: false,
+                        message: 'Pick clean dist or not',
+                        choices: [
+                            {
+                                title: 'yes',
+                                value: ''
+                            },
+                            {
+                                title: 'no',
+                                value: '--no-clean'
+                            }
+                        ]
+                    }
+                ])
+            }
+
             let cmd
             if (operator === 'build') {
                 envres.targetEnv = envres.targetEnv || 'prod'
-                cmd = `ENTRYS=${entryres.targetEntry.map((e) => {return e}).join(',')} BUILD_ENV=${envres.targetEnv} vue-cli-service build`
+                cmd = `ENTRYS=${entryres.targetEntry.map((e) => {return e}).join(',')} BUILD_ENV=${envres.targetEnv} vue-cli-service build ${clean.targetClean}`
             } else {
                 cmd = `ENTRYS=${entryres.targetEntry.map((e) => {return e}).join(',')} vue-cli-service serve`
             }
