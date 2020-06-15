@@ -23,4 +23,7 @@
 - [Gitter 讨论组](https://gitter.im/near-admin-vue/community)
 - [QQ群(1091431440)](https://jq.qq.com/?_wv=1027&k=NenTtP1C) 入群请备注<<行业+企业+姓名>>
 
+## 答疑
+
+1、为什么是antd而不是element
 
