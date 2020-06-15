@@ -43,7 +43,7 @@ try {
                         type: 'select',
                         name: 'targetEnv',
                         instructions: false,
-                        message: 'Pick target entry',
+                        message: 'Pick target environment',
                         choices: [
                             {
                                 title: 'prod',
