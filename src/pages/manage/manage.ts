@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router/manage'
-import utils from '@corets/utils'
 import store from '@store/index'
 import i18n from '@corets/lang'
 import mock from '@mock/index'

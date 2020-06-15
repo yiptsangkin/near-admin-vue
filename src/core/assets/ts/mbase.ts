@@ -65,13 +65,17 @@ export default {
             })
             // listen window resize
             Bus.$off('windowResize').$on('windowResize', (e: KeyboardEvent) => {
-                const curWidth = window.document.body.clientWidth
-                if (!self.shrinkLeftMenu && curWidth < dict.commonObj.shrinkThresholdValue) {
-                    self.changeShrinkLeftMenu(true)
-                } else if (self.shrinkLeftMenu && curWidth >= dict.commonObj.shrinkThresholdValue) {
-                    self.changeShrinkLeftMenu(false)
-                }
+                self.shrinkCtl()
             })
+        },
+        shrinkCtl () {
+            const self = this as any
+            const curWidth = window.document.body.clientWidth
+            if (!self.shrinkLeftMenu && curWidth < dict.commonObj.shrinkThresholdValue) {
+                self.changeShrinkLeftMenu(true)
+            } else if (self.shrinkLeftMenu && curWidth >= dict.commonObj.shrinkThresholdValue) {
+                self.changeShrinkLeftMenu(false)
+            }
         }
     },
     mounted () {
@@ -79,6 +83,7 @@ export default {
         self.bindHotKeyEvent()
         self.bindResizeEvent()
         self.bindScreenEvent()
+        self.shrinkCtl()
         self.initBusListener()
     }
 }
