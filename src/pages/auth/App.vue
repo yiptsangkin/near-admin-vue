@@ -21,5 +21,5 @@
 </style>
 
 <style lang="scss">
-    @import '~@scss/custom/index.scss';
+    @import '~@scss/custom/index.scss'
 </style>

@@ -80,5 +80,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '~@corescss/auth/langpicker.scss';
+    @import '~@corescss/auth/langpicker.scss'
 </style>

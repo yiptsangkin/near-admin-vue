@@ -44,5 +44,5 @@
 </script>
 
 <style scoped lang="scss">
-    @import '~@scss/custom/auth/login.scss';
+    @import '~@scss/custom/auth/login.scss'
 </style>

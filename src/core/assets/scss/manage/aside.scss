@@ -32,6 +32,7 @@
   border-left: 14px solid lighten($primary-color, 30%);
   border-top: 8px solid transparent;
   cursor: pointer;
+  z-index: 5;
   .shrink-arrow{
     margin-left: -14px;
     top: 16px;

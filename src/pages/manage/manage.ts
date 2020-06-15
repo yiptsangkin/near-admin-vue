@@ -22,7 +22,8 @@ import {
     Dropdown,
     Modal,
     Button,
-    Breadcrumb
+    Breadcrumb,
+    Spin
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -48,6 +49,7 @@ Vue.component(Dropdown.name, Dropdown)
 Vue.component(Button.name, Button)
 Vue.component(Breadcrumb.name, Breadcrumb)
 Vue.component(Breadcrumb.Item.name, Breadcrumb.Item)
+Vue.component(Spin.name, Spin)
 
 // here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue
 Vue.use(Modal)
@@ -71,16 +73,6 @@ if (comConfig.buildSwitch.isMock) {
 Vue.use(AsyncComputed)
 // custom plugin
 Vue.use(plugin)
-
-router.beforeEach((to, from, next) => {
-    const title = to.meta.title
-    if (to.meta.title) {
-        utils.setPageTitle(title)
-    } else {
-        utils.setPageTitle('')
-    }
-    next()
-})
 
 new Vue({
     render: (h) => h(App),

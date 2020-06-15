@@ -41,5 +41,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '~@corescss/manage/error.scss';
+    @import '~@corescss/manage/error.scss'
 </style>

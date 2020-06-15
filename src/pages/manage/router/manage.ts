@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
 import {CacheRouteConfig} from '@corets/type'
 import dict from '@custom/dict';
+import utils from '@corets/utils';
 const NManage = () => import('@corecp/NManage.vue')
 
 Vue.use(VueRouter)
@@ -40,5 +41,15 @@ if (routerOpt && routerOpt.routes) {
 }
 
 const routeObj = new VueRouter(routerOpt)
+
+routeObj.beforeEach((to, from, next) => {
+    const title = to.meta.title
+    if (to.meta.title) {
+        utils.setPageTitle(title)
+    } else {
+        utils.setPageTitle('')
+    }
+    next()
+})
 
 export default routeObj

@@ -20,5 +20,9 @@ export default {
                 self[methodName](params, hotKey)
             }
         }
+    },
+    mounted () {
+        const self = this as any
+        self.$emit('load')
     }
 }

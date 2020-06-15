@@ -54,17 +54,6 @@ if (comConfig.buildSwitch.isMock) {
     Vue.use(mock as any)
 }
 
-
-router.beforeEach((to, from, next) => {
-    const title = to.meta.title
-    if (to.meta.title) {
-        utils.setPageTitle(title)
-    } else {
-        utils.setPageTitle('')
-    }
-    next()
-})
-
 new Vue({
     render: (h) => h(App),
     store,

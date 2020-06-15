@@ -18,9 +18,9 @@
 </script>
 
 <style lang="css">
-    @import '~@font/iconfont/iconfont.css';
+    @import '~@font/iconfont/iconfont.css'
 </style>
 
 <style lang="scss">
-    @import '~@scss/custom/index.scss';
+    @import '~@scss/custom/index.scss'
 </style>

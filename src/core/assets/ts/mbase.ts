@@ -60,7 +60,7 @@ export default {
     mounted () {
         const self = this as any
         self.bindHotKeyEvent()
-        self.initBusListener()
         self.bindResizeEvent()
+        self.initBusListener()
     }
 }

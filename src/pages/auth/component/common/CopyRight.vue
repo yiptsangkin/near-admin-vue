@@ -24,5 +24,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '~@scss/custom/auth/component/copyright.scss';
+    @import '~@scss/custom/auth/component/copyright.scss'
 </style>

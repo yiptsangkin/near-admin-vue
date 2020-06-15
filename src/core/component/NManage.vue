@@ -7,17 +7,24 @@
                 <a-layout-content class="n-layout-content">
                     <n-tag-content-menu @single="singlePage" @refresh="refreshPage" @affix="affixPage"></n-tag-content-menu>
                     <n-tag @change-cp="changeCp"></n-tag>
-                    <n-bread-crumb @change-cp="changeCp" :cp-bread="curTagList[curTagIndex].breadList" v-if="comConfig.buildSwitch.isBreadCrumb"></n-bread-crumb>
+                    <n-bread-crumb @change-cp="changeCp"
+                                   :cp-bread="curTagList[curTagIndex].breadList"
+                                   v-if="comConfig.buildSwitch.isBreadCrumb && curTagList[curTagIndex].breadList && curTagList[curTagIndex].breadList.length > 0">
+
+                    </n-bread-crumb>
                     <div class="n-component-page">
-                        <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
-                            <component
-                                    ref="active-cp"
-                                    :is="activeComponent"
-                                    :key="curTagList[curTagIndex].pk"
-                                    :cp-params="curTagList[curTagIndex].params"
-                                    :page-path="curTagList[curTagIndex].component"
-                            ></component>
-                        </n-keep-alive>
+                        <a-spin :spinning="isCpLoading" class="n-cp-loading">
+                            <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
+                                <component
+                                        ref="active-cp"
+                                        :is="activeComponent"
+                                        :key="curTagList[curTagIndex].pk"
+                                        :cp-params="curTagList[curTagIndex].params"
+                                        :page-path="curTagList[curTagIndex].component"
+                                        @load="closeCpLoading"
+                                ></component>
+                            </n-keep-alive>
+                        </a-spin>
                     </div>
                 </a-layout-content>
             </a-layout>
@@ -59,6 +66,7 @@
         },
         computed: {
             ...mapGetters([
+                'isCpLoading',
                 'curTagList',
                 'curTagIndex',
                 'rightPathList'
@@ -128,7 +136,8 @@
             ...mapActions([
                 'changeTag',
                 'changeCurTagIndex',
-                'changeDefaultIndexs'
+                'changeDefaultIndexs',
+                'changeCpLoading'
             ]),
             changeCp (cpInfo: CpInfo, byMenu: boolean = true) {
                 const self = this as any
@@ -315,6 +324,10 @@
                         }
                     }
                 })
+            },
+            closeCpLoading () {
+                const self = this
+                self.changeCpLoading(false)
             }
         }
     })

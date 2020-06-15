@@ -120,7 +120,8 @@ interface State {
     rightPathList: string[],
     shrinkLeftMenu: boolean,
     saveWarning: boolean,
-    isFullScreen: boolean
+    isFullScreen: boolean,
+    isCpLoading: boolean
 }
 
 interface Getter {
@@ -148,7 +149,8 @@ const state: State = {
     rightPathList: [],
     shrinkLeftMenu: false,
     saveWarning: false,
-    isFullScreen: false
+    isFullScreen: false,
+    isCpLoading: true
 }
 
 const getters: Getter = {
@@ -190,6 +192,9 @@ const getters: Getter = {
     },
     isFullScreen: (getterSate: State) => {
         return getterSate.isFullScreen
+    },
+    isCpLoading: (getterSate: State) => {
+        return getterSate.isCpLoading
     }
 }
 
@@ -299,6 +304,9 @@ const mutations = {
     },
     changeFullScreen: (mutationState: State, fullScreen: boolean) => {
         mutationState.isFullScreen = fullScreen
+    },
+    changeCpLoading: (mutationState: State, isCpLoading: boolean) => {
+        mutationState.isCpLoading = isCpLoading
     }
 }
 
@@ -320,10 +328,14 @@ const actions = {
     },
     changeTag: (context: ActionContext<State, State>, tagOp: any) => {
         if (tagOp.op === 'add') {
+            context.state.isCpLoading = true
             context.commit('addCurTag', tagOp.cpInfo)
         } else if (tagOp.op === 'remove') {
             context.commit('removeCurTag', tagOp.closeOpt)
         } else if (tagOp.op === 'update') {
+            if (tagOp.updateOpt.updateCpInfo.pk) {
+                context.state.isCpLoading = true
+            }
             context.commit('updateCurTag', tagOp.updateOpt)
         }
         // cache tag component
@@ -342,6 +354,9 @@ const actions = {
     },
     changeFullScreen: (context: ActionContext<State, State>, fullScreen: boolean) => {
         context.commit('changeFullScreen', fullScreen)
+    },
+    changeCpLoading: (context: ActionContext<State, State>, isCpLoading: boolean) => {
+        context.commit('changeCpLoading', isCpLoading)
     }
 }
 
