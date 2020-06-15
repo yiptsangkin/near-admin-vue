@@ -142,7 +142,6 @@
     import Vue from 'vue'
     import { mapGetters, mapActions } from 'vuex'
     import utils from '@corets/utils'
-    import {CpInfo} from '@corets/type'
 
     export default Vue.extend({
         name: 'NAside',
@@ -157,33 +156,7 @@
         watch: {
             defaultIndexs (n) {
                 const self = this as any
-                if (!n || !n[0] || typeof n[0] !== 'string') {
-                    // check if have value
-                    return false
-                }
-                // check if click by tag, if true, no need to emit change-cp
-                const notFromMenuReg = /@bytag@/g
-                const isNotFromMenu = notFromMenuReg.test(n)
-                const cpIndex = n[0].replace('@bytag@', '')
-                const existMenu = self.$el.querySelector(`li[nav-index="${cpIndex}"]`)
-
-                // check if side menu exist index
-                if (existMenu) {
-                    // exist
-                    const cpPath = existMenu.getAttribute('cp-path')
-                    const cpTitle = existMenu.getAttribute('cp-name')
-                    const menuParams = utils.decodeParams(existMenu.getAttribute('params-detail') || '')
-                    if (!isNotFromMenu) {
-                        self.$emit('change-cp', {
-                            component: cpPath,
-                            title: cpTitle,
-                            navIndex: cpIndex,
-                            params: menuParams || null,
-                            pk: cpIndex,
-                            breadList: self.getBreadList(cpIndex)
-                        } as CpInfo)
-                    }
-                }
+                utils.handlerMenuSelect(self, n)
             }
         },
         methods: {
@@ -199,23 +172,6 @@
             changeShrink () {
                 const self = this as any
                 self.changeShrinkLeftMenu(!self.shrinkLeftMenu)
-            },
-            getBreadList (navIndex: string) {
-                const self = this as any
-                const navIndexList = navIndex.split('-sub-')
-                const topMenuIndex = navIndexList[0].split('-')[1]
-                const asideMenuIndexList = navIndexList[1].split('-')
-                const breadList = []
-
-                const topMenuObj = self.menuObj.menuList[topMenuIndex]
-                let temMenuList = topMenuObj.child
-                breadList.push(topMenuObj)
-                asideMenuIndexList.forEach((item, index) => {
-                    const temMenuObj = temMenuList[item]
-                    temMenuList = temMenuObj.child
-                    breadList.push(temMenuObj)
-                })
-                return breadList
             }
         }
     })

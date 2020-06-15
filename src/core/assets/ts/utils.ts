@@ -1,5 +1,5 @@
 import Logline from 'logline'
-import {HadKey, ReqType, LoglineParams} from '@corets/type'
+import {HadKey, ReqType, LoglineParams, CpInfo, NavList} from '@corets/type';
 import axios, {AxiosRequestConfig} from 'axios'
 import dict from '@custom/dict'
 import Vue from 'vue'
@@ -444,6 +444,84 @@ const fullScreenCtl = (tp: boolean) => {
     }
 }
 
+const getBreadList = (self: any, navIndex: string) => {
+    const navIndexList = navIndex.split('-sub-')
+    const topMenuIndex = navIndexList[0].split('-')[1]
+    const asideMenuIndexList = navIndexList[1].split('-')
+    const breadList = []
+    const menuObj = self.$store.getters.menuObj
+
+    const topMenuObj = menuObj.menuList[topMenuIndex]
+    topMenuObj.navIndex = `menu-${topMenuIndex}`
+
+    let temMenuList = topMenuObj.child
+    temMenuList.forEach((item: any, index: any) => {
+        item.navIndex = `${topMenuObj.navIndex}-sub-${index}`
+    })
+    breadList.push(topMenuObj)
+    asideMenuIndexList.forEach((item, index) => {
+        const temMenuObj = temMenuList[item]
+        temMenuList = temMenuObj.child || []
+        temMenuList.forEach((sitem: any, sindex: any) => {
+            sitem.navIndex = `${temMenuObj.navIndex}-${sindex}`
+        })
+        breadList.push(temMenuObj)
+    })
+    return breadList
+}
+
+const getCpMenuByNavIndex = (self: any, navIndex: string): NavList | undefined => {
+    if (navIndex.startsWith('menu')) {
+        const navIndexList = navIndex.split('-sub-')
+        const topMenuIndex = navIndexList[0].split('-')[1]
+        const asideMenuIndexList = navIndexList[1].split('-')
+        const menuObj = self.$store.getters.menuObj
+
+        const topMenuObj = menuObj.menuList[topMenuIndex]
+
+        let temMenuList = topMenuObj.child
+        let targetMenuObj
+        asideMenuIndexList.forEach((item, index) => {
+            const temMenuObj = temMenuList[item]
+            temMenuList = temMenuObj.child || []
+            targetMenuObj = temMenuObj
+        })
+        return targetMenuObj
+    } else {
+        return undefined
+    }
+}
+
+const handlerMenuSelect = (self: any, n: string[]) => {
+    if (!n || !n[0] || typeof n[0] !== 'string') {
+        // check if have value
+        return false
+    }
+    // check if click by tag, if true, no need to emit change-cp
+    const notFromMenuReg = /@bytag@/g
+    const isNotFromMenu = notFromMenuReg.test(n[0])
+    const cpIndex = n[0].replace('@bytag@', '')
+    const existMenu = getCpMenuByNavIndex(self, cpIndex)
+
+    // check if side menu exist index
+    if (existMenu) {
+        // exist
+        const cpPath = existMenu.path
+        const cpTitle = existMenu.name
+        const menuParams = existMenu.params
+        if (!isNotFromMenu) {
+            self.$emit('change-cp', {
+                component: cpPath,
+                title: cpTitle,
+                navIndex: cpIndex,
+                params: menuParams || null,
+                pk: cpIndex,
+                breadList: getBreadList(self, cpIndex)
+            } as CpInfo)
+        }
+    }
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -458,5 +536,7 @@ export default {
     getFirstComponentChild,
     isEmpty,
     getDeviceInfo,
-    fullScreenCtl
+    fullScreenCtl,
+    getBreadList,
+    handlerMenuSelect
 }

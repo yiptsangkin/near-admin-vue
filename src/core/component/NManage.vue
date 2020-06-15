@@ -7,7 +7,7 @@
                 <a-layout-content class="n-layout-content">
                     <n-tag-content-menu @single="singlePage" @refresh="refreshPage" @affix="affixPage"></n-tag-content-menu>
                     <n-tag @change-cp="changeCp"></n-tag>
-                    <n-bread-crumb :cp-bread="curTagList[curTagIndex].breadList" v-if="comConfig.buildSwitch.isBreadCrumb"></n-bread-crumb>
+                    <n-bread-crumb @change-cp="changeCp" :cp-bread="curTagList[curTagIndex].breadList" v-if="comConfig.buildSwitch.isBreadCrumb"></n-bread-crumb>
                     <div class="n-component-page">
                         <n-keep-alive ref="keep-alive-cp" :include="cacheCp">
                             <component

@@ -108,7 +108,7 @@ export interface ComRespone {
 }
 
 // Menu List
-interface NavList {
+export interface NavList {
     name: string,
     path?: string,
     icon?: string | {
