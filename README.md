@@ -114,4 +114,4 @@ npm run translate
 
 ## 在线版本
 
-github.io不支持我个性化配置代理和history模式，因此暂时没有线上版本，到时我会有部署的教程。
+[线上DEMO](https://yiptsangkin.github.io/auth)

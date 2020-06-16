@@ -20,7 +20,6 @@ const routesConfig: RouteConfig[] = [
 ];
 
 const routerOpt: RouterOptions = {
-    mode: 'history',
     base: `/${dict.commonObj.authPath}`,
     routes: routesConfig
 }
@@ -28,6 +27,7 @@ const routerOpt: RouterOptions = {
 const routeObj = new VueRouter(routerOpt)
 routeObj.beforeEach((to, from, next) => {
     const title = to.meta.title
+    console.log(to, from)
     if (to.meta.title) {
         utils.setPageTitle(title)
     } else {
