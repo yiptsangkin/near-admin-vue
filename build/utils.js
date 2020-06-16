@@ -47,7 +47,7 @@ module.exports = {
             entries[pathname] = Object.assign({
                 entry: `${pathList.join('/')}/${pathname}.ts`,
                 template: `public/basic.html`,
-                filename: `${pathname}/${pathname}.html`,
+                filename: `${pathname}.html`,
                 chunks: chunks
             }, baseConfig)
         })
@@ -74,11 +74,11 @@ module.exports = {
                     }
                 },
                 chunks: 'initial',
-                minChunks: 1,
+                minChunks: chunks.length,
                 priority: index
             }
             devRewriteUrl.push(
-                {from: new RegExp(`^/${item}/?.*`), to: `/${item}/${item}.html`}
+                {from: new RegExp(`^/(${item}|${item}\.html)/?.*`), to: `/${item}.html`}
             )
         })
         // visit root url, default first rewrite rule，for demo here is /auth/auth.html

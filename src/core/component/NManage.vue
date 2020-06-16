@@ -246,9 +246,11 @@
                     // if is url component, directly open a url
                     window.open(curCp.params.dataUrl)
                 } else {
-                    const curInitCp = self.$refs['active-cp']
-                    const curCpName = curInitCp.$options.name
-                    const propsData = curInitCp.$options.propsData
+                    const curCpName = curCp.component.split('/').slice(-1)[0]
+                    const propsData = {
+                        cpParams: curCp.params,
+                        pagePath: curCp.component
+                    }
                     const routesList = localStorage.getItem(`${dict.commonObj.managePath}AsyncRoute`)
                     let routesListObj: CacheRouteConfig[]
                     try {
@@ -263,7 +265,7 @@
                     let cpIndex
                     for (let i = 0; i < routesListObj.length; i++) {
                         const item = routesListObj[i]
-                        if (item.name === curCp.$options.name) {
+                        if (item.name === curCpName) {
                             hadCp = true
                             cpIndex = i
                             break
@@ -283,7 +285,15 @@
                     // persisted router
                     localStorage.setItem(`${dict.commonObj.managePath}AsyncRoute`, JSON.stringify(routesListObj))
                     // redirect to new browser tag
-                    window.open(`/${dict.commonObj.managePath}/${curCpName}`.toLowerCase())
+                    // check router mode
+                    const routerMode = self.$router.mode
+                    if (routerMode === 'hash') {
+                        // hash mode
+                        window.open(`/${dict.commonObj.managePath}/#/${curCpName}`.toLowerCase())
+                    } else {
+                        // history mode
+                        window.open(`/${dict.commonObj.managePath}/${curCpName}`.toLowerCase())
+                    }
                 }
             },
             affixPage (idx) {

@@ -114,4 +114,4 @@ npm run translate
 
 ## 在线版本
 
-[线上DEMO](https://yiptsangkin.github.io/auth)
+[线上DEMO](https://yiptsangkin.github.io/auth) 由于github没办法配置history模式下的代理配置，所以独立页面等涉及动态路由的功能在github.io的线上版本会不可用，不过不用担心，项目本身有内置一个nginx配置的参考demo，可以参考内容对自己的项目进行配置。
