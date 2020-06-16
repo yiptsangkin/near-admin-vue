@@ -26,7 +26,13 @@ const prodConfig ={
                     name: 'chunk-common',
                     priority: 1,
                     chunks: 'all',
-                    minChunks: 10
+                    minChunks: pages.length
+                },
+                vendors: {
+                    name: 'chunk-vendors',
+                    priority: 1,
+                    chunks: 'all',
+                    minChunks: pages.length
                 }
             }, plugins)
         }
@@ -136,7 +142,7 @@ const vueConfig = {
             .tap(options => {
                 options[0][0].ignore.push('basic.html')
                 return options
-            })
+            }).end()
         // alias
         config.resolve.alias
             .set('vue$', 'vue/dist/vue.esm.js')
@@ -153,6 +159,7 @@ const vueConfig = {
             .set('@corescss', path.resolve('src/core/assets/scss'))
             .set('@font', path.resolve('src/assets/font'))
             .set('@corestore', path.resolve('src/core/store'))
+            .end()
     },
     pwa: {
         iconPaths: {

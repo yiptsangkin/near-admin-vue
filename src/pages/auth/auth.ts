@@ -5,8 +5,6 @@ import store from '@store/index'
 import i18n from '@corets/lang'
 import mock from '@mock/index'
 
-console.log('######### here')
-
 // antd component
 import {
     ConfigProvider,

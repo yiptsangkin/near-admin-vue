@@ -40,9 +40,9 @@ module.exports = {
             const pathname = pathList.slice(-1)[0]
             let chunks
             if (process.env.NODE_ENV === 'production') {
-                chunks = ['chunk-vendors', 'chunk-common', `vendor-${pathname}`, pathname]
+                chunks = ['chunk-vendors', 'chunk-common', pathname]
             } else {
-                chunks = ['chunk-vendors', 'chunk-common', `vendor-${pathname}`, 'mock', pathname]
+                chunks = ['chunk-vendors', 'chunk-common', 'mock', pathname]
             }
             entries[pathname] = Object.assign({
                 entry: `${pathList.join('/')}/${pathname}.ts`,
@@ -61,24 +61,8 @@ module.exports = {
         let devRewriteUrl = [
         ]
         chunks.forEach(function (item, index) {
-            const newName = 'vendor-' + item
-            chunksPlugin[item] = {
-                name: newName,
-                test: (module) => {
-                    switch (item) {
-                        // configure modules that need to be packaged separately
-                        /* eg. packaged `code-mirror`, `mavon-editor`, `quill` independently
-                            case 'manage':
-                                return /codemirror|mavon-editor|quill/.test(module.context)
-                        */
-                    }
-                },
-                chunks: 'initial',
-                minChunks: chunks.length,
-                priority: index
-            }
             devRewriteUrl.push(
-                {from: new RegExp(`^/(${item}|${item}\.html)/?.*`), to: `/${item}.html`}
+                {from: new RegExp(`^/(${item}|${item}.html)/?.*`), to: `/${item}.html`}
             )
         })
         // visit root url, default first rewrite rule，for demo here is /auth/auth.html
