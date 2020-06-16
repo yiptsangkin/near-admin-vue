@@ -20,6 +20,7 @@ const routesConfig: RouteConfig[] = [
 ];
 
 const routerOpt: RouterOptions = {
+    mode: 'history',
     base: `/${dict.commonObj.authPath}`,
     routes: routesConfig
 }

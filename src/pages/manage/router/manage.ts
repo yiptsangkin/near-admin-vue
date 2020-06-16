@@ -16,6 +16,7 @@ const routesConfig: RouteConfig[] = [
 ];
 
 const routerOpt: RouterOptions = {
+    mode: 'history',
     base: `/${dict.commonObj.managePath}`,
     routes: routesConfig
 }
