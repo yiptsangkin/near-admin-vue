@@ -18,7 +18,7 @@
 
 [Near-Admin](https://github.com/yiptsangkin/near-admin-vue)是一个基于 [vue](https://github.com/vuejs/vue) 和[antd](https://antdv.com/)的中后台开发框架，支持多页多路由打包，内置了多页打包自定义配置，优化打包vendor，全局快捷键，i18n国际化解决方案（带机翻功能），全局字典，本地mock，动态路由，权限验证等功能，基于[typescript](https://www.typescriptlang.org/)，为后期兼容vue3做好铺垫。开发模式上只需要遵循框架约定的动态组件上开发即可，只需要专注于单个组件的开发。这是一个专注于开发者体验和用户体验的中后台开发框架，希望能够有效的提高工作效率。
 
-- [在线预览]()
+- [在线预览](https://yiptsangkin.github.io/auth)
 - [使用文档(努力输出中)]()
 - [Gitter 讨论组](https://gitter.im/near-admin-vue/community)
 - [QQ群(1091431440)](https://jq.qq.com/?_wv=1027&k=NenTtP1C) 入群请备注<<行业+企业+姓名>>
