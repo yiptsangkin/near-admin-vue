@@ -7,7 +7,7 @@ export default {
     loginForm: {
         byAccountBtn: '계정 비밀번호 로그인',
         byPhoneBtn: '전화 번호 로그인',
-        accountPlaceholder: '사용자 이름을 입력하십시오',
+        accountPlaceholder: '계정을 입력하십시오',
         passwordPlaceholder: '비밀번호를 입력하십시오',
         autoLogin: '자동 로그인',
         forgetBtn: '비밀번호 분실',
@@ -104,7 +104,7 @@ export default {
             '1-0-5': '이벤트 버스',
             '1-0-6': '툴셋',
             '1-0-7': '액세스 제어',
-            '1-0-8': '단축키',
+            '1-0-8': '핫키',
             '1-1': '페이지 기능',
             '1-1-0': '구성 요소 페이지',
             '1-1-1': 'URL 페이지',

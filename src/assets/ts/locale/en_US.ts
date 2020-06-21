@@ -7,7 +7,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Account password login',
         byPhoneBtn: 'Phone number login',
-        accountPlaceholder: 'Please input Username',
+        accountPlaceholder: 'please enter account',
         passwordPlaceholder: 'Please enter the password',
         autoLogin: 'auto login',
         forgetBtn: 'forget password',
