@@ -96,15 +96,15 @@
                 'changeFullScreen'
             ]),
             changeMenu({key}: { key: any }) {
-                const self = this as any;
-                self.changeCurMenu([key]);
+                const self = this as any
+                self.changeCurMenu([key])
             },
             toLogline() {
-                const self = this as any;
+                const self = this as any
                 self.$newpage({
                     title: self.$t(dict.localeObj.personalCenter.frontendLog),
                     component: dict.commonObj.loglinePath
-                });
+                })
             },
             setFullScreen() {
                 const self = this as any
