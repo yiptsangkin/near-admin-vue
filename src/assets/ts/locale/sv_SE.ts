@@ -5,7 +5,7 @@ export default {
         sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
     },
     loginForm: {
-        byAccountBtn: 'Inloggning för konto lösenord',
+        byAccountBtn: 'Konto lösenord inloggning',
         byPhoneBtn: 'Telefonnummer inloggning',
         accountPlaceholder: 'vänligen ange konto',
         passwordPlaceholder: 'Ange lösenordet',
@@ -129,7 +129,7 @@ export default {
         affixPage: 'Fast sida',
         cancelAffixPage: 'Lossa',
         errorTip: {
-            homePageCloseError: 'Hemsidan får inte stängas',
+            homePageCloseError: 'Hemsidan får inte stänga',
             affixPageCloseError: 'Fast sida får inte stängas',
             homePageAffixError: 'Hemsidan kan inte lossas'
         },
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Tyvärr, något gick fel med servern, försök igen senare'
         },
         btnText: 'Stäng sidan'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Fråga',
+            shrink: 'Kollaps',
+            reset: 'Återställa',
+            unshrink: 'Veckla ut'
+        }
+    },
+    logline: {
+        list: 'Logglista',
+        btnList: {
+            export: 'Exportera',
+            remove: 'Tömma'
+        },
+        time: {
+            plh: 'Välj en tidsram',
+            range: 'tidsgräns',
+            halfDay: 'Inom en halv dag',
+            oneDay: 'på en dag',
+            weekDay: 'inom en vecka',
+            monthDay: 'Inom en månad'
+        },
+        type: {
+            logType: 'Loggtyp',
+            plh: 'Välj en loggtyp'
+        },
+        tableColumns: {
+            index: 'Serienummer',
+            desc: 'Loggbeskrivning',
+            type: 'Loggtyp',
+            op: 'rörelse'
+        }
     }
 }

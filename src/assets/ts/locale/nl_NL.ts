@@ -131,7 +131,7 @@ export default {
         errorTip: {
             homePageCloseError: 'Homepage mag niet sluiten',
             affixPageCloseError: 'Vaste pagina mag niet sluiten',
-            homePageAffixError: 'Homepage kan niet worden losgemaakt'
+            homePageAffixError: 'Startpagina kan niet worden losgemaakt'
         },
         checkSave: 'Wil je de pagina sluiten?(Zorg ervoor dat de inhoud van de rode labelpagina is opgeslagen)',
         cancelClose: 'Gesloten operatie geannuleerd'
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Er is helaas iets misgegaan met de server. Probeer het later opnieuw'
         },
         btnText: 'Sluit pagina'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Informeer',
+            shrink: 'Ineenstorting',
+            reset: 'Reset',
+            unshrink: 'Ontvouwen'
+        }
+    },
+    logline: {
+        list: 'Log lijst',
+        btnList: {
+            export: 'Exporteren',
+            remove: 'Leeg'
+        },
+        time: {
+            plh: 'Selecteer een tijdsbestek',
+            range: 'tijdslimiet',
+            halfDay: 'Binnen een halve dag',
+            oneDay: 'in één dag',
+            weekDay: 'binnen een week',
+            monthDay: 'Binnen een maand'
+        },
+        type: {
+            logType: 'Type logboek',
+            plh: 'Selecteer een logtype'
+        },
+        tableColumns: {
+            index: 'Serienummer',
+            desc: 'Logboekbeschrijving',
+            type: 'Type logboek',
+            op: 'in werking'
+        }
     }
 }

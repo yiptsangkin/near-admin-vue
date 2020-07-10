@@ -148,5 +148,38 @@ module.exports = {
             noserviceTip: '抱歉，服务器发生了问题，请稍后重试'
         },
         btnText: '关闭页面'
+    },
+    searchPanel: {
+        btn: {
+            search: '查询',
+            shrink: '收起',
+            reset: '重置',
+            unshrink: '展开'
+        }
+    },
+    logline: {
+        list: '日志列表',
+        btnList: {
+            export: '导出',
+            remove: '清空'
+        },
+        time: {
+            plh: '请选择时间范围',
+            range: '时间范围',
+            halfDay: '半天内',
+            oneDay: '一天内',
+            weekDay: '一周内',
+            monthDay: '一个月内'
+        },
+        type: {
+            logType: '日志类型',
+            plh: '请选择日志类型'
+        },
+        tableColumns: {
+            index: '序号',
+            desc: '日志描述',
+            type: '日志类型',
+            op: '操作'
+        }
     }
 }

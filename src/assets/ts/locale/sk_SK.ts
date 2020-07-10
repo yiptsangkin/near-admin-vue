@@ -129,12 +129,12 @@ export default {
         affixPage: 'Opravená stránka',
         cancelAffixPage: 'uvoľniť',
         errorTip: {
-            homePageCloseError: 'Domovská stránka nesmie byť zavretá',
-            affixPageCloseError: 'Opravená stránka sa nesmie zavrieť',
+            homePageCloseError: 'Domovská stránka nie je dovolené zavrieť',
+            affixPageCloseError: 'Opravená stránka sa nesmie uzavrieť',
             homePageAffixError: 'Domovská stránka nemôže byť pripnutá'
         },
         checkSave: 'Chcete stránku zavrieť?(Skontrolujte, či bol obsah stránky s červeným štítkom uložený)',
-        cancelClose: 'Zatvorená operácia bola zrušená'
+        cancelClose: 'Zatvorená prevádzka bola zrušená'
     },
     personalCenter: {
         frontendLog: 'Protokol front-end',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Ľutujeme, ale na serveri sa vyskytla chyba, skúste to znova neskôr'
         },
         btnText: 'Zavrieť stránku'
+    },
+    searchPanel: {
+        btn: {
+            search: 'dotazovaním',
+            shrink: 'kolaps',
+            reset: 'Reset',
+            unshrink: 'rozvinúť'
+        }
+    },
+    logline: {
+        list: 'Zoznam denníkov',
+        btnList: {
+            export: 'Export',
+            remove: 'prázdny'
+        },
+        time: {
+            plh: 'Vyberte časový rámec',
+            range: 'lehota',
+            halfDay: 'Do pol dňa',
+            oneDay: 'za jeden deň',
+            weekDay: 'do tyzdna',
+            monthDay: 'Do jedného mesiaca'
+        },
+        type: {
+            logType: 'Typ denníka',
+            plh: 'Vyberte typ denníka'
+        },
+        tableColumns: {
+            index: 'Sériové číslo',
+            desc: 'Popis denníka',
+            type: 'Typ denníka',
+            op: 'prevádzkové'
+        }
     }
 }

@@ -61,8 +61,8 @@ export default {
         ja: 'tiếng Nhật',
         kn: 'Kannada',
         ko: 'Hàn Quốc',
-        'ku-iq': 'Người Kurd miền Trung',
-        lv: 'Người Kurd miền Trung',
+        'ku-iq': 'Trung Kurdish',
+        lv: 'Trung Kurdish',
         mk: 'Tiếng Slovak',
         'mn-mn': 'Mông Cổ',
         'ms-my': 'Mã Lai',
@@ -80,7 +80,7 @@ export default {
         sr: 'Tiếng Serbia',
         sv: 'Thụy Điển',
         ta: 'Tiếng Tamil',
-        th: 'Tiếng thái',
+        th: 'Thái lan',
         tr: 'Thổ Nhĩ Kỳ',
         uk: 'Tiếng Ukraina',
         vi: 'Tiếng Việt',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Xin lỗi, đã xảy ra lỗi với máy chủ, vui lòng thử lại sau'
         },
         btnText: 'Đóng trang'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Hỏi thăm',
+            shrink: 'Sự sụp đổ',
+            reset: 'Cài lại',
+            unshrink: 'Mở ra'
+        }
+    },
+    logline: {
+        list: 'Danh sách nhật ký',
+        btnList: {
+            export: 'Xuất khẩu',
+            remove: 'Trống'
+        },
+        time: {
+            plh: 'Vui lòng chọn khung thời gian',
+            range: 'thời gian giới hạn',
+            halfDay: 'Trong vòng nửa ngày',
+            oneDay: 'một ngày nào đó',
+            weekDay: 'trong vòng một tuần',
+            monthDay: 'Trong vòng một tháng'
+        },
+        type: {
+            logType: 'Loại nhật ký',
+            plh: 'Vui lòng chọn một loại nhật ký'
+        },
+        tableColumns: {
+            index: 'Số sê-ri',
+            desc: 'Nhật ký mô tả',
+            type: 'Loại nhật ký',
+            op: 'điều hành'
+        }
     }
 }

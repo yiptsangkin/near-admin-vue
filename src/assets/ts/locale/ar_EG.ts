@@ -127,13 +127,13 @@ export default {
         singlePage: 'صفحة مستقلة',
         refreshPage: 'إعادة تحميل الصفحة',
         affixPage: 'الصفحة الثابتة',
-        cancelAffixPage: 'إلغاء التثبيت',
+        cancelAffixPage: 'أزل',
         errorTip: {
             homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية',
             affixPageCloseError: 'لا يسمح بإغلاق الصفحة الثابتة',
             homePageAffixError: 'لا يمكن إلغاء تثبيت الصفحة الرئيسية'
         },
-        checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة الملصق الأحمر)',
+        checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة التصنيف الأحمر)',
         cancelClose: 'تم إلغاء العملية المغلقة'
     },
     personalCenter: {
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'عذرًا ، حدث خطأ في الخادم ، يرجى المحاولة مرة أخرى لاحقًا'
         },
         btnText: 'أغلق الصفحة'
+    },
+    searchPanel: {
+        btn: {
+            search: 'استعلام',
+            shrink: 'انهيار',
+            reset: 'إعادة تعيين',
+            unshrink: 'تكشف'
+        }
+    },
+    logline: {
+        list: 'قائمة السجل',
+        btnList: {
+            export: 'تصدير',
+            remove: 'فارغة'
+        },
+        time: {
+            plh: 'يرجى تحديد إطار زمني',
+            range: 'المهلة',
+            halfDay: 'خلال نصف يوم',
+            oneDay: 'في يوم واحد',
+            weekDay: 'خلال أسبوع',
+            monthDay: 'خلال شهر واحد'
+        },
+        type: {
+            logType: 'نوع السجل',
+            plh: 'يرجى تحديد نوع السجل'
+        },
+        tableColumns: {
+            index: 'رقم سري',
+            desc: 'وصف السجل',
+            type: 'نوع السجل',
+            op: 'تعمل'
+        }
     }
 }

@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Niestety, coś poszło nie tak z serwerem, spróbuj ponownie później'
         },
         btnText: 'Zamknij stronę'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Dowiadywać się',
+            shrink: 'Zawalić się',
+            reset: 'Resetowanie',
+            unshrink: 'Rozwijać się'
+        }
+    },
+    logline: {
+        list: 'Lista dzienników',
+        btnList: {
+            export: 'Eksport',
+            remove: 'Pusty'
+        },
+        time: {
+            plh: 'Wybierz przedział czasowy',
+            range: 'limit czasu',
+            halfDay: 'W ciągu pół dnia',
+            oneDay: 'w jeden dzień',
+            weekDay: 'w ciągu tygodnia',
+            monthDay: 'W ciągu jednego miesiąca'
+        },
+        type: {
+            logType: 'Rodzaj dziennika',
+            plh: 'Wybierz typ dziennika'
+        },
+        tableColumns: {
+            index: 'Numer seryjny',
+            desc: 'Opis dziennika',
+            type: 'Rodzaj dziennika',
+            op: 'operacyjny'
+        }
     }
 }

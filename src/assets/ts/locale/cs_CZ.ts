@@ -115,7 +115,7 @@ export default {
             home: 'Domov'
         },
         errorTip: {
-            notfoundTip: 'Pod touto cestou nebyl nalezen žádný komponent',
+            notfoundTip: 'Pod touto cestou nebyla nalezena žádná součást',
             emptyErr: 'Cesta komponenty není nakonfigurována'
         }
     },
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Litujeme, ale na serveru došlo k chybě, zkuste to znovu později'
         },
         btnText: 'Zavřít stránku'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Poptávka',
+            shrink: 'Kolaps',
+            reset: 'Resetovat',
+            unshrink: 'Rozvinout'
+        }
+    },
+    logline: {
+        list: 'Seznam protokolů',
+        btnList: {
+            export: 'Vývozní',
+            remove: 'Prázdný'
+        },
+        time: {
+            plh: 'Vyberte časový rámec',
+            range: 'lhůta',
+            halfDay: 'Do půl dne',
+            oneDay: 'v jeden den',
+            weekDay: 'do týdne',
+            monthDay: 'Do jednoho měsíce'
+        },
+        type: {
+            logType: 'Typ protokolu',
+            plh: 'Vyberte typ protokolu'
+        },
+        tableColumns: {
+            index: 'Sériové číslo',
+            desc: 'Popis protokolu',
+            type: 'Typ protokolu',
+            op: 'provozní'
+        }
     }
 }

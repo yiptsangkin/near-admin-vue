@@ -131,7 +131,7 @@ export default {
         errorTip: {
             homePageCloseError: 'La home page non è autorizzata a chiudere',
             affixPageCloseError: 'La pagina fissa non può chiudere',
-            homePageAffixError: 'Non è possibile sbloccare la home page'
+            homePageAffixError: 'La home page non può essere annullata'
         },
         checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina dell&#39;etichetta rossa sia stato salvato)',
         cancelClose: 'Operazione chiusa annullata'
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Spiacenti, si è verificato un problema con il server, riprova più tardi'
         },
         btnText: 'Chiudi pagina'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Chiedere informazioni',
+            shrink: 'Crollo',
+            reset: 'Ripristina',
+            unshrink: 'Svelare'
+        }
+    },
+    logline: {
+        list: 'Elenco dei registri',
+        btnList: {
+            export: 'Esportare',
+            remove: 'Vuoto'
+        },
+        time: {
+            plh: 'Seleziona un intervallo di tempo',
+            range: 'limite di tempo',
+            halfDay: 'Entro mezza giornata',
+            oneDay: 'in un giorno',
+            weekDay: 'entro una settimana',
+            monthDay: 'Entro un mese'
+        },
+        type: {
+            logType: 'Tipo di registro',
+            plh: 'Seleziona un tipo di registro'
+        },
+        tableColumns: {
+            index: 'Numero di serie',
+            desc: 'Descrizione del registro',
+            type: 'Tipo di registro',
+            op: 'operativo'
+        }
     }
 }

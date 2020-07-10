@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Sorry, something went wrong with the server, please try again later'
         },
         btnText: 'Close page'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Inquire',
+            shrink: 'Collapse',
+            reset: 'Reset',
+            unshrink: 'Unfold'
+        }
+    },
+    logline: {
+        list: 'Log list',
+        btnList: {
+            export: 'Export',
+            remove: 'Empty'
+        },
+        time: {
+            plh: 'Please select a time frame',
+            range: 'time limit',
+            halfDay: 'Within half a day',
+            oneDay: 'in one day',
+            weekDay: 'within a week',
+            monthDay: 'Within one month'
+        },
+        type: {
+            logType: 'Log type',
+            plh: 'Please select a log type'
+        },
+        tableColumns: {
+            index: 'Serial number',
+            desc: 'Log description',
+            type: 'Log type',
+            op: 'operating'
+        }
     }
 }

@@ -133,7 +133,7 @@ export default {
             affixPageCloseError: 'A rögzített oldal nem zárható be',
             homePageAffixError: 'A honlap nem oldható meg'
         },
-        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került-e.)',
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került)',
         cancelClose: 'A zárt művelet megszakítva'
     },
     personalCenter: {
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Sajnáljuk, valami nem sikerült a szerverrel, próbálkozzon később újra'
         },
         btnText: 'Bezárja az oldalt'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Érdeklődik',
+            shrink: 'Összeomlás',
+            reset: 'Visszaállítás',
+            unshrink: 'Unfold'
+        }
+    },
+    logline: {
+        list: 'Naplólista',
+        btnList: {
+            export: 'Export',
+            remove: 'Üres'
+        },
+        time: {
+            plh: 'Kérjük, válassza ki az időkeretet',
+            range: 'határidő',
+            halfDay: 'Fél nap alatt',
+            oneDay: 'egy nap alatt',
+            weekDay: 'egy héten belül',
+            monthDay: 'Egy hónapon belül'
+        },
+        type: {
+            logType: 'Napló típusa',
+            plh: 'Kérjük, válassza ki a napló típusát'
+        },
+        tableColumns: {
+            index: 'Sorozatszám',
+            desc: 'Napló leírása',
+            type: 'Napló típusa',
+            op: 'üzemeltetési'
+        }
     }
 }

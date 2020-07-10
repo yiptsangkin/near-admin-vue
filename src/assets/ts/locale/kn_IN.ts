@@ -8,7 +8,7 @@ export default {
         byAccountBtn: 'ಖಾತೆ ಪಾಸ್ವರ್ಡ್ ಲಾಗಿನ್',
         byPhoneBtn: 'ಫೋನ್ ಸಂಖ್ಯೆ ಲಾಗಿನ್',
         accountPlaceholder: 'ದಯವಿಟ್ಟು ಖಾತೆಯನ್ನು ನಮೂದಿಸಿ',
-        passwordPlaceholder: 'ದಯವಿಟ್ಟು ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ',
+        passwordPlaceholder: 'ದಯವಿಟ್ಟು ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಿ',
         autoLogin: 'ಸ್ವಯಂ ಲಾಗಿನ್',
         forgetBtn: 'ಪಾಸ್ವರ್ಡ್ ಮರೆತುಬಿಡಿ',
         loginBtn: 'ಲಾಗ್ ಇನ್ ಮಾಡಿ',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'ಕ್ಷಮಿಸಿ, ಸರ್ವರ್‌ನಲ್ಲಿ ಏನೋ ತಪ್ಪಾಗಿದೆ, ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ'
         },
         btnText: 'ಪುಟವನ್ನು ಮುಚ್ಚಿ'
+    },
+    searchPanel: {
+        btn: {
+            search: 'ವಿಚಾರಣೆ',
+            shrink: 'ಕುಗ್ಗಿಸು',
+            reset: 'ಮರುಹೊಂದಿಸಿ',
+            unshrink: 'ಬಿಚ್ಚಿಡಲಾಗಿದೆ'
+        }
+    },
+    logline: {
+        list: 'ಲಾಗ್ ಪಟ್ಟಿ',
+        btnList: {
+            export: 'ರಫ್ತು ಮಾಡಿ',
+            remove: 'ಖಾಲಿ'
+        },
+        time: {
+            plh: 'ದಯವಿಟ್ಟು ಸಮಯದ ಚೌಕಟ್ಟನ್ನು ಆರಿಸಿ',
+            range: 'ಸಮಯ ಮಿತಿ',
+            halfDay: 'ಅರ್ಧ ದಿನದೊಳಗೆ',
+            oneDay: 'ಒಂದೇ ದಿನದಲ್ಲಿ',
+            weekDay: 'ಒಂದು ವಾರದೊಳಗೆ',
+            monthDay: 'ಒಂದು ತಿಂಗಳೊಳಗೆ'
+        },
+        type: {
+            logType: 'ಲಾಗ್ ಪ್ರಕಾರ',
+            plh: 'ದಯವಿಟ್ಟು ಲಾಗ್ ಪ್ರಕಾರವನ್ನು ಆಯ್ಕೆಮಾಡಿ'
+        },
+        tableColumns: {
+            index: 'ಕ್ರಮ ಸಂಖ್ಯೆ',
+            desc: 'ಲಾಗ್ ವಿವರಣೆ',
+            type: 'ಲಾಗ್ ಪ್ರಕಾರ',
+            op: 'ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ'
+        }
     }
 }

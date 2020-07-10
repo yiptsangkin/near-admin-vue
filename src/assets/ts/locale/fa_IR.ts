@@ -2,7 +2,7 @@ export default {
     locale: 'fa',
     country: 'IR',
     sysInfo: {
-        sysIntro: 'چارچوب توسعه آسان جلویی مبتنی بر شرط بندی و طراحی مورچه'
+        sysIntro: 'یک چارچوب توسعه جلویی با کاربرد آسان و مبتنی بر شرط بندی و طراحی مورچه'
     },
     loginForm: {
         byAccountBtn: 'ورود به سیستم رمز عبور حساب',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'با عرض پوزش ، مشکلی در سرور پیش آمد ، لطفاً بعداً دوباره امتحان کنید'
         },
         btnText: 'بستن صفحه'
+    },
+    searchPanel: {
+        btn: {
+            search: 'جویا شدن',
+            shrink: 'سقوط - فروپاشی',
+            reset: 'تنظیم مجدد',
+            unshrink: 'آشکار شد'
+        }
+    },
+    logline: {
+        list: 'لیست ورود',
+        btnList: {
+            export: 'صادرات',
+            remove: 'خالی'
+        },
+        time: {
+            plh: 'لطفاً یک بازه زمانی انتخاب کنید',
+            range: 'محدودیت زمانی',
+            halfDay: 'در عرض نیم روز',
+            oneDay: 'در یک روز',
+            weekDay: 'طی یک هفته',
+            monthDay: 'طی یک ماه'
+        },
+        type: {
+            logType: 'نوع ورود',
+            plh: 'لطفاً یک نوع گزارش را انتخاب کنید'
+        },
+        tableColumns: {
+            index: 'شماره سریال',
+            desc: 'توضیحات ورود به سیستم',
+            type: 'نوع ورود',
+            op: 'عملیاتی'
+        }
     }
 }

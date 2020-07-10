@@ -60,7 +60,7 @@ export default {
         it: 'Itaalia keeles ',
         ja: 'Jaapanlane',
         kn: 'Kannada',
-        ko: 'Korealane',
+        ko: 'Korea keel',
         'ku-iq': 'Keskkurdi keel',
         lv: 'Keskkurdi keel',
         mk: 'Makedoonia',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Kahjuks läks serveriga midagi valesti, proovige hiljem uuesti'
         },
         btnText: 'Sulge leht'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Küsige',
+            shrink: 'Ahenda',
+            reset: 'Lähtesta',
+            unshrink: 'Lahti lahti'
+        }
+    },
+    logline: {
+        list: 'Logi nimekiri',
+        btnList: {
+            export: 'Eksport',
+            remove: 'Tühi'
+        },
+        time: {
+            plh: 'Valige ajaraam',
+            range: 'ajapiirang',
+            halfDay: 'Poole päeva jooksul',
+            oneDay: 'ühe päevaga',
+            weekDay: 'nädala jooksul',
+            monthDay: 'Ühe kuu jooksul'
+        },
+        type: {
+            logType: 'Logi tüüp',
+            plh: 'Valige logi tüüp'
+        },
+        tableColumns: {
+            index: 'Seerianumber',
+            desc: 'Logi kirjeldus',
+            type: 'Logi tüüp',
+            op: 'tegutsevad'
+        }
     }
 }

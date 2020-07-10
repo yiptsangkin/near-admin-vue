@@ -1,5 +1,5 @@
 import Logline from 'logline'
-import {HadKey, ReqType, LoglineParams, CpInfo, NavList} from '@corets/type';
+import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams} from '@corets/type';
 import axios, {AxiosRequestConfig} from 'axios'
 import dict from '@custom/dict'
 import Vue from 'vue'
@@ -27,7 +27,7 @@ const loglineObj: any = {
         }
     },
     // get log
-    getLog (start: string, end: string, callback: any) {
+    getLog ({start, end, callback}: GetLoglineParams) {
         // start, end的单位为d，例如：1天-1d，半天-.5d，
         if (start && end) {
             // 获取start-end范围内的日志

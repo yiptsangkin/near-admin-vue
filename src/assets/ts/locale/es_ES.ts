@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'La dirección de solicitud no puede estar vacía',
-        networkErr: 'Error en la solicitud de red, intente más tarde'
+        networkErr: 'Error en la solicitud de red, intente nuevamente más tarde'
     },
     localeMap: {
         ar: 'Arábica',
@@ -133,7 +133,7 @@ export default {
             affixPageCloseError: 'No se permite cerrar la página fija',
             homePageAffixError: 'La página de inicio no se puede desanclar'
         },
-        checkSave: '¿Quieres cerrar la página?(Asegúrese de que el contenido de la página de etiqueta roja se haya guardado)',
+        checkSave: '¿Quieres cerrar la página?(Asegúrese de que se haya guardado el contenido de la página de etiqueta roja)',
         cancelClose: 'Operación cerrada cancelada'
     },
     personalCenter: {
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Lo sentimos, algo salió mal con el servidor, intente nuevamente más tarde'
         },
         btnText: 'Cerrar página'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Preguntar',
+            shrink: 'Colapso',
+            reset: 'Reiniciar',
+            unshrink: 'Desplegar'
+        }
+    },
+    logline: {
+        list: 'Lista de registro',
+        btnList: {
+            export: 'Exportar',
+            remove: 'Vacío'
+        },
+        time: {
+            plh: 'Por favor seleccione un marco de tiempo',
+            range: 'límite de tiempo',
+            halfDay: 'Dentro de medio día',
+            oneDay: 'En un día',
+            weekDay: 'dentro de una semana',
+            monthDay: 'En un mes'
+        },
+        type: {
+            logType: 'Tipo de registro',
+            plh: 'Por favor seleccione un tipo de registro'
+        },
+        tableColumns: {
+            index: 'Número de serie',
+            desc: 'Descripción del registro',
+            type: 'Tipo de registro',
+            op: 'operando'
+        }
     }
 }

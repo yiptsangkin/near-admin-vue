@@ -102,7 +102,7 @@
             toLogline() {
                 const self = this as any
                 self.$newpage({
-                    title: self.$t(dict.localeObj.personalCenter.frontendLog),
+                    title: dict.localeObj.personalCenter.frontendLog,
                     component: dict.commonObj.loglinePath
                 })
             },

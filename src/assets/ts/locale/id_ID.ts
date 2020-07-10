@@ -145,8 +145,41 @@ export default {
         errorTip: {
             notfoundTip: 'Maaf, halaman yang Anda kunjungi tidak ada',
             notrightTip: 'Maaf, Anda tidak memiliki izin untuk mengakses halaman ini',
-            noserviceTip: 'Maaf, ada yang salah dengan server, harap coba lagi nanti'
+            noserviceTip: 'Maaf, ada masalah dengan server, silakan coba lagi nanti'
         },
         btnText: 'Tutup halaman'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Menanyakan',
+            shrink: 'Jatuh',
+            reset: 'Setel ulang',
+            unshrink: 'Membuka'
+        }
+    },
+    logline: {
+        list: 'Daftar log',
+        btnList: {
+            export: 'Ekspor',
+            remove: 'Kosong'
+        },
+        time: {
+            plh: 'Silakan pilih jangka waktu',
+            range: 'batas waktu',
+            halfDay: 'Dalam setengah hari',
+            oneDay: 'dalam satu hari',
+            weekDay: 'dalam seminggu',
+            monthDay: 'Dalam satu bulan'
+        },
+        type: {
+            logType: 'Jenis log',
+            plh: 'Silakan pilih jenis log'
+        },
+        tableColumns: {
+            index: 'Nomor seri',
+            desc: 'Deskripsi log',
+            type: 'Jenis log',
+            op: 'Pengoperasian'
+        }
     }
 }

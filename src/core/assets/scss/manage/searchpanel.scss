@@ -1,0 +1,16 @@
+@import "../params";
+
+.n-search-panel-wrp{
+  padding: 16px;
+  background-color: $grey-f;
+  .n-search-panel-btn-wrp{
+    text-align: left;
+    margin: 6px 0 12px 0;
+    .n-search-panel-btn{
+      margin-left: 12px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}

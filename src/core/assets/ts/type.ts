@@ -99,6 +99,12 @@ export interface LoglineParams {
     data: any
 }
 
+export interface GetLoglineParams {
+    start?: string,
+    end?: string,
+    callback?: any
+}
+
 // Common Response
 export interface ComRespone {
     code: number,
@@ -158,4 +164,23 @@ export interface ClosePageOpt {
 export interface UpdatePageOpt {
     idx: number,
     updateCpInfo: CpInfo
+}
+
+interface ComTableBtn {
+    name: string,
+    method: string,
+    icon?: string,
+    type?: string
+}
+
+export interface ComTable {
+    btnList?: ComTableBtn[],
+    columns: any[],
+    data: any[],
+    title: string,
+    pagingInfo: {
+        currentPage: number,
+        pageSize: number,
+        totalRows: number
+    }
 }

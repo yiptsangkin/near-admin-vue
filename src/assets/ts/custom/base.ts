@@ -1,3 +1,5 @@
+import dict from '@custom/dict'
+
 export default {
     props: {
     },
@@ -5,6 +7,7 @@ export default {
     },
     data () {
         return {
+            dict
         }
     },
     methods: {

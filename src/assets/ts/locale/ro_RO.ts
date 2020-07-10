@@ -2,7 +2,7 @@ export default {
     locale: 'ro',
     country: 'RO',
     sysInfo: {
-        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat bazat pe vue și Furnica design'
+        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat, bazat pe vue și Furnica design'
     },
     loginForm: {
         byAccountBtn: 'Autentificare parolă cont',
@@ -126,7 +126,7 @@ export default {
         closeRight: 'Închideți eticheta dreaptă',
         singlePage: 'Pagina independentă',
         refreshPage: 'Reîmprospătare pagină',
-        affixPage: 'Pagina fixă',
+        affixPage: 'Pagină fixă',
         cancelAffixPage: 'Anulați fixarea',
         errorTip: {
             homePageCloseError: 'Pagina de pornire nu are voie să se închidă',
@@ -145,8 +145,41 @@ export default {
         errorTip: {
             notfoundTip: 'Ne pare rău, pagina pe care ați vizitat-o ​​nu există',
             notrightTip: 'Ne pare rău, nu aveți permisiunea de a accesa această pagină',
-            noserviceTip: 'Ne pare rău, ceva nu a funcționat corect cu serverul'
+            noserviceTip: 'Ne pare rău, ceva nu a funcționat corect cu serverul. Încercați din nou mai târziu'
         },
         btnText: 'Închideți pagina'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Întreba',
+            shrink: 'Colaps',
+            reset: 'Resetați',
+            unshrink: 'Unfold'
+        }
+    },
+    logline: {
+        list: 'Lista jurnalului',
+        btnList: {
+            export: 'Export',
+            remove: 'Gol'
+        },
+        time: {
+            plh: 'Selectați un interval de timp',
+            range: 'limita',
+            halfDay: 'În jumătate de zi',
+            oneDay: 'intr-o zi',
+            weekDay: 'într-o săptămână',
+            monthDay: 'În termen de o lună'
+        },
+        type: {
+            logType: 'Tip jurnal',
+            plh: 'Vă rugăm să selectați un tip de jurnal'
+        },
+        tableColumns: {
+            index: 'Număr de serie',
+            desc: 'Descrierea jurnalului',
+            type: 'Tip jurnal',
+            op: 'de operare'
+        }
     }
 }

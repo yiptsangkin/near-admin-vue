@@ -122,7 +122,7 @@ export default {
     tagObj: {
         closeAll: 'Fermer tous les onglets',
         closeCur: 'Fermer l&#39;onglet actuel',
-        closeOther: 'Fermer d&#39;autres balises',
+        closeOther: 'Fermer les autres balises',
         closeRight: 'Fermer l&#39;étiquette de droite',
         singlePage: 'Page indépendante',
         refreshPage: 'rafraîchir la page',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Désolé, un problème est survenu avec le serveur, veuillez réessayer plus tard'
         },
         btnText: 'Fermer la page'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Renseigner',
+            shrink: 'Effondrer',
+            reset: 'Réinitialiser',
+            unshrink: 'Se dérouler'
+        }
+    },
+    logline: {
+        list: 'Liste des journaux',
+        btnList: {
+            export: 'Exportation',
+            remove: 'Vide'
+        },
+        time: {
+            plh: 'Veuillez sélectionner un délai',
+            range: 'limite de temps',
+            halfDay: 'Dans une demi-journée',
+            oneDay: 'en un jour',
+            weekDay: 'dans une semaine',
+            monthDay: 'Dans un mois'
+        },
+        type: {
+            logType: 'Type de journal',
+            plh: 'Veuillez sélectionner un type de journal'
+        },
+        tableColumns: {
+            index: 'Numéro de série',
+            desc: 'Description du journal',
+            type: 'Type de journal',
+            op: 'en fonctionnement'
+        }
     }
 }

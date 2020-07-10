@@ -6,7 +6,7 @@ export default {
     },
     loginForm: {
         byAccountBtn: 'Tilin salasanan kirjautuminen',
-        byPhoneBtn: 'Puhelinnumero sisäänkirjautuminen',
+        byPhoneBtn: 'Puhelinnumeron kirjautuminen',
         accountPlaceholder: 'kirjoita tili',
         passwordPlaceholder: 'Anna salasana',
         autoLogin: 'automaattinen sisäänkirjautuminen',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Jokin meni pieleen palvelimen kanssa, yritä myöhemmin uudelleen'
         },
         btnText: 'Sulje sivu'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Tiedustella',
+            shrink: 'Romahdus',
+            reset: 'Nollaa',
+            unshrink: 'Unfold'
+        }
+    },
+    logline: {
+        list: 'Lokiluettelo',
+        btnList: {
+            export: 'Viedä',
+            remove: 'Tyhjä'
+        },
+        time: {
+            plh: 'Ole hyvä ja valitse aikataulu',
+            range: 'määräaika',
+            halfDay: 'Puolen päivän sisällä',
+            oneDay: 'yhdessä päivässä',
+            weekDay: 'viikon sisällä',
+            monthDay: 'Kuukauden sisällä'
+        },
+        type: {
+            logType: 'Lokityyppi',
+            plh: 'Valitse lokityyppi'
+        },
+        tableColumns: {
+            index: 'Sarjanumero',
+            desc: 'Lokin kuvaus',
+            type: 'Lokityyppi',
+            op: 'käyttö-'
+        }
     }
 }

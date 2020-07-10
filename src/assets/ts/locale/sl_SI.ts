@@ -2,7 +2,7 @@ export default {
     locale: 'sl',
     country: 'SI',
     sysInfo: {
-        sysIntro: 'Enostaven uporabni razvojni okvir na osnovi Vue in Ant Design'
+        sysIntro: 'Enostaven za uporabo razvojni okvir na osnovi Vue in Ant'
     },
     loginForm: {
         byAccountBtn: 'Prijava gesla za račun',
@@ -61,8 +61,8 @@ export default {
         ja: 'Japonski',
         kn: 'Kanada',
         ko: 'Korejski',
-        'ku-iq': 'Centralni Kurd',
-        lv: 'Centralni Kurd',
+        'ku-iq': 'Osrednji kurdski',
+        lv: 'Osrednji kurdski',
         mk: 'Makedonščina',
         'mn-mn': 'Mongolščina',
         'ms-my': 'Malajščina',
@@ -71,7 +71,7 @@ export default {
         'nl-be': 'Flamska',
         nl: 'Nizozemščina',
         pl: 'Poljščini',
-        'pt-br': 'Brazilski portugalski',
+        'pt-br': 'Brazilska portugalščina',
         pt: 'Evropski portugalski',
         ro: 'Romunščina',
         ru: 'ruski jezik',
@@ -95,7 +95,7 @@ export default {
             1: 'Osnovna sposobnost',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
-            '1-0': 'Funkcija okvira',
+            '1-0': 'Funkcija okvirja',
             '1-0-0': 'Konfiguracija projekta',
             '1-0-1': 'Sprednji dnevnik',
             '1-0-2': 'Lokalni posmeh',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Žal je s strežnikom nekaj narobe, poskusite pozneje'
         },
         btnText: 'Zapri stran'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Poizvedite',
+            shrink: 'Strni se',
+            reset: 'Ponastaviti',
+            unshrink: 'Razviti'
+        }
+    },
+    logline: {
+        list: 'Seznam dnevnikov',
+        btnList: {
+            export: 'Izvoz',
+            remove: 'Prazno'
+        },
+        time: {
+            plh: 'Izberite časovni okvir',
+            range: 'rok',
+            halfDay: 'V roku pol dneva',
+            oneDay: 'v enem dnevu',
+            weekDay: 'v enem tednu',
+            monthDay: 'V enem mesecu'
+        },
+        type: {
+            logType: 'Vrsta dnevnika',
+            plh: 'Izberite vrsto dnevnika'
+        },
+        tableColumns: {
+            index: 'Serijska številka',
+            desc: 'Opis dnevnika',
+            type: 'Vrsta dnevnika',
+            op: 'delovanje'
+        }
     }
 }

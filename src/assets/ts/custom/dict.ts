@@ -76,5 +76,38 @@ export default {
             noserviceTip: 'errorPage.errorTip.noserviceTip'
         },
         btnText: 'errorPage.btnText'
+    },
+    searchPanel: {
+        btn: {
+            search: 'searchPanel.btn.search',
+            shrink: 'searchPanel.btn.shrink',
+            unshrink: 'searchPanel.btn.unshrink',
+            reset: 'searchPanel.btn.reset'
+        }
+    },
+    logline: {
+        list: 'logline.list',
+        btnList: {
+            export: 'logline.btnList.export',
+            remove: 'logline.btnList.remove'
+        },
+        time: {
+            plh: 'logline.time.plh',
+            range: 'logline.time.range',
+            halfDay: 'logline.time.halfDay',
+            oneDay: 'logline.time.oneDay',
+            weekDay: 'logline.time.weekDay',
+            monthDay: 'logline.time.monthDay'
+        },
+        type: {
+            logType: 'logline.type.logType',
+            plh: 'logline.type.plh'
+        },
+        tableColumns: {
+            index: 'logline.tableColumns.index',
+            desc: 'logline.tableColumns.desc',
+            type: 'logline.tableColumns.type',
+            op: 'logline.tableColumns.op'
+        }
     }
 }

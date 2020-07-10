@@ -17,7 +17,7 @@ const routesConfig: RouteConfig[] = [
         name: 'Login',
         component: Login
     }
-];
+]
 
 const routerOpt: RouterOptions = {
     mode: 'history',

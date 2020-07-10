@@ -19,7 +19,7 @@ export default {
             emptyErr: 'a senha não pode ficar em branco'
         },
         byValidTip: {
-            emptyErr: 'o código de verificação deve ser preenchido'
+            emptyErr: 'código de verificação deve ser preenchido'
         },
         sendMsg: {
             repeatErr: 'Não envie repetidamente',
@@ -145,8 +145,41 @@ export default {
         errorTip: {
             notfoundTip: 'Desculpe, a página que você visitou não existe',
             notrightTip: 'Desculpe, você não tem permissão para acessar esta página',
-            noserviceTip: 'Desculpe, ocorreu um erro no servidor. Tente novamente mais tarde.'
+            noserviceTip: 'Desculpe, ocorreu um erro no servidor. Tente novamente mais tarde'
         },
         btnText: 'Fechar página'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Investigar',
+            shrink: 'Colapso',
+            reset: 'Redefinir',
+            unshrink: 'Desdobrar'
+        }
+    },
+    logline: {
+        list: 'Lista de registros',
+        btnList: {
+            export: 'Exportar',
+            remove: 'Vazio'
+        },
+        time: {
+            plh: 'Selecione um período de tempo',
+            range: 'limite de tempo',
+            halfDay: 'Dentro de meio dia',
+            oneDay: 'em um dia',
+            weekDay: 'Dentro de uma semana',
+            monthDay: 'Dentro de um mês'
+        },
+        type: {
+            logType: 'Tipo de log',
+            plh: 'Por favor, selecione um tipo de log'
+        },
+        tableColumns: {
+            index: 'Número de série',
+            desc: 'Descrição do log',
+            type: 'Tipo de log',
+            op: 'operativo'
+        }
     }
 }

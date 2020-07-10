@@ -1,0 +1,18 @@
+@import "../params";
+
+.n-common-table-wrp{
+  background-color: $grey-f;
+  .n-common-table-title{
+    font-weight: bold;
+    padding: 12px;
+    .n-common-table-btn-ctl{
+      text-align: right;
+      .n-common-table-btn{
+        margin-left: 12px;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

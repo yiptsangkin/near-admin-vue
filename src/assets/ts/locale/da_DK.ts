@@ -2,7 +2,7 @@ export default {
     locale: 'da',
     country: 'DK',
     sysInfo: {
-        sysIntro: 'En brugervenlig front-end udviklingsramme, der er baseret på Vue og Ant Design'
+        sysIntro: 'En brugervenlig front-end-udviklingsramme baseret på Vue- og myresign'
     },
     loginForm: {
         byAccountBtn: 'Konto adgangskode login',
@@ -131,7 +131,7 @@ export default {
         errorTip: {
             homePageCloseError: 'Hjemmesiden må ikke lukke',
             affixPageCloseError: 'Den faste side må ikke lukke',
-            homePageAffixError: 'Hjemmesiden kan ikke afspændes'
+            homePageAffixError: 'Hjemmesiden kan ikke være låst'
         },
         checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af siden med rød etiket er gemt)',
         cancelClose: 'Lukket operation annulleret'
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Beklager, der gik noget galt med serveren. Prøv igen senere'
         },
         btnText: 'Luk side'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Forhøre',
+            shrink: 'Falde sammen',
+            reset: 'Nulstil',
+            unshrink: 'Unfold'
+        }
+    },
+    logline: {
+        list: 'Log liste',
+        btnList: {
+            export: 'Eksport',
+            remove: 'Tom'
+        },
+        time: {
+            plh: 'Vælg en tidsramme',
+            range: 'frist',
+            halfDay: 'Inden for en halv dag',
+            oneDay: 'på en dag',
+            weekDay: 'indenfor en uge',
+            monthDay: 'Inden for en måned'
+        },
+        type: {
+            logType: 'Log type',
+            plh: 'Vælg en logtype'
+        },
+        tableColumns: {
+            index: 'Serienummer',
+            desc: 'Log beskrivelse',
+            type: 'Log type',
+            op: 'drift'
+        }
     }
 }

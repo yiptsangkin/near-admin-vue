@@ -22,7 +22,12 @@ import {
     Modal,
     Button,
     Breadcrumb,
-    Spin
+    Spin,
+    FormModel,
+    Select,
+    Table,
+    Divider,
+    Tooltip
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -49,6 +54,14 @@ Vue.component(Button.name, Button)
 Vue.component(Breadcrumb.name, Breadcrumb)
 Vue.component(Breadcrumb.Item.name, Breadcrumb.Item)
 Vue.component(Spin.name, Spin)
+Vue.component(FormModel.name, FormModel)
+Vue.component(FormModel.Item.name, FormModel.Item)
+Vue.component(Select.name, Select)
+Vue.component(Select.Option.name, Select.Option)
+Vue.component(Table.name, Table)
+Vue.component(Divider.name, Divider)
+Vue.component(Dropdown.name, Dropdown)
+Vue.component(Tooltip.name, Tooltip)
 
 // here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue
 Vue.use(Modal)

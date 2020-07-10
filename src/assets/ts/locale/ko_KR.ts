@@ -104,7 +104,7 @@ export default {
             '1-0-5': '이벤트 버스',
             '1-0-6': '툴셋',
             '1-0-7': '액세스 제어',
-            '1-0-8': '핫키',
+            '1-0-8': '단축키',
             '1-1': '페이지 기능',
             '1-1-0': '구성 요소 페이지',
             '1-1-1': 'URL 페이지',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: '죄송합니다. 서버에 문제가 있습니다. 나중에 다시 시도하십시오'
         },
         btnText: '페이지 닫기'
+    },
+    searchPanel: {
+        btn: {
+            search: '조회',
+            shrink: '무너짐',
+            reset: '초기화',
+            unshrink: '펴다'
+        }
+    },
+    logline: {
+        list: '로그리스트',
+        btnList: {
+            export: '수출',
+            remove: '빈'
+        },
+        time: {
+            plh: '시간대를 선택하십시오',
+            range: '시간 제한',
+            halfDay: '반나절 안에',
+            oneDay: '하루에',
+            weekDay: '일주일 안에',
+            monthDay: '한 달 안에'
+        },
+        type: {
+            logType: '로그 타입',
+            plh: '로그 종류를 선택하십시오'
+        },
+        tableColumns: {
+            index: '일련 번호',
+            desc: '로그 설명',
+            type: '로그 타입',
+            op: '운영 중'
+        }
     }
 }

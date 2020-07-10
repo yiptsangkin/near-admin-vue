@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Entschuldigung, mit dem Server ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut'
         },
         btnText: 'Seite schließen'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Anfragen',
+            shrink: 'Zusammenbruch',
+            reset: 'Zurücksetzen',
+            unshrink: 'Entfalten'
+        }
+    },
+    logline: {
+        list: 'Protokollliste',
+        btnList: {
+            export: 'Export',
+            remove: 'Leer'
+        },
+        time: {
+            plh: 'Bitte wählen Sie einen Zeitrahmen',
+            range: 'Zeitlimit',
+            halfDay: 'Innerhalb eines halben Tages',
+            oneDay: 'in einem Tag',
+            weekDay: 'innerhalb einer Woche',
+            monthDay: 'Innerhalb eines Monats'
+        },
+        type: {
+            logType: 'Protokolltyp',
+            plh: 'Bitte wählen Sie einen Protokolltyp'
+        },
+        tableColumns: {
+            index: 'Ordnungsnummer',
+            desc: 'Protokollbeschreibung',
+            type: 'Protokolltyp',
+            op: 'Betriebs'
+        }
     }
 }

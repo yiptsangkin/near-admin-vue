@@ -52,10 +52,10 @@ export default {
         fr: 'Franču valoda',
         he: 'Ebreju valodā',
         hi: 'Hindi',
-        hr: 'Horvātu',
-        hu: 'Ungāru valodā',
+        hr: 'Horvātijas',
+        hu: 'Ungāru',
         hy: 'Armēņu',
-        id: 'Indonēziešu',
+        id: 'Indonēzietis',
         is: 'Islandiešu',
         it: 'Itāļu valoda ',
         ja: 'Japāņu',
@@ -144,9 +144,42 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Atvainojiet, jūsu apmeklētā lapa neeksistē',
-            notrightTip: 'Atvainojiet, jums nav atļaujas piekļūt šai lapai',
+            notrightTip: 'Diemžēl jums nav atļaujas piekļūt šai lapai',
             noserviceTip: 'Atvainojiet, kaut kas neizdevās ar serveri, lūdzu, vēlāk mēģiniet vēlreiz'
         },
         btnText: 'Aizvērt lapu'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Jautāt',
+            shrink: 'Sakļaut',
+            reset: 'Atiestatīt',
+            unshrink: 'Atlocīt'
+        }
+    },
+    logline: {
+        list: 'Žurnālu saraksts',
+        btnList: {
+            export: 'Eksportēt',
+            remove: 'Tukšs'
+        },
+        time: {
+            plh: 'Lūdzu, atlasiet laika grafiku',
+            range: 'laika limits',
+            halfDay: 'Pus dienas laikā',
+            oneDay: 'vienā dienā',
+            weekDay: 'nedēļas laikā',
+            monthDay: 'Viena mēneša laikā'
+        },
+        type: {
+            logType: 'Žurnāla tips',
+            plh: 'Lūdzu, atlasiet žurnāla veidu'
+        },
+        tableColumns: {
+            index: 'Sērijas numurs',
+            desc: 'Žurnāla apraksts',
+            type: 'Žurnāla tips',
+            op: 'darbojas'
+        }
     }
 }

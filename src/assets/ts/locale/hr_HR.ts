@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Nažalost, nešto nije u redu s poslužiteljem. Pokušajte ponovo kasnije'
         },
         btnText: 'Zatvori stranicu'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Upit',
+            shrink: 'Kolaps',
+            reset: 'Reset',
+            unshrink: 'razmotati'
+        }
+    },
+    logline: {
+        list: 'Popis dnevnika',
+        btnList: {
+            export: 'Izvoz',
+            remove: 'Prazan'
+        },
+        time: {
+            plh: 'Odaberite vremenski okvir',
+            range: 'vremensko ograničenje',
+            halfDay: 'U roku od pola dana',
+            oneDay: 'u jednom danu',
+            weekDay: 'unutar tjedna',
+            monthDay: 'U roku od mjesec dana'
+        },
+        type: {
+            logType: 'Vrsta zapisnika',
+            plh: 'Odaberite vrstu zapisnika'
+        },
+        tableColumns: {
+            index: 'Serijski broj',
+            desc: 'Opis zapisa',
+            type: 'Vrsta zapisnika',
+            op: 'radni'
+        }
     }
 }

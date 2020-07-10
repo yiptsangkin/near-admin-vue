@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Maalesef, sunucuda bir sorun oluştu, lütfen daha sonra tekrar deneyin'
         },
         btnText: 'Sayfayı kapat'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Sormak',
+            shrink: 'Çöküş',
+            reset: 'Sıfırla',
+            unshrink: 'Çıkar'
+        }
+    },
+    logline: {
+        list: 'Günlük listesi',
+        btnList: {
+            export: 'İhracat',
+            remove: 'Boş'
+        },
+        time: {
+            plh: 'Lütfen bir zaman aralığı seçin',
+            range: 'zaman sınırı',
+            halfDay: 'Yarım gün içinde',
+            oneDay: 'bir günde',
+            weekDay: 'bir hafta içinde',
+            monthDay: 'Bir ay içinde'
+        },
+        type: {
+            logType: 'Günlük türü',
+            plh: 'Lütfen bir günlük türü seçin'
+        },
+        tableColumns: {
+            index: 'Seri numarası',
+            desc: 'Günlük açıklaması',
+            type: 'Günlük türü',
+            op: 'işletme'
+        }
     }
 }

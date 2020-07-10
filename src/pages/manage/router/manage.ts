@@ -13,7 +13,7 @@ const routesConfig: RouteConfig[] = [
         name: 'Manage',
         component: NManage
     }
-];
+]
 
 const routerOpt: RouterOptions = {
     mode: 'history',

@@ -81,7 +81,7 @@ export default {
         sv: 'Sænsku',
         ta: 'Tamílsk',
         th: 'Taílensku',
-        tr: 'Tyrknesku',
+        tr: 'Tyrkneska',
         uk: 'Úkraínska',
         vi: 'Víetnamska',
         'zh-cn': 'Einfaldað kínverska',
@@ -98,7 +98,7 @@ export default {
             '1-0': 'Rammaaðgerð',
             '1-0-0': 'Uppsetning verkefnis',
             '1-0-1': 'Framan endaskrá',
-            '1-0-2': 'Local spotta',
+            '1-0-2': 'Local spot',
             '1-0-3': 'alþjóðavæðingin',
             '1-0-4': 'Gagnabók',
             '1-0-5': 'EventBus',
@@ -116,7 +116,7 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Enginn hluti fannst undir þessari slóð',
-            emptyErr: 'Íhlutaslóð ekki stillt'
+            emptyErr: 'Slóð íhluta ekki stillt'
         }
     },
     tagObj: {
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Því miður, eitthvað fór úrskeiðis við netþjóninn, reyndu aftur seinna'
         },
         btnText: 'Loka síðu'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Spyrjast fyrir',
+            shrink: 'Hrun',
+            reset: 'Endurstilla',
+            unshrink: 'Brettu út'
+        }
+    },
+    logline: {
+        list: 'Log lista',
+        btnList: {
+            export: 'Útflutningur',
+            remove: 'Tómt'
+        },
+        time: {
+            plh: 'Vinsamlegast veldu tímaramma',
+            range: 'tímamörk',
+            halfDay: 'Innan hálfs dags',
+            oneDay: 'á einum degi',
+            weekDay: 'innan viku',
+            monthDay: 'Innan mánaðar'
+        },
+        type: {
+            logType: 'Tegund annáls',
+            plh: 'Vinsamlegast veldu tegund annáls'
+        },
+        tableColumns: {
+            index: 'Raðnúmer',
+            desc: 'Log lýsing',
+            type: 'Tegund annáls',
+            op: 'starfandi'
+        }
     }
 }

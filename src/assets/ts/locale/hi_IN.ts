@@ -129,7 +129,7 @@ export default {
         affixPage: 'निश्चित पृष्ठ',
         cancelAffixPage: 'अनपिन',
         errorTip: {
-            homePageCloseError: 'मुखपृष्ठ बंद करने की अनुमति नहीं है',
+            homePageCloseError: 'मुखपृष्ठ को बंद करने की अनुमति नहीं है',
             affixPageCloseError: 'निश्चित पृष्ठ को बंद करने की अनुमति नहीं है',
             homePageAffixError: 'होमपेज अनपिन नहीं किया जा सकता है'
         },
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'क्षमा करें, सर्वर में कुछ गड़बड़ हो गई है, कृपया बाद में पुनः प्रयास करें'
         },
         btnText: 'पृष्ठ बंद करें'
+    },
+    searchPanel: {
+        btn: {
+            search: 'पूछताछ',
+            shrink: 'ढहने',
+            reset: 'रीसेट',
+            unshrink: 'उधेड़ना'
+        }
+    },
+    logline: {
+        list: 'लॉग लिस्ट',
+        btnList: {
+            export: 'निर्यात',
+            remove: 'खाली'
+        },
+        time: {
+            plh: 'कृपया एक समय सीमा चुनें',
+            range: 'समय सीमा',
+            halfDay: 'आधे दिन में',
+            oneDay: 'एक दिन में',
+            weekDay: 'एक सप्ताह के अन्दर',
+            monthDay: 'एक महीने के भीतर'
+        },
+        type: {
+            logType: 'लॉग प्रकार',
+            plh: 'कृपया एक लॉग प्रकार चुनें'
+        },
+        tableColumns: {
+            index: 'क्रमांक',
+            desc: 'विवरण लॉग करें',
+            type: 'लॉग प्रकार',
+            op: 'ऑपरेटिंग'
+        }
     }
 }

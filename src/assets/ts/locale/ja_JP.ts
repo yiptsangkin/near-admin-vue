@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'サーバーで問題が発生しました。しばらくしてからもう一度お試しください'
         },
         btnText: 'ページを閉じる'
+    },
+    searchPanel: {
+        btn: {
+            search: '問い合わせる',
+            shrink: '崩壊',
+            reset: 'リセット',
+            unshrink: '展開する'
+        }
+    },
+    logline: {
+        list: 'ログリスト',
+        btnList: {
+            export: '書き出す',
+            remove: '空の'
+        },
+        time: {
+            plh: '時間枠を選択してください',
+            range: '制限時間',
+            halfDay: '半日以内',
+            oneDay: '一日で',
+            weekDay: '1週間以内に',
+            monthDay: '一ヶ月以内'
+        },
+        type: {
+            logType: 'ログタイプ',
+            plh: 'ログタイプを選択してください'
+        },
+        tableColumns: {
+            index: 'シリアルナンバー',
+            desc: 'ログの説明',
+            type: 'ログタイプ',
+            op: 'オペレーティング'
+        }
     }
 }

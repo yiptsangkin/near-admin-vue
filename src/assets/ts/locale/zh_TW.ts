@@ -148,5 +148,38 @@ export default {
             noserviceTip: '抱歉，服務器發生了問題，請稍後重試'
         },
         btnText: '關閉頁面'
+    },
+    searchPanel: {
+        btn: {
+            search: '查詢',
+            shrink: '收起',
+            reset: '重置',
+            unshrink: '展開'
+        }
+    },
+    logline: {
+        list: '日誌列表',
+        btnList: {
+            export: '導出',
+            remove: '清空'
+        },
+        time: {
+            plh: '請選擇時間範圍',
+            range: '時間範圍',
+            halfDay: '半天內',
+            oneDay: '一天內',
+            weekDay: '一周內',
+            monthDay: '一個月內'
+        },
+        type: {
+            logType: '日誌類型',
+            plh: '請選擇日誌類型'
+        },
+        tableColumns: {
+            index: '序號',
+            desc: '日誌描述',
+            type: '日誌類型',
+            op: '操作'
+        }
     }
 }

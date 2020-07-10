@@ -2,7 +2,7 @@ export default {
     locale: 'ca',
     country: 'ES',
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament de front-end fàcil d’utilitzar basat en Vue and Disseny de formigues'
+        sysIntro: 'Un marc de desenvolupament de front-end senzill basat en Vue and Disseny de formigues'
     },
     loginForm: {
         byAccountBtn: 'Inici de sessió de la contrasenya del compte',
@@ -148,5 +148,38 @@ export default {
             noserviceTip: 'Ho sentim, ha funcionat alguna cosa malament amb el servidor. Torneu-ho a provar més endavant'
         },
         btnText: 'Tanca la pàgina'
+    },
+    searchPanel: {
+        btn: {
+            search: 'Consulteu',
+            shrink: 'Esfondrament',
+            reset: 'Restablir',
+            unshrink: 'Desplegar'
+        }
+    },
+    logline: {
+        list: 'Llista de registres',
+        btnList: {
+            export: 'Exporta',
+            remove: 'Buit'
+        },
+        time: {
+            plh: 'Seleccioneu un marc de temps',
+            range: 'termini',
+            halfDay: 'Dintre de mig dia',
+            oneDay: 'en un sol dia',
+            weekDay: 'en una setmana',
+            monthDay: 'D’aquí a un mes'
+        },
+        type: {
+            logType: 'Tipus de registre',
+            plh: 'Seleccioneu un tipus de registre'
+        },
+        tableColumns: {
+            index: 'Número de sèrie',
+            desc: 'Descripció del registre',
+            type: 'Tipus de registre',
+            op: 'operant'
+        }
     }
 }
