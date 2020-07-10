@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="180" src="http://q9yt0gpa1.bkt.clouddn.com/logo.svg">
+  <img width="180" src=https://github.com/yiptsangkin/near-admin-vue/blob/master/public/static/images/logo/logo.svg">
 </p>
 
 <p align="center">
