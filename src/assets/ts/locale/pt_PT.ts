@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Lista de registros',
+        detail: 'Detalhes do registro',
         btnList: {
             export: 'Exportar',
             remove: 'Vazio'
@@ -179,7 +180,35 @@ export default {
             index: 'Número de série',
             desc: 'Descrição do log',
             type: 'Tipo de log',
+            time: 'Tempo',
             op: 'operativo'
-        }
+        },
+        request: 'Solicitar dados',
+        error: {
+            cancel: 'Operação vazia cancelada',
+            confirm: 'Deseja limpar o log?(O log será esvaziado e não poderá ser recuperado)'
+        },
+        success: 'O log foi esvaziado'
+    },
+    comTable: {
+        columns: {
+            title: 'Configurações de coluna',
+            all: 'selecionar tudo',
+            reset: 'Redefinir',
+            fixedLeft: 'Esquerda fixa',
+            fixedRight: 'Direito fixo',
+            cancelFixed: 'Soltar'
+        },
+        size: {
+            title: 'Altura da linha',
+            small: 'limitar',
+            normal: 'no',
+            large: 'largura'
+        },
+        fullscreen: 'tela cheia',
+        unFullscreen: 'Cancelar tela cheia'
+    },
+    normalBtn: {
+        detail: 'Visão'
     }
 }

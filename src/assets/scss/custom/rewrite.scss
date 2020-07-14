@@ -1,3 +1,21 @@
-::v-deep .ant-input{
-  height: 40px;
+@import "theme/theme";
+
+// ant table stripe control
+.ant-table-tbody > tr.ant-table-row.stripe-dark{
+  background-color: rgba($primary-color, 0.05);
+}
+
+// link-btn
+.n-ant-btn-link{
+  height: unset;
+  padding: 0;
+}
+
+.n-form{
+  .ant-row.ant-form-item{
+    display: flex;
+    .ant-col.ant-form-item-control-wrapper{
+      flex: 1;
+    }
+  }
 }

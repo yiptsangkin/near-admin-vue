@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Seznam dnevnikov',
+        detail: 'Podrobnosti dnevnika',
         btnList: {
             export: 'Izvoz',
             remove: 'Prazno'
@@ -179,7 +180,35 @@ export default {
             index: 'Serijska številka',
             desc: 'Opis dnevnika',
             type: 'Vrsta dnevnika',
+            time: 'čas',
             op: 'delovanje'
-        }
+        },
+        request: 'Zahtevajte podatke',
+        error: {
+            cancel: 'Prazno delovanje je preklicano',
+            confirm: 'Ali želite počistiti dnevnik?(Dnevnik se bo izpraznil in ga ni mogoče pridobiti)'
+        },
+        success: 'Hlod je bil izpraznjen'
+    },
+    comTable: {
+        columns: {
+            title: 'Nastavitve stolpcev',
+            all: 'Izberi vse',
+            reset: 'Ponastaviti',
+            fixedLeft: 'Fiksno levo',
+            fixedRight: 'Popravljena pravica',
+            cancelFixed: 'Odklopite'
+        },
+        size: {
+            title: 'Višina vrstice',
+            small: 'ozka',
+            normal: 'v',
+            large: 'premer'
+        },
+        fullscreen: 'celozaslonski način',
+        unFullscreen: 'Prekliči na celotnem zaslonu'
+    },
+    normalBtn: {
+        detail: 'Pogled'
     }
 }

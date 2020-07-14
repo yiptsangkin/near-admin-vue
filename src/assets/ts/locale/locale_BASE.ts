@@ -159,6 +159,7 @@ module.exports = {
     },
     logline: {
         list: '日志列表',
+        detail: '日志详情',
         btnList: {
             export: '导出',
             remove: '清空'
@@ -179,7 +180,35 @@ module.exports = {
             index: '序号',
             desc: '日志描述',
             type: '日志类型',
+            time: '时间',
             op: '操作'
-        }
+        },
+        request: '请求数据',
+        error: {
+            cancel: '已取消清空操作',
+            confirm: '是否清空日志？（日志清空将无法找回）'
+        },
+        success: '日志已清空'
+    },
+    comTable: {
+        columns: {
+            title: '列设置',
+            all: '全选',
+            reset: '重置',
+            fixedLeft: '固定左边',
+            fixedRight: '固定右边',
+            cancelFixed: '取消固定'
+        },
+        size: {
+            title: '行高',
+            small: '窄',
+            normal: '中',
+            large: '宽'
+        },
+        fullscreen: '全屏',
+        unFullscreen: '取消全屏'
+    },
+    normalBtn: {
+        detail: '查看'
     }
 }

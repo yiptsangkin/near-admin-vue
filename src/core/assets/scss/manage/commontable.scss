@@ -2,6 +2,15 @@
 
 .n-common-table-wrp{
   background-color: $grey-f;
+  &.n-full-common-table{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    overflow: auto;
+  }
   .n-common-table-title{
     font-weight: bold;
     padding: 12px;
@@ -13,6 +22,68 @@
           margin-left: 0;
         }
       }
+    }
+  }
+}
+
+.n-com-table-small{
+  ::v-deep .ant-table-thead > tr > th,
+  ::v-deep .ant-table-tbody > tr > td {
+    padding: 8px 16px;
+    overflow-wrap: break-word;
+  }
+}
+
+.n-com-table-normal{
+  ::v-deep .ant-table-thead > tr > th,
+  ::v-deep .ant-table-tbody > tr > td {
+    padding: 13px 16px;
+    overflow-wrap: break-word;
+  }
+}
+
+.n-com-table-large{
+  ::v-deep .ant-table-thead > tr > th,
+  ::v-deep .ant-table-tbody > tr > td {
+    padding: 16px 16px;
+    overflow-wrap: break-word;
+  }
+}
+
+.n-border-none{
+  .ant-dropdown-menu{
+    padding: 0;
+  }
+  .ant-menu-vertical{
+    border-right: 0;
+    .ant-menu-item{
+      height: unset;
+      line-height: unset;
+      padding: 8px 16px;
+      margin-bottom: 0;
+      .ant-checkbox-wrapper{
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+.n-h-divider.ant-divider-horizontal{
+  margin: 0;
+}
+
+.n-pin-wrp{
+  line-height: 1.5;
+  margin-left: 20px;
+  .c-pin{
+    vertical-align: middle;
+    margin-right: 0px;
+    margin-left: 8px;
+    &:last-child{
+      margin-right: 0;
+    }
+    &.l-pin{
+      transform: rotateY(180deg);
     }
   }
 }

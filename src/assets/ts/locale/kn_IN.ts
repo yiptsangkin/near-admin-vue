@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'ಲಾಗ್ ಪಟ್ಟಿ',
+        detail: 'ಲಾಗ್ ವಿವರಗಳು',
         btnList: {
             export: 'ರಫ್ತು ಮಾಡಿ',
             remove: 'ಖಾಲಿ'
@@ -179,7 +180,35 @@ export default {
             index: 'ಕ್ರಮ ಸಂಖ್ಯೆ',
             desc: 'ಲಾಗ್ ವಿವರಣೆ',
             type: 'ಲಾಗ್ ಪ್ರಕಾರ',
+            time: 'ಸಮಯ',
             op: 'ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ'
-        }
+        },
+        request: 'ಡೇಟಾವನ್ನು ವಿನಂತಿಸಿ',
+        error: {
+            cancel: 'ಖಾಲಿ ಕಾರ್ಯಾಚರಣೆ ರದ್ದುಗೊಂಡಿದೆ',
+            confirm: 'ನೀವು ಲಾಗ್ ಅನ್ನು ತೆರವುಗೊಳಿಸಲು ಬಯಸುವಿರಾ?(ಲಾಗ್ ಖಾಲಿಯಾಗುತ್ತದೆ ಮತ್ತು ಮರುಪಡೆಯಲಾಗುವುದಿಲ್ಲ)'
+        },
+        success: 'ಲಾಗ್ ಖಾಲಿಯಾಗಿದೆ'
+    },
+    comTable: {
+        columns: {
+            title: 'ಕಾಲಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು',
+            all: 'ಎಲ್ಲವನ್ನು ಆರಿಸು',
+            reset: 'ಮರುಹೊಂದಿಸಿ',
+            fixedLeft: 'ಸ್ಥಿರ ಎಡ',
+            fixedRight: 'ಸರಿ',
+            cancelFixed: 'ಅನ್ಪಿನ್ ಮಾಡಿ'
+        },
+        size: {
+            title: 'ಸಾಲು ಎತ್ತರ',
+            small: 'ಕಿರಿದಾದ',
+            normal: 'ಸೈನ್ ಇನ್',
+            large: 'ಅಗಲ'
+        },
+        fullscreen: 'ಪೂರ್ಣ ಪರದೆ',
+        unFullscreen: 'ಪೂರ್ಣ ಪರದೆಯನ್ನು ರದ್ದುಗೊಳಿಸಿ'
+    },
+    normalBtn: {
+        detail: 'ನೋಟ'
     }
 }

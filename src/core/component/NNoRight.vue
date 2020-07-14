@@ -5,9 +5,9 @@
                 <img :src="iconUrl" alt="403">
             </div>
             <div class="n-not-found-tip">
-                {{ $t(dict.errorPage.errorTip.notrightTip) }}</div>
+                {{ $t(dict.localeObj.errorPage.errorTip.notrightTip) }}</div>
             <div class="n-not-found-op">
-                <a-button @click="closeCurTag" type="primary">{{ $t(dict.errorPage.btnText) }}</a-button>
+                <a-button @click="closeCurTag" type="primary">{{ $t(dict.localeObj.errorPage.btnText) }}</a-button>
             </div>
         </div>
     </div>

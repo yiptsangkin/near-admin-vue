@@ -131,7 +131,7 @@ export default {
         errorTip: {
             homePageCloseError: 'La home page non è autorizzata a chiudere',
             affixPageCloseError: 'La pagina fissa non può chiudere',
-            homePageAffixError: 'La home page non può essere annullata'
+            homePageAffixError: 'Non è possibile sbloccare la home page'
         },
         checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina dell&#39;etichetta rossa sia stato salvato)',
         cancelClose: 'Operazione chiusa annullata'
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Elenco dei registri',
+        detail: 'Dettagli del registro',
         btnList: {
             export: 'Esportare',
             remove: 'Vuoto'
@@ -179,7 +180,35 @@ export default {
             index: 'Numero di serie',
             desc: 'Descrizione del registro',
             type: 'Tipo di registro',
+            time: 'tempo',
             op: 'operativo'
-        }
+        },
+        request: 'Richiedi dati',
+        error: {
+            cancel: 'Operazione vuota annullata',
+            confirm: 'Vuoi cancellare il registro?(Il registro verrà svuotato e non potrà essere recuperato)'
+        },
+        success: 'Il registro è stato svuotato'
+    },
+    comTable: {
+        columns: {
+            title: 'Impostazioni della colonna',
+            all: 'seleziona tutto',
+            reset: 'Ripristina',
+            fixedLeft: 'Fisso a sinistra',
+            fixedRight: 'Corretto a destra',
+            cancelFixed: 'Sblocca'
+        },
+        size: {
+            title: 'Altezza della riga',
+            small: 'stretto',
+            normal: 'nel',
+            large: 'larghezza'
+        },
+        fullscreen: 'a schermo intero',
+        unFullscreen: 'Annulla schermo intero'
+    },
+    normalBtn: {
+        detail: 'Visualizza'
     }
 }

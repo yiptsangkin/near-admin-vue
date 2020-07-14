@@ -133,7 +133,7 @@ export default {
             affixPageCloseError: 'لا يسمح بإغلاق الصفحة الثابتة',
             homePageAffixError: 'لا يمكن إلغاء تثبيت الصفحة الرئيسية'
         },
-        checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة التصنيف الأحمر)',
+        checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة الملصق الأحمر)',
         cancelClose: 'تم إلغاء العملية المغلقة'
     },
     personalCenter: {
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'قائمة السجل',
+        detail: 'تفاصيل السجل',
         btnList: {
             export: 'تصدير',
             remove: 'فارغة'
@@ -179,7 +180,35 @@ export default {
             index: 'رقم سري',
             desc: 'وصف السجل',
             type: 'نوع السجل',
+            time: 'زمن',
             op: 'تعمل'
-        }
+        },
+        request: 'طلب بيانات',
+        error: {
+            cancel: 'تم إلغاء العملية الفارغة',
+            confirm: 'هل تريد مسح السجل؟(سيتم إفراغ السجل ولا يمكن استرداده)'
+        },
+        success: 'تم تفريغ السجل'
+    },
+    comTable: {
+        columns: {
+            title: 'إعدادات العمود',
+            all: 'اختر الكل',
+            reset: 'إعادة تعيين',
+            fixedLeft: 'اليسار ثابت',
+            fixedRight: 'حق ثابت',
+            cancelFixed: 'أزل'
+        },
+        size: {
+            title: 'ارتفاع الصف',
+            small: 'ضيق',
+            normal: 'في',
+            large: 'عرض'
+        },
+        fullscreen: 'تكبير الشاشة',
+        unFullscreen: 'إلغاء ملء الشاشة'
+    },
+    normalBtn: {
+        detail: 'رأي'
     }
 }

@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Liste des journaux',
+        detail: 'Détails du journal',
         btnList: {
             export: 'Exportation',
             remove: 'Vide'
@@ -179,7 +180,35 @@ export default {
             index: 'Numéro de série',
             desc: 'Description du journal',
             type: 'Type de journal',
+            time: 'temps',
             op: 'en fonctionnement'
-        }
+        },
+        request: 'Demander des données',
+        error: {
+            cancel: 'Opération vide annulée',
+            confirm: 'Voulez-vous effacer le journal?(Le journal sera vidé et ne pourra pas être récupéré)'
+        },
+        success: 'Le journal a été vidé'
+    },
+    comTable: {
+        columns: {
+            title: 'Paramètres de colonne',
+            all: 'tout sélectionner',
+            reset: 'Réinitialiser',
+            fixedLeft: 'Fixe gauche',
+            fixedRight: 'Fixe à droite',
+            cancelFixed: 'Détacher'
+        },
+        size: {
+            title: 'Hauteur de ligne',
+            small: 'étroit',
+            normal: 'dans',
+            large: 'largeur'
+        },
+        fullscreen: 'plein écran',
+        unFullscreen: 'Annuler le plein écran'
+    },
+    normalBtn: {
+        detail: 'Vue'
     }
 }

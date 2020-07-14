@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Danh sách nhật ký',
+        detail: 'Nhật ký chi tiết',
         btnList: {
             export: 'Xuất khẩu',
             remove: 'Trống'
@@ -179,7 +180,35 @@ export default {
             index: 'Số sê-ri',
             desc: 'Nhật ký mô tả',
             type: 'Loại nhật ký',
+            time: 'thời gian',
             op: 'điều hành'
-        }
+        },
+        request: 'Yêu cầu dữ liệu',
+        error: {
+            cancel: 'Hủy bỏ hoạt động',
+            confirm: 'Bạn có muốn xóa nhật ký?(Nhật ký sẽ được làm trống và không thể lấy lại được)'
+        },
+        success: 'Nhật ký đã được làm trống'
+    },
+    comTable: {
+        columns: {
+            title: 'Cài đặt cột',
+            all: 'chọn tất cả',
+            reset: 'Cài lại',
+            fixedLeft: 'Đã sửa trái',
+            fixedRight: 'Đã sửa đúng',
+            cancelFixed: 'Bỏ ghim'
+        },
+        size: {
+            title: 'Chiều cao hàng',
+            small: 'hẹp',
+            normal: 'trong',
+            large: 'chiều rộng'
+        },
+        fullscreen: 'toàn màn hình',
+        unFullscreen: 'Hủy toàn màn hình'
+    },
+    normalBtn: {
+        detail: 'Lượt xem'
     }
 }

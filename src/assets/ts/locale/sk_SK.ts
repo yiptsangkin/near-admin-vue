@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Zoznam denníkov',
+        detail: 'Podrobnosti denníka',
         btnList: {
             export: 'Export',
             remove: 'prázdny'
@@ -179,7 +180,35 @@ export default {
             index: 'Sériové číslo',
             desc: 'Popis denníka',
             type: 'Typ denníka',
+            time: 'čas',
             op: 'prevádzkové'
-        }
+        },
+        request: 'Vyžiadajte si údaje',
+        error: {
+            cancel: 'Prázdna operácia bola zrušená',
+            confirm: 'Chcete vymazať denník?(Denník bude vyprázdnený a nedá sa načítať)'
+        },
+        success: 'Denník bol vyprázdnený'
+    },
+    comTable: {
+        columns: {
+            title: 'Nastavenia stĺpcov',
+            all: 'vybrať všetko',
+            reset: 'Reset',
+            fixedLeft: 'Opravené vľavo',
+            fixedRight: 'Opravené právo',
+            cancelFixed: 'uvoľniť'
+        },
+        size: {
+            title: 'Výška riadku',
+            small: 'zúžiť',
+            normal: 'v',
+            large: 'šírka'
+        },
+        fullscreen: 'celá obrazovka',
+        unFullscreen: 'Zrušiť celú obrazovku'
+    },
+    normalBtn: {
+        detail: 'vyhliadka'
     }
 }

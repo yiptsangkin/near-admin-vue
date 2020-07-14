@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'लॉग लिस्ट',
+        detail: 'लॉग विवरण',
         btnList: {
             export: 'निर्यात',
             remove: 'खाली'
@@ -179,7 +180,35 @@ export default {
             index: 'क्रमांक',
             desc: 'विवरण लॉग करें',
             type: 'लॉग प्रकार',
+            time: 'समय',
             op: 'ऑपरेटिंग'
-        }
+        },
+        request: 'डेटा का अनुरोध करें',
+        error: {
+            cancel: 'खाली संचालन रद्द',
+            confirm: 'क्या आप लॉग साफ़ करना चाहते हैं?(लॉग खाली किया जाएगा और पुनः प्राप्त नहीं किया जा सकता है)'
+        },
+        success: 'लॉग खाली कर दिया गया है'
+    },
+    comTable: {
+        columns: {
+            title: 'स्तंभ सेटिंग्स',
+            all: 'सभी का चयन करे',
+            reset: 'रीसेट',
+            fixedLeft: 'निश्चित छोड़ दिया',
+            fixedRight: 'निश्चित ही सही',
+            cancelFixed: 'अनपिन'
+        },
+        size: {
+            title: 'पंक्ति की ऊंचाई',
+            small: 'संकीर्ण',
+            normal: 'में',
+            large: 'चौड़ाई'
+        },
+        fullscreen: 'पूर्ण स्क्रीन',
+        unFullscreen: 'पूर्ण स्क्रीन रद्द करें'
+    },
+    normalBtn: {
+        detail: 'राय'
     }
 }

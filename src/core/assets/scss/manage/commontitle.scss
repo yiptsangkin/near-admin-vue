@@ -1,0 +1,12 @@
+@import "~@scss/custom/theme/theme";
+
+.n-common-title{
+  height: 18px;
+  line-height: 18px;
+  border-left: 4px solid $primary-color;
+  padding-left: 12px;
+  margin: 12px 0;
+  &.no-top{
+    margin-top: 0;
+  }
+}

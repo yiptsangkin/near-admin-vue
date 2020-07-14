@@ -2,16 +2,16 @@
     <div class="n-search-panel-wrp">
         <div class="n-search-panel-btn-wrp">
             <a-button size="small" class="n-search-panel-btn" @click="shrink">
-                {{ $t(dict.searchPanel.btn.shrink) }}
+                {{ isShrink ? $t(dict.localeObj.searchPanel.btn.unshrink) : $t(dict.localeObj.searchPanel.btn.shrink) }}
             </a-button>
             <a-button size="small" class="n-search-panel-btn" @click="reset">
-                {{ $t(dict.searchPanel.btn.reset) }}
+                {{ $t(dict.localeObj.searchPanel.btn.reset) }}
             </a-button>
             <a-button type="primary" size="small" class="n-search-panel-btn" @click="search">
-                {{ $t(dict.searchPanel.btn.search) }}
+                {{ $t(dict.localeObj.searchPanel.btn.search) }}
             </a-button>
         </div>
-        <slot name="n-search-ctx"></slot>
+        <slot name="n-search-ctx" :shrink-switch="isShrink"></slot>
     </div>
 </template>
 
@@ -25,12 +25,13 @@
         mixins: [CoreBase, Base],
         data () {
             return {
+                isShrink: false
             }
         },
         methods: {
             shrink () {
                 const self = this
-                self.$emit('shrink')
+                self.isShrink = !self.isShrink
             },
             reset () {
                 const self = this

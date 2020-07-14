@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Llista de registres',
+        detail: 'Detalls del registre',
         btnList: {
             export: 'Exporta',
             remove: 'Buit'
@@ -179,7 +180,35 @@ export default {
             index: 'Número de sèrie',
             desc: 'Descripció del registre',
             type: 'Tipus de registre',
+            time: 'temps',
             op: 'operant'
-        }
+        },
+        request: 'Sol·licita dades',
+        error: {
+            cancel: 'S&#39;ha cancel·lat l&#39;operació buida',
+            confirm: 'Voleu esborrar el registre?(El registre es buidarà i no es podrà recuperar)'
+        },
+        success: 'El registre s’ha buidat'
+    },
+    comTable: {
+        columns: {
+            title: 'Configuració de les columnes',
+            all: 'seleccionar tot',
+            reset: 'Restablir',
+            fixedLeft: 'S&#39;ha corregit a l&#39;esquerra',
+            fixedRight: 'Fixada a la dreta',
+            cancelFixed: 'Desaconseguir'
+        },
+        size: {
+            title: 'Alçada de fila',
+            small: 'estret',
+            normal: 'a',
+            large: 'amplada'
+        },
+        fullscreen: 'pantalla completa',
+        unFullscreen: 'Cancel·la la pantalla completa'
+    },
+    normalBtn: {
+        detail: 'Veure'
     }
 }

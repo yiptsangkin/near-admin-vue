@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Günlük listesi',
+        detail: 'Günlük ayrıntıları',
         btnList: {
             export: 'İhracat',
             remove: 'Boş'
@@ -179,7 +180,35 @@ export default {
             index: 'Seri numarası',
             desc: 'Günlük açıklaması',
             type: 'Günlük türü',
+            time: 'zaman',
             op: 'işletme'
-        }
+        },
+        request: 'Veri isteyin',
+        error: {
+            cancel: 'Boş işlem iptal edildi',
+            confirm: 'Günlüğü temizlemek istiyor musunuz?(Günlük boşaltılır ve alınamaz)'
+        },
+        success: 'Günlük boşaltıldı'
+    },
+    comTable: {
+        columns: {
+            title: 'Sütun ayarları',
+            all: 'hepsini seç',
+            reset: 'Sıfırla',
+            fixedLeft: 'Sabit sola',
+            fixedRight: 'Sabit hak',
+            cancelFixed: 'sabitlemesini'
+        },
+        size: {
+            title: 'Satır yüksekliği',
+            small: 'dar',
+            normal: 'içinde',
+            large: 'Genişlik'
+        },
+        fullscreen: 'Tam ekran',
+        unFullscreen: 'Tam ekranı iptal et'
+    },
+    normalBtn: {
+        detail: 'Görünüm'
     }
 }

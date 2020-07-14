@@ -1,56 +1,108 @@
 <template>
     <div class="logline-src">
-        <n-search-panel @search="getLog">
-            <div class="com-search-ctx" slot="n-search-ctx">
-                <a-form-model :colon="false" layout="inline" :model="loglineForm.model">
-                    <a-form-model-item :label="$t(dict.logline.time.range)">
-                        <a-select allow-clear v-model="loglineForm.model.dateRange" size="small" style="width: 160px" :placeholder="$t(dict.logline.time.plh)">
-                            <a-select-option :key="index" v-for="(item, index) in loglineForm.external.dateRangeList" :value="$t(item.value)">
-                                {{ $t(item.name) }}
-                            </a-select-option>
-                        </a-select>
-                    </a-form-model-item>
-                    <a-form-model-item :label="$t(dict.logline.type.logType)">
-                        <a-select allow-clear v-model="loglineForm.model.logType" size="small" style="width: 160px" :placeholder="$t(dict.logline.type.plh)">
-                            <a-select-option :key="index" v-for="(item, index) in loglineForm.external.logTypeList" :value="$t(item.value)">
-                                {{ $t(item.name) }}
-                            </a-select-option>
-                        </a-select>
-                    </a-form-model-item>
+        <!-- search pannel -->
+        <n-search-panel @search="getLog" @reset="resetFiled">
+            <div class="com-search-ctx" slot="n-search-ctx" slot-scope="{shrinkSwitch}">
+                <a-form-model class="n-form" ref="n-form" :colon="false" layout="inline" :model="loglineForm.model">
+                    <a-row>
+                        <a-col :xs="24" :sm="12" :md="6" :lg="6" v-if="!shrinkSwitch">
+                            <a-form-model-item :label="$t(dict.localeObj.logline.time.range)" prop="dateRange">
+                                <a-select allow-clear v-model="loglineForm.model.dateRange" size="small" :placeholder="$t(dict.localeObj.logline.time.plh)">
+                                    <a-select-option :key="index" v-for="(item, index) in loglineForm.external.dateRangeList" :value="item.value">
+                                        {{ $t(item.name) }}
+                                    </a-select-option>
+                                </a-select>
+                            </a-form-model-item>
+                        </a-col>
+                    </a-row>
                 </a-form-model>
             </div>
         </n-search-panel>
+        <!-- result table -->
         <div class="n-logline-table">
-            <n-common-table :table-obj="loglineTable">
-                <a-table slot="com-table" :columns="loglineTable.columns" :data-source="loglineTable.data">
+            <n-common-table :table-obj="loglineTable" @btnevent="btnEvent">
+                <a-table slot-scope="{sizeClass, rowKey, selectColumns, selectData, rowClass}"
+                         :class="sizeClass" :row-key="rowKey" slot="com-table"
+                         :columns="selectColumns"
+                         :data-source="loglineTable.data"
+                         :scroll="{ x: '100%' }"
+                         :pagination="loglineTable.pagingInfo"
+                         :row-class-name="rowClass"
+                         @change="pageChange"
+                >
                     <a-tooltip placement="topLeft" slot="title-1">
                         <template slot="title">
-                            {{ $t(dict.logline.tableColumns.index) }}
+                            {{ $t(dict.localeObj.logline.tableColumns.index) }}
                         </template>
-                        <span>{{ $t(dict.logline.tableColumns.index) }}</span>
+                        <span>{{ $t(dict.localeObj.logline.tableColumns.index) }}</span>
                     </a-tooltip>
                     <a-tooltip placement="topLeft" slot="title-2">
                         <template slot="title">
-                            {{ $t(dict.logline.tableColumns.desc) }}
+                            {{ $t(dict.localeObj.logline.tableColumns.desc) }}
                         </template>
-                        <span>{{ $t(dict.logline.tableColumns.desc) }}</span>
+                        <span>{{ $t(dict.localeObj.logline.tableColumns.desc) }}</span>
                     </a-tooltip>
                     <a-tooltip placement="topLeft" slot="title-3">
                         <template slot="title">
-                            {{ $t(dict.logline.tableColumns.type) }}
+                            {{ $t(dict.localeObj.logline.tableColumns.type) }}
                         </template>
-                        <span>{{ $t(dict.logline.tableColumns.type) }}</span>
+                        <span>{{ $t(dict.localeObj.logline.tableColumns.type) }}</span>
                     </a-tooltip>
                     <a-tooltip placement="topLeft" slot="title-4">
                         <template slot="title">
-                            {{ $t(dict.logline.tableColumns.op) }}
+                            {{ $t(dict.localeObj.logline.tableColumns.time) }}
                         </template>
-                        <span>{{ $t(dict.logline.tableColumns.op) }}</span>
+                        <span>{{ $t(dict.localeObj.logline.tableColumns.time) }}</span>
                     </a-tooltip>
-                    <a slot="tidx" slot-scope="text">{{ text }}</a>
+                    <a-tooltip placement="topLeft" slot="title-5">
+                        <template slot="title">
+                            {{ $t(dict.localeObj.logline.tableColumns.op) }}
+                        </template>
+                        <span>{{ $t(dict.localeObj.logline.tableColumns.op) }}</span>
+                    </a-tooltip>
+                    <span slot="time" slot-scope="time">
+                        {{ timestampToDateString(time, '-', false, false, false) }}
+                    </span>
+                    <span slot="operate" slot-scope="record">
+                        <a-button class="n-ant-btn-link" type="link" @click="showLogDetail(record)">{{ $t(dict.localeObj.normalBtn.detail) }}</a-button>
+                    </span>
                 </a-table>
             </n-common-table>
         </div>
+        <!-- logline detail -->
+        <a-modal
+                :title="$t(loglineDetail.props.title)"
+                v-model="loglineDetail.props.visible"
+                :width="loglineDetail.props.width"
+                :footer="null"
+        >
+            <n-common-title :title="dict.localeObj.logline.detail" :no-top="true"></n-common-title>
+            <div class="n-logline-basic-info">
+                <a-form-model class="n-form" :colon="false" layout="inline" :model="loglineDetail.model">
+                    <a-row>
+                        <a-col :xs="24" :sm="24" :md="12" :lg="12">
+                            <a-form-model-item :label="$t(dict.localeObj.logline.tableColumns.type)">
+                                <a-input size="small" disabled v-model="loglineDetail.model.level"></a-input>
+                            </a-form-model-item>
+                        </a-col>
+                        <a-col :xs="24" :sm="24" :md="12" :lg="12">
+                            <a-form-model-item :label="$t(dict.localeObj.logline.tableColumns.time)">
+                                <a-input size="small" disabled :value="timestampToDateString(loglineDetail.model.time, '-', false, false, false)"></a-input>
+                            </a-form-model-item>
+                        </a-col>
+                        <a-col :xs="24" :sm="24" :md="24" :lg="24">
+                            <a-form-model-item :label="$t(dict.localeObj.logline.tableColumns.desc)">
+                                <a-textarea :auto-size="loglineDetail.props.autoSize" size="small" disabled v-model="loglineDetail.model.descriptor"></a-textarea>
+                            </a-form-model-item>
+                        </a-col>
+                    </a-row>
+                </a-form-model>
+            </div>
+            <n-common-title :title="dict.localeObj.logline.request"></n-common-title>
+            <div class="n-logline-detail-info">
+                <n-codemirror :code-data="formateLogData(loglineDetail.model.data)"></n-codemirror>
+            </div>
+        </a-modal>
     </div>
 </template>
 
@@ -60,23 +112,44 @@
     import Base from '@custom/base'
     import NSearchPanel from '@corecp/NSearchPanel.vue'
     import NCommonTable from '@corecp/NCommonTable.vue'
+    import NCodemirror from '@corecp/NCodemirror.vue'
+    import NCommonTitle from '@corecp/NCommonTitle.vue'
     import dict from '@custom/dict'
     import utils from '@corets/utils'
     import {ComTable} from '@corets/type'
+    import {i18nObj} from '@corets/lang';
 
     export default Vue.extend({
         name: 'Logline',
         mixins: [CoreBase, Base],
         components: {
             NSearchPanel,
-            NCommonTable
+            NCommonTable,
+            NCodemirror,
+            NCommonTitle
         },
         data () {
             return {
                 loglineTable: {
-                    title: dict.logline.list,
+                    title: dict.localeObj.logline.list,
                     columns: [
                         {
+                            name: dict.localeObj.logline.tableColumns.index,
+                            dataIndex: 'number',
+                            key: 'number',
+                            ellipsis: true,
+                            width: 60,
+                            slots: {
+                                title: 'title-1'
+                            },
+                            customRender: (text: any, record: any, index: any) => {
+                                const self = this as any
+                                return (self.loglineTable.pagingInfo.current - 1)
+                                    * self.loglineTable.pagingInfo.pageSize + index + 1
+                            }
+                        },
+                        {
+                            name: dict.localeObj.logline.tableColumns.desc,
                             dataIndex: 'descriptor',
                             key: 'descriptor',
                             ellipsis: true,
@@ -85,67 +158,89 @@
                             }
                         },
                         {
+                            name: dict.localeObj.logline.tableColumns.type,
                             dataIndex: 'level',
                             key: 'level',
+                            width: 100,
                             ellipsis: true,
                             slots: {
                                 title: 'title-3'
                             }
                         },
                         {
+                            name: dict.localeObj.logline.tableColumns.time,
                             dataIndex: 'time',
                             key: 'time',
+                            width: 160,
                             ellipsis: true,
                             slots: {
                                 title: 'title-4'
-                            }
+                            },
+                            scopedSlots: { customRender: 'time' }
+                        },
+                        {
+                            name: dict.localeObj.logline.tableColumns.op,
+                            key: 'operate',
+                            width: 160,
+                            slots: {
+                                title: 'title-5'
+                            },
+                            scopedSlots: { customRender: 'operate' }
                         }
                     ],
                     pagingInfo: {
-                        currentPage: 1,
-                        pageSize: 10,
-                        totalRows: 0
+                        ...dict.commonObj.tablePagingInfoOpt
                     },
                     data: [],
                     btnList: [
                         {
-                            name: dict.logline.btnList.export,
+                            name: dict.localeObj.logline.btnList.export,
                             method: 'exportLog'
                         },
                         {
-                            name: dict.logline.btnList.remove,
+                            name: dict.localeObj.logline.btnList.remove,
                             method: 'removeLog'
                         }
                     ]
                 } as ComTable,
+                loglineDetail: {
+                    model: {
+                        data: null,
+                        descriptor: null,
+                        level: null,
+                        time: null
+                    },
+                    props: {
+                        title: dict.localeObj.logline.detail,
+                        visible: false,
+                        width: 800,
+                        autoSize: {
+                            minRows: 3,
+                            maxRows: 3
+                        }
+                    }
+                },
                 loglineForm: {
                     model: {
-                        dateRange: undefined,
-                        logType: undefined
+                        dateRange: undefined
                     },
                     external: {
                         dateRangeList: [
                             {
-                                name: dict.logline.time.halfDay,
-                                value: dict.logline.time.halfDay
+                                name: dict.localeObj.logline.time.halfDay,
+                                value: '.5d'
                             },
                             {
-                                name: dict.logline.time.oneDay,
-                                value: dict.logline.time.oneDay
+                                name: dict.localeObj.logline.time.oneDay,
+                                value: '1d'
                             },
                             {
-                                name: dict.logline.time.weekDay,
-                                value: dict.logline.time.weekDay
+                                name: dict.localeObj.logline.time.weekDay,
+                                value: '7d'
                             },
                             {
-                                name: dict.logline.time.monthDay,
-                                value: dict.logline.time.monthDay
-                            }
-                        ],
-                        logTypeList: [
-                            {
-                                name: 'error',
-                                value: 'error'
+                                name: dict.localeObj.logline.time.monthDay,
+                                value: '30d'
                             }
                         ]
                     }
@@ -154,18 +249,83 @@
         },
         methods: {
             exportLog () {
-                console.log('to export log file')
-            },
-            getLog () {
                 const self = this
                 utils.loglineObj.getLog({
+                    start: self.loglineForm.model.dateRange,
                     callback: (data: any) => {
                         data = data.reverse()
-                        self.loglineTable.pagingInfo.totalRows = data.length
+                        const dataList: object[] = []
+                        const columnList = [
+                            self.$t(dict.localeObj.logline.tableColumns.index),
+                            self.$t(dict.localeObj.logline.tableColumns.desc),
+                            self.$t(dict.localeObj.logline.tableColumns.type),
+                            self.$t(dict.localeObj.logline.tableColumns.time),
+                            self.$t(dict.localeObj.logline.detail)
+                        ] as string[]
+                        data.forEach((item: any, index: number) => {
+                            dataList.push({
+                                idx: index + 1,
+                                descriptor: item.descriptor,
+                                level: item.level,
+                                time: utils.timestampToDateString(item.time, '-', false, false, false),
+                                data: JSON.stringify(item.data)
+                            })
+                        })
+                        utils.exportExcel(columnList, dataList, self.$t(dict.localeObj.logline.detail) as string)
+                    }
+                })
+            },
+            getLog (pageNum = 1) {
+                const self = this
+                self.loglineTable.pagingInfo.current = pageNum
+                utils.loglineObj.getLog({
+                    start: self.loglineForm.model.dateRange,
+                    callback: (data: any) => {
+                        data = data.reverse()
+                        self.loglineTable.pagingInfo.total = data.length
                         self.loglineTable.data = data.splice(
-                            (self.loglineTable.pagingInfo.currentPage - 1) * self.loglineTable.pagingInfo.pageSize,
+                            (self.loglineTable.pagingInfo.current - 1) * self.loglineTable.pagingInfo.pageSize,
                             self.loglineTable.pagingInfo.pageSize
                         )
+                    }
+                })
+            },
+            pageChange (obj: any) {
+                const self = this
+                self.loglineTable.pagingInfo.pageSize = obj.pageSize
+                self.getLog(obj.current)
+            },
+            timestampToDateString: utils.timestampToDateString,
+            showLogDetail (record: any) {
+                const self = this as any
+                self.loglineDetail.model = record
+                self.loglineDetail.props.visible = true
+            },
+            formateLogData (data: any) {
+                return JSON.stringify(data, null, 4)
+            },
+            resetFiled () {
+                const self = this as any
+                self.$refs['n-form'].resetFields()
+                self.getLog()
+            },
+            btnEvent (method: string) {
+                const self = this as any
+                if (self[method]) {
+                    self[method]()
+                }
+            },
+            removeLog () {
+                const self = this
+                self.$confirm({
+                    content: self.$t(dict.localeObj.logline.error.confirm),
+                    onOk () {
+                        utils.loglineObj.cleanLog()
+                        self.$message.success(self.$t(dict.localeObj.logline.success) as string)
+                        self.getLog()
+                    },
+                    onCancel () {
+                        self.$message.info(self.$t(dict.localeObj.logline.error.cancel) as string)
                     }
                 })
             }

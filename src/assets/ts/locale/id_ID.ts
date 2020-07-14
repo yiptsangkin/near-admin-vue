@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Daftar log',
+        detail: 'Detail log',
         btnList: {
             export: 'Ekspor',
             remove: 'Kosong'
@@ -179,7 +180,35 @@ export default {
             index: 'Nomor seri',
             desc: 'Deskripsi log',
             type: 'Jenis log',
+            time: 'waktu',
             op: 'Pengoperasian'
-        }
+        },
+        request: 'Meminta data',
+        error: {
+            cancel: 'Operasi kosong dibatalkan',
+            confirm: 'Apakah Anda ingin menghapus log?(Log akan dikosongkan dan tidak dapat diambil)'
+        },
+        success: 'Log telah dikosongkan'
+    },
+    comTable: {
+        columns: {
+            title: 'Pengaturan kolom',
+            all: 'Pilih Semua',
+            reset: 'Setel ulang',
+            fixedLeft: 'Diperbaiki ke kiri',
+            fixedRight: 'Tetap benar',
+            cancelFixed: 'Membuka peniti'
+        },
+        size: {
+            title: 'Tinggi baris',
+            small: 'sempit',
+            normal: 'di',
+            large: 'lebar'
+        },
+        fullscreen: 'layar penuh',
+        unFullscreen: 'Batalkan layar penuh'
+    },
+    normalBtn: {
+        detail: 'Melihat'
     }
 }

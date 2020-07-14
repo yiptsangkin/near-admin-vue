@@ -145,7 +145,7 @@ export default {
         errorTip: {
             notfoundTip: 'Litujeme, stránka, kterou jste navštívili, neexistuje',
             notrightTip: 'Litujeme, nemáte oprávnění k přístupu na tuto stránku',
-            noserviceTip: 'Litujeme, ale na serveru došlo k chybě, zkuste to znovu později'
+            noserviceTip: 'Litujeme, ale na serveru došlo k chybě. Zkuste to prosím znovu později'
         },
         btnText: 'Zavřít stránku'
     },
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Seznam protokolů',
+        detail: 'Podrobnosti protokolu',
         btnList: {
             export: 'Vývozní',
             remove: 'Prázdný'
@@ -179,7 +180,35 @@ export default {
             index: 'Sériové číslo',
             desc: 'Popis protokolu',
             type: 'Typ protokolu',
+            time: 'čas',
             op: 'provozní'
-        }
+        },
+        request: 'Žádost o údaje',
+        error: {
+            cancel: 'Prázdná operace byla zrušena',
+            confirm: 'Chcete vymazat protokol?(Protokol bude vyprázdněn a nelze jej načíst)'
+        },
+        success: 'Protokol byl vyprázdněn'
+    },
+    comTable: {
+        columns: {
+            title: 'Nastavení sloupců',
+            all: 'vybrat vše',
+            reset: 'Resetovat',
+            fixedLeft: 'Opraveno vlevo',
+            fixedRight: 'Opraveno právo',
+            cancelFixed: 'Uvolnit'
+        },
+        size: {
+            title: 'Výška řádku',
+            small: 'úzký',
+            normal: 'v',
+            large: 'šířka'
+        },
+        fullscreen: 'celá obrazovka',
+        unFullscreen: 'Zrušit celou obrazovku'
+    },
+    normalBtn: {
+        detail: 'Pohled'
     }
 }

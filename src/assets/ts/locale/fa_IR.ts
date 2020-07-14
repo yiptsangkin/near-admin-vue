@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'لیست ورود',
+        detail: 'جزئیات ورود به سیستم',
         btnList: {
             export: 'صادرات',
             remove: 'خالی'
@@ -179,7 +180,35 @@ export default {
             index: 'شماره سریال',
             desc: 'توضیحات ورود به سیستم',
             type: 'نوع ورود',
+            time: 'زمان',
             op: 'عملیاتی'
-        }
+        },
+        request: 'درخواست داده',
+        error: {
+            cancel: 'عملیات خالی لغو شد',
+            confirm: 'آیا می خواهید سیاهه را پاک کنید؟(ورود به سیستم خالی می شود و قابل بازیابی نیست)'
+        },
+        success: 'ورود به سیستم خالی شده است'
+    },
+    comTable: {
+        columns: {
+            title: 'تنظیمات ستون',
+            all: 'انتخاب همه',
+            reset: 'تنظیم مجدد',
+            fixedLeft: 'سمت چپ ثابت است',
+            fixedRight: 'درست درست شد',
+            cancelFixed: 'باز کردن'
+        },
+        size: {
+            title: 'ارتفاع سطر',
+            small: 'محدود، تنگ',
+            normal: 'که در',
+            large: 'عرض'
+        },
+        fullscreen: 'تمام صفحه',
+        unFullscreen: 'تمام صفحه را لغو کنید'
+    },
+    normalBtn: {
+        detail: 'چشم انداز'
     }
 }

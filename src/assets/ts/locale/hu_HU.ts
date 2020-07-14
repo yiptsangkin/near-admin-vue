@@ -33,7 +33,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'A kérelem címe nem lehet üres',
-        networkErr: 'A hálózati kérés sikertelen, kérjük, próbálkozzon később újra'
+        networkErr: 'A hálózati kérés sikertelen, próbálkozzon később újra'
     },
     localeMap: {
         ar: 'arab',
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Naplólista',
+        detail: 'Napló részletei',
         btnList: {
             export: 'Export',
             remove: 'Üres'
@@ -179,7 +180,35 @@ export default {
             index: 'Sorozatszám',
             desc: 'Napló leírása',
             type: 'Napló típusa',
+            time: 'idő',
             op: 'üzemeltetési'
-        }
+        },
+        request: 'Kérjen adatokat',
+        error: {
+            cancel: 'Az üres művelet törölve',
+            confirm: 'Törli a naplót?(A napló kiürül, és nem lehet letölteni)'
+        },
+        success: 'A napló ki lett ürítve'
+    },
+    comTable: {
+        columns: {
+            title: 'Oszlopbeállítások',
+            all: 'mindet kiválaszt',
+            reset: 'Visszaállítás',
+            fixedLeft: 'Rögzített balra',
+            fixedRight: 'Rögzített jobb',
+            cancelFixed: 'Kibont'
+        },
+        size: {
+            title: 'Sor magasság',
+            small: 'keskeny',
+            normal: 'ban ben',
+            large: 'szélesség'
+        },
+        fullscreen: 'Teljes képernyő',
+        unFullscreen: 'Teljes képernyő visszavonása'
+    },
+    normalBtn: {
+        detail: 'Kilátás'
     }
 }

@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Logi nimekiri',
+        detail: 'Logi üksikasjad',
         btnList: {
             export: 'Eksport',
             remove: 'Tühi'
@@ -179,7 +180,35 @@ export default {
             index: 'Seerianumber',
             desc: 'Logi kirjeldus',
             type: 'Logi tüüp',
+            time: 'aeg',
             op: 'tegutsevad'
-        }
+        },
+        request: 'Taotle andmeid',
+        error: {
+            cancel: 'Tühi operatsioon tühistati',
+            confirm: 'Kas soovite logi kustutada?(Logi tühjendatakse ja seda ei saa kätte)'
+        },
+        success: 'Logi on tühjendatud'
+    },
+    comTable: {
+        columns: {
+            title: 'Veeru sätted',
+            all: 'Vali kõik',
+            reset: 'Lähtesta',
+            fixedLeft: 'Fikseeritud vasakul',
+            fixedRight: 'Fikseeritud õigus',
+            cancelFixed: 'Vabastage'
+        },
+        size: {
+            title: 'Rea kõrgus',
+            small: 'kitsas',
+            normal: 'sisse',
+            large: 'laius'
+        },
+        fullscreen: 'Täisekraan',
+        unFullscreen: 'Tühista täisekraan'
+    },
+    normalBtn: {
+        detail: 'Vaade'
     }
 }

@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Листа записа',
+        detail: 'Детаљи дневника',
         btnList: {
             export: 'Извези',
             remove: 'Празно'
@@ -179,7 +180,35 @@ export default {
             index: 'Серијски број',
             desc: 'Опис дневника',
             type: 'Врста дневника',
+            time: 'време',
             op: 'оперативни'
-        }
+        },
+        request: 'Затражите податке',
+        error: {
+            cancel: 'Празна операција је отказана',
+            confirm: 'Желите ли обрисати дневник?(Дневник ће се испразнити и није могуће вратити)'
+        },
+        success: 'Дневник је испражњен'
+    },
+    comTable: {
+        columns: {
+            title: 'Подешавања колоне',
+            all: 'Изабери све',
+            reset: 'Ресетовати',
+            fixedLeft: 'Фиксно лево',
+            fixedRight: 'Фиксно десно',
+            cancelFixed: 'Откопчај'
+        },
+        size: {
+            title: 'Висине реда',
+            small: 'узак',
+            normal: 'ин',
+            large: 'ширина'
+        },
+        fullscreen: 'цео екран',
+        unFullscreen: 'Откажи преко целог екрана'
+    },
+    normalBtn: {
+        detail: 'Поглед'
     }
 }

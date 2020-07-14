@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Список журналів',
+        detail: 'Деталі журналу',
         btnList: {
             export: 'Експорт',
             remove: 'Порожній'
@@ -179,7 +180,35 @@ export default {
             index: 'Серійний номер',
             desc: 'Опис журналу',
             type: 'Тип журналу',
+            time: 'час',
             op: 'діючі'
-        }
+        },
+        request: 'Запит даних',
+        error: {
+            cancel: 'Порожню операцію скасовано',
+            confirm: 'Ви хочете очистити журнал?(Журнал буде видалено та його неможливо отримати)'
+        },
+        success: 'Журнал випорожнено'
+    },
+    comTable: {
+        columns: {
+            title: 'Налаштування стовпців',
+            all: 'вибрати все',
+            reset: 'Скидання',
+            fixedLeft: 'Виправлений ліворуч',
+            fixedRight: 'Фіксований праворуч',
+            cancelFixed: 'Відкрутити'
+        },
+        size: {
+            title: 'Висота рядка',
+            small: 'вузький',
+            normal: 'в',
+            large: 'ширина'
+        },
+        fullscreen: 'повноекранний',
+        unFullscreen: 'Скасувати на весь екран'
+    },
+    normalBtn: {
+        detail: 'Вид'
     }
 }

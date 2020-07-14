@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: '日誌列表',
+        detail: '日誌詳情',
         btnList: {
             export: '導出',
             remove: '清空'
@@ -179,7 +180,35 @@ export default {
             index: '序號',
             desc: '日誌描述',
             type: '日誌類型',
+            time: '時間',
             op: '操作'
-        }
+        },
+        request: '請求數據',
+        error: {
+            cancel: '已取消清空操作',
+            confirm: '是否清空日誌？（日誌清空將無法找回）'
+        },
+        success: '日誌已清空'
+    },
+    comTable: {
+        columns: {
+            title: '列設置',
+            all: '全選',
+            reset: '重置',
+            fixedLeft: '固定左邊',
+            fixedRight: '固定右邊',
+            cancelFixed: '取消固定'
+        },
+        size: {
+            title: '行高',
+            small: '窄',
+            normal: '中',
+            large: '寬'
+        },
+        fullscreen: '全屏',
+        unFullscreen: '取消全屏'
+    },
+    normalBtn: {
+        detail: '查看'
     }
 }

@@ -522,6 +522,101 @@ const handlerMenuSelect = (self: any, n: string[]) => {
     }
 }
 
+const timestampToDateString = (
+    stamp: number | string,
+    gap: string,
+    isToday: boolean,
+    isObj: boolean,
+    withoutMinSec: boolean
+) => {
+    if (typeof stamp === 'string') {
+        // for transfer string to timestamp, and fix osx or ios bug
+        stamp = new Date(stamp.replace(/-/g, '/')).getTime()
+    }
+
+    const date = new Date(stamp)
+    const year = date.getFullYear()
+    const month = formatTwice(date.getMonth() + 1)
+    const day = formatTwice(date.getDate())
+    const hour = formatTwice(date.getHours())
+    const minutes = formatTwice(date.getMinutes())
+    const seconds = formatTwice(date.getSeconds())
+
+    if (!isToday) {
+        if (isObj) {
+            return {year, month, day, hour, minutes, seconds}
+        } else {
+            if (withoutMinSec) {
+                return [year, month, day].join(gap)
+            } else {
+                return `${[year, month, day].join(gap)} ${[hour, minutes].join(':')}`
+            }
+        }
+    } else {
+        // 获取今天的时间戳范围
+        const toady = new Date()
+        const toadyStartStamp = new Date(
+            `${[toady.getFullYear(), toady.getMonth() + 1, toady.getDate()].join('/')} 00:00:00`
+        ).getTime()
+        const toadyEndStamp = toadyStartStamp + 24 * 60 * 60 * 1000
+
+        if (stamp >= toadyStartStamp && stamp <= toadyEndStamp) {
+            if (withoutMinSec) {
+                return '今天'
+            } else {
+                return `今天 ${[hour, minutes].join(':')}`
+            }
+        } else {
+            if (isObj) {
+                return {year, month, day, hour, minutes, seconds}
+            } else {
+                if (withoutMinSec) {
+                    return [year, month, day].join(gap)
+                } else {
+                    return `${[year, month, day].join(gap)} ${[hour, minutes].join(':')}`
+                }
+            }
+        }
+    }
+}
+const formatTwice = (str: number) => {
+    let temStr = str.toString()
+    temStr = temStr.length === 2 ? temStr : `0${temStr}`
+    return temStr
+}
+
+const exportExcel = (columnList: string[], dataList: any[], fileName: string) => {
+    let ctx = ''
+    columnList.forEach((item: string) => {
+        ctx = ctx + `<td>${item}</td>`
+    })
+    ctx = `<tr>${ctx}</tr>`
+
+    dataList.forEach((item) => {
+        ctx += '<tr>'
+        for (const key of Object.keys(item)) {
+            ctx += `<td>${item[key] + '\t'}</td>`
+        }
+        ctx += '</tr>'
+    })
+
+    const worksheet = fileName
+    const uri = 'data:application/vnd.ms-excel;base64,'
+
+    const tpl = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>${worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>${ctx}</table></body></html>`
+
+    const link = document.createElement('a')
+    link.href = uri + toBase64(tpl)
+    link.download = `download_${timestampToDateString(new Date().getTime(), '-', false, false, true)}_${fileName}.xlsx`
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+}
+
+const toBase64 = (str: string) => {
+    return window.btoa(unescape(encodeURIComponent(str)))
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -538,5 +633,7 @@ export default {
     getDeviceInfo,
     fullScreenCtl,
     getBreadList,
-    handlerMenuSelect
+    handlerMenuSelect,
+    timestampToDateString,
+    exportExcel
 }

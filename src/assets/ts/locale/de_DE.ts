@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Protokollliste',
+        detail: 'Protokolldetails',
         btnList: {
             export: 'Export',
             remove: 'Leer'
@@ -179,7 +180,35 @@ export default {
             index: 'Ordnungsnummer',
             desc: 'Protokollbeschreibung',
             type: 'Protokolltyp',
+            time: 'Zeit',
             op: 'Betriebs'
-        }
+        },
+        request: 'Daten anfordern',
+        error: {
+            cancel: 'Leere Operation abgebrochen',
+            confirm: 'Möchten Sie das Protokoll löschen?(Das Protokoll wird geleert und kann nicht abgerufen werden.)'
+        },
+        success: 'Das Protokoll wurde geleert'
+    },
+    comTable: {
+        columns: {
+            title: 'Spalteneinstellungen',
+            all: 'Wählen Sie Alle',
+            reset: 'Zurücksetzen',
+            fixedLeft: 'Links behoben',
+            fixedRight: 'Rechts behoben',
+            cancelFixed: 'Lösen Sie den Stift'
+        },
+        size: {
+            title: 'Zeilenhöhe',
+            small: 'eng',
+            normal: 'im',
+            large: 'Breite'
+        },
+        fullscreen: 'ganzer Bildschirm',
+        unFullscreen: 'Vollbild abbrechen'
+    },
+    normalBtn: {
+        detail: 'Aussicht'
     }
 }

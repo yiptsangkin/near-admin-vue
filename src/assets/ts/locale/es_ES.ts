@@ -6,7 +6,7 @@ export default {
     },
     loginForm: {
         byAccountBtn: 'Inicio de sesión de contraseña de cuenta',
-        byPhoneBtn: 'Número de teléfono de inicio de sesión',
+        byPhoneBtn: 'Inicio de sesión de número de teléfono',
         accountPlaceholder: 'por favor ingrese cuenta',
         passwordPlaceholder: 'Por favor introduzca la contraseña',
         autoLogin: 'ingreso automático',
@@ -145,7 +145,7 @@ export default {
         errorTip: {
             notfoundTip: 'Lo sentimos, la página que visitaste no existe',
             notrightTip: 'Lo sentimos, no tienes permiso para acceder a esta página',
-            noserviceTip: 'Lo sentimos, algo salió mal con el servidor, intente nuevamente más tarde'
+            noserviceTip: 'Lo sentimos, algo salió mal con el servidor, intente más tarde'
         },
         btnText: 'Cerrar página'
     },
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Lista de registro',
+        detail: 'Detalles de registro',
         btnList: {
             export: 'Exportar',
             remove: 'Vacío'
@@ -179,7 +180,35 @@ export default {
             index: 'Número de serie',
             desc: 'Descripción del registro',
             type: 'Tipo de registro',
+            time: 'hora',
             op: 'operando'
-        }
+        },
+        request: 'Solicitar datos',
+        error: {
+            cancel: 'Operación vacía cancelada',
+            confirm: '¿Quieres borrar el registro?(El registro se vaciará y no se podrá recuperar)'
+        },
+        success: 'El registro ha sido vaciado'
+    },
+    comTable: {
+        columns: {
+            title: 'Configuraciones de columna',
+            all: 'seleccionar todo',
+            reset: 'Reiniciar',
+            fixedLeft: 'Fijo a la izquierda',
+            fixedRight: 'Derecho fijo',
+            cancelFixed: 'Desprender'
+        },
+        size: {
+            title: 'Altura de la fila',
+            small: 'estrecho',
+            normal: 'en',
+            large: 'anchura'
+        },
+        fullscreen: 'pantalla completa',
+        unFullscreen: 'Cancelar pantalla completa'
+    },
+    normalBtn: {
+        detail: 'Ver'
     }
 }

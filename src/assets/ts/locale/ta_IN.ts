@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'பதிவு பட்டியல்',
+        detail: 'பதிவு விவரங்கள்',
         btnList: {
             export: 'ஏற்றுமதி',
             remove: 'காலியாக'
@@ -179,7 +180,35 @@ export default {
             index: 'வரிசை எண்',
             desc: 'பதிவு விளக்கம்',
             type: 'பதிவு வகை',
+            time: 'நேரம்',
             op: 'இயங்குகிறது'
-        }
+        },
+        request: 'தரவைக் கோருங்கள்',
+        error: {
+            cancel: 'வெற்று செயல்பாடு ரத்து செய்யப்பட்டது',
+            confirm: 'பதிவை அழிக்க விரும்புகிறீர்களா?(பதிவு காலியாகிவிடும், அதை மீட்டெடுக்க முடியாது)'
+        },
+        success: 'பதிவு காலியாகிவிட்டது'
+    },
+    comTable: {
+        columns: {
+            title: 'நெடுவரிசை அமைப்புகள்',
+            all: 'அனைத்தையும் தெரிவுசெய்',
+            reset: 'மீட்டமை',
+            fixedLeft: 'நிலையான இடது',
+            fixedRight: 'சரி சரி',
+            cancelFixed: 'Unpin'
+        },
+        size: {
+            title: 'வரிசை உயரம்',
+            small: 'குறுகிய',
+            normal: 'இல்',
+            large: 'அகலம்'
+        },
+        fullscreen: 'முழு திரை',
+        unFullscreen: 'முழுத் திரையை ரத்துசெய்'
+    },
+    normalBtn: {
+        detail: 'காண்க'
     }
 }

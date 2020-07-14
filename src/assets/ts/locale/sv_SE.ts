@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Logglista',
+        detail: 'Logginformation',
         btnList: {
             export: 'Exportera',
             remove: 'Tömma'
@@ -179,7 +180,35 @@ export default {
             index: 'Serienummer',
             desc: 'Loggbeskrivning',
             type: 'Loggtyp',
+            time: 'tid',
             op: 'rörelse'
-        }
+        },
+        request: 'Begär data',
+        error: {
+            cancel: 'Tom operation avbruten',
+            confirm: 'Vill du rensa loggen?(Loggen töms och kan inte hämtas)'
+        },
+        success: 'Loggen har tömts'
+    },
+    comTable: {
+        columns: {
+            title: 'Kolumninställningar',
+            all: 'Välj alla',
+            reset: 'Återställa',
+            fixedLeft: 'Fast vänster',
+            fixedRight: 'Fast höger',
+            cancelFixed: 'Lossa'
+        },
+        size: {
+            title: 'Radhöjd',
+            small: 'smal',
+            normal: 'i',
+            large: 'bredd'
+        },
+        fullscreen: 'fullskärm',
+        unFullscreen: 'Avbryt hela skärmen'
+    },
+    normalBtn: {
+        detail: 'Se'
     }
 }

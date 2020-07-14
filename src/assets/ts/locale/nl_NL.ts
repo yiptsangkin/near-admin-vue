@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Log lijst',
+        detail: 'Loggegevens',
         btnList: {
             export: 'Exporteren',
             remove: 'Leeg'
@@ -179,7 +180,35 @@ export default {
             index: 'Serienummer',
             desc: 'Logboekbeschrijving',
             type: 'Type logboek',
+            time: 'tijd',
             op: 'in werking'
-        }
+        },
+        request: 'Gegevens opvragen',
+        error: {
+            cancel: 'Lege bewerking geannuleerd',
+            confirm: 'Wil je het log wissen?(Het logboek wordt geleegd en kan niet worden opgehaald)'
+        },
+        success: 'Het logboek is geleegd'
+    },
+    comTable: {
+        columns: {
+            title: 'Kolominstellingen',
+            all: 'selecteer alles',
+            reset: 'Reset',
+            fixedLeft: 'Links vast',
+            fixedRight: 'Vaste rechts',
+            cancelFixed: 'Maak los'
+        },
+        size: {
+            title: 'Rijhoogte',
+            small: 'smal',
+            normal: 'in',
+            large: 'breedte'
+        },
+        fullscreen: 'volledig scherm',
+        unFullscreen: 'Volledig scherm annuleren'
+    },
+    normalBtn: {
+        detail: 'Visie'
     }
 }

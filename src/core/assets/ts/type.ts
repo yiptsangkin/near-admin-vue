@@ -179,8 +179,8 @@ export interface ComTable {
     data: any[],
     title: string,
     pagingInfo: {
-        currentPage: number,
+        current: number,
         pageSize: number,
-        totalRows: number
+        total: number
     }
 }

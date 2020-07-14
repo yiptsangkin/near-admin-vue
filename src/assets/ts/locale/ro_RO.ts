@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Lista jurnalului',
+        detail: 'Detalii despre jurnal',
         btnList: {
             export: 'Export',
             remove: 'Gol'
@@ -179,7 +180,35 @@ export default {
             index: 'Număr de serie',
             desc: 'Descrierea jurnalului',
             type: 'Tip jurnal',
+            time: 'timp',
             op: 'de operare'
-        }
+        },
+        request: 'Solicitați date',
+        error: {
+            cancel: 'Operația goală a fost anulată',
+            confirm: 'Doriți să ștergeți jurnalul?(Jurnalul va fi golit și nu poate fi recuperat)'
+        },
+        success: 'Jurnalul a fost golit'
+    },
+    comTable: {
+        columns: {
+            title: 'Setări pentru coloane',
+            all: 'selectează tot',
+            reset: 'Resetați',
+            fixedLeft: 'Fix stânga',
+            fixedRight: 'Fix corect',
+            cancelFixed: 'Anulați fixarea'
+        },
+        size: {
+            title: 'Înălțimea rândului',
+            small: 'îngust',
+            normal: 'în',
+            large: 'lăţime'
+        },
+        fullscreen: 'ecran complet',
+        unFullscreen: 'Anulați ecran complet'
+    },
+    normalBtn: {
+        detail: 'Vedere'
     }
 }

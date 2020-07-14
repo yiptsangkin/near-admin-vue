@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Lista dzienników',
+        detail: 'Szczegóły dziennika',
         btnList: {
             export: 'Eksport',
             remove: 'Pusty'
@@ -179,7 +180,35 @@ export default {
             index: 'Numer seryjny',
             desc: 'Opis dziennika',
             type: 'Rodzaj dziennika',
+            time: 'czas',
             op: 'operacyjny'
-        }
+        },
+        request: 'Poproś o dane',
+        error: {
+            cancel: 'Anulowano operację pustą',
+            confirm: 'Czy chcesz wyczyścić dziennik?(Dziennik zostanie opróżniony i nie będzie można go odzyskać)'
+        },
+        success: 'Dziennik został opróżniony'
+    },
+    comTable: {
+        columns: {
+            title: 'Ustawienia kolumny',
+            all: 'Zaznacz wszystko',
+            reset: 'Resetowanie',
+            fixedLeft: 'Naprawiono po lewej',
+            fixedRight: 'Naprawiono w prawo',
+            cancelFixed: 'Odpiąć'
+        },
+        size: {
+            title: 'Wysokość rzędu',
+            small: 'wąska',
+            normal: 'w',
+            large: 'szerokość'
+        },
+        fullscreen: 'pełny ekran',
+        unFullscreen: 'Anuluj pełny ekran'
+    },
+    normalBtn: {
+        detail: 'Widok'
     }
 }

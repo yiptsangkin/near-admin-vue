@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Žurnālu saraksts',
+        detail: 'Informācija par žurnālu',
         btnList: {
             export: 'Eksportēt',
             remove: 'Tukšs'
@@ -179,7 +180,35 @@ export default {
             index: 'Sērijas numurs',
             desc: 'Žurnāla apraksts',
             type: 'Žurnāla tips',
+            time: 'laiks',
             op: 'darbojas'
-        }
+        },
+        request: 'Pieprasīt datus',
+        error: {
+            cancel: 'Tukša darbība atcelta',
+            confirm: 'Vai vēlaties notīrīt žurnālu?(Žurnāls tiks iztukšots, un to nevar iegūt)'
+        },
+        success: 'Žurnāls ir iztukšots'
+    },
+    comTable: {
+        columns: {
+            title: 'Kolonnas iestatījumi',
+            all: 'izvēlēties visus',
+            reset: 'Atiestatīt',
+            fixedLeft: 'Fiksēts pa kreisi',
+            fixedRight: 'Fiksētas tiesības',
+            cancelFixed: 'Atspraust'
+        },
+        size: {
+            title: 'Rindas augstums',
+            small: 'Šaurs',
+            normal: 'iekšā',
+            large: 'platums'
+        },
+        fullscreen: 'pilnekrāna režīmā',
+        unFullscreen: 'Atcelt pilnekrāna režīmu'
+    },
+    normalBtn: {
+        detail: 'Skats'
     }
 }

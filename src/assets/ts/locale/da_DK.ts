@@ -131,7 +131,7 @@ export default {
         errorTip: {
             homePageCloseError: 'Hjemmesiden må ikke lukke',
             affixPageCloseError: 'Den faste side må ikke lukke',
-            homePageAffixError: 'Hjemmesiden kan ikke være låst'
+            homePageAffixError: 'Hjemmesiden kan ikke afmonteres'
         },
         checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af siden med rød etiket er gemt)',
         cancelClose: 'Lukket operation annulleret'
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Log liste',
+        detail: 'Log detaljer',
         btnList: {
             export: 'Eksport',
             remove: 'Tom'
@@ -179,7 +180,35 @@ export default {
             index: 'Serienummer',
             desc: 'Log beskrivelse',
             type: 'Log type',
+            time: 'tid',
             op: 'drift'
-        }
+        },
+        request: 'Anmod om data',
+        error: {
+            cancel: 'Tom operation annulleret',
+            confirm: 'Vil du rydde loggen?(Loggen tømmes og kan ikke hentes)'
+        },
+        success: 'Loggen er tømt'
+    },
+    comTable: {
+        columns: {
+            title: 'Kolonneindstillinger',
+            all: 'Vælg alle',
+            reset: 'Nulstil',
+            fixedLeft: 'Fast venstre',
+            fixedRight: 'Fast højre',
+            cancelFixed: 'Frigør'
+        },
+        size: {
+            title: 'Rækkehøjde',
+            small: 'smal',
+            normal: 'i',
+            large: 'bredde'
+        },
+        fullscreen: 'Fuld skærm',
+        unFullscreen: 'Annuller fuld skærm'
+    },
+    normalBtn: {
+        detail: 'Udsigt'
     }
 }

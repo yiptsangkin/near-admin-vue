@@ -6,6 +6,7 @@ import i18n from '@corets/lang'
 import mock from '@mock/index'
 import plugin from '@corets/plugin'
 import AsyncComputed from 'vue-async-computed'
+import VueCodemirror from 'vue-codemirror'
 import directives from '@custom/directives'
 
 // antd component
@@ -27,7 +28,8 @@ import {
     Select,
     Table,
     Divider,
-    Tooltip
+    Tooltip,
+    Checkbox,
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 
@@ -49,6 +51,7 @@ Vue.component(Menu.Item.name, Menu.Item)
 Vue.component(Menu.ItemGroup.name, Menu.ItemGroup)
 Vue.component(Menu.SubMenu.name, Menu.SubMenu)
 Vue.component(Input.name, Input)
+Vue.component(Input.TextArea.name, Input.TextArea)
 Vue.component(Dropdown.name, Dropdown)
 Vue.component(Button.name, Button)
 Vue.component(Breadcrumb.name, Breadcrumb)
@@ -62,6 +65,10 @@ Vue.component(Table.name, Table)
 Vue.component(Divider.name, Divider)
 Vue.component(Dropdown.name, Dropdown)
 Vue.component(Tooltip.name, Tooltip)
+Vue.component(Checkbox.name, Checkbox)
+Vue.component(Checkbox.Group.name, Checkbox.Group)
+Vue.component(Modal.name, Modal)
+
 
 // here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue
 Vue.use(Modal)
@@ -85,6 +92,9 @@ if (comConfig.buildSwitch.isMock) {
 Vue.use(AsyncComputed)
 // custom plugin
 Vue.use(plugin)
+
+// codemirror
+Vue.use(VueCodemirror)
 
 new Vue({
     render: (h) => h(App),

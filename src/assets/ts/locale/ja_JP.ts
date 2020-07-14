@@ -61,7 +61,7 @@ export default {
         ja: '日本人',
         kn: 'カンナダ語',
         ko: '韓国語',
-        'ku-iq': '中央クルド語',
+        'ku-iq': 'に央クルド語',
         lv: '中央クルド語',
         mk: 'マケドニアの',
         'mn-mn': 'モンゴル語',
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'ログリスト',
+        detail: 'ログの詳細',
         btnList: {
             export: '書き出す',
             remove: '空の'
@@ -179,7 +180,35 @@ export default {
             index: 'シリアルナンバー',
             desc: 'ログの説明',
             type: 'ログタイプ',
+            time: '時間',
             op: 'オペレーティング'
-        }
+        },
+        request: 'データをリクエストする',
+        error: {
+            cancel: '空の操作がキャンセルされました',
+            confirm: 'ログを消去しますか？（ログは空になり、取得できません）'
+        },
+        success: 'ログが空になりました'
+    },
+    comTable: {
+        columns: {
+            title: '列の設定',
+            all: 'すべて選択',
+            reset: 'リセット',
+            fixedLeft: '左固定',
+            fixedRight: '修正済み',
+            cancelFixed: '固定を解除'
+        },
+        size: {
+            title: '行の高さ',
+            small: '狭い',
+            normal: '中',
+            large: '幅'
+        },
+        fullscreen: '全画面表示',
+        unFullscreen: '全画面をキャンセル'
+    },
+    normalBtn: {
+        detail: '見る'
     }
 }

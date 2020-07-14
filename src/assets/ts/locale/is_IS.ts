@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Log lista',
+        detail: 'Upplýsingar um log',
         btnList: {
             export: 'Útflutningur',
             remove: 'Tómt'
@@ -179,7 +180,35 @@ export default {
             index: 'Raðnúmer',
             desc: 'Log lýsing',
             type: 'Tegund annáls',
+            time: 'tíma',
             op: 'starfandi'
-        }
+        },
+        request: 'Biðja um gögn',
+        error: {
+            cancel: 'Tóm aðgerð hætt',
+            confirm: 'Viltu hreinsa annálinn?(Notkunarskráin verður tæmd og ekki hægt að sækja hana)'
+        },
+        success: 'Stokkurinn hefur verið tæmdur'
+    },
+    comTable: {
+        columns: {
+            title: 'Dálkastillingar',
+            all: 'velja allt',
+            reset: 'Endurstilla',
+            fixedLeft: 'Fast vinstri',
+            fixedRight: 'Fastur réttur',
+            cancelFixed: 'Tappa af'
+        },
+        size: {
+            title: 'Röð hæð',
+            small: 'þröngt',
+            normal: 'í',
+            large: 'breidd'
+        },
+        fullscreen: 'fullur skjár',
+        unFullscreen: 'Hætta við allan skjáinn'
+    },
+    normalBtn: {
+        detail: 'Útsýni'
     }
 }

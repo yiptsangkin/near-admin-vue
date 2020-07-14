@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Log list',
+        detail: 'Log details',
         btnList: {
             export: 'Export',
             remove: 'Empty'
@@ -179,7 +180,35 @@ export default {
             index: 'Serial number',
             desc: 'Log description',
             type: 'Log type',
+            time: 'time',
             op: 'operating'
-        }
+        },
+        request: 'Request data',
+        error: {
+            cancel: 'Empty operation canceled',
+            confirm: 'Do you want to clear the log?(The log will be emptied and cannot be retrieved)'
+        },
+        success: 'The log has been emptied'
+    },
+    comTable: {
+        columns: {
+            title: 'Column settings',
+            all: 'select all',
+            reset: 'Reset',
+            fixedLeft: 'Fixed left',
+            fixedRight: 'Fixed right',
+            cancelFixed: 'Unpin'
+        },
+        size: {
+            title: 'Row height',
+            small: 'narrow',
+            normal: 'in',
+            large: 'width'
+        },
+        fullscreen: 'full screen',
+        unFullscreen: 'Cancel full screen'
+    },
+    normalBtn: {
+        detail: 'View'
     }
 }

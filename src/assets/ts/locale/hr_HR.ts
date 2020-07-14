@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Popis dnevnika',
+        detail: 'Pojedinosti zapisnika',
         btnList: {
             export: 'Izvoz',
             remove: 'Prazan'
@@ -179,7 +180,35 @@ export default {
             index: 'Serijski broj',
             desc: 'Opis zapisa',
             type: 'Vrsta zapisnika',
+            time: 'vrijeme',
             op: 'radni'
-        }
+        },
+        request: 'Zatraži podatke',
+        error: {
+            cancel: 'Prazna operacija je otkazana',
+            confirm: 'Želite li poništiti zapisnik?(Dnevnik će se isprazniti i nije ga moguće preuzeti)'
+        },
+        success: 'Dnevnik je ispražnjen'
+    },
+    comTable: {
+        columns: {
+            title: 'Postavke stupca',
+            all: 'Odaberi sve',
+            reset: 'Reset',
+            fixedLeft: 'Fiksno lijevo',
+            fixedRight: 'Fiksno desno',
+            cancelFixed: 'Odvoji'
+        },
+        size: {
+            title: 'Visina reda',
+            small: 'suziti',
+            normal: 'u',
+            large: 'širina'
+        },
+        fullscreen: 'puni zaslon',
+        unFullscreen: 'Otkaži cijeli zaslon'
+    },
+    normalBtn: {
+        detail: 'Pogled'
     }
 }

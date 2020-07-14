@@ -19,7 +19,7 @@ export default {
             emptyErr: 'salasana ei voi olla tyhjä'
         },
         byValidTip: {
-            emptyErr: 'varmennuskoodi on täytettävä'
+            emptyErr: 'vahvistuskoodi on täytettävä'
         },
         sendMsg: {
             repeatErr: 'Älä lähetä toistuvasti',
@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: 'Lokiluettelo',
+        detail: 'Lokitiedot',
         btnList: {
             export: 'Viedä',
             remove: 'Tyhjä'
@@ -179,7 +180,35 @@ export default {
             index: 'Sarjanumero',
             desc: 'Lokin kuvaus',
             type: 'Lokityyppi',
+            time: 'aika',
             op: 'käyttö-'
-        }
+        },
+        request: 'Pyydä tietoja',
+        error: {
+            cancel: 'Tyhjä toiminta peruutettu',
+            confirm: 'Haluatko tyhjentää lokin?(Loki tyhjennetään eikä sitä voida noutaa)'
+        },
+        success: 'Loki on tyhjennetty'
+    },
+    comTable: {
+        columns: {
+            title: 'Sarakeasetukset',
+            all: 'Valitse kaikki',
+            reset: 'Nollaa',
+            fixedLeft: 'Kiinteä vasemmalle',
+            fixedRight: 'Kiinteä oikea',
+            cancelFixed: 'Irrota'
+        },
+        size: {
+            title: 'Rivin korkeus',
+            small: 'kapea',
+            normal: 'sisään',
+            large: 'leveys'
+        },
+        fullscreen: 'koko näyttö',
+        unFullscreen: 'Peruuta koko näyttö'
+    },
+    normalBtn: {
+        detail: 'näkymä'
     }
 }

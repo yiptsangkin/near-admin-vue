@@ -159,6 +159,7 @@ export default {
     },
     logline: {
         list: '로그리스트',
+        detail: '로그 세부 사항',
         btnList: {
             export: '수출',
             remove: '빈'
@@ -179,7 +180,35 @@ export default {
             index: '일련 번호',
             desc: '로그 설명',
             type: '로그 타입',
+            time: '시각',
             op: '운영 중'
-        }
+        },
+        request: '데이터 요청',
+        error: {
+            cancel: '빈 작업이 취소되었습니다',
+            confirm: '로그를 지우시겠습니까?(로그가 비워져 검색 할 수 없습니다)'
+        },
+        success: '로그가 비워졌습니다'
+    },
+    comTable: {
+        columns: {
+            title: '열 설정',
+            all: '모두 선택',
+            reset: '초기화',
+            fixedLeft: '왼쪽 고정',
+            fixedRight: '오른쪽 고정',
+            cancelFixed: '고정 해제'
+        },
+        size: {
+            title: '행 높이',
+            small: '제한된',
+            normal: '에',
+            large: '폭'
+        },
+        fullscreen: '전체 화면',
+        unFullscreen: '전체 화면 취소'
+    },
+    normalBtn: {
+        detail: '전망'
     }
 }
