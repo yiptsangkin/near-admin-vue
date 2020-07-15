@@ -1,9 +1,6 @@
 export default {
     locale: 'vi',
     country: 'VN',
-    sysInfo: {
-        sysIntro: 'Khung phát triển front-end dễ sử dụng dựa trên Vue và Thiết kế kiến'
-    },
     loginForm: {
         byAccountBtn: 'Đăng nhập mật khẩu tài khoản',
         byPhoneBtn: 'Số điện thoại đăng nhập',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'mã ngẫu nhiên',
         validBtn: 'lấy mã xác minh',
         loginSuccess: 'đăng nhập thành công'
+    },
+    menuObj: {
+        basicFeature: 'Khả năng cơ bản',
+        cpUse: 'Thành phần sử dụng',
+        childMenu: {
+            0: 'Khung cơ bản',
+            1: 'Khả năng cơ bản',
+            '0-0': 'Vue',
+            '0-1': 'Thiết kế kiến',
+            '1-0': 'Chức năng khung',
+            '1-0-0': 'Cấu hình dự án',
+            '1-0-1': 'Nhật ký kết thúc',
+            '1-0-2': 'Mock địa phương',
+            '1-0-3': 'toàn cầu hóa',
+            '1-0-4': 'Từ điển dữ liệu',
+            '1-0-5': 'Sự kiện',
+            '1-0-6': 'Bộ công cụ',
+            '1-0-7': 'Kiểm soát truy cập',
+            '1-0-8': 'chìa khóa nóng',
+            '1-1': 'Chức năng trang',
+            '1-1-0': 'Trang thành phần',
+            '1-1-1': 'trang url',
+            '1-1-2': 'Không có trang cho phép',
+            '1-1-3': '404 trang'
+        },
+        defaultMenu: {
+            home: 'Trang Chủ'
+        },
+        errorTip: {
+            notfoundTip: 'Không tìm thấy thành phần nào dưới đường dẫn này',
+            emptyErr: 'Đường dẫn thành phần không được cấu hình'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Khung phát triển front-end dễ sử dụng dựa trên Vue và Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Địa chỉ yêu cầu không thể để trống',
@@ -86,38 +118,6 @@ export default {
         vi: 'Tiếng Việt',
         'zh-cn': 'Tiếng Trung giản thể',
         'zh-tw': 'truyền thống Trung Quốc'
-    },
-    menuObj: {
-        basicFeature: 'Khả năng cơ bản',
-        cpUse: 'Thành phần sử dụng',
-        childMenu: {
-            0: 'Khung cơ bản',
-            1: 'Khả năng cơ bản',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Chức năng khung',
-            '1-0-0': 'Cấu hình dự án',
-            '1-0-1': 'Nhật ký kết thúc',
-            '1-0-2': 'Mock địa phương',
-            '1-0-3': 'toàn cầu hóa',
-            '1-0-4': 'Từ điển dữ liệu',
-            '1-0-5': 'Sự kiện',
-            '1-0-6': 'Bộ công cụ',
-            '1-0-7': 'Kiểm soát truy cập',
-            '1-0-8': 'chìa khóa nóng',
-            '1-1': 'Chức năng trang',
-            '1-1-0': 'Trang thành phần',
-            '1-1-1': 'trang url',
-            '1-1-2': 'Không có trang cho phép',
-            '1-1-3': '404 trang'
-        },
-        defaultMenu: {
-            home: 'Trang Chủ'
-        },
-        errorTip: {
-            notfoundTip: 'Không tìm thấy thành phần nào dưới đường dẫn này',
-            emptyErr: 'Đường dẫn thành phần không được cấu hình'
-        }
     },
     tagObj: {
         closeAll: 'Đóng tất cả cửa sổ',

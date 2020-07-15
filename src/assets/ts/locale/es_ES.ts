@@ -1,12 +1,9 @@
 export default {
     locale: 'es',
     country: 'ES',
-    sysInfo: {
-        sysIntro: 'Un marco de desarrollo front-end fácil de usar basado en Vue y Diseño de hormigas'
-    },
     loginForm: {
         byAccountBtn: 'Inicio de sesión de contraseña de cuenta',
-        byPhoneBtn: 'Inicio de sesión de número de teléfono',
+        byPhoneBtn: 'Número de teléfono de inicio de sesión',
         accountPlaceholder: 'por favor ingrese cuenta',
         passwordPlaceholder: 'Por favor introduzca la contraseña',
         autoLogin: 'ingreso automático',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'obtener el código de verificación',
         loginSuccess: 'Inicio de sesión correcto'
+    },
+    menuObj: {
+        basicFeature: 'Habilidad básica',
+        cpUse: 'Uso de componentes',
+        childMenu: {
+            0: 'Marco básico',
+            1: 'Habilidad básica',
+            '0-0': 'Vue',
+            '0-1': 'Diseño de hormigas',
+            '1-0': 'Función de marco',
+            '1-0-0': 'Configuración del proyecto',
+            '1-0-1': 'Registro de front-end',
+            '1-0-2': 'Simulacro local',
+            '1-0-3': 'globalización',
+            '1-0-4': 'Diccionario de datos',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Conjunto de herramientas',
+            '1-0-7': 'Control de acceso',
+            '1-0-8': 'tecla de acceso rápido',
+            '1-1': 'Función de página',
+            '1-1-0': 'Página componente',
+            '1-1-1': 'página de url',
+            '1-1-2': 'Página sin permiso',
+            '1-1-3': '404 páginas'
+        },
+        defaultMenu: {
+            home: 'Hogar'
+        },
+        errorTip: {
+            notfoundTip: 'No se encontraron componentes bajo esta ruta',
+            emptyErr: 'Ruta de componente no configurada'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Un marco de desarrollo front-end fácil de usar basado en Vue y Ant Design'
     },
     requestInfo: {
         withoutUrl: 'La dirección de solicitud no puede estar vacía',
@@ -86,38 +118,6 @@ export default {
         vi: 'vietnamita',
         'zh-cn': 'Chino simplificado',
         'zh-tw': 'chino tradicional'
-    },
-    menuObj: {
-        basicFeature: 'Habilidad básica',
-        cpUse: 'Uso de componentes',
-        childMenu: {
-            0: 'Marco básico',
-            1: 'Habilidad básica',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Función de marco',
-            '1-0-0': 'Configuración del proyecto',
-            '1-0-1': 'Registro de front-end',
-            '1-0-2': 'Simulacro local',
-            '1-0-3': 'globalización',
-            '1-0-4': 'Diccionario de datos',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Conjunto de herramientas',
-            '1-0-7': 'Control de acceso',
-            '1-0-8': 'tecla de acceso rápido',
-            '1-1': 'Función de página',
-            '1-1-0': 'Página componente',
-            '1-1-1': 'página de url',
-            '1-1-2': 'Página sin permiso',
-            '1-1-3': '404 páginas'
-        },
-        defaultMenu: {
-            home: 'Hogar'
-        },
-        errorTip: {
-            notfoundTip: 'No se encontraron componentes bajo esta ruta',
-            emptyErr: 'Ruta de componente no configurada'
-        }
     },
     tagObj: {
         closeAll: 'Cierra todas las pestañas',

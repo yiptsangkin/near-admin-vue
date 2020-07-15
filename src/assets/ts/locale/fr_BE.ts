@@ -1,9 +1,6 @@
 export default {
     locale: 'fr',
     country: 'BE',
-    sysInfo: {
-        sysIntro: 'Un framework de développement frontal facile à utiliser basé sur Vue et Conception de fourmi'
-    },
     loginForm: {
         byAccountBtn: 'Connexion au mot de passe du compte',
         byPhoneBtn: 'Connexion au numéro de téléphone',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'obtenir le code de vérification',
         loginSuccess: 'connexion réussie'
+    },
+    menuObj: {
+        basicFeature: 'Capacité de base',
+        cpUse: 'Utilisation des composants',
+        childMenu: {
+            0: 'Cadre de base',
+            1: 'Capacité de base',
+            '0-0': 'Vue',
+            '0-1': 'Conception de fourmi',
+            '1-0': 'Fonction de cadre',
+            '1-0-0': 'Configuration du projet',
+            '1-0-1': 'Journal frontal',
+            '1-0-2': 'Maquette locale',
+            '1-0-3': 'mondialisation',
+            '1-0-4': 'Dictionnaire de données',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Jeu d&#39;outils',
+            '1-0-7': 'Contrôle d&#39;accès',
+            '1-0-8': 'touche de raccourci',
+            '1-1': 'Fonction de page',
+            '1-1-0': 'Page des composants',
+            '1-1-1': 'page d&#39;url',
+            '1-1-2': 'Aucune page d&#39;autorisation',
+            '1-1-3': '404 pages'
+        },
+        defaultMenu: {
+            home: 'Accueil'
+        },
+        errorTip: {
+            notfoundTip: 'Aucun composant trouvé sous ce chemin',
+            emptyErr: 'Chemin de composant non configuré'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Un framework de développement frontal facile à utiliser basé sur Vue et Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L&#39;adresse de la demande ne peut pas être vide',
@@ -86,38 +118,6 @@ export default {
         vi: 'vietnamien',
         'zh-cn': 'Chinois simplifié',
         'zh-tw': 'chinois traditionnel'
-    },
-    menuObj: {
-        basicFeature: 'Capacité de base',
-        cpUse: 'Utilisation des composants',
-        childMenu: {
-            0: 'Cadre de base',
-            1: 'Capacité de base',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Fonction de cadre',
-            '1-0-0': 'Configuration du projet',
-            '1-0-1': 'Journal frontal',
-            '1-0-2': 'Maquette locale',
-            '1-0-3': 'mondialisation',
-            '1-0-4': 'Dictionnaire de données',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Jeu d&#39;outils',
-            '1-0-7': 'Contrôle d&#39;accès',
-            '1-0-8': 'touche de raccourci',
-            '1-1': 'Fonction de page',
-            '1-1-0': 'Page des composants',
-            '1-1-1': 'page d&#39;url',
-            '1-1-2': 'Aucune page d&#39;autorisation',
-            '1-1-3': '404 pages'
-        },
-        defaultMenu: {
-            home: 'Accueil'
-        },
-        errorTip: {
-            notfoundTip: 'Aucun composant trouvé sous ce chemin',
-            emptyErr: 'Chemin de composant non configuré'
-        }
     },
     tagObj: {
         closeAll: 'Fermer tous les onglets',

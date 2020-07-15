@@ -73,9 +73,9 @@
                         </a-menu>
                     </a-dropdown>
                     <a-divider type="vertical"/>
-                    <a-tooltip placement="top">
+                    <a-tooltip :placement="isShrink ? 'bottomRight' : 'topRight'">
                         <template slot="title">
-                            <span>{{ $t(isShrink ? dict.localeObj.comTable.fullscreen : dict.localeObj.comTable.unFullscreen) }}</span>
+                            <span>{{ $t(isShrink ? dict.localeObj.comTable.unFullscreen : dict.localeObj.comTable.fullscreen) }}</span>
                         </template>
                         <a-icon :type="isShrink ? 'shrink' : 'arrows-alt'" @click="shrinkTable"/>
                     </a-tooltip>

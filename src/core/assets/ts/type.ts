@@ -51,7 +51,8 @@ interface BuildSwitch {
     isMock: boolean,    // if use local mock
     isHotKey: boolean,  // if use global hot key
     isBreadCrumb: boolean,    // if show bread crumb
-    isCache: boolean
+    isCache: boolean, // if cache tag
+    isI18n: boolean
 }
 
 export interface ComConfig {

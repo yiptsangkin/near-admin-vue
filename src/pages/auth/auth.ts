@@ -23,6 +23,7 @@ import {
     notification
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
+import utils from '@corets/utils';
 
 // config
 Vue.config.productionTip = false
@@ -44,9 +45,17 @@ Vue.component(Dropdown.name, Dropdown)
 Vue.component(Menu.name, Menu)
 Vue.component(Menu.Item.name, Menu.Item)
 Vue.component(Form.name, Form)
+
 // import antd directive
 Vue.prototype.$message = message
 Vue.prototype.$notification = notification
+
+// reset `$t` directive when isI18n switch is on
+if (!comConfig.buildSwitch.isI18n) {
+    Vue.prototype.$t = (str: string) => {
+        return utils.getLocaleIfI18nOff(str)
+    }
+}
 
 // mockjs
 if (comConfig.buildSwitch.isMock) {

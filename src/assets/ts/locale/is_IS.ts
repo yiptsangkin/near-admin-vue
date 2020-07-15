@@ -1,9 +1,6 @@
 export default {
     locale: 'is',
     country: 'IS',
-    sysInfo: {
-        sysIntro: 'Auðvelt í notkun framþróunarramma sem byggir á Vue- og maurahönnun'
-    },
     loginForm: {
         byAccountBtn: 'Innskráning aðgangsorðs reiknings',
         byPhoneBtn: 'Innskráning símanúmera',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'fá staðfestingarkóða',
         loginSuccess: 'innskráning tókst'
+    },
+    menuObj: {
+        basicFeature: 'Grunngeta',
+        cpUse: 'Notkun íhluta',
+        childMenu: {
+            0: 'Grunnrammi',
+            1: 'Grunngeta',
+            '0-0': 'Vue',
+            '0-1': 'Maur Hönnun',
+            '1-0': 'Rammaaðgerð',
+            '1-0-0': 'Uppsetning verkefnis',
+            '1-0-1': 'Framan endaskrá',
+            '1-0-2': 'Local spot',
+            '1-0-3': 'alþjóðavæðingin',
+            '1-0-4': 'Gagnabók',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Verkfæri',
+            '1-0-7': 'Aðgangsstýring',
+            '1-0-8': 'heitur lykill',
+            '1-1': 'Síðuaðgerð',
+            '1-1-0': 'Íhlutasíða',
+            '1-1-1': 'url síðu',
+            '1-1-2': 'Engin leyfissíða',
+            '1-1-3': '404 blaðsíður'
+        },
+        defaultMenu: {
+            home: 'Heim'
+        },
+        errorTip: {
+            notfoundTip: 'Enginn hluti fannst undir þessari slóð',
+            emptyErr: 'Slóð íhluta ekki stillt'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Auðvelt í notkun framþróunarramma sem byggir á Vue- og maurahönnun'
     },
     requestInfo: {
         withoutUrl: 'Heimilisfang beiðninnar má ekki vera tómt',
@@ -86,38 +118,6 @@ export default {
         vi: 'Víetnamska',
         'zh-cn': 'Einfaldað kínverska',
         'zh-tw': 'hefðbundinn kínverskur'
-    },
-    menuObj: {
-        basicFeature: 'Grunngeta',
-        cpUse: 'Notkun íhluta',
-        childMenu: {
-            0: 'Grunnrammi',
-            1: 'Grunngeta',
-            '0-0': 'Vue',
-            '0-1': 'Maur Hönnun',
-            '1-0': 'Rammaaðgerð',
-            '1-0-0': 'Uppsetning verkefnis',
-            '1-0-1': 'Framan endaskrá',
-            '1-0-2': 'Local spot',
-            '1-0-3': 'alþjóðavæðingin',
-            '1-0-4': 'Gagnabók',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Verkfæri',
-            '1-0-7': 'Aðgangsstýring',
-            '1-0-8': 'heitur lykill',
-            '1-1': 'Síðuaðgerð',
-            '1-1-0': 'Íhlutasíða',
-            '1-1-1': 'url síðu',
-            '1-1-2': 'Engin leyfissíða',
-            '1-1-3': '404 blaðsíður'
-        },
-        defaultMenu: {
-            home: 'Heim'
-        },
-        errorTip: {
-            notfoundTip: 'Enginn hluti fannst undir þessari slóð',
-            emptyErr: 'Slóð íhluta ekki stillt'
-        }
     },
     tagObj: {
         closeAll: 'Lokaðu öllum flipum',

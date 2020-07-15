@@ -1,9 +1,6 @@
 export default {
     locale: 'de',
     country: 'DE',
-    sysInfo: {
-        sysIntro: 'Ein benutzerfreundliches Front-End-Entwicklungsframework, das auf Vue und Ameisendesign basiert'
-    },
     loginForm: {
         byAccountBtn: 'Konto Passwort Login',
         byPhoneBtn: 'Login Login',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'Bestätigungscode erhalten',
         loginSuccess: 'Anmeldung erfolgreich'
+    },
+    menuObj: {
+        basicFeature: 'Grundlegende Fähigkeit',
+        cpUse: 'Verwendung von Komponenten',
+        childMenu: {
+            0: 'Grundgerüst',
+            1: 'Grundlegende Fähigkeit',
+            '0-0': 'Vue',
+            '0-1': 'Ameisendesign',
+            '1-0': 'Rahmenfunktion',
+            '1-0-0': 'Projektkonfiguration',
+            '1-0-1': 'Front-End-Protokoll',
+            '1-0-2': 'Lokale Verspottung',
+            '1-0-3': 'Globalisierung',
+            '1-0-4': 'Datenwörterbuch',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Zugangskontrolle',
+            '1-0-8': 'Hotkey',
+            '1-1': 'Seitenfunktion',
+            '1-1-0': 'Komponentenseite',
+            '1-1-1': 'URL-Seite',
+            '1-1-2': 'Keine Berechtigungsseite',
+            '1-1-3': '404 Seiten'
+        },
+        defaultMenu: {
+            home: 'Zuhause'
+        },
+        errorTip: {
+            notfoundTip: 'Unter diesem Pfad wurde keine Komponente gefunden',
+            emptyErr: 'Komponentenpfad nicht konfiguriert'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Ein benutzerfreundliches Front-End-Entwicklungsframework, das auf Vue und Ant Design basiert'
     },
     requestInfo: {
         withoutUrl: 'Die Anforderungsadresse darf nicht leer sein',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vietnamesisch',
         'zh-cn': 'Vereinfachtes Chinesisch',
         'zh-tw': 'traditionelles Chinesisch'
-    },
-    menuObj: {
-        basicFeature: 'Grundlegende Fähigkeit',
-        cpUse: 'Verwendung von Komponenten',
-        childMenu: {
-            0: 'Grundgerüst',
-            1: 'Grundlegende Fähigkeit',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Rahmenfunktion',
-            '1-0-0': 'Projektkonfiguration',
-            '1-0-1': 'Front-End-Protokoll',
-            '1-0-2': 'Lokale Verspottung',
-            '1-0-3': 'Globalisierung',
-            '1-0-4': 'Datenwörterbuch',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
-            '1-0-7': 'Zugangskontrolle',
-            '1-0-8': 'Hotkey',
-            '1-1': 'Seitenfunktion',
-            '1-1-0': 'Komponentenseite',
-            '1-1-1': 'URL-Seite',
-            '1-1-2': 'Keine Berechtigungsseite',
-            '1-1-3': '404 Seiten'
-        },
-        defaultMenu: {
-            home: 'Zuhause'
-        },
-        errorTip: {
-            notfoundTip: 'Unter diesem Pfad wurde keine Komponente gefunden',
-            emptyErr: 'Komponentenpfad nicht konfiguriert'
-        }
     },
     tagObj: {
         closeAll: 'Alle Fenster schließen',

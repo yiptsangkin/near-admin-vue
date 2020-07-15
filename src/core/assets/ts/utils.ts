@@ -3,6 +3,8 @@ import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams} from 
 import axios, {AxiosRequestConfig} from 'axios'
 import dict from '@custom/dict'
 import Vue from 'vue'
+import comConfig from '@custom/config';
+const coreLocale = require('@corets/locale_BASE')
 
 const loglineObj: any = {
     setLog ({module, logType, desc, data}: LoglineParams): void {
@@ -617,6 +619,35 @@ const toBase64 = (str: string) => {
     return window.btoa(unescape(encodeURIComponent(str)))
 }
 
+const getObjAttrByStr = (obj: any, path: string) => {
+    if (!obj || !path) {
+        return null
+    } else {
+        const pathList = path.replace(/\[/g, '.').replace(/\]/g, '.').split('.')
+        let result: any = null
+        try {
+            pathList.forEach((item) => {
+                if (result === null) {
+                    result = obj[item]
+                } else {
+                    result = result[item]
+                }
+            })
+            return result
+        } catch (e) {
+            return null
+        }
+    }
+}
+
+const getLocaleIfI18nOff = (str: string) => {
+    if (!comConfig.buildSwitch.isI18n) {
+        return getObjAttrByStr(coreLocale, str) || str
+    } else {
+        return str
+    }
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -635,5 +666,7 @@ export default {
     getBreadList,
     handlerMenuSelect,
     timestampToDateString,
-    exportExcel
+    exportExcel,
+    getObjAttrByStr,
+    getLocaleIfI18nOff
 }

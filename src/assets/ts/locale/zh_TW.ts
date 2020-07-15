@@ -1,9 +1,6 @@
 export default {
     locale: 'zh-tw',
     country: 'TW',
-    sysInfo: {
-        sysIntro: '一款基於Vue和Ant Design的好用中後台前端開發框架'
-    },
     loginForm: {
         byAccountBtn: '賬戶密碼登錄',
         byPhoneBtn: '手機號登錄',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: '驗證碼',
         validBtn: '獲取驗證碼',
         loginSuccess: '登錄成功'
+    },
+    menuObj: {
+        basicFeature: '基礎能力',
+        cpUse: '組件使用',
+        childMenu: {
+            0: '基礎框架',
+            1: '基礎能力',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': '框架功能',
+            '1-0-0': '項目配置',
+            '1-0-1': '前端日誌',
+            '1-0-2': '本地mock',
+            '1-0-3': '國際化',
+            '1-0-4': '數據字典',
+            '1-0-5': 'EventBus',
+            '1-0-6': '工具集',
+            '1-0-7': '權限控制',
+            '1-0-8': '快捷鍵',
+            '1-1': '頁面功能',
+            '1-1-0': '組件頁面',
+            '1-1-1': 'url頁面',
+            '1-1-2': '無權限頁面',
+            '1-1-3': '404頁面'
+        },
+        defaultMenu: {
+            home: '首頁'
+        },
+        errorTip: {
+            notfoundTip: '未找到該路徑下的組件',
+            emptyErr: '未配置組件路徑'
+        }
+    },
+    sysInfo: {
+        sysIntro: '一款基於Vue和Ant Design的好用中後台前端開發框架'
     },
     requestInfo: {
         withoutUrl: '請求地址不能為空',
@@ -86,38 +118,6 @@ export default {
         vi: '越南語',
         'zh-cn': '簡體中文',
         'zh-tw': '繁體中文'
-    },
-    menuObj: {
-        basicFeature: '基礎能力',
-        cpUse: '組件使用',
-        childMenu: {
-            0: '基礎框架',
-            1: '基礎能力',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': '框架功能',
-            '1-0-0': '項目配置',
-            '1-0-1': '前端日誌',
-            '1-0-2': '本地mock',
-            '1-0-3': '國際化',
-            '1-0-4': '數據字典',
-            '1-0-5': 'EventBus',
-            '1-0-6': '工具集',
-            '1-0-7': '權限控制',
-            '1-0-8': '快捷鍵',
-            '1-1': '頁面功能',
-            '1-1-0': '組件頁面',
-            '1-1-1': 'url頁面',
-            '1-1-2': '無權限頁面',
-            '1-1-3': '404頁面'
-        },
-        defaultMenu: {
-            home: '首頁'
-        },
-        errorTip: {
-            notfoundTip: '未找到該路徑下的組件',
-            emptyErr: '未配置組件路徑'
-        }
     },
     tagObj: {
         closeAll: '關閉全部標籤',

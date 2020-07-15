@@ -1,9 +1,6 @@
 export default {
     locale: 'pt',
     country: 'PT',
-    sysInfo: {
-        sysIntro: 'Uma estrutura de desenvolvimento de front-end fácil de usar, baseada no Vue e Formiga Design'
-    },
     loginForm: {
         byAccountBtn: 'Login da senha da conta',
         byPhoneBtn: 'Login do número de telefone',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'CAPTCHA',
         validBtn: 'obter código de verificação',
         loginSuccess: 'login bem sucedido'
+    },
+    menuObj: {
+        basicFeature: 'Habilidade básica',
+        cpUse: 'Uso de componentes',
+        childMenu: {
+            0: 'Estrutura básica',
+            1: 'Habilidade básica',
+            '0-0': 'Vue',
+            '0-1': 'Formiga Design',
+            '1-0': 'Função de quadro',
+            '1-0-0': 'Configuração do projeto',
+            '1-0-1': 'Log de front-end',
+            '1-0-2': 'Simulação local',
+            '1-0-3': 'globalização',
+            '1-0-4': 'Dicionário de dados',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Conjunto de ferramentas',
+            '1-0-7': 'Controle de acesso',
+            '1-0-8': 'tecla de atalho',
+            '1-1': 'Função de página',
+            '1-1-0': 'Página componente',
+            '1-1-1': 'página de URL',
+            '1-1-2': 'Nenhuma página de permissão',
+            '1-1-3': '404 páginas'
+        },
+        defaultMenu: {
+            home: 'Casa'
+        },
+        errorTip: {
+            notfoundTip: 'Nenhum componente encontrado neste caminho',
+            emptyErr: 'Caminho do componente não configurado'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Uma estrutura de desenvolvimento de front-end fácil de usar, baseada no Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'O endereço de solicitação não pode estar vazio',
@@ -86,38 +118,6 @@ export default {
         vi: 'vietnamita',
         'zh-cn': 'Chinês simplificado',
         'zh-tw': 'chinês tradicional'
-    },
-    menuObj: {
-        basicFeature: 'Habilidade básica',
-        cpUse: 'Uso de componentes',
-        childMenu: {
-            0: 'Estrutura básica',
-            1: 'Habilidade básica',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Função de quadro',
-            '1-0-0': 'Configuração do projeto',
-            '1-0-1': 'Log de front-end',
-            '1-0-2': 'Simulação local',
-            '1-0-3': 'globalização',
-            '1-0-4': 'Dicionário de dados',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Conjunto de ferramentas',
-            '1-0-7': 'Controle de acesso',
-            '1-0-8': 'tecla de atalho',
-            '1-1': 'Função de página',
-            '1-1-0': 'Página componente',
-            '1-1-1': 'página de URL',
-            '1-1-2': 'Nenhuma página de permissão',
-            '1-1-3': '404 páginas'
-        },
-        defaultMenu: {
-            home: 'Casa'
-        },
-        errorTip: {
-            notfoundTip: 'Nenhum componente encontrado neste caminho',
-            emptyErr: 'Caminho do componente não configurado'
-        }
     },
     tagObj: {
         closeAll: 'Feche todas as guias',

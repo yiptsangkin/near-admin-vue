@@ -1,9 +1,6 @@
 export default {
     locale: 'id',
     country: 'ID',
-    sysInfo: {
-        sysIntro: 'Kerangka pengembangan front-end yang mudah digunakan berdasarkan Vue dan Desain Semut'
-    },
     loginForm: {
         byAccountBtn: 'Login kata sandi akun',
         byPhoneBtn: 'Login nomor telepon',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'dapatkan kode verifikasi',
         loginSuccess: 'login berhasil'
+    },
+    menuObj: {
+        basicFeature: 'Kemampuan dasar',
+        cpUse: 'Penggunaan komponen',
+        childMenu: {
+            0: 'Kerangka dasar',
+            1: 'Kemampuan dasar',
+            '0-0': 'Vue',
+            '0-1': 'Desain Semut',
+            '1-0': 'Fungsi bingkai',
+            '1-0-0': 'Konfigurasi proyek',
+            '1-0-1': 'Log front-end',
+            '1-0-2': 'Tiruan lokal',
+            '1-0-3': 'globalisasi',
+            '1-0-4': 'Kamus data',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Kontrol akses',
+            '1-0-8': 'kunci panas',
+            '1-1': 'Fungsi halaman',
+            '1-1-0': 'Halaman komponen',
+            '1-1-1': 'halaman url',
+            '1-1-2': 'Tidak ada halaman izin',
+            '1-1-3': '404 halaman'
+        },
+        defaultMenu: {
+            home: 'Rumah'
+        },
+        errorTip: {
+            notfoundTip: 'Tidak ada komponen yang ditemukan di bawah jalur ini',
+            emptyErr: 'Jalur komponen tidak dikonfigurasi'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Kerangka pengembangan front-end yang mudah digunakan berdasarkan Vue dan Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Alamat permintaan tidak boleh kosong',
@@ -86,38 +118,6 @@ export default {
         vi: 'Orang Vietnam',
         'zh-cn': 'Cina disederhanakan',
         'zh-tw': 'Cina tradisional'
-    },
-    menuObj: {
-        basicFeature: 'Kemampuan dasar',
-        cpUse: 'Penggunaan komponen',
-        childMenu: {
-            0: 'Kerangka dasar',
-            1: 'Kemampuan dasar',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Fungsi bingkai',
-            '1-0-0': 'Konfigurasi proyek',
-            '1-0-1': 'Log front-end',
-            '1-0-2': 'Tiruan lokal',
-            '1-0-3': 'globalisasi',
-            '1-0-4': 'Kamus data',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
-            '1-0-7': 'Kontrol akses',
-            '1-0-8': 'kunci panas',
-            '1-1': 'Fungsi halaman',
-            '1-1-0': 'Halaman komponen',
-            '1-1-1': 'halaman url',
-            '1-1-2': 'Tidak ada halaman izin',
-            '1-1-3': '404 halaman'
-        },
-        defaultMenu: {
-            home: 'Rumah'
-        },
-        errorTip: {
-            notfoundTip: 'Tidak ada komponen yang ditemukan di bawah jalur ini',
-            emptyErr: 'Jalur komponen tidak dikonfigurasi'
-        }
     },
     tagObj: {
         closeAll: 'Tutup semua tab',

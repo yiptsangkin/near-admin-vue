@@ -1,9 +1,6 @@
 export default {
     locale: 'nl',
     country: 'NL',
-    sysInfo: {
-        sysIntro: 'Een eenvoudig te gebruiken front-end ontwikkelraamwerk gebaseerd op Vue en Mier ontwerp'
-    },
     loginForm: {
         byAccountBtn: 'Account wachtwoord login',
         byPhoneBtn: 'Telefoonnummer login',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'krijg verificatiecode',
         loginSuccess: 'Succesvol ingelogd'
+    },
+    menuObj: {
+        basicFeature: 'Basisvaardigheid',
+        cpUse: 'Gebruik van componenten',
+        childMenu: {
+            0: 'Basiskader',
+            1: 'Basisvaardigheid',
+            '0-0': 'Vue',
+            '0-1': 'Mier ontwerp',
+            '1-0': 'Frame functie',
+            '1-0-0': 'Projectconfiguratie',
+            '1-0-1': 'Front-end logboek',
+            '1-0-2': 'Lokale mock',
+            '1-0-3': 'globalisering',
+            '1-0-4': 'Data woordenboek',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Toegangscontrole',
+            '1-0-8': 'sneltoets',
+            '1-1': 'Paginafunctie',
+            '1-1-0': 'Component pagina',
+            '1-1-1': 'url pagina',
+            '1-1-2': 'Geen toestemmingspagina',
+            '1-1-3': '404 pagina&#39;s'
+        },
+        defaultMenu: {
+            home: 'Huis'
+        },
+        errorTip: {
+            notfoundTip: 'Geen onderdeel gevonden onder dit pad',
+            emptyErr: 'Componentpad niet geconfigureerd'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Een eenvoudig te gebruiken front-end ontwikkelraamwerk gebaseerd op Vue en Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Verzoekadres mag niet leeg zijn',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vietnamees',
         'zh-cn': 'Vereenvoudigd Chinees',
         'zh-tw': 'traditioneel Chinees'
-    },
-    menuObj: {
-        basicFeature: 'Basisvaardigheid',
-        cpUse: 'Gebruik van componenten',
-        childMenu: {
-            0: 'Basiskader',
-            1: 'Basisvaardigheid',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Frame functie',
-            '1-0-0': 'Projectconfiguratie',
-            '1-0-1': 'Front-end logboek',
-            '1-0-2': 'Lokale mock',
-            '1-0-3': 'globalisering',
-            '1-0-4': 'Data woordenboek',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
-            '1-0-7': 'Toegangscontrole',
-            '1-0-8': 'sneltoets',
-            '1-1': 'Paginafunctie',
-            '1-1-0': 'Component pagina',
-            '1-1-1': 'url pagina',
-            '1-1-2': 'Geen toestemmingspagina',
-            '1-1-3': '404 pagina&#39;s'
-        },
-        defaultMenu: {
-            home: 'Huis'
-        },
-        errorTip: {
-            notfoundTip: 'Geen onderdeel gevonden onder dit pad',
-            emptyErr: 'Componentpad niet geconfigureerd'
-        }
     },
     tagObj: {
         closeAll: 'Sluit alle tabbladen',

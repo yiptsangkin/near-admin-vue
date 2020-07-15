@@ -1,9 +1,6 @@
 export default {
     locale: 'lv',
     country: 'LV',
-    sysInfo: {
-        sysIntro: 'Viegli lietojams priekšējās daļas izstrādes ietvars, kas balstīts uz Vue un Skudru dizains'
-    },
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',
         byPhoneBtn: 'Tālruņa numura pieteikšanās',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'saņemt verifikācijas kodu',
         loginSuccess: 'pieteikšanās veiksmīga'
+    },
+    menuObj: {
+        basicFeature: 'Pamata spējas',
+        cpUse: 'Komponentu lietošana',
+        childMenu: {
+            0: 'Pamata ietvars',
+            1: 'Pamata spējas',
+            '0-0': 'Vue',
+            '0-1': 'Skudru dizains',
+            '1-0': 'Rāmja funkcija',
+            '1-0-0': 'Projekta konfigurācija',
+            '1-0-1': 'Sākuma žurnāls',
+            '1-0-2': 'Vietējie izspēles',
+            '1-0-3': 'globalizācija',
+            '1-0-4': 'Datu vārdnīca',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Rīku komplekts',
+            '1-0-7': 'Piekļuves kontrole',
+            '1-0-8': 'karstais taustiņš',
+            '1-1': 'Lapas funkcija',
+            '1-1-0': 'Komponentu lapa',
+            '1-1-1': 'url lapa',
+            '1-1-2': 'Nav atļauju lapas',
+            '1-1-3': '404 lpp'
+        },
+        defaultMenu: {
+            home: 'Mājas'
+        },
+        errorTip: {
+            notfoundTip: 'Šajā ceļā nav atrasts neviens komponents',
+            emptyErr: 'Komponenta ceļš nav konfigurēts'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Viegli lietojams priekšējās daļas izstrādes ietvars, kas balstīts uz Vue un Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Pieprasījuma adreses lauks nedrīkst būt tukšs',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vjetnamiešu',
         'zh-cn': 'Vienkāršota ķīniešu valoda',
         'zh-tw': 'tradicionālā ķīniešu'
-    },
-    menuObj: {
-        basicFeature: 'Pamata spējas',
-        cpUse: 'Komponentu lietošana',
-        childMenu: {
-            0: 'Pamata ietvars',
-            1: 'Pamata spējas',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Rāmja funkcija',
-            '1-0-0': 'Projekta konfigurācija',
-            '1-0-1': 'Sākuma žurnāls',
-            '1-0-2': 'Vietējie izspēles',
-            '1-0-3': 'globalizācija',
-            '1-0-4': 'Datu vārdnīca',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Rīku komplekts',
-            '1-0-7': 'Piekļuves kontrole',
-            '1-0-8': 'karstais taustiņš',
-            '1-1': 'Lapas funkcija',
-            '1-1-0': 'Komponentu lapa',
-            '1-1-1': 'url lapa',
-            '1-1-2': 'Nav atļauju lapas',
-            '1-1-3': '404 lpp'
-        },
-        defaultMenu: {
-            home: 'Mājas'
-        },
-        errorTip: {
-            notfoundTip: 'Šajā ceļā nav atrasts neviens komponents',
-            emptyErr: 'Komponenta ceļš nav konfigurēts'
-        }
     },
     tagObj: {
         closeAll: 'Aizveriet visas cilnes',

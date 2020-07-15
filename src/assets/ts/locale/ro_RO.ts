@@ -1,9 +1,6 @@
 export default {
     locale: 'ro',
     country: 'RO',
-    sysInfo: {
-        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat, bazat pe vue și Furnica design'
-    },
     loginForm: {
         byAccountBtn: 'Autentificare parolă cont',
         byPhoneBtn: 'Conectare la numărul de telefon',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'obțineți codul de verificare',
         loginSuccess: 'autentificare reușită'
+    },
+    menuObj: {
+        basicFeature: 'Abilitatea de bază',
+        cpUse: 'Utilizarea componentelor',
+        childMenu: {
+            0: 'Cadrul de bază',
+            1: 'Abilitatea de bază',
+            '0-0': 'vue',
+            '0-1': 'Furnica design',
+            '1-0': 'Funcția cadru',
+            '1-0-0': 'Configurarea proiectului',
+            '1-0-1': 'Jurnal front-end',
+            '1-0-2': 'Batjocura locală',
+            '1-0-3': 'globalizarea',
+            '1-0-4': 'Dicționar de date',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Set de scule',
+            '1-0-7': 'Controlul accesului',
+            '1-0-8': 'cheie rapidă',
+            '1-1': 'Funcția paginii',
+            '1-1-0': 'Pagina componentă',
+            '1-1-1': 'pagina URL',
+            '1-1-2': 'Fără permisiune',
+            '1-1-3': '404 pagini'
+        },
+        defaultMenu: {
+            home: 'Acasă'
+        },
+        errorTip: {
+            notfoundTip: 'Nici o componentă nu a fost găsită sub această cale',
+            emptyErr: 'Calea componentă nu este configurată'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat, bazat pe Vue și Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa solicitării nu poate fi goală',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vietnameză',
         'zh-cn': 'Chineză simplificată',
         'zh-tw': 'chineză tradițională'
-    },
-    menuObj: {
-        basicFeature: 'Abilitatea de bază',
-        cpUse: 'Utilizarea componentelor',
-        childMenu: {
-            0: 'Cadrul de bază',
-            1: 'Abilitatea de bază',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Funcția cadru',
-            '1-0-0': 'Configurarea proiectului',
-            '1-0-1': 'Jurnal front-end',
-            '1-0-2': 'Batjocura locală',
-            '1-0-3': 'globalizarea',
-            '1-0-4': 'Dicționar de date',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Set de scule',
-            '1-0-7': 'Controlul accesului',
-            '1-0-8': 'cheie rapidă',
-            '1-1': 'Funcția paginii',
-            '1-1-0': 'Pagina componentă',
-            '1-1-1': 'pagina URL',
-            '1-1-2': 'Fără permisiune',
-            '1-1-3': '404 pagini'
-        },
-        defaultMenu: {
-            home: 'Acasă'
-        },
-        errorTip: {
-            notfoundTip: 'Nici o componentă nu a fost găsită sub această cale',
-            emptyErr: 'Calea componentă nu este configurată'
-        }
     },
     tagObj: {
         closeAll: 'Inchide toate filele',

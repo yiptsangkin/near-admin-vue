@@ -1,9 +1,6 @@
 export default {
     locale: 'hu',
     country: 'HU',
-    sysInfo: {
-        sysIntro: 'Könnyen használható front-end fejlesztési keret, amely a Vue és Hangya tervezés alapú'
-    },
     loginForm: {
         byAccountBtn: 'Fiók jelszó bejelentkezés',
         byPhoneBtn: 'Telefonszám bejelentkezés',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'kérjen ellenőrző kódot',
         loginSuccess: 'sikeres bejelentkezés'
+    },
+    menuObj: {
+        basicFeature: 'Alapvető képesség',
+        cpUse: 'Az alkatrészek használata',
+        childMenu: {
+            0: 'Alapvető keret',
+            1: 'Alapvető képesség',
+            '0-0': 'Vue',
+            '0-1': 'Hangya tervezés',
+            '1-0': 'Keret funkció',
+            '1-0-0': 'Projekt konfiguráció',
+            '1-0-1': 'Elülső napló',
+            '1-0-2': 'Helyi ál',
+            '1-0-3': 'globalizáció',
+            '1-0-4': 'Adat szótár',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'eszközkészlet',
+            '1-0-7': 'Hozzáférés-szabályozás',
+            '1-0-8': 'gyorsbillentyű',
+            '1-1': 'Oldal funkció',
+            '1-1-0': 'Alkatrész oldal',
+            '1-1-1': 'url oldal',
+            '1-1-2': 'Nincs engedélyezési oldal',
+            '1-1-3': '404 oldal'
+        },
+        defaultMenu: {
+            home: 'itthon'
+        },
+        errorTip: {
+            notfoundTip: 'Nem található elem ezen az úton',
+            emptyErr: 'A komponens elérési útja nincs konfigurálva'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Könnyen használható front-end fejlesztési keret, amely a Vue és Ant Design alapú'
     },
     requestInfo: {
         withoutUrl: 'A kérelem címe nem lehet üres',
@@ -86,38 +118,6 @@ export default {
         vi: 'vietnami',
         'zh-cn': 'Egyszerűsített kínai',
         'zh-tw': 'tradicionális kínai'
-    },
-    menuObj: {
-        basicFeature: 'Alapvető képesség',
-        cpUse: 'Az alkatrészek használata',
-        childMenu: {
-            0: 'Alapvető keret',
-            1: 'Alapvető képesség',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Keret funkció',
-            '1-0-0': 'Projekt konfiguráció',
-            '1-0-1': 'Elülső napló',
-            '1-0-2': 'Helyi ál',
-            '1-0-3': 'globalizáció',
-            '1-0-4': 'Adat szótár',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'eszközkészlet',
-            '1-0-7': 'Hozzáférés-szabályozás',
-            '1-0-8': 'gyorsbillentyű',
-            '1-1': 'Oldal funkció',
-            '1-1-0': 'Alkatrész oldal',
-            '1-1-1': 'url oldal',
-            '1-1-2': 'Nincs engedélyezési oldal',
-            '1-1-3': '404 oldal'
-        },
-        defaultMenu: {
-            home: 'itthon'
-        },
-        errorTip: {
-            notfoundTip: 'Nem található elem ezen az úton',
-            emptyErr: 'A komponens elérési útja nincs konfigurálva'
-        }
     },
     tagObj: {
         closeAll: 'Zárja be az összes fület',

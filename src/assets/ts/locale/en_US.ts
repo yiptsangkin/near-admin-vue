@@ -1,9 +1,6 @@
 export default {
     locale: 'en',
     country: 'US',
-    sysInfo: {
-        sysIntro: 'An easy-to-use front-end development framework based on Vue and Ant Design'
-    },
     loginForm: {
         byAccountBtn: 'Account password login',
         byPhoneBtn: 'Phone number login',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'get verification code',
         loginSuccess: 'login successful'
+    },
+    menuObj: {
+        basicFeature: 'Basic ability',
+        cpUse: 'Component use',
+        childMenu: {
+            0: 'Basic framework',
+            1: 'Basic ability',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Frame function',
+            '1-0-0': 'Project configuration',
+            '1-0-1': 'Front-end log',
+            '1-0-2': 'Local mock',
+            '1-0-3': 'globalization',
+            '1-0-4': 'Data Dictionary',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Access control',
+            '1-0-8': 'hot key',
+            '1-1': 'Page function',
+            '1-1-0': 'Component page',
+            '1-1-1': 'url page',
+            '1-1-2': 'No permission page',
+            '1-1-3': '404 pages'
+        },
+        defaultMenu: {
+            home: 'Home'
+        },
+        errorTip: {
+            notfoundTip: 'No component found under this path',
+            emptyErr: 'Component path not configured'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'An easy-to-use front-end development framework based on Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Request address cannot be empty',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vietnamese',
         'zh-cn': 'Simplified Chinese',
         'zh-tw': 'traditional Chinese'
-    },
-    menuObj: {
-        basicFeature: 'Basic ability',
-        cpUse: 'Component use',
-        childMenu: {
-            0: 'Basic framework',
-            1: 'Basic ability',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Frame function',
-            '1-0-0': 'Project configuration',
-            '1-0-1': 'Front-end log',
-            '1-0-2': 'Local mock',
-            '1-0-3': 'globalization',
-            '1-0-4': 'Data Dictionary',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
-            '1-0-7': 'Access control',
-            '1-0-8': 'hot key',
-            '1-1': 'Page function',
-            '1-1-0': 'Component page',
-            '1-1-1': 'url page',
-            '1-1-2': 'No permission page',
-            '1-1-3': '404 pages'
-        },
-        defaultMenu: {
-            home: 'Home'
-        },
-        errorTip: {
-            notfoundTip: 'No component found under this path',
-            emptyErr: 'Component path not configured'
-        }
     },
     tagObj: {
         closeAll: 'Close all tabs',

@@ -1,9 +1,6 @@
 export default {
     locale: 'fi',
     country: 'FI',
-    sysInfo: {
-        sysIntro: 'Helppo käyttää käyttöliittymäkehitystä, joka perustuu vue- ja Ant-suunnitteluun'
-    },
     loginForm: {
         byAccountBtn: 'Tilin salasanan kirjautuminen',
         byPhoneBtn: 'Puhelinnumeron kirjautuminen',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'hanki vahvistuskoodi',
         loginSuccess: 'kirjautuminen onnistui'
+    },
+    menuObj: {
+        basicFeature: 'Peruskyky',
+        cpUse: 'Komponenttien käyttö',
+        childMenu: {
+            0: 'Peruskehys',
+            1: 'Peruskyky',
+            '0-0': 'vue',
+            '0-1': 'Muurahaissuunnittelu',
+            '1-0': 'Kehystoiminto',
+            '1-0-0': 'Projektin kokoonpano',
+            '1-0-1': 'Etuosan loki',
+            '1-0-2': 'Paikallinen pilkka',
+            '1-0-3': 'globalisaatio',
+            '1-0-4': 'Tietojen sanakirja',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'työkalusarja',
+            '1-0-7': 'Kulunvalvonta',
+            '1-0-8': 'pikanäppäin',
+            '1-1': 'Sivutoiminto',
+            '1-1-0': 'Komponenttisivu',
+            '1-1-1': 'URL-sivu',
+            '1-1-2': 'Ei lupa-sivua',
+            '1-1-3': '404 sivua'
+        },
+        defaultMenu: {
+            home: 'Koti'
+        },
+        errorTip: {
+            notfoundTip: 'Tätä polkua ei löytynyt',
+            emptyErr: 'Komponenttipolkua ei ole määritetty'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Helppo käyttää käyttöliittymäkehitystä, joka perustuu Vue- ja Ant-suunnitteluun'
     },
     requestInfo: {
         withoutUrl: 'Pyyntöosoite ei voi olla tyhjä',
@@ -86,38 +118,6 @@ export default {
         vi: 'vietnam',
         'zh-cn': 'Yksinkertaistettu kiina',
         'zh-tw': 'perinteinen kiina'
-    },
-    menuObj: {
-        basicFeature: 'Peruskyky',
-        cpUse: 'Komponenttien käyttö',
-        childMenu: {
-            0: 'Peruskehys',
-            1: 'Peruskyky',
-            '0-0': 'Vue',
-            '0-1': 'Muurahaissuunnittelu',
-            '1-0': 'Kehystoiminto',
-            '1-0-0': 'Projektin kokoonpano',
-            '1-0-1': 'Etuosan loki',
-            '1-0-2': 'Paikallinen pilkka',
-            '1-0-3': 'globalisaatio',
-            '1-0-4': 'Tietojen sanakirja',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'työkalusarja',
-            '1-0-7': 'Kulunvalvonta',
-            '1-0-8': 'pikanäppäin',
-            '1-1': 'Sivutoiminto',
-            '1-1-0': 'Komponenttisivu',
-            '1-1-1': 'URL-sivu',
-            '1-1-2': 'Ei lupa-sivua',
-            '1-1-3': '404 sivua'
-        },
-        defaultMenu: {
-            home: 'Koti'
-        },
-        errorTip: {
-            notfoundTip: 'Tätä polkua ei löytynyt',
-            emptyErr: 'Komponenttipolkua ei ole määritetty'
-        }
     },
     tagObj: {
         closeAll: 'Sulje kaikki välilehdet',

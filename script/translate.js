@@ -45,10 +45,11 @@ const withBaseFile = function (str) {
 }
 
 const curPath = process.cwd().replace('/script',  '')
-const basePath = `${curPath}/src/assets/ts/locale`
-const optPath = `${basePath}/locale_MAP.ts`
-const translateBasePath = `${basePath}/locale_BASE.ts`
 const corePath = `${curPath}/src/core/assets/ts`
+const basePath = `${curPath}/src/assets/ts/locale`
+const coreBasePath = `${corePath}/locale_BASE.ts`
+const translateBasePath = `${basePath}/locale_BASE.ts`
+const optPath = `${basePath}/locale_MAP.ts`
 
 try {
     // remove all locale file (without locale_BASE.ts and locale_MAP.ts)
@@ -92,7 +93,12 @@ try {
             response.targetLang = ['zh_CN', 'zh_TW', 'en_US', 'ja_JP', 'ko_KR']
         }
         // base locale file
-        const baseFile = require(translateBasePath)
+        let baseFile = require(translateBasePath)
+        const coreBaseFile = require(coreBasePath)
+        baseFile = {
+            ...baseFile,
+            ...coreBaseFile
+        }
         const spinner = ora()
         for (let i = 0; i < response.targetLang.length; i++) {
             let item = response.targetLang[i]

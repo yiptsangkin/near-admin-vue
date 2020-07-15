@@ -1,9 +1,6 @@
 export default {
     locale: 'da',
     country: 'DK',
-    sysInfo: {
-        sysIntro: 'En brugervenlig front-end-udviklingsramme baseret på Vue- og myresign'
-    },
     loginForm: {
         byAccountBtn: 'Konto adgangskode login',
         byPhoneBtn: 'Telefonnummer login',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'få bekræftelseskode',
         loginSuccess: 'login er vellykket'
+    },
+    menuObj: {
+        basicFeature: 'Grundlæggende evne',
+        cpUse: 'Brug af komponenter',
+        childMenu: {
+            0: 'Grundlæggende rammer',
+            1: 'Grundlæggende evne',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Rammefunktion',
+            '1-0-0': 'Projektkonfiguration',
+            '1-0-1': 'Front-end log',
+            '1-0-2': 'Lokal hån',
+            '1-0-3': 'globalisering',
+            '1-0-4': 'Data ordbog',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Adgangskontrol',
+            '1-0-8': 'genvejstast',
+            '1-1': 'Sidefunktion',
+            '1-1-0': 'Komponent side',
+            '1-1-1': 'url-side',
+            '1-1-2': 'Ingen tilladelsesside',
+            '1-1-3': '404 sider'
+        },
+        defaultMenu: {
+            home: 'Hjem'
+        },
+        errorTip: {
+            notfoundTip: 'Der blev ikke fundet nogen komponent under denne sti',
+            emptyErr: 'Komponentsti ikke konfigureret'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'En brugervenlig front-end-udviklingsramme baseret på Vue- og myresign'
     },
     requestInfo: {
         withoutUrl: 'Anmodningsadressen kan ikke være tom',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vietnamesisk',
         'zh-cn': 'Forenklet kinesisk',
         'zh-tw': 'traditionelt kinesisk'
-    },
-    menuObj: {
-        basicFeature: 'Grundlæggende evne',
-        cpUse: 'Brug af komponenter',
-        childMenu: {
-            0: 'Grundlæggende rammer',
-            1: 'Grundlæggende evne',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Rammefunktion',
-            '1-0-0': 'Projektkonfiguration',
-            '1-0-1': 'Front-end log',
-            '1-0-2': 'Lokal hån',
-            '1-0-3': 'globalisering',
-            '1-0-4': 'Data ordbog',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
-            '1-0-7': 'Adgangskontrol',
-            '1-0-8': 'genvejstast',
-            '1-1': 'Sidefunktion',
-            '1-1-0': 'Komponent side',
-            '1-1-1': 'url-side',
-            '1-1-2': 'Ingen tilladelsesside',
-            '1-1-3': '404 sider'
-        },
-        defaultMenu: {
-            home: 'Hjem'
-        },
-        errorTip: {
-            notfoundTip: 'Der blev ikke fundet nogen komponent under denne sti',
-            emptyErr: 'Komponentsti ikke konfigureret'
-        }
     },
     tagObj: {
         closeAll: 'Luk alle faner',

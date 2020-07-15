@@ -1,9 +1,6 @@
 export default {
     locale: 'sl',
     country: 'SI',
-    sysInfo: {
-        sysIntro: 'Enostaven za uporabo razvojni okvir na osnovi Vue in Ant'
-    },
     loginForm: {
         byAccountBtn: 'Prijava gesla za račun',
         byPhoneBtn: 'Prijava telefonske številke',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'pridobite verifikacijsko kodo',
         loginSuccess: 'prijava uspešna'
+    },
+    menuObj: {
+        basicFeature: 'Osnovna sposobnost',
+        cpUse: 'Uporaba komponent',
+        childMenu: {
+            0: 'Osnovni okvir',
+            1: 'Osnovna sposobnost',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Funkcija okvirja',
+            '1-0-0': 'Konfiguracija projekta',
+            '1-0-1': 'Sprednji dnevnik',
+            '1-0-2': 'Lokalni posmeh',
+            '1-0-3': 'globalizacija',
+            '1-0-4': 'Podatkovni slovar',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Nabor orodij',
+            '1-0-7': 'Nadzor dostopa',
+            '1-0-8': 'vroča tipka',
+            '1-1': 'Funkcija strani',
+            '1-1-0': 'Stran s sestavnimi deli',
+            '1-1-1': 'stran URL',
+            '1-1-2': 'Ni dovoljene strani',
+            '1-1-3': '404 strani'
+        },
+        defaultMenu: {
+            home: 'Domov'
+        },
+        errorTip: {
+            notfoundTip: 'Pod to potjo ni mogoče najti nobene komponente',
+            emptyErr: 'Pot komponente ni konfigurirana'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Enostaven za uporabo razvojni okvir na osnovi Vue in Ant'
     },
     requestInfo: {
         withoutUrl: 'Naslov zahteve ne more biti prazen',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vietnamščina',
         'zh-cn': 'Poenostavljena kitajščina',
         'zh-tw': 'tradicionalno kitajsko'
-    },
-    menuObj: {
-        basicFeature: 'Osnovna sposobnost',
-        cpUse: 'Uporaba komponent',
-        childMenu: {
-            0: 'Osnovni okvir',
-            1: 'Osnovna sposobnost',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Funkcija okvirja',
-            '1-0-0': 'Konfiguracija projekta',
-            '1-0-1': 'Sprednji dnevnik',
-            '1-0-2': 'Lokalni posmeh',
-            '1-0-3': 'globalizacija',
-            '1-0-4': 'Podatkovni slovar',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Nabor orodij',
-            '1-0-7': 'Nadzor dostopa',
-            '1-0-8': 'vroča tipka',
-            '1-1': 'Funkcija strani',
-            '1-1-0': 'Stran s sestavnimi deli',
-            '1-1-1': 'stran URL',
-            '1-1-2': 'Ni dovoljene strani',
-            '1-1-3': '404 strani'
-        },
-        defaultMenu: {
-            home: 'Domov'
-        },
-        errorTip: {
-            notfoundTip: 'Pod to potjo ni mogoče najti nobene komponente',
-            emptyErr: 'Pot komponente ni konfigurirana'
-        }
     },
     tagObj: {
         closeAll: 'Zaprite vse zavihke',

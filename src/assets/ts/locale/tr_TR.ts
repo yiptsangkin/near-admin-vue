@@ -1,9 +1,6 @@
 export default {
     locale: 'tr',
     country: 'TR',
-    sysInfo: {
-        sysIntro: 'Vue ve Karınca Tasarımı tabanlı kullanımı kolay bir ön uç geliştirme çerçevesi'
-    },
     loginForm: {
         byAccountBtn: 'Hesap şifresi girişi',
         byPhoneBtn: 'Telefon numarası girişi',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'doğrulama kodunu al',
         loginSuccess: 'giriş başarılı'
+    },
+    menuObj: {
+        basicFeature: 'Temel yetenek',
+        cpUse: 'Bileşen kullanımı',
+        childMenu: {
+            0: 'Temel çerçeve',
+            1: 'Temel yetenek',
+            '0-0': 'Vue',
+            '0-1': 'Karınca Tasarımı',
+            '1-0': 'Çerçeve işlevi',
+            '1-0-0': 'Proje yapılandırması',
+            '1-0-1': 'Ön uç günlüğü',
+            '1-0-2': 'Yerel alay',
+            '1-0-3': 'küreselleşme',
+            '1-0-4': 'Bilgi sözlüğü',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Araç Seti',
+            '1-0-7': 'Giriş kontrolu',
+            '1-0-8': 'kısayol tuşu',
+            '1-1': 'Sayfa işlevi',
+            '1-1-0': 'Bileşen sayfası',
+            '1-1-1': 'url sayfası',
+            '1-1-2': 'İzin sayfası yok',
+            '1-1-3': '404 sayfa'
+        },
+        defaultMenu: {
+            home: 'Ev'
+        },
+        errorTip: {
+            notfoundTip: 'Bu yol altında hiçbir bileşen bulunamadı',
+            emptyErr: 'Bileşen yolu yapılandırılmadı'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'Vue ve Ant Design tabanlı kullanımı kolay bir ön uç geliştirme çerçevesi'
     },
     requestInfo: {
         withoutUrl: 'İstek adresi boş olamaz',
@@ -86,38 +118,6 @@ export default {
         vi: 'Vietnam',
         'zh-cn': 'Basitleştirilmiş Çince',
         'zh-tw': 'Geleneksel çince'
-    },
-    menuObj: {
-        basicFeature: 'Temel yetenek',
-        cpUse: 'Bileşen kullanımı',
-        childMenu: {
-            0: 'Temel çerçeve',
-            1: 'Temel yetenek',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Çerçeve işlevi',
-            '1-0-0': 'Proje yapılandırması',
-            '1-0-1': 'Ön uç günlüğü',
-            '1-0-2': 'Yerel alay',
-            '1-0-3': 'küreselleşme',
-            '1-0-4': 'Bilgi sözlüğü',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Araç Seti',
-            '1-0-7': 'Giriş kontrolu',
-            '1-0-8': 'kısayol tuşu',
-            '1-1': 'Sayfa işlevi',
-            '1-1-0': 'Bileşen sayfası',
-            '1-1-1': 'url sayfası',
-            '1-1-2': 'İzin sayfası yok',
-            '1-1-3': '404 sayfa'
-        },
-        defaultMenu: {
-            home: 'Ev'
-        },
-        errorTip: {
-            notfoundTip: 'Bu yol altında hiçbir bileşen bulunamadı',
-            emptyErr: 'Bileşen yolu yapılandırılmadı'
-        }
     },
     tagObj: {
         closeAll: 'Tüm sekmeleri kapat',

@@ -1,5 +1,5 @@
 <template>
-    <div class="n-global-locale">
+    <div class="n-global-locale" v-if="comConfig.buildSwitch.isI18n">
         <a-dropdown :trigger="['hover']">
             <a-icon type="global" class="n-locale-icon"/>
             <a-menu slot="overlay" @click="pickLocale" class="n-lang-menu" v-model="currentSelectedKeys">
@@ -24,6 +24,7 @@
     import {mapGetters, mapActions} from 'vuex'
     import CountryFlag from '@corets/countryflag'
     import utils from '@corets/utils'
+    import comConfig from '@custom/config'
 
     interface PickerEvent {
         key: string
@@ -34,7 +35,8 @@
         data () {
             return {
                 currentSelectedKeys: [],
-                deviceInfo: utils.getDeviceInfo('machine')
+                deviceInfo: utils.getDeviceInfo('machine'),
+                comConfig
             }
         },
         computed: {

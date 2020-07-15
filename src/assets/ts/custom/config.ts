@@ -16,7 +16,8 @@ const buildSwitch = {
     isMock: true,
     isHotKey: true,
     isBreadCrumb: true,
-    isCache: true
+    isCache: true,
+    isI18n: true
 }
 
 const comConfig: ComConfig = {

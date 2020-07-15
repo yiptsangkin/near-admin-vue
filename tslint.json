@@ -19,6 +19,7 @@
       false,
       "always"
     ],
+    "no-var-requires": false,
     "no-console": false,
     "space-before-function-paren": ["error", {
       "anonymous": "always",

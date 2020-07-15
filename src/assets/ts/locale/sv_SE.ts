@@ -1,9 +1,6 @@
 export default {
     locale: 'sv',
     country: 'SE',
-    sysInfo: {
-        sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
-    },
     loginForm: {
         byAccountBtn: 'Konto lösenord inloggning',
         byPhoneBtn: 'Telefonnummer inloggning',
@@ -30,6 +27,41 @@ export default {
         validPlaceholder: 'Captcha',
         validBtn: 'få verifieringskod',
         loginSuccess: 'inloggningen lyckades'
+    },
+    menuObj: {
+        basicFeature: 'Grundläggande förmåga',
+        cpUse: 'Komponentanvändning',
+        childMenu: {
+            0: 'Grundläggande ramverk',
+            1: 'Grundläggande förmåga',
+            '0-0': 'Vue',
+            '0-1': 'Ant Design',
+            '1-0': 'Ramfunktion',
+            '1-0-0': 'Projektkonfiguration',
+            '1-0-1': 'Front-end log',
+            '1-0-2': 'Lokal håna',
+            '1-0-3': 'globaliseringen',
+            '1-0-4': 'Data ordbok',
+            '1-0-5': 'EventBus',
+            '1-0-6': 'Toolset',
+            '1-0-7': 'Åtkomstkontroll',
+            '1-0-8': 'snabbtangent',
+            '1-1': 'Sidfunktion',
+            '1-1-0': 'Komponent sida',
+            '1-1-1': 'url-sida',
+            '1-1-2': 'Ingen behörighetssida',
+            '1-1-3': '404 sidor'
+        },
+        defaultMenu: {
+            home: 'Hem'
+        },
+        errorTip: {
+            notfoundTip: 'Ingen komponent hittades under denna sökväg',
+            emptyErr: 'Komponentväg inte konfigurerad'
+        }
+    },
+    sysInfo: {
+        sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Begäran om adress kan inte vara tom',
@@ -86,38 +118,6 @@ export default {
         vi: 'vietnames',
         'zh-cn': 'Förenklad kinesiska',
         'zh-tw': 'traditionell kinesiska'
-    },
-    menuObj: {
-        basicFeature: 'Grundläggande förmåga',
-        cpUse: 'Komponentanvändning',
-        childMenu: {
-            0: 'Grundläggande ramverk',
-            1: 'Grundläggande förmåga',
-            '0-0': 'Vue',
-            '0-1': 'Ant Design',
-            '1-0': 'Ramfunktion',
-            '1-0-0': 'Projektkonfiguration',
-            '1-0-1': 'Front-end log',
-            '1-0-2': 'Lokal håna',
-            '1-0-3': 'globaliseringen',
-            '1-0-4': 'Data ordbok',
-            '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
-            '1-0-7': 'Åtkomstkontroll',
-            '1-0-8': 'snabbtangent',
-            '1-1': 'Sidfunktion',
-            '1-1-0': 'Komponent sida',
-            '1-1-1': 'url-sida',
-            '1-1-2': 'Ingen behörighetssida',
-            '1-1-3': '404 sidor'
-        },
-        defaultMenu: {
-            home: 'Hem'
-        },
-        errorTip: {
-            notfoundTip: 'Ingen komponent hittades under denna sökväg',
-            emptyErr: 'Komponentväg inte konfigurerad'
-        }
     },
     tagObj: {
         closeAll: 'Stäng alla flikar',
