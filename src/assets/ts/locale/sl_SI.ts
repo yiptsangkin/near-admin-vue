@@ -3,7 +3,7 @@ export default {
     country: 'SI',
     loginForm: {
         byAccountBtn: 'Prijava gesla za račun',
-        byPhoneBtn: 'Prijava telefonske številke',
+        byPhoneBtn: 'Prijava številke mobilnega telefona',
         accountPlaceholder: 'prosimo, vnesite račun',
         passwordPlaceholder: 'Vnesite geslo',
         autoLogin: 'samodejna prijava',
@@ -20,25 +20,25 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Ne pošiljajte večkrat',
-            success: 'Pridobite uspeh',
+            success: 'Uspešno',
             codeTip: 'Vaša potrditvena koda je'
         },
         phonePlaceholder: 'Vnesite telefonsko številko',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Koda za preverjanje',
         validBtn: 'pridobite verifikacijsko kodo',
         loginSuccess: 'prijava uspešna'
     },
     menuObj: {
         basicFeature: 'Osnovna sposobnost',
-        cpUse: 'Uporaba komponent',
+        cpUse: 'Uporaba sestavnih delov',
         childMenu: {
             0: 'Osnovni okvir',
             1: 'Osnovna sposobnost',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
-            '1-0': 'Funkcija okvirja',
+            '1-0': 'Okvirna funkcija',
             '1-0-0': 'Konfiguracija projekta',
-            '1-0-1': 'Sprednji dnevnik',
+            '1-0-1': 'Frontend log',
             '1-0-2': 'Lokalni posmeh',
             '1-0-3': 'globalizacija',
             '1-0-4': 'Podatkovni slovar',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Stran s sestavnimi deli',
             '1-1-1': 'stran URL',
             '1-1-2': 'Ni dovoljene strani',
-            '1-1-3': '404 strani'
+            '1-1-3': 'Stran 404'
         },
         defaultMenu: {
             home: 'Domov'
         },
         errorTip: {
-            notfoundTip: 'Pod to potjo ni mogoče najti nobene komponente',
-            emptyErr: 'Pot komponente ni konfigurirana'
+            notfoundTip: 'Komponente pod to potjo ni bilo mogoče najti',
+            emptyErr: 'Nekonfigurirana pot komponente'
         }
     },
     sysInfo: {
-        sysIntro: 'Enostaven za uporabo razvojni okvir na osnovi Vue in Ant'
+        sysIntro: 'Enostaven srednji in zadnji razvojni razvojni okvir, zasnovan na Vue in Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Naslov zahteve ne more biti prazen',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Zaprite vse zavihke',
         closeCur: 'Zaprite trenutni zavihek',
-        closeOther: 'Zaprite druge oznake',
+        closeOther: 'Zaprite druge zavihke',
         closeRight: 'Zaprite desno nalepko',
         singlePage: 'Neodvisna stran',
         refreshPage: 'osveži stran',
-        affixPage: 'Fiksna stran',
+        affixPage: 'Pripni stran',
         cancelAffixPage: 'Odklopite',
         errorTip: {
             homePageCloseError: 'Domače strani ni dovoljeno zapreti',
             affixPageCloseError: 'Fiksne strani ni dovoljeno zapreti',
             homePageAffixError: 'Domače strani ni mogoče odlepiti'
         },
-        checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je vsebina rdeče strani z nalepkami shranjena)',
-        cancelClose: 'Zaprto delovanje je preklicano'
+        checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je vsebina strani, označena z rdečo, shranjena)',
+        cancelClose: 'Zapiranje je preklicano'
     },
     personalCenter: {
-        frontendLog: 'Sprednji dnevnik',
-        customSetting: 'Prilagojene nastavitve',
+        frontendLog: 'Frontend log',
+        customSetting: 'Personalizacija',
         logout: 'Odjava'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Žal stran, ki ste jo obiskali, ne obstaja',
             notrightTip: 'Žal nimate dovoljenja za dostop do te strani',
-            noserviceTip: 'Žal je s strežnikom nekaj narobe, poskusite pozneje'
+            noserviceTip: 'Žal je prišlo do težave s strežnikom, poskusite pozneje'
         },
         btnText: 'Zapri stran'
     },
     searchPanel: {
         btn: {
             search: 'Poizvedite',
-            shrink: 'Strni se',
+            shrink: 'Pospravi',
             reset: 'Ponastaviti',
             unshrink: 'Razviti'
         }
@@ -165,9 +165,9 @@ export default {
             remove: 'Prazno'
         },
         time: {
-            plh: 'Izberite časovni okvir',
+            plh: 'Izberite časovni razpon',
             range: 'rok',
-            halfDay: 'V roku pol dneva',
+            halfDay: 'Pol dneva',
             oneDay: 'v enem dnevu',
             weekDay: 'v enem tednu',
             monthDay: 'V enem mesecu'
@@ -186,9 +186,9 @@ export default {
         request: 'Zahtevajte podatke',
         error: {
             cancel: 'Prazno delovanje je preklicano',
-            confirm: 'Ali želite počistiti dnevnik?(Dnevnik se bo izpraznil in ga ni mogoče pridobiti)'
+            confirm: 'Ali želite počistiti dnevnik?(Če se dnevnik izprazni, ga ni mogoče pridobiti)'
         },
-        success: 'Hlod je bil izpraznjen'
+        success: 'Log je bil izpraznjen'
     },
     comTable: {
         columns: {
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Pogled'
+    },
+    setting: {
+        customEntry: 'Hiter vstop',
+        systemSwitch: 'Konfiguracija sistema',
+        isMock: 'Ali se posmehovati',
+        isHotKey: 'Ali bližnjična tipka',
+        isBreadCrumb: 'Ali krušne drobtine',
+        isCache: 'Ali želite predpomniti',
+        isI18n: 'Ali internacionalizirati'
     }
 }

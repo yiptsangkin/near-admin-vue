@@ -3,9 +3,9 @@ export default {
     country: 'HU',
     loginForm: {
         byAccountBtn: 'Fiók jelszó bejelentkezés',
-        byPhoneBtn: 'Telefonszám bejelentkezés',
-        accountPlaceholder: 'kérjük, írja be a fiókot',
-        passwordPlaceholder: 'Kérjük, írja be a jelszót',
+        byPhoneBtn: 'Mobiltelefon-bejelentkezés',
+        accountPlaceholder: 'Kérjük, adja meg a fiókot',
+        passwordPlaceholder: 'Kérlek írd be a jelszót',
         autoLogin: 'automatikus bejelentkezés',
         forgetBtn: 'elfelejtett jelszo',
         loginBtn: 'Belépés',
@@ -20,17 +20,17 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Ne küldjön többször',
-            success: 'Szerezz sikert',
+            success: 'Sikeres',
             codeTip: 'Az ellenőrző kódod:'
         },
         phonePlaceholder: 'Kérjük, írja be a telefonszámot',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Ellenőrző kód',
         validBtn: 'kérjen ellenőrző kódot',
         loginSuccess: 'sikeres bejelentkezés'
     },
     menuObj: {
         basicFeature: 'Alapvető képesség',
-        cpUse: 'Az alkatrészek használata',
+        cpUse: 'Alkatrészek használata',
         childMenu: {
             0: 'Alapvető keret',
             1: 'Alapvető képesség',
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Hangya tervezés',
             '1-0': 'Keret funkció',
             '1-0-0': 'Projekt konfiguráció',
-            '1-0-1': 'Elülső napló',
+            '1-0-1': 'Frontend log',
             '1-0-2': 'Helyi ál',
             '1-0-3': 'globalizáció',
             '1-0-4': 'Adat szótár',
@@ -56,16 +56,16 @@ export default {
             home: 'itthon'
         },
         errorTip: {
-            notfoundTip: 'Nem található elem ezen az úton',
-            emptyErr: 'A komponens elérési útja nincs konfigurálva'
+            notfoundTip: 'Az útvonal alatti komponenst nem található',
+            emptyErr: 'Nem konfigurált összetevő elérési útja'
         }
     },
     sysInfo: {
-        sysIntro: 'Könnyen használható front-end fejlesztési keret, amely a Vue és Ant Design alapú'
+        sysIntro: 'Könnyen használható közép- és háttér-fejlesztői keret, a Vue és Ant tervezés alapján'
     },
     requestInfo: {
         withoutUrl: 'A kérelem címe nem lehet üres',
-        networkErr: 'A hálózati kérés sikertelen, próbálkozzon később újra'
+        networkErr: 'A hálózati kérés sikertelen, kérjük, próbálkozzon később újra'
     },
     localeMap: {
         ar: 'arab',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Zárja be az összes fület',
-        closeCur: 'Zárja be az aktuális fület',
-        closeOther: 'Zárjon be más címkéket',
+        closeCur: 'Bezárja az aktuális fület',
+        closeOther: 'Zárja be a többi fület',
         closeRight: 'Zárja be a jobb címkét',
         singlePage: 'Független oldal',
         refreshPage: 'frisssítsd az oldalt',
-        affixPage: 'Rögzített oldal',
+        affixPage: 'Pin oldal',
         cancelAffixPage: 'Kibont',
         errorTip: {
             homePageCloseError: 'A honlapot nem szabad bezárni',
             affixPageCloseError: 'A rögzített oldal nem zárható be',
             homePageAffixError: 'A honlap nem oldható meg'
         },
-        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros címke oldal tartalma mentésre került)',
-        cancelClose: 'A zárt művelet megszakítva'
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros színű oldal tartalma mentésre került)',
+        cancelClose: 'A bezárás művelet megszakítva'
     },
     personalCenter: {
-        frontendLog: 'Elülső napló',
-        customSetting: 'Személyre szabott beállítások',
+        frontendLog: 'Frontend log',
+        customSetting: 'Testreszabás',
         logout: 'kijelentkezés'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Sajnáljuk, a meglátogatott oldal nem létezik',
             notrightTip: 'Sajnáljuk, de nincs jogosultsága erre az oldalra belépni',
-            noserviceTip: 'Sajnáljuk, valami nem sikerült a szerverrel, próbálkozzon később újra'
+            noserviceTip: 'Sajnos probléma merült fel a kiszolgálóval, próbálkozzon később újra'
         },
         btnText: 'Bezárja az oldalt'
     },
     searchPanel: {
         btn: {
             search: 'Érdeklődik',
-            shrink: 'Összeomlás',
+            shrink: 'ELRAK',
             reset: 'Visszaállítás',
             unshrink: 'Unfold'
         }
@@ -165,9 +165,9 @@ export default {
             remove: 'Üres'
         },
         time: {
-            plh: 'Kérjük, válassza ki az időkeretet',
+            plh: 'Válasszon egy időtartományt',
             range: 'határidő',
-            halfDay: 'Fél nap alatt',
+            halfDay: 'Fél nap',
             oneDay: 'egy nap alatt',
             weekDay: 'egy héten belül',
             monthDay: 'Egy hónapon belül'
@@ -186,7 +186,7 @@ export default {
         request: 'Kérjen adatokat',
         error: {
             cancel: 'Az üres művelet törölve',
-            confirm: 'Törli a naplót?(A napló kiürül, és nem lehet letölteni)'
+            confirm: 'Törli a naplót?(Ha a napló kiürült, akkor nem lehet letölteni)'
         },
         success: 'A napló ki lett ürítve'
     },
@@ -206,9 +206,18 @@ export default {
             large: 'szélesség'
         },
         fullscreen: 'Teljes képernyő',
-        unFullscreen: 'Teljes képernyő visszavonása'
+        unFullscreen: 'Teljes képernyő törlése'
     },
     normalBtn: {
         detail: 'Kilátás'
+    },
+    setting: {
+        customEntry: 'Gyors belépés',
+        systemSwitch: 'Rendszerbeállítások',
+        isMock: 'Akár gúnyolni?',
+        isHotKey: 'Akár gyorsbillentyű',
+        isBreadCrumb: 'Akár kenyér morzsákat is',
+        isCache: 'Akár a gyorsítótár',
+        isI18n: 'Nemzetközivé kell tenni'
     }
 }

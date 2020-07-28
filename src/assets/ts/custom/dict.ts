@@ -36,6 +36,7 @@ export default {
         authPath: 'auth',
         managePath: 'manage',
         loglinePath: 'logline/Logline',
+        settingPath: 'setting/Setting',
         loginForm: {
             sendMsgGap: 10
         },

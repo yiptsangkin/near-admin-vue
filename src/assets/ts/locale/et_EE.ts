@@ -3,9 +3,9 @@ export default {
     country: 'EE',
     loginForm: {
         byAccountBtn: 'Konto parooli sisselogimine',
-        byPhoneBtn: 'Telefoninumbri sisselogimine',
+        byPhoneBtn: 'Mobiiltelefoni numbri sisselogimine',
         accountPlaceholder: 'palun sisesta konto',
-        passwordPlaceholder: 'Sisestage parool',
+        passwordPlaceholder: 'Palun sisesta parool',
         autoLogin: 'automaatne sisselogimine',
         forgetBtn: 'unusta parool',
         loginBtn: 'Logi sisse',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Ärge saatke korduvalt',
-            success: 'Saa edu',
+            success: 'Edukas',
             codeTip: 'Teie kinnituskood on'
         },
         phonePlaceholder: 'Sisestage telefoninumber',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Kinnituskood',
         validBtn: 'hankige kinnituskood',
         loginSuccess: 'sisselogimine õnnestus'
     },
@@ -36,7 +36,7 @@ export default {
             1: 'Põhivõime',
             '0-0': 'Vue',
             '0-1': 'Sipelgakujundus',
-            '1-0': 'Raami funktsioon',
+            '1-0': 'Raamfunktsioon',
             '1-0-0': 'Projekti konfiguratsioon',
             '1-0-1': 'Esiosa logi',
             '1-0-2': 'Kohalik pilk',
@@ -56,12 +56,12 @@ export default {
             home: 'Kodu'
         },
         errorTip: {
-            notfoundTip: 'Selle tee alt ei leitud ühtegi komponenti',
-            emptyErr: 'Komponendi tee pole konfigureeritud'
+            notfoundTip: 'Selle tee all olevat komponenti ei leitud',
+            emptyErr: 'Konfigureerimata komponendi tee'
         }
     },
     sysInfo: {
-        sysIntro: 'Vue ja Ant Designil põhinev hõlpsasti kasutatav esiotsa arendusraamistik'
+        sysIntro: 'Lihtsalt kasutatav kesk- ja tagaosa esiotsa arendusraamistik, mis põhineb Vue ja Ant Designil'
     },
     requestInfo: {
         withoutUrl: 'Taotluse aadress ei tohi olla tühi',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Sulgege kõik sakid',
         closeCur: 'Sulgege praegune sakk',
-        closeOther: 'Sulgege muud sildid',
+        closeOther: 'Sulgege muud vahelehed',
         closeRight: 'Sulgege parem silt',
         singlePage: 'Iseseisev leht',
         refreshPage: 'värskenda lehte',
-        affixPage: 'Fikseeritud leht',
+        affixPage: 'Kinnita leht',
         cancelAffixPage: 'Vabastage',
         errorTip: {
             homePageCloseError: 'Kodulehte ei tohi sulgeda',
             affixPageCloseError: 'Fikseeritud lehte ei tohi sulgeda',
             homePageAffixError: 'Kodulehte ei saa lahti siduda'
         },
-        checkSave: 'Kas soovite lehe sulgeda?(Veenduge, et punase sildi lehe sisu oleks salvestatud)',
-        cancelClose: 'Suletud operatsioon tühistati'
+        checkSave: 'Kas soovite lehe sulgeda?(Veenduge, et punasega märgitud lehe sisu oleks salvestatud)',
+        cancelClose: 'Sule operatsioon tühistati'
     },
     personalCenter: {
         frontendLog: 'Esiosa logi',
-        customSetting: 'Isikupärastatud seaded',
+        customSetting: 'Isikupärastamine',
         logout: 'Logi välja'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Vabandust, teie külastatud lehte pole olemas',
             notrightTip: 'Kahjuks pole teil sellel lehel juurdepääsu luba',
-            noserviceTip: 'Kahjuks läks serveriga midagi valesti, proovige hiljem uuesti'
+            noserviceTip: 'Vabandust, serveriga ilmnes probleem. Proovige hiljem uuesti'
         },
         btnText: 'Sulge leht'
     },
     searchPanel: {
         btn: {
             search: 'Küsige',
-            shrink: 'Ahenda',
+            shrink: 'Pane ära',
             reset: 'Lähtesta',
             unshrink: 'Lahti lahti'
         }
@@ -165,12 +165,12 @@ export default {
             remove: 'Tühi'
         },
         time: {
-            plh: 'Valige ajaraam',
+            plh: 'Valige ajavahemik',
             range: 'ajapiirang',
-            halfDay: 'Poole päeva jooksul',
+            halfDay: 'Pool päeva',
             oneDay: 'ühe päevaga',
             weekDay: 'nädala jooksul',
-            monthDay: 'Ühe kuu jooksul'
+            monthDay: 'Kuu aja jooksul'
         },
         type: {
             logType: 'Logi tüüp',
@@ -186,7 +186,7 @@ export default {
         request: 'Taotle andmeid',
         error: {
             cancel: 'Tühi operatsioon tühistati',
-            confirm: 'Kas soovite logi kustutada?(Logi tühjendatakse ja seda ei saa kätte)'
+            confirm: 'Kas soovite logi kustutada?(Kui logi tühjendatakse, ei saa seda hankida)'
         },
         success: 'Logi on tühjendatud'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Vaade'
+    },
+    setting: {
+        customEntry: 'Kiire sisenemine',
+        systemSwitch: 'Süsteemi konfiguratsioon',
+        isMock: 'Kas mõnitada',
+        isHotKey: 'Kas kiirklahv',
+        isBreadCrumb: 'Kas leivapuru',
+        isCache: 'Kas vahemällu',
+        isI18n: 'Kas rahvusvaheliseks muuta'
     }
 }

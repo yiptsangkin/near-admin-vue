@@ -3,7 +3,7 @@ export default {
     country: 'VN',
     loginForm: {
         byAccountBtn: 'Đăng nhập mật khẩu tài khoản',
-        byPhoneBtn: 'Số điện thoại đăng nhập',
+        byPhoneBtn: 'Số điện thoại di động đăng nhập',
         accountPlaceholder: 'vui lòng nhập tài khoản',
         passwordPlaceholder: 'Xin vui lòng nhập mật khẩu',
         autoLogin: 'tự động đăng nhập',
@@ -20,17 +20,17 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Không gửi nhiều lần',
-            success: 'Nhận thành công',
+            success: 'Thành công',
             codeTip: 'Mã xác minh của bạn là'
         },
         phonePlaceholder: 'Vui lòng nhập số điện thoại',
-        validPlaceholder: 'mã ngẫu nhiên',
+        validPlaceholder: 'Mã xác nhận',
         validBtn: 'lấy mã xác minh',
         loginSuccess: 'đăng nhập thành công'
     },
     menuObj: {
         basicFeature: 'Khả năng cơ bản',
-        cpUse: 'Thành phần sử dụng',
+        cpUse: 'Sử dụng thành phần',
         childMenu: {
             0: 'Khung cơ bản',
             1: 'Khả năng cơ bản',
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Thiết kế kiến',
             '1-0': 'Chức năng khung',
             '1-0-0': 'Cấu hình dự án',
-            '1-0-1': 'Nhật ký kết thúc',
+            '1-0-1': 'Nhật ký giao diện',
             '1-0-2': 'Mock địa phương',
             '1-0-3': 'toàn cầu hóa',
             '1-0-4': 'Từ điển dữ liệu',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Trang thành phần',
             '1-1-1': 'trang url',
             '1-1-2': 'Không có trang cho phép',
-            '1-1-3': '404 trang'
+            '1-1-3': 'Trang 404'
         },
         defaultMenu: {
             home: 'Trang Chủ'
         },
         errorTip: {
-            notfoundTip: 'Không tìm thấy thành phần nào dưới đường dẫn này',
-            emptyErr: 'Đường dẫn thành phần không được cấu hình'
+            notfoundTip: 'Thành phần dưới đường dẫn này không được tìm thấy',
+            emptyErr: 'Đường dẫn thành phần chưa được cấu hình'
         }
     },
     sysInfo: {
-        sysIntro: 'Khung phát triển front-end dễ sử dụng dựa trên Vue và Ant Design'
+        sysIntro: 'Khung phát triển front-end giữa và cuối dễ sử dụng dựa trên Vue và Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Địa chỉ yêu cầu không thể để trống',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Đóng tất cả cửa sổ',
         closeCur: 'Đóng tab hiện tại',
-        closeOther: 'Đóng các thẻ khác',
+        closeOther: 'Đóng các tab khác',
         closeRight: 'Đóng nhãn bên phải',
         singlePage: 'Trang độc lập',
         refreshPage: 'làm mới trang',
-        affixPage: 'Trang cố định',
+        affixPage: 'Ghim trang',
         cancelAffixPage: 'Bỏ ghim',
         errorTip: {
             homePageCloseError: 'Trang chủ không được phép đóng',
             affixPageCloseError: 'Trang cố định không được phép đóng',
             homePageAffixError: 'Trang chủ không thể được bỏ ghim'
         },
-        checkSave: 'Bạn có muốn đóng trang?(Vui lòng đảm bảo rằng nội dung của trang nhãn đỏ đã được lưu)',
-        cancelClose: 'Đã hủy hoạt động'
+        checkSave: 'Bạn có muốn đóng trang?(Vui lòng đảm bảo rằng nội dung của trang được đánh dấu màu đỏ đã được lưu)',
+        cancelClose: 'Đóng hoạt động đã hủy'
     },
     personalCenter: {
-        frontendLog: 'Nhật ký kết thúc',
-        customSetting: 'Cài đặt được cá nhân hóa',
+        frontendLog: 'Nhật ký giao diện',
+        customSetting: 'Cá nhân hóa',
         logout: 'đăng xuất'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Xin lỗi, trang bạn truy cập không tồn tại',
             notrightTip: 'Xin lỗi, bạn không có quyền truy cập trang này',
-            noserviceTip: 'Xin lỗi, đã xảy ra lỗi với máy chủ, vui lòng thử lại sau'
+            noserviceTip: 'Xin lỗi, đã xảy ra sự cố với máy chủ, vui lòng thử lại sau'
         },
         btnText: 'Đóng trang'
     },
     searchPanel: {
         btn: {
             search: 'Hỏi thăm',
-            shrink: 'Sự sụp đổ',
+            shrink: 'Cất đi',
             reset: 'Cài lại',
             unshrink: 'Mở ra'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Trống'
         },
         time: {
-            plh: 'Vui lòng chọn khung thời gian',
+            plh: 'Vui lòng chọn một phạm vi thời gian',
             range: 'thời gian giới hạn',
-            halfDay: 'Trong vòng nửa ngày',
+            halfDay: 'Nửa ngày',
             oneDay: 'một ngày nào đó',
             weekDay: 'trong vòng một tuần',
             monthDay: 'Trong vòng một tháng'
         },
         type: {
             logType: 'Loại nhật ký',
-            plh: 'Vui lòng chọn một loại nhật ký'
+            plh: 'Vui lòng chọn loại nhật ký'
         },
         tableColumns: {
             index: 'Số sê-ri',
@@ -186,7 +186,7 @@ export default {
         request: 'Yêu cầu dữ liệu',
         error: {
             cancel: 'Hủy bỏ hoạt động',
-            confirm: 'Bạn có muốn xóa nhật ký?(Nhật ký sẽ được làm trống và không thể lấy lại được)'
+            confirm: 'Bạn có muốn xóa nhật ký?(Nếu nhật ký bị xóa, nó không thể được truy xuất)'
         },
         success: 'Nhật ký đã được làm trống'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Lượt xem'
+    },
+    setting: {
+        customEntry: 'Nhập cảnh nhanh',
+        systemSwitch: 'Cấu hình hệ thông',
+        isMock: 'Có hay không',
+        isHotKey: 'Phím tắt',
+        isBreadCrumb: 'Cho dù vụn bánh mì',
+        isCache: 'Có nên lưu trữ bộ nhớ cache',
+        isI18n: 'Có nên quốc tế hóa'
     }
 }

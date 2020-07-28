@@ -76,7 +76,7 @@
                 :width="loglineDetail.props.width"
                 :footer="null"
         >
-            <n-common-title :title="dict.localeObj.logline.detail" :no-top="true"></n-common-title>
+            <n-common-title :title="dict.localeObj.logline.detail"></n-common-title>
             <div class="n-logline-basic-info">
                 <a-form-model class="n-form" :colon="false" layout="inline" :model="loglineDetail.model">
                     <a-row>

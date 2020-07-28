@@ -1,5 +1,5 @@
 import Logline from 'logline'
-import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams} from '@corets/type';
+import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams, MenuList} from '@corets/type';
 import axios, {AxiosRequestConfig} from 'axios'
 import dict from '@custom/dict'
 import Vue from 'vue'
@@ -447,9 +447,9 @@ const fullScreenCtl = (tp: boolean) => {
 }
 
 const getBreadList = (self: any, navIndex: string) => {
-    const navIndexList = navIndex.split('-sub-')
-    const topMenuIndex = navIndexList[0].split('-')[1]
-    const asideMenuIndexList = navIndexList[1].split('-')
+    const [topMenu, asideMenu] = navIndex.split('-sub-')
+    const [, topMenuIndex] = topMenu.split('-')
+    const asideMenuIndexList = asideMenu.split('-')
     const breadList = []
     const menuObj = self.$store.getters.menuObj
 
@@ -648,6 +648,38 @@ const getLocaleIfI18nOff = (str: string) => {
     }
 }
 
+const getMenuRootCp = (menuList: NavList[], isObj?: boolean, replaceField = {title: 'name'}, targetMenu?: any[]) => {
+    let rightPathList: any[] = []
+    menuList.forEach((item: any, index: number) => {
+        if (isEmpty(item.child) && !isEmpty(item.path)) {
+            if (isObj) {
+                const key = `Customer-Entry-${index}-${item[replaceField.title]}`
+                if (targetMenu) {
+                    if (targetMenu.indexOf(key) !== -1) {
+                        rightPathList.push({
+                            key,
+                            path: item.path,
+                            title: item[replaceField.title]
+                        })
+                    }
+                } else {
+                    rightPathList.push({
+                        key,
+                        path: item.path,
+                        title: item[replaceField.title]
+                    })
+                }
+
+            } else {
+                rightPathList.push(item.path)
+            }
+        } else if (!isEmpty(item.child) && isEmpty(item.path)) {
+            rightPathList = rightPathList.concat(getMenuRootCp(item.child, isObj, replaceField, targetMenu))
+        }
+    })
+    return rightPathList
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -668,5 +700,6 @@ export default {
     timestampToDateString,
     exportExcel,
     getObjAttrByStr,
-    getLocaleIfI18nOff
+    getLocaleIfI18nOff,
+    getMenuRootCp
 }

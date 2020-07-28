@@ -3,7 +3,7 @@ export default {
     country: 'JP',
     loginForm: {
         byAccountBtn: 'アカウントパスワードログイン',
-        byPhoneBtn: '電話番号ログイン',
+        byPhoneBtn: '携帯電話番号ログイン',
         accountPlaceholder: 'アカウントを入力してください',
         passwordPlaceholder: 'パスワードを入力してください',
         autoLogin: '自動ログイン',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: '繰り返し送信しないでください',
-            success: '成功する',
+            success: '成功した',
             codeTip: '確認コードは'
         },
         phonePlaceholder: '電話番号を入力してください',
-        validPlaceholder: 'キャプチャ',
+        validPlaceholder: '検証コード',
         validBtn: '確認コードを取得',
         loginSuccess: 'ログイン成功'
     },
@@ -36,7 +36,7 @@ export default {
             1: '基本能力',
             '0-0': 'Vue',
             '0-1': 'アリのデザイン',
-            '1-0': 'フレーム機能',
+            '1-0': 'フレームワーク機能',
             '1-0-0': 'プロジェクト構成',
             '1-0-1': 'フロントエンドログ',
             '1-0-2': 'ローカルモック',
@@ -56,12 +56,12 @@ export default {
             home: 'ホーム'
         },
         errorTip: {
-            notfoundTip: 'このパスの下にコンポーネントが見つかりません',
-            emptyErr: 'コンポーネントパスが構成されていません'
+            notfoundTip: 'このパスのコンポーネントは見つかりませんでした',
+            emptyErr: '未構成のコンポーネントパス'
         }
     },
     sysInfo: {
-        sysIntro: 'VueとAnt Designに基づく使いやすいフロントエンド開発フレームワーク'
+        sysIntro: 'VueおよびAnt Designに基づく、使いやすいミドルおよびバックエンドのフロントエンド開発フレームワーク'
     },
     requestInfo: {
         withoutUrl: 'リクエストアドレスは空にできません',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'すべてのタブを閉じる',
         closeCur: '現在のタブを閉じる',
-        closeOther: '他のタグを閉じる',
+        closeOther: '他のタブを閉じる',
         closeRight: '右のラベルを閉じる',
         singlePage: '独立したページ',
         refreshPage: 'ページの更新',
-        affixPage: '固定ページ',
+        affixPage: 'ページを固定',
         cancelAffixPage: '固定を解除',
         errorTip: {
             homePageCloseError: 'ホームページを閉じることはできません',
             affixPageCloseError: '固定ページは閉じることができません',
             homePageAffixError: 'ホームページの固定を解除できません'
         },
-        checkSave: 'ページを閉じますか？（赤いラベルページのコンテンツが保存されていることを確認してください）',
-        cancelClose: 'クローズドオペレーションがキャンセルされました'
+        checkSave: 'ページを閉じますか？（赤でマークされたページのコンテンツが保存されていることを確認してください）',
+        cancelClose: 'クローズオペレーティングがキャンセルされました'
     },
     personalCenter: {
         frontendLog: 'フロントエンドログ',
-        customSetting: 'パーソナライズ設定',
+        customSetting: 'パーソナライゼーション',
         logout: 'サインアウト'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'アクセスしたページは存在しません',
             notrightTip: 'このページにアクセスする権限がありません',
-            noserviceTip: 'サーバーで問題が発生しました。しばらくしてからもう一度お試しください'
+            noserviceTip: 'サーバーに問題が発生しました。しばらくしてからもう一度お試しください'
         },
         btnText: 'ページを閉じる'
     },
     searchPanel: {
         btn: {
             search: '問い合わせる',
-            shrink: '崩壊',
+            shrink: '片付ける',
             reset: 'リセット',
             unshrink: '展開する'
         }
@@ -165,12 +165,12 @@ export default {
             remove: '空の'
         },
         time: {
-            plh: '時間枠を選択してください',
+            plh: '時間範囲を選択してください',
             range: '制限時間',
-            halfDay: '半日以内',
+            halfDay: '半日',
             oneDay: '一日で',
             weekDay: '1週間以内に',
-            monthDay: '一ヶ月以内'
+            monthDay: '1か月以内'
         },
         type: {
             logType: 'ログタイプ',
@@ -181,12 +181,12 @@ export default {
             desc: 'ログの説明',
             type: 'ログタイプ',
             time: '時間',
-            op: 'オペレーティング'
+            op: '操作'
         },
         request: 'データをリクエストする',
         error: {
             cancel: '空の操作がキャンセルされました',
-            confirm: 'ログを消去しますか？（ログは空になり、取得できません）'
+            confirm: 'ログを消去しますか？（ログが空の場合、取得できません）'
         },
         success: 'ログが空になりました'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: '見る'
+    },
+    setting: {
+        customEntry: 'クイックエントリー',
+        systemSwitch: 'システム構成',
+        isMock: 'モックするかどうか',
+        isHotKey: 'ショートカットキーかどうか',
+        isBreadCrumb: 'パン粉かどうか',
+        isCache: 'キャッシュするかどうか',
+        isI18n: '国際化するかどうか'
     }
 }

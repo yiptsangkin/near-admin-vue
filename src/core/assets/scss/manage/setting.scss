@@ -1,0 +1,19 @@
+@import "~@corescss/params.scss";
+
+.setting-wrp{
+  padding: 12px;
+  ::v-deep .ant-transfer{
+    display: flex;
+    align-items: center;
+  }
+  ::v-deep .ant-transfer-list{
+    background-color: $grey-f;
+    flex: 1;
+    height: 400px;
+  }
+  .setting-form{
+    margin-bottom: 12px;
+    background-color: $grey-f;
+    padding: 8px 16px;
+  }
+}

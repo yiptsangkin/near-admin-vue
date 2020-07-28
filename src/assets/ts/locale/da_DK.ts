@@ -3,9 +3,9 @@ export default {
     country: 'DK',
     loginForm: {
         byAccountBtn: 'Konto adgangskode login',
-        byPhoneBtn: 'Telefonnummer login',
+        byPhoneBtn: 'Login til mobiltelefonnummer',
         accountPlaceholder: 'indtast venligst konto',
-        passwordPlaceholder: 'Indtast adgangskoden',
+        passwordPlaceholder: 'Indtast adgangskode',
         autoLogin: 'automatisk login',
         forgetBtn: 'glemme adgangskode',
         loginBtn: 'Log på',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Send ikke gentagne gange',
-            success: 'Få succes',
+            success: 'Vellykket',
             codeTip: 'Din bekræftelseskode er'
         },
         phonePlaceholder: 'Indtast venligst telefonnummer',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Verifikationskode',
         validBtn: 'få bekræftelseskode',
         loginSuccess: 'login er vellykket'
     },
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Ant Design',
             '1-0': 'Rammefunktion',
             '1-0-0': 'Projektkonfiguration',
-            '1-0-1': 'Front-end log',
+            '1-0-1': 'Frontend log',
             '1-0-2': 'Lokal hån',
             '1-0-3': 'globalisering',
             '1-0-4': 'Data ordbog',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Komponent side',
             '1-1-1': 'url-side',
             '1-1-2': 'Ingen tilladelsesside',
-            '1-1-3': '404 sider'
+            '1-1-3': '404 side'
         },
         defaultMenu: {
             home: 'Hjem'
         },
         errorTip: {
-            notfoundTip: 'Der blev ikke fundet nogen komponent under denne sti',
-            emptyErr: 'Komponentsti ikke konfigureret'
+            notfoundTip: 'Komponenten under denne sti blev ikke fundet',
+            emptyErr: 'Ukonfigureret komponentsti'
         }
     },
     sysInfo: {
-        sysIntro: 'En brugervenlig front-end-udviklingsramme baseret på Vue- og myresign'
+        sysIntro: 'En brugervenlig midt-og bag-en-front-end-udviklingsramme baseret på Vue og Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Anmodningsadressen kan ikke være tom',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Luk alle faner',
         closeCur: 'Luk den aktuelle fane',
-        closeOther: 'Luk andre tags',
+        closeOther: 'Luk andre faner',
         closeRight: 'Luk højre etiket',
         singlePage: 'Uafhængig side',
         refreshPage: 'opdater side',
-        affixPage: 'Fast side',
+        affixPage: 'Fastgør side',
         cancelAffixPage: 'Frigør',
         errorTip: {
             homePageCloseError: 'Hjemmesiden må ikke lukke',
             affixPageCloseError: 'Den faste side må ikke lukke',
             homePageAffixError: 'Hjemmesiden kan ikke afmonteres'
         },
-        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af siden med rød etiket er gemt)',
-        cancelClose: 'Lukket operation annulleret'
+        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af siden markeret med rødt er gemt)',
+        cancelClose: 'Luk operation annulleret'
     },
     personalCenter: {
-        frontendLog: 'Front-end log',
-        customSetting: 'Personlige indstillinger',
+        frontendLog: 'Frontend log',
+        customSetting: 'Tilpasning',
         logout: 'Log ud'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Beklager, den side, du har besøgt, findes ikke',
             notrightTip: 'Beklager, du har ikke tilladelse til at få adgang til denne side',
-            noserviceTip: 'Beklager, der gik noget galt med serveren. Prøv igen senere'
+            noserviceTip: 'Beklager, der var et problem med serveren. Prøv igen senere'
         },
         btnText: 'Luk side'
     },
     searchPanel: {
         btn: {
             search: 'Forhøre',
-            shrink: 'Falde sammen',
+            shrink: 'Lægge væk',
             reset: 'Nulstil',
             unshrink: 'Unfold'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Tom'
         },
         time: {
-            plh: 'Vælg en tidsramme',
+            plh: 'Vælg et tidsinterval',
             range: 'frist',
-            halfDay: 'Inden for en halv dag',
+            halfDay: 'En halv dag',
             oneDay: 'på en dag',
             weekDay: 'indenfor en uge',
             monthDay: 'Inden for en måned'
         },
         type: {
             logType: 'Log type',
-            plh: 'Vælg en logtype'
+            plh: 'Vælg logtype'
         },
         tableColumns: {
             index: 'Serienummer',
@@ -186,7 +186,7 @@ export default {
         request: 'Anmod om data',
         error: {
             cancel: 'Tom operation annulleret',
-            confirm: 'Vil du rydde loggen?(Loggen tømmes og kan ikke hentes)'
+            confirm: 'Vil du rydde loggen?(Hvis loggen er tømt, kan den ikke hentes)'
         },
         success: 'Loggen er tømt'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Udsigt'
+    },
+    setting: {
+        customEntry: 'Hurtig adgang',
+        systemSwitch: 'System konfiguration',
+        isMock: 'Hvorvidt man skal spotte',
+        isHotKey: 'Om genvejstast',
+        isBreadCrumb: 'Uanset om brød smuler',
+        isCache: 'Hvorvidt man skal cache',
+        isI18n: 'Om man skal internationalisere'
     }
 }

@@ -3,9 +3,9 @@ export default {
     country: 'SE',
     loginForm: {
         byAccountBtn: 'Konto lösenord inloggning',
-        byPhoneBtn: 'Telefonnummer inloggning',
+        byPhoneBtn: 'Inloggning till mobilnummer',
         accountPlaceholder: 'vänligen ange konto',
-        passwordPlaceholder: 'Ange lösenordet',
+        passwordPlaceholder: 'Vänligen skriv in ett lösenord',
         autoLogin: 'automatisk inloggning',
         forgetBtn: 'Glöm lösenord',
         loginBtn: 'logga in',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Skicka inte upprepade gånger',
-            success: 'Få framgång',
+            success: 'Framgångsrik',
             codeTip: 'Din verifieringskod är'
         },
         phonePlaceholder: 'Ange telefonnummer',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Verifierings kod',
         validBtn: 'få verifieringskod',
         loginSuccess: 'inloggningen lyckades'
     },
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Ant Design',
             '1-0': 'Ramfunktion',
             '1-0-0': 'Projektkonfiguration',
-            '1-0-1': 'Front-end log',
+            '1-0-1': 'Frontend logg',
             '1-0-2': 'Lokal håna',
             '1-0-3': 'globaliseringen',
             '1-0-4': 'Data ordbok',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Komponent sida',
             '1-1-1': 'url-sida',
             '1-1-2': 'Ingen behörighetssida',
-            '1-1-3': '404 sidor'
+            '1-1-3': '404 sida'
         },
         defaultMenu: {
             home: 'Hem'
         },
         errorTip: {
-            notfoundTip: 'Ingen komponent hittades under denna sökväg',
-            emptyErr: 'Komponentväg inte konfigurerad'
+            notfoundTip: 'Komponenten under denna sökväg hittades inte',
+            emptyErr: 'Okonfigurerad komponentväg'
         }
     },
     sysInfo: {
-        sysIntro: 'En lättanvänd front-end-utvecklingsram baserad på Vue och Ant Design'
+        sysIntro: 'En lättanvänd utvecklingsram för mellan- och bakre ändar baserad på Vue och Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Begäran om adress kan inte vara tom',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Stäng alla flikar',
-        closeCur: 'Stäng den aktuella fliken',
-        closeOther: 'Stäng andra taggar',
+        closeCur: 'Stäng nuvarande flik',
+        closeOther: 'Stäng andra flikar',
         closeRight: 'Stäng höger etikett',
         singlePage: 'Oberoende sida',
         refreshPage: 'uppdatera sida',
-        affixPage: 'Fast sida',
+        affixPage: 'Fäst sida',
         cancelAffixPage: 'Lossa',
         errorTip: {
             homePageCloseError: 'Hemsidan får inte stänga',
             affixPageCloseError: 'Fast sida får inte stängas',
             homePageAffixError: 'Hemsidan kan inte lossas'
         },
-        checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan med röd etikett har sparats)',
-        cancelClose: 'Stängd operation avbruten'
+        checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan markerad med rött har sparats)',
+        cancelClose: 'Stäng operation avbruten'
     },
     personalCenter: {
-        frontendLog: 'Front-end log',
-        customSetting: 'Personliga inställningar',
+        frontendLog: 'Frontend logg',
+        customSetting: 'Anpassning',
         logout: 'logga ut'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Den sidan du besökte finns inte',
             notrightTip: 'Tyvärr har du inte behörighet att komma åt den här sidan',
-            noserviceTip: 'Tyvärr, något gick fel med servern, försök igen senare'
+            noserviceTip: 'Tyvärr, det var ett problem med servern, försök igen senare'
         },
         btnText: 'Stäng sidan'
     },
     searchPanel: {
         btn: {
             search: 'Fråga',
-            shrink: 'Kollaps',
+            shrink: 'Lägga åt sidan',
             reset: 'Återställa',
             unshrink: 'Veckla ut'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Tömma'
         },
         time: {
-            plh: 'Välj en tidsram',
+            plh: 'Välj ett tidsintervall',
             range: 'tidsgräns',
-            halfDay: 'Inom en halv dag',
+            halfDay: 'En halv dag',
             oneDay: 'på en dag',
             weekDay: 'inom en vecka',
             monthDay: 'Inom en månad'
         },
         type: {
             logType: 'Loggtyp',
-            plh: 'Välj en loggtyp'
+            plh: 'Välj loggtyp'
         },
         tableColumns: {
             index: 'Serienummer',
@@ -186,7 +186,7 @@ export default {
         request: 'Begär data',
         error: {
             cancel: 'Tom operation avbruten',
-            confirm: 'Vill du rensa loggen?(Loggen töms och kan inte hämtas)'
+            confirm: 'Vill du rensa loggen?(Om loggen töms kan den inte hämtas)'
         },
         success: 'Loggen har tömts'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Se'
+    },
+    setting: {
+        customEntry: 'Snabb inmatning',
+        systemSwitch: 'Systemkonfiguration',
+        isMock: 'Huruvida man ska håna',
+        isHotKey: 'Oavsett hur snabbtangenten är',
+        isBreadCrumb: 'Oavsett om bröd smular',
+        isCache: 'Huruvida man ska cache',
+        isI18n: 'Om man ska internationalisera'
     }
 }

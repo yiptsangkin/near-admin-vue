@@ -3,7 +3,7 @@ export default {
     country: 'EG',
     loginForm: {
         byAccountBtn: 'تسجيل الدخول بكلمة مرور الحساب',
-        byPhoneBtn: 'تسجيل الدخول برقم الهاتف',
+        byPhoneBtn: 'تسجيل الدخول برقم الهاتف المحمول',
         accountPlaceholder: 'يرجى إدخال الحساب',
         passwordPlaceholder: 'يرجى إدخال كلمة المرور',
         autoLogin: 'تسجيل تلقائى',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'لا ترسل بشكل متكرر',
-            success: 'أحصل على النجاح',
+            success: 'ناجح',
             codeTip: 'رمز التحقق الخاص بك هو'
         },
         phonePlaceholder: 'يرجى إدخال رقم الهاتف',
-        validPlaceholder: 'كلمة التحقق',
+        validPlaceholder: 'رمز التحقق',
         validBtn: 'الحصول على رمز التحقق',
         loginSuccess: 'نجح تسجيل الدخول'
     },
@@ -56,12 +56,12 @@ export default {
             home: 'الصفحة الرئيسية'
         },
         errorTip: {
-            notfoundTip: 'لم يتم العثور على مكون تحت هذا المسار',
-            emptyErr: 'لم يتم تكوين مسار المكون'
+            notfoundTip: 'لم يتم العثور على المكون الموجود تحت هذا المسار',
+            emptyErr: 'مسار مكون غير مكوّن'
         }
     },
     sysInfo: {
-        sysIntro: 'إطار تطوير أمامي سهل الاستخدام يعتمد على تصميم Vue and Ant'
+        sysIntro: 'إطار تطوير للواجهة الأمامية والخلفية سهل الاستخدام يعتمد على تصميم Vue and Ant'
     },
     requestInfo: {
         withoutUrl: 'لا يمكن أن يكون عنوان الطلب فارغًا',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'أغلق جميع علامات التبويب',
-        closeCur: 'أغلق علامة التبويب الحالية',
-        closeOther: 'أغلق العلامات الأخرى',
+        closeCur: 'اغلق التبويب الحالي',
+        closeOther: 'أغلق علامات التبويب الأخرى',
         closeRight: 'أغلق التسمية اليمنى',
         singlePage: 'صفحة مستقلة',
         refreshPage: 'إعادة تحميل الصفحة',
-        affixPage: 'الصفحة الثابتة',
+        affixPage: 'تثبيت الصفحة',
         cancelAffixPage: 'أزل',
         errorTip: {
             homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية',
             affixPageCloseError: 'لا يسمح بإغلاق الصفحة الثابتة',
             homePageAffixError: 'لا يمكن إلغاء تثبيت الصفحة الرئيسية'
         },
-        checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى صفحة الملصق الأحمر)',
-        cancelClose: 'تم إلغاء العملية المغلقة'
+        checkSave: 'هل تريد إغلاق الصفحة؟(يرجى التأكد من حفظ محتوى الصفحة المميزة باللون الأحمر)',
+        cancelClose: 'تم إلغاء عملية الإغلاق'
     },
     personalCenter: {
         frontendLog: 'سجل الواجهة الأمامية',
-        customSetting: 'الإعدادات الشخصية',
+        customSetting: 'إضفاء الطابع الشخصي',
         logout: 'خروج'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'عذرا ، الصفحة التي زرتها غير موجودة',
             notrightTip: 'عذرا ، ليس لديك إذن للوصول إلى هذه الصفحة',
-            noserviceTip: 'عذرًا ، حدث خطأ في الخادم ، يرجى المحاولة مرة أخرى لاحقًا'
+            noserviceTip: 'عذرًا ، حدثت مشكلة في الخادم ، يرجى المحاولة مرة أخرى لاحقًا'
         },
         btnText: 'أغلق الصفحة'
     },
     searchPanel: {
         btn: {
             search: 'استعلام',
-            shrink: 'انهيار',
+            shrink: 'ضعه بعيدا',
             reset: 'إعادة تعيين',
             unshrink: 'تكشف'
         }
@@ -165,12 +165,12 @@ export default {
             remove: 'فارغة'
         },
         time: {
-            plh: 'يرجى تحديد إطار زمني',
+            plh: 'يرجى تحديد نطاق زمني',
             range: 'المهلة',
-            halfDay: 'خلال نصف يوم',
+            halfDay: 'نصف يوم',
             oneDay: 'في يوم واحد',
             weekDay: 'خلال أسبوع',
-            monthDay: 'خلال شهر واحد'
+            monthDay: 'خلال شهر'
         },
         type: {
             logType: 'نوع السجل',
@@ -186,7 +186,7 @@ export default {
         request: 'طلب بيانات',
         error: {
             cancel: 'تم إلغاء العملية الفارغة',
-            confirm: 'هل تريد مسح السجل؟(سيتم إفراغ السجل ولا يمكن استرداده)'
+            confirm: 'هل تريد مسح السجل؟(إذا كان السجل فارغًا ، فلا يمكن استرداده)'
         },
         success: 'تم تفريغ السجل'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'رأي'
+    },
+    setting: {
+        customEntry: 'دخول سريع',
+        systemSwitch: 'أعدادات النظام',
+        isMock: 'سواء للسخرية',
+        isHotKey: 'سواء مفتاح الاختصار',
+        isBreadCrumb: 'سواء فتات الخبز',
+        isCache: 'سواء للتخزين المؤقت',
+        isI18n: 'سواء لتدويل'
     }
 }

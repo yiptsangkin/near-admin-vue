@@ -3,7 +3,7 @@ export default {
     country: 'SK',
     loginForm: {
         byAccountBtn: 'Prihlasovacie heslo účtu',
-        byPhoneBtn: 'Prihlasovanie telefónneho čísla',
+        byPhoneBtn: 'Prihlasovacie číslo mobilného telefónu',
         accountPlaceholder: 'zadajte účet',
         passwordPlaceholder: 'Zadajte heslo',
         autoLogin: 'automatické prihlásenie',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Nezasielať opakovane',
-            success: 'Získajte úspech',
+            success: 'Úspešný',
             codeTip: 'Váš verifikačný kód je'
         },
         phonePlaceholder: 'Zadajte telefónne číslo',
-        validPlaceholder: 'captcha',
+        validPlaceholder: 'Overovací kód',
         validBtn: 'získať overovací kód',
         loginSuccess: 'prihlásenie úspešné'
     },
@@ -36,9 +36,9 @@ export default {
             1: 'Základné schopnosti',
             '0-0': 'Vue',
             '0-1': 'Mravec dizajn',
-            '1-0': 'Funkcia rámu',
+            '1-0': 'Rámcová funkcia',
             '1-0-0': 'Konfigurácia projektu',
-            '1-0-1': 'Protokol front-end',
+            '1-0-1': 'Frontend log',
             '1-0-2': 'Miestne falošné',
             '1-0-3': 'globalizácia',
             '1-0-4': 'Dátový slovník',
@@ -56,12 +56,12 @@ export default {
             home: 'Domov'
         },
         errorTip: {
-            notfoundTip: 'Pod touto cestou sa nenašiel žiadny komponent',
-            emptyErr: 'Cesta komponentu nie je nakonfigurovaná'
+            notfoundTip: 'Komponent pod touto cestou sa nenašiel',
+            emptyErr: 'Cesta nenakonfigurovaných komponentov'
         }
     },
     sysInfo: {
-        sysIntro: 'Ľahko použiteľný front-end vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Ľahko použiteľný stredný a zadný front-end vývojový rámec založený na Vue a Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa žiadosti nemôže byť prázdna',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Zatvorte všetky karty',
         closeCur: 'Zatvorte aktuálnu kartu',
-        closeOther: 'Zatvorte ďalšie značky',
+        closeOther: 'Zatvorte ďalšie karty',
         closeRight: 'Zatvorte pravý štítok',
         singlePage: 'Nezávislá stránka',
         refreshPage: 'obnovovacia stránka',
-        affixPage: 'Opravená stránka',
+        affixPage: 'Pripnúť stránku',
         cancelAffixPage: 'uvoľniť',
         errorTip: {
             homePageCloseError: 'Domovská stránka nie je dovolené zavrieť',
             affixPageCloseError: 'Opravená stránka sa nesmie uzavrieť',
             homePageAffixError: 'Domovská stránka nemôže byť pripnutá'
         },
-        checkSave: 'Chcete stránku zavrieť?(Skontrolujte, či bol obsah stránky s červeným štítkom uložený)',
-        cancelClose: 'Zatvorená prevádzka bola zrušená'
+        checkSave: 'Chcete stránku zavrieť?(Uistite sa, že obsah stránky označenej červenou farbou bol uložený)',
+        cancelClose: 'Operácia ukončenia bola zrušená'
     },
     personalCenter: {
-        frontendLog: 'Protokol front-end',
-        customSetting: 'Prispôsobené nastavenia',
+        frontendLog: 'Frontend log',
+        customSetting: 'prispôsobenie',
         logout: 'Odhlásiť Sa'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Ľutujeme, stránka, ktorú ste navštívili, neexistuje',
             notrightTip: 'Ľutujeme, nemáte povolenie na prístup na túto stránku',
-            noserviceTip: 'Ľutujeme, ale na serveri sa vyskytla chyba, skúste to znova neskôr'
+            noserviceTip: 'Ľutujeme, vyskytol sa problém so serverom, skúste to znova neskôr'
         },
         btnText: 'Zavrieť stránku'
     },
     searchPanel: {
         btn: {
             search: 'dotazovaním',
-            shrink: 'kolaps',
+            shrink: 'Odložiť',
             reset: 'Reset',
             unshrink: 'rozvinúť'
         }
@@ -165,9 +165,9 @@ export default {
             remove: 'prázdny'
         },
         time: {
-            plh: 'Vyberte časový rámec',
+            plh: 'Vyberte časový rozsah',
             range: 'lehota',
-            halfDay: 'Do pol dňa',
+            halfDay: 'Pol dňa',
             oneDay: 'za jeden deň',
             weekDay: 'do tyzdna',
             monthDay: 'Do jedného mesiaca'
@@ -186,9 +186,9 @@ export default {
         request: 'Vyžiadajte si údaje',
         error: {
             cancel: 'Prázdna operácia bola zrušená',
-            confirm: 'Chcete vymazať denník?(Denník bude vyprázdnený a nedá sa načítať)'
+            confirm: 'Chcete vymazať denník?(Ak je denník vyprázdnený, nedá sa načítať)'
         },
-        success: 'Denník bol vyprázdnený'
+        success: 'Protokol bol vyprázdnený'
     },
     comTable: {
         columns: {
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'vyhliadka'
+    },
+    setting: {
+        customEntry: 'Rýchly vstup',
+        systemSwitch: 'Konfigurácia systému',
+        isMock: 'Či už je to Mock',
+        isHotKey: 'Či už klávesová skratka',
+        isBreadCrumb: 'Či už omrvinky',
+        isCache: 'Či sa má cache',
+        isI18n: 'Či už internacionalizovať'
     }
 }

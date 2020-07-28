@@ -186,7 +186,6 @@
             },
             cpExistIndex (cpInfo: CpInfo) {
                 const self = this as any
-                let needCacheSame = false
                 let cpParams
                 try {
                     cpParams = JSON.stringify(cpInfo.params)
@@ -202,27 +201,16 @@
                     } catch (e) {
                         itemParams = '{}'
                     }
-                    if (item.component === cpInfo.component) {
-                        if (item.pk === cpInfo.pk) {
-                            return {
-                                idx: i,
-                                pk: item.pk
-                            }
-                        } else {
-                            needCacheSame = true
+                    if (item.component === cpInfo.component && item.pk === cpInfo.pk) {
+                        return {
+                            idx: i,
+                            pk: item.pk
                         }
                     }
                 }
-                if (needCacheSame) {
-                    return {
-                        idx: -1,
-                        pk: cpInfo.pk || utils.randomCharacter(6)
-                    }
-                } else {
-                    return {
-                        idx: -1,
-                        pk: cpInfo.pk || utils.randomCharacter(6)
-                    }
+                return {
+                    idx: -1,
+                    pk: cpInfo.pk || utils.randomCharacter(6)
                 }
             },
             formateCpParams (cpInfo: CpInfo): CpInfo {

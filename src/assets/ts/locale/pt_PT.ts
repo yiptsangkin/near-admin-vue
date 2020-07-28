@@ -3,9 +3,9 @@ export default {
     country: 'PT',
     loginForm: {
         byAccountBtn: 'Login da senha da conta',
-        byPhoneBtn: 'Login do número de telefone',
+        byPhoneBtn: 'Login de número de telefone celular',
         accountPlaceholder: 'por favor entre na conta',
-        passwordPlaceholder: 'Por favor insira a senha',
+        passwordPlaceholder: 'Digite a senha',
         autoLogin: 'login automático',
         forgetBtn: 'Esqueceu a senha',
         loginBtn: 'Conecte-se',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Não envie repetidamente',
-            success: 'Obtenha sucesso',
+            success: 'Bem sucedido',
             codeTip: 'Seu código de verificação é'
         },
         phonePlaceholder: 'Digite o número de telefone',
-        validPlaceholder: 'CAPTCHA',
+        validPlaceholder: 'Código de verificação',
         validBtn: 'obter código de verificação',
         loginSuccess: 'login bem sucedido'
     },
@@ -36,7 +36,7 @@ export default {
             1: 'Habilidade básica',
             '0-0': 'Vue',
             '0-1': 'Formiga Design',
-            '1-0': 'Função de quadro',
+            '1-0': 'Função de estrutura',
             '1-0-0': 'Configuração do projeto',
             '1-0-1': 'Log de front-end',
             '1-0-2': 'Simulação local',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Página componente',
             '1-1-1': 'página de URL',
             '1-1-2': 'Nenhuma página de permissão',
-            '1-1-3': '404 páginas'
+            '1-1-3': 'Página 404'
         },
         defaultMenu: {
             home: 'Casa'
         },
         errorTip: {
-            notfoundTip: 'Nenhum componente encontrado neste caminho',
+            notfoundTip: 'O componente nesse caminho não foi encontrado',
             emptyErr: 'Caminho do componente não configurado'
         }
     },
     sysInfo: {
-        sysIntro: 'Uma estrutura de desenvolvimento de front-end fácil de usar, baseada no Vue e Ant Design'
+        sysIntro: 'Uma estrutura de desenvolvimento de front-end intermediária e traseira fácil de usar, baseada no Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'O endereço de solicitação não pode estar vazio',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Feche todas as guias',
-        closeCur: 'Feche a guia atual',
-        closeOther: 'Fechar outras tags',
+        closeCur: 'Feche a aba atual',
+        closeOther: 'Feche outras guias',
         closeRight: 'Fechar etiqueta direita',
         singlePage: 'Página independente',
         refreshPage: 'atualizar a página',
-        affixPage: 'Página fixa',
+        affixPage: 'Fixar página',
         cancelAffixPage: 'Soltar',
         errorTip: {
             homePageCloseError: 'A página inicial não tem permissão para fechar',
             affixPageCloseError: 'Página fixa não tem permissão para fechar',
             homePageAffixError: 'A página inicial não pode ser desmarcada'
         },
-        checkSave: 'Deseja fechar a página?(Verifique se o conteúdo da página do rótulo vermelho foi salvo)',
-        cancelClose: 'Operação fechada cancelada'
+        checkSave: 'Deseja fechar a página?(Verifique se o conteúdo da página marcada em vermelho foi salvo)',
+        cancelClose: 'Operação de fechamento cancelada'
     },
     personalCenter: {
         frontendLog: 'Log de front-end',
-        customSetting: 'Configurações personalizadas',
+        customSetting: 'Personalização',
         logout: 'Sair'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Desculpe, a página que você visitou não existe',
             notrightTip: 'Desculpe, você não tem permissão para acessar esta página',
-            noserviceTip: 'Desculpe, ocorreu um erro no servidor. Tente novamente mais tarde'
+            noserviceTip: 'Desculpe, houve um problema com o servidor, tente novamente mais tarde'
         },
         btnText: 'Fechar página'
     },
     searchPanel: {
         btn: {
             search: 'Investigar',
-            shrink: 'Colapso',
+            shrink: 'Por para fora',
             reset: 'Redefinir',
             unshrink: 'Desdobrar'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Vazio'
         },
         time: {
-            plh: 'Selecione um período de tempo',
+            plh: 'Selecione um intervalo de tempo',
             range: 'limite de tempo',
-            halfDay: 'Dentro de meio dia',
+            halfDay: 'Metade do dia',
             oneDay: 'em um dia',
             weekDay: 'Dentro de uma semana',
             monthDay: 'Dentro de um mês'
         },
         type: {
             logType: 'Tipo de log',
-            plh: 'Por favor, selecione um tipo de log'
+            plh: 'Por favor, selecione o tipo de log'
         },
         tableColumns: {
             index: 'Número de série',
@@ -186,7 +186,7 @@ export default {
         request: 'Solicitar dados',
         error: {
             cancel: 'Operação vazia cancelada',
-            confirm: 'Deseja limpar o log?(O log será esvaziado e não poderá ser recuperado)'
+            confirm: 'Deseja limpar o log?(Se o log for esvaziado, não poderá ser recuperado)'
         },
         success: 'O log foi esvaziado'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Visão'
+    },
+    setting: {
+        customEntry: 'Entrada rápida',
+        systemSwitch: 'Configuração do sistema',
+        isMock: 'Mocking',
+        isHotKey: 'Se tecla de atalho',
+        isBreadCrumb: 'Se migalhas de pão',
+        isCache: 'Se deve armazenar em cache',
+        isI18n: 'Se internacionalizar'
     }
 }

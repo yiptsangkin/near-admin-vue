@@ -3,9 +3,9 @@ export default {
     country: 'TR',
     loginForm: {
         byAccountBtn: 'Hesap şifresi girişi',
-        byPhoneBtn: 'Telefon numarası girişi',
+        byPhoneBtn: 'Cep telefonu numarası girişi',
         accountPlaceholder: 'lütfen hesap girin',
-        passwordPlaceholder: 'Lütfen şifreyi giriniz',
+        passwordPlaceholder: 'Lütfen şifre giriniz',
         autoLogin: 'otomatik giriş',
         forgetBtn: 'şifreyi unut',
         loginBtn: 'oturum aç',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Tekrar tekrar gönderme',
-            success: 'Başarı elde edin',
+            success: 'Başarılı',
             codeTip: 'Doğrulama kodunuz'
         },
         phonePlaceholder: 'Lütfen telefon numarasını girin',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Doğrulama kodu',
         validBtn: 'doğrulama kodunu al',
         loginSuccess: 'giriş başarılı'
     },
@@ -56,12 +56,12 @@ export default {
             home: 'Ev'
         },
         errorTip: {
-            notfoundTip: 'Bu yol altında hiçbir bileşen bulunamadı',
-            emptyErr: 'Bileşen yolu yapılandırılmadı'
+            notfoundTip: 'Bu yolun altındaki bileşen bulunamadı',
+            emptyErr: 'Yapılandırılmamış bileşen yolu'
         }
     },
     sysInfo: {
-        sysIntro: 'Vue ve Ant Design tabanlı kullanımı kolay bir ön uç geliştirme çerçevesi'
+        sysIntro: 'Vue ve Ant Design tabanlı kullanımı kolay orta ve arka uç ön uç geliştirme çerçevesi'
     },
     requestInfo: {
         withoutUrl: 'İstek adresi boş olamaz',
@@ -122,23 +122,23 @@ export default {
     tagObj: {
         closeAll: 'Tüm sekmeleri kapat',
         closeCur: 'Geçerli sekmeyi kapat',
-        closeOther: 'Diğer etiketleri kapat',
+        closeOther: 'Diğer sekmeleri kapat',
         closeRight: 'Sağ etiketi kapat',
         singlePage: 'Bağımsız sayfa',
         refreshPage: 'sayfayı yenile',
-        affixPage: 'Sabit sayfa',
+        affixPage: 'Sayfayı sabitle',
         cancelAffixPage: 'sabitlemesini',
         errorTip: {
             homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor',
             affixPageCloseError: 'Sabit sayfanın kapanmasına izin verilmiyor',
             homePageAffixError: 'Ana sayfanın sabitlemesi kaldırılamaz'
         },
-        checkSave: 'Sayfayı kapatmak istiyor musunuz?(Lütfen kırmızı etiket sayfasının içeriğinin kaydedildiğinden emin olun)',
-        cancelClose: 'Kapalı işlem iptal edildi'
+        checkSave: 'Sayfayı kapatmak istiyor musunuz?(Lütfen kırmızı ile işaretlenmiş sayfanın içeriğinin kaydedildiğinden emin olun)',
+        cancelClose: 'Kapatma işlemi iptal edildi'
     },
     personalCenter: {
         frontendLog: 'Ön uç günlüğü',
-        customSetting: 'Kişiselleştirilmiş ayarlar',
+        customSetting: 'Kişiselleştirme',
         logout: 'oturumu Kapat'
     },
     errorPage: {
@@ -152,7 +152,7 @@ export default {
     searchPanel: {
         btn: {
             search: 'Sormak',
-            shrink: 'Çöküş',
+            shrink: 'Bırakmak',
             reset: 'Sıfırla',
             unshrink: 'Çıkar'
         }
@@ -167,14 +167,14 @@ export default {
         time: {
             plh: 'Lütfen bir zaman aralığı seçin',
             range: 'zaman sınırı',
-            halfDay: 'Yarım gün içinde',
+            halfDay: 'Yarım gün',
             oneDay: 'bir günde',
             weekDay: 'bir hafta içinde',
             monthDay: 'Bir ay içinde'
         },
         type: {
             logType: 'Günlük türü',
-            plh: 'Lütfen bir günlük türü seçin'
+            plh: 'Lütfen günlük türünü seçin'
         },
         tableColumns: {
             index: 'Seri numarası',
@@ -186,7 +186,7 @@ export default {
         request: 'Veri isteyin',
         error: {
             cancel: 'Boş işlem iptal edildi',
-            confirm: 'Günlüğü temizlemek istiyor musunuz?(Günlük boşaltılır ve alınamaz)'
+            confirm: 'Günlüğü temizlemek istiyor musunuz?(Günlük boşaltılırsa, alınamaz)'
         },
         success: 'Günlük boşaltıldı'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Görünüm'
+    },
+    setting: {
+        customEntry: 'Hızlı giriş',
+        systemSwitch: 'Sistem yapılandırması',
+        isMock: 'Alay etmek isteyip istemediğiniz',
+        isHotKey: 'Kısayol tuşunun olup olmadığı',
+        isBreadCrumb: 'Ekmek kırıntıları',
+        isCache: 'Önbellekleme',
+        isI18n: 'Uluslararasılaşma olup olmadığı'
     }
 }

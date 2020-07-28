@@ -3,9 +3,9 @@ export default {
     country: 'CZ',
     loginForm: {
         byAccountBtn: 'Přihlašovací heslo k účtu',
-        byPhoneBtn: 'Přihlášení telefonního čísla',
+        byPhoneBtn: 'Přihlašovací číslo mobilního telefonu',
         accountPlaceholder: 'zadejte prosím účet',
-        passwordPlaceholder: 'Zadejte heslo',
+        passwordPlaceholder: 'Prosím vložte heslo',
         autoLogin: 'automatické přihlášení',
         forgetBtn: 'zapomenout heslo',
         loginBtn: 'přihlásit se',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Neposílejte opakovaně',
-            success: 'Získejte úspěch',
+            success: 'Úspěšný',
             codeTip: 'Váš ověřovací kód je'
         },
         phonePlaceholder: 'Zadejte telefonní číslo',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Ověřovací kód',
         validBtn: 'získat ověřovací kód',
         loginSuccess: 'přihlášení úspěšné'
     },
@@ -36,9 +36,9 @@ export default {
             1: 'Základní schopnost',
             '0-0': 'Vue',
             '0-1': 'Mravenec Design',
-            '1-0': 'Funkce rámu',
+            '1-0': 'Rámcová funkce',
             '1-0-0': 'Konfigurace projektu',
-            '1-0-1': 'Protokol front-end',
+            '1-0-1': 'Frontend log',
             '1-0-2': 'Místní vysmívat se',
             '1-0-3': 'globalizace',
             '1-0-4': 'Datový slovník',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Stránka komponent',
             '1-1-1': 'url',
             '1-1-2': 'Žádná stránka povolení',
-            '1-1-3': '404 stránek'
+            '1-1-3': '404 stran'
         },
         defaultMenu: {
             home: 'Domov'
         },
         errorTip: {
-            notfoundTip: 'Pod touto cestou nebyla nalezena žádná součást',
-            emptyErr: 'Cesta komponenty není nakonfigurována'
+            notfoundTip: 'Komponenta pod touto cestou nebyla nalezena',
+            emptyErr: 'Nekonfigurovaná cesta komponenty'
         }
     },
     sysInfo: {
-        sysIntro: 'Snadno použitelný front-end vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Snadno použitelný prostřední a back-end front-end vývojový rámec založený na Vue a Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa požadavku nemůže být prázdná',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Zavřete všechny karty',
         closeCur: 'Zavřete aktuální kartu',
-        closeOther: 'Zavřete další značky',
+        closeOther: 'Zavřete další karty',
         closeRight: 'Zavřete pravý štítek',
         singlePage: 'Nezávislá stránka',
         refreshPage: 'obnovit stránku',
-        affixPage: 'Opravená stránka',
+        affixPage: 'Připnout stránku',
         cancelAffixPage: 'Uvolnit',
         errorTip: {
             homePageCloseError: 'Domovská stránka nesmí být zavřena',
             affixPageCloseError: 'Opravená stránka není dovolena zavřít',
             homePageAffixError: 'Domovská stránka nelze odepnout'
         },
-        checkSave: 'Chcete stránku zavřít?(Ujistěte se, že byl obsah stránky s červeným štítkem uložen.)',
-        cancelClose: 'Uzavřená operace zrušena'
+        checkSave: 'Chcete stránku zavřít?(Ujistěte se, že obsah stránky označené červeně byl uložen)',
+        cancelClose: 'Operace uzavření byla zrušena'
     },
     personalCenter: {
-        frontendLog: 'Protokol front-end',
-        customSetting: 'Přizpůsobená nastavení',
+        frontendLog: 'Frontend log',
+        customSetting: 'Personalizace',
         logout: 'odhlásit se'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Litujeme, stránka, kterou jste navštívili, neexistuje',
             notrightTip: 'Litujeme, nemáte oprávnění k přístupu na tuto stránku',
-            noserviceTip: 'Litujeme, ale na serveru došlo k chybě. Zkuste to prosím znovu později'
+            noserviceTip: 'Je nám líto, ale došlo k problému se serverem, zkuste to prosím znovu později'
         },
         btnText: 'Zavřít stránku'
     },
     searchPanel: {
         btn: {
             search: 'Poptávka',
-            shrink: 'Kolaps',
+            shrink: 'Dát pryč',
             reset: 'Resetovat',
             unshrink: 'Rozvinout'
         }
@@ -165,12 +165,12 @@ export default {
             remove: 'Prázdný'
         },
         time: {
-            plh: 'Vyberte časový rámec',
+            plh: 'Vyberte časové období',
             range: 'lhůta',
-            halfDay: 'Do půl dne',
+            halfDay: 'Půl dne',
             oneDay: 'v jeden den',
             weekDay: 'do týdne',
-            monthDay: 'Do jednoho měsíce'
+            monthDay: 'Do měsíce'
         },
         type: {
             logType: 'Typ protokolu',
@@ -186,7 +186,7 @@ export default {
         request: 'Žádost o údaje',
         error: {
             cancel: 'Prázdná operace byla zrušena',
-            confirm: 'Chcete vymazat protokol?(Protokol bude vyprázdněn a nelze jej načíst)'
+            confirm: 'Chcete vymazat protokol?(Pokud je protokol vyprázdněn, nelze jej načíst)'
         },
         success: 'Protokol byl vyprázdněn'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Pohled'
+    },
+    setting: {
+        customEntry: 'Rychlý vstup',
+        systemSwitch: 'Konfigurace systému',
+        isMock: 'Zda se vysmívat',
+        isHotKey: 'Zda klávesová zkratka',
+        isBreadCrumb: 'Zda drobky chleba',
+        isCache: 'Zda mezipaměť',
+        isI18n: 'Zda internacionalizovat'
     }
 }

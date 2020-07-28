@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: '查看'
+    },
+    setting: {
+        customEntry: '快捷入口',
+        systemSwitch: '系统配置',
+        isMock: '是否Mock',
+        isHotKey: '是否快捷键',
+        isBreadCrumb: '是否面包屑',
+        isCache: '是否缓存',
+        isI18n: '是否国际化'
     }
 }

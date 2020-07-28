@@ -12,12 +12,30 @@ const sysInfo = {
     noNeedCheckRightPath: ['home/HomePage', 'setting/Setting', 'logline/Logline', 'WebView']
 }
 
-const buildSwitch = {
-    isMock: true,
-    isHotKey: true,
-    isBreadCrumb: true,
-    isCache: true,
-    isI18n: true
+let buildSwitch
+
+const cacheConfig = localStorage.getItem('nearAdminCacheConfig')
+
+try {
+    if (cacheConfig) {
+        buildSwitch = JSON.parse(cacheConfig)
+    } else {
+        buildSwitch = {
+            isMock: true,
+            isHotKey: true,
+            isBreadCrumb: true,
+            isCache: true,
+            isI18n: true
+        }
+    }
+} catch (e) {
+    buildSwitch = {
+        isMock: true,
+        isHotKey: true,
+        isBreadCrumb: true,
+        isCache: true,
+        isI18n: true
+    }
 }
 
 const comConfig: ComConfig = {

@@ -3,9 +3,9 @@ export default {
     country: 'IS',
     loginForm: {
         byAccountBtn: 'Innskráning aðgangsorðs reiknings',
-        byPhoneBtn: 'Innskráning símanúmera',
+        byPhoneBtn: 'Innskráning farsímanúmera',
         accountPlaceholder: 'vinsamlegast sláðu inn reikning',
-        passwordPlaceholder: 'Vinsamlegast sláðu inn lykilorðið',
+        passwordPlaceholder: 'Vinsamlegast sláðu inn lykilorð',
         autoLogin: 'sjálfvirk innskráning',
         forgetBtn: 'gleymdu lykilorðinu',
         loginBtn: 'skrá inn',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Ekki senda hvað eftir annað',
-            success: 'Fáðu árangur',
+            success: 'Vel heppnað',
             codeTip: 'Staðfestingarkóðinn þinn er'
         },
         phonePlaceholder: 'Vinsamlegast sláðu inn símanúmer',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Staðfestingarkóði',
         validBtn: 'fá staðfestingarkóða',
         loginSuccess: 'innskráning tókst'
     },
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Maur Hönnun',
             '1-0': 'Rammaaðgerð',
             '1-0-0': 'Uppsetning verkefnis',
-            '1-0-1': 'Framan endaskrá',
+            '1-0-1': 'Framendaskrá',
             '1-0-2': 'Local spot',
             '1-0-3': 'alþjóðavæðingin',
             '1-0-4': 'Gagnabók',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Íhlutasíða',
             '1-1-1': 'url síðu',
             '1-1-2': 'Engin leyfissíða',
-            '1-1-3': '404 blaðsíður'
+            '1-1-3': '404 bls'
         },
         defaultMenu: {
             home: 'Heim'
         },
         errorTip: {
-            notfoundTip: 'Enginn hluti fannst undir þessari slóð',
-            emptyErr: 'Slóð íhluta ekki stillt'
+            notfoundTip: 'Íhluturinn undir þessari slóð fannst ekki',
+            emptyErr: 'Óstilla hluti'
         }
     },
     sysInfo: {
-        sysIntro: 'Auðvelt í notkun framþróunarramma sem byggir á Vue- og maurahönnun'
+        sysIntro: 'Auðvelt í notkun miðju- og afturenda framþróunarramma sem byggir á Vue og Ant Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Heimilisfang beiðninnar má ekki vera tómt',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Lokaðu öllum flipum',
         closeCur: 'Lokaðu núverandi flipa',
-        closeOther: 'Lokaðu öðrum merkjum',
+        closeOther: 'Lokaðu öðrum flipum',
         closeRight: 'Lokaðu hægri merkimiða',
         singlePage: 'Sjálfstæð síðu',
         refreshPage: 'hressa síðu',
-        affixPage: 'Fast blaðsíða',
+        affixPage: 'Festu síðu',
         cancelAffixPage: 'Tappa af',
         errorTip: {
             homePageCloseError: 'Heimasíðunni er ekki leyft að loka',
             affixPageCloseError: 'Óheimilt er að loka fastri síðu',
             homePageAffixError: 'Ekki er hægt að aftengja heimasíðuna'
         },
-        checkSave: 'Viltu loka síðunni?(Gakktu úr skugga um að innihald rauðu merkimiðasíðunnar hafi verið vistað)',
-        cancelClose: 'Lokað aðgerð hætt'
+        checkSave: 'Viltu loka síðunni?(Gakktu úr skugga um að innihald síðunnar merkt með rauðu hafi verið vistað)',
+        cancelClose: 'Loka aðgerð hætt'
     },
     personalCenter: {
-        frontendLog: 'Framan endaskrá',
-        customSetting: 'Persónulegar stillingar',
+        frontendLog: 'Framendaskrá',
+        customSetting: 'Sérstillingar',
         logout: 'Útskrá'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Því miður, síðan sem þú heimsóttir er ekki til',
             notrightTip: 'Því miður, þú hefur ekki leyfi til að fá aðgang að þessari síðu',
-            noserviceTip: 'Því miður, eitthvað fór úrskeiðis við netþjóninn, reyndu aftur seinna'
+            noserviceTip: 'Því miður kom upp vandamál við netþjóninn, reyndu aftur seinna'
         },
         btnText: 'Loka síðu'
     },
     searchPanel: {
         btn: {
             search: 'Spyrjast fyrir',
-            shrink: 'Hrun',
+            shrink: 'Settu í burtu',
             reset: 'Endurstilla',
             unshrink: 'Brettu út'
         }
@@ -165,9 +165,9 @@ export default {
             remove: 'Tómt'
         },
         time: {
-            plh: 'Vinsamlegast veldu tímaramma',
+            plh: 'Veldu tímasvið',
             range: 'tímamörk',
-            halfDay: 'Innan hálfs dags',
+            halfDay: 'Hálfur dagur',
             oneDay: 'á einum degi',
             weekDay: 'innan viku',
             monthDay: 'Innan mánaðar'
@@ -186,9 +186,9 @@ export default {
         request: 'Biðja um gögn',
         error: {
             cancel: 'Tóm aðgerð hætt',
-            confirm: 'Viltu hreinsa annálinn?(Notkunarskráin verður tæmd og ekki hægt að sækja hana)'
+            confirm: 'Viltu hreinsa annálinn?(Ef notkunarskráin er tæmd er ekki hægt að sækja hana)'
         },
-        success: 'Stokkurinn hefur verið tæmdur'
+        success: 'Notkunarskrá hefur verið tæmd'
     },
     comTable: {
         columns: {
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Útsýni'
+    },
+    setting: {
+        customEntry: 'Fljótleg innkoma',
+        systemSwitch: 'Stilling kerfisins',
+        isMock: 'Hvort á að spotta',
+        isHotKey: 'Hvort flýtivísi',
+        isBreadCrumb: 'Hvort brauðmola',
+        isCache: 'Hvort á að skyndiminni',
+        isI18n: 'Hvort á að alþjóðavæða'
     }
 }

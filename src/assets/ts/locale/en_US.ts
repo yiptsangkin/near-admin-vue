@@ -3,9 +3,9 @@ export default {
     country: 'US',
     loginForm: {
         byAccountBtn: 'Account password login',
-        byPhoneBtn: 'Phone number login',
+        byPhoneBtn: 'Mobile phone number login',
         accountPlaceholder: 'please enter account',
-        passwordPlaceholder: 'Please enter the password',
+        passwordPlaceholder: 'Please enter password',
         autoLogin: 'auto login',
         forgetBtn: 'forget password',
         loginBtn: 'log in',
@@ -20,25 +20,25 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Do not send repeatedly',
-            success: 'Get success',
+            success: 'Successful',
             codeTip: 'Your verification code is'
         },
         phonePlaceholder: 'Please enter phone number',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Verification code',
         validBtn: 'get verification code',
         loginSuccess: 'login successful'
     },
     menuObj: {
         basicFeature: 'Basic ability',
-        cpUse: 'Component use',
+        cpUse: 'Component usage',
         childMenu: {
             0: 'Basic framework',
             1: 'Basic ability',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
-            '1-0': 'Frame function',
+            '1-0': 'Framework function',
             '1-0-0': 'Project configuration',
-            '1-0-1': 'Front-end log',
+            '1-0-1': 'Frontend log',
             '1-0-2': 'Local mock',
             '1-0-3': 'globalization',
             '1-0-4': 'Data Dictionary',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Component page',
             '1-1-1': 'url page',
             '1-1-2': 'No permission page',
-            '1-1-3': '404 pages'
+            '1-1-3': '404 page'
         },
         defaultMenu: {
             home: 'Home'
         },
         errorTip: {
-            notfoundTip: 'No component found under this path',
-            emptyErr: 'Component path not configured'
+            notfoundTip: 'The component under this path was not found',
+            emptyErr: 'Unconfigured component path'
         }
     },
     sysInfo: {
-        sysIntro: 'An easy-to-use front-end development framework based on Vue and Ant Design'
+        sysIntro: 'An easy-to-use middle and back-end front-end development framework based on Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Request address cannot be empty',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Close all tabs',
-        closeCur: 'Close the current tab',
-        closeOther: 'Close other tags',
+        closeCur: 'Close current tab',
+        closeOther: 'Close other tabs',
         closeRight: 'Close right label',
         singlePage: 'Independent page',
         refreshPage: 'refresh page',
-        affixPage: 'Fixed page',
+        affixPage: 'Pin page',
         cancelAffixPage: 'Unpin',
         errorTip: {
             homePageCloseError: 'Homepage is not allowed to close',
             affixPageCloseError: 'Fixed page is not allowed to close',
             homePageAffixError: 'Homepage cannot be unpinned'
         },
-        checkSave: 'Do you want to close the page?(Please make sure that the content of the red label page has been saved)',
-        cancelClose: 'Closed operation canceled'
+        checkSave: 'Do you want to close the page?(Please make sure that the content of the page marked in red has been saved)',
+        cancelClose: 'Close operation cancelled'
     },
     personalCenter: {
-        frontendLog: 'Front-end log',
-        customSetting: 'Personalized settings',
+        frontendLog: 'Frontend log',
+        customSetting: 'Personalization',
         logout: 'sign out'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Sorry, the page you visited does not exist',
             notrightTip: 'Sorry, you do not have permission to access this page',
-            noserviceTip: 'Sorry, something went wrong with the server, please try again later'
+            noserviceTip: 'Sorry, there was a problem with the server, please try again later'
         },
         btnText: 'Close page'
     },
     searchPanel: {
         btn: {
             search: 'Inquire',
-            shrink: 'Collapse',
+            shrink: 'Put away',
             reset: 'Reset',
             unshrink: 'Unfold'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Empty'
         },
         time: {
-            plh: 'Please select a time frame',
+            plh: 'Please select a time range',
             range: 'time limit',
-            halfDay: 'Within half a day',
+            halfDay: 'Half a day',
             oneDay: 'in one day',
             weekDay: 'within a week',
-            monthDay: 'Within one month'
+            monthDay: 'Within a month'
         },
         type: {
             logType: 'Log type',
-            plh: 'Please select a log type'
+            plh: 'Please select log type'
         },
         tableColumns: {
             index: 'Serial number',
@@ -185,10 +185,10 @@ export default {
         },
         request: 'Request data',
         error: {
-            cancel: 'Empty operation canceled',
-            confirm: 'Do you want to clear the log?(The log will be emptied and cannot be retrieved)'
+            cancel: 'Empty operation cancelled',
+            confirm: 'Do you want to clear the log?(If the log is emptied, it cannot be retrieved)'
         },
-        success: 'The log has been emptied'
+        success: 'Log has been emptied'
     },
     comTable: {
         columns: {
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'View'
+    },
+    setting: {
+        customEntry: 'Quick entry',
+        systemSwitch: 'System Configuration',
+        isMock: 'Whether to Mock',
+        isHotKey: 'Whether shortcut key',
+        isBreadCrumb: 'Whether bread crumbs',
+        isCache: 'Whether to cache',
+        isI18n: 'Whether to internationalize'
     }
 }

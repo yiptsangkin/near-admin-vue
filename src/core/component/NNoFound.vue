@@ -16,9 +16,11 @@
     import Vue from 'vue'
     import dict from '@custom/dict'
     import {mapGetters} from 'vuex'
+    import CoreBase from '@corets/base'
 
     export default Vue.extend({
         name: 'NNoFound',
+        mixins: [CoreBase],
         data() {
             return {
                 iconUrl: '/static/images/manage/404.png',

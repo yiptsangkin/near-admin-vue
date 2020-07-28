@@ -3,9 +3,9 @@ export default {
     country: 'KR',
     loginForm: {
         byAccountBtn: '계정 비밀번호 로그인',
-        byPhoneBtn: '전화 번호 로그인',
+        byPhoneBtn: '휴대 전화 번호 로그인',
         accountPlaceholder: '계정을 입력하십시오',
-        passwordPlaceholder: '비밀번호를 입력하십시오',
+        passwordPlaceholder: '비밀번호를 입력 해주세요',
         autoLogin: '자동 로그인',
         forgetBtn: '비밀번호 분실',
         loginBtn: '로그인',
@@ -20,23 +20,23 @@ export default {
         },
         sendMsg: {
             repeatErr: '반복해서 보내지 마십시오',
-            success: '성공',
+            success: '성공한',
             codeTip: '인증 코드는'
         },
         phonePlaceholder: '전화 번호를 입력하십시오',
-        validPlaceholder: '보안 문자',
+        validPlaceholder: '확인 코드',
         validBtn: '인증 코드 받기',
         loginSuccess: '성공적 로그인'
     },
     menuObj: {
         basicFeature: '기본 능력',
-        cpUse: '구성 요소 사용',
+        cpUse: '구성 요소 사용법',
         childMenu: {
             0: '기본 프레임 워크',
             1: '기본 능력',
             '0-0': '부',
             '0-1': '개미 디자인',
-            '1-0': '프레임 기능',
+            '1-0': '프레임 워크 기능',
             '1-0-0': '프로젝트 구성',
             '1-0-1': '프론트 엔드 로그',
             '1-0-2': '지역 모의',
@@ -56,12 +56,12 @@ export default {
             home: '집'
         },
         errorTip: {
-            notfoundTip: '이 경로에 구성 요소가 없습니다.',
-            emptyErr: '구성 요소 경로가 구성되지 않았습니다'
+            notfoundTip: '이 경로 아래의 구성 요소를 찾을 수 없습니다',
+            emptyErr: '구성되지 않은 구성 요소 경로'
         }
     },
     sysInfo: {
-        sysIntro: 'Vue and Ant Design 기반의 사용하기 쉬운 프론트 엔드 개발 프레임 워크'
+        sysIntro: 'Vue and Ant Design 기반의 사용하기 쉬운 중간 및 백엔드 프론트 엔드 개발 프레임 워크'
     },
     requestInfo: {
         withoutUrl: '요청 주소는 비워 둘 수 없습니다',
@@ -121,24 +121,24 @@ export default {
     },
     tagObj: {
         closeAll: '모든 탭을 닫습니다',
-        closeCur: '현재 탭을 닫습니다',
-        closeOther: '다른 태그 닫기',
+        closeCur: '현재 탭 닫기',
+        closeOther: '다른 탭 닫기',
         closeRight: '오른쪽 라벨 닫기',
         singlePage: '독립 페이지',
         refreshPage: '페이지 새로 고침',
-        affixPage: '고정 페이지',
+        affixPage: '핀 페이지',
         cancelAffixPage: '고정 해제',
         errorTip: {
             homePageCloseError: '홈페이지를 닫을 수 없습니다',
             affixPageCloseError: '고정 페이지를 닫을 수 없습니다',
             homePageAffixError: '홈페이지를 고정 해제 할 수 없습니다'
         },
-        checkSave: '페이지를 닫으시겠습니까?(레드 라벨 페이지의 내용이 저장되었는지 확인하십시오)',
-        cancelClose: '닫힌 작업 취소'
+        checkSave: '페이지를 닫으시겠습니까?(빨간색으로 표시된 페이지의 내용이 저장되었는지 확인하십시오)',
+        cancelClose: '닫기 작업이 취소되었습니다'
     },
     personalCenter: {
         frontendLog: '프론트 엔드 로그',
-        customSetting: '개인 설정',
+        customSetting: '개인화',
         logout: '로그 아웃'
     },
     errorPage: {
@@ -152,7 +152,7 @@ export default {
     searchPanel: {
         btn: {
             search: '조회',
-            shrink: '무너짐',
+            shrink: '치워',
             reset: '초기화',
             unshrink: '펴다'
         }
@@ -165,9 +165,9 @@ export default {
             remove: '빈'
         },
         time: {
-            plh: '시간대를 선택하십시오',
+            plh: '시간 범위를 선택하십시오',
             range: '시간 제한',
-            halfDay: '반나절 안에',
+            halfDay: '반나절',
             oneDay: '하루에',
             weekDay: '일주일 안에',
             monthDay: '한 달 안에'
@@ -186,7 +186,7 @@ export default {
         request: '데이터 요청',
         error: {
             cancel: '빈 작업이 취소되었습니다',
-            confirm: '로그를 지우시겠습니까?(로그가 비워져 검색 할 수 없습니다)'
+            confirm: '로그를 지우시겠습니까?(로그를 비우면 검색 할 수 없습니다)'
         },
         success: '로그가 비워졌습니다'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: '전망'
+    },
+    setting: {
+        customEntry: '빠른 입장',
+        systemSwitch: '시스템 설정',
+        isMock: '모의 여부',
+        isHotKey: '단축키 여부',
+        isBreadCrumb: '빵 부스러기 여부',
+        isCache: '캐시 여부',
+        isI18n: '국제화 여부'
     }
 }

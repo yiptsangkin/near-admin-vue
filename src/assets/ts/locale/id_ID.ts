@@ -3,7 +3,7 @@ export default {
     country: 'ID',
     loginForm: {
         byAccountBtn: 'Login kata sandi akun',
-        byPhoneBtn: 'Login nomor telepon',
+        byPhoneBtn: 'Login nomor ponsel',
         accountPlaceholder: 'silakan masukkan akun',
         passwordPlaceholder: 'Silakan masukkan kata sandi',
         autoLogin: 'masuk otomatis',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Jangan kirim berulang kali',
-            success: 'Dapatkan kesuksesan',
+            success: 'Berhasil',
             codeTip: 'Kode verifikasi Anda adalah'
         },
         phonePlaceholder: 'Silakan masukkan nomor telepon',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Kode verifikasi',
         validBtn: 'dapatkan kode verifikasi',
         loginSuccess: 'login berhasil'
     },
@@ -36,9 +36,9 @@ export default {
             1: 'Kemampuan dasar',
             '0-0': 'Vue',
             '0-1': 'Desain Semut',
-            '1-0': 'Fungsi bingkai',
+            '1-0': 'Fungsi kerangka kerja',
             '1-0-0': 'Konfigurasi proyek',
-            '1-0-1': 'Log front-end',
+            '1-0-1': 'Log frontend',
             '1-0-2': 'Tiruan lokal',
             '1-0-3': 'globalisasi',
             '1-0-4': 'Kamus data',
@@ -56,12 +56,12 @@ export default {
             home: 'Rumah'
         },
         errorTip: {
-            notfoundTip: 'Tidak ada komponen yang ditemukan di bawah jalur ini',
-            emptyErr: 'Jalur komponen tidak dikonfigurasi'
+            notfoundTip: 'Komponen di bawah jalur ini tidak ditemukan',
+            emptyErr: 'Jalur komponen yang tidak dikonfigurasi'
         }
     },
     sysInfo: {
-        sysIntro: 'Kerangka pengembangan front-end yang mudah digunakan berdasarkan Vue dan Ant Design'
+        sysIntro: 'Kerangka pengembangan front-end tengah dan belakang yang mudah digunakan berdasarkan Vue dan Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Alamat permintaan tidak boleh kosong',
@@ -122,23 +122,23 @@ export default {
     tagObj: {
         closeAll: 'Tutup semua tab',
         closeCur: 'Tutup tab saat ini',
-        closeOther: 'Tutup tag lain',
+        closeOther: 'Tutup tab lain',
         closeRight: 'Tutup label kanan',
         singlePage: 'Halaman independen',
         refreshPage: 'refresh halaman',
-        affixPage: 'Halaman tetap',
+        affixPage: 'Halaman pin',
         cancelAffixPage: 'Membuka peniti',
         errorTip: {
             homePageCloseError: 'Beranda tidak diizinkan untuk ditutup',
             affixPageCloseError: 'Halaman yang diperbaiki tidak diizinkan untuk ditutup',
             homePageAffixError: 'Beranda tidak dapat dibatalkan sematannya'
         },
-        checkSave: 'Apakah Anda ingin menutup halaman?(Pastikan konten halaman label merah telah disimpan)',
-        cancelClose: 'Operasi tertutup dibatalkan'
+        checkSave: 'Apakah Anda ingin menutup halaman?(Pastikan konten halaman yang ditandai dengan warna merah telah disimpan)',
+        cancelClose: 'Operasi tutup dibatalkan'
     },
     personalCenter: {
-        frontendLog: 'Log front-end',
-        customSetting: 'Pengaturan yang dipersonalisasi',
+        frontendLog: 'Log frontend',
+        customSetting: 'Personalisasi',
         logout: 'keluar'
     },
     errorPage: {
@@ -152,7 +152,7 @@ export default {
     searchPanel: {
         btn: {
             search: 'Menanyakan',
-            shrink: 'Jatuh',
+            shrink: 'Menyimpan',
             reset: 'Setel ulang',
             unshrink: 'Membuka'
         }
@@ -165,9 +165,9 @@ export default {
             remove: 'Kosong'
         },
         time: {
-            plh: 'Silakan pilih jangka waktu',
+            plh: 'Silakan pilih rentang waktu',
             range: 'batas waktu',
-            halfDay: 'Dalam setengah hari',
+            halfDay: 'Setengah hari',
             oneDay: 'dalam satu hari',
             weekDay: 'dalam seminggu',
             monthDay: 'Dalam satu bulan'
@@ -186,7 +186,7 @@ export default {
         request: 'Meminta data',
         error: {
             cancel: 'Operasi kosong dibatalkan',
-            confirm: 'Apakah Anda ingin menghapus log?(Log akan dikosongkan dan tidak dapat diambil)'
+            confirm: 'Apakah Anda ingin menghapus log?(Jika log dikosongkan, itu tidak dapat diambil)'
         },
         success: 'Log telah dikosongkan'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Melihat'
+    },
+    setting: {
+        customEntry: 'Entri cepat',
+        systemSwitch: 'Sistem konfigurasi',
+        isMock: 'Apakah akan Mock',
+        isHotKey: 'Apakah tombol pintas',
+        isBreadCrumb: 'Apakah roti remah',
+        isCache: 'Apakah akan di-cache atau tidak',
+        isI18n: 'Apakah akan diinternasionalkan'
     }
 }

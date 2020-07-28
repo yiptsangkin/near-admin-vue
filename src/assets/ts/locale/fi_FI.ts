@@ -3,7 +3,7 @@ export default {
     country: 'FI',
     loginForm: {
         byAccountBtn: 'Tilin salasanan kirjautuminen',
-        byPhoneBtn: 'Puhelinnumeron kirjautuminen',
+        byPhoneBtn: 'Matkapuhelinnumeron kirjautuminen',
         accountPlaceholder: 'kirjoita tili',
         passwordPlaceholder: 'Anna salasana',
         autoLogin: 'automaattinen sisäänkirjautuminen',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Älä lähetä toistuvasti',
-            success: 'Hanki menestys',
+            success: 'onnistunut',
             codeTip: 'Vahvistuskoodisi on'
         },
         phonePlaceholder: 'Anna puhelinnumero',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Vahvistuskoodi',
         validBtn: 'hanki vahvistuskoodi',
         loginSuccess: 'kirjautuminen onnistui'
     },
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Muurahaissuunnittelu',
             '1-0': 'Kehystoiminto',
             '1-0-0': 'Projektin kokoonpano',
-            '1-0-1': 'Etuosan loki',
+            '1-0-1': 'Etuliite',
             '1-0-2': 'Paikallinen pilkka',
             '1-0-3': 'globalisaatio',
             '1-0-4': 'Tietojen sanakirja',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Komponenttisivu',
             '1-1-1': 'URL-sivu',
             '1-1-2': 'Ei lupa-sivua',
-            '1-1-3': '404 sivua'
+            '1-1-3': '404 sivu'
         },
         defaultMenu: {
             home: 'Koti'
         },
         errorTip: {
-            notfoundTip: 'Tätä polkua ei löytynyt',
-            emptyErr: 'Komponenttipolkua ei ole määritetty'
+            notfoundTip: 'Tämän polun alla olevaa komponenttia ei löytynyt',
+            emptyErr: 'Määrittämätön komponenttipolku'
         }
     },
     sysInfo: {
-        sysIntro: 'Helppo käyttää käyttöliittymäkehitystä, joka perustuu Vue- ja Ant-suunnitteluun'
+        sysIntro: 'Helppo käyttää keskitason ja takaosan etuosakehityskehystä, joka perustuu Vue- ja Ant-suunnitteluun'
     },
     requestInfo: {
         withoutUrl: 'Pyyntöosoite ei voi olla tyhjä',
@@ -122,37 +122,37 @@ export default {
     tagObj: {
         closeAll: 'Sulje kaikki välilehdet',
         closeCur: 'Sulje nykyinen välilehti',
-        closeOther: 'Sulje muut tunnisteet',
+        closeOther: 'Sulje muut välilehdet',
         closeRight: 'Sulje oikea tarra',
         singlePage: 'Itsenäinen sivu',
         refreshPage: 'Päivitä sivu',
-        affixPage: 'Kiinteä sivu',
+        affixPage: 'Kiinnitä sivu',
         cancelAffixPage: 'Irrota',
         errorTip: {
             homePageCloseError: 'Kotisivua ei saa sulkea',
             affixPageCloseError: 'Kiinteää sivua ei saa sulkea',
             homePageAffixError: 'Kotisivua ei voi irrottaa'
         },
-        checkSave: 'Haluatko sulkea sivun?(Varmista, että punaisen tarran sivun sisältö on tallennettu)',
-        cancelClose: 'Lopetettu toiminta peruutettu'
+        checkSave: 'Haluatko sulkea sivun?(Varmista, että punaisella merkityn sivun sisältö on tallennettu)',
+        cancelClose: 'Sulje toiminto peruutettu'
     },
     personalCenter: {
-        frontendLog: 'Etuosan loki',
-        customSetting: 'Henkilökohtaiset asetukset',
+        frontendLog: 'Etuliite',
+        customSetting: 'personointi',
         logout: 'Kirjaudu ulos'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Valitettavasti käymääsi sivua ei ole',
             notrightTip: 'Valitettavasti sinulla ei ole lupaa päästä tälle sivulle',
-            noserviceTip: 'Jokin meni pieleen palvelimen kanssa, yritä myöhemmin uudelleen'
+            noserviceTip: 'Valitettavasti palvelimessa oli ongelma. Yritä myöhemmin uudelleen'
         },
         btnText: 'Sulje sivu'
     },
     searchPanel: {
         btn: {
             search: 'Tiedustella',
-            shrink: 'Romahdus',
+            shrink: 'Laittaa pois',
             reset: 'Nollaa',
             unshrink: 'Unfold'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Tyhjä'
         },
         time: {
-            plh: 'Ole hyvä ja valitse aikataulu',
+            plh: 'Valitse aikaväli',
             range: 'määräaika',
-            halfDay: 'Puolen päivän sisällä',
+            halfDay: 'Puoli päivää',
             oneDay: 'yhdessä päivässä',
             weekDay: 'viikon sisällä',
             monthDay: 'Kuukauden sisällä'
         },
         type: {
             logType: 'Lokityyppi',
-            plh: 'Valitse lokityyppi'
+            plh: 'Valitse lokin tyyppi'
         },
         tableColumns: {
             index: 'Sarjanumero',
@@ -185,8 +185,8 @@ export default {
         },
         request: 'Pyydä tietoja',
         error: {
-            cancel: 'Tyhjä toiminta peruutettu',
-            confirm: 'Haluatko tyhjentää lokin?(Loki tyhjennetään eikä sitä voida noutaa)'
+            cancel: 'Tyhjä toimenpide peruutettu',
+            confirm: 'Haluatko tyhjentää lokin?(Jos loki tyhjennetään, sitä ei voi hakea)'
         },
         success: 'Loki on tyhjennetty'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'näkymä'
+    },
+    setting: {
+        customEntry: 'Nopea pääsy',
+        systemSwitch: 'Järjestelmän kokoonpano',
+        isMock: 'Olisiko pilkata',
+        isHotKey: 'Onko pikanäppäin',
+        isBreadCrumb: 'Olipa leivän murut',
+        isCache: 'Välimuisti',
+        isI18n: 'Kansainvälistyminen'
     }
 }

@@ -2,10 +2,10 @@ export default {
     locale: 'fr',
     country: 'FR',
     loginForm: {
-        byAccountBtn: 'Connexion au mot de passe du compte',
-        byPhoneBtn: 'Connexion au numéro de téléphone',
+        byAccountBtn: 'Connexion par mot de passe du compte',
+        byPhoneBtn: 'Connexion au numéro de téléphone portable',
         accountPlaceholder: 'veuillez entrer un compte',
-        passwordPlaceholder: 'S&#39;il vous plaît entrer le mot de passe',
+        passwordPlaceholder: 'Veuillez entrer le mot de passe',
         autoLogin: 'connexion automatique',
         forgetBtn: 'mot de passe oublié',
         loginBtn: 's&#39;identifier',
@@ -19,12 +19,12 @@ export default {
             emptyErr: 'le code de vérification doit être rempli'
         },
         sendMsg: {
-            repeatErr: 'Ne pas envoyer à plusieurs reprises',
-            success: 'Obtenez le succès',
+            repeatErr: 'N&#39;envoyez pas à plusieurs reprises',
+            success: 'Réussi',
             codeTip: 'Votre code de vérification est'
         },
         phonePlaceholder: 'Veuillez entrer le numéro de téléphone',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Code de vérification',
         validBtn: 'obtenir le code de vérification',
         loginSuccess: 'connexion réussie'
     },
@@ -35,33 +35,33 @@ export default {
             0: 'Cadre de base',
             1: 'Capacité de base',
             '0-0': 'Vue',
-            '0-1': 'Conception de fourmi',
+            '0-1': 'Conception de fourmis',
             '1-0': 'Fonction de cadre',
             '1-0-0': 'Configuration du projet',
-            '1-0-1': 'Journal frontal',
+            '1-0-1': 'Journal du frontend',
             '1-0-2': 'Maquette locale',
-            '1-0-3': 'mondialisation',
+            '1-0-3': 'globalisation',
             '1-0-4': 'Dictionnaire de données',
             '1-0-5': 'EventBus',
-            '1-0-6': 'Jeu d&#39;outils',
+            '1-0-6': 'Toolset',
             '1-0-7': 'Contrôle d&#39;accès',
             '1-0-8': 'touche de raccourci',
             '1-1': 'Fonction de page',
             '1-1-0': 'Page des composants',
-            '1-1-1': 'page d&#39;url',
+            '1-1-1': 'page URL',
             '1-1-2': 'Aucune page d&#39;autorisation',
-            '1-1-3': '404 pages'
+            '1-1-3': '404 page'
         },
         defaultMenu: {
             home: 'Accueil'
         },
         errorTip: {
-            notfoundTip: 'Aucun composant trouvé sous ce chemin',
-            emptyErr: 'Chemin de composant non configuré'
+            notfoundTip: 'Le composant sous ce chemin est introuvable',
+            emptyErr: 'Chemin du composant non configuré'
         }
     },
     sysInfo: {
-        sysIntro: 'Un framework de développement frontal facile à utiliser basé sur Vue et Ant Design'
+        sysIntro: 'Un cadre de développement front-end central et back-end facile à utiliser basé sur Vue et Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L&#39;adresse de la demande ne peut pas être vide',
@@ -122,29 +122,29 @@ export default {
     tagObj: {
         closeAll: 'Fermer tous les onglets',
         closeCur: 'Fermer l&#39;onglet actuel',
-        closeOther: 'Fermer les autres balises',
+        closeOther: 'Fermer les autres onglets',
         closeRight: 'Fermer l&#39;étiquette de droite',
         singlePage: 'Page indépendante',
         refreshPage: 'rafraîchir la page',
-        affixPage: 'Page fixe',
+        affixPage: 'Épingler la page',
         cancelAffixPage: 'Détacher',
         errorTip: {
-            homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à fermer',
-            affixPageCloseError: 'La page fixe n&#39;est pas autorisée à fermer',
-            homePageAffixError: 'La page d&#39;accueil ne peut pas être détachée'
+            homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à se fermer',
+            affixPageCloseError: 'La page fixe n&#39;est pas autorisée à se fermer',
+            homePageAffixError: 'La page d&#39;accueil ne peut pas être supprimée'
         },
-        checkSave: 'Voulez-vous fermer la page?(Veuillez vous assurer que le contenu de la page d&#39;étiquette rouge a été enregistré)',
-        cancelClose: 'Opération fermée annulée'
+        checkSave: 'Voulez-vous fermer la page?(Veuillez vous assurer que le contenu de la page marquée en rouge a été enregistré)',
+        cancelClose: 'Fermer l&#39;opération annulée'
     },
     personalCenter: {
-        frontendLog: 'Journal frontal',
-        customSetting: 'Paramètres personnalisés',
+        frontendLog: 'Journal du frontend',
+        customSetting: 'Personnalisation',
         logout: 'Déconnexion'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Désolé, la page que vous avez visitée n&#39;existe pas',
-            notrightTip: 'Désolé, vous n&#39;avez pas la permission d&#39;accéder à cette page',
+            notrightTip: 'Désolé, vous n&#39;êtes pas autorisé à accéder à cette page',
             noserviceTip: 'Désolé, un problème est survenu avec le serveur, veuillez réessayer plus tard'
         },
         btnText: 'Fermer la page'
@@ -152,7 +152,7 @@ export default {
     searchPanel: {
         btn: {
             search: 'Renseigner',
-            shrink: 'Effondrer',
+            shrink: 'Ranger',
             reset: 'Réinitialiser',
             unshrink: 'Se dérouler'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Vide'
         },
         time: {
-            plh: 'Veuillez sélectionner un délai',
+            plh: 'Veuillez sélectionner une période',
             range: 'limite de temps',
-            halfDay: 'Dans une demi-journée',
+            halfDay: 'Une demi-journée',
             oneDay: 'en un jour',
             weekDay: 'dans une semaine',
             monthDay: 'Dans un mois'
         },
         type: {
             logType: 'Type de journal',
-            plh: 'Veuillez sélectionner un type de journal'
+            plh: 'Veuillez sélectionner le type de journal'
         },
         tableColumns: {
             index: 'Numéro de série',
@@ -186,7 +186,7 @@ export default {
         request: 'Demander des données',
         error: {
             cancel: 'Opération vide annulée',
-            confirm: 'Voulez-vous effacer le journal?(Le journal sera vidé et ne pourra pas être récupéré)'
+            confirm: 'Voulez-vous effacer le journal?(Si le journal est vidé, il ne peut pas être récupéré)'
         },
         success: 'Le journal a été vidé'
     },
@@ -195,7 +195,7 @@ export default {
             title: 'Paramètres de colonne',
             all: 'tout sélectionner',
             reset: 'Réinitialiser',
-            fixedLeft: 'Fixe gauche',
+            fixedLeft: 'Fixe à gauche',
             fixedRight: 'Fixe à droite',
             cancelFixed: 'Détacher'
         },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Vue'
+    },
+    setting: {
+        customEntry: 'Saisie rapide',
+        systemSwitch: 'Configuration du système',
+        isMock: 'Que ce soit pour se moquer',
+        isHotKey: 'Si la touche de raccourci',
+        isBreadCrumb: 'Que des miettes de pain',
+        isCache: 'S&#39;il faut mettre en cache',
+        isI18n: 'S&#39;internationaliser'
     }
 }

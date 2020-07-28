@@ -3,7 +3,7 @@ export default {
     country: 'ES',
     loginForm: {
         byAccountBtn: 'Inici de sessió de la contrasenya del compte',
-        byPhoneBtn: 'Inici de sessió del número de telèfon',
+        byPhoneBtn: 'Inici de sessió del número de telèfon mòbil',
         accountPlaceholder: 'introduïu el compte',
         passwordPlaceholder: 'Introduïu la contrasenya',
         autoLogin: 'inicio de sessió automàtica',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'No envieu repetidament',
-            success: 'Obté èxit',
+            success: 'Èxit',
             codeTip: 'El vostre codi de verificació és'
         },
         phonePlaceholder: 'Introduïu el número de telèfon',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Codi de verificació',
         validBtn: 'obtenir codi de verificació',
         loginSuccess: 'Inici de sessió correcta'
     },
@@ -36,9 +36,9 @@ export default {
             1: 'Capacitat bàsica',
             '0-0': 'Vue',
             '0-1': 'Disseny de formigues',
-            '1-0': 'Funció del fotograma',
+            '1-0': 'Funció marc',
             '1-0-0': 'Configuració del projecte',
-            '1-0-1': 'Registre front-end',
+            '1-0-1': 'Registre frontend',
             '1-0-2': 'Mofa local',
             '1-0-3': 'globalització',
             '1-0-4': 'Diccionari de dades',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Pàgina de components',
             '1-1-1': 'url pàgina',
             '1-1-2': 'Sense pàgina de permís',
-            '1-1-3': '404 pàgines'
+            '1-1-3': '404 pàgina'
         },
         defaultMenu: {
             home: 'Inici'
         },
         errorTip: {
-            notfoundTip: 'No s&#39;ha trobat component d&#39;aquesta ruta',
+            notfoundTip: 'No s&#39;ha trobat el component d&#39;aquesta ruta',
             emptyErr: 'Ruta del component no configurada'
         }
     },
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament de front-end senzill basat en Vue and Ant Design'
+        sysIntro: 'Un marc de desenvolupament de front-end mig i back-end fàcil d’utilitzar basat en Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L’adreça de sol·licitud no pot estar buida',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Tanqueu totes les pestanyes',
-        closeCur: 'Tanqueu la pestanya actual',
-        closeOther: 'Tanqueu altres etiquetes',
+        closeCur: 'Tanca la pestanya actual',
+        closeOther: 'Tanqueu altres pestanyes',
         closeRight: 'Tanca l&#39;etiqueta dreta',
         singlePage: 'Pàgina independent',
         refreshPage: 'pàgina d’actualització',
-        affixPage: 'Pàgina fixada',
+        affixPage: 'Pin pàgina',
         cancelAffixPage: 'Desaconseguir',
         errorTip: {
-            homePageCloseError: 'La pàgina d&#39;inici no es pot tancar',
+            homePageCloseError: 'La pàgina d&#39;inici no permet tancar',
             affixPageCloseError: 'No es pot tancar la pàgina corregida',
             homePageAffixError: 'La pàgina d&#39;inici no es pot anul·lar'
         },
-        checkSave: 'Voleu tancar la pàgina?(Assegureu-vos que s’ha desat el contingut de la pàgina de l’etiqueta vermella)',
-        cancelClose: 'S&#39;ha cancel·lat l&#39;operació tancada'
+        checkSave: 'Voleu tancar la pàgina?(Assegureu-vos que s’ha desat el contingut de la pàgina marcat en vermell)',
+        cancelClose: 'S&#39;ha cancel·lat l&#39;operació de tancament'
     },
     personalCenter: {
-        frontendLog: 'Registre front-end',
-        customSetting: 'Configuració personalitzada',
+        frontendLog: 'Registre frontend',
+        customSetting: 'Personalització',
         logout: 'tanca sessió'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Ho sentim, la pàgina que heu visitat no existeix',
             notrightTip: 'Ho sentim, no teniu permís per accedir a aquesta pàgina',
-            noserviceTip: 'Ho sentim, ha funcionat alguna cosa malament amb el servidor. Torneu-ho a provar més endavant'
+            noserviceTip: 'S&#39;ha produït un problema amb el servidor. Torneu-ho a provar més endavant'
         },
         btnText: 'Tanca la pàgina'
     },
     searchPanel: {
         btn: {
             search: 'Consulteu',
-            shrink: 'Esfondrament',
+            shrink: 'Deixa’t',
             reset: 'Restablir',
             unshrink: 'Desplegar'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Buit'
         },
         time: {
-            plh: 'Seleccioneu un marc de temps',
+            plh: 'Seleccioneu un interval de temps',
             range: 'termini',
-            halfDay: 'Dintre de mig dia',
+            halfDay: 'Mig dia',
             oneDay: 'en un sol dia',
             weekDay: 'en una setmana',
             monthDay: 'D’aquí a un mes'
         },
         type: {
             logType: 'Tipus de registre',
-            plh: 'Seleccioneu un tipus de registre'
+            plh: 'Seleccioneu el tipus de registre'
         },
         tableColumns: {
             index: 'Número de sèrie',
@@ -186,7 +186,7 @@ export default {
         request: 'Sol·licita dades',
         error: {
             cancel: 'S&#39;ha cancel·lat l&#39;operació buida',
-            confirm: 'Voleu esborrar el registre?(El registre es buidarà i no es podrà recuperar)'
+            confirm: 'Voleu esborrar el registre?(Si el registre es buida, no es pot recuperar)'
         },
         success: 'El registre s’ha buidat'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Veure'
+    },
+    setting: {
+        customEntry: 'Entrada ràpida',
+        systemSwitch: 'Configuració del sistema',
+        isMock: 'Ja sigui per burlar',
+        isHotKey: 'Tant si és drecera',
+        isBreadCrumb: 'Ja sigui molla de pa',
+        isCache: 'Ja sigui a la memòria cau',
+        isI18n: 'Ja sigui per internacionalitzar-se'
     }
 }

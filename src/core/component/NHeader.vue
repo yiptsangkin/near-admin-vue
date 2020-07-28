@@ -43,12 +43,12 @@
                         </div>
                     </div>
                     <div class="n-user-menu-func">
-                        <a-menu>
+                        <a-menu :selectedKeys="[]">
                             <a-menu-item key="logline" @click="toLogline">
                                 <a-icon type="calendar"/>
                                 {{$t(dict.localeObj.personalCenter.frontendLog)}}
                             </a-menu-item>
-                            <a-menu-item key="customsetting">
+                            <a-menu-item key="customsetting" @click="toSetting">
                                 <a-icon type="setting"/>
                                 {{$t(dict.localeObj.personalCenter.customSetting)}}
                             </a-menu-item>
@@ -64,10 +64,10 @@
 </template>
 
 <script lang="ts">
-    import Vue from 'vue';
-    import {mapGetters, mapActions} from 'vuex';
-    import dict from '@custom/dict';
-    import utils from '@corets/utils';
+    import Vue from 'vue'
+    import {mapGetters, mapActions} from 'vuex'
+    import dict from '@custom/dict'
+    import utils from '@corets/utils'
 
     const NLangPicker = () => import('@corecp/NLangPicker.vue');
 
@@ -85,25 +85,32 @@
         components: {
             NLangPicker
         },
-        data() {
+        data () {
             return {
                 dict
-            };
+            }
         },
         methods: {
             ...mapActions([
                 'changeCurMenu',
                 'changeFullScreen'
             ]),
-            changeMenu({key}: { key: any }) {
+            changeMenu ({key}: { key: any }) {
                 const self = this as any
                 self.changeCurMenu([key])
             },
-            toLogline() {
+            toLogline () {
                 const self = this as any
                 self.$newpage({
                     title: dict.localeObj.personalCenter.frontendLog,
                     component: dict.commonObj.loglinePath
+                })
+            },
+            toSetting () {
+                const self = this as any
+                self.$newpage({
+                    title: dict.localeObj.personalCenter.customSetting,
+                    component: dict.commonObj.settingPath
                 })
             },
             setFullScreen() {

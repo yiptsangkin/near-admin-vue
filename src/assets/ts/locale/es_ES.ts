@@ -3,9 +3,9 @@ export default {
     country: 'ES',
     loginForm: {
         byAccountBtn: 'Inicio de sesión de contraseña de cuenta',
-        byPhoneBtn: 'Número de teléfono de inicio de sesión',
+        byPhoneBtn: 'Inicio de sesión de número de teléfono móvil',
         accountPlaceholder: 'por favor ingrese cuenta',
-        passwordPlaceholder: 'Por favor introduzca la contraseña',
+        passwordPlaceholder: 'Por favor, ingrese contraseña',
         autoLogin: 'ingreso automático',
         forgetBtn: 'contraseña olvidada',
         loginBtn: 'iniciar sesión',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'No enviar repetidamente',
-            success: 'Obtener éxito',
+            success: 'Exitoso',
             codeTip: 'Tu código de verificación es'
         },
         phonePlaceholder: 'Por favor ingrese el número de teléfono',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Código de verificación',
         validBtn: 'obtener el código de verificación',
         loginSuccess: 'Inicio de sesión correcto'
     },
@@ -36,9 +36,9 @@ export default {
             1: 'Habilidad básica',
             '0-0': 'Vue',
             '0-1': 'Diseño de hormigas',
-            '1-0': 'Función de marco',
+            '1-0': 'Función marco',
             '1-0-0': 'Configuración del proyecto',
-            '1-0-1': 'Registro de front-end',
+            '1-0-1': 'Registro frontend',
             '1-0-2': 'Simulacro local',
             '1-0-3': 'globalización',
             '1-0-4': 'Diccionario de datos',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Página componente',
             '1-1-1': 'página de url',
             '1-1-2': 'Página sin permiso',
-            '1-1-3': '404 páginas'
+            '1-1-3': 'Página 404'
         },
         defaultMenu: {
             home: 'Hogar'
         },
         errorTip: {
-            notfoundTip: 'No se encontraron componentes bajo esta ruta',
-            emptyErr: 'Ruta de componente no configurada'
+            notfoundTip: 'No se encontró el componente bajo esta ruta',
+            emptyErr: 'Ruta del componente no configurado'
         }
     },
     sysInfo: {
-        sysIntro: 'Un marco de desarrollo front-end fácil de usar basado en Vue y Ant Design'
+        sysIntro: 'Un marco de desarrollo front-end intermedio y back-end fácil de usar basado en Vue y Ant Design'
     },
     requestInfo: {
         withoutUrl: 'La dirección de solicitud no puede estar vacía',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Cierra todas las pestañas',
-        closeCur: 'Cerrar la pestaña actual',
-        closeOther: 'Cerrar otras etiquetas',
+        closeCur: 'Cierre la pestaña actual',
+        closeOther: 'Cerrar otras pestañas',
         closeRight: 'Cerrar etiqueta derecha',
         singlePage: 'Página independiente',
         refreshPage: 'actualizar página',
-        affixPage: 'Página fija',
+        affixPage: 'Pin de página',
         cancelAffixPage: 'Desprender',
         errorTip: {
             homePageCloseError: 'La página de inicio no puede cerrar',
             affixPageCloseError: 'No se permite cerrar la página fija',
             homePageAffixError: 'La página de inicio no se puede desanclar'
         },
-        checkSave: '¿Quieres cerrar la página?(Asegúrese de que se haya guardado el contenido de la página de etiqueta roja)',
-        cancelClose: 'Operación cerrada cancelada'
+        checkSave: '¿Quieres cerrar la página?(Asegúrese de que se haya guardado el contenido de la página marcada en rojo)',
+        cancelClose: 'Operación de cierre cancelada'
     },
     personalCenter: {
-        frontendLog: 'Registro de front-end',
-        customSetting: 'Configuraciones personalizadas',
+        frontendLog: 'Registro frontend',
+        customSetting: 'Personalización',
         logout: 'desconectar'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Lo sentimos, la página que visitaste no existe',
             notrightTip: 'Lo sentimos, no tienes permiso para acceder a esta página',
-            noserviceTip: 'Lo sentimos, algo salió mal con el servidor, intente más tarde'
+            noserviceTip: 'Lo sentimos, hubo un problema con el servidor, intente nuevamente más tarde'
         },
         btnText: 'Cerrar página'
     },
     searchPanel: {
         btn: {
             search: 'Preguntar',
-            shrink: 'Colapso',
+            shrink: 'Guardar',
             reset: 'Reiniciar',
             unshrink: 'Desplegar'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Vacío'
         },
         time: {
-            plh: 'Por favor seleccione un marco de tiempo',
+            plh: 'Por favor seleccione un rango de tiempo',
             range: 'límite de tiempo',
-            halfDay: 'Dentro de medio día',
+            halfDay: 'Medio día',
             oneDay: 'En un día',
             weekDay: 'dentro de una semana',
-            monthDay: 'En un mes'
+            monthDay: 'Dentro de un mes'
         },
         type: {
             logType: 'Tipo de registro',
-            plh: 'Por favor seleccione un tipo de registro'
+            plh: 'Por favor seleccione el tipo de registro'
         },
         tableColumns: {
             index: 'Número de serie',
@@ -186,7 +186,7 @@ export default {
         request: 'Solicitar datos',
         error: {
             cancel: 'Operación vacía cancelada',
-            confirm: '¿Quieres borrar el registro?(El registro se vaciará y no se podrá recuperar)'
+            confirm: '¿Quieres borrar el registro?(Si el registro se vacía, no se puede recuperar)'
         },
         success: 'El registro ha sido vaciado'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Ver'
+    },
+    setting: {
+        customEntry: 'Entrada rápida',
+        systemSwitch: 'Configuración del sistema',
+        isMock: 'Ya sea para burlarse',
+        isHotKey: 'Si la tecla de acceso directo',
+        isBreadCrumb: 'Si las migas de pan',
+        isCache: 'Ya sea para almacenar en caché',
+        isI18n: 'Ya sea para internacionalizar'
     }
 }

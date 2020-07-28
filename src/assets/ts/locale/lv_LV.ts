@@ -3,7 +3,7 @@ export default {
     country: 'LV',
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',
-        byPhoneBtn: 'Tālruņa numura pieteikšanās',
+        byPhoneBtn: 'Mobilā tālruņa numura pieteikšanās',
         accountPlaceholder: 'lūdzu, ievadiet kontu',
         passwordPlaceholder: 'Lūdzu, ievadiet paroli',
         autoLogin: 'auto pieteikšanās',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Nesūtiet atkārtoti',
-            success: 'Gūstiet panākumus',
+            success: 'Veiksmīgi',
             codeTip: 'Jūsu verifikācijas kods ir'
         },
         phonePlaceholder: 'Lūdzu, ievadiet tālruņa numuru',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Pārbaudes kods',
         validBtn: 'saņemt verifikācijas kodu',
         loginSuccess: 'pieteikšanās veiksmīga'
     },
@@ -36,9 +36,9 @@ export default {
             1: 'Pamata spējas',
             '0-0': 'Vue',
             '0-1': 'Skudru dizains',
-            '1-0': 'Rāmja funkcija',
+            '1-0': 'Ietvara funkcija',
             '1-0-0': 'Projekta konfigurācija',
-            '1-0-1': 'Sākuma žurnāls',
+            '1-0-1': 'Frontend log',
             '1-0-2': 'Vietējie izspēles',
             '1-0-3': 'globalizācija',
             '1-0-4': 'Datu vārdnīca',
@@ -56,12 +56,12 @@ export default {
             home: 'Mājas'
         },
         errorTip: {
-            notfoundTip: 'Šajā ceļā nav atrasts neviens komponents',
-            emptyErr: 'Komponenta ceļš nav konfigurēts'
+            notfoundTip: 'Komponents zem šī ceļa netika atrasts',
+            emptyErr: 'Nekonfigurēts komponenta ceļš'
         }
     },
     sysInfo: {
-        sysIntro: 'Viegli lietojams priekšējās daļas izstrādes ietvars, kas balstīts uz Vue un Ant Design'
+        sysIntro: 'Viegli lietojams vidējā un aizmugurējā priekšējā gala attīstības ietvars, kas balstīts uz Vue un Ant dizainu'
     },
     requestInfo: {
         withoutUrl: 'Pieprasījuma adreses lauks nedrīkst būt tukšs',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Aizveriet visas cilnes',
-        closeCur: 'Aizveriet pašreizējo cilni',
-        closeOther: 'Aizveriet citus tagus',
+        closeCur: 'Aizvērt pašreizējo cilni',
+        closeOther: 'Aizveriet citas cilnes',
         closeRight: 'Aizveriet labo etiķeti',
         singlePage: 'Neatkarīga lapa',
         refreshPage: 'atsvaidzināt lapu',
-        affixPage: 'Fiksēta lapa',
+        affixPage: 'Piespraust lapu',
         cancelAffixPage: 'Atspraust',
         errorTip: {
             homePageCloseError: 'Mājas lapu nav atļauts aizvērt',
             affixPageCloseError: 'Fiksēto lapu nav atļauts aizvērt',
             homePageAffixError: 'Mājaslapu nevar atsaistīt'
         },
-        checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, vai sarkanās etiķetes lapas saturs ir saglabāts.)',
-        cancelClose: 'Slēgtā darbība atcelta'
+        checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, vai sarkanā krāsā aprakstītās lapas saturs ir saglabāts.)',
+        cancelClose: 'Aizvērt darbību tika atcelta'
     },
     personalCenter: {
-        frontendLog: 'Sākuma žurnāls',
-        customSetting: 'Personalizētie iestatījumi',
+        frontendLog: 'Frontend log',
+        customSetting: 'Personalizēšana',
         logout: 'izrakstīties'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Atvainojiet, jūsu apmeklētā lapa neeksistē',
             notrightTip: 'Diemžēl jums nav atļaujas piekļūt šai lapai',
-            noserviceTip: 'Atvainojiet, kaut kas neizdevās ar serveri, lūdzu, vēlāk mēģiniet vēlreiz'
+            noserviceTip: 'Diemžēl radās problēma ar serveri. Lūdzu, vēlāk mēģiniet vēlreiz'
         },
         btnText: 'Aizvērt lapu'
     },
     searchPanel: {
         btn: {
             search: 'Jautāt',
-            shrink: 'Sakļaut',
+            shrink: 'Nolikt malā',
             reset: 'Atiestatīt',
             unshrink: 'Atlocīt'
         }
@@ -165,12 +165,12 @@ export default {
             remove: 'Tukšs'
         },
         time: {
-            plh: 'Lūdzu, atlasiet laika grafiku',
+            plh: 'Lūdzu, atlasiet laika diapazonu',
             range: 'laika limits',
-            halfDay: 'Pus dienas laikā',
+            halfDay: 'Pusi dienas',
             oneDay: 'vienā dienā',
             weekDay: 'nedēļas laikā',
-            monthDay: 'Viena mēneša laikā'
+            monthDay: 'Mēneša laikā'
         },
         type: {
             logType: 'Žurnāla tips',
@@ -186,7 +186,7 @@ export default {
         request: 'Pieprasīt datus',
         error: {
             cancel: 'Tukša darbība atcelta',
-            confirm: 'Vai vēlaties notīrīt žurnālu?(Žurnāls tiks iztukšots, un to nevar iegūt)'
+            confirm: 'Vai vēlaties notīrīt žurnālu?(Ja žurnāls ir iztukšots, to nevar iegūt)'
         },
         success: 'Žurnāls ir iztukšots'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Skats'
+    },
+    setting: {
+        customEntry: 'Ātra ieeja',
+        systemSwitch: 'Sistēmas konfigurācija',
+        isMock: 'Vai izsmiet',
+        isHotKey: 'Vai īsinājumtaustiņš',
+        isBreadCrumb: 'Vai maizes drupatas',
+        isCache: 'Vai kešatmiņā',
+        isI18n: 'Vai internacionalizēt'
     }
 }

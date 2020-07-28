@@ -2,10 +2,10 @@ export default {
     locale: 'pl',
     country: 'PL',
     loginForm: {
-        byAccountBtn: 'Hasło logowania do konta',
-        byPhoneBtn: 'Login do numeru telefonu',
+        byAccountBtn: 'Zaloguj się za pomocą hasła do konta',
+        byPhoneBtn: 'Logowanie na numer telefonu komórkowego',
         accountPlaceholder: 'proszę podać konto',
-        passwordPlaceholder: 'Proszę podaj hasło',
+        passwordPlaceholder: 'Proszę wprowadzić hasło',
         autoLogin: 'automatyczne logowanie',
         forgetBtn: 'zapomnij hasło',
         loginBtn: 'Zaloguj sie',
@@ -20,25 +20,25 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Nie wysyłaj wielokrotnie',
-            success: 'Uzyskaj sukces',
+            success: 'Odnoszący sukcesy',
             codeTip: 'Twój kod weryfikacyjny to'
         },
         phonePlaceholder: 'Proszę podać numer telefonu',
-        validPlaceholder: 'Captcha',
-        validBtn: 'uzyskaj kod weryfikacyjny',
+        validPlaceholder: 'Kod weryfikacyjny',
+        validBtn: 'uzyskać kod weryfikacyjny',
         loginSuccess: 'Logowanie zakończone sukcesem'
     },
     menuObj: {
-        basicFeature: 'Podstawowa umiejętność',
-        cpUse: 'Wykorzystanie komponentu',
+        basicFeature: 'Podstawowe umiejętności',
+        cpUse: 'Użycie komponentów',
         childMenu: {
             0: 'Podstawowe ramy',
-            1: 'Podstawowa umiejętność',
+            1: 'Podstawowe umiejętności',
             '0-0': 'Vue',
-            '0-1': 'Projekt mrówki',
-            '1-0': 'Funkcja ramki',
+            '0-1': 'Ant Design',
+            '1-0': 'Funkcja ramowa',
             '1-0-0': 'Konfiguracja projektu',
-            '1-0-1': 'Dziennik front-end',
+            '1-0-1': 'Dziennik frontendowy',
             '1-0-2': 'Lokalna makieta',
             '1-0-3': 'globalizacja',
             '1-0-4': 'Słownik danych',
@@ -47,25 +47,25 @@ export default {
             '1-0-7': 'Kontrola dostępu',
             '1-0-8': 'Klawisz skrótu',
             '1-1': 'Funkcja strony',
-            '1-1-0': 'Strona komponentu',
-            '1-1-1': 'strona URL',
-            '1-1-2': 'Brak strony zezwolenia',
-            '1-1-3': '404 strony'
+            '1-1-0': 'Strona komponentów',
+            '1-1-1': 'strona url',
+            '1-1-2': 'Brak strony uprawnień',
+            '1-1-3': '404 strona'
         },
         defaultMenu: {
             home: 'Dom'
         },
         errorTip: {
-            notfoundTip: 'Nie znaleziono komponentu pod tą ścieżką',
-            emptyErr: 'Ścieżka komponentu nie została skonfigurowana'
+            notfoundTip: 'Nie znaleziono komponentu w tej ścieżce',
+            emptyErr: 'Nieskonfigurowana ścieżka komponentu'
         }
     },
     sysInfo: {
-        sysIntro: 'Łatwy w użyciu front-end framework programistyczny oparty na Vue i Ant Design'
+        sysIntro: 'Łatwa w użyciu platforma programistyczna front-end dla środkowego i zaplecza oparta na Vue i Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adres żądania nie może być pusty',
-        networkErr: 'Żądanie sieci nie powiodło się, spróbuj ponownie później'
+        networkErr: 'Żądanie sieciowe nie powiodło się, spróbuj ponownie później'
     },
     localeMap: {
         ar: 'arabski',
@@ -93,8 +93,8 @@ export default {
         ja: 'język japoński',
         kn: 'Kannada',
         ko: 'koreański',
-        'ku-iq': 'Środkowo-kurdyjski',
-        lv: 'Środkowo-kurdyjski',
+        'ku-iq': 'Centralny kurdyjski',
+        lv: 'Centralny kurdyjski',
         mk: 'macedoński',
         'mn-mn': 'mongolski',
         'ms-my': 'malajski',
@@ -121,81 +121,81 @@ export default {
     },
     tagObj: {
         closeAll: 'Zamknąć wszystkie zakładki',
-        closeCur: 'Zamknij bieżącą kartę',
-        closeOther: 'Zamknij inne tagi',
+        closeCur: 'Zamknij kartę',
+        closeOther: 'Zamknij inne karty',
         closeRight: 'Zamknij prawą etykietę',
         singlePage: 'Niezależna strona',
         refreshPage: 'Odśwież stronę',
-        affixPage: 'Naprawiono stronę',
+        affixPage: 'Przypnij stronę',
         cancelAffixPage: 'Odpiąć',
         errorTip: {
             homePageCloseError: 'Strona główna nie może zostać zamknięta',
-            affixPageCloseError: 'Naprawiona strona nie może zostać zamknięta',
-            homePageAffixError: 'Strona główna nie może zostać odpięta'
+            affixPageCloseError: 'Naprawionej strony nie można zamknąć',
+            homePageAffixError: 'Nie można odpiąć strony głównej'
         },
-        checkSave: 'Czy chcesz zamknąć stronę?(Upewnij się, że treść strony z czerwoną etykietą została zapisana)',
-        cancelClose: 'Zamknięta operacja anulowana'
+        checkSave: 'Chcesz zamknąć stronę?(Upewnij się, że zawartość strony zaznaczonej na czerwono została zapisana)',
+        cancelClose: 'Zamknięcie operacji zostało anulowane'
     },
     personalCenter: {
-        frontendLog: 'Dziennik front-end',
-        customSetting: 'Spersonalizowane ustawienia',
+        frontendLog: 'Dziennik frontendowy',
+        customSetting: 'Personalizacja',
         logout: 'Wyloguj się'
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Przepraszamy, odwiedzona strona nie istnieje',
-            notrightTip: 'Przepraszamy, nie masz uprawnień dostępu do tej strony',
-            noserviceTip: 'Niestety, coś poszło nie tak z serwerem, spróbuj ponownie później'
+            notfoundTip: 'Przepraszamy, strona, którą odwiedziłeś, nie istnieje',
+            notrightTip: 'Przepraszamy, nie masz pozwolenia na dostęp do tej strony',
+            noserviceTip: 'Przepraszamy, wystąpił problem z serwerem, spróbuj ponownie później'
         },
         btnText: 'Zamknij stronę'
     },
     searchPanel: {
         btn: {
             search: 'Dowiadywać się',
-            shrink: 'Zawalić się',
+            shrink: 'Odłożyć',
             reset: 'Resetowanie',
             unshrink: 'Rozwijać się'
         }
     },
     logline: {
-        list: 'Lista dzienników',
+        list: 'Lista dziennika',
         detail: 'Szczegóły dziennika',
         btnList: {
             export: 'Eksport',
             remove: 'Pusty'
         },
         time: {
-            plh: 'Wybierz przedział czasowy',
+            plh: 'Wybierz zakres czasu',
             range: 'limit czasu',
-            halfDay: 'W ciągu pół dnia',
+            halfDay: 'Połowa dnia',
             oneDay: 'w jeden dzień',
             weekDay: 'w ciągu tygodnia',
-            monthDay: 'W ciągu jednego miesiąca'
+            monthDay: 'W ciągu miesiąca'
         },
         type: {
-            logType: 'Rodzaj dziennika',
+            logType: 'Typ dziennika',
             plh: 'Wybierz typ dziennika'
         },
         tableColumns: {
             index: 'Numer seryjny',
             desc: 'Opis dziennika',
-            type: 'Rodzaj dziennika',
+            type: 'Typ dziennika',
             time: 'czas',
             op: 'operacyjny'
         },
         request: 'Poproś o dane',
         error: {
             cancel: 'Anulowano operację pustą',
-            confirm: 'Czy chcesz wyczyścić dziennik?(Dziennik zostanie opróżniony i nie będzie można go odzyskać)'
+            confirm: 'Czy chcesz wyczyścić dziennik?(Jeśli dziennik zostanie opróżniony, nie można go odzyskać)'
         },
         success: 'Dziennik został opróżniony'
     },
     comTable: {
         columns: {
-            title: 'Ustawienia kolumny',
+            title: 'Ustawienia kolumn',
             all: 'Zaznacz wszystko',
             reset: 'Resetowanie',
-            fixedLeft: 'Naprawiono po lewej',
+            fixedLeft: 'Naprawiono w lewo',
             fixedRight: 'Naprawiono w prawo',
             cancelFixed: 'Odpiąć'
         },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Widok'
+    },
+    setting: {
+        customEntry: 'Szybkie wejście',
+        systemSwitch: 'Konfiguracja systemu',
+        isMock: 'Czy drwić',
+        isHotKey: 'Czy klawisz skrótu',
+        isBreadCrumb: 'Czy bułka tarta',
+        isCache: 'Czy buforować',
+        isI18n: 'Czy do internacjonalizacji'
     }
 }

@@ -3,9 +3,9 @@ export default {
     country: 'DE',
     loginForm: {
         byAccountBtn: 'Konto Passwort Login',
-        byPhoneBtn: 'Login Login',
+        byPhoneBtn: 'Anmeldenummer der Handynummer',
         accountPlaceholder: 'Bitte geben Sie ein Konto ein',
-        passwordPlaceholder: 'Bitte geben Sie das Passwort ein',
+        passwordPlaceholder: 'Bitte Passwort eingeben',
         autoLogin: 'automatische Anmeldung',
         forgetBtn: 'Passwort vergessen',
         loginBtn: 'Anmeldung',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Nicht wiederholt senden',
-            success: 'Erfolg haben',
+            success: 'Erfolgreich',
             codeTip: 'Ihr Bestätigungscode lautet'
         },
         phonePlaceholder: 'Bitte geben Sie die Telefonnummer ein',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Bestätigungscode',
         validBtn: 'Bestätigungscode erhalten',
         loginSuccess: 'Anmeldung erfolgreich'
     },
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Ameisendesign',
             '1-0': 'Rahmenfunktion',
             '1-0-0': 'Projektkonfiguration',
-            '1-0-1': 'Front-End-Protokoll',
+            '1-0-1': 'Frontend-Protokoll',
             '1-0-2': 'Lokale Verspottung',
             '1-0-3': 'Globalisierung',
             '1-0-4': 'Datenwörterbuch',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Komponentenseite',
             '1-1-1': 'URL-Seite',
             '1-1-2': 'Keine Berechtigungsseite',
-            '1-1-3': '404 Seiten'
+            '1-1-3': '404 Seite'
         },
         defaultMenu: {
             home: 'Zuhause'
         },
         errorTip: {
-            notfoundTip: 'Unter diesem Pfad wurde keine Komponente gefunden',
-            emptyErr: 'Komponentenpfad nicht konfiguriert'
+            notfoundTip: 'Die Komponente unter diesem Pfad wurde nicht gefunden',
+            emptyErr: 'Nicht konfigurierter Komponentenpfad'
         }
     },
     sysInfo: {
-        sysIntro: 'Ein benutzerfreundliches Front-End-Entwicklungsframework, das auf Vue und Ant Design basiert'
+        sysIntro: 'Ein benutzerfreundliches Front-End-Entwicklungsframework für das mittlere und Back-End, das auf Vue und Ant Design basiert'
     },
     requestInfo: {
         withoutUrl: 'Die Anforderungsadresse darf nicht leer sein',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Alle Fenster schließen',
-        closeCur: 'Schließen Sie die aktuelle Registerkarte',
-        closeOther: 'Schließen Sie andere Tags',
+        closeCur: 'Aktuelle Registerkarte schließen',
+        closeOther: 'Schließen Sie andere Registerkarten',
         closeRight: 'Schließen Sie das rechte Etikett',
         singlePage: 'Unabhängige Seite',
         refreshPage: 'Seite neu laden',
-        affixPage: 'Feste Seite',
+        affixPage: 'Pin Seite',
         cancelAffixPage: 'Lösen Sie den Stift',
         errorTip: {
             homePageCloseError: 'Die Homepage darf nicht geschlossen werden',
             affixPageCloseError: 'Feste Seite darf nicht geschlossen werden',
             homePageAffixError: 'Die Homepage kann nicht entfernt werden'
         },
-        checkSave: 'Möchten Sie die Seite schließen?(Bitte stellen Sie sicher, dass der Inhalt der Red Label-Seite gespeichert wurde.)',
-        cancelClose: 'Geschlossener Betrieb abgebrochen'
+        checkSave: 'Möchten Sie die Seite schließen?(Bitte stellen Sie sicher, dass der Inhalt der rot markierten Seite gespeichert wurde.)',
+        cancelClose: 'Schließvorgang abgebrochen'
     },
     personalCenter: {
-        frontendLog: 'Front-End-Protokoll',
-        customSetting: 'Personalisierte Einstellungen',
+        frontendLog: 'Frontend-Protokoll',
+        customSetting: 'Personalisierung',
         logout: 'Ausloggen'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Die von Ihnen besuchte Seite ist leider nicht vorhanden',
             notrightTip: 'Sie haben leider keine Berechtigung, auf diese Seite zuzugreifen',
-            noserviceTip: 'Entschuldigung, mit dem Server ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut'
+            noserviceTip: 'Entschuldigung, es gab ein Problem mit dem Server. Bitte versuchen Sie es später erneut'
         },
         btnText: 'Seite schließen'
     },
     searchPanel: {
         btn: {
             search: 'Anfragen',
-            shrink: 'Zusammenbruch',
+            shrink: 'Weglegen',
             reset: 'Zurücksetzen',
             unshrink: 'Entfalten'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Leer'
         },
         time: {
-            plh: 'Bitte wählen Sie einen Zeitrahmen',
+            plh: 'Bitte wählen Sie einen Zeitraum',
             range: 'Zeitlimit',
-            halfDay: 'Innerhalb eines halben Tages',
+            halfDay: 'Einen halben Tag',
             oneDay: 'in einem Tag',
             weekDay: 'innerhalb einer Woche',
             monthDay: 'Innerhalb eines Monats'
         },
         type: {
             logType: 'Protokolltyp',
-            plh: 'Bitte wählen Sie einen Protokolltyp'
+            plh: 'Bitte wählen Sie den Protokolltyp'
         },
         tableColumns: {
             index: 'Ordnungsnummer',
@@ -186,9 +186,9 @@ export default {
         request: 'Daten anfordern',
         error: {
             cancel: 'Leere Operation abgebrochen',
-            confirm: 'Möchten Sie das Protokoll löschen?(Das Protokoll wird geleert und kann nicht abgerufen werden.)'
+            confirm: 'Möchten Sie das Protokoll löschen?(Wenn das Protokoll geleert wird, kann es nicht abgerufen werden.)'
         },
-        success: 'Das Protokoll wurde geleert'
+        success: 'Protokoll wurde geleert'
     },
     comTable: {
         columns: {
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Aussicht'
+    },
+    setting: {
+        customEntry: 'Schneller Einstieg',
+        systemSwitch: 'Systemkonfiguration',
+        isMock: 'Ob zu verspotten',
+        isHotKey: 'Ob Tastenkürzel',
+        isBreadCrumb: 'Ob Semmelbrösel',
+        isCache: 'Ob zwischengespeichert werden soll',
+        isI18n: 'Ob zu internationalisieren'
     }
 }

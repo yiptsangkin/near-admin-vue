@@ -54,7 +54,7 @@
                 'curTagList'
             ]),
             curCtxPosStyle () {
-                const self = this as any as any
+                const self = this as any
                 const leftMargin = self.shrinkLeftMenu ? self.curCtxPos.x : self.curCtxPos.x - 200
                 return `margin-top: ${self.curCtxPos.y}px; margin-left: ${leftMargin}px`
             }

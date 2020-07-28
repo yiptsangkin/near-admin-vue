@@ -3,9 +3,9 @@ export default {
     country: 'RO',
     loginForm: {
         byAccountBtn: 'Autentificare parolă cont',
-        byPhoneBtn: 'Conectare la numărul de telefon',
+        byPhoneBtn: 'Conectare la numărul de telefon mobil',
         accountPlaceholder: 'vă rugăm să introduceți contul',
-        passwordPlaceholder: 'Vă rugăm să introduceți parola',
+        passwordPlaceholder: 'Te rog introdu parola',
         autoLogin: 'Logare automata',
         forgetBtn: 'parola uitata',
         loginBtn: 'Autentificare',
@@ -20,11 +20,11 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Nu trimiteți în mod repetat',
-            success: 'Obțineți succes',
+            success: 'De succes',
             codeTip: 'Codul dvs. de verificare este'
         },
         phonePlaceholder: 'Vă rugăm să introduceți numărul de telefon',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Cod de verificare',
         validBtn: 'obțineți codul de verificare',
         loginSuccess: 'autentificare reușită'
     },
@@ -38,7 +38,7 @@ export default {
             '0-1': 'Furnica design',
             '1-0': 'Funcția cadru',
             '1-0-0': 'Configurarea proiectului',
-            '1-0-1': 'Jurnal front-end',
+            '1-0-1': 'Jurnal frontend',
             '1-0-2': 'Batjocura locală',
             '1-0-3': 'globalizarea',
             '1-0-4': 'Dicționar de date',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Pagina componentă',
             '1-1-1': 'pagina URL',
             '1-1-2': 'Fără permisiune',
-            '1-1-3': '404 pagini'
+            '1-1-3': '404 pag'
         },
         defaultMenu: {
             home: 'Acasă'
         },
         errorTip: {
-            notfoundTip: 'Nici o componentă nu a fost găsită sub această cale',
-            emptyErr: 'Calea componentă nu este configurată'
+            notfoundTip: 'Componenta de pe această cale nu a fost găsită',
+            emptyErr: 'Calea componentelor neconfigurate'
         }
     },
     sysInfo: {
-        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat, bazat pe Vue și Ant Design'
+        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat, mediu și back-end, bazat pe Vue și Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa solicitării nu poate fi goală',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Inchide toate filele',
-        closeCur: 'Închideți fila curentă',
-        closeOther: 'Închideți alte etichete',
+        closeCur: 'Inchide fereastra curenta',
+        closeOther: 'Închideți alte file',
         closeRight: 'Închideți eticheta dreaptă',
         singlePage: 'Pagina independentă',
         refreshPage: 'Reîmprospătare pagină',
-        affixPage: 'Pagină fixă',
+        affixPage: 'Pagină Pin',
         cancelAffixPage: 'Anulați fixarea',
         errorTip: {
             homePageCloseError: 'Pagina de pornire nu are voie să se închidă',
             affixPageCloseError: 'Pagina fixă ​​nu are voie să se închidă',
             homePageAffixError: 'Pagina de pornire nu poate fi anulată'
         },
-        checkSave: 'Vrei să închizi pagina?(Vă rugăm să vă asigurați că conținutul paginii cu eticheta roșie a fost salvat)',
+        checkSave: 'Vrei să închizi pagina?(Vă rugăm să vă asigurați că conținutul paginii marcate cu roșu a fost salvat)',
         cancelClose: 'Operațiunea închisă a fost anulată'
     },
     personalCenter: {
-        frontendLog: 'Jurnal front-end',
-        customSetting: 'Setări personalizate',
+        frontendLog: 'Jurnal frontend',
+        customSetting: 'Personalizare',
         logout: 'Sign out'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Ne pare rău, pagina pe care ați vizitat-o ​​nu există',
             notrightTip: 'Ne pare rău, nu aveți permisiunea de a accesa această pagină',
-            noserviceTip: 'Ne pare rău, ceva nu a funcționat corect cu serverul. Încercați din nou mai târziu'
+            noserviceTip: 'Ne pare rău, a existat o problemă cu serverul. Încercați din nou mai târziu'
         },
         btnText: 'Închideți pagina'
     },
     searchPanel: {
         btn: {
             search: 'Întreba',
-            shrink: 'Colaps',
+            shrink: 'Pune deoparte',
             reset: 'Resetați',
             unshrink: 'Unfold'
         }
@@ -165,16 +165,16 @@ export default {
             remove: 'Gol'
         },
         time: {
-            plh: 'Selectați un interval de timp',
+            plh: 'Vă rugăm să selectați un interval de timp',
             range: 'limita',
-            halfDay: 'În jumătate de zi',
+            halfDay: 'Jumătate de zi',
             oneDay: 'intr-o zi',
             weekDay: 'într-o săptămână',
-            monthDay: 'În termen de o lună'
+            monthDay: 'Într-o lună'
         },
         type: {
             logType: 'Tip jurnal',
-            plh: 'Vă rugăm să selectați un tip de jurnal'
+            plh: 'Vă rugăm să selectați tipul de jurnal'
         },
         tableColumns: {
             index: 'Număr de serie',
@@ -186,7 +186,7 @@ export default {
         request: 'Solicitați date',
         error: {
             cancel: 'Operația goală a fost anulată',
-            confirm: 'Doriți să ștergeți jurnalul?(Jurnalul va fi golit și nu poate fi recuperat)'
+            confirm: 'Doriți să ștergeți jurnalul?(Dacă jurnalul este golit, acesta nu poate fi recuperat)'
         },
         success: 'Jurnalul a fost golit'
     },
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Vedere'
+    },
+    setting: {
+        customEntry: 'Intrare rapidă',
+        systemSwitch: 'Configurarea sistemului',
+        isMock: 'Indiferent dacă este Mock',
+        isHotKey: 'Indiferent dacă este cheia rapidă',
+        isBreadCrumb: 'Indiferent dacă pescuitul',
+        isCache: 'Indiferent dacă să cache',
+        isI18n: 'Indiferent dacă este internațional'
     }
 }

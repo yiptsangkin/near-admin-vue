@@ -22,12 +22,13 @@ const defaultTagList = [
 
 let cacheTagList
 let cacheTagIndex
+const cacheEntryList = JSON.parse(localStorage.getItem('nearAdminCustomerEntry') || '[]')
 
 if (comConfig.buildSwitch.isCache) {
     cacheTagList = JSON.parse(localStorage.getItem('nearAdminTagList') || JSON.stringify(defaultTagList))
     cacheTagIndex = JSON.parse(localStorage.getItem('nearAdminTagIndex') || '0')
 } else {
-    cacheTagList = []
+    cacheTagList = defaultTagList
     cacheTagIndex = 0
 }
 
@@ -121,7 +122,8 @@ interface State {
     shrinkLeftMenu: boolean,
     saveWarning: boolean,
     isFullScreen: boolean,
-    isCpLoading: boolean
+    isCpLoading: boolean,
+    cacheEntry: any[]
 }
 
 interface Getter {
@@ -150,7 +152,8 @@ const state: State = {
     shrinkLeftMenu: false,
     saveWarning: false,
     isFullScreen: false,
-    isCpLoading: true
+    isCpLoading: true,
+    cacheEntry: []
 }
 
 const getters: Getter = {
@@ -195,6 +198,9 @@ const getters: Getter = {
     },
     isCpLoading: (getterSate: State) => {
         return getterSate.isCpLoading
+    },
+    cacheEntry: (getterSate: State) => {
+        return getterSate.cacheEntry
     }
 }
 
@@ -204,6 +210,8 @@ const mutations = {
     },
     changeMenu: (mutationState: State, menuObj: MenuList) => {
         mutationState.menuObj = menuObj
+        // get cache customer entry
+        mutationState.cacheEntry = utils.getMenuRootCp(menuObj.menuList, true, undefined, cacheEntryList)
     },
     changeCurMenu: (mutationState: State, curMenu: number[]) => {
         mutationState.curMenu = curMenu
@@ -307,6 +315,9 @@ const mutations = {
     },
     changeCpLoading: (mutationState: State, isCpLoading: boolean) => {
         mutationState.isCpLoading = isCpLoading
+    },
+    changeCacheEntry: (mutationState: State, cacheEntry: any[]) => {
+        mutationState.cacheEntry = cacheEntry
     }
 }
 
@@ -357,6 +368,9 @@ const actions = {
     },
     changeCpLoading: (context: ActionContext<State, State>, isCpLoading: boolean) => {
         context.commit('changeCpLoading', isCpLoading)
+    },
+    changeCacheEntry: (context: ActionContext<State, State>, cacheEntry: any[]) => {
+        context.commit('changeCacheEntry', cacheEntry)
     }
 }
 

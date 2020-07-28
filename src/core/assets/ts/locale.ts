@@ -96,5 +96,14 @@ export default {
     },
     normalBtn: {
         detail: 'normalBtn.detail'
+    },
+    setting: {
+        customEntry: 'setting.customEntry',
+        systemSwitch: 'setting.systemSwitch',
+        isMock: 'setting.isMock',
+        isHotKey: 'setting.isHotKey',
+        isBreadCrumb: 'setting.isBreadCrumb',
+        isCache: 'setting.isCache',
+        isI18n: 'setting.isI18n'
     }
 }

@@ -3,9 +3,9 @@ export default {
     country: 'NL',
     loginForm: {
         byAccountBtn: 'Account wachtwoord login',
-        byPhoneBtn: 'Telefoonnummer login',
+        byPhoneBtn: 'Inloggen op mobiel telefoonnummer',
         accountPlaceholder: 'voer alstublieft uw account in',
-        passwordPlaceholder: 'Vul alstublieft het wachtwoord in',
+        passwordPlaceholder: 'Voer wachtwoord in alstublieft',
         autoLogin: 'Automatische login',
         forgetBtn: 'wachtwoord vergeten',
         loginBtn: 'Log in',
@@ -20,25 +20,25 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Verzend niet herhaaldelijk',
-            success: 'Krijg succes',
+            success: 'Succesvol',
             codeTip: 'Uw verificatiecode is'
         },
         phonePlaceholder: 'Voer een telefoonnummer in',
-        validPlaceholder: 'Captcha',
+        validPlaceholder: 'Verificatie code',
         validBtn: 'krijg verificatiecode',
         loginSuccess: 'Succesvol ingelogd'
     },
     menuObj: {
         basicFeature: 'Basisvaardigheid',
-        cpUse: 'Gebruik van componenten',
+        cpUse: 'Componentgebruik',
         childMenu: {
             0: 'Basiskader',
             1: 'Basisvaardigheid',
             '0-0': 'Vue',
             '0-1': 'Mier ontwerp',
-            '1-0': 'Frame functie',
+            '1-0': 'Framework-functie',
             '1-0-0': 'Projectconfiguratie',
-            '1-0-1': 'Front-end logboek',
+            '1-0-1': 'Frontend-logboek',
             '1-0-2': 'Lokale mock',
             '1-0-3': 'globalisering',
             '1-0-4': 'Data woordenboek',
@@ -50,18 +50,18 @@ export default {
             '1-1-0': 'Component pagina',
             '1-1-1': 'url pagina',
             '1-1-2': 'Geen toestemmingspagina',
-            '1-1-3': '404 pagina&#39;s'
+            '1-1-3': '404 pagina'
         },
         defaultMenu: {
             home: 'Huis'
         },
         errorTip: {
-            notfoundTip: 'Geen onderdeel gevonden onder dit pad',
-            emptyErr: 'Componentpad niet geconfigureerd'
+            notfoundTip: 'Het onderdeel onder dit pad is niet gevonden',
+            emptyErr: 'Ongeconfigureerd componentpad'
         }
     },
     sysInfo: {
-        sysIntro: 'Een eenvoudig te gebruiken front-end ontwikkelraamwerk gebaseerd op Vue en Ant Design'
+        sysIntro: 'Een eenvoudig te gebruiken midden- en back-end front-end ontwikkelraamwerk gebaseerd op Vue en Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Verzoekadres mag niet leeg zijn',
@@ -121,38 +121,38 @@ export default {
     },
     tagObj: {
         closeAll: 'Sluit alle tabbladen',
-        closeCur: 'Sluit het huidige tabblad',
-        closeOther: 'Sluit andere tags',
+        closeCur: 'Sluit huidige tabblad',
+        closeOther: 'Sluit andere tabbladen',
         closeRight: 'Sluit rechter label',
         singlePage: 'Onafhankelijke pagina',
         refreshPage: 'pagina hernieuwen',
-        affixPage: 'Vaste pagina',
+        affixPage: 'Pagina vastzetten',
         cancelAffixPage: 'Maak los',
         errorTip: {
             homePageCloseError: 'Homepage mag niet sluiten',
             affixPageCloseError: 'Vaste pagina mag niet sluiten',
             homePageAffixError: 'Startpagina kan niet worden losgemaakt'
         },
-        checkSave: 'Wil je de pagina sluiten?(Zorg ervoor dat de inhoud van de rode labelpagina is opgeslagen)',
-        cancelClose: 'Gesloten operatie geannuleerd'
+        checkSave: 'Wil je de pagina sluiten?(Zorg ervoor dat de inhoud van de rood gemarkeerde pagina is opgeslagen)',
+        cancelClose: 'Sluiten is geannuleerd'
     },
     personalCenter: {
-        frontendLog: 'Front-end logboek',
-        customSetting: 'Persoonlijke instellingen',
+        frontendLog: 'Frontend-logboek',
+        customSetting: 'Personalisatie',
         logout: 'afmelden'
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Sorry, de pagina die je hebt bezocht bestaat niet',
             notrightTip: 'Sorry, je hebt geen toestemming om deze pagina te openen',
-            noserviceTip: 'Er is helaas iets misgegaan met de server. Probeer het later opnieuw'
+            noserviceTip: 'Sorry, er is een probleem met de server, probeer het later opnieuw'
         },
         btnText: 'Sluit pagina'
     },
     searchPanel: {
         btn: {
             search: 'Informeer',
-            shrink: 'Ineenstorting',
+            shrink: 'Wegdoen',
             reset: 'Reset',
             unshrink: 'Ontvouwen'
         }
@@ -165,9 +165,9 @@ export default {
             remove: 'Leeg'
         },
         time: {
-            plh: 'Selecteer een tijdsbestek',
+            plh: 'Selecteer een tijdsbereik',
             range: 'tijdslimiet',
-            halfDay: 'Binnen een halve dag',
+            halfDay: 'Een halve dag',
             oneDay: 'in één dag',
             weekDay: 'binnen een week',
             monthDay: 'Binnen een maand'
@@ -186,9 +186,9 @@ export default {
         request: 'Gegevens opvragen',
         error: {
             cancel: 'Lege bewerking geannuleerd',
-            confirm: 'Wil je het log wissen?(Het logboek wordt geleegd en kan niet worden opgehaald)'
+            confirm: 'Wil je het log wissen?(Als het logboek is geleegd, kan het niet worden opgehaald)'
         },
-        success: 'Het logboek is geleegd'
+        success: 'Logboek is geleegd'
     },
     comTable: {
         columns: {
@@ -210,5 +210,14 @@ export default {
     },
     normalBtn: {
         detail: 'Visie'
+    },
+    setting: {
+        customEntry: 'Snelle invoer',
+        systemSwitch: 'Systeem configuratie',
+        isMock: 'Of het nu gaat om bespotten',
+        isHotKey: 'Of het nu een sneltoets is',
+        isBreadCrumb: 'Of het nu kruimels zijn',
+        isCache: 'Of om te cachen',
+        isI18n: 'Of het nu gaat internationaliseren'
     }
 }
