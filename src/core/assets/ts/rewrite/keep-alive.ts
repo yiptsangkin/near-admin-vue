@@ -121,7 +121,12 @@ export default {
 
             const { cache, keys } = this
 
-            if (cache[key] && cache[key].componentOptions.Ctor.lastCid === vnode.componentOptions.Ctor.cid) {
+            if (
+                cache[key] && (
+                cache[key].componentOptions.Ctor.lastCid
+                || (componentOptions.Ctor.extendOptions && componentOptions.Ctor.extendOptions.lastCid))
+                === vnode.componentOptions.Ctor.cid
+            ) {
                 vnode.componentInstance = cache[key].componentInstance
                 utils.arrayRemove(keys, key)
                 keys.push(key)
