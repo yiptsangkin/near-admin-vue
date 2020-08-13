@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend log',
         customSetting: 'Персонализация',
-        logout: 'отписване'
+        customClean: 'Изчистване на конфигурацията',
+        logout: 'отписване',
+        errorTip: {
+            cleanSuccess: 'Празно се изпразва'
+        }
     },
     errorPage: {
         errorTip: {

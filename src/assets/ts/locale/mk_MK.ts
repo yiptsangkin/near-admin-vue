@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Лесна за употреба рамка за развој на средниот и задниот дел, заснована врз основа на Vue и Мравка Дизајн'
+        sysIntro: 'Лесна за употреба, рамка за развој на средниот и задниот дел, заснована врз основа на Vue и Мравка Дизајн'
     },
     requestInfo: {
         withoutUrl: 'Адресата за барање не може да биде празна',
@@ -129,7 +129,7 @@ export default {
         affixPage: 'Страница за пин',
         cancelAffixPage: 'Отпијте го',
         errorTip: {
-            homePageCloseError: 'Не е дозволено затворање на почетната страница',
+            homePageCloseError: 'Главната страница не дозволува затворање',
             affixPageCloseError: 'Фиксната страница не е дозволено да се затвори',
             homePageAffixError: 'Главната страница не може да се откопи'
         },
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Дневник на предниот дел',
         customSetting: 'Персонализација',
-        logout: 'одјави се'
+        customClean: 'Јасна конфигурација',
+        logout: 'одјави се',
+        errorTip: {
+            cleanSuccess: 'Празно успешно'
+        }
     },
     errorPage: {
         errorTip: {

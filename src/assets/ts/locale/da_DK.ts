@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend log',
         customSetting: 'Tilpasning',
-        logout: 'Log ud'
+        customClean: 'Ryd konfiguration',
+        logout: 'Log ud',
+        errorTip: {
+            cleanSuccess: 'Tøm succes'
+        }
     },
     errorPage: {
         errorTip: {

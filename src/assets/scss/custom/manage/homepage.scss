@@ -1,0 +1,34 @@
+@import "~@corescss/params.scss";
+@import "~@scss/custom/theme/theme";
+@import "~@corescss/mixins.scss";
+
+.customer-entry{
+  padding: 12px;
+  .customer-entry-item-wrp{
+    background-color: $grey-f;
+    padding: 6px;
+    border-radius: 4px;
+    .customer-entry-item{
+      padding: 6px;
+      width: 25%;
+      text-align: center;
+      display: inline-block;
+      span{
+        max-height: 35px;
+        line-height: 35px;
+        border-radius: 4px;
+        display: -webkit-box;
+        padding: 0 6px;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        cursor: pointer;
+        overflow: hidden;
+        @include ellipse(1);
+        transition: .2s;
+        &:hover{
+          box-shadow: 0px 0px 0px 3px rgba($primary-color, 0.2);
+        }
+      }
+    }
+  }
+}

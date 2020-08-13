@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Αρχείο καταγραφής frontend',
         customSetting: 'Εξατομίκευση',
-        logout: 'αποσύνδεση'
+        customClean: 'Εκκαθάριση διαμόρφωσης',
+        logout: 'αποσύνδεση',
+        errorTip: {
+            cleanSuccess: 'Άδειασμα με επιτυχία'
+        }
     },
     errorPage: {
         errorTip: {

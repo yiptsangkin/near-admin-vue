@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Dziennik frontendowy',
         customSetting: 'Personalizacja',
-        logout: 'Wyloguj się'
+        customClean: 'Przejrzysta konfiguracja',
+        logout: 'Wyloguj się',
+        errorTip: {
+            cleanSuccess: 'Opróżnij pomyślnie'
+        }
     },
     errorPage: {
         errorTip: {

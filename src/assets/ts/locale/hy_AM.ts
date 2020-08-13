@@ -131,7 +131,7 @@ export default {
         errorTip: {
             homePageCloseError: 'Հիմնական էջը չի թույլատրվում փակել',
             affixPageCloseError: 'Հաստատուն էջը չի թույլատրվում փակել',
-            homePageAffixError: 'Հիմնական էջը չի կարող աննկատելի լինել'
+            homePageAffixError: 'Հիմնական էջը չի կարող աննկատ լինել'
         },
         checkSave: 'Doանկանո՞ւմ եք փակել էջը:(Համոզվեք, որ կարմիրով նշված էջի բովանդակությունը պահպանված է)',
         cancelClose: 'Փակ գործողությունը չեղարկվեց'
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend մատյան',
         customSetting: 'Անհատականացում',
-        logout: 'դուրս գալ'
+        customClean: 'Մաքրել կազմաձևումը',
+        logout: 'դուրս գալ',
+        errorTip: {
+            cleanSuccess: 'Դատարկեք հաջողությամբ'
+        }
     },
     errorPage: {
         errorTip: {

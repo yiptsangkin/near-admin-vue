@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Etuliite',
         customSetting: 'personointi',
-        logout: 'Kirjaudu ulos'
+        customClean: 'Tyhjennä kokoonpano',
+        logout: 'Kirjaudu ulos',
+        errorTip: {
+            cleanSuccess: 'Tyhjennä onnistuneesti'
+        }
     },
     errorPage: {
         errorTip: {

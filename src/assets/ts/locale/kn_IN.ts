@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'ಮುಂಭಾಗ ಲಾಗ್',
         customSetting: 'ವೈಯಕ್ತೀಕರಣ',
-        logout: 'ಸೈನ್ .ಟ್ ಮಾಡಿ'
+        customClean: 'ಸಂರಚನೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ',
+        logout: 'ಸೈನ್ .ಟ್ ಮಾಡಿ',
+        errorTip: {
+            cleanSuccess: 'ಯಶಸ್ವಿಯಾಗಿ ಖಾಲಿ'
+        }
     },
     errorPage: {
         errorTip: {

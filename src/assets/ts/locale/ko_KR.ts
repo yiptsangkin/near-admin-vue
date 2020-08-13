@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: '프론트 엔드 로그',
         customSetting: '개인화',
-        logout: '로그 아웃'
+        customClean: '명확한 구성',
+        logout: '로그 아웃',
+        errorTip: {
+            cleanSuccess: '비우기'
+        }
     },
     errorPage: {
         errorTip: {

@@ -127,7 +127,7 @@ export default {
         singlePage: 'صفحة مستقلة',
         refreshPage: 'إعادة تحميل الصفحة',
         affixPage: 'تثبيت الصفحة',
-        cancelAffixPage: 'أزل',
+        cancelAffixPage: 'إلغاء التثبيت',
         errorTip: {
             homePageCloseError: 'لا يسمح بإغلاق الصفحة الرئيسية',
             affixPageCloseError: 'لا يسمح بإغلاق الصفحة الثابتة',
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'سجل الواجهة الأمامية',
         customSetting: 'إضفاء الطابع الشخصي',
-        logout: 'خروج'
+        customClean: 'تكوين واضح',
+        logout: 'خروج',
+        errorTip: {
+            cleanSuccess: 'إفراغ بنجاح'
+        }
     },
     errorPage: {
         errorTip: {

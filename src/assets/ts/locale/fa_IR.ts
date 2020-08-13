@@ -139,13 +139,17 @@ export default {
     personalCenter: {
         frontendLog: 'ورود به سیستم',
         customSetting: 'شخصی',
-        logout: 'خروج از سیستم'
+        customClean: 'پیکربندی پاک کنید',
+        logout: 'خروج از سیستم',
+        errorTip: {
+            cleanSuccess: 'با موفقیت خالی شد'
+        }
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'متأسفیم ، صفحه‌ای که بازدید کردید وجود ندارد',
             notrightTip: 'متأسفیم ، شما اجازه دسترسی به این صفحه را ندارید',
-            noserviceTip: 'با عرض پوزش ، مشکلی در سرور وجود دارد ، لطفا بعداً دوباره امتحان کنید'
+            noserviceTip: 'متأسفیم ، مشکلی در سرور وجود داشت ، لطفاً بعداً دوباره امتحان کنید'
         },
         btnText: 'بستن صفحه'
     },

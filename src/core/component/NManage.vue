@@ -93,7 +93,8 @@
                     if (
                         ableList.indexOf(curCp.component) !== -1
                         || (curCp.params && ableList.indexOf(curCp.params.dataUrl) !== -1)
-                        || isApiNew) {
+                        || isApiNew
+                    ) {
                         try {
                             let pageCp
                             if (!curCp.isUrl) {
@@ -141,29 +142,10 @@
             ]),
             changeCp (cpInfo: CpInfo, byMenu: boolean = true) {
                 const self = this as any
-                cpInfo = self.formateCpParams(cpInfo)
                 // if empty component, return false
                 if (!cpInfo.component) {
                     self.$message.error(`${self.$t(dict.localeObj.menuObj.errorTip.emptyErr)}`)
                     return false
-                }
-                // check if component is url
-                if (!cpInfo.isUrl) {
-                    const isCpUrl = utils.isUrl(cpInfo.component)
-                    if (isCpUrl) {
-                        // modify componet to 'WebView' and add params dataUrl
-                        if (cpInfo.params) {
-                            cpInfo.params.dataUrl = cpInfo.component
-                        } else {
-                            cpInfo.params = {
-                                dataUrl: cpInfo.component
-                            }
-                        }
-                        cpInfo.component = 'WebView'
-                        cpInfo.isUrl = true
-                    } else {
-                        cpInfo.isUrl = false
-                    }
                 }
                 const {idx: cpExistIdx, pk: cpKey} = self.cpExistIndex(cpInfo)
                 // diff way to show tag
@@ -186,12 +168,6 @@
             },
             cpExistIndex (cpInfo: CpInfo) {
                 const self = this as any
-                let cpParams
-                try {
-                    cpParams = JSON.stringify(cpInfo.params)
-                } catch (e) {
-                    cpParams = '{}'
-                }
                 for (let i = 0; i < self.curTagList.length; i++) {
                     const item = self.curTagList[i]
                     // if page component name, navIndex, title, params is same
@@ -201,7 +177,7 @@
                     } catch (e) {
                         itemParams = '{}'
                     }
-                    if (item.component === cpInfo.component && item.pk === cpInfo.pk) {
+                    if (item.pk === cpInfo.pk) {
                         return {
                             idx: i,
                             pk: item.pk
@@ -212,20 +188,6 @@
                     idx: -1,
                     pk: cpInfo.pk || utils.randomCharacter(6)
                 }
-            },
-            formateCpParams (cpInfo: CpInfo): CpInfo {
-                if (cpInfo.params) {
-                    cpInfo.params.isAffix = cpInfo.params.isAffix || false
-                    cpInfo.params.withoutCache = cpInfo.params.withoutCache || false
-                    cpInfo.params.checkSave = cpInfo.params.checkSave || false
-                } else {
-                    cpInfo.params = {
-                        isAffix: false,
-                        withoutCache: false,
-                        checkSave: false
-                    }
-                }
-                return cpInfo
             },
             singlePage (idx) {
                 const self = this

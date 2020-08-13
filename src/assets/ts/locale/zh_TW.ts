@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: '前端日誌',
         customSetting: '個性化設置',
-        logout: '退出登錄'
+        customClean: '清空配置',
+        logout: '退出登錄',
+        errorTip: {
+            cleanSuccess: '清空成功'
+        }
     },
     errorPage: {
         errorTip: {

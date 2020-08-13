@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat, mediu și back-end, bazat pe Vue și Ant Design'
+        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat și de bază, bazat pe Vue și Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa solicitării nu poate fi goală',
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Jurnal frontend',
         customSetting: 'Personalizare',
-        logout: 'Sign out'
+        customClean: 'Configurare clară',
+        logout: 'Sign out',
+        errorTip: {
+            cleanSuccess: 'Goliți cu succes'
+        }
     },
     errorPage: {
         errorTip: {

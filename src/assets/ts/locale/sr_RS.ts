@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Фронтенд лог',
         customSetting: 'Персонализација',
-        logout: 'Одјава'
+        customClean: 'Јасна конфигурација',
+        logout: 'Одјава',
+        errorTip: {
+            cleanSuccess: 'Испразните се успешно'
+        }
     },
     errorPage: {
         errorTip: {

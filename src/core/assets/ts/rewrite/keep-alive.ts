@@ -104,7 +104,8 @@ export default {
             // when change two component, key will set faster than component, so front component's key will be change,
             // here set a freeze key when change a component, when static key equal to current key
             // return vnode
-            const staticKey = componentOptions.Ctor.staticKey
+            const staticKey = componentOptions.Ctor.staticKey ||
+                (componentOptions.Ctor.extendOptions && componentOptions.Ctor.extendOptions.staticKey)
             if (staticKey !== key) {
                 return undefined
             }

@@ -1,8 +1,9 @@
-@import "../params";
+@import "~@corescss/params.scss";
 
 .n-search-panel-wrp{
   padding: 16px;
   background-color: $grey-f;
+  border-radius: 4px;
   .n-search-panel-btn-wrp{
     text-align: left;
     margin: 6px 0 12px 0;

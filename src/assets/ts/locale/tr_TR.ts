@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Ön uç günlüğü',
         customSetting: 'Kişiselleştirme',
-        logout: 'oturumu Kapat'
+        customClean: 'Açık yapılandırma',
+        logout: 'oturumu Kapat',
+        errorTip: {
+            cleanSuccess: 'Başarıyla boşaltın'
+        }
     },
     errorPage: {
         errorTip: {

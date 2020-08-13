@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend log',
         customSetting: 'Personalizēšana',
-        logout: 'izrakstīties'
+        customClean: 'Notīrīt konfigurāciju',
+        logout: 'izrakstīties',
+        errorTip: {
+            cleanSuccess: 'Iztukšot veiksmīgi'
+        }
     },
     errorPage: {
         errorTip: {

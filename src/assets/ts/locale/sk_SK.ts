@@ -133,13 +133,17 @@ export default {
             affixPageCloseError: 'Opravená stránka sa nesmie uzavrieť',
             homePageAffixError: 'Domovská stránka nemôže byť pripnutá'
         },
-        checkSave: 'Chcete stránku zavrieť?(Uistite sa, že obsah stránky označenej červenou farbou bol uložený)',
+        checkSave: 'Chcete stránku zavrieť?(Skontrolujte, či bol obsah stránky označenej červenou farbou uložený)',
         cancelClose: 'Operácia ukončenia bola zrušená'
     },
     personalCenter: {
         frontendLog: 'Frontend log',
         customSetting: 'prispôsobenie',
-        logout: 'Odhlásiť Sa'
+        customClean: 'Jasná konfigurácia',
+        logout: 'Odhlásiť Sa',
+        errorTip: {
+            cleanSuccess: 'Vyprázdnite úspešne'
+        }
     },
     errorPage: {
         errorTip: {

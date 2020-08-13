@@ -139,13 +139,17 @@ export default {
     personalCenter: {
         frontendLog: 'Registro frontend',
         customSetting: 'Personalización',
-        logout: 'desconectar'
+        customClean: 'Configuración clara',
+        logout: 'desconectar',
+        errorTip: {
+            cleanSuccess: 'Vaciar con éxito'
+        }
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Lo sentimos, la página que visitaste no existe',
             notrightTip: 'Lo sentimos, no tienes permiso para acceder a esta página',
-            noserviceTip: 'Lo sentimos, hubo un problema con el servidor, intente nuevamente más tarde'
+            noserviceTip: 'Lo sentimos, hubo un problema con el servidor. Vuelve a intentarlo más tarde.'
         },
         btnText: 'Cerrar página'
     },

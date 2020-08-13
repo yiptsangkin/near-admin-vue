@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend log',
         customSetting: 'Personalizace',
-        logout: 'odhlásit se'
+        customClean: 'Jasná konfigurace',
+        logout: 'odhlásit se',
+        errorTip: {
+            cleanSuccess: 'Vyprázdněte úspěšně'
+        }
     },
     errorPage: {
         errorTip: {

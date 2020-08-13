@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Vue और चींटी डिजाइन के आधार पर एक आसान-से-उपयोग मध्य और बैक-एंड फ्रंट-एंड डेवलपमेंट फ्रेमवर्क'
+        sysIntro: 'Vue और Ant Design पर आधारित एक आसान-से-उपयोग मध्य और बैक-एंड फ्रंट-एंड डेवलपमेंट फ्रेमवर्क'
     },
     requestInfo: {
         withoutUrl: 'अनुरोध पता खाली नहीं हो सकता',
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'ललाट लॉग',
         customSetting: 'निजीकरण',
-        logout: 'प्रस्थान करें'
+        customClean: 'स्पष्ट विन्यास',
+        logout: 'प्रस्थान करें',
+        errorTip: {
+            cleanSuccess: 'सफलतापूर्वक खाली करें'
+        }
     },
     errorPage: {
         errorTip: {

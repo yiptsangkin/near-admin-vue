@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'フロントエンドログ',
         customSetting: 'パーソナライゼーション',
-        logout: 'サインアウト'
+        customClean: '構成をクリア',
+        logout: 'サインアウト',
+        errorTip: {
+            cleanSuccess: '空にできました'
+        }
     },
     errorPage: {
         errorTip: {

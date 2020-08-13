@@ -129,7 +129,7 @@ export default {
         affixPage: 'முள் பக்கம்',
         cancelAffixPage: 'Unpin',
         errorTip: {
-            homePageCloseError: 'முகப்புப்பக்கம் மூடுவதை அனுமதிக்காது',
+            homePageCloseError: 'முகப்புப்பக்கத்தை மூட அனுமதிக்கப்படவில்லை',
             affixPageCloseError: 'நிலையான பக்கம் மூட அனுமதிக்கப்படவில்லை',
             homePageAffixError: 'முகப்புப்பக்கத்தை தேர்வு செய்ய முடியாது'
         },
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'முன்பக்க பதிவு',
         customSetting: 'தனிப்பயனாக்கம்',
-        logout: 'வெளியேறு'
+        customClean: 'உள்ளமைவை அழி',
+        logout: 'வெளியேறு',
+        errorTip: {
+            cleanSuccess: 'வெற்று வெற்றிகரமாக'
+        }
     },
     errorPage: {
         errorTip: {

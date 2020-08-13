@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Framendaskrá',
         customSetting: 'Sérstillingar',
-        logout: 'Útskrá'
+        customClean: 'Hreinsa stillingu',
+        logout: 'Útskrá',
+        errorTip: {
+            cleanSuccess: 'Tæmd með góðum árangri'
+        }
     },
     errorPage: {
         errorTip: {

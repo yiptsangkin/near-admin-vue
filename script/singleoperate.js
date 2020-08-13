@@ -87,9 +87,9 @@ try {
             let cmd
             if (operator === 'build') {
                 envres.targetEnv = envres.targetEnv || 'prod'
-                cmd = `ENTRYS=${entryres.targetEntry.map((e) => {return e}).join(',')} BUILD_ENV=${envres.targetEnv} vue-cli-service build ${clean.targetClean}`
+                cmd = `npx cross-env ENTRYS=${entryres.targetEntry.map((e) => {return e}).join(',')} BUILD_ENV=${envres.targetEnv} vue-cli-service build ${clean.targetClean}`
             } else {
-                cmd = `ENTRYS=${entryres.targetEntry.map((e) => {return e}).join(',')} vue-cli-service serve`
+                cmd = `npx cross-env ENTRYS=${entryres.targetEntry.map((e) => {return e}).join(',')} vue-cli-service serve`
             }
             cprocess.execSync(cmd, {stdio: 'inherit'})
         }

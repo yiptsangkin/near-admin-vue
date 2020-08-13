@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Nhật ký giao diện',
         customSetting: 'Cá nhân hóa',
-        logout: 'đăng xuất'
+        customClean: 'Xóa cấu hình',
+        logout: 'đăng xuất',
+        errorTip: {
+            cleanSuccess: 'Làm trống thành công'
+        }
     },
     errorPage: {
         errorTip: {

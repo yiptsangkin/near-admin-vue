@@ -25,7 +25,12 @@ export default {
     personalCenter: {
         frontendLog: 'personalCenter.frontendLog',
         customSetting: 'personalCenter.customSetting',
-        logout: 'personalCenter.logout'
+        logout: 'personalCenter.logout',
+        customClean: 'personalCenter.customClean',
+        errorTip: {
+            cleanSuccess: 'personalCenter.errorTip.cleanSuccess'
+        }
+
     },
     errorPage: {
         errorTip: {

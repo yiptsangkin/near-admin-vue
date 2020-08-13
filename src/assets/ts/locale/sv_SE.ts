@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'En lättanvänd utvecklingsram för mellan- och bakre ändar baserad på Vue och Ant Design'
+        sysIntro: 'En enkel att använda medel- och back-end front-end-utvecklingsram baserad på Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Begäran om adress kan inte vara tom',
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend logg',
         customSetting: 'Anpassning',
-        logout: 'logga ut'
+        customClean: 'Tydlig konfiguration',
+        logout: 'logga ut',
+        errorTip: {
+            cleanSuccess: 'Töm framgångsrikt'
+        }
     },
     errorPage: {
         errorTip: {

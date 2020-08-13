@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Фронтенд журнал',
         customSetting: 'воплощение',
-        logout: 'выход'
+        customClean: 'Очистить конфигурацию',
+        logout: 'выход',
+        errorTip: {
+            cleanSuccess: 'Пусто успешно'
+        }
     },
     errorPage: {
         errorTip: {

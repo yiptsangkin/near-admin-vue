@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Fiók jelszó bejelentkezés',
         byPhoneBtn: 'Mobiltelefon-bejelentkezés',
-        accountPlaceholder: 'Kérjük, adja meg a fiókot',
+        accountPlaceholder: 'kérjük, írja be a fiókot',
         passwordPlaceholder: 'Kérlek írd be a jelszót',
         autoLogin: 'automatikus bejelentkezés',
         forgetBtn: 'elfelejtett jelszo',
@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Könnyen használható közép- és háttér-fejlesztői keret, a Vue és Ant tervezés alapján'
+        sysIntro: 'Könnyen használható közép- és háttér-fejlesztői keret, a Vue és Ant tervezésen alapulva'
     },
     requestInfo: {
         withoutUrl: 'A kérelem címe nem lehet üres',
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend log',
         customSetting: 'Testreszabás',
-        logout: 'kijelentkezés'
+        customClean: 'Tiszta konfiguráció',
+        logout: 'kijelentkezés',
+        errorTip: {
+            cleanSuccess: 'Üres ürítés'
+        }
     },
     errorPage: {
         errorTip: {
@@ -206,7 +210,7 @@ export default {
             large: 'szélesség'
         },
         fullscreen: 'Teljes képernyő',
-        unFullscreen: 'Teljes képernyő törlése'
+        unFullscreen: 'Teljes képernyő visszavonása'
     },
     normalBtn: {
         detail: 'Kilátás'

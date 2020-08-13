@@ -61,11 +61,11 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament de front-end mig i back-end fàcil d’utilitzar basat en Vue and Ant Design'
+        sysIntro: 'Un marc de desenvolupament de front-end mig i de fons fàcil d’utilitzar basat en Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L’adreça de sol·licitud no pot estar buida',
-        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més tard'
+        networkErr: 'Ha fallat la sol·licitud de xarxa. Torneu-ho a provar més endavant'
     },
     localeMap: {
         ar: 'Àrab',
@@ -129,7 +129,7 @@ export default {
         affixPage: 'Pin pàgina',
         cancelAffixPage: 'Desaconseguir',
         errorTip: {
-            homePageCloseError: 'La pàgina d&#39;inici no permet tancar',
+            homePageCloseError: 'La pàgina d&#39;inici no es pot tancar',
             affixPageCloseError: 'No es pot tancar la pàgina corregida',
             homePageAffixError: 'La pàgina d&#39;inici no es pot anul·lar'
         },
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Registre frontend',
         customSetting: 'Personalització',
-        logout: 'tanca sessió'
+        customClean: 'Configuració neta',
+        logout: 'tanca sessió',
+        errorTip: {
+            cleanSuccess: 'Buida correctament'
+        }
     },
     errorPage: {
         errorTip: {

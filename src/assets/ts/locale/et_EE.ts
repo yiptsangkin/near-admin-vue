@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Esiosa logi',
         customSetting: 'Isikupärastamine',
-        logout: 'Logi välja'
+        customClean: 'Tühjenda konfiguratsioon',
+        logout: 'Logi välja',
+        errorTip: {
+            cleanSuccess: 'Tühjendage edukalt'
+        }
     },
     errorPage: {
         errorTip: {

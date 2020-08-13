@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Enostaven srednji in zadnji razvojni razvojni okvir, zasnovan na Vue in Ant Design'
+        sysIntro: 'Enostaven srednji in zadnji razvojni razvojni okvir, ki temelji na Vue in Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Naslov zahteve ne more biti prazen',
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend log',
         customSetting: 'Personalizacija',
-        logout: 'Odjava'
+        customClean: 'Počistite konfiguracijo',
+        logout: 'Odjava',
+        errorTip: {
+            cleanSuccess: 'Izpraznjeno uspešno'
+        }
     },
     errorPage: {
         errorTip: {

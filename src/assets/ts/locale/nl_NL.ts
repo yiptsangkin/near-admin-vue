@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Frontend-logboek',
         customSetting: 'Personalisatie',
-        logout: 'afmelden'
+        customClean: 'Duidelijke configuratie',
+        logout: 'afmelden',
+        errorTip: {
+            cleanSuccess: 'Leeg succesvol'
+        }
     },
     errorPage: {
         errorTip: {

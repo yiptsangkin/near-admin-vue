@@ -50,6 +50,7 @@ export default {
             total: 0,
             'show-size-changer': true,
             pageSizeOptions: ['10', '30', '50']
-        }
+        },
+        localStorageKey: ['nearAdminCustomerEntry', 'nearAdminCacheConfig', 'nearAdminTagIndex', 'nearAdminTagList', 'nearAdminLang']
     }
 }

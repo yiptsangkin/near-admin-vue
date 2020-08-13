@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Log frontend',
         customSetting: 'Personalisasi',
-        logout: 'keluar'
+        customClean: 'Hapus konfigurasi',
+        logout: 'keluar',
+        errorTip: {
+            cleanSuccess: 'Berhasil kosong'
+        }
     },
     errorPage: {
         errorTip: {

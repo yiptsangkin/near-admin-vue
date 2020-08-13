@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Login password account',
         byPhoneBtn: 'Accesso al numero di cellulare',
-        accountPlaceholder: 'si prega di inserire l&#39;account',
+        accountPlaceholder: 'per favore inserisci l&#39;account',
         passwordPlaceholder: 'Per favore, inserisci la password',
         autoLogin: 'login automatico',
         forgetBtn: 'dimenticare la password',
@@ -139,7 +139,11 @@ export default {
     personalCenter: {
         frontendLog: 'Registro front-end',
         customSetting: 'Personalizzazione',
-        logout: 'disconnessione'
+        customClean: 'Cancella configurazione',
+        logout: 'disconnessione',
+        errorTip: {
+            cleanSuccess: 'Vuoto con successo'
+        }
     },
     errorPage: {
         errorTip: {
