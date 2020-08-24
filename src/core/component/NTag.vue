@@ -32,7 +32,7 @@
     import Vue from 'vue'
     import {mapGetters} from 'vuex'
     import dict from '@custom/dict'
-    import bus from '@corets/eventbus'
+    import Bus from '@corets/eventbus'
 
     export default Vue.extend({
         name: 'NTag',
@@ -54,23 +54,27 @@
             }
         },
         watch: {
-            curTagList (val) {
+            curTagList () {
                 // watch tag list to judge if will show the tag dropdown
                 const self = this as any
                 self.$nextTick(() => {
-                    const sumTagWidth = self.getTagDomLength()
-                    const tagWrpDom = self.$el
-                    // 32 is the n-tag-scroll-hider's padding
-                    if (tagWrpDom.clientWidth < sumTagWidth) {
-                        self.showDropDown = true
-                    } else {
-                        self.showDropDown = false
-                    }
-                    self.moveTagToCenter()
+                    self.compareTagLength()
                 })
             }
         },
         methods: {
+            compareTagLength () {
+                const self = this
+                const sumTagWidth = self.getTagDomLength()
+                const tagWrpDom = self.$el
+                // 32 is the n-tag-scroll-hider's padding
+                if (tagWrpDom.clientWidth < sumTagWidth) {
+                    self.showDropDown = true
+                } else {
+                    self.showDropDown = false
+                }
+                self.moveTagToCenter()
+            },
             changeCp (idx: number) {
                 const self = this as any
                 self.$emit('change-cp', self.curTagList[idx], false)
@@ -79,7 +83,7 @@
                 })
             },
             showContextMenu (e: any, idx: any) {
-                bus.$emit('tagCtxMenu', {
+                Bus.$emit('tagCtxMenu', {
                     x: e.clientX,
                     y: e.offsetY,
                     idx
@@ -128,7 +132,17 @@
                 if (tagBar) {
                     tagBar.scrollLeft = tagLeftDist
                 }
+            },
+            initResizeListener () {
+                const self = this
+                Bus.$on('windowResize', () => {
+                    self.compareTagLength()
+                })
             }
+        },
+        created () {
+            const self = this
+            self.initResizeListener()
         }
     })
 </script>

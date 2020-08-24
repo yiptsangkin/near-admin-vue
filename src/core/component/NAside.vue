@@ -4,6 +4,7 @@
             <a-menu
                     class="n-layout-sider-menu"
                     mode="inline"
+                    :defaultOpenKeys="defaultExpandKeys"
                     :selectedKeys="defaultIndexs"
                     @select="handlerSelect"
             >
@@ -50,7 +51,6 @@
                                                         :key="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
                                                         :nav-index="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
                                                         :cp-path="ssitem.path"
-                                                        :params-detail="encodeParams(ssitem.params)"
                                                         :cp-name="ssitem.name"
                                                 >
                                                     {{ $t(ssitem.name) }}
@@ -63,7 +63,6 @@
                                                 :key="`menu-${curMenu}-sub-${index}-${sindex}`"
                                                 :nav-index="`menu-${curMenu}-sub-${index}-${sindex}`"
                                                 :cp-path="sitem.path"
-                                                :params-detail="encodeParams(sitem.params)"
                                                 :cp-name="sitem.name"
                                         >
                                             {{ $t(sitem.name) }}
@@ -95,7 +94,6 @@
                                                         :key="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
                                                         :nav-index="`menu-${curMenu}-sub-${index}-${sindex}-${ssindex}`"
                                                         :cp-path="ssitem.path"
-                                                        :params-detail="encodeParams(ssitem.params)"
                                                         :cp-name="ssitem.name"
                                                 >
                                                     {{ $t(ssitem.name) }}
@@ -108,7 +106,6 @@
                                                 :key="`menu-${curMenu}-sub-${index}-${sindex}`"
                                                 :nav-index="`menu-${curMenu}-sub-${index}-${sindex}`"
                                                 :cp-path="sitem.path"
-                                                :params-detail="encodeParams(sitem.params)"
                                                 :cp-name="sitem.name"
                                         >
                                             {{ $t(sitem.name) }}
@@ -124,7 +121,6 @@
                                 :nav-index="`menu-${curMenu}-${index}`"
                                 :cp-path="item.path"
                                 :cp-name="item.name"
-                                :params-detail="encodeParams(item.params)"
                         >
                             {{ $t(item.name) }}
                         </a-menu-item>
@@ -149,6 +145,7 @@
           ...mapGetters([
               'menuObj',
               'curMenu',
+              'defaultExpandKeys',
               'defaultIndexs',
               'shrinkLeftMenu'
           ])

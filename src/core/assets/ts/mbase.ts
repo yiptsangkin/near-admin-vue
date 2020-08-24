@@ -64,7 +64,7 @@ export default {
                 self.changeFullScreen(!self.isFullScreen)
             })
             // listen window resize
-            Bus.$off('windowResize').$on('windowResize', (e: KeyboardEvent) => {
+            Bus.$on('windowResize', (e: KeyboardEvent) => {
                 self.shrinkCtl()
             })
         },
@@ -72,18 +72,25 @@ export default {
             const self = this as any
             const curWidth = window.document.body.clientWidth
             if (!self.shrinkLeftMenu && curWidth < dict.commonObj.shrinkThresholdValue) {
-                self.changeShrinkLeftMenu(true)
+                if (!self.shrinkLeftMenu) {
+                    self.changeShrinkLeftMenu(true)
+                }
             } else if (self.shrinkLeftMenu && curWidth >= dict.commonObj.shrinkThresholdValue) {
-                self.changeShrinkLeftMenu(false)
+                if (self.shrinkLeftMenu) {
+                    self.changeShrinkLeftMenu(false)
+                }
             }
         }
     },
-    mounted () {
+    created () {
         const self = this as any
         self.bindHotKeyEvent()
         self.bindResizeEvent()
         self.bindScreenEvent()
         self.shrinkCtl()
+    },
+    mounted () {
+        const self = this
         self.initBusListener()
     }
 }
