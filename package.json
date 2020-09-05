@@ -6,6 +6,8 @@
     "serve": "vue-cli-service serve",
     "serve:translate": "node script/translate.js && vue-cli-service serve",
     "translate": "node script/translate.js",
+    "create:page": "node script/newpage",
+    "create:mpage": "",
     "lint": "vue-cli-service lint",
     "build": "vue-cli-service build",
     "uat:build": "cross-env BUILD_ENV=uat vue-cli-service build",
