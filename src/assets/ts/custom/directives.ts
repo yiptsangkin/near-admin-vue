@@ -1,7 +1,7 @@
 import store from '@/store'
 
 const permitCtl = (el: any, binding: any) => {
-    const userRole = store.getters.userInfo.role
+    const userRole = store.getters && store.getters.userInfo && store.getters.userInfo.role
     let flag = 0
     // get user role
     if (binding.value instanceof Array) {

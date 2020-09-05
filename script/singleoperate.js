@@ -1,7 +1,5 @@
 const prompts = require('prompts')
-const fs = require('fs')
 const chalk = require('chalk')
-const ora = require('ora')
 const glob = require('glob')
 const cprocess = require('child_process')
 

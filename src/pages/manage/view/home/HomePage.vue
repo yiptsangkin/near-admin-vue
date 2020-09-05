@@ -16,7 +16,8 @@
                     </div>
                 </template>
             </a-col>
-            <a-col></a-col>
+        </a-row>
+        <a-row>
         </a-row>
     </div>
 </template>
@@ -27,7 +28,6 @@
     import Base from '@custom/base'
     import {mapGetters} from 'vuex'
     import NCommonTitle from '@corecp/NCommonTitle.vue'
-    import dict from '@custom/dict';
 
     export default Vue.extend({
         name: 'HomePage',
@@ -37,7 +37,8 @@
         },
         computed: {
             ...mapGetters([
-                'cacheEntry'
+                'cacheEntry',
+                'userInfo'
             ])
         },
         methods: {

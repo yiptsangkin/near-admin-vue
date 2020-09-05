@@ -1,0 +1,15 @@
+{
+  "title": "Near-Admin",
+  "externals": {
+    "polyfill": {
+      "type": "js",
+      "url": [
+        "/static/js/near.polyfill.js"
+      ]
+    },
+    "apiconfig": {
+      "type": "js",
+      "url": []
+    }
+  }
+}
