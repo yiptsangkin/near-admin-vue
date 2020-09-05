@@ -99,7 +99,7 @@
                 }
             },
             toManage () {
-                window.location.href = `/${dict.commonObj.managePath}`
+                window.location.href = `/${dict.commonObj.basePath}`
             }
         }
     })

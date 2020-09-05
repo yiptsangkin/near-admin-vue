@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
-import {CacheRouteConfig} from '@corets/type'
-import dict from '@custom/dict';
-import utils from '@corets/utils';
+import utils from '@corets/utils'
+import dict from '@custom/dict'
 const Login = () => import('../view/Login.vue')
 
 Vue.use(VueRouter)
+
+const basePath = dict.commonObj.basePath
 
 const routesConfig: RouteConfig[] = [
     {
@@ -21,7 +22,7 @@ const routesConfig: RouteConfig[] = [
 
 const routerOpt: RouterOptions = {
     mode: 'history',
-    base: `/${dict.commonObj.authPath}`,
+    base: `/${basePath}`,
     routes: routesConfig
 }
 

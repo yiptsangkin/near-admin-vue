@@ -33,8 +33,6 @@ export default {
         }
     },
     commonObj: {
-        authPath: 'auth',
-        managePath: 'manage',
         loglinePath: 'logline/Logline',
         settingPath: 'setting/Setting',
         loginForm: {
@@ -51,6 +49,7 @@ export default {
             'show-size-changer': true,
             pageSizeOptions: ['10', '30', '50']
         },
-        localStorageKey: ['nearAdminCustomerEntry', 'nearAdminCacheConfig', 'nearAdminTagIndex', 'nearAdminTagList', 'nearAdminLang']
+        localStorageKey: ['nearAdminCustomerEntry', 'nearAdminCacheConfig', 'nearAdminTagIndex', 'nearAdminTagList', 'nearAdminLang'],
+        basePath: window.location.pathname.split('/')[1] || 'manage'
     }
 }

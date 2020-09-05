@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
-import dict from '@custom/dict'
 import utils from '@corets/utils'
+import dict from '@custom/dict'
 
 Vue.use(VueRouter)
 
 const routesConfig: RouteConfig[] = []
+const basePath = dict.commonObj.basePath
 
 const routerOpt: RouterOptions = {
     mode: 'history',
-    base: `/${dict.commonObj.authPath}`,
+    base: `/${basePath}`,
     routes: routesConfig
 }
 

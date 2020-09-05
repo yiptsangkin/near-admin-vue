@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
 import {CacheRouteConfig} from '@corets/type'
-import dict from '@custom/dict';
-import utils from '@corets/utils';
+import dict from '@custom/dict'
+import utils from '@corets/utils'
 const NManage = () => import('@corecp/NManage.vue')
 
 Vue.use(VueRouter)
+
+const basePath = dict.commonObj.basePath
 
 const routesConfig: RouteConfig[] = [
     {
@@ -17,11 +19,11 @@ const routesConfig: RouteConfig[] = [
 
 const routerOpt: RouterOptions = {
     mode: 'history',
-    base: `/${dict.commonObj.managePath}`,
+    base: `/${basePath}`,
     routes: routesConfig
 }
 
-const routesList: string = localStorage.getItem(`${dict.commonObj.managePath}AsyncRoute`) || ''
+const routesList: string = localStorage.getItem(`${basePath}AsyncRoute`) || ''
 let newRoutesList: CacheRouteConfig[]
 try {
     newRoutesList = JSON.parse(routesList)

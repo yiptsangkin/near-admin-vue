@@ -99,7 +99,7 @@
                             let pageCp
                             if (!curCp.isUrl) {
                                 pageCp = await import(
-                                    '@/pages/' + (dict.commonObj.managePath || 'manage') + '/view/' + curCp.component + '.vue'
+                                    '@/pages/' + (dict.commonObj.basePath || 'manage') + '/view/' + curCp.component + '.vue'
                                     )
                             }  else {
                                 pageCp = await import('@corecp/NWebView.vue')
@@ -201,7 +201,7 @@
                         cpParams: curCp.params,
                         pagePath: curCp.component
                     }
-                    const routesList = localStorage.getItem(`${dict.commonObj.managePath}AsyncRoute`)
+                    const routesList = localStorage.getItem(`${dict.commonObj.basePath}AsyncRoute`)
                     let routesListObj: CacheRouteConfig[]
                     try {
                         routesListObj = JSON.parse(routesList)
@@ -233,16 +233,16 @@
                         routesListObj[cpIndex].props = propsData
                     }
                     // persisted router
-                    localStorage.setItem(`${dict.commonObj.managePath}AsyncRoute`, JSON.stringify(routesListObj))
+                    localStorage.setItem(`${dict.commonObj.basePath}AsyncRoute`, JSON.stringify(routesListObj))
                     // redirect to new browser tag
                     // check router mode
                     const routerMode = self.$router.mode
                     if (routerMode === 'hash') {
                         // hash mode
-                        window.open(`/${dict.commonObj.managePath}/#/${curCpName}`.toLowerCase())
+                        window.open(`/${dict.commonObj.basePath}/#/${curCpName}`.toLowerCase())
                     } else {
                         // history mode
-                        window.open(`/${dict.commonObj.managePath}/${curCpName}`.toLowerCase())
+                        window.open(`/${dict.commonObj.basePath}/${curCpName}`.toLowerCase())
                     }
                 }
             },
