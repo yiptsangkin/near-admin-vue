@@ -3,5 +3,10 @@ const moduleName = 'pages'
 // build config set
 module.exports = {
     // pages
-    moduleName: moduleName
+    moduleName: moduleName,
+    envList: [
+        'dev',
+        'uat',
+        'prod'
+    ]
 }

@@ -15,27 +15,22 @@ const sysInfo = {
 let buildSwitch
 
 const cacheConfig = localStorage.getItem('nearAdminCacheConfig')
+const defaultSwitch = {
+    isMock: true,
+    isHotKey: true,
+    isBreadCrumb: true,
+    isCache: true,
+    isI18n: true
+}
 
 try {
     if (cacheConfig) {
         buildSwitch = JSON.parse(cacheConfig)
     } else {
-        buildSwitch = {
-            isMock: true,
-            isHotKey: true,
-            isBreadCrumb: true,
-            isCache: true,
-            isI18n: true
-        }
+        buildSwitch = defaultSwitch
     }
 } catch (e) {
-    buildSwitch = {
-        isMock: true,
-        isHotKey: true,
-        isBreadCrumb: true,
-        isCache: true,
-        isI18n: true
-    }
+    buildSwitch = defaultSwitch
 }
 
 const comConfig: ComConfig = {

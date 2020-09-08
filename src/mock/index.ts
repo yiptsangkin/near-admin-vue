@@ -1,5 +1,5 @@
 import comConfig from '@custom/config'
-import mockData from 'mockjs'
+import mockData from 'better-mock'
 import {getSendMsg, checkLoginByAccount, checkLoginByPhone, getUserMenu, getUserInfo} from '@mock/data/common'
 
 if (comConfig.buildSwitch.isMock) {

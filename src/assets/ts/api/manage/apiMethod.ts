@@ -2,17 +2,17 @@ import apiUrl from './apiUrl'
 import utils from '@corets/utils'
 import {ReqType, ResType} from '@corets/type'
 
-const getUserMenu = async (reqType: ReqType) => {
+const getUserMenu = (reqType: ReqType) => {
     reqType.method = 'POST'
     reqType.url = apiUrl.getUserMenu
-    const result = await utils.sendReq(reqType)
+    const result = utils.sendReq(reqType)
     return result
 }
 
-const getUserInfo = async (reqType: ReqType) => {
+const getUserInfo = (reqType: ReqType) => {
     reqType.method = 'POST'
     reqType.url = apiUrl.getUserInfo
-    const result = await utils.sendReq(reqType)
+    const result = utils.sendReq(reqType)
     return result
 }
 

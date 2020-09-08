@@ -1,3 +1,1 @@
-var apiConfig = {
-    apiHost: ''
-}
+var apiConfig = { apiHost: '' }

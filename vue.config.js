@@ -5,6 +5,10 @@ const SpriteSmithPlugin = require('webpack-spritesmith')
 const UglifyJSPlugin = require('terser-webpack-plugin')
 const path = require('path')
 
+// init event
+utils.init()
+
+// get multi pages info
 const {pages, plugins, devRewriteUrl} = utils.getMultiEntries()
 
 const prodConfig ={

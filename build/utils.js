@@ -1,13 +1,37 @@
 'use strict'
 const glob = require('glob')
 const buildConfig = require('./config')
+const chalk = require('chalk')
+const fs = require('fs')
 
 // build tool set
 module.exports = {
-    getMultiFiles: function (globPath) {
+    createApiConfigFile () {
+        const self = this
+        const curPath = process.cwd().replace('/script',  '')
+        const publicJs  = `${curPath}/public/static/js`
+        const comApiContent = `var apiConfig = { apiHost: '' }`
+        buildConfig.envList.forEach((item) => {
+            const targetPath = `${publicJs}/apiConfig${self.upperFirstCase(item)}.js`
+            if (!fs.existsSync(targetPath)) {
+                fs.writeFileSync(targetPath, comApiContent)
+            }
+        })
+        console.log(chalk.green('Create multiples environment api config successfully!'))
+    },
+    upperFirstCase (str) {
+        if (str) {
+            let charList = str.split('')
+            charList[0] = charList[0].toUpperCase()
+            return charList.join('')
+        } else {
+            return null
+        }
+    },
+    getMultiFiles (globPath) {
+        const self = this
         // get multi pages's entry and template
         let entries = {}
-
         let finalEntries = []
         const entriesListByCmd = process.env.ENTRYS ? process.env.ENTRYS.split(',') : []
         if (entriesListByCmd.length > 0) {
@@ -17,26 +41,12 @@ module.exports = {
         } else {
             finalEntries = glob.sync(globPath)
         }
-
         finalEntries.forEach(function (entry) {
             const pathList = entry.split('/')
             const baseConfig = require(`.${entry}`)
             pathList.splice(-1)
             // api config for the corresponding environment
-            switch (process.env.BUILD_ENV) {
-                case 'prod':
-                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigProd.js`]
-                    break
-                case 'uat':
-                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigUat.js`]
-                    break
-                case 'dev':
-                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigDev.js`]
-                    break
-                default:
-                    // default dev api config
-                    baseConfig.externals.apiconfig.url = [`/static/js/apiConfigDev.js`]
-            }
+            baseConfig.externals.apiconfig.url = [`/static/js/apiConfig${self.upperFirstCase(process.env.BUILD_ENV) || 'Dev'}.js`]
             const pathname = pathList.slice(-1)[0]
             let chunks
             if (process.env.NODE_ENV === 'production') {
@@ -53,8 +63,8 @@ module.exports = {
         })
         return entries
     },
-    getMultiEntries: function () {
-        let self = this
+    getMultiEntries () {
+        const self = this
         const pages = self.getMultiFiles(`./src/${buildConfig.moduleName}/**/page.config.json`)
         const chunks = Object.keys(pages)
         let chunksPlugin = {}
@@ -79,5 +89,9 @@ module.exports = {
             plugins: chunksPlugin,
             devRewriteUrl: devRewriteUrl
         }
+    },
+    init () {
+        const self = this
+        self.createApiConfigFile()
     }
 }
