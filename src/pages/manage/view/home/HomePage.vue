@@ -18,6 +18,14 @@
             </a-col>
         </a-row>
         <a-row>
+            <n-multi-select
+                    v-model="abe"
+                    :paging-info="pagingInfo"
+                    :option-formatter="formatterOption"
+                    :options-list="optionsList"
+                    :option-columns="optionColumns"
+                    @change-page="changePage"
+            ></n-multi-select>
         </a-row>
     </div>
 </template>
@@ -28,12 +36,15 @@
     import Base from '@custom/base'
     import {mapGetters} from 'vuex'
     import NCommonTitle from '@corecp/NCommonTitle.vue'
+    import NMultiSelect from '@corecp/NMultiSelect.vue'
+    import {PagingInfo} from '@corets/type';
 
     export default Vue.extend({
         name: 'HomePage',
         mixins: [CoreBase, Base],
         components: {
-            NCommonTitle
+            NCommonTitle,
+            NMultiSelect
         },
         computed: {
             ...mapGetters([
@@ -48,6 +59,51 @@
                     title: page.title,
                     component: page.path
                 })
+            },
+            formatterOption () {
+                const self = this as any
+                const newList = []
+                for (let i = 0; i < 10; i++) {
+                    const temItem = {
+                        ...self.optionsList[0],
+                        value: `${self.optionsList[0].value}-${i}`
+                    }
+                    newList.push(temItem)
+                }
+                return newList
+            },
+            changePage (current: number) {
+                const self = this
+                self.pagingInfo.currentPage = current
+            }
+        },
+        data () {
+            return {
+                optionsList: [
+                    {
+                        value: 'nihao1',
+                        label: 'nihao2'
+                    }
+                ],
+                test: '',
+                optionColumns: [
+                    {
+                        title: '你好',
+                        field: 'value',
+                        width: 240
+                    },
+                    {
+                        title: '你好',
+                        field: 'label',
+                        width: 240
+                    }
+                ],
+                abe: '123123',
+                pagingInfo: {
+                    currentPage: 1,
+                    pageSize: 2,
+                    totalRows: 5
+                } as PagingInfo
             }
         }
     })

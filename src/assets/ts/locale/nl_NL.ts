@@ -3,8 +3,8 @@ export default {
     country: 'NL',
     loginForm: {
         byAccountBtn: 'Account wachtwoord login',
-        byPhoneBtn: 'Inloggen op mobiel telefoonnummer',
-        accountPlaceholder: 'voer alstublieft uw account in',
+        byPhoneBtn: 'Inloggen mobiel nummer',
+        accountPlaceholder: 'voer account in',
         passwordPlaceholder: 'Voer wachtwoord in alstublieft',
         autoLogin: 'Automatische login',
         forgetBtn: 'wachtwoord vergeten',
@@ -20,24 +20,24 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Verzend niet herhaaldelijk',
-            success: 'Succesvol',
+            success: 'Geslaagd',
             codeTip: 'Uw verificatiecode is'
         },
         phonePlaceholder: 'Voer een telefoonnummer in',
         validPlaceholder: 'Verificatie code',
-        validBtn: 'krijg verificatiecode',
+        validBtn: 'ontvang verificatiecode',
         loginSuccess: 'Succesvol ingelogd'
     },
     menuObj: {
         basicFeature: 'Basisvaardigheid',
         cpUse: 'Componentgebruik',
         childMenu: {
-            0: 'Basiskader',
+            0: 'Basisraamwerk',
             1: 'Basisvaardigheid',
             '0-0': 'Vue',
-            '0-1': 'Mier ontwerp',
+            '0-1': 'Ant ontwerp',
             '1-0': 'Framework-functie',
-            '1-0-0': 'Projectconfiguratie',
+            '1-0-0': 'Project configuratie',
             '1-0-1': 'Frontend-logboek',
             '1-0-2': 'Lokale mock',
             '1-0-3': 'globalisering',
@@ -48,7 +48,7 @@ export default {
             '1-0-8': 'sneltoets',
             '1-1': 'Paginafunctie',
             '1-1-0': 'Component pagina',
-            '1-1-1': 'url pagina',
+            '1-1-1': 'url-pagina',
             '1-1-2': 'Geen toestemmingspagina',
             '1-1-3': '404 pagina'
         },
@@ -61,11 +61,11 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Een eenvoudig te gebruiken midden- en back-end front-end ontwikkelraamwerk gebaseerd op Vue en Ant Design'
+        sysIntro: 'Een gebruiksvriendelijk midden- en back-end front-end ontwikkelingsraamwerk op basis van Vue en Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Verzoekadres mag niet leeg zijn',
-        networkErr: 'Netwerkverzoek mislukt, probeer het later opnieuw'
+        networkErr: 'Netwerkverzoek mislukt. Probeer het later opnieuw'
     },
     localeMap: {
         ar: 'Arabisch',
@@ -123,18 +123,18 @@ export default {
         closeAll: 'Sluit alle tabbladen',
         closeCur: 'Sluit huidige tabblad',
         closeOther: 'Sluit andere tabbladen',
-        closeRight: 'Sluit rechter label',
+        closeRight: 'Sluit het rechterlabel',
         singlePage: 'Onafhankelijke pagina',
         refreshPage: 'pagina hernieuwen',
-        affixPage: 'Pagina vastzetten',
-        cancelAffixPage: 'Maak los',
+        affixPage: 'Pin pagina',
+        cancelAffixPage: 'Losmaken',
         errorTip: {
-            homePageCloseError: 'Homepage mag niet sluiten',
-            affixPageCloseError: 'Vaste pagina mag niet sluiten',
-            homePageAffixError: 'Startpagina kan niet worden losgemaakt'
+            homePageCloseError: 'De startpagina mag niet worden gesloten',
+            affixPageCloseError: 'Vaste pagina mag niet worden gesloten',
+            homePageAffixError: 'Homepage kan niet worden losgemaakt'
         },
-        checkSave: 'Wil je de pagina sluiten?(Zorg ervoor dat de inhoud van de rood gemarkeerde pagina is opgeslagen)',
-        cancelClose: 'Sluiten is geannuleerd'
+        checkSave: 'Wilt u de pagina sluiten?(Zorg ervoor dat de inhoud van de rood gemarkeerde pagina is opgeslagen)',
+        cancelClose: 'Sluiten geannuleerd'
     },
     personalCenter: {
         frontendLog: 'Frontend-logboek',
@@ -142,16 +142,16 @@ export default {
         customClean: 'Duidelijke configuratie',
         logout: 'afmelden',
         errorTip: {
-            cleanSuccess: 'Leeg succesvol'
+            cleanSuccess: 'Succesvol leegmaken'
         }
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Sorry, de pagina die je hebt bezocht bestaat niet',
-            notrightTip: 'Sorry, je hebt geen toestemming om deze pagina te openen',
-            noserviceTip: 'Sorry, er is een probleem met de server, probeer het later opnieuw'
+            notfoundTip: 'Sorry, de pagina die u heeft bezocht, bestaat niet',
+            notrightTip: 'Sorry, u heeft geen toestemming om deze pagina te openen',
+            noserviceTip: 'Sorry, er was een probleem met de server, probeer het later opnieuw'
         },
-        btnText: 'Sluit pagina'
+        btnText: 'Pagina sluiten'
     },
     searchPanel: {
         btn: {
@@ -169,7 +169,7 @@ export default {
             remove: 'Leeg'
         },
         time: {
-            plh: 'Selecteer een tijdsbereik',
+            plh: 'Selecteer een tijdbereik',
             range: 'tijdslimiet',
             halfDay: 'Een halve dag',
             oneDay: 'in één dag',
@@ -177,31 +177,31 @@ export default {
             monthDay: 'Binnen een maand'
         },
         type: {
-            logType: 'Type logboek',
-            plh: 'Selecteer een logtype'
+            logType: 'Log type',
+            plh: 'Selecteer een logboektype'
         },
         tableColumns: {
             index: 'Serienummer',
-            desc: 'Logboekbeschrijving',
-            type: 'Type logboek',
+            desc: 'Log beschrijving',
+            type: 'Log type',
             time: 'tijd',
-            op: 'in werking'
+            op: 'werken'
         },
         request: 'Gegevens opvragen',
         error: {
             cancel: 'Lege bewerking geannuleerd',
-            confirm: 'Wil je het log wissen?(Als het logboek is geleegd, kan het niet worden opgehaald)'
+            confirm: 'Wilt u het logboek wissen?(Als het logboek is geleegd, kan het niet worden teruggehaald)'
         },
-        success: 'Logboek is geleegd'
+        success: 'Log is geleegd'
     },
     comTable: {
         columns: {
-            title: 'Kolominstellingen',
+            title: 'Kolom instellingen',
             all: 'selecteer alles',
             reset: 'Reset',
-            fixedLeft: 'Links vast',
-            fixedRight: 'Vaste rechts',
-            cancelFixed: 'Maak los'
+            fixedLeft: 'Links vastgezet',
+            fixedRight: 'Rechts vast',
+            cancelFixed: 'Losmaken'
         },
         size: {
             title: 'Rijhoogte',
@@ -210,18 +210,23 @@ export default {
             large: 'breedte'
         },
         fullscreen: 'volledig scherm',
-        unFullscreen: 'Volledig scherm annuleren'
+        unFullscreen: 'Annuleer volledig scherm'
     },
     normalBtn: {
         detail: 'Visie'
     },
     setting: {
-        customEntry: 'Snelle invoer',
+        customEntry: 'Snelle toegang',
         systemSwitch: 'Systeem configuratie',
-        isMock: 'Of het nu gaat om bespotten',
-        isHotKey: 'Of het nu een sneltoets is',
-        isBreadCrumb: 'Of het nu kruimels zijn',
-        isCache: 'Of om te cachen',
-        isI18n: 'Of het nu gaat internationaliseren'
+        isMock: 'Of je wilt bespotten',
+        isHotKey: 'Of sneltoets',
+        isBreadCrumb: 'Of het nu gaat om broodkruimels',
+        isCache: 'Of je wilt cachen',
+        isI18n: 'Of u wilt internationaliseren'
+    },
+    pagingInfo: {
+        total: 'In totaal',
+        uint: 'Artikel',
+        items: 'opname'
     }
 }

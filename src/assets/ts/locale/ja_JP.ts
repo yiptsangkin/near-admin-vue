@@ -3,7 +3,7 @@ export default {
     country: 'JP',
     loginForm: {
         byAccountBtn: 'アカウントパスワードログイン',
-        byPhoneBtn: '携帯電話番号ログイン',
+        byPhoneBtn: '携帯番号ログイン',
         accountPlaceholder: 'アカウントを入力してください',
         passwordPlaceholder: 'パスワードを入力してください',
         autoLogin: '自動ログイン',
@@ -65,7 +65,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'リクエストアドレスは空にできません',
-        networkErr: 'ネットワークリクエストが失敗しました。しばらくしてからもう一度お試しください'
+        networkErr: 'ネットワークリクエストに失敗しました。しばらくしてからもう一度お試しください'
     },
     localeMap: {
         ar: 'アラビア語',
@@ -223,5 +223,10 @@ export default {
         isBreadCrumb: 'パン粉かどうか',
         isCache: 'キャッシュするかどうか',
         isI18n: '国際化するかどうか'
+    },
+    pagingInfo: {
+        total: '合計で',
+        uint: '論文',
+        items: '録音'
     }
 }

@@ -3,7 +3,7 @@ export default {
     country: 'BE',
     loginForm: {
         byAccountBtn: 'Connexion par mot de passe du compte',
-        byPhoneBtn: 'Connexion au numéro de téléphone portable',
+        byPhoneBtn: 'Connexion au numéro de mobile',
         accountPlaceholder: 'veuillez entrer un compte',
         passwordPlaceholder: 'Veuillez entrer le mot de passe',
         autoLogin: 'connexion automatique',
@@ -131,7 +131,7 @@ export default {
         errorTip: {
             homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à se fermer',
             affixPageCloseError: 'La page fixe n&#39;est pas autorisée à se fermer',
-            homePageAffixError: 'La page d&#39;accueil ne peut pas être supprimée'
+            homePageAffixError: 'Impossible de détacher la page d&#39;accueil'
         },
         checkSave: 'Voulez-vous fermer la page?(Veuillez vous assurer que le contenu de la page marquée en rouge a été enregistré)',
         cancelClose: 'Fermer l&#39;opération annulée'
@@ -220,8 +220,13 @@ export default {
         systemSwitch: 'Configuration du système',
         isMock: 'Que ce soit pour se moquer',
         isHotKey: 'Si la touche de raccourci',
-        isBreadCrumb: 'Que des miettes de pain',
+        isBreadCrumb: 'Que ce soit des miettes de pain',
         isCache: 'S&#39;il faut mettre en cache',
         isI18n: 'S&#39;internationaliser'
+    },
+    pagingInfo: {
+        total: 'Au total',
+        uint: 'Article',
+        items: 'enregistrement'
     }
 }

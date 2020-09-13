@@ -21,8 +21,8 @@
         <!-- result table -->
         <div class="n-logline-table">
             <n-common-table :table-obj="loglineTable" @btnevent="btnEvent">
-                <a-table slot-scope="{sizeClass, rowKey, selectColumns, selectData, rowClass}"
-                         :class="sizeClass" :row-key="rowKey" slot="com-table"
+                <a-table slot-scope="{sizeClass, rowKey, selectColumns, rowClass}"
+                         :class="sizeClass" row-key="idx" slot="com-table"
                          :columns="selectColumns"
                          :data-source="loglineTable.data"
                          :scroll="{ x: '100%' }"
@@ -283,10 +283,14 @@
                     callback: (data: any) => {
                         data = data.reverse()
                         self.loglineTable.pagingInfo.total = data.length
-                        self.loglineTable.data = data.splice(
+                        const temData = data.splice(
                             (self.loglineTable.pagingInfo.current - 1) * self.loglineTable.pagingInfo.pageSize,
                             self.loglineTable.pagingInfo.pageSize
                         )
+                        temData.forEach((item: any, index: number) => {
+                            item.idx = index + 1
+                        })
+                        self.loglineTable.data = temData
                     }
                 })
             },

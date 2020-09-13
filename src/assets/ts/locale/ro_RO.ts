@@ -3,7 +3,7 @@ export default {
     country: 'RO',
     loginForm: {
         byAccountBtn: 'Autentificare parolă cont',
-        byPhoneBtn: 'Conectare la numărul de telefon mobil',
+        byPhoneBtn: 'Conectare număr mobil',
         accountPlaceholder: 'vă rugăm să introduceți contul',
         passwordPlaceholder: 'Te rog introdu parola',
         autoLogin: 'Logare automata',
@@ -13,7 +13,7 @@ export default {
             emptyErr: 'Contul nu poate fi gol'
         },
         byPasswordTip: {
-            emptyErr: 'parola nu poate fi goală'
+            emptyErr: 'parola nu poate fi necompletată'
         },
         byValidTip: {
             emptyErr: 'codul de verificare trebuie completat'
@@ -29,43 +29,43 @@ export default {
         loginSuccess: 'autentificare reușită'
     },
     menuObj: {
-        basicFeature: 'Abilitatea de bază',
+        basicFeature: 'Abilitate de bază',
         cpUse: 'Utilizarea componentelor',
         childMenu: {
             0: 'Cadrul de bază',
-            1: 'Abilitatea de bază',
-            '0-0': 'vue',
-            '0-1': 'Furnica design',
+            1: 'Abilitate de bază',
+            '0-0': 'Vue',
+            '0-1': 'Design de furnici',
             '1-0': 'Funcția cadru',
             '1-0-0': 'Configurarea proiectului',
             '1-0-1': 'Jurnal frontend',
-            '1-0-2': 'Batjocura locală',
-            '1-0-3': 'globalizarea',
+            '1-0-2': 'Batjocură locală',
+            '1-0-3': 'globalizare',
             '1-0-4': 'Dicționar de date',
             '1-0-5': 'EventBus',
             '1-0-6': 'Set de scule',
             '1-0-7': 'Controlul accesului',
-            '1-0-8': 'cheie rapidă',
-            '1-1': 'Funcția paginii',
+            '1-0-8': 'tastă rapidă',
+            '1-1': 'Funcția de pagină',
             '1-1-0': 'Pagina componentă',
             '1-1-1': 'pagina URL',
-            '1-1-2': 'Fără permisiune',
+            '1-1-2': 'Fără pagină de permisiune',
             '1-1-3': '404 pag'
         },
         defaultMenu: {
             home: 'Acasă'
         },
         errorTip: {
-            notfoundTip: 'Componenta de pe această cale nu a fost găsită',
+            notfoundTip: 'Componenta de sub această cale nu a fost găsită',
             emptyErr: 'Calea componentelor neconfigurate'
         }
     },
     sysInfo: {
-        sysIntro: 'Un cadru de dezvoltare front-end ușor de utilizat și de bază, bazat pe Vue și Ant Design'
+        sysIntro: 'Un cadru de dezvoltare front-end mediu și back-end ușor de utilizat bazat pe Vue și Ant Design'
     },
     requestInfo: {
-        withoutUrl: 'Adresa solicitării nu poate fi goală',
-        networkErr: 'Solicitarea rețelei a eșuat. Încercați din nou mai târziu'
+        withoutUrl: 'Adresa cererii nu poate fi goală',
+        networkErr: 'Solicitarea rețelei a eșuat, încercați din nou mai târziu'
     },
     localeMap: {
         ar: 'arabic',
@@ -74,20 +74,20 @@ export default {
         cs: 'ceh',
         da: 'danez',
         de: 'limba germana',
-        el: 'greacă',
+        el: 'Greacă',
         'en-gb': 'Engleză',
         en: 'Engleză',
         es: 'Spaniolă',
-        et: 'eston',
+        et: 'Estonă',
         fa: 'persană',
         fi: 'finlandeză',
         fr: 'limba franceza',
-        he: 'ebraică',
+        he: 'Ebraică',
         hi: 'hindi',
         hr: 'croat',
-        hu: 'maghiar',
+        hu: 'Maghiară',
         hy: 'armean',
-        id: 'indoneziană',
+        id: 'Indoneziană',
         is: 'islandez',
         it: 'Italiană ',
         ja: 'japonez',
@@ -97,22 +97,22 @@ export default {
         lv: 'Kurda centrală',
         mk: 'macedonean',
         'mn-mn': 'mongol',
-        'ms-my': 'malaezian',
+        'ms-my': 'Malay',
         nb: 'norvegian',
-        'ne-np': 'nepaleză',
+        'ne-np': 'Nepaleză',
         'nl-be': 'flamand',
-        nl: 'olandeză',
+        nl: 'Olandeză',
         pl: 'Lustrui',
         'pt-br': 'brazilian portughez',
         pt: 'Portugheză europeană',
         ro: 'Română',
         ru: 'Limba rusă',
-        sk: 'slovacă',
-        sl: 'sloven',
+        sk: 'Slovacă',
+        sl: 'Slovenă',
         sr: 'sârb',
         sv: 'suedez',
-        ta: 'tamilă',
-        th: 'tailandez',
+        ta: 'Tamilă',
+        th: 'Thai',
         tr: 'turc',
         uk: 'ucrainean',
         vi: 'Vietnameză',
@@ -123,23 +123,23 @@ export default {
         closeAll: 'Inchide toate filele',
         closeCur: 'Inchide fereastra curenta',
         closeOther: 'Închideți alte file',
-        closeRight: 'Închideți eticheta dreaptă',
-        singlePage: 'Pagina independentă',
+        closeRight: 'Închideți eticheta din dreapta',
+        singlePage: 'Pagină independentă',
         refreshPage: 'Reîmprospătare pagină',
-        affixPage: 'Pagină Pin',
+        affixPage: 'Fixați pagina',
         cancelAffixPage: 'Anulați fixarea',
         errorTip: {
             homePageCloseError: 'Pagina de pornire nu are voie să se închidă',
             affixPageCloseError: 'Pagina fixă ​​nu are voie să se închidă',
             homePageAffixError: 'Pagina de pornire nu poate fi anulată'
         },
-        checkSave: 'Vrei să închizi pagina?(Vă rugăm să vă asigurați că conținutul paginii marcate cu roșu a fost salvat)',
-        cancelClose: 'Operațiunea închisă a fost anulată'
+        checkSave: 'Doriți să închideți pagina?(Vă rugăm să vă asigurați că conținutul paginii marcate cu roșu a fost salvat)',
+        cancelClose: 'Operațiunea de închidere a fost anulată'
     },
     personalCenter: {
         frontendLog: 'Jurnal frontend',
         customSetting: 'Personalizare',
-        customClean: 'Configurare clară',
+        customClean: 'Ștergeți configurația',
         logout: 'Sign out',
         errorTip: {
             cleanSuccess: 'Goliți cu succes'
@@ -149,7 +149,7 @@ export default {
         errorTip: {
             notfoundTip: 'Ne pare rău, pagina pe care ați vizitat-o ​​nu există',
             notrightTip: 'Ne pare rău, nu aveți permisiunea de a accesa această pagină',
-            noserviceTip: 'Ne pare rău, a existat o problemă cu serverul. Încercați din nou mai târziu'
+            noserviceTip: 'Ne pare rău, a apărut o problemă cu serverul, vă rugăm să încercați din nou mai târziu'
         },
         btnText: 'Închideți pagina'
     },
@@ -158,12 +158,12 @@ export default {
             search: 'Întreba',
             shrink: 'Pune deoparte',
             reset: 'Resetați',
-            unshrink: 'Unfold'
+            unshrink: 'Desfășurați-vă'
         }
     },
     logline: {
-        list: 'Lista jurnalului',
-        detail: 'Detalii despre jurnal',
+        list: 'Listă jurnal',
+        detail: 'Detalii jurnal',
         btnList: {
             export: 'Export',
             remove: 'Gol'
@@ -173,17 +173,17 @@ export default {
             range: 'limita',
             halfDay: 'Jumătate de zi',
             oneDay: 'intr-o zi',
-            weekDay: 'într-o săptămână',
+            weekDay: 'în decurs de o săptămână',
             monthDay: 'Într-o lună'
         },
         type: {
-            logType: 'Tip jurnal',
-            plh: 'Vă rugăm să selectați tipul de jurnal'
+            logType: 'Tipul jurnalului',
+            plh: 'Vă rugăm să selectați tipul jurnalului'
         },
         tableColumns: {
             index: 'Număr de serie',
             desc: 'Descrierea jurnalului',
-            type: 'Tip jurnal',
+            type: 'Tipul jurnalului',
             time: 'timp',
             op: 'de operare'
         },
@@ -196,11 +196,11 @@ export default {
     },
     comTable: {
         columns: {
-            title: 'Setări pentru coloane',
+            title: 'Setări coloană',
             all: 'selectează tot',
             reset: 'Resetați',
-            fixedLeft: 'Fix stânga',
-            fixedRight: 'Fix corect',
+            fixedLeft: 'S-a remediat stânga',
+            fixedRight: 'S-a corectat dreapta',
             cancelFixed: 'Anulați fixarea'
         },
         size: {
@@ -210,7 +210,7 @@ export default {
             large: 'lăţime'
         },
         fullscreen: 'ecran complet',
-        unFullscreen: 'Anulați ecran complet'
+        unFullscreen: 'Anulați ecranul complet'
     },
     normalBtn: {
         detail: 'Vedere'
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Intrare rapidă',
         systemSwitch: 'Configurarea sistemului',
-        isMock: 'Indiferent dacă este Mock',
-        isHotKey: 'Indiferent dacă este cheia rapidă',
-        isBreadCrumb: 'Indiferent dacă pescuitul',
-        isCache: 'Indiferent dacă să cache',
-        isI18n: 'Indiferent dacă este internațional'
+        isMock: 'Fie să-și bată joc',
+        isHotKey: 'Dacă este o tastă de comandă rapidă',
+        isBreadCrumb: 'Fie pesmet',
+        isCache: 'Dacă să cache',
+        isI18n: 'Fie să internaționalizeze'
+    },
+    pagingInfo: {
+        total: 'In total',
+        uint: 'Articol',
+        items: 'înregistrare'
     }
 }

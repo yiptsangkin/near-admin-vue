@@ -2,8 +2,8 @@ export default {
     locale: 'sv',
     country: 'SE',
     loginForm: {
-        byAccountBtn: 'Konto lösenord inloggning',
-        byPhoneBtn: 'Inloggning till mobilnummer',
+        byAccountBtn: 'Inloggning för kontolösenord',
+        byPhoneBtn: 'Inloggning på mobilnummer',
         accountPlaceholder: 'vänligen ange konto',
         passwordPlaceholder: 'Vänligen skriv in ett lösenord',
         autoLogin: 'automatisk inloggning',
@@ -39,16 +39,16 @@ export default {
             '1-0': 'Ramfunktion',
             '1-0-0': 'Projektkonfiguration',
             '1-0-1': 'Frontend logg',
-            '1-0-2': 'Lokal håna',
-            '1-0-3': 'globaliseringen',
+            '1-0-2': 'Lokal mock',
+            '1-0-3': 'globalisering',
             '1-0-4': 'Data ordbok',
             '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
+            '1-0-6': 'Verktygssats',
             '1-0-7': 'Åtkomstkontroll',
             '1-0-8': 'snabbtangent',
             '1-1': 'Sidfunktion',
-            '1-1-0': 'Komponent sida',
-            '1-1-1': 'url-sida',
+            '1-1-0': 'Komponentsida',
+            '1-1-1': 'webbadress',
             '1-1-2': 'Ingen behörighetssida',
             '1-1-3': '404 sida'
         },
@@ -56,66 +56,66 @@ export default {
             home: 'Hem'
         },
         errorTip: {
-            notfoundTip: 'Komponenten under denna sökväg hittades inte',
-            emptyErr: 'Okonfigurerad komponentväg'
+            notfoundTip: 'Komponenten under denna väg hittades inte',
+            emptyErr: 'Okonfigurerad komponentsökväg'
         }
     },
     sysInfo: {
-        sysIntro: 'En enkel att använda medel- och back-end front-end-utvecklingsram baserad på Vue and Ant Design'
+        sysIntro: 'Ett lättanvänt utvecklingsramverk för mellersta och bakre front-end baserat på Vue och Ant Design'
     },
     requestInfo: {
-        withoutUrl: 'Begäran om adress kan inte vara tom',
-        networkErr: 'Nätverksbegäran misslyckades, försök igen senare'
+        withoutUrl: 'Begäran kan inte vara tom',
+        networkErr: 'Nätverksbegäran misslyckades. Försök igen senare'
     },
     localeMap: {
         ar: 'Arabiska',
-        bg: 'bulgariska',
+        bg: 'Bulgariska',
         ca: 'katalansk',
         cs: 'tjeck',
-        da: 'danska',
+        da: 'Danska',
         de: 'tysk',
         el: 'grekisk',
         'en-gb': 'engelsk',
         en: 'engelsk',
-        es: 'spanska',
+        es: 'Spanska',
         et: 'estniska',
         fa: 'Persiska',
-        fi: 'finska',
-        fr: 'franska',
-        he: 'Hebrew',
+        fi: 'Finska',
+        fr: 'Franska',
+        he: 'Hebreiska',
         hi: 'Hindi',
         hr: 'Kroatisk',
-        hu: 'ungerska',
-        hy: 'armeniska',
-        id: 'indonesiska',
+        hu: 'Ungerska',
+        hy: 'Armeniska',
+        id: 'Indonesiska',
         is: 'isländsk',
-        it: 'italiensk ',
-        ja: 'japansk',
-        kn: 'kannada',
-        ko: 'koreanska',
-        'ku-iq': 'Central kurdiska',
-        lv: 'Central kurdiska',
-        mk: 'makedonska',
-        'mn-mn': 'mongoliska',
-        'ms-my': 'Malay',
-        nb: 'Norwegian',
+        it: 'Italienska ',
+        ja: 'Japanska',
+        kn: 'Kannada',
+        ko: 'Koreanska',
+        'ku-iq': 'Centralkurdiska',
+        lv: 'Centralkurdiska',
+        mk: 'Makedonska',
+        'mn-mn': 'Mongoliska',
+        'ms-my': 'Malajiska',
+        nb: 'Norska',
         'ne-np': 'Nepali',
-        'nl-be': 'flamländska',
-        nl: 'Dutch',
+        'nl-be': 'Flamländska',
+        nl: 'Nederländska',
         pl: 'putsa',
         'pt-br': 'Brasiliansk portugisisk',
         pt: 'Europeiska portugisiska',
         ro: 'rumänska',
         ru: 'ryska språket',
-        sk: 'Slovak',
-        sl: 'slovenska',
+        sk: 'Slovakiska',
+        sl: 'Slovenska',
         sr: 'Serbiska',
         sv: 'svenska',
         ta: 'Tamil',
         th: 'Thai',
-        tr: 'Turkish',
-        uk: 'ukrainska',
-        vi: 'vietnames',
+        tr: 'Turkiska',
+        uk: 'Ukrainska',
+        vi: 'Vietnamesiska',
         'zh-cn': 'Förenklad kinesiska',
         'zh-tw': 'traditionell kinesiska'
     },
@@ -123,23 +123,23 @@ export default {
         closeAll: 'Stäng alla flikar',
         closeCur: 'Stäng nuvarande flik',
         closeOther: 'Stäng andra flikar',
-        closeRight: 'Stäng höger etikett',
+        closeRight: 'Stäng rätt etikett',
         singlePage: 'Oberoende sida',
         refreshPage: 'uppdatera sida',
-        affixPage: 'Fäst sida',
+        affixPage: 'Fäst sidan',
         cancelAffixPage: 'Lossa',
         errorTip: {
-            homePageCloseError: 'Hemsidan får inte stänga',
-            affixPageCloseError: 'Fast sida får inte stängas',
+            homePageCloseError: 'Hemsidan får inte stängas',
+            affixPageCloseError: 'Fixad sida får inte stängas',
             homePageAffixError: 'Hemsidan kan inte lossas'
         },
-        checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan markerad med rött har sparats)',
-        cancelClose: 'Stäng operation avbruten'
+        checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan markerat med rött har sparats)',
+        cancelClose: 'Stängning avbröts'
     },
     personalCenter: {
         frontendLog: 'Frontend logg',
         customSetting: 'Anpassning',
-        customClean: 'Tydlig konfiguration',
+        customClean: 'Rensa konfigurationen',
         logout: 'logga ut',
         errorTip: {
             cleanSuccess: 'Töm framgångsrikt'
@@ -147,9 +147,9 @@ export default {
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Den sidan du besökte finns inte',
+            notfoundTip: 'Tyvärr, sidan du besökte finns inte',
             notrightTip: 'Tyvärr har du inte behörighet att komma åt den här sidan',
-            noserviceTip: 'Tyvärr, det var ett problem med servern, försök igen senare'
+            noserviceTip: 'Tyvärr, det uppstod ett problem med servern. Försök igen senare'
         },
         btnText: 'Stäng sidan'
     },
@@ -163,7 +163,7 @@ export default {
     },
     logline: {
         list: 'Logglista',
-        detail: 'Logginformation',
+        detail: 'Logga detaljer',
         btnList: {
             export: 'Exportera',
             remove: 'Tömma'
@@ -185,12 +185,12 @@ export default {
             desc: 'Loggbeskrivning',
             type: 'Loggtyp',
             time: 'tid',
-            op: 'rörelse'
+            op: 'fungerar'
         },
         request: 'Begär data',
         error: {
-            cancel: 'Tom operation avbruten',
-            confirm: 'Vill du rensa loggen?(Om loggen töms kan den inte hämtas)'
+            cancel: 'Tom åtgärd avbruten',
+            confirm: 'Vill du rensa loggen?(Om stocken töms kan den inte hämtas)'
         },
         success: 'Loggen har tömts'
     },
@@ -200,7 +200,7 @@ export default {
             all: 'Välj alla',
             reset: 'Återställa',
             fixedLeft: 'Fast vänster',
-            fixedRight: 'Fast höger',
+            fixedRight: 'Fast rätt',
             cancelFixed: 'Lossa'
         },
         size: {
@@ -210,7 +210,7 @@ export default {
             large: 'bredd'
         },
         fullscreen: 'fullskärm',
-        unFullscreen: 'Avbryt hela skärmen'
+        unFullscreen: 'Avbryt helskärm'
     },
     normalBtn: {
         detail: 'Se'
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Snabb inmatning',
         systemSwitch: 'Systemkonfiguration',
-        isMock: 'Huruvida man ska håna',
-        isHotKey: 'Oavsett hur snabbtangenten är',
-        isBreadCrumb: 'Oavsett om bröd smular',
-        isCache: 'Huruvida man ska cache',
-        isI18n: 'Om man ska internationalisera'
+        isMock: 'Oavsett om man ska håna',
+        isHotKey: 'Oavsett genvägsknapp',
+        isBreadCrumb: 'Oavsett om brödsmulor',
+        isCache: 'Oavsett om du vill cache',
+        isI18n: 'Oavsett om man ska internationalisera'
+    },
+    pagingInfo: {
+        total: 'Totalt',
+        uint: 'Artikel',
+        items: 'inspelning'
     }
 }

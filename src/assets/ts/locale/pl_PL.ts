@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Zaloguj się za pomocą hasła do konta',
         byPhoneBtn: 'Logowanie na numer telefonu komórkowego',
-        accountPlaceholder: 'proszę podać konto',
+        accountPlaceholder: 'proszę wejść na konto',
         passwordPlaceholder: 'Proszę wprowadzić hasło',
         autoLogin: 'automatyczne logowanie',
         forgetBtn: 'zapomnij hasło',
@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Łatwa w użyciu platforma programistyczna front-end dla środkowego i zaplecza oparta na Vue i Ant Design'
+        sysIntro: 'Łatwa w użyciu platforma programistyczna front-end dla środkowego i końcowego zaplecza oparta na Vue i Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adres żądania nie może być pusty',
@@ -133,7 +133,7 @@ export default {
             affixPageCloseError: 'Naprawionej strony nie można zamknąć',
             homePageAffixError: 'Nie można odpiąć strony głównej'
         },
-        checkSave: 'Chcesz zamknąć stronę?(Upewnij się, że zawartość strony zaznaczonej na czerwono została zapisana)',
+        checkSave: 'Chcesz zamknąć stronę?(Upewnij się, że zawartość strony zaznaczona na czerwono została zapisana)',
         cancelClose: 'Zamknięcie operacji zostało anulowane'
     },
     personalCenter: {
@@ -223,5 +223,10 @@ export default {
         isBreadCrumb: 'Czy bułka tarta',
         isCache: 'Czy buforować',
         isI18n: 'Czy do internacjonalizacji'
+    },
+    pagingInfo: {
+        total: 'W całości',
+        uint: 'Artykuł',
+        items: 'nagranie'
     }
 }

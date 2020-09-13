@@ -2,18 +2,18 @@ export default {
     locale: 'da',
     country: 'DK',
     loginForm: {
-        byAccountBtn: 'Konto adgangskode login',
-        byPhoneBtn: 'Login til mobiltelefonnummer',
+        byAccountBtn: 'Login med adgangskode til konto',
+        byPhoneBtn: 'Login til mobilnummer',
         accountPlaceholder: 'indtast venligst konto',
-        passwordPlaceholder: 'Indtast adgangskode',
+        passwordPlaceholder: 'Indtast adgangskoden',
         autoLogin: 'automatisk login',
-        forgetBtn: 'glemme adgangskode',
+        forgetBtn: 'glem adgangskode',
         loginBtn: 'Log på',
         byAccountTip: {
             emptyErr: 'Kontoen kan ikke være tom'
         },
         byPasswordTip: {
-            emptyErr: 'adgangskode kan ikke være tomt'
+            emptyErr: 'adgangskoden kan ikke være tom'
         },
         byValidTip: {
             emptyErr: 'verifikationskode skal udfyldes'
@@ -26,28 +26,28 @@ export default {
         phonePlaceholder: 'Indtast venligst telefonnummer',
         validPlaceholder: 'Verifikationskode',
         validBtn: 'få bekræftelseskode',
-        loginSuccess: 'login er vellykket'
+        loginSuccess: 'login vellykket'
     },
     menuObj: {
         basicFeature: 'Grundlæggende evne',
         cpUse: 'Brug af komponenter',
         childMenu: {
-            0: 'Grundlæggende rammer',
+            0: 'Grundlæggende ramme',
             1: 'Grundlæggende evne',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
             '1-0': 'Rammefunktion',
             '1-0-0': 'Projektkonfiguration',
-            '1-0-1': 'Frontend log',
-            '1-0-2': 'Lokal hån',
+            '1-0-1': 'Frontend-log',
+            '1-0-2': 'Lokal mock',
             '1-0-3': 'globalisering',
-            '1-0-4': 'Data ordbog',
+            '1-0-4': 'Dataordbog',
             '1-0-5': 'EventBus',
-            '1-0-6': 'Toolset',
+            '1-0-6': 'Værktøjssæt',
             '1-0-7': 'Adgangskontrol',
             '1-0-8': 'genvejstast',
             '1-1': 'Sidefunktion',
-            '1-1-0': 'Komponent side',
+            '1-1-0': 'Komponentside',
             '1-1-1': 'url-side',
             '1-1-2': 'Ingen tilladelsesside',
             '1-1-3': '404 side'
@@ -57,64 +57,64 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Komponenten under denne sti blev ikke fundet',
-            emptyErr: 'Ukonfigureret komponentsti'
+            emptyErr: 'Ikke-konfigureret komponentsti'
         }
     },
     sysInfo: {
-        sysIntro: 'En brugervenlig midt-og bag-en-front-end-udviklingsramme baseret på Vue og Ant Design'
+        sysIntro: 'En brugervenlig udviklingsramme til mellem- og back-end-front-end baseret på Vue og Ant Design'
     },
     requestInfo: {
-        withoutUrl: 'Anmodningsadressen kan ikke være tom',
+        withoutUrl: 'Anmodningsadresse kan ikke være tom',
         networkErr: 'Netværksanmodning mislykkedes. Prøv igen senere'
     },
     localeMap: {
-        ar: 'arabisk',
-        bg: 'bulgarsk',
-        ca: 'catalan',
-        cs: 'tjekkisk',
+        ar: 'Arabisk',
+        bg: 'Bulgarsk',
+        ca: 'Catalansk',
+        cs: 'Tjekkisk',
         da: 'dansk',
         de: 'tysk',
-        el: 'græsk',
+        el: 'Græsk',
         'en-gb': 'engelsk',
         en: 'engelsk',
         es: 'spansk',
-        et: 'estisk',
-        fa: 'persisk',
+        et: 'Estisk',
+        fa: 'Persisk',
         fi: 'Finsk',
         fr: 'fransk',
-        he: 'Hebrew',
+        he: 'Hebraisk',
         hi: 'Hindi',
         hr: 'Kroatisk',
-        hu: 'ungarsk',
-        hy: 'armensk',
+        hu: 'Ungarsk',
+        hy: 'Armensk',
         id: 'Indonesisk',
-        is: 'islandsk',
-        it: 'italiensk ',
-        ja: 'japansk',
-        kn: 'kannaresisk',
-        ko: 'Korean',
+        is: 'Islandsk',
+        it: 'Italiensk ',
+        ja: 'Japansk',
+        kn: 'Kannada',
+        ko: 'Koreansk',
         'ku-iq': 'Central kurdisk',
         lv: 'Central kurdisk',
-        mk: 'makedonsk',
+        mk: 'Makedonsk',
         'mn-mn': 'Mongolsk',
-        'ms-my': 'Malay',
+        'ms-my': 'Malaysisk',
         nb: 'Norsk',
-        'ne-np': 'nepalesisk',
+        'ne-np': 'Nepalesisk',
         'nl-be': 'Flamsk',
         nl: 'hollandske',
         pl: 'Polere',
         'pt-br': 'Brasiliansk portugisisk',
         pt: 'Europæisk portugisisk',
-        ro: 'rumænsk',
+        ro: 'Rumænsk',
         ru: 'russisk sprog',
-        sk: 'slovakisk',
-        sl: 'slovensk',
-        sr: 'serbisk',
+        sk: 'Slovakisk',
+        sl: 'Slovensk',
+        sr: 'Serbisk',
         sv: 'Svensk',
         ta: 'Tamil',
         th: 'Thai',
         tr: 'tyrkisk',
-        uk: 'ukrainsk',
+        uk: 'Ukrainsk',
         vi: 'Vietnamesisk',
         'zh-cn': 'Forenklet kinesisk',
         'zh-tw': 'traditionelt kinesisk'
@@ -127,27 +127,27 @@ export default {
         singlePage: 'Uafhængig side',
         refreshPage: 'opdater side',
         affixPage: 'Fastgør side',
-        cancelAffixPage: 'Frigør',
+        cancelAffixPage: 'Løsn',
         errorTip: {
-            homePageCloseError: 'Hjemmesiden må ikke lukke',
-            affixPageCloseError: 'Den faste side må ikke lukke',
-            homePageAffixError: 'Hjemmesiden kan ikke afmonteres'
+            homePageCloseError: 'Hjemmesiden er ikke tilladt at lukke',
+            affixPageCloseError: 'En fast side må ikke lukkes',
+            homePageAffixError: 'Hjemmesiden kan ikke løsnes'
         },
-        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af siden markeret med rødt er gemt)',
+        checkSave: 'Vil du lukke siden?(Sørg for, at indholdet af den side, der er markeret med rødt, er gemt)',
         cancelClose: 'Luk operation annulleret'
     },
     personalCenter: {
-        frontendLog: 'Frontend log',
+        frontendLog: 'Frontend-log',
         customSetting: 'Tilpasning',
         customClean: 'Ryd konfiguration',
         logout: 'Log ud',
         errorTip: {
-            cleanSuccess: 'Tøm succes'
+            cleanSuccess: 'Tøm med succes'
         }
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Beklager, den side, du har besøgt, findes ikke',
+            notfoundTip: 'Beklager, den side, du besøgte, findes ikke',
             notrightTip: 'Beklager, du har ikke tilladelse til at få adgang til denne side',
             noserviceTip: 'Beklager, der var et problem med serveren. Prøv igen senere'
         },
@@ -158,11 +158,11 @@ export default {
             search: 'Forhøre',
             shrink: 'Lægge væk',
             reset: 'Nulstil',
-            unshrink: 'Unfold'
+            unshrink: 'Udfold'
         }
     },
     logline: {
-        list: 'Log liste',
+        list: 'Logliste',
         detail: 'Log detaljer',
         btnList: {
             export: 'Eksport',
@@ -177,20 +177,20 @@ export default {
             monthDay: 'Inden for en måned'
         },
         type: {
-            logType: 'Log type',
+            logType: 'Logtype',
             plh: 'Vælg logtype'
         },
         tableColumns: {
             index: 'Serienummer',
-            desc: 'Log beskrivelse',
-            type: 'Log type',
+            desc: 'Logbeskrivelse',
+            type: 'Logtype',
             time: 'tid',
-            op: 'drift'
+            op: 'i drift'
         },
         request: 'Anmod om data',
         error: {
-            cancel: 'Tom operation annulleret',
-            confirm: 'Vil du rydde loggen?(Hvis loggen er tømt, kan den ikke hentes)'
+            cancel: 'Tom handling annulleret',
+            confirm: 'Vil du rydde loggen?(Hvis loggen tømmes, kan den ikke hentes)'
         },
         success: 'Loggen er tømt'
     },
@@ -200,8 +200,8 @@ export default {
             all: 'Vælg alle',
             reset: 'Nulstil',
             fixedLeft: 'Fast venstre',
-            fixedRight: 'Fast højre',
-            cancelFixed: 'Frigør'
+            fixedRight: 'Fast ret',
+            cancelFixed: 'Løsn'
         },
         size: {
             title: 'Rækkehøjde',
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Hurtig adgang',
         systemSwitch: 'System konfiguration',
-        isMock: 'Hvorvidt man skal spotte',
+        isMock: 'Uanset om man skal spotte',
         isHotKey: 'Om genvejstast',
-        isBreadCrumb: 'Uanset om brød smuler',
-        isCache: 'Hvorvidt man skal cache',
-        isI18n: 'Om man skal internationalisere'
+        isBreadCrumb: 'Uanset om brødkrummer',
+        isCache: 'Uanset om det skal cache',
+        isI18n: 'Uanset om man skal internationalisere'
+    },
+    pagingInfo: {
+        total: 'I alt',
+        uint: 'Artikel',
+        items: 'indspilning'
     }
 }

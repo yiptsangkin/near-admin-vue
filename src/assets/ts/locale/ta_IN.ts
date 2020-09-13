@@ -3,7 +3,7 @@ export default {
     country: 'IN',
     loginForm: {
         byAccountBtn: 'கணக்கு கடவுச்சொல் உள்நுழைவு',
-        byPhoneBtn: 'மொபைல் தொலைபேசி எண் உள்நுழைவு',
+        byPhoneBtn: 'மொபைல் எண் உள்நுழைவு',
         accountPlaceholder: 'கணக்கை உள்ளிடவும்',
         passwordPlaceholder: 'கடவுச்சொல்லை உள்ளிடவும்',
         autoLogin: 'தானாக உள்நுழைவு',
@@ -20,7 +20,7 @@ export default {
         },
         sendMsg: {
             repeatErr: 'மீண்டும் மீண்டும் அனுப்ப வேண்டாம்',
-            success: 'வெற்றி',
+            success: 'வெற்றி பெற்றது',
             codeTip: 'உங்கள் சரிபார்ப்புக் குறியீடு'
         },
         phonePlaceholder: 'தொலைபேசி எண்ணை உள்ளிடவும்',
@@ -148,7 +148,7 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'மன்னிக்கவும், நீங்கள் பார்வையிட்ட பக்கம் இல்லை',
-            notrightTip: 'மன்னிக்கவும், இந்த பக்கத்தை அணுக உங்களுக்கு அனுமதி இல்லை',
+            notrightTip: 'மன்னிக்கவும், இந்தப் பக்கத்தை அணுக உங்களுக்கு அனுமதி இல்லை',
             noserviceTip: 'மன்னிக்கவும், சேவையகத்தில் சிக்கல் ஏற்பட்டது, பின்னர் மீண்டும் முயற்சிக்கவும்'
         },
         btnText: 'பக்கத்தை மூடு'
@@ -223,5 +223,10 @@ export default {
         isBreadCrumb: 'ரொட்டி நொறுக்குத் தீனிகள்',
         isCache: 'கேச் செய்ய வேண்டுமா',
         isI18n: 'சர்வதேசமயமாக்க வேண்டுமா'
+    },
+    pagingInfo: {
+        total: 'மொத்தமாக',
+        uint: 'கட்டுரை',
+        items: 'பதிவு'
     }
 }

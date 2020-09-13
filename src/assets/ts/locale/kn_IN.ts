@@ -3,14 +3,14 @@ export default {
     country: 'IN',
     loginForm: {
         byAccountBtn: 'ಖಾತೆ ಪಾಸ್ವರ್ಡ್ ಲಾಗಿನ್',
-        byPhoneBtn: 'ಮೊಬೈಲ್ ಫೋನ್ ಸಂಖ್ಯೆ ಲಾಗಿನ್',
+        byPhoneBtn: 'ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಲಾಗಿನ್',
         accountPlaceholder: 'ದಯವಿಟ್ಟು ಖಾತೆಯನ್ನು ನಮೂದಿಸಿ',
         passwordPlaceholder: 'ದಯವಿಟ್ಟು ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ',
         autoLogin: 'ಸ್ವಯಂ ಲಾಗಿನ್',
         forgetBtn: 'ಪಾಸ್ವರ್ಡ್ ಮರೆತುಬಿಡಿ',
         loginBtn: 'ಲಾಗ್ ಇನ್ ಮಾಡಿ',
         byAccountTip: {
-            emptyErr: 'ಖಾತೆ ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ'
+            emptyErr: 'ಖಾತೆ ಖಾಲಿಯಾಗಿರಬಾರದು'
         },
         byPasswordTip: {
             emptyErr: 'ಪಾಸ್ವರ್ಡ್ ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ'
@@ -223,5 +223,10 @@ export default {
         isBreadCrumb: 'ಬ್ರೆಡ್ ಕ್ರಂಬ್ಸ್ ಆಗಿರಲಿ',
         isCache: 'ಸಂಗ್ರಹಿಸಬೇಕೆ',
         isI18n: 'ಅಂತರರಾಷ್ಟ್ರೀಕರಿಸಬೇಕೆ'
+    },
+    pagingInfo: {
+        total: 'ಒಟ್ಟಾಗಿ',
+        uint: 'ಲೇಖನ',
+        items: 'ರೆಕಾರ್ಡಿಂಗ್'
     }
 }

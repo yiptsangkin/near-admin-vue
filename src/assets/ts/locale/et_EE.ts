@@ -2,21 +2,21 @@ export default {
     locale: 'et',
     country: 'EE',
     loginForm: {
-        byAccountBtn: 'Konto parooli sisselogimine',
-        byPhoneBtn: 'Mobiiltelefoni numbri sisselogimine',
+        byAccountBtn: 'Konto parooliga sisselogimine',
+        byPhoneBtn: 'Mobiilinumbri sisselogimine',
         accountPlaceholder: 'palun sisesta konto',
-        passwordPlaceholder: 'Palun sisesta parool',
+        passwordPlaceholder: 'Sisestage parool',
         autoLogin: 'automaatne sisselogimine',
         forgetBtn: 'unusta parool',
         loginBtn: 'Logi sisse',
         byAccountTip: {
-            emptyErr: 'Konto ei saa olla tühi'
+            emptyErr: 'Konto ei tohi olla tühi'
         },
         byPasswordTip: {
             emptyErr: 'parool ei tohi olla tühi'
         },
         byValidTip: {
-            emptyErr: 'kontrollkood peab olema täidetud'
+            emptyErr: 'kontrollkood tuleb täita'
         },
         sendMsg: {
             repeatErr: 'Ärge saatke korduvalt',
@@ -35,11 +35,11 @@ export default {
             0: 'Põhiraamistik',
             1: 'Põhivõime',
             '0-0': 'Vue',
-            '0-1': 'Sipelgakujundus',
-            '1-0': 'Raamfunktsioon',
+            '0-1': 'Sipelgate disain',
+            '1-0': 'Raamistiku funktsioon',
             '1-0-0': 'Projekti konfiguratsioon',
             '1-0-1': 'Esiosa logi',
-            '1-0-2': 'Kohalik pilk',
+            '1-0-2': 'Kohalik mõnitamine',
             '1-0-3': 'globaliseerumine',
             '1-0-4': 'Andmesõnastik',
             '1-0-5': 'EventBus',
@@ -47,9 +47,9 @@ export default {
             '1-0-7': 'Juurdepääsu kontroll',
             '1-0-8': 'kiirklahv',
             '1-1': 'Lehe funktsioon',
-            '1-1-0': 'Komponentide leht',
-            '1-1-1': 'url leht',
-            '1-1-2': 'Lubade leht puudub',
+            '1-1-0': 'Komponendi leht',
+            '1-1-1': 'URL-i leht',
+            '1-1-2': 'Luba pole',
             '1-1-3': '404 lk'
         },
         defaultMenu: {
@@ -61,108 +61,108 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Lihtsalt kasutatav kesk- ja tagaosa esiotsa arendusraamistik, mis põhineb Vue ja Ant Designil'
+        sysIntro: 'Vue ja Ant Designil põhinev hõlpsasti kasutatav kesk- ja tagapõhine esiotsa arendusraamistik'
     },
     requestInfo: {
         withoutUrl: 'Taotluse aadress ei tohi olla tühi',
-        networkErr: 'Võrgu taotlus nurjus, proovige hiljem uuesti'
+        networkErr: 'Võrgutaotlus nurjus, proovige hiljem uuesti'
     },
     localeMap: {
-        ar: 'Araabia keeles',
+        ar: 'Araabia',
         bg: 'Bulgaaria keel',
-        ca: 'Katalaani keeles',
-        cs: 'Tšehhi',
-        da: 'Taanlane',
-        de: 'Saksa keeles',
+        ca: 'Katalaani keel',
+        cs: 'Tšehhi keel',
+        da: 'Taani keel',
+        de: 'Saksa keel',
         el: 'Kreeka keel',
         'en-gb': 'Inglise',
         en: 'Inglise',
-        es: 'Hispaania keeles',
+        es: 'Hispaania keel',
         et: 'Eestlane',
-        fa: 'Pärsia',
+        fa: 'Pärsia keel',
         fi: 'Soome keel',
-        fr: 'Prantsuse keeles',
-        he: 'Heebrea keeles',
+        fr: 'Prantsuse keel',
+        he: 'Heebrea keel',
         hi: 'Hindi keel',
-        hr: 'Horvaatia',
+        hr: 'Horvaadi',
         hu: 'Ungari keel',
-        hy: 'Armeenlane',
-        id: 'Indoneeslane',
-        is: 'Islandi keeles',
-        it: 'Itaalia keeles ',
-        ja: 'Jaapanlane',
+        hy: 'Armeenia',
+        id: 'Indoneesia keel',
+        is: 'Islandi keel',
+        it: 'Itaalia keel ',
+        ja: 'Jaapani keel',
         kn: 'Kannada',
         ko: 'Korea keel',
-        'ku-iq': 'Keskkurdi keel',
-        lv: 'Keskkurdi keel',
+        'ku-iq': 'Kurdi keskosa',
+        lv: 'Kurdi keskosa',
         mk: 'Makedoonia',
         'mn-mn': 'Mongoli keel',
-        'ms-my': 'Malai',
-        nb: 'Norra keeles',
-        'ne-np': 'Nepali',
-        'nl-be': 'Flaami keeles',
-        nl: 'Hollandi keeles',
-        pl: 'Poola keeles',
+        'ms-my': 'Malai keel',
+        nb: 'Norra keel',
+        'ne-np': 'Nepali keel',
+        'nl-be': 'Flaami',
+        nl: 'Hollandi',
+        pl: 'Poola keel',
         'pt-br': 'Brasiilia portugali keel',
         pt: 'Euroopa portugali keel',
-        ro: 'Rumeenlane',
+        ro: 'Rumeenia keel',
         ru: 'Vene keel',
-        sk: 'Slovaki keeles',
-        sl: 'Sloveen',
-        sr: 'Serbia keel',
-        sv: 'Rootsi keeles',
-        ta: 'Tamili',
+        sk: 'Slovaki keel',
+        sl: 'Sloveeni keel',
+        sr: 'Serbia',
+        sv: 'Rootsi keel',
+        ta: 'Tamili keel',
         th: 'Tai',
-        tr: 'Türgi keeles',
+        tr: 'Türgi keel',
         uk: 'Ukrainlane',
-        vi: 'Vietnami keel',
+        vi: 'Vietnamlane',
         'zh-cn': 'Lihtsustatud hiina keel',
         'zh-tw': 'traditsiooniline hiina keel'
     },
     tagObj: {
-        closeAll: 'Sulgege kõik sakid',
-        closeCur: 'Sulgege praegune sakk',
+        closeAll: 'Sulgege kõik vahelehed',
+        closeCur: 'Sule praegune vaheleht',
         closeOther: 'Sulgege muud vahelehed',
         closeRight: 'Sulgege parem silt',
-        singlePage: 'Iseseisev leht',
-        refreshPage: 'värskenda lehte',
+        singlePage: 'Sõltumatu leht',
+        refreshPage: 'lehe värskendamine',
         affixPage: 'Kinnita leht',
         cancelAffixPage: 'Vabastage',
         errorTip: {
-            homePageCloseError: 'Kodulehte ei tohi sulgeda',
-            affixPageCloseError: 'Fikseeritud lehte ei tohi sulgeda',
-            homePageAffixError: 'Kodulehte ei saa lahti siduda'
+            homePageCloseError: 'Kodulehte pole lubatud sulgeda',
+            affixPageCloseError: 'Parandatud lehte pole lubatud sulgeda',
+            homePageAffixError: 'Kodulehte ei saa lahti kinnitada'
         },
-        checkSave: 'Kas soovite lehe sulgeda?(Veenduge, et punasega märgitud lehe sisu oleks salvestatud)',
-        cancelClose: 'Sule operatsioon tühistati'
+        checkSave: 'Kas soovite lehe sulgeda?(Veenduge, et punasega tähistatud lehe sisu oleks salvestatud)',
+        cancelClose: 'Sule toiming tühistati'
     },
     personalCenter: {
         frontendLog: 'Esiosa logi',
         customSetting: 'Isikupärastamine',
-        customClean: 'Tühjenda konfiguratsioon',
+        customClean: 'Kustuta konfiguratsioon',
         logout: 'Logi välja',
         errorTip: {
-            cleanSuccess: 'Tühjendage edukalt'
+            cleanSuccess: 'Tühjenda edukalt'
         }
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Vabandust, teie külastatud lehte pole olemas',
-            notrightTip: 'Kahjuks pole teil sellel lehel juurdepääsu luba',
-            noserviceTip: 'Vabandust, serveriga ilmnes probleem. Proovige hiljem uuesti'
+            notrightTip: 'Vabandust, teil pole luba sellele lehele juurde pääseda',
+            noserviceTip: 'Vabandust, serveriga ilmnes probleem, proovige hiljem uuesti'
         },
-        btnText: 'Sulge leht'
+        btnText: 'Sule leht'
     },
     searchPanel: {
         btn: {
-            search: 'Küsige',
+            search: 'Uurida',
             shrink: 'Pane ära',
             reset: 'Lähtesta',
-            unshrink: 'Lahti lahti'
+            unshrink: 'Avage'
         }
     },
     logline: {
-        list: 'Logi nimekiri',
+        list: 'Logi loend',
         detail: 'Logi üksikasjad',
         btnList: {
             export: 'Eksport',
@@ -189,24 +189,24 @@ export default {
         },
         request: 'Taotle andmeid',
         error: {
-            cancel: 'Tühi operatsioon tühistati',
-            confirm: 'Kas soovite logi kustutada?(Kui logi tühjendatakse, ei saa seda hankida)'
+            cancel: 'Tühi toiming tühistati',
+            confirm: 'Kas soovite logi kustutada?(Kui logi tühjendatakse, ei saa seda uuesti leida)'
         },
         success: 'Logi on tühjendatud'
     },
     comTable: {
         columns: {
-            title: 'Veeru sätted',
+            title: 'Veeruseaded',
             all: 'Vali kõik',
             reset: 'Lähtesta',
-            fixedLeft: 'Fikseeritud vasakul',
-            fixedRight: 'Fikseeritud õigus',
+            fixedLeft: 'Parandatud vasakule',
+            fixedRight: 'Parandatud paremale',
             cancelFixed: 'Vabastage'
         },
         size: {
             title: 'Rea kõrgus',
             small: 'kitsas',
-            normal: 'sisse',
+            normal: 'aastal',
             large: 'laius'
         },
         fullscreen: 'Täisekraan',
@@ -216,12 +216,17 @@ export default {
         detail: 'Vaade'
     },
     setting: {
-        customEntry: 'Kiire sisenemine',
+        customEntry: 'Kiire sisestamine',
         systemSwitch: 'Süsteemi konfiguratsioon',
         isMock: 'Kas mõnitada',
-        isHotKey: 'Kas kiirklahv',
+        isHotKey: 'Kas otseteeklahv',
         isBreadCrumb: 'Kas leivapuru',
-        isCache: 'Kas vahemällu',
-        isI18n: 'Kas rahvusvaheliseks muuta'
+        isCache: 'Kas vahemällu salvestada',
+        isI18n: 'Kas rahvusvahelistuda'
+    },
+    pagingInfo: {
+        total: 'Kokku',
+        uint: 'Artikkel',
+        items: 'salvestamine'
     }
 }

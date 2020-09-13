@@ -2,9 +2,9 @@ export default {
     locale: 'it',
     country: 'IT',
     loginForm: {
-        byAccountBtn: 'Login password account',
+        byAccountBtn: 'Accesso con password dell&#39;account',
         byPhoneBtn: 'Accesso al numero di cellulare',
-        accountPlaceholder: 'per favore inserisci l&#39;account',
+        accountPlaceholder: 'si prega di inserire l&#39;account',
         passwordPlaceholder: 'Per favore, inserisci la password',
         autoLogin: 'login automatico',
         forgetBtn: 'dimenticare la password',
@@ -19,27 +19,27 @@ export default {
             emptyErr: 'il codice di verifica deve essere compilato'
         },
         sendMsg: {
-            repeatErr: 'Non inviare più volte',
+            repeatErr: 'Non inviare ripetutamente',
             success: 'Riuscito',
             codeTip: 'Il tuo codice di verifica è'
         },
         phonePlaceholder: 'Inserisci il numero di telefono',
         validPlaceholder: 'Codice di verifica',
-        validBtn: 'ottieni il codice di verifica',
+        validBtn: 'ottenere il codice di verifica',
         loginSuccess: 'accesso riuscito'
     },
     menuObj: {
         basicFeature: 'Abilità di base',
         cpUse: 'Utilizzo dei componenti',
         childMenu: {
-            0: 'Quadro di base',
+            0: 'Framework di base',
             1: 'Abilità di base',
             '0-0': 'Vue',
-            '0-1': 'Design della formica',
+            '0-1': 'Ant Design',
             '1-0': 'Funzione quadro',
             '1-0-0': 'Configurazione del progetto',
-            '1-0-1': 'Registro front-end',
-            '1-0-2': 'Derisione locale',
+            '1-0-1': 'Registro di frontend',
+            '1-0-2': 'Finto locale',
             '1-0-3': 'globalizzazione',
             '1-0-4': 'Dizionario dei dati',
             '1-0-5': 'EventBus',
@@ -57,15 +57,15 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Il componente in questo percorso non è stato trovato',
-            emptyErr: 'Percorso componente non configurato'
+            emptyErr: 'Percorso del componente non configurato'
         }
     },
     sysInfo: {
-        sysIntro: 'Un framework di sviluppo front-end medio e back-end di facile utilizzo basato su Vue e Ant Design'
+        sysIntro: 'Un framework di sviluppo front-end middle e back-end di facile utilizzo basato su Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L&#39;indirizzo della richiesta non può essere vuoto',
-        networkErr: 'Richiesta di rete non riuscita, riprovare più tardi'
+        networkErr: 'Richiesta di rete non riuscita, riprova più tardi'
     },
     localeMap: {
         ar: 'Arabo',
@@ -78,7 +78,7 @@ export default {
         'en-gb': 'Inglese',
         en: 'Inglese',
         es: 'spagnolo',
-        et: 'estone',
+        et: 'Estone',
         fa: 'persiano',
         fi: 'finlandese',
         fr: 'francese',
@@ -99,7 +99,7 @@ export default {
         'mn-mn': 'mongolo',
         'ms-my': 'malese',
         nb: 'norvegese',
-        'ne-np': 'Nepali',
+        'ne-np': 'Nepalese',
         'nl-be': 'fiammingo',
         nl: 'olandese',
         pl: 'polacco',
@@ -107,7 +107,7 @@ export default {
         pt: 'Portoghese europeo',
         ro: 'rumeno',
         ru: 'lingua russa',
-        sk: 'slovacco',
+        sk: 'Slovacco',
         sl: 'sloveno',
         sr: 'serbo',
         sv: 'svedese',
@@ -123,32 +123,32 @@ export default {
         closeAll: 'Chiudi tutte le schede',
         closeCur: 'Chiudi la finestra attuale',
         closeOther: 'Chiudi le altre schede',
-        closeRight: 'Chiudi l&#39;etichetta destra',
+        closeRight: 'Chiudi etichetta destra',
         singlePage: 'Pagina indipendente',
         refreshPage: 'aggiorna pagina',
-        affixPage: 'Pin page',
+        affixPage: 'Pagina pin',
         cancelAffixPage: 'Sblocca',
         errorTip: {
-            homePageCloseError: 'La home page non è autorizzata a chiudere',
-            affixPageCloseError: 'La pagina fissa non può chiudere',
-            homePageAffixError: 'Non è possibile sbloccare la home page'
+            homePageCloseError: 'La home page non consente la chiusura',
+            affixPageCloseError: 'La pagina fissa non può chiudersi',
+            homePageAffixError: 'La home page non può essere sbloccata'
         },
-        checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina contrassegnata in rosso sia stato salvato)',
+        checkSave: 'Vuoi chiudere la pagina?(Assicurati che il contenuto della pagina contrassegnato in rosso sia stato salvato)',
         cancelClose: 'Operazione di chiusura annullata'
     },
     personalCenter: {
-        frontendLog: 'Registro front-end',
+        frontendLog: 'Registro di frontend',
         customSetting: 'Personalizzazione',
-        customClean: 'Cancella configurazione',
+        customClean: 'Configurazione chiara',
         logout: 'disconnessione',
         errorTip: {
-            cleanSuccess: 'Vuoto con successo'
+            cleanSuccess: 'Svuota con successo'
         }
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Siamo spiacenti, la pagina visitata non esiste',
-            notrightTip: 'Siamo spiacenti, non sei autorizzato ad accedere a questa pagina',
+            notfoundTip: 'Spiacenti, la pagina che hai visitato non esiste',
+            notrightTip: 'Spiacenti, non sei autorizzato ad accedere a questa pagina',
             noserviceTip: 'Spiacenti, si è verificato un problema con il server, riprova più tardi'
         },
         btnText: 'Chiudi pagina'
@@ -182,7 +182,7 @@ export default {
         },
         tableColumns: {
             index: 'Numero di serie',
-            desc: 'Descrizione del registro',
+            desc: 'Descrizione registro',
             type: 'Tipo di registro',
             time: 'tempo',
             op: 'operativo'
@@ -196,10 +196,10 @@ export default {
     },
     comTable: {
         columns: {
-            title: 'Impostazioni della colonna',
+            title: 'Impostazioni delle colonne',
             all: 'seleziona tutto',
             reset: 'Ripristina',
-            fixedLeft: 'Fisso a sinistra',
+            fixedLeft: 'Risolto a sinistra',
             fixedRight: 'Corretto a destra',
             cancelFixed: 'Sblocca'
         },
@@ -216,12 +216,17 @@ export default {
         detail: 'Visualizza'
     },
     setting: {
-        customEntry: 'Ingresso rapido',
+        customEntry: 'Accesso rapido',
         systemSwitch: 'Configurazione di sistema',
-        isMock: 'Sia per deridere',
-        isHotKey: 'Se tasto di scelta rapida',
-        isBreadCrumb: 'Sia briciole di pane',
+        isMock: 'Se deridere',
+        isHotKey: 'Se il tasto di scelta rapida',
+        isBreadCrumb: 'Che si tratti di pangrattato',
         isCache: 'Se memorizzare nella cache',
-        isI18n: 'Sia internazionalizzare'
+        isI18n: 'Se internazionalizzare'
+    },
+    pagingInfo: {
+        total: 'In totale',
+        uint: 'Articolo',
+        items: 'registrazione'
     }
 }

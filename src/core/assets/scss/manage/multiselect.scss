@@ -1,0 +1,28 @@
+@import "~@scss/custom/theme/theme";
+
+.multi-title{
+  padding: 4px 12px;
+  font-size: 13px;
+  background-color: $grey-e4;
+  font-weight: bold;
+}
+
+.multi-dropdown{
+  padding: 5px 0;
+}
+
+.multi-option{
+  font-size: 13px;
+}
+
+::v-deep .ant-select-dropdown-menu{
+  padding: 0;
+}
+
+::v-deep .ant-select-dropdown-menu-item{
+  padding: 4px 12px;
+}
+
+.multi-pagination{
+  margin: 5px 10px 0 10px;
+}

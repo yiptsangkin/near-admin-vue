@@ -3,7 +3,7 @@ export default {
     country: 'DE',
     loginForm: {
         byAccountBtn: 'Konto Passwort Login',
-        byPhoneBtn: 'Anmeldenummer der Handynummer',
+        byPhoneBtn: 'Anmeldenummer für Handynummer',
         accountPlaceholder: 'Bitte geben Sie ein Konto ein',
         passwordPlaceholder: 'Bitte Passwort eingeben',
         autoLogin: 'automatische Anmeldung',
@@ -148,7 +148,7 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Die von Ihnen besuchte Seite ist leider nicht vorhanden',
-            notrightTip: 'Sie haben leider keine Berechtigung, auf diese Seite zuzugreifen',
+            notrightTip: 'Leider haben Sie keine Berechtigung, auf diese Seite zuzugreifen',
             noserviceTip: 'Entschuldigung, es gab ein Problem mit dem Server. Bitte versuchen Sie es später erneut'
         },
         btnText: 'Seite schließen'
@@ -223,5 +223,10 @@ export default {
         isBreadCrumb: 'Ob Semmelbrösel',
         isCache: 'Ob zwischengespeichert werden soll',
         isI18n: 'Ob zu internationalisieren'
+    },
+    pagingInfo: {
+        total: 'Insgesamt',
+        uint: 'Artikel',
+        items: 'Aufzeichnung'
     }
 }

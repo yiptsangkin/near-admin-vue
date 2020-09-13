@@ -31,7 +31,8 @@ import {
     Tooltip,
     Checkbox,
     Transfer,
-    Switch
+    Switch,
+    Pagination
 } from 'ant-design-vue'
 import comConfig from '@custom/config';
 import utils from '@corets/utils';
@@ -73,6 +74,7 @@ Vue.component(Checkbox.Group.name, Checkbox.Group)
 Vue.component(Modal.name, Modal)
 Vue.component(Transfer.name, Transfer)
 Vue.component(Switch.name, Switch)
+Vue.component(Pagination.name, Pagination)
 
 
 // here to fix https://github.com/vueComponent/ant-design-vue/issues/2261# this issue

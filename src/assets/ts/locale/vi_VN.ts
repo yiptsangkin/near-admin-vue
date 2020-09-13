@@ -3,17 +3,17 @@ export default {
     country: 'VN',
     loginForm: {
         byAccountBtn: 'Đăng nhập mật khẩu tài khoản',
-        byPhoneBtn: 'Số điện thoại di động đăng nhập',
+        byPhoneBtn: 'Đăng nhập số điện thoại di động',
         accountPlaceholder: 'vui lòng nhập tài khoản',
         passwordPlaceholder: 'Xin vui lòng nhập mật khẩu',
         autoLogin: 'tự động đăng nhập',
         forgetBtn: 'quên mật khẩu',
         loginBtn: 'đăng nhập',
         byAccountTip: {
-            emptyErr: 'Tài khoản không thể để trống'
+            emptyErr: 'Tài khoản không được để trống'
         },
         byPasswordTip: {
-            emptyErr: 'mật khẩu không thể để trống'
+            emptyErr: 'mật khẩu không được để trống'
         },
         byValidTip: {
             emptyErr: 'mã xác minh phải được điền'
@@ -35,86 +35,86 @@ export default {
             0: 'Khung cơ bản',
             1: 'Khả năng cơ bản',
             '0-0': 'Vue',
-            '0-1': 'Thiết kế kiến',
+            '0-1': 'Kiến thiết kế',
             '1-0': 'Chức năng khung',
             '1-0-0': 'Cấu hình dự án',
-            '1-0-1': 'Nhật ký giao diện',
-            '1-0-2': 'Mock địa phương',
+            '1-0-1': 'Nhật ký giao diện người dùng',
+            '1-0-2': 'Mô phỏng địa phương',
             '1-0-3': 'toàn cầu hóa',
             '1-0-4': 'Từ điển dữ liệu',
-            '1-0-5': 'Sự kiện',
+            '1-0-5': 'EventBus',
             '1-0-6': 'Bộ công cụ',
             '1-0-7': 'Kiểm soát truy cập',
-            '1-0-8': 'chìa khóa nóng',
+            '1-0-8': 'phím nóng',
             '1-1': 'Chức năng trang',
             '1-1-0': 'Trang thành phần',
             '1-1-1': 'trang url',
-            '1-1-2': 'Không có trang cho phép',
+            '1-1-2': 'Trang không có quyền',
             '1-1-3': 'Trang 404'
         },
         defaultMenu: {
             home: 'Trang Chủ'
         },
         errorTip: {
-            notfoundTip: 'Thành phần dưới đường dẫn này không được tìm thấy',
-            emptyErr: 'Đường dẫn thành phần chưa được cấu hình'
+            notfoundTip: 'Không tìm thấy thành phần trong đường dẫn này',
+            emptyErr: 'Đường dẫn thành phần chưa được định cấu hình'
         }
     },
     sysInfo: {
-        sysIntro: 'Khung phát triển front-end giữa và cuối dễ sử dụng dựa trên Vue và Ant Design'
+        sysIntro: 'Khung phát triển giao diện người dùng giữa và cuối dễ sử dụng dựa trên Vue và Ant Design'
     },
     requestInfo: {
-        withoutUrl: 'Địa chỉ yêu cầu không thể để trống',
+        withoutUrl: 'Địa chỉ yêu cầu không được để trống',
         networkErr: 'Yêu cầu mạng không thành công, vui lòng thử lại sau'
     },
     localeMap: {
         ar: 'tiếng Ả Rập',
-        bg: 'Tiếng Bulgaria',
-        ca: 'Tiếng Catalan',
-        cs: 'Séc',
+        bg: 'Người Bungari',
+        ca: 'Catalan',
+        cs: 'Tiếng Séc',
         da: 'người Đan Mạch',
         de: 'tiếng Đức',
         el: 'người Hy Lạp',
         'en-gb': 'Tiếng Anh',
         en: 'Tiếng Anh',
         es: 'người Tây Ban Nha',
-        et: 'Tiếng Estonia',
+        et: 'Người Estonia',
         fa: 'Ba Tư',
-        fi: 'Phần Lan',
+        fi: 'Phần lan',
         fr: 'người Pháp',
         he: 'Tiếng Do Thái',
         hi: 'Tiếng Hindi',
-        hr: 'Tiếng Croatia',
+        hr: 'Người Croatia',
         hu: 'người Hungary',
-        hy: 'Armenia',
-        id: 'Tiếng Indonesia',
+        hy: 'Tiếng Armenia',
+        id: 'Người Indonesia',
         is: 'Tiếng Iceland',
         it: 'người Ý ',
         ja: 'tiếng Nhật',
-        kn: 'Kannada',
+        kn: 'Tiếng Kannada',
         ko: 'Hàn Quốc',
-        'ku-iq': 'Trung Kurdish',
-        lv: 'Trung Kurdish',
-        mk: 'Tiếng Slovak',
-        'mn-mn': 'Mông Cổ',
-        'ms-my': 'Mã Lai',
-        nb: 'Na Uy',
+        'ku-iq': 'Người Kurd trung tâm',
+        lv: 'Người Kurd trung tâm',
+        mk: 'Người Macedonian',
+        'mn-mn': 'Tiếng Mông Cổ',
+        'ms-my': 'Tiếng Mã Lai',
+        nb: 'Nauy',
         'ne-np': 'Tiếng Nepal',
         'nl-be': 'Flemish',
-        nl: 'Hà Lan',
+        nl: 'Tiếng hà lan',
         pl: 'đánh bóng',
         'pt-br': 'tiếng Bồ Đào Nha của người brazi',
-        pt: 'Tiếng Bồ Đào Nha',
-        ro: 'Rumani',
+        pt: 'Tiếng Bồ Đào Nha Châu Âu',
+        ro: 'Tiếng Rumani',
         ru: 'Ngôn ngữ Nga',
         sk: 'Tiếng Slovak',
-        sl: 'Tiếng Slovenia',
+        sl: 'Người Slovenia',
         sr: 'Tiếng Serbia',
-        sv: 'Thụy Điển',
+        sv: 'Tiếng Thụy Điển',
         ta: 'Tiếng Tamil',
-        th: 'Thái lan',
-        tr: 'Thổ Nhĩ Kỳ',
-        uk: 'Tiếng Ukraina',
+        th: 'Thái',
+        tr: 'Thổ nhĩ kỳ',
+        uk: 'Người Ukraina',
         vi: 'Tiếng Việt',
         'zh-cn': 'Tiếng Trung giản thể',
         'zh-tw': 'truyền thống Trung Quốc'
@@ -131,13 +131,13 @@ export default {
         errorTip: {
             homePageCloseError: 'Trang chủ không được phép đóng',
             affixPageCloseError: 'Trang cố định không được phép đóng',
-            homePageAffixError: 'Trang chủ không thể được bỏ ghim'
+            homePageAffixError: 'Không thể bỏ ghim trang chủ'
         },
-        checkSave: 'Bạn có muốn đóng trang?(Vui lòng đảm bảo rằng nội dung của trang được đánh dấu màu đỏ đã được lưu)',
-        cancelClose: 'Đóng hoạt động đã hủy'
+        checkSave: 'Bạn có muốn đóng trang không?(Hãy đảm bảo rằng nội dung của trang được đánh dấu màu đỏ đã được lưu)',
+        cancelClose: 'Đóng hoạt động đã bị hủy'
     },
     personalCenter: {
-        frontendLog: 'Nhật ký giao diện',
+        frontendLog: 'Nhật ký giao diện người dùng',
         customSetting: 'Cá nhân hóa',
         customClean: 'Xóa cấu hình',
         logout: 'đăng xuất',
@@ -147,7 +147,7 @@ export default {
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Xin lỗi, trang bạn truy cập không tồn tại',
+            notfoundTip: 'Xin lỗi, trang bạn đã truy cập không tồn tại',
             notrightTip: 'Xin lỗi, bạn không có quyền truy cập trang này',
             noserviceTip: 'Xin lỗi, đã xảy ra sự cố với máy chủ, vui lòng thử lại sau'
         },
@@ -163,13 +163,13 @@ export default {
     },
     logline: {
         list: 'Danh sách nhật ký',
-        detail: 'Nhật ký chi tiết',
+        detail: 'Chi tiết nhật ký',
         btnList: {
             export: 'Xuất khẩu',
             remove: 'Trống'
         },
         time: {
-            plh: 'Vui lòng chọn một phạm vi thời gian',
+            plh: 'Vui lòng chọn một khoảng thời gian',
             range: 'thời gian giới hạn',
             halfDay: 'Nửa ngày',
             oneDay: 'một ngày nào đó',
@@ -182,15 +182,15 @@ export default {
         },
         tableColumns: {
             index: 'Số sê-ri',
-            desc: 'Nhật ký mô tả',
+            desc: 'Mô tả nhật ký',
             type: 'Loại nhật ký',
             time: 'thời gian',
             op: 'điều hành'
         },
         request: 'Yêu cầu dữ liệu',
         error: {
-            cancel: 'Hủy bỏ hoạt động',
-            confirm: 'Bạn có muốn xóa nhật ký?(Nếu nhật ký bị xóa, nó không thể được truy xuất)'
+            cancel: 'Đã hủy hoạt động trống',
+            confirm: 'Bạn có muốn xóa nhật ký không?(Nếu nhật ký bị trống, nó không thể được truy xuất)'
         },
         success: 'Nhật ký đã được làm trống'
     },
@@ -199,8 +199,8 @@ export default {
             title: 'Cài đặt cột',
             all: 'chọn tất cả',
             reset: 'Cài lại',
-            fixedLeft: 'Đã sửa trái',
-            fixedRight: 'Đã sửa đúng',
+            fixedLeft: 'Đã sửa bên trái',
+            fixedRight: 'Đã sửa quyền',
             cancelFixed: 'Bỏ ghim'
         },
         size: {
@@ -216,12 +216,17 @@ export default {
         detail: 'Lượt xem'
     },
     setting: {
-        customEntry: 'Nhập cảnh nhanh',
+        customEntry: 'Vào nhanh',
         systemSwitch: 'Cấu hình hệ thông',
-        isMock: 'Có hay không',
-        isHotKey: 'Phím tắt',
-        isBreadCrumb: 'Cho dù vụn bánh mì',
-        isCache: 'Có nên lưu trữ bộ nhớ cache',
-        isI18n: 'Có nên quốc tế hóa'
+        isMock: 'Có giả mạo hay không',
+        isHotKey: 'Cho dù phím tắt',
+        isBreadCrumb: 'Cho dù bánh mì vụn',
+        isCache: 'Có lưu vào bộ nhớ cache không',
+        isI18n: 'Có quốc tế hóa không'
+    },
+    pagingInfo: {
+        total: 'Tổng cộng',
+        uint: 'Bài báo',
+        items: 'ghi âm'
     }
 }

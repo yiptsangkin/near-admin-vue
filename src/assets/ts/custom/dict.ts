@@ -50,6 +50,6 @@ export default {
             pageSizeOptions: ['10', '30', '50']
         },
         localStorageKey: ['nearAdminCustomerEntry', 'nearAdminCacheConfig', 'nearAdminTagIndex', 'nearAdminTagList', 'nearAdminLang'],
-        basePath: window.location.pathname.split('/')[1] || 'manage'
+        basePath: window.location.pathname.split('/')[1]
     }
 }

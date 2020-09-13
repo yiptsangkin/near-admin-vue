@@ -2,26 +2,26 @@ export default {
     locale: 'is',
     country: 'IS',
     loginForm: {
-        byAccountBtn: 'Innskráning aðgangsorðs reiknings',
-        byPhoneBtn: 'Innskráning farsímanúmera',
+        byAccountBtn: 'Innskráning lykilorðs aðgangs',
+        byPhoneBtn: 'Innskráning fyrir farsímanúmer',
         accountPlaceholder: 'vinsamlegast sláðu inn reikning',
         passwordPlaceholder: 'Vinsamlegast sláðu inn lykilorð',
-        autoLogin: 'sjálfvirk innskráning',
+        autoLogin: 'sjálfvirkt innskráning',
         forgetBtn: 'gleymdu lykilorðinu',
         loginBtn: 'skrá inn',
         byAccountTip: {
             emptyErr: 'Reikningur getur ekki verið tómur'
         },
         byPasswordTip: {
-            emptyErr: 'lykilorð getur ekki verið tómt'
+            emptyErr: 'lykilorð má ekki vera autt'
         },
         byValidTip: {
-            emptyErr: 'þarf að fylla staðfestingarkóða'
+            emptyErr: 'staðfestingarkóða verður að fylla út'
         },
         sendMsg: {
-            repeatErr: 'Ekki senda hvað eftir annað',
+            repeatErr: 'Ekki senda ítrekað',
             success: 'Vel heppnað',
-            codeTip: 'Staðfestingarkóðinn þinn er'
+            codeTip: 'Staðfestingarkóði þinn er'
         },
         phonePlaceholder: 'Vinsamlegast sláðu inn símanúmer',
         validPlaceholder: 'Staðfestingarkóði',
@@ -29,50 +29,50 @@ export default {
         loginSuccess: 'innskráning tókst'
     },
     menuObj: {
-        basicFeature: 'Grunngeta',
+        basicFeature: 'Grunnfærni',
         cpUse: 'Notkun íhluta',
         childMenu: {
             0: 'Grunnrammi',
             1: 'Grunngeta',
             '0-0': 'Vue',
-            '0-1': 'Maur Hönnun',
+            '0-1': 'Maurhönnun',
             '1-0': 'Rammaaðgerð',
             '1-0-0': 'Uppsetning verkefnis',
-            '1-0-1': 'Framendaskrá',
-            '1-0-2': 'Local spot',
-            '1-0-3': 'alþjóðavæðingin',
-            '1-0-4': 'Gagnabók',
+            '1-0-1': 'Frontend log',
+            '1-0-2': 'Staðbundinn spotti',
+            '1-0-3': 'alþjóðavæðing',
+            '1-0-4': 'Gagnaorðabók',
             '1-0-5': 'EventBus',
-            '1-0-6': 'Verkfæri',
+            '1-0-6': 'Verkfærasett',
             '1-0-7': 'Aðgangsstýring',
             '1-0-8': 'heitur lykill',
             '1-1': 'Síðuaðgerð',
             '1-1-0': 'Íhlutasíða',
             '1-1-1': 'url síðu',
-            '1-1-2': 'Engin leyfissíða',
+            '1-1-2': 'Engin heimildarsíða',
             '1-1-3': '404 bls'
         },
         defaultMenu: {
             home: 'Heim'
         },
         errorTip: {
-            notfoundTip: 'Íhluturinn undir þessari slóð fannst ekki',
-            emptyErr: 'Óstilla hluti'
+            notfoundTip: 'Íhlutinn undir þessari leið fannst ekki',
+            emptyErr: 'Óstilltur hluti slóða'
         }
     },
     sysInfo: {
-        sysIntro: 'Auðvelt í notkun miðju- og afturenda framþróunarramma sem byggir á Vue og Ant Ant Design'
+        sysIntro: 'Auðvelt að nota miðju og afturendann framhaldsendahluta byggt á Vue og Ant Design'
     },
     requestInfo: {
-        withoutUrl: 'Heimilisfang beiðninnar má ekki vera tómt',
-        networkErr: 'Netbeiðni mistókst. Vinsamlegast reyndu aftur seinna'
+        withoutUrl: 'Heimilisfang beiðni má ekki vera autt',
+        networkErr: 'Netbeiðni mistókst. Reyndu aftur síðar'
     },
     localeMap: {
-        ar: 'Arabíska',
+        ar: 'Arabísku',
         bg: 'Búlgarska',
         ca: 'Katalónska',
-        cs: 'Tékknesk',
-        da: 'Dönsku',
+        cs: 'Tékkneska',
+        da: 'Danska',
         de: 'þýska, Þjóðverji, þýskur',
         el: 'Gríska',
         'en-gb': 'Enska',
@@ -80,96 +80,96 @@ export default {
         es: 'spænska, spænskt',
         et: 'eistneska, eisti, eistneskur',
         fa: 'Persneska',
-        fi: 'Finnskt',
-        fr: 'Frönsku',
+        fi: 'Finnska',
+        fr: 'Franska',
         he: 'Hebreska',
         hi: 'Hindí',
         hr: 'Króatíska',
         hu: 'ungverska, Ungverji, ungverskt',
-        hy: 'Armenska',
+        hy: 'Armenskur',
         id: 'Indónesískt',
-        is: 'Íslensku',
+        is: 'Íslenska',
         it: 'Ítalska ',
-        ja: 'Japönsku',
+        ja: 'Japanska',
         kn: 'Kannada',
         ko: 'Kóreska',
-        'ku-iq': 'Mið-kúrdískt',
-        lv: 'Mið-kúrdískt',
+        'ku-iq': 'Mið-Kúrda',
+        lv: 'Mið-Kúrda',
         mk: 'Makedónska',
         'mn-mn': 'Mongólska',
-        'ms-my': 'Malaíska',
-        nb: 'Norsku',
+        'ms-my': 'Malay',
+        nb: 'Norska',
         'ne-np': 'Nepalska',
         'nl-be': 'Flæmska',
-        nl: 'Hollenskir',
-        pl: 'Pólsku',
-        'pt-br': 'Brasilískar portúgölsku',
-        pt: 'Evrópskir portúgölskir',
+        nl: 'Hollenska',
+        pl: 'Pólska',
+        'pt-br': 'Brasilísk portúgalsk',
+        pt: 'Evrópsk portúgalsk',
         ro: 'Rúmenska',
         ru: 'rússneska',
         sk: 'Slóvakía',
-        sl: 'Slóvenía',
+        sl: 'Slóvenska',
         sr: 'Serbneska',
-        sv: 'Sænsku',
-        ta: 'Tamílsk',
-        th: 'Taílensku',
+        sv: 'Sænska',
+        ta: 'Tamílska',
+        th: 'Taílenska',
         tr: 'Tyrkneska',
         uk: 'Úkraínska',
         vi: 'Víetnamska',
-        'zh-cn': 'Einfaldað kínverska',
+        'zh-cn': 'Einfölduð kínverska',
         'zh-tw': 'hefðbundinn kínverskur'
     },
     tagObj: {
         closeAll: 'Lokaðu öllum flipum',
         closeCur: 'Lokaðu núverandi flipa',
         closeOther: 'Lokaðu öðrum flipum',
-        closeRight: 'Lokaðu hægri merkimiða',
-        singlePage: 'Sjálfstæð síðu',
-        refreshPage: 'hressa síðu',
-        affixPage: 'Festu síðu',
-        cancelAffixPage: 'Tappa af',
+        closeRight: 'Lokaðu hægri merkimiðanum',
+        singlePage: 'Sjálfstæð blaðsíða',
+        refreshPage: 'endurnýja síðu',
+        affixPage: 'Pinna síðu',
+        cancelAffixPage: 'Losa um',
         errorTip: {
-            homePageCloseError: 'Heimasíðunni er ekki leyft að loka',
-            affixPageCloseError: 'Óheimilt er að loka fastri síðu',
-            homePageAffixError: 'Ekki er hægt að aftengja heimasíðuna'
+            homePageCloseError: 'Heimasíðu er ekki heimilt að loka',
+            affixPageCloseError: 'Föst síða er ekki leyfð',
+            homePageAffixError: 'Ekki er hægt að losa heimasíðuna'
         },
-        checkSave: 'Viltu loka síðunni?(Gakktu úr skugga um að innihald síðunnar merkt með rauðu hafi verið vistað)',
-        cancelClose: 'Loka aðgerð hætt'
+        checkSave: 'Viltu loka síðunni?(Vinsamlegast vertu viss um að innihald síðunnar merkt með rauðu hafi verið vistað)',
+        cancelClose: 'Lokað aðgerð hætt'
     },
     personalCenter: {
-        frontendLog: 'Framendaskrá',
-        customSetting: 'Sérstillingar',
-        customClean: 'Hreinsa stillingu',
+        frontendLog: 'Frontend log',
+        customSetting: 'Sérsniðin',
+        customClean: 'Hreinsa stillingar',
         logout: 'Útskrá',
         errorTip: {
-            cleanSuccess: 'Tæmd með góðum árangri'
+            cleanSuccess: 'Tæmt með góðum árangri'
         }
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Því miður, síðan sem þú heimsóttir er ekki til',
-            notrightTip: 'Því miður, þú hefur ekki leyfi til að fá aðgang að þessari síðu',
-            noserviceTip: 'Því miður kom upp vandamál við netþjóninn, reyndu aftur seinna'
+            notfoundTip: 'Því miður er síðan sem þú heimsóttir ekki til',
+            notrightTip: 'Þú hefur því miður ekki heimild til að komast á þessa síðu',
+            noserviceTip: 'Því miður kom upp vandamál við netþjóninn. Reyndu aftur síðar'
         },
         btnText: 'Loka síðu'
     },
     searchPanel: {
         btn: {
-            search: 'Spyrjast fyrir',
-            shrink: 'Settu í burtu',
+            search: 'Fyrirspurn',
+            shrink: 'Leggja í burtu',
             reset: 'Endurstilla',
-            unshrink: 'Brettu út'
+            unshrink: 'Brettið út'
         }
     },
     logline: {
-        list: 'Log lista',
-        detail: 'Upplýsingar um log',
+        list: 'Notkunarskrá',
+        detail: 'Upplýsingar um skráningu',
         btnList: {
             export: 'Útflutningur',
-            remove: 'Tómt'
+            remove: 'Tómur'
         },
         time: {
-            plh: 'Veldu tímasvið',
+            plh: 'Vinsamlegast veldu tímabil',
             range: 'tímamörk',
             halfDay: 'Hálfur dagur',
             oneDay: 'á einum degi',
@@ -177,22 +177,22 @@ export default {
             monthDay: 'Innan mánaðar'
         },
         type: {
-            logType: 'Tegund annáls',
-            plh: 'Vinsamlegast veldu tegund annáls'
+            logType: 'Log tegund',
+            plh: 'Vinsamlegast veldu tegund logs'
         },
         tableColumns: {
             index: 'Raðnúmer',
             desc: 'Log lýsing',
-            type: 'Tegund annáls',
+            type: 'Log tegund',
             time: 'tíma',
-            op: 'starfandi'
+            op: 'starfa'
         },
-        request: 'Biðja um gögn',
+        request: 'Óska eftir gögnum',
         error: {
-            cancel: 'Tóm aðgerð hætt',
-            confirm: 'Viltu hreinsa annálinn?(Ef notkunarskráin er tæmd er ekki hægt að sækja hana)'
+            cancel: 'Tóm aðgerð hætt við',
+            confirm: 'Viltu hreinsa þig inn?(Ef loginn er tæmdur er ekki hægt að ná því)'
         },
-        success: 'Notkunarskrá hefur verið tæmd'
+        success: 'Log hefur verið tæmt'
     },
     comTable: {
         columns: {
@@ -201,10 +201,10 @@ export default {
             reset: 'Endurstilla',
             fixedLeft: 'Fast vinstri',
             fixedRight: 'Fastur réttur',
-            cancelFixed: 'Tappa af'
+            cancelFixed: 'Losa um'
         },
         size: {
-            title: 'Röð hæð',
+            title: 'Raðhæð',
             small: 'þröngt',
             normal: 'í',
             large: 'breidd'
@@ -216,12 +216,17 @@ export default {
         detail: 'Útsýni'
     },
     setting: {
-        customEntry: 'Fljótleg innkoma',
-        systemSwitch: 'Stilling kerfisins',
-        isMock: 'Hvort á að spotta',
-        isHotKey: 'Hvort flýtivísi',
-        isBreadCrumb: 'Hvort brauðmola',
+        customEntry: 'Fljótleg innganga',
+        systemSwitch: 'Kerfisstillingar',
+        isMock: 'Hvort til Mock',
+        isHotKey: 'Hvort sem flýtilykill',
+        isBreadCrumb: 'Hvort sem brauðmolar',
         isCache: 'Hvort á að skyndiminni',
-        isI18n: 'Hvort á að alþjóðavæða'
+        isI18n: 'Hvort eigi að alþjóðavæða'
+    },
+    pagingInfo: {
+        total: 'Samtals',
+        uint: 'Grein',
+        items: 'upptöku'
     }
 }

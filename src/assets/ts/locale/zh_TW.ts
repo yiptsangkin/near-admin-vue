@@ -223,5 +223,10 @@ export default {
         isBreadCrumb: '是否麵包屑',
         isCache: '是否緩存',
         isI18n: '是否國際化'
+    },
+    pagingInfo: {
+        total: '總共',
+        uint: '條',
+        items: '記錄'
     }
 }

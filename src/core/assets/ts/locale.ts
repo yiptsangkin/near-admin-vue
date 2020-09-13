@@ -110,5 +110,10 @@ export default {
         isBreadCrumb: 'setting.isBreadCrumb',
         isCache: 'setting.isCache',
         isI18n: 'setting.isI18n'
+    },
+    pagingInfo: {
+        total: 'pagingInfo.total',
+        uint: 'pagingInfo.uint',
+        items: 'pagingInfo.items'
     }
 }

@@ -2,8 +2,8 @@ export default {
     locale: 'fi',
     country: 'FI',
     loginForm: {
-        byAccountBtn: 'Tilin salasanan kirjautuminen',
-        byPhoneBtn: 'Matkapuhelinnumeron kirjautuminen',
+        byAccountBtn: 'Tilin salasanan sisäänkirjautuminen',
+        byPhoneBtn: 'Matkapuhelinnumeroon kirjautuminen',
         accountPlaceholder: 'kirjoita tili',
         passwordPlaceholder: 'Anna salasana',
         autoLogin: 'automaattinen sisäänkirjautuminen',
@@ -20,12 +20,12 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Älä lähetä toistuvasti',
-            success: 'onnistunut',
+            success: 'Onnistunut',
             codeTip: 'Vahvistuskoodisi on'
         },
         phonePlaceholder: 'Anna puhelinnumero',
         validPlaceholder: 'Vahvistuskoodi',
-        validBtn: 'hanki vahvistuskoodi',
+        validBtn: 'hae vahvistuskoodi',
         loginSuccess: 'kirjautuminen onnistui'
     },
     menuObj: {
@@ -34,22 +34,22 @@ export default {
         childMenu: {
             0: 'Peruskehys',
             1: 'Peruskyky',
-            '0-0': 'vue',
-            '0-1': 'Muurahaissuunnittelu',
+            '0-0': 'Vue',
+            '0-1': 'Muurahaisen muotoilu',
             '1-0': 'Kehystoiminto',
             '1-0-0': 'Projektin kokoonpano',
-            '1-0-1': 'Etuliite',
+            '1-0-1': 'Käyttöliittymän loki',
             '1-0-2': 'Paikallinen pilkka',
             '1-0-3': 'globalisaatio',
-            '1-0-4': 'Tietojen sanakirja',
+            '1-0-4': 'Data Dictionary',
             '1-0-5': 'EventBus',
-            '1-0-6': 'työkalusarja',
+            '1-0-6': 'Työkalusarja',
             '1-0-7': 'Kulunvalvonta',
             '1-0-8': 'pikanäppäin',
             '1-1': 'Sivutoiminto',
             '1-1-0': 'Komponenttisivu',
             '1-1-1': 'URL-sivu',
-            '1-1-2': 'Ei lupa-sivua',
+            '1-1-2': 'Ei lupasivua',
             '1-1-3': '404 sivu'
         },
         defaultMenu: {
@@ -57,11 +57,11 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Tämän polun alla olevaa komponenttia ei löytynyt',
-            emptyErr: 'Määrittämätön komponenttipolku'
+            emptyErr: 'Määrittelemätön komponentin polku'
         }
     },
     sysInfo: {
-        sysIntro: 'Helppo käyttää keskitason ja takaosan etuosakehityskehystä, joka perustuu Vue- ja Ant-suunnitteluun'
+        sysIntro: 'Helppokäyttöinen keski- ja takapaneelin käyttöliittymäkehys, joka perustuu Vue- ja Ant-suunnitteluun'
     },
     requestInfo: {
         withoutUrl: 'Pyyntöosoite ei voi olla tyhjä',
@@ -69,52 +69,52 @@ export default {
     },
     localeMap: {
         ar: 'arabialainen',
-        bg: 'bulgarialainen',
-        ca: 'katalaani',
-        cs: 'czech',
+        bg: 'Bulgaria',
+        ca: 'Katalaani',
+        cs: 'Tšekki',
         da: 'Tanskan kieli',
         de: 'Saksan kieli',
-        el: 'kreikkalainen',
+        el: 'Kreikka',
         'en-gb': 'Englanti',
         en: 'Englanti',
         es: 'Espanja',
         et: 'Virolainen',
-        fa: 'persialainen',
+        fa: 'Persia',
         fi: 'Suomalainen',
         fr: 'Ranskan kieli',
         he: 'heprealainen',
-        hi: 'hindi',
-        hr: 'kroaatti',
+        hi: 'Hindi',
+        hr: 'Kroatialainen',
         hu: 'Unkarin kieli',
-        hy: 'armenian',
-        id: 'indonesialainen',
-        is: 'islantilainen',
+        hy: 'Armenialainen',
+        id: 'Indonesia',
+        is: 'Islantilainen',
         it: 'italialainen ',
         ja: 'japanilainen',
-        kn: 'kannada',
+        kn: 'Kannada',
         ko: 'Korealainen',
         'ku-iq': 'Keski-kurdi',
         lv: 'Keski-kurdi',
-        mk: 'Makedonia',
-        'mn-mn': 'mongolialainen',
+        mk: 'Makedonialainen',
+        'mn-mn': 'Mongolialainen',
         'ms-my': 'Malaiji',
         nb: 'Norjan kieli',
-        'ne-np': 'nepali',
-        'nl-be': 'flaamilainen',
+        'ne-np': 'Nepali',
+        'nl-be': 'Flaami',
         nl: 'Hollannin kieli',
         pl: 'Kiillottaa',
         'pt-br': 'Brasilian portugali',
         pt: 'Euroopan portugali',
-        ro: 'romanialainen',
+        ro: 'Romania',
         ru: 'Venäjän kieli',
         sk: 'Slovakian',
-        sl: 'slovenian',
-        sr: 'serbialainen',
+        sl: 'Sloveeni',
+        sr: 'Serbia',
         sv: 'Ruotsin kieli',
-        ta: 'tamil',
-        th: 'thaimaalainen',
-        tr: 'turkki',
-        uk: 'ukrainalainen',
+        ta: 'Tamili',
+        th: 'Thai',
+        tr: 'Turkki',
+        uk: 'Ukraina',
         vi: 'vietnam',
         'zh-cn': 'Yksinkertaistettu kiina',
         'zh-tw': 'perinteinen kiina'
@@ -123,22 +123,22 @@ export default {
         closeAll: 'Sulje kaikki välilehdet',
         closeCur: 'Sulje nykyinen välilehti',
         closeOther: 'Sulje muut välilehdet',
-        closeRight: 'Sulje oikea tarra',
+        closeRight: 'Sulje oikea etiketti',
         singlePage: 'Itsenäinen sivu',
         refreshPage: 'Päivitä sivu',
         affixPage: 'Kiinnitä sivu',
         cancelAffixPage: 'Irrota',
         errorTip: {
             homePageCloseError: 'Kotisivua ei saa sulkea',
-            affixPageCloseError: 'Kiinteää sivua ei saa sulkea',
+            affixPageCloseError: 'Korjattua sivua ei saa sulkea',
             homePageAffixError: 'Kotisivua ei voi irrottaa'
         },
         checkSave: 'Haluatko sulkea sivun?(Varmista, että punaisella merkityn sivun sisältö on tallennettu)',
         cancelClose: 'Sulje toiminto peruutettu'
     },
     personalCenter: {
-        frontendLog: 'Etuliite',
-        customSetting: 'personointi',
+        frontendLog: 'Käyttöliittymän loki',
+        customSetting: 'Mukauttaminen',
         customClean: 'Tyhjennä kokoonpano',
         logout: 'Kirjaudu ulos',
         errorTip: {
@@ -147,9 +147,9 @@ export default {
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Valitettavasti käymääsi sivua ei ole',
-            notrightTip: 'Valitettavasti sinulla ei ole lupaa päästä tälle sivulle',
-            noserviceTip: 'Valitettavasti palvelimessa oli ongelma. Yritä myöhemmin uudelleen'
+            notfoundTip: 'Valitettavasti vierailemasi sivua ei ole olemassa',
+            notrightTip: 'Valitettavasti sinulla ei ole lupaa käyttää tätä sivua',
+            noserviceTip: 'Palvelimessa tapahtui virhe. Yritä myöhemmin uudelleen'
         },
         btnText: 'Sulje sivu'
     },
@@ -158,18 +158,18 @@ export default {
             search: 'Tiedustella',
             shrink: 'Laittaa pois',
             reset: 'Nollaa',
-            unshrink: 'Unfold'
+            unshrink: 'Avaa'
         }
     },
     logline: {
         list: 'Lokiluettelo',
-        detail: 'Lokitiedot',
+        detail: 'Lokin tiedot',
         btnList: {
             export: 'Viedä',
             remove: 'Tyhjä'
         },
         time: {
-            plh: 'Valitse aikaväli',
+            plh: 'Valitse ajanjakso',
             range: 'määräaika',
             halfDay: 'Puoli päivää',
             oneDay: 'yhdessä päivässä',
@@ -177,20 +177,20 @@ export default {
             monthDay: 'Kuukauden sisällä'
         },
         type: {
-            logType: 'Lokityyppi',
-            plh: 'Valitse lokin tyyppi'
+            logType: 'Lokin tyyppi',
+            plh: 'Valitse lokityyppi'
         },
         tableColumns: {
             index: 'Sarjanumero',
             desc: 'Lokin kuvaus',
-            type: 'Lokityyppi',
+            type: 'Lokin tyyppi',
             time: 'aika',
-            op: 'käyttö-'
+            op: 'toiminnassa'
         },
         request: 'Pyydä tietoja',
         error: {
-            cancel: 'Tyhjä toimenpide peruutettu',
-            confirm: 'Haluatko tyhjentää lokin?(Jos loki tyhjennetään, sitä ei voi hakea)'
+            cancel: 'Tyhjä toiminto peruutettu',
+            confirm: 'Haluatko tyhjentää lokin?(Jos loki tyhjennetään, sitä ei voi noutaa)'
         },
         success: 'Loki on tyhjennetty'
     },
@@ -199,7 +199,7 @@ export default {
             title: 'Sarakeasetukset',
             all: 'Valitse kaikki',
             reset: 'Nollaa',
-            fixedLeft: 'Kiinteä vasemmalle',
+            fixedLeft: 'Kiinteä vasen',
             fixedRight: 'Kiinteä oikea',
             cancelFixed: 'Irrota'
         },
@@ -213,15 +213,20 @@ export default {
         unFullscreen: 'Peruuta koko näyttö'
     },
     normalBtn: {
-        detail: 'näkymä'
+        detail: 'Näytä'
     },
     setting: {
         customEntry: 'Nopea pääsy',
         systemSwitch: 'Järjestelmän kokoonpano',
-        isMock: 'Olisiko pilkata',
+        isMock: 'Onko pilkata',
         isHotKey: 'Onko pikanäppäin',
-        isBreadCrumb: 'Olipa leivän murut',
+        isBreadCrumb: 'Onko murusia',
         isCache: 'Välimuisti',
-        isI18n: 'Kansainvälistyminen'
+        isI18n: 'Onko kansainvälistyminen'
+    },
+    pagingInfo: {
+        total: 'Yhteensä',
+        uint: 'Artikla',
+        items: 'äänite'
     }
 }

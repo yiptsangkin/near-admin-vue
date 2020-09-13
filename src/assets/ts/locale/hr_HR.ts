@@ -2,10 +2,10 @@ export default {
     locale: 'hr',
     country: 'HR',
     loginForm: {
-        byAccountBtn: 'Prijava zaporke računa',
-        byPhoneBtn: 'Prijava broja mobilnog telefona',
-        accountPlaceholder: 'unesite račun',
-        passwordPlaceholder: 'Molimo unesite lozinku',
+        byAccountBtn: 'Prijava lozinke računa',
+        byPhoneBtn: 'Prijava broja mobitela',
+        accountPlaceholder: 'molimo unesite račun',
+        passwordPlaceholder: 'Unesite lozinku',
         autoLogin: 'automatska prijava',
         forgetBtn: 'Zaboravili ste lozinku',
         loginBtn: 'prijaviti se',
@@ -13,20 +13,20 @@ export default {
             emptyErr: 'Račun ne može biti prazan'
         },
         byPasswordTip: {
-            emptyErr: 'prazna lozinka ne može biti'
+            emptyErr: 'lozinka ne može biti prazna'
         },
         byValidTip: {
-            emptyErr: 'verifikacijski kod mora biti ispunjen'
+            emptyErr: 'mora se popuniti kontrolni kod'
         },
         sendMsg: {
             repeatErr: 'Ne šaljite više puta',
-            success: 'uspješan',
-            codeTip: 'Vaš kontrolni kôd je'
+            success: 'Uspješno',
+            codeTip: 'Vaš je kontrolni kôd'
         },
-        phonePlaceholder: 'Unesite broj telefona',
-        validPlaceholder: 'Verifikacijski kod',
-        validBtn: 'nabavite kontrolni kôd',
-        loginSuccess: 'prijava je uspješna'
+        phonePlaceholder: 'Unesite telefonski broj',
+        validPlaceholder: 'Kontrolni kod',
+        validBtn: 'dobiti kontrolni kod',
+        loginSuccess: 'prijava uspješna'
     },
     menuObj: {
         basicFeature: 'Osnovna sposobnost',
@@ -35,41 +35,41 @@ export default {
             0: 'Osnovni okvir',
             1: 'Osnovna sposobnost',
             '0-0': 'Vue',
-            '0-1': 'Ant Design',
+            '0-1': 'Dizajn mrava',
             '1-0': 'Okvirna funkcija',
             '1-0-0': 'Konfiguracija projekta',
-            '1-0-1': 'Dnevnik sučelja',
-            '1-0-2': 'Lokalni podsmijeh',
+            '1-0-1': 'Prednji zapisnik',
+            '1-0-2': 'Lokalno izrugivanje',
             '1-0-3': 'globalizacija',
             '1-0-4': 'Rječnik podataka',
             '1-0-5': 'EventBus',
-            '1-0-6': 'alata',
+            '1-0-6': 'Set alata',
             '1-0-7': 'Kontrola pristupa',
-            '1-0-8': 'vrući ključ',
+            '1-0-8': 'vruća tipka',
             '1-1': 'Funkcija stranice',
             '1-1-0': 'Stranica s komponentama',
-            '1-1-1': 'URL adresa',
-            '1-1-2': 'Nema dopuštene stranice',
+            '1-1-1': 'url stranica',
+            '1-1-2': 'Nema stranice s dopuštenjem',
             '1-1-3': '404 stranica'
         },
         defaultMenu: {
             home: 'Dom'
         },
         errorTip: {
-            notfoundTip: 'Komponenta ispod ove staze nije pronađena',
+            notfoundTip: 'Komponenta pod ovom stazom nije pronađena',
             emptyErr: 'Nekonfigurirani put komponente'
         }
     },
     sysInfo: {
-        sysIntro: 'Srednji i stražnji razvojni okvir jednostavnog za korištenje temeljen na Vue i Ant Design'
+        sysIntro: 'Jednostavan za korištenje srednji i pozadinski front-end razvojni okvir zasnovan na Vue i Ant dizajnu'
     },
     requestInfo: {
         withoutUrl: 'Adresa zahtjeva ne može biti prazna',
-        networkErr: 'Mrežni zahtjev nije uspio. Pokušajte ponovo kasnije'
+        networkErr: 'Zahtjev za mrežu nije uspio, pokušajte ponovo kasnije'
     },
     localeMap: {
         ar: 'arapski',
-        bg: 'bugarski',
+        bg: 'Bugarski',
         ca: 'katalonski',
         cs: 'češki',
         da: 'danski',
@@ -77,88 +77,88 @@ export default {
         el: 'grčki',
         'en-gb': 'Engleski',
         en: 'Engleski',
-        es: 'španjolski',
+        es: 'Španjolski',
         et: 'estonski',
-        fa: 'persijski',
-        fi: 'finski',
+        fa: 'Perzijski',
+        fi: 'Finski',
         fr: 'francuski',
-        he: 'hebrejski',
-        hi: 'hindski',
+        he: 'Hebrejski',
+        hi: 'Hindski',
         hr: 'Hrvatski',
-        hu: 'madžarski',
+        hu: 'Mađarski',
         hy: 'Armenac',
         id: 'indonezijski',
-        is: 'islandski',
+        is: 'Islandski',
         it: 'talijanski ',
         ja: 'japanski',
-        kn: 'kannada',
+        kn: 'Kannada',
         ko: 'korejski',
-        'ku-iq': 'Centralni kurdski',
-        lv: 'Centralni kurdski',
+        'ku-iq': 'Središnji kurdski',
+        lv: 'Središnji kurdski',
         mk: 'makedonski',
         'mn-mn': 'mongolski',
         'ms-my': 'malajski',
-        nb: 'norveški',
-        'ne-np': 'nepalski',
+        nb: 'Norveški',
+        'ne-np': 'Nepalski',
         'nl-be': 'flamanski',
-        nl: 'Nizozemac',
+        nl: 'Nizozemski',
         pl: 'Polirati',
         'pt-br': 'Brazilski portugalski',
         pt: 'Europski portugalski',
-        ro: 'rumunski',
+        ro: 'Rumunjski',
         ru: 'ruski jezik',
         sk: 'slovački',
-        sl: 'Slovenac',
-        sr: 'srpski',
+        sl: 'Slovenski',
+        sr: 'Srpski',
         sv: 'švedski',
         ta: 'Tamil',
-        th: 'Tajlandska',
+        th: 'Tajlandski',
         tr: 'turski',
         uk: 'ukrajinski',
         vi: 'vijetnamski',
-        'zh-cn': 'Pojednostavljeni Kinezi',
+        'zh-cn': 'Pojednostavljeni kineski',
         'zh-tw': 'tradicionalni kineski'
     },
     tagObj: {
         closeAll: 'Zatvorite sve kartice',
-        closeCur: 'Zatvori trenutnu karticu',
+        closeCur: 'Zatvorite trenutnu karticu',
         closeOther: 'Zatvorite ostale kartice',
-        closeRight: 'Zatvori desnu naljepnicu',
+        closeRight: 'Zatvorite desnu naljepnicu',
         singlePage: 'Nezavisna stranica',
-        refreshPage: 'osvježiti stranicu',
+        refreshPage: 'osvježi stranicu',
         affixPage: 'Prikvači stranicu',
-        cancelAffixPage: 'Odvoji',
+        cancelAffixPage: 'Otkvači',
         errorTip: {
-            homePageCloseError: 'Nije dopušteno zatvaranje početne stranice',
-            affixPageCloseError: 'Fiksna stranica nije dopuštena za zatvaranje',
-            homePageAffixError: 'Početna stranica se ne može ukloniti'
+            homePageCloseError: 'Početna stranica nije dozvoljena za zatvaranje',
+            affixPageCloseError: 'Fiksna stranica se ne smije zatvoriti',
+            homePageAffixError: 'Početna stranica ne može se otkvačiti'
         },
-        checkSave: 'Želite li zatvoriti stranicu?(Provjerite je li sadržaj stranice označene crvenom bojom spremljen)',
+        checkSave: 'Želite li zatvoriti stranicu?(Pazite da je sadržaj stranice označene crvenom spremljen)',
         cancelClose: 'Operacija zatvaranja otkazana'
     },
     personalCenter: {
-        frontendLog: 'Dnevnik sučelja',
+        frontendLog: 'Prednji zapisnik',
         customSetting: 'Personalizacija',
         customClean: 'Jasna konfiguracija',
         logout: 'odjavi se',
         errorTip: {
-            cleanSuccess: 'Ispraznite se uspješno'
+            cleanSuccess: 'Uspješno ispraznite'
         }
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Nažalost, stranica koju ste posjetili ne postoji',
-            notrightTip: 'Nažalost, nemate dozvolu za pristup ovoj stranici',
-            noserviceTip: 'Nažalost, došlo je do problema s poslužiteljem. Pokušajte ponovo kasnije'
+            notrightTip: 'Žao nam je, nemate dozvolu za pristup ovoj stranici',
+            noserviceTip: 'Žao nam je, došlo je do problema sa poslužiteljem, pokušajte ponovo kasnije'
         },
         btnText: 'Zatvori stranicu'
     },
     searchPanel: {
         btn: {
-            search: 'Upit',
+            search: 'Raspitajte se',
             shrink: 'Odložiti',
-            reset: 'Reset',
-            unshrink: 'razmotati'
+            reset: 'Resetirati',
+            unshrink: 'Razmotaj se'
         }
     },
     logline: {
@@ -177,31 +177,31 @@ export default {
             monthDay: 'U roku od mjesec dana'
         },
         type: {
-            logType: 'Vrsta zapisnika',
-            plh: 'Odaberite vrstu zapisnika'
+            logType: 'Vrsta dnevnika',
+            plh: 'Odaberite vrstu dnevnika'
         },
         tableColumns: {
             index: 'Serijski broj',
-            desc: 'Opis zapisa',
-            type: 'Vrsta zapisnika',
+            desc: 'Opis dnevnika',
+            type: 'Vrsta dnevnika',
             time: 'vrijeme',
-            op: 'radni'
+            op: 'operativni'
         },
         request: 'Zatraži podatke',
         error: {
-            cancel: 'Prazna operacija je otkazana',
-            confirm: 'Želite li poništiti zapisnik?(Ako se zapisnik isprazni, on se ne može dohvatiti)'
+            cancel: 'Otkazana je prazna operacija',
+            confirm: 'Želite li očistiti zapisnik?(Ako se zapisnik isprazni, ne može se dohvatiti)'
         },
         success: 'Dnevnik je ispražnjen'
     },
     comTable: {
         columns: {
-            title: 'Postavke stupca',
+            title: 'Postavke stupaca',
             all: 'Odaberi sve',
-            reset: 'Reset',
-            fixedLeft: 'Fiksno lijevo',
-            fixedRight: 'Fiksno desno',
-            cancelFixed: 'Odvoji'
+            reset: 'Resetirati',
+            fixedLeft: 'Popravljeno lijevo',
+            fixedRight: 'Ispravljeno udesno',
+            cancelFixed: 'Otkvači'
         },
         size: {
             title: 'Visina reda',
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Brzi ulazak',
         systemSwitch: 'Sistemska konfiguracija',
-        isMock: 'Hoće li se rugati',
-        isHotKey: 'Je li tipka prečac',
-        isBreadCrumb: 'Bilo da se mrvice kruha',
-        isCache: 'Hoće li u predmemoriju',
+        isMock: 'Treba li se rugati',
+        isHotKey: 'Da li tipka prečaca',
+        isBreadCrumb: 'Bilo krušne mrvice',
+        isCache: 'Da li u predmemoriju',
         isI18n: 'Da li internacionalizirati'
+    },
+    pagingInfo: {
+        total: 'Ukupno',
+        uint: 'Članak',
+        items: 'snimanje'
     }
 }

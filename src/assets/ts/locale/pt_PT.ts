@@ -2,10 +2,10 @@ export default {
     locale: 'pt',
     country: 'PT',
     loginForm: {
-        byAccountBtn: 'Login da senha da conta',
-        byPhoneBtn: 'Login de número de telefone celular',
-        accountPlaceholder: 'por favor entre na conta',
-        passwordPlaceholder: 'Digite a senha',
+        byAccountBtn: 'Login com senha da conta',
+        byPhoneBtn: 'Login com número de celular',
+        accountPlaceholder: 'por favor insira a conta',
+        passwordPlaceholder: 'Por favor insira a senha',
         autoLogin: 'login automático',
         forgetBtn: 'Esqueceu a senha',
         loginBtn: 'Conecte-se',
@@ -23,7 +23,7 @@ export default {
             success: 'Bem sucedido',
             codeTip: 'Seu código de verificação é'
         },
-        phonePlaceholder: 'Digite o número de telefone',
+        phonePlaceholder: 'Por favor insira o número do telefone',
         validPlaceholder: 'Código de verificação',
         validBtn: 'obter código de verificação',
         loginSuccess: 'login bem sucedido'
@@ -35,11 +35,11 @@ export default {
             0: 'Estrutura básica',
             1: 'Habilidade básica',
             '0-0': 'Vue',
-            '0-1': 'Formiga Design',
-            '1-0': 'Função de estrutura',
+            '0-1': 'Ant Design',
+            '1-0': 'Função de framework',
             '1-0-0': 'Configuração do projeto',
             '1-0-1': 'Log de front-end',
-            '1-0-2': 'Simulação local',
+            '1-0-2': 'Mock local',
             '1-0-3': 'globalização',
             '1-0-4': 'Dicionário de dados',
             '1-0-5': 'EventBus',
@@ -47,25 +47,25 @@ export default {
             '1-0-7': 'Controle de acesso',
             '1-0-8': 'tecla de atalho',
             '1-1': 'Função de página',
-            '1-1-0': 'Página componente',
-            '1-1-1': 'página de URL',
-            '1-1-2': 'Nenhuma página de permissão',
+            '1-1-0': 'Página de componente',
+            '1-1-1': 'página url',
+            '1-1-2': 'Sem página de permissão',
             '1-1-3': 'Página 404'
         },
         defaultMenu: {
             home: 'Casa'
         },
         errorTip: {
-            notfoundTip: 'O componente nesse caminho não foi encontrado',
-            emptyErr: 'Caminho do componente não configurado'
+            notfoundTip: 'O componente neste caminho não foi encontrado',
+            emptyErr: 'Caminho de componente não configurado'
         }
     },
     sysInfo: {
-        sysIntro: 'Uma estrutura de desenvolvimento de front-end intermediária e traseira fácil de usar, baseada no Vue e Ant Design'
+        sysIntro: 'Uma estrutura de desenvolvimento de front-end intermediário e back-end fácil de usar com base em Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'O endereço de solicitação não pode estar vazio',
-        networkErr: 'A solicitação de rede falhou. Tente novamente mais tarde'
+        networkErr: 'A solicitação de rede falhou, tente novamente mais tarde'
     },
     localeMap: {
         ar: 'árabe',
@@ -91,7 +91,7 @@ export default {
         is: 'islandês',
         it: 'italiano ',
         ja: 'japonês',
-        kn: 'Kannada',
+        kn: 'Canarim',
         ko: 'coreano',
         'ku-iq': 'Curdo central',
         lv: 'Curdo central',
@@ -99,7 +99,7 @@ export default {
         'mn-mn': 'mongol',
         'ms-my': 'malaio',
         nb: 'norueguês',
-        'ne-np': 'Nepali',
+        'ne-np': 'Nepalês',
         'nl-be': 'flamengo',
         nl: 'holandês',
         pl: 'polonês',
@@ -122,19 +122,19 @@ export default {
     tagObj: {
         closeAll: 'Feche todas as guias',
         closeCur: 'Feche a aba atual',
-        closeOther: 'Feche outras guias',
-        closeRight: 'Fechar etiqueta direita',
+        closeOther: 'Fechar outras guias',
+        closeRight: 'Fechar etiqueta certa',
         singlePage: 'Página independente',
         refreshPage: 'atualizar a página',
         affixPage: 'Fixar página',
-        cancelAffixPage: 'Soltar',
+        cancelAffixPage: 'Liberar',
         errorTip: {
-            homePageCloseError: 'A página inicial não tem permissão para fechar',
-            affixPageCloseError: 'Página fixa não tem permissão para fechar',
-            homePageAffixError: 'A página inicial não pode ser desmarcada'
+            homePageCloseError: 'A página inicial não permite o fechamento',
+            affixPageCloseError: 'A página fixa não pode fechar',
+            homePageAffixError: 'A página inicial não pode ser desafixada'
         },
-        checkSave: 'Deseja fechar a página?(Verifique se o conteúdo da página marcada em vermelho foi salvo)',
-        cancelClose: 'Operação de fechamento cancelada'
+        checkSave: 'Você quer fechar a página?(Certifique-se de que o conteúdo da página marcada em vermelho foi salvo)',
+        cancelClose: 'Fechar operação cancelada'
     },
     personalCenter: {
         frontendLog: 'Log de front-end',
@@ -149,7 +149,7 @@ export default {
         errorTip: {
             notfoundTip: 'Desculpe, a página que você visitou não existe',
             notrightTip: 'Desculpe, você não tem permissão para acessar esta página',
-            noserviceTip: 'Desculpe, houve um problema com o servidor, tente novamente mais tarde'
+            noserviceTip: 'Desculpe, houve um problema com o servidor, por favor tente novamente mais tarde'
         },
         btnText: 'Fechar página'
     },
@@ -163,7 +163,7 @@ export default {
     },
     logline: {
         list: 'Lista de registros',
-        detail: 'Detalhes do registro',
+        detail: 'Detalhes de registro',
         btnList: {
             export: 'Exportar',
             remove: 'Vazio'
@@ -177,22 +177,22 @@ export default {
             monthDay: 'Dentro de um mês'
         },
         type: {
-            logType: 'Tipo de log',
-            plh: 'Por favor, selecione o tipo de log'
+            logType: 'Tipo de registro',
+            plh: 'Selecione o tipo de registro'
         },
         tableColumns: {
             index: 'Número de série',
             desc: 'Descrição do log',
-            type: 'Tipo de log',
+            type: 'Tipo de registro',
             time: 'Tempo',
             op: 'operativo'
         },
         request: 'Solicitar dados',
         error: {
             cancel: 'Operação vazia cancelada',
-            confirm: 'Deseja limpar o log?(Se o log for esvaziado, não poderá ser recuperado)'
+            confirm: 'Você quer limpar o log?(Se o registro for esvaziado, não pode ser recuperado)'
         },
-        success: 'O log foi esvaziado'
+        success: 'O registro foi esvaziado'
     },
     comTable: {
         columns: {
@@ -201,7 +201,7 @@ export default {
             reset: 'Redefinir',
             fixedLeft: 'Esquerda fixa',
             fixedRight: 'Direito fixo',
-            cancelFixed: 'Soltar'
+            cancelFixed: 'Liberar'
         },
         size: {
             title: 'Altura da linha',
@@ -210,7 +210,7 @@ export default {
             large: 'largura'
         },
         fullscreen: 'tela cheia',
-        unFullscreen: 'Cancelar tela cheia'
+        unFullscreen: 'Cancelar tela inteira'
     },
     normalBtn: {
         detail: 'Visão'
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Entrada rápida',
         systemSwitch: 'Configuração do sistema',
-        isMock: 'Mocking',
+        isMock: 'Se zombar',
         isHotKey: 'Se tecla de atalho',
-        isBreadCrumb: 'Se migalhas de pão',
+        isBreadCrumb: 'Seja migalhas de pão',
         isCache: 'Se deve armazenar em cache',
-        isI18n: 'Se internacionalizar'
+        isI18n: 'Se deve internacionalizar'
+    },
+    pagingInfo: {
+        total: 'No total',
+        uint: 'Artigo',
+        items: 'gravação'
     }
 }

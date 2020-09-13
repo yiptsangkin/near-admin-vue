@@ -2,8 +2,8 @@ export default {
     locale: 'cs',
     country: 'CZ',
     loginForm: {
-        byAccountBtn: 'Přihlašovací heslo k účtu',
-        byPhoneBtn: 'Přihlašovací číslo mobilního telefonu',
+        byAccountBtn: 'Přihlášení pomocí hesla účtu',
+        byPhoneBtn: 'Přihlášení pomocí mobilního čísla',
         accountPlaceholder: 'zadejte prosím účet',
         passwordPlaceholder: 'Prosím vložte heslo',
         autoLogin: 'automatické přihlášení',
@@ -13,10 +13,10 @@ export default {
             emptyErr: 'Účet nemůže být prázdný'
         },
         byPasswordTip: {
-            emptyErr: 'heslo nemůže být prázdné'
+            emptyErr: 'heslo nesmí být prázdné'
         },
         byValidTip: {
-            emptyErr: 'ověřovací kód musí být vyplněn'
+            emptyErr: 'musí být vyplněn ověřovací kód'
         },
         sendMsg: {
             repeatErr: 'Neposílejte opakovaně',
@@ -25,47 +25,47 @@ export default {
         },
         phonePlaceholder: 'Zadejte telefonní číslo',
         validPlaceholder: 'Ověřovací kód',
-        validBtn: 'získat ověřovací kód',
+        validBtn: 'získejte ověřovací kód',
         loginSuccess: 'přihlášení úspěšné'
     },
     menuObj: {
         basicFeature: 'Základní schopnost',
-        cpUse: 'Použití součástí',
+        cpUse: 'Využití komponent',
         childMenu: {
             0: 'Základní rámec',
             1: 'Základní schopnost',
             '0-0': 'Vue',
-            '0-1': 'Mravenec Design',
-            '1-0': 'Rámcová funkce',
+            '0-1': 'Ant Design',
+            '1-0': 'Funkce rámce',
             '1-0-0': 'Konfigurace projektu',
-            '1-0-1': 'Frontend log',
-            '1-0-2': 'Místní vysmívat se',
+            '1-0-1': 'Protokol frontendu',
+            '1-0-2': 'Místní falešný',
             '1-0-3': 'globalizace',
             '1-0-4': 'Datový slovník',
             '1-0-5': 'EventBus',
             '1-0-6': 'Sada nástrojů',
             '1-0-7': 'Řízení přístupu',
-            '1-0-8': 'klávesová zkratka',
+            '1-0-8': 'horká klávesa',
             '1-1': 'Funkce stránky',
             '1-1-0': 'Stránka komponent',
-            '1-1-1': 'url',
-            '1-1-2': 'Žádná stránka povolení',
-            '1-1-3': '404 stran'
+            '1-1-1': 'stránka URL',
+            '1-1-2': 'Žádná stránka oprávnění',
+            '1-1-3': 'Stránka 404'
         },
         defaultMenu: {
             home: 'Domov'
         },
         errorTip: {
             notfoundTip: 'Komponenta pod touto cestou nebyla nalezena',
-            emptyErr: 'Nekonfigurovaná cesta komponenty'
+            emptyErr: 'Nekonfigurovaná cesta ke komponentě'
         }
     },
     sysInfo: {
-        sysIntro: 'Snadno použitelný prostřední a back-end front-end vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Snadno použitelný střední a back-endový front-end vývojový rámec založený na Vue a Ant Design'
     },
     requestInfo: {
-        withoutUrl: 'Adresa požadavku nemůže být prázdná',
-        networkErr: 'Žádost o síť selhala, zkuste to znovu později'
+        withoutUrl: 'Adresa požadavku nesmí být prázdná',
+        networkErr: 'Síťový požadavek se nezdařil, zkuste to znovu později'
     },
     localeMap: {
         ar: 'arabština',
@@ -80,26 +80,26 @@ export default {
         es: 'španělština',
         et: 'estonština',
         fa: 'Peršan',
-        fi: 'Finsky',
+        fi: 'Finština',
         fr: 'francouzština',
         he: 'hebrejština',
         hi: 'hindština',
         hr: 'chorvatský',
         hu: 'maďarský',
-        hy: 'Arménské',
+        hy: 'Arménský',
         id: 'indonéština',
         is: 'islandský',
         it: 'italština ',
         ja: 'japonský',
-        kn: 'Kannada',
+        kn: 'Kannadština',
         ko: 'korejština',
         'ku-iq': 'Střední kurdština',
         lv: 'Střední kurdština',
         mk: 'Makedonština',
         'mn-mn': 'mongolský',
-        'ms-my': 'Malay',
+        'ms-my': 'Malajština',
         nb: 'Norština',
-        'ne-np': 'Nepali',
+        'ne-np': 'Nepálština',
         'nl-be': 'vlámský',
         nl: 'holandský',
         pl: 'polština',
@@ -112,7 +112,7 @@ export default {
         sr: 'srbština',
         sv: 'švédský',
         ta: 'Tamil',
-        th: 'Thajské',
+        th: 'Thai',
         tr: 'turečtina',
         uk: 'ukrajinština',
         vi: 'vietnamština',
@@ -121,25 +121,25 @@ export default {
     },
     tagObj: {
         closeAll: 'Zavřete všechny karty',
-        closeCur: 'Zavřete aktuální kartu',
+        closeCur: 'Zavřít aktuální kartu',
         closeOther: 'Zavřete další karty',
         closeRight: 'Zavřete pravý štítek',
         singlePage: 'Nezávislá stránka',
         refreshPage: 'obnovit stránku',
         affixPage: 'Připnout stránku',
-        cancelAffixPage: 'Uvolnit',
+        cancelAffixPage: 'Odepnout',
         errorTip: {
-            homePageCloseError: 'Domovská stránka nesmí být zavřena',
-            affixPageCloseError: 'Opravená stránka není dovolena zavřít',
-            homePageAffixError: 'Domovská stránka nelze odepnout'
+            homePageCloseError: 'Domovskou stránku není možné zavřít',
+            affixPageCloseError: 'Opravená stránka se nesmí zavírat',
+            homePageAffixError: 'Domovskou stránku nelze odepnout'
         },
-        checkSave: 'Chcete stránku zavřít?(Ujistěte se, že obsah stránky označené červeně byl uložen)',
-        cancelClose: 'Operace uzavření byla zrušena'
+        checkSave: 'Chcete zavřít stránku?(Ujistěte se, že byl uložen obsah stránky označené červeně)',
+        cancelClose: 'Zavírací operace byla zrušena'
     },
     personalCenter: {
-        frontendLog: 'Frontend log',
+        frontendLog: 'Protokol frontendu',
         customSetting: 'Personalizace',
-        customClean: 'Jasná konfigurace',
+        customClean: 'Vymazat konfiguraci',
         logout: 'odhlásit se',
         errorTip: {
             cleanSuccess: 'Vyprázdněte úspěšně'
@@ -148,14 +148,14 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Litujeme, stránka, kterou jste navštívili, neexistuje',
-            notrightTip: 'Litujeme, nemáte oprávnění k přístupu na tuto stránku',
-            noserviceTip: 'Je nám líto, ale došlo k problému se serverem, zkuste to prosím znovu později'
+            notrightTip: 'Litujeme, nemáte přístup k této stránce',
+            noserviceTip: 'Litujeme, došlo k problému se serverem, zkuste to prosím později'
         },
         btnText: 'Zavřít stránku'
     },
     searchPanel: {
         btn: {
-            search: 'Poptávka',
+            search: 'Poptat',
             shrink: 'Dát pryč',
             reset: 'Resetovat',
             unshrink: 'Rozvinout'
@@ -187,21 +187,21 @@ export default {
             time: 'čas',
             op: 'provozní'
         },
-        request: 'Žádost o údaje',
+        request: 'Vyžádejte si údaje',
         error: {
-            cancel: 'Prázdná operace byla zrušena',
+            cancel: 'Prázdná operace zrušena',
             confirm: 'Chcete vymazat protokol?(Pokud je protokol vyprázdněn, nelze jej načíst)'
         },
         success: 'Protokol byl vyprázdněn'
     },
     comTable: {
         columns: {
-            title: 'Nastavení sloupců',
+            title: 'Nastavení sloupce',
             all: 'vybrat vše',
             reset: 'Resetovat',
             fixedLeft: 'Opraveno vlevo',
-            fixedRight: 'Opraveno právo',
-            cancelFixed: 'Uvolnit'
+            fixedRight: 'Opravené právo',
+            cancelFixed: 'Odepnout'
         },
         size: {
             title: 'Výška řádku',
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Rychlý vstup',
         systemSwitch: 'Konfigurace systému',
-        isMock: 'Zda se vysmívat',
+        isMock: 'Ať už vysmívat',
         isHotKey: 'Zda klávesová zkratka',
-        isBreadCrumb: 'Zda drobky chleba',
-        isCache: 'Zda mezipaměť',
+        isBreadCrumb: 'Ať už strouhanka',
+        isCache: 'Zda do mezipaměti',
         isI18n: 'Zda internacionalizovat'
+    },
+    pagingInfo: {
+        total: 'Celkem',
+        uint: 'Článek',
+        items: 'záznam'
     }
 }

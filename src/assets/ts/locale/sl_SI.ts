@@ -2,43 +2,43 @@ export default {
     locale: 'sl',
     country: 'SI',
     loginForm: {
-        byAccountBtn: 'Prijava gesla za račun',
-        byPhoneBtn: 'Prijava številke mobilnega telefona',
-        accountPlaceholder: 'prosimo, vnesite račun',
+        byAccountBtn: 'Prijava z geslom za račun',
+        byPhoneBtn: 'Prijava mobilne številke',
+        accountPlaceholder: 'prosim vnesite račun',
         passwordPlaceholder: 'Vnesite geslo',
         autoLogin: 'samodejna prijava',
-        forgetBtn: 'pozabite geslo',
+        forgetBtn: 'pozabi geslo',
         loginBtn: 'Vpiši se',
         byAccountTip: {
-            emptyErr: 'Račun ne more biti prazen'
+            emptyErr: 'Račun ne sme biti prazen'
         },
         byPasswordTip: {
-            emptyErr: 'Polje za geslo ne sme biti prazno'
+            emptyErr: 'geslo ne sme biti prazno'
         },
         byValidTip: {
-            emptyErr: 'verifikacijsko kodo je treba izpolniti'
+            emptyErr: 'Izpolniti je treba verifikacijsko kodo'
         },
         sendMsg: {
             repeatErr: 'Ne pošiljajte večkrat',
             success: 'Uspešno',
-            codeTip: 'Vaša potrditvena koda je'
+            codeTip: 'Vaša koda za preverjanje je'
         },
         phonePlaceholder: 'Vnesite telefonsko številko',
         validPlaceholder: 'Koda za preverjanje',
-        validBtn: 'pridobite verifikacijsko kodo',
+        validBtn: 'pridobite kodo za preverjanje',
         loginSuccess: 'prijava uspešna'
     },
     menuObj: {
         basicFeature: 'Osnovna sposobnost',
-        cpUse: 'Uporaba sestavnih delov',
+        cpUse: 'Uporaba komponent',
         childMenu: {
             0: 'Osnovni okvir',
             1: 'Osnovna sposobnost',
             '0-0': 'Vue',
-            '0-1': 'Ant Design',
+            '0-1': 'Oblikovanje mravelj',
             '1-0': 'Okvirna funkcija',
             '1-0-0': 'Konfiguracija projekta',
-            '1-0-1': 'Frontend log',
+            '1-0-1': 'Dnevnik čelne strani',
             '1-0-2': 'Lokalni posmeh',
             '1-0-3': 'globalizacija',
             '1-0-4': 'Podatkovni slovar',
@@ -47,10 +47,10 @@ export default {
             '1-0-7': 'Nadzor dostopa',
             '1-0-8': 'vroča tipka',
             '1-1': 'Funkcija strani',
-            '1-1-0': 'Stran s sestavnimi deli',
-            '1-1-1': 'stran URL',
-            '1-1-2': 'Ni dovoljene strani',
-            '1-1-3': 'Stran 404'
+            '1-1-0': 'Stran s komponentami',
+            '1-1-1': 'url stran',
+            '1-1-2': 'Ni strani z dovoljenjem',
+            '1-1-3': '404 strani'
         },
         defaultMenu: {
             home: 'Domov'
@@ -61,120 +61,120 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Enostaven srednji in zadnji razvojni razvojni okvir, ki temelji na Vue in Ant Design'
+        sysIntro: 'Enostaven za uporabo srednji in zaledni front-end razvojni okvir, ki temelji na Vue in Ant Design'
     },
     requestInfo: {
-        withoutUrl: 'Naslov zahteve ne more biti prazen',
-        networkErr: 'Zahteva po omrežju ni uspela. Poskusite pozneje znova'
+        withoutUrl: 'Polje za naslov zahteve ne sme biti prazno',
+        networkErr: 'Zahteva za omrežje ni uspela, poskusite znova pozneje'
     },
     localeMap: {
         ar: 'arabsko',
         bg: 'Bolgarščina',
         ca: 'Katalonski',
-        cs: 'Češki',
-        da: 'Danščina',
+        cs: 'Češko',
+        da: 'Danski',
         de: 'Nemško',
-        el: 'Grško',
+        el: 'Grški',
         'en-gb': 'angleščina',
         en: 'angleščina',
         es: 'španski',
-        et: 'Estonščina',
-        fa: 'Perzijski',
-        fi: 'Finščina',
+        et: 'Estonski',
+        fa: 'Perzijsko',
+        fi: 'Finski',
         fr: 'Francosko',
         he: 'Hebrejščina',
         hi: 'Hindujščina',
-        hr: 'Hrvaško',
-        hu: 'Madžarščina',
-        hy: 'Armenščina',
-        id: 'Indonezijščina',
+        hr: 'Hrvaški',
+        hu: 'Madžarsko',
+        hy: 'Armensko',
+        id: 'Indonezijski',
         is: 'Islandski',
-        it: 'Italijanščina ',
+        it: 'Italijansko ',
         ja: 'Japonski',
-        kn: 'Kanada',
+        kn: 'Kannada',
         ko: 'Korejski',
-        'ku-iq': 'Osrednji kurdski',
-        lv: 'Osrednji kurdski',
-        mk: 'Makedonščina',
-        'mn-mn': 'Mongolščina',
-        'ms-my': 'Malajščina',
-        nb: 'Norveščina',
-        'ne-np': 'Nepalski',
-        'nl-be': 'Flamska',
-        nl: 'Nizozemščina',
-        pl: 'Poljščini',
-        'pt-br': 'Brazilska portugalščina',
+        'ku-iq': 'Srednjekurdski',
+        lv: 'Srednjekurdski',
+        mk: 'Makedonski',
+        'mn-mn': 'Mongolski',
+        'ms-my': 'Malajski',
+        nb: 'Norveški',
+        'ne-np': 'Nepalsko',
+        'nl-be': 'Flamsko',
+        nl: 'Nizozemsko',
+        pl: 'Poljski',
+        'pt-br': 'Brazilski portugalski',
         pt: 'Evropski portugalski',
-        ro: 'Romunščina',
+        ro: 'Romunski',
         ru: 'ruski jezik',
-        sk: 'Slovaška',
+        sk: 'Slovaški',
         sl: 'Slovenščina',
         sr: 'Srbsko',
-        sv: 'Švedski',
-        ta: 'Tamilščina',
-        th: 'Tajska',
-        tr: 'Turško',
-        uk: 'Ukrajinščina',
-        vi: 'Vietnamščina',
+        sv: 'Švedsko',
+        ta: 'Tamilsko',
+        th: 'Tajski',
+        tr: 'Turški',
+        uk: 'Ukrajinski',
+        vi: 'Vietnamski',
         'zh-cn': 'Poenostavljena kitajščina',
         'zh-tw': 'tradicionalno kitajsko'
     },
     tagObj: {
         closeAll: 'Zaprite vse zavihke',
-        closeCur: 'Zaprite trenutni zavihek',
+        closeCur: 'Zapri trenutni zavihek',
         closeOther: 'Zaprite druge zavihke',
         closeRight: 'Zaprite desno nalepko',
         singlePage: 'Neodvisna stran',
         refreshPage: 'osveži stran',
         affixPage: 'Pripni stran',
-        cancelAffixPage: 'Odklopite',
+        cancelAffixPage: 'Odpnite',
         errorTip: {
             homePageCloseError: 'Domače strani ni dovoljeno zapreti',
-            affixPageCloseError: 'Fiksne strani ni dovoljeno zapreti',
-            homePageAffixError: 'Domače strani ni mogoče odlepiti'
+            affixPageCloseError: 'Stalne strani ni dovoljeno zapreti',
+            homePageAffixError: 'Domače strani ni mogoče odpeti'
         },
-        checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je vsebina strani, označena z rdečo, shranjena)',
-        cancelClose: 'Zapiranje je preklicano'
+        checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je bila vsebina strani, označene z rdečo, shranjena)',
+        cancelClose: 'Operacija zapiranja je preklicana'
     },
     personalCenter: {
-        frontendLog: 'Frontend log',
+        frontendLog: 'Dnevnik čelne strani',
         customSetting: 'Personalizacija',
-        customClean: 'Počistite konfiguracijo',
+        customClean: 'Jasna konfiguracija',
         logout: 'Odjava',
         errorTip: {
-            cleanSuccess: 'Izpraznjeno uspešno'
+            cleanSuccess: 'Uspešno izpraznite'
         }
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Žal stran, ki ste jo obiskali, ne obstaja',
+            notfoundTip: 'Stran, ki ste jo obiskali, žal ne obstaja',
             notrightTip: 'Žal nimate dovoljenja za dostop do te strani',
-            noserviceTip: 'Žal je prišlo do težave s strežnikom, poskusite pozneje'
+            noserviceTip: 'Žal je prišlo do težave s strežnikom. Poskusite znova pozneje'
         },
         btnText: 'Zapri stran'
     },
     searchPanel: {
         btn: {
-            search: 'Poizvedite',
+            search: 'Povprašajte',
             shrink: 'Pospravi',
             reset: 'Ponastaviti',
-            unshrink: 'Razviti'
+            unshrink: 'Razgrnite se'
         }
     },
     logline: {
         list: 'Seznam dnevnikov',
         detail: 'Podrobnosti dnevnika',
         btnList: {
-            export: 'Izvoz',
+            export: 'Izvozi',
             remove: 'Prazno'
         },
         time: {
-            plh: 'Izberite časovni razpon',
+            plh: 'Izberite časovno obdobje',
             range: 'rok',
             halfDay: 'Pol dneva',
             oneDay: 'v enem dnevu',
             weekDay: 'v enem tednu',
-            monthDay: 'V enem mesecu'
+            monthDay: 'V roku enega meseca'
         },
         type: {
             logType: 'Vrsta dnevnika',
@@ -185,14 +185,14 @@ export default {
             desc: 'Opis dnevnika',
             type: 'Vrsta dnevnika',
             time: 'čas',
-            op: 'delovanje'
+            op: 'delujejo'
         },
         request: 'Zahtevajte podatke',
         error: {
-            cancel: 'Prazno delovanje je preklicano',
-            confirm: 'Ali želite počistiti dnevnik?(Če se dnevnik izprazni, ga ni mogoče pridobiti)'
+            cancel: 'Preklicana je prazna operacija',
+            confirm: 'Ali želite počistiti dnevnik?(Če je dnevnik izpraznjen, ga ni mogoče pridobiti)'
         },
-        success: 'Log je bil izpraznjen'
+        success: 'Dnevnik je izpraznjen'
     },
     comTable: {
         columns: {
@@ -200,17 +200,17 @@ export default {
             all: 'Izberi vse',
             reset: 'Ponastaviti',
             fixedLeft: 'Fiksno levo',
-            fixedRight: 'Popravljena pravica',
-            cancelFixed: 'Odklopite'
+            fixedRight: 'Fiksno desno',
+            cancelFixed: 'Odpnite'
         },
         size: {
             title: 'Višina vrstice',
-            small: 'ozka',
+            small: 'ozko',
             normal: 'v',
             large: 'premer'
         },
         fullscreen: 'celozaslonski način',
-        unFullscreen: 'Prekliči na celotnem zaslonu'
+        unFullscreen: 'Prekliči celozaslonski način'
     },
     normalBtn: {
         detail: 'Pogled'
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Hiter vstop',
         systemSwitch: 'Konfiguracija sistema',
-        isMock: 'Ali se posmehovati',
-        isHotKey: 'Ali bližnjična tipka',
+        isMock: 'Ali naj se posmehujem',
+        isHotKey: 'Ali je bližnjična tipka',
         isBreadCrumb: 'Ali krušne drobtine',
-        isCache: 'Ali želite predpomniti',
+        isCache: 'Ali naj se shrani v predpomnilnik',
         isI18n: 'Ali internacionalizirati'
+    },
+    pagingInfo: {
+        total: 'Skupaj',
+        uint: 'Članek',
+        items: 'snemanje'
     }
 }

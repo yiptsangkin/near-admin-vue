@@ -185,3 +185,15 @@ export interface ComTable {
         total: number
     }
 }
+
+export interface MultiSelectColumn {
+    title: string,
+    field: string,
+    width?: string | number
+}
+
+export interface PagingInfo {
+    currentPage: number,
+    pageSize: number,
+    totalRows: number
+}

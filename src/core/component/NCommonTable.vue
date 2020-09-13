@@ -85,7 +85,6 @@
         <div class="n-common-table">
             <slot name="com-table"
                   :size-class="sizeMap[sizePicked[0]].class"
-                  :row-key="defaultRowKey"
                   :select-columns="tbColumns"
                   :row-class="rowClass"
             ></slot>
@@ -153,9 +152,6 @@
                 self.tbColumns = newList
                 self.indeterminate = false
                 self.checkAll = isChecked
-            },
-            defaultRowKey () {
-                return utils.randomCharacter(12)
             },
             changeColumns () {
                 const self = this as any

@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Login kata sandi akun',
         byPhoneBtn: 'Login nomor ponsel',
-        accountPlaceholder: 'silakan masukkan akun',
+        accountPlaceholder: 'silakan masuk akun',
         passwordPlaceholder: 'Silakan masukkan kata sandi',
         autoLogin: 'masuk otomatis',
         forgetBtn: 'lupa Password',
@@ -23,7 +23,7 @@ export default {
             success: 'Berhasil',
             codeTip: 'Kode verifikasi Anda adalah'
         },
-        phonePlaceholder: 'Silakan masukkan nomor telepon',
+        phonePlaceholder: 'Harap masukkan nomor telepon',
         validPlaceholder: 'Kode verifikasi',
         validBtn: 'dapatkan kode verifikasi',
         loginSuccess: 'login berhasil'
@@ -45,7 +45,7 @@ export default {
             '1-0-5': 'EventBus',
             '1-0-6': 'Toolset',
             '1-0-7': 'Kontrol akses',
-            '1-0-8': 'kunci panas',
+            '1-0-8': 'kunci pintas',
             '1-1': 'Fungsi halaman',
             '1-1-0': 'Halaman komponen',
             '1-1-1': 'halaman url',
@@ -57,15 +57,15 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Komponen di bawah jalur ini tidak ditemukan',
-            emptyErr: 'Jalur komponen yang tidak dikonfigurasi'
+            emptyErr: 'Jalur komponen belum dikonfigurasi'
         }
     },
     sysInfo: {
-        sysIntro: 'Kerangka pengembangan front-end tengah dan belakang yang mudah digunakan berdasarkan Vue dan Ant Design'
+        sysIntro: 'Framework pengembangan front-end middle dan back-end yang mudah digunakan berdasarkan Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Alamat permintaan tidak boleh kosong',
-        networkErr: 'Permintaan jaringan gagal, silakan coba lagi nanti'
+        networkErr: 'Permintaan jaringan gagal, coba lagi nanti'
     },
     localeMap: {
         ar: 'Arab',
@@ -86,7 +86,7 @@ export default {
         hi: 'Hindi',
         hr: 'Kroasia',
         hu: 'Hongaria',
-        hy: 'Orang Armenia',
+        hy: 'Armenia',
         id: 'bahasa Indonesia',
         is: 'Islandia',
         it: 'Italia ',
@@ -98,8 +98,8 @@ export default {
         mk: 'Makedonia',
         'mn-mn': 'Mongolia',
         'ms-my': 'Melayu',
-        nb: 'Norwegia',
-        'ne-np': 'Nepal',
+        nb: 'Norsk',
+        'ne-np': 'Nepali',
         'nl-be': 'Flemish',
         nl: 'Belanda',
         pl: 'Polandia',
@@ -108,7 +108,7 @@ export default {
         ro: 'Rumania',
         ru: 'bahasa Rusia',
         sk: 'Orang Slovakia',
-        sl: 'Bahasa Slovenia',
+        sl: 'Slovenia',
         sr: 'Orang Serbia',
         sv: 'Orang Swedia',
         ta: 'Tamil',
@@ -125,16 +125,16 @@ export default {
         closeOther: 'Tutup tab lain',
         closeRight: 'Tutup label kanan',
         singlePage: 'Halaman independen',
-        refreshPage: 'refresh halaman',
-        affixPage: 'Halaman pin',
+        refreshPage: 'segarkan halaman',
+        affixPage: 'Pin halaman',
         cancelAffixPage: 'Membuka peniti',
         errorTip: {
             homePageCloseError: 'Beranda tidak diizinkan untuk ditutup',
             affixPageCloseError: 'Halaman yang diperbaiki tidak diizinkan untuk ditutup',
-            homePageAffixError: 'Beranda tidak dapat dibatalkan sematannya'
+            homePageAffixError: 'Beranda tidak dapat dilepas pinnya'
         },
-        checkSave: 'Apakah Anda ingin menutup halaman?(Pastikan konten halaman yang ditandai dengan warna merah telah disimpan)',
-        cancelClose: 'Operasi tutup dibatalkan'
+        checkSave: 'Apakah Anda ingin menutup halaman ini?(Harap pastikan bahwa konten halaman bertanda merah telah disimpan)',
+        cancelClose: 'Operasi penutupan dibatalkan'
     },
     personalCenter: {
         frontendLog: 'Log frontend',
@@ -149,7 +149,7 @@ export default {
         errorTip: {
             notfoundTip: 'Maaf, halaman yang Anda kunjungi tidak ada',
             notrightTip: 'Maaf, Anda tidak memiliki izin untuk mengakses halaman ini',
-            noserviceTip: 'Maaf, ada masalah dengan server, silakan coba lagi nanti'
+            noserviceTip: 'Maaf, ada masalah dengan server, coba lagi nanti'
         },
         btnText: 'Tutup halaman'
     },
@@ -169,7 +169,7 @@ export default {
             remove: 'Kosong'
         },
         time: {
-            plh: 'Silakan pilih rentang waktu',
+            plh: 'Pilih rentang waktu',
             range: 'batas waktu',
             halfDay: 'Setengah hari',
             oneDay: 'dalam satu hari',
@@ -178,7 +178,7 @@ export default {
         },
         type: {
             logType: 'Jenis log',
-            plh: 'Silakan pilih jenis log'
+            plh: 'Pilih jenis log'
         },
         tableColumns: {
             index: 'Nomor seri',
@@ -187,10 +187,10 @@ export default {
             time: 'waktu',
             op: 'Pengoperasian'
         },
-        request: 'Meminta data',
+        request: 'Minta data',
         error: {
             cancel: 'Operasi kosong dibatalkan',
-            confirm: 'Apakah Anda ingin menghapus log?(Jika log dikosongkan, itu tidak dapat diambil)'
+            confirm: 'Apakah Anda ingin menghapus log?(Jika log dikosongkan, tidak dapat diambil)'
         },
         success: 'Log telah dikosongkan'
     },
@@ -199,7 +199,7 @@ export default {
             title: 'Pengaturan kolom',
             all: 'Pilih Semua',
             reset: 'Setel ulang',
-            fixedLeft: 'Diperbaiki ke kiri',
+            fixedLeft: 'Tetap di kiri',
             fixedRight: 'Tetap benar',
             cancelFixed: 'Membuka peniti'
         },
@@ -220,8 +220,13 @@ export default {
         systemSwitch: 'Sistem konfigurasi',
         isMock: 'Apakah akan Mock',
         isHotKey: 'Apakah tombol pintas',
-        isBreadCrumb: 'Apakah roti remah',
-        isCache: 'Apakah akan di-cache atau tidak',
-        isI18n: 'Apakah akan diinternasionalkan'
+        isBreadCrumb: 'Apakah remah roti',
+        isCache: 'Apakah akan menyimpan cache',
+        isI18n: 'Apakah akan menginternasionalkan'
+    },
+    pagingInfo: {
+        total: 'Secara keseluruhan',
+        uint: 'Artikel',
+        items: 'rekaman'
     }
 }

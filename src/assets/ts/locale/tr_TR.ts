@@ -4,13 +4,13 @@ export default {
     loginForm: {
         byAccountBtn: 'Hesap şifresi girişi',
         byPhoneBtn: 'Cep telefonu numarası girişi',
-        accountPlaceholder: 'lütfen hesap girin',
+        accountPlaceholder: 'lütfen hesabı girin',
         passwordPlaceholder: 'Lütfen şifre giriniz',
         autoLogin: 'otomatik giriş',
         forgetBtn: 'şifreyi unut',
         loginBtn: 'oturum aç',
         byAccountTip: {
-            emptyErr: 'Hesap boş bırakılamaz'
+            emptyErr: 'Hesap boş olamaz'
         },
         byPasswordTip: {
             emptyErr: 'şifre boş olamaz'
@@ -19,11 +19,11 @@ export default {
             emptyErr: 'doğrulama kodu doldurulmalıdır'
         },
         sendMsg: {
-            repeatErr: 'Tekrar tekrar gönderme',
+            repeatErr: 'Defalarca göndermeyin',
             success: 'Başarılı',
             codeTip: 'Doğrulama kodunuz'
         },
-        phonePlaceholder: 'Lütfen telefon numarasını girin',
+        phonePlaceholder: 'Lütfen telefon numarasını giriniz',
         validPlaceholder: 'Doğrulama kodu',
         validBtn: 'doğrulama kodunu al',
         loginSuccess: 'giriş başarılı'
@@ -37,20 +37,20 @@ export default {
             '0-0': 'Vue',
             '0-1': 'Karınca Tasarımı',
             '1-0': 'Çerçeve işlevi',
-            '1-0-0': 'Proje yapılandırması',
+            '1-0-0': 'Proje konfigürasyonu',
             '1-0-1': 'Ön uç günlüğü',
-            '1-0-2': 'Yerel alay',
+            '1-0-2': 'Yerel taklit',
             '1-0-3': 'küreselleşme',
             '1-0-4': 'Bilgi sözlüğü',
             '1-0-5': 'EventBus',
-            '1-0-6': 'Araç Seti',
+            '1-0-6': 'Araç seti',
             '1-0-7': 'Giriş kontrolu',
             '1-0-8': 'kısayol tuşu',
             '1-1': 'Sayfa işlevi',
             '1-1-0': 'Bileşen sayfası',
             '1-1-1': 'url sayfası',
             '1-1-2': 'İzin sayfası yok',
-            '1-1-3': '404 sayfa'
+            '1-1-3': '404 sayfası'
         },
         defaultMenu: {
             home: 'Ev'
@@ -61,7 +61,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Vue ve Ant Design tabanlı kullanımı kolay orta ve arka uç ön uç geliştirme çerçevesi'
+        sysIntro: 'Vue ve Ant Design&#39;a dayalı, kullanımı kolay bir orta ve arka uç ön uç geliştirme çerçevesi'
     },
     requestInfo: {
         withoutUrl: 'İstek adresi boş olamaz',
@@ -69,10 +69,10 @@ export default {
     },
     localeMap: {
         ar: 'Arapça',
-        bg: 'Bulgar',
-        ca: 'Katalan',
+        bg: 'Bulgarca',
+        ca: 'Katalanca',
         cs: 'Çek',
-        da: 'Danimarkalı',
+        da: 'Danimarka dili',
         de: 'Almanca',
         el: 'Yunan',
         'en-gb': 'ingilizce',
@@ -87,32 +87,32 @@ export default {
         hr: 'Hırvat',
         hu: 'Macarca',
         hy: 'Ermeni',
-        id: 'Endonezya',
+        id: 'Endonezya dili',
         is: 'İzlandaca',
         it: 'İtalyan ',
         ja: 'Japonca',
         kn: 'Kannada',
         ko: 'Koreli',
-        'ku-iq': 'Merkezi Kürtçe',
-        lv: 'Merkezi Kürtçe',
-        mk: 'Makedonya',
+        'ku-iq': 'Orta Kürtçe',
+        lv: 'Orta Kürtçe',
+        mk: 'Makedonca',
         'mn-mn': 'Moğolca',
-        'ms-my': 'Malaya',
+        'ms-my': 'Malayca',
         nb: 'Norveççe',
-        'ne-np': 'Nepali',
+        'ne-np': 'Nepalce',
         'nl-be': 'Flaman',
         nl: 'Flemenkçe',
         pl: 'Lehçe',
         'pt-br': 'Brezilya Portekizcesi',
         pt: 'Avrupa Portekizcesi',
-        ro: 'Romen',
+        ro: 'Romence',
         ru: 'Rus Dili',
         sk: 'Slovak',
-        sl: 'Sloven',
+        sl: 'Slovence',
         sr: 'Sırpça',
         sv: 'İsveççe',
-        ta: 'Tamilce',
-        th: 'Tayland',
+        ta: 'Tamil',
+        th: 'Tay dili',
         tr: 'Türk',
         uk: 'Ukrayna',
         vi: 'Vietnam',
@@ -120,36 +120,36 @@ export default {
         'zh-tw': 'Geleneksel çince'
     },
     tagObj: {
-        closeAll: 'Tüm sekmeleri kapat',
+        closeAll: 'Tüm sekmeleri kapatın',
         closeCur: 'Geçerli sekmeyi kapat',
-        closeOther: 'Diğer sekmeleri kapat',
-        closeRight: 'Sağ etiketi kapat',
+        closeOther: 'Diğer sekmeleri kapatın',
+        closeRight: 'Sağdaki etiketi kapat',
         singlePage: 'Bağımsız sayfa',
         refreshPage: 'sayfayı yenile',
         affixPage: 'Sayfayı sabitle',
-        cancelAffixPage: 'sabitlemesini',
+        cancelAffixPage: 'Sabitlemeyi kaldır',
         errorTip: {
             homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor',
-            affixPageCloseError: 'Sabit sayfanın kapanmasına izin verilmiyor',
+            affixPageCloseError: 'Sabit sayfanın kapanmasına izin verilmez',
             homePageAffixError: 'Ana sayfanın sabitlemesi kaldırılamaz'
         },
-        checkSave: 'Sayfayı kapatmak istiyor musunuz?(Lütfen kırmızı ile işaretlenmiş sayfanın içeriğinin kaydedildiğinden emin olun)',
+        checkSave: 'Sayfayı kapatmak istiyor musunuz?(Lütfen kırmızıyla işaretlenmiş sayfanın içeriğinin kaydedildiğinden emin olun)',
         cancelClose: 'Kapatma işlemi iptal edildi'
     },
     personalCenter: {
         frontendLog: 'Ön uç günlüğü',
         customSetting: 'Kişiselleştirme',
-        customClean: 'Açık yapılandırma',
+        customClean: 'Yapılandırmayı temizle',
         logout: 'oturumu Kapat',
         errorTip: {
-            cleanSuccess: 'Başarıyla boşaltın'
+            cleanSuccess: 'Başarıyla boşaltıldı'
         }
     },
     errorPage: {
         errorTip: {
             notfoundTip: 'Üzgünüz, ziyaret ettiğiniz sayfa mevcut değil',
             notrightTip: 'Üzgünüz, bu sayfaya erişim izniniz yok',
-            noserviceTip: 'Maalesef, sunucuda bir sorun oluştu, lütfen daha sonra tekrar deneyin'
+            noserviceTip: 'Üzgünüz, sunucuda bir sorun oldu, lütfen daha sonra tekrar deneyin'
         },
         btnText: 'Sayfayı kapat'
     },
@@ -158,7 +158,7 @@ export default {
             search: 'Sormak',
             shrink: 'Bırakmak',
             reset: 'Sıfırla',
-            unshrink: 'Çıkar'
+            unshrink: 'Aç'
         }
     },
     logline: {
@@ -187,10 +187,10 @@ export default {
             time: 'zaman',
             op: 'işletme'
         },
-        request: 'Veri isteyin',
+        request: 'Veri talep et',
         error: {
             cancel: 'Boş işlem iptal edildi',
-            confirm: 'Günlüğü temizlemek istiyor musunuz?(Günlük boşaltılırsa, alınamaz)'
+            confirm: 'Günlüğü temizlemek istiyor musunuz?(Günlük boşaltılırsa geri alınamaz)'
         },
         success: 'Günlük boşaltıldı'
     },
@@ -199,9 +199,9 @@ export default {
             title: 'Sütun ayarları',
             all: 'hepsini seç',
             reset: 'Sıfırla',
-            fixedLeft: 'Sabit sola',
-            fixedRight: 'Sabit hak',
-            cancelFixed: 'sabitlemesini'
+            fixedLeft: 'Sola sabitlendi',
+            fixedRight: 'Sağ sabit',
+            cancelFixed: 'Sabitlemeyi kaldır'
         },
         size: {
             title: 'Satır yüksekliği',
@@ -218,10 +218,15 @@ export default {
     setting: {
         customEntry: 'Hızlı giriş',
         systemSwitch: 'Sistem yapılandırması',
-        isMock: 'Alay etmek isteyip istemediğiniz',
-        isHotKey: 'Kısayol tuşunun olup olmadığı',
-        isBreadCrumb: 'Ekmek kırıntıları',
-        isCache: 'Önbellekleme',
-        isI18n: 'Uluslararasılaşma olup olmadığı'
+        isMock: 'Alay Edilip Edilmeyeceği',
+        isHotKey: 'Kısayol tuşu olsun',
+        isBreadCrumb: 'Ekmek kırıntısı olsun',
+        isCache: 'Önbelleğe alınıp alınmayacağı',
+        isI18n: 'Uluslararasılaşmak'
+    },
+    pagingInfo: {
+        total: 'Toplamda',
+        uint: 'makale',
+        items: 'kayıt'
     }
 }

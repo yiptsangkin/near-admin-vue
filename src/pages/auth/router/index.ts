@@ -22,7 +22,7 @@ const routesConfig: RouteConfig[] = [
 
 const routerOpt: RouterOptions = {
     mode: 'history',
-    base: `/${basePath}`,
+    base: `/${basePath || 'auth'}`,
     routes: routesConfig
 }
 

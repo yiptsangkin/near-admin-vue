@@ -162,6 +162,11 @@ module.exports = {
         isBreadCrumb: '是否面包屑',
         isCache: '是否缓存',
         isI18n: '是否国际化'
+    },
+    pagingInfo: {
+        total: '总共',
+        uint: '条',
+        items: '记录'
     }
 }
 

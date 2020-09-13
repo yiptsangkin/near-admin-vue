@@ -99,7 +99,7 @@
                             let pageCp
                             if (!curCp.isUrl) {
                                 pageCp = await import(
-                                    '@/pages/' + (dict.commonObj.basePath || 'manage') + '/view/' + curCp.component + '.vue'
+                                    '@/pages/' + dict.commonObj.basePath + '/view/' + curCp.component + '.vue'
                                     )
                             }  else {
                                 pageCp = await import('@corecp/NWebView.vue')

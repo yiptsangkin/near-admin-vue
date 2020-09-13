@@ -3,7 +3,7 @@ export default {
     country: 'US',
     loginForm: {
         byAccountBtn: 'Account password login',
-        byPhoneBtn: 'Mobile phone number login',
+        byPhoneBtn: 'Mobile number login',
         accountPlaceholder: 'please enter account',
         passwordPlaceholder: 'Please enter password',
         autoLogin: 'auto login',
@@ -134,7 +134,7 @@ export default {
             homePageAffixError: 'Homepage cannot be unpinned'
         },
         checkSave: 'Do you want to close the page?(Please make sure that the content of the page marked in red has been saved)',
-        cancelClose: 'Close operation cancelled'
+        cancelClose: 'Close operation canceled'
     },
     personalCenter: {
         frontendLog: 'Frontend log',
@@ -223,5 +223,10 @@ export default {
         isBreadCrumb: 'Whether bread crumbs',
         isCache: 'Whether to cache',
         isI18n: 'Whether to internationalize'
+    },
+    pagingInfo: {
+        total: 'In total',
+        uint: 'Article',
+        items: 'recording'
     }
 }
