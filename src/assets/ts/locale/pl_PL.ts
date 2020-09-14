@@ -36,6 +36,7 @@ export default {
             1: 'Podstawowe umiejętności',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
+            '0-2': 'Blisko Admin Vue',
             '1-0': 'Funkcja ramowa',
             '1-0-0': 'Konfiguracja projektu',
             '1-0-1': 'Dziennik frontendowy',

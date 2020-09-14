@@ -36,6 +36,7 @@ export default {
             1: 'Basisvaardigheid',
             '0-0': 'Vue',
             '0-1': 'Ant ontwerp',
+            '0-2': 'In de buurt van Admin Vue',
             '1-0': 'Framework-functie',
             '1-0-0': 'Project configuratie',
             '1-0-1': 'Frontend-logboek',

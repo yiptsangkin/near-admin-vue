@@ -25,7 +25,7 @@ export default {
         },
         phonePlaceholder: 'Anna puhelinnumero',
         validPlaceholder: 'Vahvistuskoodi',
-        validBtn: 'hae vahvistuskoodi',
+        validBtn: 'saada vahvistuskoodi',
         loginSuccess: 'kirjautuminen onnistui'
     },
     menuObj: {
@@ -36,6 +36,7 @@ export default {
             1: 'Peruskyky',
             '0-0': 'Vue',
             '0-1': 'Muurahaisen muotoilu',
+            '0-2': 'Lähellä Admin Vue',
             '1-0': 'Kehystoiminto',
             '1-0-0': 'Projektin kokoonpano',
             '1-0-1': 'Käyttöliittymän loki',

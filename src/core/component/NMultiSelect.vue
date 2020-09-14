@@ -60,10 +60,6 @@
                 type: Boolean,
                 default: false
             },
-            showOptionIndex: {
-                type: Boolean,
-                default: true
-            },
             optionFormatter: {
                 type: Function,
                 default () {
@@ -172,7 +168,7 @@
             },
             changePage (current: any) {
                 const self = this
-                self.$emit('change-page', current)
+                self.$emit('changepage', current)
             },
             showDropdownMenu () {
                 const self = this as any

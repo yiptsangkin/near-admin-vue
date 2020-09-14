@@ -36,6 +36,7 @@ export default {
             1: 'Alapképesség',
             '0-0': 'Vue',
             '0-1': 'Hangya tervezés',
+            '0-2': 'Az Admin Vue közelében',
             '1-0': 'Keretfunkció',
             '1-0-0': 'Projekt konfigurálása',
             '1-0-1': 'Frontend napló',

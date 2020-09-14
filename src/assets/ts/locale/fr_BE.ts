@@ -36,6 +36,7 @@ export default {
             1: 'Capacité de base',
             '0-0': 'Vue',
             '0-1': 'Conception de fourmis',
+            '0-2': 'Vue d&#39;administration à proximité',
             '1-0': 'Fonction de cadre',
             '1-0-0': 'Configuration du projet',
             '1-0-1': 'Journal du frontend',

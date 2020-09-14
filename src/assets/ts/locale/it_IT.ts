@@ -36,6 +36,7 @@ export default {
             1: 'Abilità di base',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
+            '0-2': 'Vicino a Admin Vue',
             '1-0': 'Funzione quadro',
             '1-0-0': 'Configurazione del progetto',
             '1-0-1': 'Registro di frontend',

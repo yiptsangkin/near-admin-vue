@@ -33,9 +33,10 @@ export default {
         cpUse: 'Notkun íhluta',
         childMenu: {
             0: 'Grunnrammi',
-            1: 'Grunngeta',
+            1: 'Grunnfærni',
             '0-0': 'Vue',
             '0-1': 'Maurhönnun',
+            '0-2': 'Nálægt Admin Vue',
             '1-0': 'Rammaaðgerð',
             '1-0-0': 'Uppsetning verkefnis',
             '1-0-1': 'Frontend log',

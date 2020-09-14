@@ -36,6 +36,7 @@ export default {
             1: 'Põhivõime',
             '0-0': 'Vue',
             '0-1': 'Sipelgate disain',
+            '0-2': 'Admin Vue lähedal',
             '1-0': 'Raamistiku funktsioon',
             '1-0-0': 'Projekti konfiguratsioon',
             '1-0-1': 'Esiosa logi',

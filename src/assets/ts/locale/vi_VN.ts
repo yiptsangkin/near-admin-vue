@@ -36,6 +36,7 @@ export default {
             1: 'Khả năng cơ bản',
             '0-0': 'Vue',
             '0-1': 'Kiến thiết kế',
+            '0-2': 'Gần Vue quản trị',
             '1-0': 'Chức năng khung',
             '1-0-0': 'Cấu hình dự án',
             '1-0-1': 'Nhật ký giao diện người dùng',

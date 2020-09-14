@@ -105,6 +105,11 @@ export const getUserMenu = (req: any): ComRespone => {
                                     name: 'menuObj.childMenu.0-1',
                                     path: 'https://antdv.com',
                                     icon: ''
+                                },
+                                {
+                                    name: 'menuObj.childMenu.0-2',
+                                    path: 'https://yiptsangkin.github.io/near-admin-vue-site/zh/',
+                                    icon: ''
                                 }
                             ]
                         },

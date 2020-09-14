@@ -36,6 +36,7 @@ export default {
             1: 'Pamata spējas',
             '0-0': 'Vue',
             '0-1': 'Skudru dizains',
+            '0-2': 'Netālu no Admin Vue',
             '1-0': 'Sistēmas funkcija',
             '1-0-0': 'Projekta konfigurācija',
             '1-0-1': 'Frontend žurnāls',

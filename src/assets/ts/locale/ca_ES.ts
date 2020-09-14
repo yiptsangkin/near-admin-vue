@@ -36,6 +36,7 @@ export default {
             1: 'Capacitat bàsica',
             '0-0': 'Vue',
             '0-1': 'Disseny de formigues',
+            '0-2': 'Prop de l&#39;administració Vue',
             '1-0': 'Funció marc',
             '1-0-0': 'Configuració del projecte',
             '1-0-1': 'Registre de frontend',

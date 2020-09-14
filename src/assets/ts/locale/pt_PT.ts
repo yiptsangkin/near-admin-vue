@@ -36,6 +36,7 @@ export default {
             1: 'Habilidade básica',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
+            '0-2': 'Perto de Admin Vue',
             '1-0': 'Função de framework',
             '1-0-0': 'Configuração do projeto',
             '1-0-1': 'Log de front-end',

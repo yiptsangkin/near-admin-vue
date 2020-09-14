@@ -36,6 +36,7 @@ export default {
             1: 'Basic ability',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
+            '0-2': 'Near Admin Vue',
             '1-0': 'Framework function',
             '1-0-0': 'Project configuration',
             '1-0-1': 'Frontend log',

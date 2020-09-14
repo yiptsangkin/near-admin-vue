@@ -36,6 +36,7 @@ export default {
             1: 'Grundlegende Fähigkeit',
             '0-0': 'Vue',
             '0-1': 'Ameisendesign',
+            '0-2': 'In der Nähe von Admin Vue',
             '1-0': 'Rahmenfunktion',
             '1-0-0': 'Projektkonfiguration',
             '1-0-1': 'Frontend-Protokoll',

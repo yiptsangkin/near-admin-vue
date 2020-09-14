@@ -36,6 +36,7 @@ export default {
             1: 'Základní schopnost',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
+            '0-2': 'Poblíž Admin Vue',
             '1-0': 'Funkce rámce',
             '1-0-0': 'Konfigurace projektu',
             '1-0-1': 'Protokol frontendu',

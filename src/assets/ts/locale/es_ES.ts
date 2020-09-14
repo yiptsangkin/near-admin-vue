@@ -36,6 +36,7 @@ export default {
             1: 'Habilidad básica',
             '0-0': 'Vue',
             '0-1': 'Diseño de hormigas',
+            '0-2': 'Cerca de Admin Vue',
             '1-0': 'Función marco',
             '1-0-0': 'Configuración del proyecto',
             '1-0-1': 'Registro de frontend',

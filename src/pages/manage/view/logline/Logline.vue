@@ -21,8 +21,8 @@
         <!-- result table -->
         <div class="n-logline-table">
             <n-common-table :table-obj="loglineTable" @btnevent="btnEvent">
-                <a-table slot-scope="{sizeClass, rowKey, selectColumns, rowClass}"
-                         :class="sizeClass" row-key="idx" slot="com-table"
+                <a-table slot-scope="{sizeClass, selectColumns, rowClass}"
+                         :class="sizeClass" row-key="idx" slot="n-com-table"
                          :columns="selectColumns"
                          :data-source="loglineTable.data"
                          :scroll="{ x: '100%' }"
@@ -117,7 +117,6 @@
     import dict from '@custom/dict'
     import utils from '@corets/utils'
     import {ComTable} from '@corets/type'
-    import {i18nObj} from '@corets/lang';
 
     export default Vue.extend({
         name: 'Logline',

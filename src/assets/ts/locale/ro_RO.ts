@@ -36,6 +36,7 @@ export default {
             1: 'Abilitate de bază',
             '0-0': 'Vue',
             '0-1': 'Design de furnici',
+            '0-2': 'Lângă Admin Vue',
             '1-0': 'Funcția cadru',
             '1-0-0': 'Configurarea proiectului',
             '1-0-1': 'Jurnal frontend',

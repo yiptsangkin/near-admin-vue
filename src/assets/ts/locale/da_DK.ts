@@ -36,6 +36,7 @@ export default {
             1: 'Grundlæggende evne',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
+            '0-2': 'I nærheden af ​​Admin Vue',
             '1-0': 'Rammefunktion',
             '1-0-0': 'Projektkonfiguration',
             '1-0-1': 'Frontend-log',

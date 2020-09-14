@@ -83,7 +83,7 @@
             </a-row>
         </div>
         <div class="n-common-table">
-            <slot name="com-table"
+            <slot name="n-com-table"
                   :size-class="sizeMap[sizePicked[0]].class"
                   :select-columns="tbColumns"
                   :row-class="rowClass"

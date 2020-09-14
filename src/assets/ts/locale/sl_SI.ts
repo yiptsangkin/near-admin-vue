@@ -36,6 +36,7 @@ export default {
             1: 'Osnovna sposobnost',
             '0-0': 'Vue',
             '0-1': 'Oblikovanje mravelj',
+            '0-2': 'V bližini Admin Vue',
             '1-0': 'Okvirna funkcija',
             '1-0-0': 'Konfiguracija projekta',
             '1-0-1': 'Dnevnik čelne strani',

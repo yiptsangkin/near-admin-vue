@@ -36,6 +36,7 @@ export default {
             1: 'Kemampuan dasar',
             '0-0': 'Vue',
             '0-1': 'Desain Semut',
+            '0-2': 'Di dekat Admin Vue',
             '1-0': 'Fungsi kerangka kerja',
             '1-0-0': 'Konfigurasi proyek',
             '1-0-1': 'Log frontend',

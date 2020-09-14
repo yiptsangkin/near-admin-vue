@@ -36,6 +36,7 @@ export default {
             1: 'Grundläggande förmåga',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
+            '0-2': 'Nära Admin Vue',
             '1-0': 'Ramfunktion',
             '1-0-0': 'Projektkonfiguration',
             '1-0-1': 'Frontend logg',

@@ -36,6 +36,7 @@ export default {
             1: 'Základná schopnosť',
             '0-0': 'Vue',
             '0-1': 'Návrh mravca',
+            '0-2': 'V blízkosti zariadenia Admin Vue',
             '1-0': 'Rámcová funkcia',
             '1-0-0': 'Konfigurácia projektu',
             '1-0-1': 'Frontend log',

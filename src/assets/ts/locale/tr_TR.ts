@@ -36,6 +36,7 @@ export default {
             1: 'Temel yetenek',
             '0-0': 'Vue',
             '0-1': 'Karınca Tasarımı',
+            '0-2': 'Admin Vue yakınında',
             '1-0': 'Çerçeve işlevi',
             '1-0-0': 'Proje konfigürasyonu',
             '1-0-1': 'Ön uç günlüğü',
