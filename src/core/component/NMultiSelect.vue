@@ -5,13 +5,15 @@
                 @change="closeDropdownMenu"
                 ref="multi-select"
                 :open="multiSelectVisible"
-                :dropdownClassName="`${$attrs.dropdownMatchSelectWidth ? '' : 'n-multi-select-dropdown-menu'}`"
                 v-bind="$attrs"
                 v-model="selectedValue"
                 :style="computedParentWidth()"
+                :option-label-prop="$attrs.optionLabelProp ? $attrs.optionLabelProp : 'value'"
+                :dropdown-match-select-width="$attrs.dropdownMatchSelectWidth || false"
         >
             <div ref="multi-dropdown" class="multi-dropdown" slot="dropdownRender" slot-scope="options">
                 <a-row class="multi-title" type="flex">
+                    <a-col key="multi-sort" style="width: 55px" v-if="showSortIndex">序号</a-col>
                     <a-col v-for="(item, index) in optionColumns" :key="index" :style="computedWidth(item.width)">{{ item.title }}{{ showTitleField ? `(${item.field})` : ''}}</a-col>
                 </a-row>
                 <v-nodes :vnodes="options"/>
@@ -19,7 +21,7 @@
                     v-if="pagingInfo"
                     :page-size.sync="pagingInfo.pageSize"
                     :default-current="pagingInfo.currentPage"
-                    :total="pagingInfo.totalRows"
+                    :total="totalRows"
                     :show-total="total => `${$t(dict.localeObj.pagingInfo.total)} ${total} ${$t(dict.localeObj.pagingInfo.uint)}${$t(dict.localeObj.pagingInfo.items)}`"
                     size="small"
                     hide-on-single-page
@@ -27,9 +29,10 @@
                     @change="changePage"
                 ></a-pagination>
             </div>
-            <a-select-option v-for="(item, index) in targetOption" :key="index" :value="item.value">
+            <a-select-option v-for="(item, index) in targetOption" :key="index" :value="item[valueProps]">
                 <a-row class="multi-option" type="flex">
-                    <a-col class="multi-option-index"></a-col>
+                    <a-col class="multi-option-index" style="width: 50px" v-if="showSortIndex">
+                        {{ pagingInfo ? ((pagingInfo.currentPage - 1) * pagingInfo.pageSize + index + 1) : index + 1 }}</a-col>
                     <a-col v-for="(citem, cindex) in optionColumns" :key="cindex" :style="computedWidth(citem.width)">
                         {{ item[citem.field] }}
                     </a-col>
@@ -73,6 +76,18 @@
             },
             value: {
                 default: null
+            },
+            valueProps: {
+                type: String,
+                default: 'value'
+            },
+            showSortIndex: {
+                type: Boolean,
+                default: true
+            },
+            remote: {
+                type: Boolean,
+                default: false
             }
         },
         components: {
@@ -98,7 +113,7 @@
         computed: {
             targetOption () {
                 const self = this as any
-                return self.optionFormatter(self.optionsList)
+                return self.initPageControl(self.optionFormatter(self.optionsList))
             },
             selectedValue: {
                 get () {
@@ -109,17 +124,22 @@
                     const self = this as any
                     self.$emit('change', val)
                 }
+            },
+            totalRows () {
+                const self = this as any
+                if (!self.pagingInfo.totalRows) {
+                    return self.optionFormatter(self.optionsList).length
+                } else {
+                    return self.pagingInfo.totalRows
+                }
             }
         },
         methods: {
             init () {
                 const self = this as any
-                // set default dropdownMatchSelectWidth false
-                if (!self.$attrs.dropdownMatchSelectWidth) {
-                    self.$attrs.dropdownMatchSelectWidth = false
-                }
                 // blur control
                 self.initGlobalClickClose()
+                // page control
             },
             computedWidth (width?: number | string ) {
                 if (width) {
@@ -144,10 +164,10 @@
                             totalWidth += 120
                         }
                     })
-                    // 24px is padding
-                    return `width: ${totalWidth + 24}px;`
+                    // 24px is padding, 55px is sort index
+                    return `width: ${totalWidth + 24 + (self.showSortIndex ? 55 : 0)}px;`
                 } else {
-                    return `width: 100px`
+                    return  `width: ${self.showSortIndex ? 155 : 100}px`
                 }
             },
             changePage (current: any) {
@@ -166,12 +186,29 @@
             initGlobalClickClose () {
                 const self = this as any
                 document.addEventListener('click', (e) => {
-                    const multiSelect = self.$refs['multi-select'].$el
+                    const multiSelect = self.$refs['multi-select'] ? self.$refs['multi-select'].$el : null
                     const multiDropdown = self.$refs['multi-dropdown']
                     if (!(multiSelect && multiSelect.contains(e.target)) && !(multiDropdown && multiDropdown.contains(e.target))) {
                         self.multiSelectVisible = false
                     }
                 })
+            },
+            initPageControl (optionList: any[]) {
+                // if is remote, not need to control page, else control static data.
+                const self = this
+                if (self.remote) {
+                    return optionList
+                } else {
+                    // check if pagingInfo
+                    if (self.pagingInfo) {
+                        return optionList.splice(
+                            (self.pagingInfo.currentPage - 1) * self.pagingInfo.pageSize,
+                            self.pagingInfo.pageSize
+                        )
+                    } else {
+                        return optionList
+                    }
+                }
             }
         }
     })
@@ -179,10 +216,4 @@
 
 <style lang="scss" scoped>
     @import "~@corescss/manage/multiselect"
-</style>
-
-<style lang="scss">
-    .n-multi-select-dropdown-menu{
-        width: auto!important;
-    }
 </style>

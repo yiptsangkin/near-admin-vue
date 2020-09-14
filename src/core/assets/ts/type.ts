@@ -179,11 +179,7 @@ export interface ComTable {
     columns: any[],
     data: any[],
     title: string,
-    pagingInfo: {
-        current: number,
-        pageSize: number,
-        total: number
-    }
+    pagingInfo: PagingInfo
 }
 
 export interface MultiSelectColumn {

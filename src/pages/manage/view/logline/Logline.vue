@@ -144,7 +144,7 @@
                             },
                             customRender: (text: any, record: any, index: any) => {
                                 const self = this as any
-                                return (self.loglineTable.pagingInfo.current - 1)
+                                return (self.loglineTable.pagingInfo.currentPage - 1)
                                     * self.loglineTable.pagingInfo.pageSize + index + 1
                             }
                         },
@@ -277,14 +277,14 @@
             },
             getLog (pageNum = 1) {
                 const self = this
-                self.loglineTable.pagingInfo.current = pageNum
+                self.loglineTable.pagingInfo.currentPage = pageNum
                 utils.loglineObj.getLog({
                     start: self.loglineForm.model.dateRange,
                     callback: (data: any) => {
                         data = data.reverse()
-                        self.loglineTable.pagingInfo.total = data.length
+                        self.loglineTable.pagingInfo.totalRows = data.length
                         const temData = data.splice(
-                            (self.loglineTable.pagingInfo.current - 1) * self.loglineTable.pagingInfo.pageSize,
+                            (self.loglineTable.pagingInfo.currentPage - 1) * self.loglineTable.pagingInfo.pageSize,
                             self.loglineTable.pagingInfo.pageSize
                         )
                         temData.forEach((item: any, index: number) => {
@@ -297,7 +297,7 @@
             pageChange (obj: any) {
                 const self = this
                 self.loglineTable.pagingInfo.pageSize = obj.pageSize
-                self.getLog(obj.current)
+                self.getLog(obj.currentPage)
             },
             timestampToDateString: utils.timestampToDateString,
             showLogDetail (record: any) {

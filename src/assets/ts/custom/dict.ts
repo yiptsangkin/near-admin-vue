@@ -43,9 +43,9 @@ export default {
         },
         shrinkThresholdValue: 800,
         tablePagingInfoOpt: {
-            current: 1,
+            currentPage: 1,
             pageSize: 10,
-            total: 0,
+            totalRows: 0,
             'show-size-changer': true,
             pageSizeOptions: ['10', '30', '50']
         },
