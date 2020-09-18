@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'Sem página de permissão',
             '1-1-3': 'Página 404'
         },
-        defaultMenu: {
-            home: 'Casa'
-        },
         errorTip: {
             notfoundTip: 'O componente neste caminho não foi encontrado',
             emptyErr: 'Caminho de componente não configurado'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Casa'
+        }
+    },
     sysInfo: {
-        sysIntro: 'Uma estrutura de desenvolvimento de front-end intermediário e back-end fácil de usar com base em Vue e Ant Design'
+        sysIntro: 'Uma estrutura de desenvolvimento front-end intermediária e back-end fácil de usar com base em Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'O endereço de solicitação não pode estar vazio',
@@ -130,7 +132,7 @@ export default {
         affixPage: 'Fixar página',
         cancelAffixPage: 'Liberar',
         errorTip: {
-            homePageCloseError: 'A página inicial não permite o fechamento',
+            homePageCloseError: 'A página inicial não pode fechar',
             affixPageCloseError: 'A página fixa não pode fechar',
             homePageAffixError: 'A página inicial não pode ser desafixada'
         },

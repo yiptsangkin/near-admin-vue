@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Trang không có quyền',
             '1-1-3': 'Trang 404'
         },
-        defaultMenu: {
-            home: 'Trang Chủ'
-        },
         errorTip: {
             notfoundTip: 'Không tìm thấy thành phần trong đường dẫn này',
             emptyErr: 'Đường dẫn thành phần chưa được định cấu hình'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Trang Chủ'
         }
     },
     sysInfo: {

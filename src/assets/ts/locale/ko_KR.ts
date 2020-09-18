@@ -53,12 +53,14 @@ export default {
             '1-1-2': '권한 페이지 없음',
             '1-1-3': '404 페이지'
         },
-        defaultMenu: {
-            home: '집'
-        },
         errorTip: {
             notfoundTip: '이 경로 아래의 구성 요소를 찾을 수 없습니다.',
             emptyErr: '구성되지 않은 구성 요소 경로'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: '집'
         }
     },
     sysInfo: {

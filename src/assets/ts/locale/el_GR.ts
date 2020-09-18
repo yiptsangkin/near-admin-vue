@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Χωρίς σελίδα άδειας',
             '1-1-3': '404 σελίδα'
         },
-        defaultMenu: {
-            home: 'Σπίτι'
-        },
         errorTip: {
             notfoundTip: 'Το στοιχείο κάτω από αυτήν τη διαδρομή δεν βρέθηκε',
             emptyErr: 'Μη διαμορφωμένη διαδρομή στοιχείου'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Σπίτι'
         }
     },
     sysInfo: {
@@ -126,7 +128,7 @@ export default {
         closeOther: 'Κλείστε άλλες καρτέλες',
         closeRight: 'Κλείσιμο δεξιάς ετικέτας',
         singlePage: 'Ανεξάρτητη σελίδα',
-        refreshPage: 'ανανεώστε τη σελίδα',
+        refreshPage: 'ανανέωση σελίδας',
         affixPage: 'Καρφίτσωμα σελίδας',
         cancelAffixPage: 'Ξεκαρφιτσώνω',
         errorTip: {

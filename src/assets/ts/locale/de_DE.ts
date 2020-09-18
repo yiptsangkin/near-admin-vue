@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Keine Berechtigungsseite',
             '1-1-3': '404 Seite'
         },
-        defaultMenu: {
-            home: 'Zuhause'
-        },
         errorTip: {
             notfoundTip: 'Die Komponente unter diesem Pfad wurde nicht gefunden',
             emptyErr: 'Nicht konfigurierter Komponentenpfad'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Zuhause'
         }
     },
     sysInfo: {

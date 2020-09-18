@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Pàgina sense permís',
             '1-1-3': '404 pàgines'
         },
-        defaultMenu: {
-            home: 'Inici'
-        },
         errorTip: {
             notfoundTip: 'No s&#39;ha trobat el component sota aquest camí',
             emptyErr: 'Camí del component no configurat'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Inici'
         }
     },
     sysInfo: {
@@ -190,7 +192,7 @@ export default {
         },
         request: 'Sol·liciteu dades',
         error: {
-            cancel: 'Operació buida cancel·lada',
+            cancel: 'S&#39;ha cancel·lat l&#39;operació buida',
             confirm: 'Voleu esborrar el registre?(Si el registre es buida, no es pot recuperar)'
         },
         success: 'El registre s’ha buidat'

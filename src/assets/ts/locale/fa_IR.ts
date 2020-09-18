@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'صفحه مجاز نیست',
             '1-1-3': 'صفحه 404'
         },
-        defaultMenu: {
-            home: 'خانه'
-        },
         errorTip: {
             notfoundTip: 'جز component موجود در این مسیر یافت نشد',
             emptyErr: 'مسیر جزcon پیکربندی نشده است'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'خانه'
         }
     },
     sysInfo: {

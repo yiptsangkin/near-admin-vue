@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'ಅನುಮತಿ ಪುಟ ಇಲ್ಲ',
             '1-1-3': '404 ಪುಟ'
         },
-        defaultMenu: {
-            home: 'ಮನೆ'
-        },
         errorTip: {
             notfoundTip: 'ಈ ಹಾದಿಯಲ್ಲಿರುವ ಘಟಕ ಕಂಡುಬಂದಿಲ್ಲ',
             emptyErr: 'ಕಾನ್ಫಿಗರ್ ಮಾಡದ ಘಟಕ ಮಾರ್ಗ'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'ಮನೆ'
         }
     },
     sysInfo: {

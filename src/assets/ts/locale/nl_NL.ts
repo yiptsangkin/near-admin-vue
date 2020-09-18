@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Geen toestemmingspagina',
             '1-1-3': '404 pagina'
         },
-        defaultMenu: {
-            home: 'Huis'
-        },
         errorTip: {
             notfoundTip: 'Het onderdeel onder dit pad is niet gevonden',
             emptyErr: 'Ongeconfigureerd componentpad'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Huis'
         }
     },
     sysInfo: {

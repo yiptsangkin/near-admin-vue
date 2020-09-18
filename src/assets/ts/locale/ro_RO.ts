@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Fără pagină de permisiune',
             '1-1-3': '404 pag'
         },
-        defaultMenu: {
-            home: 'Acasă'
-        },
         errorTip: {
             notfoundTip: 'Componenta de sub această cale nu a fost găsită',
             emptyErr: 'Calea componentelor neconfigurate'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Acasă'
         }
     },
     sysInfo: {

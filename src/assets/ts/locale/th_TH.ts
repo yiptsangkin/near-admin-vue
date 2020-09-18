@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'หน้าไม่อนุญาต',
             '1-1-3': '404 หน้า'
         },
-        defaultMenu: {
-            home: 'บ้าน'
-        },
         errorTip: {
             notfoundTip: 'ไม่พบส่วนประกอบภายใต้เส้นทางนี้',
             emptyErr: 'เส้นทางส่วนประกอบที่ไม่ได้กำหนดค่า'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'บ้าน'
+        }
+    },
     sysInfo: {
-        sysIntro: 'เฟรมเวิร์กการพัฒนา front-end ระดับกลางและส่วนหลังที่ใช้งานง่ายตาม Vue และ Ant Design'
+        sysIntro: 'เฟรมเวิร์กการพัฒนาส่วนหน้าระดับกลางและส่วนหลังที่ใช้งานง่ายตาม Vue และ Ant Design'
     },
     requestInfo: {
         withoutUrl: 'ที่อยู่ขอต้องไม่ว่างเปล่า',

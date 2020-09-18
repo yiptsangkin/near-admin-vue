@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Страница без разрешений',
             '1-1-3': '404 стр.'
         },
-        defaultMenu: {
-            home: 'Домой'
-        },
         errorTip: {
             notfoundTip: 'Компонент по этому пути не найден',
             emptyErr: 'Путь к ненастроенным компонентам'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Домой'
         }
     },
     sysInfo: {

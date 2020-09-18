@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'No permission page',
             '1-1-3': '404 page'
         },
-        defaultMenu: {
-            home: 'Home'
-        },
         errorTip: {
             notfoundTip: 'The component under this path was not found',
             emptyErr: 'Unconfigured component path'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Home'
         }
     },
     sysInfo: {

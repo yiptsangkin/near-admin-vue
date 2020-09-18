@@ -36,7 +36,7 @@ export default {
             1: 'Osnovna sposobnost',
             '0-0': 'Vue',
             '0-1': 'Dizajn mrava',
-            '0-2': 'U blizini Admin Vue',
+            '0-2': 'Blizu administratora Vue',
             '1-0': 'Okvirna funkcija',
             '1-0-0': 'Konfiguracija projekta',
             '1-0-1': 'Prednji zapisnik',
@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Nema stranice s dopuštenjem',
             '1-1-3': '404 stranica'
         },
-        defaultMenu: {
-            home: 'Dom'
-        },
         errorTip: {
             notfoundTip: 'Komponenta pod ovom stazom nije pronađena',
             emptyErr: 'Nekonfigurirani put komponente'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Dom'
         }
     },
     sysInfo: {

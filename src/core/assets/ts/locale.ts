@@ -1,4 +1,9 @@
 export default {
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'coreMenuObj.defaultMenu.home'
+        }
+    },
     sysInfo: {
         sysIntro: 'sysInfo.sysIntro'
     },

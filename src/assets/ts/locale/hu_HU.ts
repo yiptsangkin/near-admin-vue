@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Nincs engedélyoldal',
             '1-1-3': '404 oldal'
         },
+        errorTip: {
+            notfoundTip: 'Az útvonal alatt található komponens nem található',
+            emptyErr: 'Konfigurálatlan komponens elérési útja'
+        }
+    },
+    coreMenuObj: {
         defaultMenu: {
             home: 'itthon'
-        },
-        errorTip: {
-            notfoundTip: 'Az ezen az útvonalon található komponens nem található',
-            emptyErr: 'Konfigurálatlan komponens elérési útja'
         }
     },
     sysInfo: {
@@ -150,7 +152,7 @@ export default {
         errorTip: {
             notfoundTip: 'Sajnáljuk, a meglátogatott oldal nem létezik',
             notrightTip: 'Sajnos nincs engedélye az oldal elérésére',
-            noserviceTip: 'Sajnos hiba történt a szerverrel. Kérjük, próbálkozzon újra később'
+            noserviceTip: 'Sajnáljuk, a szerverrel probléma merült fel. Kérjük, próbálkozzon újra később'
         },
         btnText: 'Oldal bezárása'
     },
@@ -221,7 +223,7 @@ export default {
         systemSwitch: 'Rendszerbeállítások',
         isMock: 'Gúnyolódni',
         isHotKey: 'A gyorsbillentyű',
-        isBreadCrumb: 'Hogy morzsolódik-e a kenyér',
+        isBreadCrumb: 'Hogy morzsolódik-e kenyér',
         isCache: 'Gyorsítótár-e',
         isI18n: 'Hogy nemzetközivé váljon-e'
     },

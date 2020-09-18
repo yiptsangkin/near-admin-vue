@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Žiadna stránka povolení',
             '1-1-3': '404 strán'
         },
-        defaultMenu: {
-            home: 'Domov'
-        },
         errorTip: {
             notfoundTip: 'Komponent pod touto cestou sa nenašiel',
             emptyErr: 'Nekonfigurovaná cesta komponentu'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Domov'
         }
     },
     sysInfo: {
@@ -201,7 +203,7 @@ export default {
             all: 'vybrať všetko',
             reset: 'Resetovať',
             fixedLeft: 'Opravené vľavo',
-            fixedRight: 'Pevné právo',
+            fixedRight: 'Opravené vpravo',
             cancelFixed: 'Uvoľniť'
         },
         size: {

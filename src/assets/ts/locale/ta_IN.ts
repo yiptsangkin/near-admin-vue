@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'அனுமதி பக்கம் இல்லை',
             '1-1-3': '404 பக்கம்'
         },
-        defaultMenu: {
-            home: 'வீடு'
-        },
         errorTip: {
             notfoundTip: 'இந்த பாதையின் கீழ் உள்ள கூறு காணப்படவில்லை',
             emptyErr: 'கட்டமைக்கப்படாத கூறு பாதை'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'வீடு'
         }
     },
     sysInfo: {

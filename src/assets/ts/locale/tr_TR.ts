@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'İzin sayfası yok',
             '1-1-3': '404 sayfası'
         },
-        defaultMenu: {
-            home: 'Ev'
-        },
         errorTip: {
             notfoundTip: 'Bu yolun altındaki bileşen bulunamadı',
             emptyErr: 'Yapılandırılmamış bileşen yolu'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Ev'
         }
     },
     sysInfo: {

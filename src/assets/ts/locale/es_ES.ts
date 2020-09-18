@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Sin página de permisos',
             '1-1-3': '404 página'
         },
-        defaultMenu: {
-            home: 'Hogar'
-        },
         errorTip: {
             notfoundTip: 'No se encontró el componente en esta ruta',
             emptyErr: 'Ruta de componente no configurada'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Hogar'
         }
     },
     sysInfo: {

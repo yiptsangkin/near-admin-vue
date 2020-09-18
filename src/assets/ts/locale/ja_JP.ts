@@ -53,12 +53,14 @@ export default {
             '1-1-2': '許可ページなし',
             '1-1-3': '404ページ'
         },
-        defaultMenu: {
-            home: 'ホーム'
-        },
         errorTip: {
             notfoundTip: 'このパスのコンポーネントは見つかりませんでした',
             emptyErr: '未構成のコンポーネントパス'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'ホーム'
         }
     },
     sysInfo: {

@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Ingen behörighetssida',
             '1-1-3': '404 sida'
         },
-        defaultMenu: {
-            home: 'Hem'
-        },
         errorTip: {
             notfoundTip: 'Komponenten under denna väg hittades inte',
             emptyErr: 'Okonfigurerad komponentsökväg'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Hem'
         }
     },
     sysInfo: {
@@ -134,7 +136,7 @@ export default {
             affixPageCloseError: 'Fixad sida får inte stängas',
             homePageAffixError: 'Hemsidan kan inte lossas'
         },
-        checkSave: 'Vill du stänga sidan?(Se till att innehållet på sidan markerat med rött har sparats)',
+        checkSave: 'Vill du stänga sidan?(Se till att innehållet på den rödmarkerade sidan har sparats)',
         cancelClose: 'Stängning avbröts'
     },
     personalCenter: {

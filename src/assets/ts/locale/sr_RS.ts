@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Нема странице са дозволом',
             '1-1-3': '404 страна'
         },
-        defaultMenu: {
-            home: 'Кућа'
-        },
         errorTip: {
             notfoundTip: 'Компонента испод ове путање није пронађена',
             emptyErr: 'Неконфигурисана путања компоненте'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Кућа'
         }
     },
     sysInfo: {

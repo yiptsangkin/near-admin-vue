@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Aucune page d&#39;autorisation',
             '1-1-3': '404 page'
         },
-        defaultMenu: {
-            home: 'Accueil'
-        },
         errorTip: {
             notfoundTip: 'Le composant sous ce chemin est introuvable',
             emptyErr: 'Chemin du composant non configuré'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Accueil'
         }
     },
     sysInfo: {

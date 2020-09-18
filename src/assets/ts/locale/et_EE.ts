@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Luba pole',
             '1-1-3': '404 lk'
         },
-        defaultMenu: {
-            home: 'Kodu'
-        },
         errorTip: {
             notfoundTip: 'Selle tee all olevat komponenti ei leitud',
             emptyErr: 'Konfigureerimata komponendi tee'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Kodu'
         }
     },
     sysInfo: {

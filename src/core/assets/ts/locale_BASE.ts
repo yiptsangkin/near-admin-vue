@@ -1,4 +1,9 @@
 module.exports = {
+    coreMenuObj: {
+        defaultMenu: {
+            home: '首页'
+        }
+    },
     sysInfo: {
         sysIntro: '一款基于Vue和Ant Design的好用中后台前端开发框架'
     },

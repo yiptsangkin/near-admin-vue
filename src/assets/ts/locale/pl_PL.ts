@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'Brak strony uprawnień',
             '1-1-3': '404 strona'
         },
-        defaultMenu: {
-            home: 'Dom'
-        },
         errorTip: {
             notfoundTip: 'Nie znaleziono komponentu w tej ścieżce',
             emptyErr: 'Nieskonfigurowana ścieżka komponentu'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Dom'
+        }
+    },
     sysInfo: {
-        sysIntro: 'Łatwa w użyciu platforma programistyczna front-end dla środkowego i końcowego zaplecza oparta na Vue i Ant Design'
+        sysIntro: 'Łatwa w użyciu platforma programistyczna front-end dla środkowego i zaplecza oparta na Vue i Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adres żądania nie może być pusty',

@@ -53,9 +53,6 @@ module.exports = {
             '1-1-2': '无权限页面',
             '1-1-3': '404页面'
         },
-        defaultMenu: {
-            home: '首页'
-        },
         errorTip: {
             notfoundTip: '未找到该路径下的组件',
             emptyErr: '未配置组件路径'

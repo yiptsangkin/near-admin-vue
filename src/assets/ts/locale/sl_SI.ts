@@ -16,7 +16,7 @@ export default {
             emptyErr: 'geslo ne sme biti prazno'
         },
         byValidTip: {
-            emptyErr: 'Izpolniti je treba verifikacijsko kodo'
+            emptyErr: 'Izpolniti je treba preveritveno kodo'
         },
         sendMsg: {
             repeatErr: 'Ne pošiljajte večkrat',
@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Ni strani z dovoljenjem',
             '1-1-3': '404 strani'
         },
-        defaultMenu: {
-            home: 'Domov'
-        },
         errorTip: {
             notfoundTip: 'Komponente pod to potjo ni bilo mogoče najti',
             emptyErr: 'Nekonfigurirana pot komponente'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Domov'
         }
     },
     sysInfo: {
@@ -131,7 +133,7 @@ export default {
         cancelAffixPage: 'Odpnite',
         errorTip: {
             homePageCloseError: 'Domače strani ni dovoljeno zapreti',
-            affixPageCloseError: 'Stalne strani ni dovoljeno zapreti',
+            affixPageCloseError: 'Fiksne strani ni dovoljeno zapreti',
             homePageAffixError: 'Domače strani ni mogoče odpeti'
         },
         checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je bila vsebina strani, označene z rdečo, shranjena)',

@@ -4,9 +4,6 @@ export default {
     localeObj: {
         ...coreLocale,
         menuObj: {
-            defaultMenu: {
-                home: 'menuObj.defaultMenu.home'
-            },
             errorTip: {
                 notfoundTip: 'menuObj.errorTip.notfoundTip',
                 emptyErr: 'menuObj.errorTip.emptyErr'

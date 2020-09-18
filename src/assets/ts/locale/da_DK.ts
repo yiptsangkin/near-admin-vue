@@ -23,7 +23,7 @@ export default {
             success: 'Vellykket',
             codeTip: 'Din bekræftelseskode er'
         },
-        phonePlaceholder: 'Indtast venligst telefonnummer',
+        phonePlaceholder: 'Indtast telefonnummer',
         validPlaceholder: 'Verifikationskode',
         validBtn: 'få bekræftelseskode',
         loginSuccess: 'login vellykket'
@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'Ingen tilladelsesside',
             '1-1-3': '404 side'
         },
-        defaultMenu: {
-            home: 'Hjem'
-        },
         errorTip: {
             notfoundTip: 'Komponenten under denne sti blev ikke fundet',
             emptyErr: 'Ikke-konfigureret komponentsti'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Hjem'
+        }
+    },
     sysInfo: {
-        sysIntro: 'En brugervenlig udviklingsramme til mellem- og back-end-front-end baseret på Vue og Ant Design'
+        sysIntro: 'En brugervenlig mellem- og back-end front-end-udviklingsramme baseret på Vue og Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Anmodningsadresse kan ikke være tom',

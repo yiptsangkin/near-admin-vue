@@ -2,7 +2,7 @@ export default {
     locale: 'cs',
     country: 'CZ',
     loginForm: {
-        byAccountBtn: 'Přihlášení pomocí hesla účtu',
+        byAccountBtn: 'Přihlašovací heslo k účtu',
         byPhoneBtn: 'Přihlášení pomocí mobilního čísla',
         accountPlaceholder: 'zadejte prosím účet',
         passwordPlaceholder: 'Prosím vložte heslo',
@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Žádná stránka oprávnění',
             '1-1-3': 'Stránka 404'
         },
-        defaultMenu: {
-            home: 'Domov'
-        },
         errorTip: {
             notfoundTip: 'Komponenta pod touto cestou nebyla nalezena',
             emptyErr: 'Nekonfigurovaná cesta ke komponentě'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Domov'
         }
     },
     sysInfo: {
@@ -66,7 +68,7 @@ export default {
     },
     requestInfo: {
         withoutUrl: 'Adresa požadavku nesmí být prázdná',
-        networkErr: 'Síťový požadavek se nezdařil, zkuste to znovu později'
+        networkErr: 'Síťový požadavek se nezdařil, zkuste to prosím později'
     },
     localeMap: {
         ar: 'arabština',
@@ -140,7 +142,7 @@ export default {
     personalCenter: {
         frontendLog: 'Protokol frontendu',
         customSetting: 'Personalizace',
-        customClean: 'Vymazat konfiguraci',
+        customClean: 'Jasná konfigurace',
         logout: 'odhlásit se',
         errorTip: {
             cleanSuccess: 'Vyprázdněte úspěšně'
@@ -197,7 +199,7 @@ export default {
     },
     comTable: {
         columns: {
-            title: 'Nastavení sloupce',
+            title: 'Nastavení sloupců',
             all: 'vybrat vše',
             reset: 'Resetovat',
             fixedLeft: 'Opraveno vlevo',

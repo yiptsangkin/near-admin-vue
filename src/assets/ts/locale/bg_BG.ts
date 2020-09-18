@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'Няма страница за разрешение',
             '1-1-3': '404 стр'
         },
-        defaultMenu: {
-            home: 'У дома'
-        },
         errorTip: {
             notfoundTip: 'Компонентът по този път не бе намерен',
             emptyErr: 'Неконфигуриран път на компонента'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'У дома'
         }
     },
     sysInfo: {

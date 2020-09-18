@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'Engin heimildarsíða',
             '1-1-3': '404 bls'
         },
-        defaultMenu: {
-            home: 'Heim'
-        },
         errorTip: {
             notfoundTip: 'Íhlutinn undir þessari leið fannst ekki',
             emptyErr: 'Óstilltur hluti slóða'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Heim'
+        }
+    },
     sysInfo: {
-        sysIntro: 'Auðvelt að nota miðju og afturendann framhaldsendahluta byggt á Vue og Ant Design'
+        sysIntro: 'Auðvelt í notkun miðju- og afturendan ramma fyrir framhlið þróunar byggt á Vue og Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Heimilisfang beiðni má ekki vera autt',
@@ -99,7 +101,7 @@ export default {
         mk: 'Makedónska',
         'mn-mn': 'Mongólska',
         'ms-my': 'Malay',
-        nb: 'Norska',
+        nb: 'Norskt',
         'ne-np': 'Nepalska',
         'nl-be': 'Flæmska',
         nl: 'Hollenska',
@@ -159,7 +161,7 @@ export default {
             search: 'Fyrirspurn',
             shrink: 'Leggja í burtu',
             reset: 'Endurstilla',
-            unshrink: 'Brettið út'
+            unshrink: 'Brettu út'
         }
     },
     logline: {
@@ -222,7 +224,7 @@ export default {
         isMock: 'Hvort til Mock',
         isHotKey: 'Hvort sem flýtilykill',
         isBreadCrumb: 'Hvort sem brauðmolar',
-        isCache: 'Hvort á að skyndiminni',
+        isCache: 'Hvort sem á að skyndiminni',
         isI18n: 'Hvort eigi að alþjóðavæða'
     },
     pagingInfo: {

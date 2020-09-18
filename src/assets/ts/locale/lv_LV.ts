@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'Nav atļaujas lapas',
             '1-1-3': '404. lpp'
         },
-        defaultMenu: {
-            home: 'Mājas'
-        },
         errorTip: {
             notfoundTip: 'Komponents zem šī ceļa netika atrasts',
             emptyErr: 'Nekonfigurēts komponenta ceļš'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Mājas'
+        }
+    },
     sysInfo: {
-        sysIntro: 'Viegli lietojams vidējā un aizmugurējā front-end izstrādes ietvars, kura pamatā ir Vue and Ant Design'
+        sysIntro: 'Viegli lietojams vidējā un aizmugurējā front-end izstrādes ietvars, kas balstīts uz Vue un Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Pieprasījuma adrese nevar būt tukša',
@@ -117,7 +119,7 @@ export default {
         tr: 'Turku',
         uk: 'Ukraiņu',
         vi: 'Vjetnamiešu',
-        'zh-cn': 'Vienkāršota ķīniešu',
+        'zh-cn': 'Vienkāršotā ķīniešu',
         'zh-tw': 'tradicionālā ķīniešu'
     },
     tagObj: {
@@ -134,7 +136,7 @@ export default {
             affixPageCloseError: 'Fiksēto lapu nav atļauts aizvērt',
             homePageAffixError: 'Mājas lapu nevar atspraust'
         },
-        checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, vai sarkanā krāsā atzīmētās lapas saturs ir saglabāts)',
+        checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, ka sarkanā krāsā atzīmētās lapas saturs ir saglabāts)',
         cancelClose: 'Aizvēršanas darbība atcelta'
     },
     personalCenter: {

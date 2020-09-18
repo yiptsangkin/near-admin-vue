@@ -25,7 +25,7 @@ export default {
         },
         phonePlaceholder: 'Anna puhelinnumero',
         validPlaceholder: 'Vahvistuskoodi',
-        validBtn: 'saada vahvistuskoodi',
+        validBtn: 'hae vahvistuskoodi',
         loginSuccess: 'kirjautuminen onnistui'
     },
     menuObj: {
@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'Ei lupasivua',
             '1-1-3': '404 sivu'
         },
-        defaultMenu: {
-            home: 'Koti'
-        },
         errorTip: {
-            notfoundTip: 'Tämän polun alla olevaa komponenttia ei löytynyt',
+            notfoundTip: 'Tämän polun komponenttia ei löytynyt',
             emptyErr: 'Määrittelemätön komponentin polku'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Koti'
+        }
+    },
     sysInfo: {
-        sysIntro: 'Helppokäyttöinen keski- ja takapaneelin käyttöliittymäkehys, joka perustuu Vue- ja Ant-suunnitteluun'
+        sysIntro: 'Helppokäyttöinen Vue and Ant Design -sovellukseen perustuva keski- ja taustapään kehityskehys'
     },
     requestInfo: {
         withoutUrl: 'Pyyntöosoite ei voi olla tyhjä',
@@ -221,7 +223,7 @@ export default {
         systemSwitch: 'Järjestelmän kokoonpano',
         isMock: 'Onko pilkata',
         isHotKey: 'Onko pikanäppäin',
-        isBreadCrumb: 'Onko murusia',
+        isBreadCrumb: 'Onko leivän murusia',
         isCache: 'Välimuisti',
         isI18n: 'Onko kansainvälistyminen'
     },

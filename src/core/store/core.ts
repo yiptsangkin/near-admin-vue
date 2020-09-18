@@ -11,7 +11,7 @@ const RDN_KEY = utils.randomCharacter(6)
 const defaultTagList = [
     {
         component: 'home/HomePage',
-        title: dict.localeObj.menuObj.defaultMenu.home,
+        title: dict.localeObj.coreMenuObj.defaultMenu.home,
         navIndex: '-1',
         pk: RDN_KEY,
         params: {

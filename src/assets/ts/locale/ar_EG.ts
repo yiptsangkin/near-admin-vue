@@ -53,12 +53,14 @@ export default {
             '1-1-2': 'لا توجد صفحة إذن',
             '1-1-3': '404 صفحة'
         },
-        defaultMenu: {
-            home: 'الصفحة الرئيسية'
-        },
         errorTip: {
             notfoundTip: 'لم يتم العثور على المكون الموجود تحت هذا المسار',
             emptyErr: 'مسار المكون غير المكون'
+        }
+    },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'الصفحة الرئيسية'
         }
     },
     sysInfo: {

@@ -53,16 +53,18 @@ export default {
             '1-1-2': 'Nessuna pagina di autorizzazione',
             '1-1-3': '404 pagina'
         },
-        defaultMenu: {
-            home: 'Casa'
-        },
         errorTip: {
             notfoundTip: 'Il componente in questo percorso non è stato trovato',
             emptyErr: 'Percorso del componente non configurato'
         }
     },
+    coreMenuObj: {
+        defaultMenu: {
+            home: 'Casa'
+        }
+    },
     sysInfo: {
-        sysIntro: 'Un framework di sviluppo front-end middle e back-end di facile utilizzo basato su Vue e Ant Design'
+        sysIntro: 'Un framework di sviluppo front-end middle e back-end facile da usare basato su Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L&#39;indirizzo della richiesta non può essere vuoto',
@@ -130,7 +132,7 @@ export default {
         affixPage: 'Pagina pin',
         cancelAffixPage: 'Sblocca',
         errorTip: {
-            homePageCloseError: 'La home page non consente la chiusura',
+            homePageCloseError: 'La home page non può chiudersi',
             affixPageCloseError: 'La pagina fissa non può chiudersi',
             homePageAffixError: 'La home page non può essere sbloccata'
         },
