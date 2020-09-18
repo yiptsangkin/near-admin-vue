@@ -182,6 +182,11 @@ export interface ComTable {
     pagingInfo: PagingInfo
 }
 
+export interface OperationBar {
+    btnList?: ComTableBtn[],
+    title: string
+}
+
 export interface MultiSelectColumn {
     title: string,
     field: string,

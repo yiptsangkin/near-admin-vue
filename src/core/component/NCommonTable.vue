@@ -1,87 +1,76 @@
 <template>
     <div :class="['n-common-table-wrp', isShrink ? 'n-full-common-table' : '']">
-        <div class="n-common-table-title">
-            <a-row>
-                <a-col :span="8">{{ $t(tableObj.title) }}</a-col>
-                <a-col class="n-common-table-btn-ctl" :span="16">
-                    <a-button class="n-common-table-btn" :type="item.type || 'primary'" size="small" v-for="(item, index) in tableObj.btnList" @click="triggerBtn(item)" :key="index">{{ $t(item.name) }}</a-button>
-                    <a-divider type="vertical" />
-                    <a-dropdown overlay-class-name="n-border-none" v-model="dropdownVisible">
-                        <a-tooltip placement="top">
-                            <template slot="title">
-                                <span>{{ $t(dict.localeObj.comTable.columns.title) }}</span>
-                            </template>
-                            <a-icon type="setting"/>
-                        </a-tooltip>
-                        <a-menu slot="overlay">
-                            <a-menu multiple :selectedKeys="[]">
-                                <a-menu-item>
-                                    <a-row type="flex" justify="space-between">
-                                        <a-col>
-                                            <a-checkbox @change="changeAllCheck" :indeterminate="indeterminate" v-model="checkAll" size="small">{{ $t(dict.localeObj.comTable.columns.all) }}</a-checkbox>
-                                        </a-col>
-                                        <a-col>
-                                            <a-button class="n-ant-btn-link" type="link" @click="init(true)">{{ $t(dict.localeObj.comTable.columns.reset) }}</a-button>
-                                        </a-col>
-                                    </a-row>
-                                </a-menu-item>
-                            </a-menu>
-                            <a-divider class="n-h-divider"/>
-                            <a-menu multiple :selectedKeys="[]">
-                                <a-menu-item v-for="(item, index) in selectedColumns" :key="index">
-                                    <a-row type="flex" justify="space-between">
-                                        <a-col>
-                                            <a-checkbox @change="changeColumns" v-model="item.isChecked" size="small">{{ $t(item.name) }}</a-checkbox>
-                                        </a-col>
-                                        <a-col class="n-pin-wrp">
-                                            <a-tooltip placement="top">
-                                                <template slot="title">
-                                                    <span>{{ $t(dict.localeObj.comTable.columns.fixedLeft) }}</span>
-                                                </template>
-                                                <a-icon @click="fixedAction(index, 'left')" v-if="item.fixed !== 'left'" class="c-pin l-pin" type="pushpin" />
-                                            </a-tooltip>
-                                            <a-tooltip placement="top">
-                                                <template slot="title">
-                                                    <span>{{ $t(dict.localeObj.comTable.columns.fixedRight) }}</span>
-                                                </template>
-                                                <a-icon @click="fixedAction(index, 'right')" v-if="item.fixed !== 'right'" class="c-pin" type="pushpin" />
-                                            </a-tooltip>
-                                            <a-tooltip placement="top">
-                                                <template slot="title">
-                                                    <span>{{ $t(dict.localeObj.comTable.columns.cancelFixed) }}</span>
-                                                </template>
-                                                <a-icon @click="fixedAction(index, 'cancel')" v-if="item.fixed === 'right' || item.fixed === 'left'" class="c-pin" type="vertical-align-middle" />
-                                            </a-tooltip>
-                                        </a-col>
-                                    </a-row>
-                                </a-menu-item>
-                            </a-menu>
-                        </a-menu>
-                    </a-dropdown>
-                    <a-divider type="vertical"/>
-                    <a-dropdown placement="bottomRight">
-                        <a-tooltip placement="top">
-                            <template slot="title">
-                                <span>{{ $t(dict.localeObj.comTable.size.title) }}</span>
-                            </template>
-                            <a-icon type="column-height" />
-                        </a-tooltip>
-                        <a-menu slot="overlay" v-model="sizePicked" selectable>
-                            <a-menu-item v-for="(item, index) in sizeMap" :key="index">
-                                {{ $t(item.name) }}
+        <n-common-operation-bar :operation-obj="tableObj" @btnevent="triggerEvent">
+            <template slot="n-com-function">
+                <a-dropdown overlay-class-name="n-border-none" v-model="dropdownVisible">
+                    <a-tooltip placement="top">
+                        <template slot="title">
+                            <span>{{ $t(dict.localeObj.comTable.columns.title) }}</span>
+                        </template>
+                        <a-icon type="setting"/>
+                    </a-tooltip>
+                    <a-menu slot="overlay">
+                        <a-menu multiple :selectedKeys="[]">
+                            <a-menu-item>
+                                <a-row type="flex" justify="space-between">
+                                    <a-col>
+                                        <a-checkbox @change="changeAllCheck" :indeterminate="indeterminate" v-model="checkAll" size="small">{{ $t(dict.localeObj.comTable.columns.all) }}</a-checkbox>
+                                    </a-col>
+                                    <a-col>
+                                        <a-button class="n-ant-btn-link" type="link" @click="init(true)">{{ $t(dict.localeObj.comTable.columns.reset) }}</a-button>
+                                    </a-col>
+                                </a-row>
                             </a-menu-item>
                         </a-menu>
-                    </a-dropdown>
-                    <a-divider type="vertical"/>
-                    <a-tooltip :placement="isShrink ? 'bottomRight' : 'topRight'">
+                        <a-divider class="n-h-divider"/>
+                        <a-menu multiple :selectedKeys="[]">
+                            <a-menu-item v-for="(item, index) in selectedColumns" :key="index">
+                                <a-row type="flex" justify="space-between">
+                                    <a-col>
+                                        <a-checkbox @change="changeColumns" v-model="item.isChecked" size="small">{{ $t(item.name) }}</a-checkbox>
+                                    </a-col>
+                                    <a-col class="n-pin-wrp">
+                                        <a-tooltip placement="top">
+                                            <template slot="title">
+                                                <span>{{ $t(dict.localeObj.comTable.columns.fixedLeft) }}</span>
+                                            </template>
+                                            <a-icon @click="fixedAction(index, 'left')" v-if="item.fixed !== 'left'" class="c-pin l-pin" type="pushpin" />
+                                        </a-tooltip>
+                                        <a-tooltip placement="top">
+                                            <template slot="title">
+                                                <span>{{ $t(dict.localeObj.comTable.columns.fixedRight) }}</span>
+                                            </template>
+                                            <a-icon @click="fixedAction(index, 'right')" v-if="item.fixed !== 'right'" class="c-pin" type="pushpin" />
+                                        </a-tooltip>
+                                        <a-tooltip placement="top">
+                                            <template slot="title">
+                                                <span>{{ $t(dict.localeObj.comTable.columns.cancelFixed) }}</span>
+                                            </template>
+                                            <a-icon @click="fixedAction(index, 'cancel')" v-if="item.fixed === 'right' || item.fixed === 'left'" class="c-pin" type="vertical-align-middle" />
+                                        </a-tooltip>
+                                    </a-col>
+                                </a-row>
+                            </a-menu-item>
+                        </a-menu>
+                    </a-menu>
+                </a-dropdown>
+                <a-divider type="vertical"/>
+                <a-dropdown placement="bottomRight">
+                    <a-tooltip placement="top">
                         <template slot="title">
-                            <span>{{ $t(isShrink ? dict.localeObj.comTable.unFullscreen : dict.localeObj.comTable.fullscreen) }}</span>
+                            <span>{{ $t(dict.localeObj.comTable.size.title) }}</span>
                         </template>
-                        <a-icon :type="isShrink ? 'shrink' : 'arrows-alt'" @click="shrinkTable"/>
+                        <a-icon type="column-height" />
                     </a-tooltip>
-                </a-col>
-            </a-row>
-        </div>
+                    <a-menu slot="overlay" v-model="sizePicked" selectable>
+                        <a-menu-item v-for="(item, index) in sizeMap" :key="index">
+                            {{ $t(item.name) }}
+                        </a-menu-item>
+                    </a-menu>
+                </a-dropdown>
+                <a-divider type="vertical"/>
+            </template>
+        </n-common-operation-bar>
         <div class="n-common-table">
             <slot name="n-com-table"
                   :size-class="sizeMap[sizePicked[0]].class"
@@ -98,6 +87,7 @@
     import Base from '@custom/base'
     import utils from '@corets/utils'
     import dict from '@custom/dict'
+    import NCommonOperationBar from '@corecp/NCommonOperationBar.vue'
 
     export default Vue.extend({
         name: 'NCommonTable',
@@ -106,6 +96,9 @@
             tableObj: {
                 type: Object
             }
+        },
+        components: {
+            NCommonOperationBar
         },
         data () {
             return {
@@ -207,14 +200,9 @@
                 }
                 return classList.join(' ')
             },
-            shrinkTable () {
+            triggerEvent (method: any) {
                 const self = this as any
-                self.isShrink = !self.isShrink
-                utils.fullScreenCtl(self.isShrink)
-            },
-            triggerBtn (item: any) {
-                const self = this as any
-                self.$emit('btnevent', item.method)
+                self.$emit('btnevent', method)
             }
         }
     })

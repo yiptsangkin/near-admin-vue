@@ -1,0 +1,14 @@
+
+.n-common-bar-title{
+  font-weight: bold;
+  padding: 12px;
+  .n-common-bar-btn-ctl{
+    text-align: right;
+    .n-common-bar-btn{
+      margin-left: 12px;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}
