@@ -7,7 +7,7 @@
                     <a-row>
                         <a-col :xs="24" :sm="12" :md="6" :lg="6" v-if="!shrinkSwitch">
                             <a-form-model-item :label="$t(dict.localeObj.logline.time.range)" prop="dateRange">
-                                <a-select allow-clear v-model="loglineForm.model.dateRange" size="small" :placeholder="$t(dict.localeObj.logline.time.plh)">
+                                <a-select allow-clear v-model="loglineForm.model.dateRange" :placeholder="$t(dict.localeObj.logline.time.plh)">
                                     <a-select-option :key="index" v-for="(item, index) in loglineForm.external.dateRangeList" :value="item.value">
                                         {{ $t(item.name) }}
                                     </a-select-option>

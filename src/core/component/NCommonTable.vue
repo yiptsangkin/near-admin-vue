@@ -1,6 +1,6 @@
 <template>
     <div :class="['n-common-table-wrp', isShrink ? 'n-full-common-table' : '']">
-        <n-common-operation-bar :operation-obj="tableObj" @btnevent="triggerEvent">
+        <n-common-operation-bar ref="op-bar" :operation-obj="tableObj" @btnevent="triggerEvent" @fullscreen="setFullScreen">
             <template slot="n-com-function">
                 <a-dropdown overlay-class-name="n-border-none" v-model="dropdownVisible">
                     <a-tooltip placement="top">
@@ -203,6 +203,10 @@
             triggerEvent (method: any) {
                 const self = this as any
                 self.$emit('btnevent', method)
+            },
+            setFullScreen (isShrink: boolean) {
+                const self = this as any
+                self.isShrink = isShrink
             }
         }
     })

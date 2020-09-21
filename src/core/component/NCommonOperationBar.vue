@@ -5,7 +5,7 @@
             <a-col class="n-common-bar-btn-ctl" :span="16">
                 <a-button class="n-common-bar-btn" :type="item.type || 'primary'" size="small" v-for="(item, index) in operationObj.btnList" @click="triggerBtn(item.method)" :key="index">{{ $t(item.name) }}</a-button>
                 <a-divider type="vertical"/>
-                <slot name="n-com-function"></slot>
+                <slot name="n-com-function" :is-shrink="isShrink"></slot>
                 <a-tooltip :placement="isShrink ? 'bottomRight' : 'topRight'">
                     <template slot="title">
                         <span>{{ $t(isShrink ? dict.localeObj.comTable.unFullscreen : dict.localeObj.comTable.fullscreen) }}</span>
@@ -44,10 +44,10 @@
                 const self = this as any
                 self.isShrink = !self.isShrink
                 utils.fullScreenCtl(self.isShrink)
+                self.$emit('fullscreen', self.isShrink)
             },
             triggerBtn (method: any) {
                 const self = this as any
-                console.log(method)
                 self.$emit('btnevent', method)
             }
         }
