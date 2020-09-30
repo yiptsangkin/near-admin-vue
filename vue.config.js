@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const utils = require('./build/utils')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
 const SpriteSmithPlugin = require('webpack-spritesmith')
 const UglifyJSPlugin = require('terser-webpack-plugin')
 const path = require('path')
@@ -47,6 +48,7 @@ const prodConfig ={
         maxAssetSize: 3000000
     },
     plugins: [
+        new HardSourceWebpackPlugin(),
         new CompressionWebpackPlugin({
             algorithm: 'gzip',
             test: new RegExp('\\.(js|css|html)$'),
@@ -82,6 +84,7 @@ const prodConfig ={
 
 const devConfig = {
     plugins: [
+        new HardSourceWebpackPlugin(),
         new SpriteSmithPlugin({
             src: {
                 cwd: path.resolve(__dirname, './src/assets/images/icon/'),

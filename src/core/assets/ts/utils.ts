@@ -448,8 +448,13 @@ const fullScreenCtl = (tp: boolean) => {
 
 const getBreadList = (self: any, navIndex: string) => {
     const [topMenu, asideMenu] = navIndex.split('-sub-')
-    const [, topMenuIndex] = topMenu.split('-')
-    const asideMenuIndexList = asideMenu.split('-')
+    let asideMenuIndexList
+    const [, topMenuIndex, asideMenuIndex] = topMenu.split('-')
+    if (asideMenu) {
+        asideMenuIndexList = asideMenu.split('-')
+    } else {
+        asideMenuIndexList = [asideMenuIndex]
+    }
     const breadList = []
     const menuObj = self.$store.getters.menuObj
 
@@ -474,11 +479,16 @@ const getBreadList = (self: any, navIndex: string) => {
 
 const getCpMenuByNavIndex = (self: any, navIndex: string): NavList | undefined => {
     if (navIndex.startsWith('menu')) {
-        const navIndexList = navIndex.split('-sub-')
-        const topMenuIndex = navIndexList[0].split('-')[1]
-        const asideMenuIndexList = navIndexList[1].split('-')
-        const menuObj = self.$store.getters.menuObj
+        const [topMenu, asideMenu] = navIndex.split('-sub-')
+        let asideMenuIndexList
+        const [, topMenuIndex, asideMenuIndex] = topMenu.split('-')
+        if (asideMenu) {
+            asideMenuIndexList = asideMenu.split('-')
+        } else {
+            asideMenuIndexList = [asideMenuIndex]
+        }
 
+        const menuObj = self.$store.getters.menuObj
         const topMenuObj = menuObj.menuList[topMenuIndex]
 
         let temMenuList = topMenuObj.child
