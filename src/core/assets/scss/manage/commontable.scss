@@ -75,13 +75,3 @@
     }
   }
 }
-
-::v-deep .ant-table-fixed-left, ::v-deep .ant-table-fixed-right {
-  height: 100%;
-  .ant-table-body-outer{
-    height: 100%;
-    .ant-table-fixed{
-      height: 100%;
-    }
-  }
-}
