@@ -11,3 +11,5 @@ declare module 'comConfig'
 
 declare module 'vue-codemirror'
 
+declare module 'nprogress'
+

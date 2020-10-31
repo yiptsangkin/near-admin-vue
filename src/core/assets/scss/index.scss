@@ -1,1 +1,6 @@
 @import "base";
+@import "params";
+
+#nprogress .bar {
+  background: darken($vue-green, 20) !important;
+}

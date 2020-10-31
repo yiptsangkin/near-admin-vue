@@ -197,7 +197,8 @@
                 } else {
                     // check if pagingInfo
                     if (self.pagingInfo) {
-                        return optionList.splice(
+                        const newList = Object.assign([], optionList)
+                        return newList.splice(
                             (self.pagingInfo.currentPage - 1) * self.pagingInfo.pageSize,
                             self.pagingInfo.pageSize
                         )

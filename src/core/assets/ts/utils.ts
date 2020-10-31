@@ -6,6 +6,31 @@ import Vue from 'vue'
 import comConfig from '@custom/config';
 const coreLocale = require('@corets/locale_BASE')
 
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
+NProgress.configure({ showSpinner: false })
+
+axios.interceptors.request.use(
+    (config: any) => {
+        NProgress.start()
+        return config
+    },
+    (error: any) => {
+        return Promise.reject(error)
+    }
+)
+
+axios.interceptors.response.use(
+    (response: any) => {
+        NProgress.done()
+        return response
+    },
+    (error: any) => {
+        return Promise.reject(error)
+    }
+)
+
 const loglineObj: any = {
     setLog ({module, logType, desc, data}: LoglineParams): void {
         Logline.using(Logline.PROTOCOL.INDEXEDDB)

@@ -3,6 +3,10 @@ import VueRouter, { RouteConfig, RouterOptions } from 'vue-router'
 import {CacheRouteConfig} from '@corets/type'
 import dict from '@custom/dict'
 import utils from '@corets/utils'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
+NProgress.configure({ showSpinner: false })
 const NManage = () => import('@corecp/NManage.vue')
 
 Vue.use(VueRouter)
@@ -45,6 +49,7 @@ if (routerOpt && routerOpt.routes) {
 const routeObj = new VueRouter(routerOpt)
 
 routeObj.beforeEach((to, from, next) => {
+    NProgress.start()
     const title = to.meta.title
     if (to.meta.title) {
         utils.setPageTitle(title)
@@ -52,6 +57,10 @@ routeObj.beforeEach((to, from, next) => {
         utils.setPageTitle('')
     }
     next()
+})
+
+routeObj.afterEach((transition: any) => {
+    NProgress.done()
 })
 
 export default routeObj
