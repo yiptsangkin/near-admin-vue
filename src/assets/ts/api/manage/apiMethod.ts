@@ -4,6 +4,9 @@ import {ReqType, ResType} from '@corets/type'
 
 const getUserMenu = (reqType: ReqType) => {
     reqType.method = 'POST'
+    reqType.headers = {
+        'local-cache': true
+    }
     reqType.url = apiUrl.getUserMenu
     const result = utils.sendReq(reqType)
     return result
