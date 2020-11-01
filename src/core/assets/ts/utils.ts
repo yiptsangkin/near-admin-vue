@@ -56,6 +56,7 @@ const dealReqCache = (cacheId: string, response: any) => {
     try {
         const cacheData = localStorage.getItem(cacheId)
         if (cacheData) {
+            console.log(`%c '${response.config.url}': this request's response data is from local cache.`, 'color: red;')
             return JSON.parse(cacheData)
         } else {
             setReqCache(cacheId, response)
