@@ -1,8 +1,9 @@
 import Logline from 'logline'
-import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams, MenuList} from '@corets/type';
+import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams} from '@corets/type';
 import axios, {AxiosRequestConfig} from 'axios'
 import dict from '@custom/dict'
 import Vue from 'vue'
+import md5 from 'js-md5'
 import comConfig from '@custom/config';
 const coreLocale = require('@corets/locale_BASE')
 
@@ -22,14 +23,68 @@ axios.interceptors.request.use(
 )
 
 axios.interceptors.response.use(
-    (response: any) => {
+    async (response: any) => {
         NProgress.done()
-        return response
+        // check if headers had local-cache
+        if (response.config.headers && response.config.headers['local-cache']) {
+            // try to get cache by params cache id
+            const params = response.config.data ? JSON.stringify(response.config.data) : ''
+            const url = response.config.url
+            const cacheId = `near_cache_${md5([params, url].join('@cache@'))}`
+            return dealReqCache(cacheId, response)
+        } else {
+            return response
+        }
     },
     (error: any) => {
         return Promise.reject(error)
     }
 )
+
+const setReqCache = (cacheId: string, data: any) => {
+    let dataString
+    try {
+        dataString = JSON.stringify(data)
+        localStorage.setItem(cacheId, dataString)
+    } catch (e) {
+        localStorage.setItem(cacheId, data)
+    }
+}
+
+const dealReqCache = (cacheId: string, response: any) => {
+    // cache local res data
+    try {
+        const cacheData = localStorage.getItem(cacheId)
+        if (cacheData) {
+            return JSON.parse(cacheData)
+        } else {
+            setReqCache(cacheId, response)
+            return response
+        }
+    } catch (e) {
+        if (/Failed to execute 'setItem' on 'Storage'/.test(e)) {
+            // need to clean cache storage
+            for (const key of Object.keys(localStorage)) {
+                if (/near_cache/.test(key)) {
+                    localStorage.removeItem(key)
+                }
+            }
+            // set and return data
+            setReqCache(cacheId, response)
+            return response
+        } else {
+            loglineObj.setLog({
+                logType: 'error',
+                desc: 'storage fail',
+                data: {
+                    message: e
+                }
+            })
+            return response
+        }
+    }
+
+}
 
 const loglineObj: any = {
     setLog ({module, logType, desc, data}: LoglineParams): void {

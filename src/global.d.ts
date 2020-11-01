@@ -13,3 +13,5 @@ declare module 'vue-codemirror'
 
 declare module 'nprogress'
 
+declare  module 'js-md5'
+
