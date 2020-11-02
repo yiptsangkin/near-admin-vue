@@ -23,12 +23,17 @@ axios.interceptors.request.use(
 )
 
 axios.interceptors.response.use(
-    async (response: any) => {
+     (response: any) => {
         NProgress.done()
         // check if headers had local-cache
         if (response.config.headers && response.config.headers['local-cache']) {
             // try to get cache by params cache id
-            const params = response.config.data ? JSON.stringify(response.config.data) : ''
+            let params
+            if (response.config.method === 'get' || response.config.method === 'delete') {
+                params = response.config.params ? JSON.stringify(response.config.params) : ''
+            } else {
+                params = response.config.data ? JSON.stringify(response.config.data) : ''
+            }
             const url = response.config.url
             const cacheId = `near_cache_${md5([params, url].join('@cache@'))}`
             return dealReqCache(cacheId, response)
@@ -205,12 +210,12 @@ const sendReq = async (params: ReqType) => {
     const data = params.data ? JSON.stringify(params.data) : ''
     const url = params.url
     const cacheId = `near_cache_${md5([data, url].join('@cache@'))}`
+    let result: any
+    if (params.headers['local-cache']) {
+        result = getReqCache(cacheId, url)
+    }
     if (params.method === 'POST') {
         try {
-            let result: any
-            if (params.headers['local-cache']) {
-                result = getReqCache(cacheId, url)
-            }
             if (!result) {
                 result = await axios.post(params.url, params.data, rCfg)
             }
@@ -259,10 +264,6 @@ const sendReq = async (params: ReqType) => {
     } else if (params.method === 'GET') {
         try {
             const getParams = Object.assign({ params: params.data }, rCfg)
-            let result: any
-            if (params.headers['local-cache']) {
-                result = getReqCache(cacheId, url)
-            }
             if (!result) {
                 result = await axios.get(params.url, getParams)
             }
@@ -310,10 +311,6 @@ const sendReq = async (params: ReqType) => {
         }
     } else if (params.method === 'PUT') {
         try {
-            let result: any
-            if (params.headers['local-cache']) {
-                result = getReqCache(cacheId, url)
-            }
             if (!result) {
                 result = await axios.put(params.url, params.data, rCfg)
             }
@@ -362,10 +359,6 @@ const sendReq = async (params: ReqType) => {
     } else if (params.method === 'DELETE') {
         try {
             const getParams = Object.assign({ params: params.data }, rCfg)
-            let result: any
-            if (params.headers['local-cache']) {
-                result = getReqCache(cacheId, url)
-            }
             if (!result) {
                 result = await axios.delete(params.url, getParams)
             }
