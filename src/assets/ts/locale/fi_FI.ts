@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Tilin salasanan sisäänkirjautuminen',
         byPhoneBtn: 'Matkapuhelinnumeroon kirjautuminen',
-        accountPlaceholder: 'kirjoita tili',
+        accountPlaceholder: 'Anna käyttäjänimi',
         passwordPlaceholder: 'Anna salasana',
         autoLogin: 'automaattinen sisäänkirjautuminen',
         forgetBtn: 'unohtaa salasana',
@@ -25,7 +25,7 @@ export default {
         },
         phonePlaceholder: 'Anna puhelinnumero',
         validPlaceholder: 'Vahvistuskoodi',
-        validBtn: 'hae vahvistuskoodi',
+        validBtn: 'saada vahvistuskoodi',
         loginSuccess: 'kirjautuminen onnistui'
     },
     menuObj: {
@@ -42,7 +42,7 @@ export default {
             '1-0-1': 'Käyttöliittymän loki',
             '1-0-2': 'Paikallinen pilkka',
             '1-0-3': 'globalisaatio',
-            '1-0-4': 'Data Dictionary',
+            '1-0-4': 'Data-sanakirja',
             '1-0-5': 'EventBus',
             '1-0-6': 'Työkalusarja',
             '1-0-7': 'Kulunvalvonta',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Helppokäyttöinen Vue and Ant Design -sovellukseen perustuva keski- ja taustapään kehityskehys'
+        sysIntro: 'Hyödyllinen Vue- ja Ant-suunnitteluun perustuva keski- ja takapaneelin käyttöliittymäkehitys'
     },
     requestInfo: {
         withoutUrl: 'Pyyntöosoite ei voi olla tyhjä',
@@ -132,7 +132,7 @@ export default {
         affixPage: 'Kiinnitä sivu',
         cancelAffixPage: 'Irrota',
         errorTip: {
-            homePageCloseError: 'Kotisivua ei saa sulkea',
+            homePageCloseError: 'Kotisivu ei salli sulkemista',
             affixPageCloseError: 'Korjattua sivua ei saa sulkea',
             homePageAffixError: 'Kotisivua ei voi irrottaa'
         },
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Käyttöliittymän loki',
         customSetting: 'Mukauttaminen',
         customClean: 'Tyhjennä kokoonpano',
+        cacheClean: 'Tyhjennä välimuisti',
         logout: 'Kirjaudu ulos',
         errorTip: {
             cleanSuccess: 'Tyhjennä onnistuneesti'
@@ -223,7 +224,7 @@ export default {
         systemSwitch: 'Järjestelmän kokoonpano',
         isMock: 'Onko pilkata',
         isHotKey: 'Onko pikanäppäin',
-        isBreadCrumb: 'Onko leivän murusia',
+        isBreadCrumb: 'Onko murusia',
         isCache: 'Välimuisti',
         isI18n: 'Onko kansainvälistyminen'
     },

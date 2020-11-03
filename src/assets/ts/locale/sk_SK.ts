@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Prihlásenie pomocou hesla účtu',
         byPhoneBtn: 'Prihlásenie na mobilné číslo',
-        accountPlaceholder: 'prosím zadajte účet',
+        accountPlaceholder: 'Zadajte prosím užívateľské meno',
         passwordPlaceholder: 'Zadajte heslo',
         autoLogin: 'automatické prihlásenie',
         forgetBtn: 'zabudnuté heslo',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Ľahko použiteľný stredný a koncový front-endový vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Užitočný prostredný a back-end front-endový vývojový rámec založený na Vue a Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa žiadosti nemôže byť prázdna',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Frontend log',
         customSetting: 'Personalizácia',
         customClean: 'Vymazať konfiguráciu',
+        cacheClean: 'Vyprázdniť vyrovnávaciu pamäť',
         logout: 'Odhlásiť Sa',
         errorTip: {
             cleanSuccess: 'Prázdne úspešne'
@@ -193,7 +194,7 @@ export default {
         request: 'Vyžiadajte si údaje',
         error: {
             cancel: 'Prázdna operácia bola zrušená',
-            confirm: 'Chcete vyčistiť denník?(Ak je protokol vyprázdnený, nedá sa načítať)'
+            confirm: 'Chcete vyčistiť denník?(Ak je protokol vyprázdnený, nemožno ho získať)'
         },
         success: 'Denník bol vyprázdnený'
     },
@@ -203,7 +204,7 @@ export default {
             all: 'vybrať všetko',
             reset: 'Resetovať',
             fixedLeft: 'Opravené vľavo',
-            fixedRight: 'Opravené vpravo',
+            fixedRight: 'Pevné právo',
             cancelFixed: 'Uvoľniť'
         },
         size: {
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Rýchly vstup',
         systemSwitch: 'Konfigurácia systému',
-        isMock: 'Či vysmievať',
+        isMock: 'Či už Mock',
         isHotKey: 'Či už klávesová skratka',
         isBreadCrumb: 'Či už strúhanka',
         isCache: 'Či do cache',

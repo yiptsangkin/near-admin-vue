@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Логін пароля облікового запису',
         byPhoneBtn: 'Вхід до мобільного номера',
-        accountPlaceholder: 'будь ласка, введіть рахунок',
+        accountPlaceholder: 'Введіть ім’я користувача',
         passwordPlaceholder: 'Введіть пароль',
         autoLogin: 'автоматичний вхід',
         forgetBtn: 'забути пароль - -',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Простий у використанні середній і задній інтерфейсний фреймворк, заснований на Vue та Ant Design'
+        sysIntro: 'Корисна середня та внутрішня інтерфейсна розробка на основі Vue та Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Адреса запиту не може бути порожньою',
@@ -93,7 +93,7 @@ export default {
         id: 'Індонезійська',
         is: 'Ісландський',
         it: 'Італійська ',
-        ja: 'Японська',
+        ja: 'Японський',
         kn: 'Каннада',
         ko: 'Корейська',
         'ku-iq': 'Центрально-курдська',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Журнал інтерфейсу',
         customSetting: 'Персоналізація',
         customClean: 'Чітка конфігурація',
+        cacheClean: 'Очистіть кеш',
         logout: 'вийти з аккаунта',
         errorTip: {
             cleanSuccess: 'Успішно спорожнити'
@@ -159,7 +160,7 @@ export default {
     searchPanel: {
         btn: {
             search: 'Запитайте',
-            shrink: 'Прибрати',
+            shrink: 'Прибирати',
             reset: 'Скинути',
             unshrink: 'Розгорнути'
         }
@@ -220,8 +221,8 @@ export default {
     },
     setting: {
         customEntry: 'Швидкий вхід',
-        systemSwitch: 'Конфігурація системи',
-        isMock: 'Чи знущатися',
+        systemSwitch: 'Системна конфігурація',
+        isMock: 'Чи знущання',
         isHotKey: 'Будь то клавіша швидкого доступу',
         isBreadCrumb: 'Чи то хлібні крихти',
         isCache: 'Чи кешувати',

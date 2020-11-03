@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Account password login',
         byPhoneBtn: 'Mobile number login',
-        accountPlaceholder: 'please enter account',
+        accountPlaceholder: 'Please input Username',
         passwordPlaceholder: 'Please enter password',
-        autoLogin: 'auto login',
+        autoLogin: 'automatic log-in',
         forgetBtn: 'forget password',
         loginBtn: 'log in',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'An easy-to-use middle and back-end front-end development framework based on Vue and Ant Design'
+        sysIntro: 'A useful middle and back-end front-end development framework based on Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Request address cannot be empty',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Frontend log',
         customSetting: 'Personalization',
         customClean: 'Clear configuration',
+        cacheClean: 'Empty the cache',
         logout: 'sign out',
         errorTip: {
             cleanSuccess: 'Empty successfully'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Quick entry',
         systemSwitch: 'System Configuration',
-        isMock: 'Whether to Mock',
+        isMock: 'Whether Mock',
         isHotKey: 'Whether shortcut key',
         isBreadCrumb: 'Whether bread crumbs',
         isCache: 'Whether to cache',

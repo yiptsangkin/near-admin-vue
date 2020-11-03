@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'கணக்கு கடவுச்சொல் உள்நுழைவு',
         byPhoneBtn: 'மொபைல் எண் உள்நுழைவு',
-        accountPlaceholder: 'கணக்கை உள்ளிடவும்',
+        accountPlaceholder: 'பயனர்பெயரை உள்ளிடவும்',
         passwordPlaceholder: 'கடவுச்சொல்லை உள்ளிடவும்',
-        autoLogin: 'தானாக உள்நுழைவு',
+        autoLogin: 'தானியங்கி உள்நுழைவு',
         forgetBtn: 'கடவுச்சொல்லை மறந்து',
         loginBtn: 'உள்நுழைய',
         byAccountTip: {
@@ -20,7 +20,7 @@ export default {
         },
         sendMsg: {
             repeatErr: 'மீண்டும் மீண்டும் அனுப்ப வேண்டாம்',
-            success: 'வெற்றி பெற்றது',
+            success: 'வெற்றி',
             codeTip: 'உங்கள் சரிபார்ப்புக் குறியீடு'
         },
         phonePlaceholder: 'தொலைபேசி எண்ணை உள்ளிடவும்',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'வ்யூ மற்றும் எறும்பு வடிவமைப்பின் அடிப்படையில் பயன்படுத்த எளிதான நடுத்தர மற்றும் பின்-இறுதி முன்-இறுதி மேம்பாட்டு கட்டமைப்பு'
+        sysIntro: 'வ்யூ மற்றும் எறும்பு வடிவமைப்பை அடிப்படையாகக் கொண்ட ஒரு பயனுள்ள நடுத்தர மற்றும் பின்-இறுதி முன்-இறுதி மேம்பாட்டு கட்டமைப்பு'
     },
     requestInfo: {
         withoutUrl: 'கோரிக்கை முகவரி காலியாக இருக்க முடியாது',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'முன்பக்க பதிவு',
         customSetting: 'தனிப்பயனாக்கம்',
         customClean: 'உள்ளமைவை அழி',
+        cacheClean: 'கேச் காலியாக',
         logout: 'வெளியேறு',
         errorTip: {
             cleanSuccess: 'வெற்று வெற்றிகரமாக'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'விரைவான நுழைவு',
         systemSwitch: 'கணினி கட்டமைப்பு',
-        isMock: 'கேலி செய்ய வேண்டுமா',
+        isMock: 'மோக்',
         isHotKey: 'குறுக்குவழி விசையா',
         isBreadCrumb: 'ரொட்டி நொறுக்குத் தீனிகள்',
         isCache: 'கேச் செய்ய வேண்டுமா',

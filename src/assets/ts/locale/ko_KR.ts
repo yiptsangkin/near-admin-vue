@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: '계정 비밀번호 로그인',
         byPhoneBtn: '휴대폰 번호 로그인',
-        accountPlaceholder: '계정을 입력하세요',
+        accountPlaceholder: '사용자 이름을 입력하십시오',
         passwordPlaceholder: '비밀번호를 입력 해주세요',
         autoLogin: '자동 로그인',
         forgetBtn: '비밀번호 분실',
@@ -16,10 +16,10 @@ export default {
             emptyErr: '비밀번호는 비워 둘 수 없습니다.'
         },
         byValidTip: {
-            emptyErr: '인증 코드를 입력해야합니다'
+            emptyErr: '인증 코드를 입력해야합니다.'
         },
         sendMsg: {
-            repeatErr: '반복해서 보내지 마십시오',
+            repeatErr: '반복적으로 보내지 마십시오',
             success: '성공한',
             codeTip: '인증 코드는'
         },
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Vue 및 Ant Design을 기반으로 한 사용하기 쉬운 중간 및 백엔드 프런트 엔드 개발 프레임 워크'
+        sysIntro: 'Vue 및 Ant Design을 기반으로 한 유용한 중간 및 백엔드 프런트 엔드 개발 프레임 워크'
     },
     requestInfo: {
         withoutUrl: '요청 주소는 비워 둘 수 없습니다.',
@@ -103,7 +103,7 @@ export default {
         'ms-my': '말레이 사람',
         nb: '노르웨이 인',
         'ne-np': '네팔어',
-        'nl-be': '플란더스 사람',
+        'nl-be': '플랑드르 사람',
         nl: '네덜란드 사람',
         pl: '광택',
         'pt-br': '브라질 포르투갈어',
@@ -143,6 +143,7 @@ export default {
         frontendLog: '프런트 엔드 로그',
         customSetting: '개인화',
         customClean: '명확한 구성',
+        cacheClean: '캐시 비우기',
         logout: '로그 아웃',
         errorTip: {
             cleanSuccess: '성공적으로 비우기'
@@ -152,7 +153,7 @@ export default {
         errorTip: {
             notfoundTip: '죄송합니다. 방문하신 페이지가 존재하지 않습니다',
             notrightTip: '죄송합니다.이 페이지에 액세스 할 수있는 권한이 없습니다.',
-            noserviceTip: '죄송합니다. 서버에 문제가 있습니다. 나중에 다시 시도해주세요.'
+            noserviceTip: '죄송합니다. 서버에 문제가 있습니다. 나중에 다시 시도하십시오.'
         },
         btnText: '페이지 닫기'
     },
@@ -166,7 +167,7 @@ export default {
     },
     logline: {
         list: '로그 목록',
-        detail: '로그 세부 사항',
+        detail: '로그 세부 정보',
         btnList: {
             export: '수출',
             remove: '빈'
@@ -195,7 +196,7 @@ export default {
             cancel: '빈 작업이 취소되었습니다.',
             confirm: '로그를 지우시겠습니까?(로그가 비어 있으면 검색 할 수 없습니다.)'
         },
-        success: '로그가 비었습니다'
+        success: '로그가 비었습니다.'
     },
     comTable: {
         columns: {

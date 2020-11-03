@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Пријава лозинке налога',
         byPhoneBtn: 'Пријава броја мобилног телефона',
-        accountPlaceholder: 'унесите рачун',
+        accountPlaceholder: 'Унесите корисничко име',
         passwordPlaceholder: 'Молим вас укуцајте лозинку',
         autoLogin: 'аутоматско пријављивање',
         forgetBtn: 'заборави шифру',
@@ -26,7 +26,7 @@ export default {
         phonePlaceholder: 'Унесите број телефона',
         validPlaceholder: 'Верификациони код',
         validBtn: 'добити верификациони код',
-        loginSuccess: 'успешно пријављивање'
+        loginSuccess: 'пријављивање успешно'
     },
     menuObj: {
         basicFeature: 'Основна способност',
@@ -35,7 +35,7 @@ export default {
             0: 'Основни оквир',
             1: 'Основна способност',
             '0-0': 'Вуе',
-            '0-1': 'Дизајн мрава',
+            '0-1': 'Ант Десигн',
             '0-2': 'Близу администратора Вуе',
             '1-0': 'Оквирна функција',
             '1-0-0': 'Конфигурација пројекта',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Једноставан за употребу средњи и позадински фронт-енд развојни оквир заснован на Вуе и Ант дизајну'
+        sysIntro: 'Корисни средњи и позадински фронт-енд развојни оквир заснован на Вуе и Ант дизајну'
     },
     requestInfo: {
         withoutUrl: 'Адреса захтева не може бити празна',
@@ -126,7 +126,7 @@ export default {
         closeAll: 'Затворите све картице',
         closeCur: 'Затворите тренутну картицу',
         closeOther: 'Затворите друге картице',
-        closeRight: 'Затворите десну налепницу',
+        closeRight: 'Затворите десну ознаку',
         singlePage: 'Независна страница',
         refreshPage: 'освежи страна',
         affixPage: 'Прикачи страницу',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Дневник фронта',
         customSetting: 'Персонализација',
         customClean: 'Јасна конфигурација',
+        cacheClean: 'Испразните кеш',
         logout: 'Одјава',
         errorTip: {
             cleanSuccess: 'Испразните успешно'
@@ -160,7 +161,7 @@ export default {
         btn: {
             search: 'Распитајте се',
             shrink: 'Одложити',
-            reset: 'Ресетовати',
+            reset: 'Ресетовање',
             unshrink: 'Развијте се'
         }
     },
@@ -201,7 +202,7 @@ export default {
         columns: {
             title: 'Подешавања колоне',
             all: 'Изабери све',
-            reset: 'Ресетовати',
+            reset: 'Ресетовање',
             fixedLeft: 'Фиксно лево',
             fixedRight: 'Исправљено удесно',
             cancelFixed: 'Откачи'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Брзи улазак',
         systemSwitch: 'Конфигурација система',
-        isMock: 'Да ли да се руга',
+        isMock: 'Било Моцк',
         isHotKey: 'Да ли је то пречица',
         isBreadCrumb: 'Било мрвице хлеба',
         isCache: 'Да ли да се кешира',

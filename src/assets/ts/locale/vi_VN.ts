@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Đăng nhập mật khẩu tài khoản',
         byPhoneBtn: 'Đăng nhập số điện thoại di động',
-        accountPlaceholder: 'vui lòng nhập tài khoản',
+        accountPlaceholder: 'Vui lòng nhập Tên người dùng',
         passwordPlaceholder: 'Xin vui lòng nhập mật khẩu',
-        autoLogin: 'tự động đăng nhập',
+        autoLogin: 'đăng nhập tự động',
         forgetBtn: 'quên mật khẩu',
         loginBtn: 'đăng nhập',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Khung phát triển giao diện người dùng giữa và cuối dễ sử dụng dựa trên Vue và Ant Design'
+        sysIntro: 'Khung phát triển front-end hữu ích giữa và back-end dựa trên Vue và Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Địa chỉ yêu cầu không được để trống',
@@ -82,7 +82,7 @@ export default {
         en: 'Tiếng Anh',
         es: 'người Tây Ban Nha',
         et: 'Người Estonia',
-        fa: 'Ba Tư',
+        fa: 'Tiếng ba tư',
         fi: 'Phần lan',
         fr: 'người Pháp',
         he: 'Tiếng Do Thái',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Nhật ký giao diện người dùng',
         customSetting: 'Cá nhân hóa',
         customClean: 'Xóa cấu hình',
+        cacheClean: 'Làm sạch bộ nhớ tạm',
         logout: 'đăng xuất',
         errorTip: {
             cleanSuccess: 'Làm trống thành công'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Vào nhanh',
         systemSwitch: 'Cấu hình hệ thông',
-        isMock: 'Có giả mạo hay không',
+        isMock: 'Cho dù Mock',
         isHotKey: 'Cho dù phím tắt',
         isBreadCrumb: 'Cho dù bánh mì vụn',
         isCache: 'Có lưu vào bộ nhớ cache không',

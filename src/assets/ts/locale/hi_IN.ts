@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'खाता पासवर्ड लॉगिन',
         byPhoneBtn: 'मोबाइल नंबर लॉगिन करें',
-        accountPlaceholder: 'कृपया खाता दर्ज करें',
+        accountPlaceholder: 'कृपया उपयोगकर्ता नाम इनपुट करें',
         passwordPlaceholder: 'कृप्या पास्वर्ड भरो',
-        autoLogin: 'स्वतः लॉगइन',
+        autoLogin: 'स्वचालित लॉग-इन',
         forgetBtn: 'पासवर्ड भूल गए',
         loginBtn: 'लॉग इन करें',
         byAccountTip: {
@@ -51,7 +51,7 @@ export default {
             '1-1-0': 'घटक पृष्ठ',
             '1-1-1': 'url पेज',
             '1-1-2': 'कोई अनुमति पृष्ठ नहीं',
-            '1-1-3': '404 पेज'
+            '1-1-3': '404 पृष्ठ'
         },
         errorTip: {
             notfoundTip: 'इस पथ के नीचे का घटक नहीं मिला',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Vue और चींटी डिजाइन के आधार पर एक आसान-से-उपयोग मध्य और बैक-एंड फ्रंट-एंड डेवलपमेंट फ्रेमवर्क'
+        sysIntro: 'Vue और चींटी डिजाइन पर आधारित एक उपयोगी मध्य और बैक-एंड फ्रंट-एंड डेवलपमेंट फ्रेमवर्क'
     },
     requestInfo: {
         withoutUrl: 'अनुरोध पता खाली नहीं हो सकता',
@@ -86,7 +86,7 @@ export default {
         fi: 'फिनिश',
         fr: 'फ्रेंच',
         he: 'यहूदी',
-        hi: 'हिन्दी',
+        hi: 'हिंदी',
         hr: 'क्रोएशियाई',
         hu: 'हंगेरी',
         hy: 'अर्मेनियाई',
@@ -126,7 +126,7 @@ export default {
         closeAll: 'सभी टैब को बंद करें',
         closeCur: 'मौजूदा टैब बंद करें',
         closeOther: 'अन्य टैब बंद करें',
-        closeRight: 'दायाँ लेबल बंद करें',
+        closeRight: 'दायां लेबल बंद करें',
         singlePage: 'स्वतंत्र पृष्ठ',
         refreshPage: 'पृष्ठ ताज़ा करें',
         affixPage: 'पिन पेज',
@@ -136,13 +136,14 @@ export default {
             affixPageCloseError: 'निश्चित पृष्ठ को बंद करने की अनुमति नहीं है',
             homePageAffixError: 'होमपेज अनपिन नहीं किया जा सकता है'
         },
-        checkSave: 'क्या आप पृष्ठ बंद करना चाहते हैं?(कृपया सुनिश्चित करें कि लाल रंग में चिह्नित पृष्ठ की सामग्री सहेज ली गई है)',
-        cancelClose: 'बंद संचालन रद्द'
+        checkSave: 'क्या आप पृष्ठ को बंद करना चाहते हैं?(कृपया सुनिश्चित करें कि लाल रंग में चिह्नित पृष्ठ की सामग्री सहेज ली गई है)',
+        cancelClose: 'बंद ऑपरेशन रद्द'
     },
     personalCenter: {
         frontendLog: 'ललाट लॉग',
         customSetting: 'निजीकरण',
         customClean: 'स्पष्ट विन्यास',
+        cacheClean: 'कैश खाली करें',
         logout: 'प्रस्थान करें',
         errorTip: {
             cleanSuccess: 'सफलतापूर्वक खाली करें'
@@ -185,7 +186,7 @@ export default {
         },
         tableColumns: {
             index: 'क्रमांक',
-            desc: 'विवरण लॉग करें',
+            desc: 'लॉग विवरण',
             type: 'लॉग प्रकार',
             time: 'समय',
             op: 'ऑपरेटिंग'
@@ -221,9 +222,9 @@ export default {
     setting: {
         customEntry: 'त्वरित प्रविष्टि',
         systemSwitch: 'प्रणाली विन्यास',
-        isMock: 'चाहे मॉक हो',
+        isMock: 'चाहे मॉक',
         isHotKey: 'चाहे शॉर्टकट की',
-        isBreadCrumb: 'चाहे ब्रेड क्रम्ब्स हो',
+        isBreadCrumb: 'चाहे ब्रेड क्रम्ब्स',
         isCache: 'चाहे कैशे करें',
         isI18n: 'चाहे अंतर्राष्ट्रीयकरण करना हो'
     },

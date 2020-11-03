@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Login med adgangskode til konto',
         byPhoneBtn: 'Login til mobilnummer',
-        accountPlaceholder: 'indtast venligst konto',
+        accountPlaceholder: 'Indtast venligst brugernavn',
         passwordPlaceholder: 'Indtast adgangskoden',
-        autoLogin: 'automatisk login',
+        autoLogin: 'automatisk log-in',
         forgetBtn: 'glem adgangskode',
         loginBtn: 'Log på',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'En brugervenlig mellem- og back-end front-end-udviklingsramme baseret på Vue og Ant Design'
+        sysIntro: 'En nyttig mellem- og back-end front-end-udviklingsramme baseret på Vue og Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Anmodningsadresse kan ikke være tom',
@@ -104,7 +104,7 @@ export default {
         nb: 'Norsk',
         'ne-np': 'Nepalesisk',
         'nl-be': 'Flamsk',
-        nl: 'hollandske',
+        nl: 'hollandsk',
         pl: 'Polere',
         'pt-br': 'Brasiliansk portugisisk',
         pt: 'Europæisk portugisisk',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Frontend-log',
         customSetting: 'Tilpasning',
         customClean: 'Ryd konfiguration',
+        cacheClean: 'Tøm cachen',
         logout: 'Log ud',
         errorTip: {
             cleanSuccess: 'Tøm med succes'
@@ -224,7 +225,7 @@ export default {
         isMock: 'Uanset om man skal spotte',
         isHotKey: 'Om genvejstast',
         isBreadCrumb: 'Uanset om brødkrummer',
-        isCache: 'Uanset om det skal cache',
+        isCache: 'Om det skal cache',
         isI18n: 'Uanset om man skal internationalisere'
     },
     pagingInfo: {

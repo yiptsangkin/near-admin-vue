@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Zaloguj się za pomocą hasła do konta',
         byPhoneBtn: 'Logowanie na numer telefonu komórkowego',
-        accountPlaceholder: 'proszę wejść na konto',
+        accountPlaceholder: 'Wprowadź nazwę użytkownika',
         passwordPlaceholder: 'Proszę wprowadzić hasło',
         autoLogin: 'automatyczne logowanie',
         forgetBtn: 'zapomnij hasło',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Łatwa w użyciu platforma programistyczna front-end dla środkowego i zaplecza oparta na Vue i Ant Design'
+        sysIntro: 'Przydatny framework do programowania front-end dla środkowego i końcowego zaplecza oparty na Vue i Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adres żądania nie może być pusty',
@@ -120,7 +120,7 @@ export default {
         uk: 'ukraiński',
         vi: 'wietnamski',
         'zh-cn': 'Chiński uproszczony',
-        'zh-tw': 'tradycyjne chińskie'
+        'zh-tw': 'tradycyjny chiński'
     },
     tagObj: {
         closeAll: 'Zamknąć wszystkie zakładki',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Dziennik frontendowy',
         customSetting: 'Personalizacja',
         customClean: 'Przejrzysta konfiguracja',
+        cacheClean: 'Opróżnij pamięć podręczną',
         logout: 'Wyloguj się',
         errorTip: {
             cleanSuccess: 'Opróżnij pomyślnie'
@@ -208,7 +209,7 @@ export default {
         },
         size: {
             title: 'Wysokość rzędu',
-            small: 'wąska',
+            small: 'wąski',
             normal: 'w',
             large: 'szerokość'
         },
@@ -221,14 +222,14 @@ export default {
     setting: {
         customEntry: 'Szybkie wejście',
         systemSwitch: 'Konfiguracja systemu',
-        isMock: 'Czy drwić',
+        isMock: 'Czy Mock',
         isHotKey: 'Czy klawisz skrótu',
         isBreadCrumb: 'Czy bułka tarta',
         isCache: 'Czy buforować',
         isI18n: 'Czy do internacjonalizacji'
     },
     pagingInfo: {
-        total: 'W całości',
+        total: 'W sumie',
         uint: 'Artykuł',
         items: 'nagranie'
     }

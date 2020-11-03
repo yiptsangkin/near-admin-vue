@@ -32,6 +32,7 @@ export default {
         customSetting: 'personalCenter.customSetting',
         logout: 'personalCenter.logout',
         customClean: 'personalCenter.customClean',
+        cacheClean: 'personalCenter.cacheClean',
         errorTip: {
             cleanSuccess: 'personalCenter.errorTip.cleanSuccess'
         }

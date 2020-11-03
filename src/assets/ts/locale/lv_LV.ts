@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Konta paroles pieteikšanās',
         byPhoneBtn: 'Mobilā numura pieteikšanās',
-        accountPlaceholder: 'lūdzu, ievadiet kontu',
+        accountPlaceholder: 'Lūdzu, ievadiet lietotājvārdu',
         passwordPlaceholder: 'Lūdzu, ievadiet paroli',
         autoLogin: 'automātiska pieteikšanās',
         forgetBtn: 'aizmirst paroli',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Viegli lietojams vidējā un aizmugurējā front-end izstrādes ietvars, kas balstīts uz Vue un Ant Design'
+        sysIntro: 'Noderīga vidējā un aizmugurējā front-end izstrādes sistēma, kuras pamatā ir Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Pieprasījuma adrese nevar būt tukša',
@@ -119,7 +119,7 @@ export default {
         tr: 'Turku',
         uk: 'Ukraiņu',
         vi: 'Vjetnamiešu',
-        'zh-cn': 'Vienkāršotā ķīniešu',
+        'zh-cn': 'Vienkāršota ķīniešu',
         'zh-tw': 'tradicionālā ķīniešu'
     },
     tagObj: {
@@ -132,17 +132,18 @@ export default {
         affixPage: 'Piespraust lapu',
         cancelAffixPage: 'Atspraust',
         errorTip: {
-            homePageCloseError: 'Mājas lapu nedrīkst aizvērt',
+            homePageCloseError: 'Mājas lapu nav atļauts aizvērt',
             affixPageCloseError: 'Fiksēto lapu nav atļauts aizvērt',
             homePageAffixError: 'Mājas lapu nevar atspraust'
         },
-        checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, ka sarkanā krāsā atzīmētās lapas saturs ir saglabāts)',
+        checkSave: 'Vai vēlaties aizvērt lapu?(Lūdzu, pārliecinieties, vai sarkanā krāsā atzīmētās lapas saturs ir saglabāts)',
         cancelClose: 'Aizvēršanas darbība atcelta'
     },
     personalCenter: {
         frontendLog: 'Frontend žurnāls',
         customSetting: 'Personalizēšana',
         customClean: 'Notīrīt konfigurāciju',
+        cacheClean: 'Iztukšojiet kešatmiņu',
         logout: 'izrakstīties',
         errorTip: {
             cleanSuccess: 'Veiksmīgi iztukšot'
@@ -150,7 +151,7 @@ export default {
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Diemžēl jūsu apmeklētā lapa neeksistē',
+            notfoundTip: 'Diemžēl jūsu apmeklētā lapa nepastāv',
             notrightTip: 'Diemžēl jums nav atļaujas piekļūt šai lapai',
             noserviceTip: 'Diemžēl ar serveri radās problēma. Lūdzu, vēlāk mēģiniet vēlreiz'
         },
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Ātra ievadīšana',
         systemSwitch: 'Sistēmas konfigurācija',
-        isMock: 'Vai ņirgāties',
+        isMock: 'Vai izspēles',
         isHotKey: 'Vai īsinājumtaustiņš',
         isBreadCrumb: 'Vai maizes drupatas',
         isCache: 'Vai saglabāt kešatmiņu',

@@ -56,6 +56,10 @@
                                 <a-icon type="delete"/>
                                 {{$t(dict.localeObj.personalCenter.customClean)}}
                             </a-menu-item>
+                            <a-menu-item key="cacheclean" @click="toCacheClean">
+                                <a-icon type="stop"/>
+                                {{$t(dict.localeObj.personalCenter.cacheClean)}}
+                            </a-menu-item>
                         </a-menu>
                     </div>
                     <div class="n-user-menu-logout">
@@ -126,6 +130,21 @@
                 dict.commonObj.localStorageKey.forEach((item) => {
                     localStorage.removeItem(item)
                 })
+                self.$message.success(
+                    self.$t(dict.localeObj.personalCenter.errorTip.cleanSuccess) as string,
+                    2
+                ).then(() => {
+                    window.location.reload()
+                })
+            },
+            toCacheClean () {
+                const self = this as any
+                // need to clean cache storage
+                for (const key of Object.keys(localStorage)) {
+                    if (/near_cache/.test(key)) {
+                        localStorage.removeItem(key)
+                    }
+                }
                 self.$message.success(
                     self.$t(dict.localeObj.personalCenter.errorTip.cleanSuccess) as string,
                     2

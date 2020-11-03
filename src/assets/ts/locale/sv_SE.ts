@@ -2,9 +2,9 @@ export default {
     locale: 'sv',
     country: 'SE',
     loginForm: {
-        byAccountBtn: 'Inloggning för kontolösenord',
+        byAccountBtn: 'Inloggning för lösenordskonto',
         byPhoneBtn: 'Inloggning på mobilnummer',
-        accountPlaceholder: 'vänligen ange konto',
+        accountPlaceholder: 'Ange användarnamn',
         passwordPlaceholder: 'Vänligen skriv in ett lösenord',
         autoLogin: 'automatisk inloggning',
         forgetBtn: 'Glöm lösenord',
@@ -102,7 +102,7 @@ export default {
         'mn-mn': 'Mongoliska',
         'ms-my': 'Malajiska',
         nb: 'Norska',
-        'ne-np': 'Nepali',
+        'ne-np': 'Nepalesiska',
         'nl-be': 'Flamländska',
         nl: 'Nederländska',
         pl: 'putsa',
@@ -133,7 +133,7 @@ export default {
         cancelAffixPage: 'Lossa',
         errorTip: {
             homePageCloseError: 'Hemsidan får inte stängas',
-            affixPageCloseError: 'Fixad sida får inte stängas',
+            affixPageCloseError: 'Fast sida får inte stängas',
             homePageAffixError: 'Hemsidan kan inte lossas'
         },
         checkSave: 'Vill du stänga sidan?(Se till att innehållet på den rödmarkerade sidan har sparats)',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Frontend logg',
         customSetting: 'Anpassning',
         customClean: 'Rensa konfigurationen',
+        cacheClean: 'Töm cachen',
         logout: 'logga ut',
         errorTip: {
             cleanSuccess: 'Töm framgångsrikt'
@@ -159,7 +160,7 @@ export default {
     searchPanel: {
         btn: {
             search: 'Fråga',
-            shrink: 'Lägga åt sidan',
+            shrink: 'Lägga undan',
             reset: 'Återställa',
             unshrink: 'Veckla ut'
         }
@@ -219,9 +220,9 @@ export default {
         detail: 'Se'
     },
     setting: {
-        customEntry: 'Snabb inmatning',
+        customEntry: 'Snabbinträde',
         systemSwitch: 'Systemkonfiguration',
-        isMock: 'Oavsett om man ska håna',
+        isMock: 'Oavsett om Mock',
         isHotKey: 'Oavsett genvägsknapp',
         isBreadCrumb: 'Oavsett om brödsmulor',
         isCache: 'Oavsett om du vill cache',

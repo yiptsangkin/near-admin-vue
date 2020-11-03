@@ -2,9 +2,9 @@ export default {
     locale: 'hu',
     country: 'HU',
     loginForm: {
-        byAccountBtn: 'Jelszó bejelentkezés',
+        byAccountBtn: 'Fiók jelszó bejelentkezés',
         byPhoneBtn: 'Mobilszám bejelentkezés',
-        accountPlaceholder: 'kérjük, adja meg a fiókot',
+        accountPlaceholder: 'Kérjük, adja meg a felhasználónevet',
         passwordPlaceholder: 'Kérlek írd be a jelszót',
         autoLogin: 'automatikus bejelentkezés',
         forgetBtn: 'elfelejtett jelszo',
@@ -64,11 +64,11 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Könnyen használható középső és back-end front-end fejlesztési keretrendszer, amely a Vue and Ant Design alapján készült'
+        sysIntro: 'Hasznos közép- és háttér-front-end fejlesztési keretrendszer, amely a Vue and Ant Design-on alapul'
     },
     requestInfo: {
         withoutUrl: 'A kérelem címe nem lehet üres',
-        networkErr: 'A hálózati kérés nem sikerült, próbálkozzon újra később'
+        networkErr: 'A hálózati kérelem nem sikerült, próbálkozzon újra később'
     },
     localeMap: {
         ar: 'arab',
@@ -136,13 +136,14 @@ export default {
             affixPageCloseError: 'A javított oldal nem zárható be',
             homePageAffixError: 'A kezdőlap nem rögzíthető'
         },
-        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a piros színnel jelölt oldal tartalma mentve van-e)',
+        checkSave: 'Bezárja az oldalt?(Kérjük, ellenőrizze, hogy a pirossal jelölt oldal tartalma mentve van-e)',
         cancelClose: 'A bezárás megszakítva'
     },
     personalCenter: {
         frontendLog: 'Frontend napló',
         customSetting: 'Személyre szabás',
         customClean: 'Konfiguráció törlése',
+        cacheClean: 'átmeneti tár ürítése',
         logout: 'kijelentkezés',
         errorTip: {
             cleanSuccess: 'Sikeresen üres'
@@ -152,7 +153,7 @@ export default {
         errorTip: {
             notfoundTip: 'Sajnáljuk, a meglátogatott oldal nem létezik',
             notrightTip: 'Sajnos nincs engedélye az oldal elérésére',
-            noserviceTip: 'Sajnáljuk, a szerverrel probléma merült fel. Kérjük, próbálkozzon újra később'
+            noserviceTip: 'Sajnos hiba történt a szerverrel. Kérjük, próbálkozzon újra később'
         },
         btnText: 'Oldal bezárása'
     },
@@ -223,7 +224,7 @@ export default {
         systemSwitch: 'Rendszerbeállítások',
         isMock: 'Gúnyolódni',
         isHotKey: 'A gyorsbillentyű',
-        isBreadCrumb: 'Hogy morzsolódik-e kenyér',
+        isBreadCrumb: 'Hogy morzsolódik-e a kenyér',
         isCache: 'Gyorsítótár-e',
         isI18n: 'Hogy nemzetközivé váljon-e'
     },

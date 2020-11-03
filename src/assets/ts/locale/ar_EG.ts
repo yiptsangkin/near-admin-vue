@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'تسجيل الدخول بكلمة مرور الحساب',
         byPhoneBtn: 'رقم تسجيل الدخول',
-        accountPlaceholder: 'الرجاء إدخال الحساب',
+        accountPlaceholder: 'الرجاء إدخال اسم المستخدم',
         passwordPlaceholder: 'الرجاء إدخال كلمة المرور',
-        autoLogin: 'تسجيل تلقائى',
+        autoLogin: 'تسجيل الدخول التلقائي',
         forgetBtn: 'نسيت كلمة المرور',
         loginBtn: 'تسجيل الدخول',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'إطار تطوير سهل الاستخدام للواجهة الأمامية والخلفية يعتمد على Vue و Ant Design'
+        sysIntro: 'إطار تطوير مفيد للواجهة الأمامية والخلفية يعتمد على Vue و Ant Design'
     },
     requestInfo: {
         withoutUrl: 'لا يمكن أن يكون عنوان الطلب فارغًا',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'سجل الواجهة الأمامية',
         customSetting: 'إضفاء الطابع الشخصي',
         customClean: 'تكوين واضح',
+        cacheClean: 'إفراغ ذاكرة التخزين المؤقت',
         logout: 'خروج',
         errorTip: {
             cleanSuccess: 'إفراغ بنجاح'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'دخول سريع',
         systemSwitch: 'أعدادات النظام',
-        isMock: 'سواء للسخرية',
+        isMock: 'سواء كانت وهمية',
         isHotKey: 'سواء مفتاح الاختصار',
         isBreadCrumb: 'سواء فتات الخبز',
         isCache: 'سواء لذاكرة التخزين المؤقت',

@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Konto Passwort Login',
         byPhoneBtn: 'Anmeldenummer für Handynummer',
-        accountPlaceholder: 'Bitte geben Sie ein Konto ein',
+        accountPlaceholder: 'Bitte geben Sie den Benutzernamen ein',
         passwordPlaceholder: 'Bitte Passwort eingeben',
         autoLogin: 'automatische Anmeldung',
         forgetBtn: 'Passwort vergessen',
@@ -24,7 +24,7 @@ export default {
             codeTip: 'Ihr Bestätigungscode lautet'
         },
         phonePlaceholder: 'Bitte geben Sie die Telefonnummer ein',
-        validPlaceholder: 'Bestätigungscode',
+        validPlaceholder: 'Verifizierungs-Schlüssel',
         validBtn: 'Bestätigungscode erhalten',
         loginSuccess: 'Anmeldung erfolgreich'
     },
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Ein benutzerfreundliches Front-End-Entwicklungsframework für das mittlere und Back-End, das auf Vue und Ant Design basiert'
+        sysIntro: 'Ein nützliches Front-End-Entwicklungsframework für das mittlere und Back-End, das auf Vue und Ant Design basiert'
     },
     requestInfo: {
         withoutUrl: 'Die Anforderungsadresse darf nicht leer sein',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Frontend-Protokoll',
         customSetting: 'Personalisierung',
         customClean: 'Konfiguration löschen',
+        cacheClean: 'Leeren Sie den Cache',
         logout: 'Ausloggen',
         errorTip: {
             cleanSuccess: 'Erfolgreich leeren'
@@ -150,7 +151,7 @@ export default {
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Die von Ihnen besuchte Seite ist leider nicht vorhanden',
+            notfoundTip: 'Die von Ihnen besuchte Seite existiert leider nicht',
             notrightTip: 'Leider haben Sie keine Berechtigung, auf diese Seite zuzugreifen',
             noserviceTip: 'Entschuldigung, es gab ein Problem mit dem Server. Bitte versuchen Sie es später erneut'
         },
@@ -212,7 +213,7 @@ export default {
             normal: 'im',
             large: 'Breite'
         },
-        fullscreen: 'ganzer Bildschirm',
+        fullscreen: 'Vollbild',
         unFullscreen: 'Vollbild abbrechen'
     },
     normalBtn: {

@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Konto parooliga sisselogimine',
         byPhoneBtn: 'Mobiilinumbri sisselogimine',
-        accountPlaceholder: 'palun sisesta konto',
+        accountPlaceholder: 'Sisestage kasutajanimi',
         passwordPlaceholder: 'Sisestage parool',
         autoLogin: 'automaatne sisselogimine',
         forgetBtn: 'unusta parool',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Vue ja Ant Designil põhinev hõlpsasti kasutatav kesk- ja tagapõhine esiotsa arendusraamistik'
+        sysIntro: 'Vue ja Ant Designil põhinev kasulik kesk- ja tagapõhine esiotsa arendusraamistik'
     },
     requestInfo: {
         withoutUrl: 'Taotluse aadress ei tohi olla tühi',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Esiosa logi',
         customSetting: 'Isikupärastamine',
         customClean: 'Kustuta konfiguratsioon',
+        cacheClean: 'Tühjenda vahemälu',
         logout: 'Logi välja',
         errorTip: {
             cleanSuccess: 'Tühjenda edukalt'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Kiire sisestamine',
         systemSwitch: 'Süsteemi konfiguratsioon',
-        isMock: 'Kas mõnitada',
+        isMock: 'Kas mõnitama',
         isHotKey: 'Kas otseteeklahv',
         isBreadCrumb: 'Kas leivapuru',
         isCache: 'Kas vahemällu salvestada',

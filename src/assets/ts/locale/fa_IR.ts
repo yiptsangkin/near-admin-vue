@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'ورود رمز ورود حساب',
         byPhoneBtn: 'ورود شماره موبایل',
-        accountPlaceholder: 'لطفا حساب وارد کنید',
+        accountPlaceholder: 'لطفا نام کاربری را وارد کنید',
         passwordPlaceholder: 'لطفا رمز عبور را وارد کنید',
         autoLogin: 'ورود خودکار',
         forgetBtn: 'فراموشی رمز عبور',
@@ -26,7 +26,7 @@ export default {
         phonePlaceholder: 'لطفا شماره تلفن را وارد کنید',
         validPlaceholder: 'کد تایید',
         validBtn: 'کد تأیید را دریافت کنید',
-        loginSuccess: 'ورود با موفقیت انجام شد'
+        loginSuccess: 'ورود به سیستم موفقیت آمیز است'
     },
     menuObj: {
         basicFeature: 'توانایی اساسی',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'یک چارچوب توسعه جلو و عقب و آسان برای استفاده در Vue و Ant Design'
+        sysIntro: 'یک چارچوب توسعه میانی و عقب مفید جلو و مبتنی بر Vue و Ant Design'
     },
     requestInfo: {
         withoutUrl: 'آدرس درخواست نمی تواند خالی باشد',
@@ -136,13 +136,14 @@ export default {
             affixPageCloseError: 'صفحه ثابت مجاز به بستن نیست',
             homePageAffixError: 'صفحه اصلی را نمی توان پین کرد'
         },
-        checkSave: 'آیا می خواهید صفحه را ببندید؟(لطفاً مطمئن شوید که محتوای صفحه ای که با رنگ قرمز مشخص شده است ذخیره شده است)',
-        cancelClose: 'بستن عملیات لغو شد'
+        checkSave: 'آیا می خواهید صفحه را ببندید؟(لطفاً مطمئن شوید که محتوای صفحه مشخص شده با قرمز ذخیره شده است)',
+        cancelClose: 'عمل بستن لغو شد'
     },
     personalCenter: {
         frontendLog: 'ورود به سیستم',
         customSetting: 'شخصی',
         customClean: 'پیکربندی را پاک کنید',
+        cacheClean: 'حافظه پنهان را خالی کنید',
         logout: 'خروج از سیستم',
         errorTip: {
             cleanSuccess: 'با موفقیت خالی کنید'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'ورود سریع',
         systemSwitch: 'پیکربندی سیستم',
-        isMock: 'آیا به تمسخر',
+        isMock: 'خواه مسخره',
         isHotKey: 'چه کلید میانبر',
         isBreadCrumb: 'چه خرده نان',
         isCache: 'آیا حافظه پنهان است',

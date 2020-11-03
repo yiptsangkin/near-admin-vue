@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Login kata sandi akun',
         byPhoneBtn: 'Login nomor ponsel',
-        accountPlaceholder: 'silakan masuk akun',
+        accountPlaceholder: 'Silakan masukkan Nama Pengguna',
         passwordPlaceholder: 'Silakan masukkan kata sandi',
         autoLogin: 'masuk otomatis',
         forgetBtn: 'lupa Password',
@@ -36,7 +36,7 @@ export default {
             1: 'Kemampuan dasar',
             '0-0': 'Vue',
             '0-1': 'Desain Semut',
-            '0-2': 'Di dekat Admin Vue',
+            '0-2': 'Dekat Admin Vue',
             '1-0': 'Fungsi kerangka kerja',
             '1-0-0': 'Konfigurasi proyek',
             '1-0-1': 'Log frontend',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Framework pengembangan front-end middle dan back-end yang mudah digunakan berdasarkan Vue and Ant Design'
+        sysIntro: 'Framework pengembangan front-end middle dan back-end yang berguna berdasarkan Vue dan Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Alamat permintaan tidak boleh kosong',
@@ -99,7 +99,7 @@ export default {
         'ku-iq': 'Kurdi Tengah',
         lv: 'Kurdi Tengah',
         mk: 'Makedonia',
-        'mn-mn': 'Mongolia',
+        'mn-mn': 'Mongol',
         'ms-my': 'Melayu',
         nb: 'Norsk',
         'ne-np': 'Nepali',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Log frontend',
         customSetting: 'Personalisasi',
         customClean: 'Hapus konfigurasi',
+        cacheClean: 'Mengosongkan cache',
         logout: 'keluar',
         errorTip: {
             cleanSuccess: 'Berhasil kosong'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Entri cepat',
         systemSwitch: 'Sistem konfigurasi',
-        isMock: 'Apakah akan Mock',
+        isMock: 'Apakah Mock',
         isHotKey: 'Apakah tombol pintas',
         isBreadCrumb: 'Apakah remah roti',
         isCache: 'Apakah akan menyimpan cache',

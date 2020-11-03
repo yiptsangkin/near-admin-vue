@@ -4,8 +4,8 @@ export default {
     loginForm: {
         byAccountBtn: 'Σύνδεση κωδικού πρόσβασης λογαριασμού',
         byPhoneBtn: 'Σύνδεση αριθμού κινητού',
-        accountPlaceholder: 'εισάγετε λογαριασμό',
-        passwordPlaceholder: 'Παρακαλώ εισάγετε κωδικό πρόσβασης',
+        accountPlaceholder: 'Εισαγάγετε το όνομα χρήστη',
+        passwordPlaceholder: 'Παρακαλούμε εισάγετε τον κωδικό πρόσβασης',
         autoLogin: 'αυτόματη σύνδεση',
         forgetBtn: 'ξεχάστε τον κωδικό πρόσβασης',
         loginBtn: 'Σύνδεση',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Ένα εύχρηστο πλαίσιο ανάπτυξης μεσαίου και πίσω μέρους με βάση το Vue και το Ant Design'
+        sysIntro: 'Ένα χρήσιμο πλαίσιο ανάπτυξης μεσαίου και πίσω μέρους με βάση το Vue και το Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Η διεύθυνση αιτήματος δεν μπορεί να είναι κενή',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Αρχείο καταγραφής διεπαφής',
         customSetting: 'Εξατομίκευση',
         customClean: 'Εκκαθάριση διαμόρφωσης',
+        cacheClean: 'Άδειασμα της προσωρινής μνήμης',
         logout: 'αποσύνδεση',
         errorTip: {
             cleanSuccess: 'Άδειασμα με επιτυχία'
@@ -150,7 +151,7 @@ export default {
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Δυστυχώς, η σελίδα που επισκεφτήκατε δεν υπάρχει',
+            notfoundTip: 'Λυπούμαστε, η σελίδα που επισκεφτήκατε δεν υπάρχει',
             notrightTip: 'Δυστυχώς, δεν έχετε άδεια πρόσβασης σε αυτήν τη σελίδα',
             noserviceTip: 'Δυστυχώς, παρουσιάστηκε πρόβλημα με τον διακομιστή. Δοκιμάστε ξανά αργότερα'
         },
@@ -161,7 +162,7 @@ export default {
             search: 'Ρωτώ',
             shrink: 'Αποταμιεύω',
             reset: 'Επαναφορά',
-            unshrink: 'Ξεδιπλώνονται'
+            unshrink: 'Ξεδιπλωθεί'
         }
     },
     logline: {
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Γρήγορη είσοδος',
         systemSwitch: 'Διαμόρφωση συστήματος',
-        isMock: 'Είτε να χλευάσεις',
+        isMock: 'Είτε χλευάζει',
         isHotKey: 'Είτε κλειδί συντόμευσης',
         isBreadCrumb: 'Είτε ψίχουλα ψωμιού',
         isCache: 'Αν θα αποθηκεύσετε προσωρινά',

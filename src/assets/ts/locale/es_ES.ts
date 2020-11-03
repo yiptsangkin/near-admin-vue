@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Inicio de sesión con contraseña de cuenta',
         byPhoneBtn: 'Inicio de sesión con número de móvil',
-        accountPlaceholder: 'por favor ingrese la cuenta',
+        accountPlaceholder: 'Ingrese el nombre de usuario',
         passwordPlaceholder: 'Por favor, ingrese contraseña',
-        autoLogin: 'ingreso automático',
+        autoLogin: 'inicio de sesión automático',
         forgetBtn: 'contraseña olvidada',
         loginBtn: 'iniciar sesión',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Un marco de desarrollo de front-end intermedio y back-end fácil de usar basado en Vue y Ant Design'
+        sysIntro: 'Un marco útil de desarrollo de front-end intermedio y back-end basado en Vue y Ant Design'
     },
     requestInfo: {
         withoutUrl: 'La dirección de solicitud no puede estar vacía',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Registro de frontend',
         customSetting: 'Personalización',
         customClean: 'Configuración clara',
+        cacheClean: 'Vaciar el caché',
         logout: 'desconectar',
         errorTip: {
             cleanSuccess: 'Vaciar con éxito'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Entrada rapida',
         systemSwitch: 'Configuración del sistema',
-        isMock: 'Ya sea para burlarse',
+        isMock: 'Ya sea Mock',
         isHotKey: 'Si la tecla de método abreviado',
         isBreadCrumb: 'Si pan rallado',
         isCache: 'Ya sea para almacenar en caché',

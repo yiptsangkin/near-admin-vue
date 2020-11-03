@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Login com senha da conta',
         byPhoneBtn: 'Login com número de celular',
-        accountPlaceholder: 'por favor insira a conta',
+        accountPlaceholder: 'Insira o nome de usuário',
         passwordPlaceholder: 'Por favor insira a senha',
         autoLogin: 'login automático',
         forgetBtn: 'Esqueceu a senha',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Uma estrutura de desenvolvimento front-end intermediária e back-end fácil de usar com base em Vue e Ant Design'
+        sysIntro: 'Uma estrutura de desenvolvimento de front-end intermediária e de back-end útil baseada em Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'O endereço de solicitação não pode estar vazio',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Log de front-end',
         customSetting: 'Personalização',
         customClean: 'Limpar configuração',
+        cacheClean: 'Esvaziar o cache',
         logout: 'Sair',
         errorTip: {
             cleanSuccess: 'Esvaziar com sucesso'
@@ -159,7 +160,7 @@ export default {
     searchPanel: {
         btn: {
             search: 'Investigar',
-            shrink: 'Por para fora',
+            shrink: 'Jogue fora',
             reset: 'Redefinir',
             unshrink: 'Desdobrar'
         }
@@ -204,7 +205,7 @@ export default {
             reset: 'Redefinir',
             fixedLeft: 'Esquerda fixa',
             fixedRight: 'Direito fixo',
-            cancelFixed: 'Liberar'
+            cancelFixed: 'Soltar'
         },
         size: {
             title: 'Altura da linha',
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Entrada rápida',
         systemSwitch: 'Configuração do sistema',
-        isMock: 'Se zombar',
+        isMock: 'Se Mock',
         isHotKey: 'Se tecla de atalho',
         isBreadCrumb: 'Seja migalhas de pão',
         isCache: 'Se deve armazenar em cache',

@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Accesso con password dell&#39;account',
         byPhoneBtn: 'Accesso al numero di cellulare',
-        accountPlaceholder: 'si prega di inserire l&#39;account',
+        accountPlaceholder: 'Inserisci il nome utente',
         passwordPlaceholder: 'Per favore, inserisci la password',
-        autoLogin: 'login automatico',
+        autoLogin: 'log-in automatico',
         forgetBtn: 'dimenticare la password',
         loginBtn: 'accesso',
         byAccountTip: {
@@ -23,7 +23,7 @@ export default {
             success: 'Riuscito',
             codeTip: 'Il tuo codice di verifica è'
         },
-        phonePlaceholder: 'Inserisci il numero di telefono',
+        phonePlaceholder: 'Si prega di inserire il numero di telefono',
         validPlaceholder: 'Codice di verifica',
         validBtn: 'ottenere il codice di verifica',
         loginSuccess: 'accesso riuscito'
@@ -36,7 +36,7 @@ export default {
             1: 'Abilità di base',
             '0-0': 'Vue',
             '0-1': 'Ant Design',
-            '0-2': 'Vicino a Admin Vue',
+            '0-2': 'Vicino ad Admin Vue',
             '1-0': 'Funzione quadro',
             '1-0-0': 'Configurazione del progetto',
             '1-0-1': 'Registro di frontend',
@@ -47,7 +47,7 @@ export default {
             '1-0-6': 'Set di attrezzi',
             '1-0-7': 'Controllo di accesso',
             '1-0-8': 'tasto di scelta rapida',
-            '1-1': 'Funzione di pagina',
+            '1-1': 'Funzione pagina',
             '1-1-0': 'Pagina dei componenti',
             '1-1-1': 'pagina URL',
             '1-1-2': 'Nessuna pagina di autorizzazione',
@@ -55,7 +55,7 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Il componente in questo percorso non è stato trovato',
-            emptyErr: 'Percorso del componente non configurato'
+            emptyErr: 'Percorso componente non configurato'
         }
     },
     coreMenuObj: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Un framework di sviluppo front-end middle e back-end facile da usare basato su Vue e Ant Design'
+        sysIntro: 'Un framework di sviluppo front-end middle e back-end di facile utilizzo basato su Vue e Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L&#39;indirizzo della richiesta non può essere vuoto',
@@ -78,8 +78,8 @@ export default {
         da: 'danese',
         de: 'Tedesco',
         el: 'greco',
-        'en-gb': 'Inglese',
-        en: 'Inglese',
+        'en-gb': 'inglese',
+        en: 'inglese',
         es: 'spagnolo',
         et: 'Estone',
         fa: 'persiano',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Registro di frontend',
         customSetting: 'Personalizzazione',
         customClean: 'Configurazione chiara',
+        cacheClean: 'Svuotare la cache',
         logout: 'disconnessione',
         errorTip: {
             cleanSuccess: 'Svuota con successo'
@@ -203,7 +204,7 @@ export default {
             all: 'seleziona tutto',
             reset: 'Ripristina',
             fixedLeft: 'Risolto a sinistra',
-            fixedRight: 'Corretto a destra',
+            fixedRight: 'Risolto a destra',
             cancelFixed: 'Sblocca'
         },
         size: {

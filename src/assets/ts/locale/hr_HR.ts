@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Prijava lozinke računa',
         byPhoneBtn: 'Prijava broja mobitela',
-        accountPlaceholder: 'molimo unesite račun',
+        accountPlaceholder: 'Unesite korisničko ime',
         passwordPlaceholder: 'Unesite lozinku',
         autoLogin: 'automatska prijava',
         forgetBtn: 'Zaboravili ste lozinku',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Jednostavan za korištenje srednji i pozadinski front-end razvojni okvir zasnovan na Vue i Ant dizajnu'
+        sysIntro: 'Korisni srednji i pozadinski front-end razvojni okvir zasnovan na Vue i Ant dizajnu'
     },
     requestInfo: {
         withoutUrl: 'Adresa zahtjeva ne može biti prazna',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Prednji zapisnik',
         customSetting: 'Personalizacija',
         customClean: 'Jasna konfiguracija',
+        cacheClean: 'Ispraznite predmemoriju',
         logout: 'odjavi se',
         errorTip: {
             cleanSuccess: 'Uspješno ispraznite'
@@ -159,14 +160,14 @@ export default {
     searchPanel: {
         btn: {
             search: 'Raspitajte se',
-            shrink: 'Odložiti',
+            shrink: 'Odloži',
             reset: 'Resetirati',
             unshrink: 'Razmotaj se'
         }
     },
     logline: {
         list: 'Popis dnevnika',
-        detail: 'Pojedinosti zapisnika',
+        detail: 'Pojedinosti dnevnika',
         btnList: {
             export: 'Izvoz',
             remove: 'Prazan'
@@ -199,7 +200,7 @@ export default {
     },
     comTable: {
         columns: {
-            title: 'Postavke stupaca',
+            title: 'Postavke stupca',
             all: 'Odaberi sve',
             reset: 'Resetirati',
             fixedLeft: 'Popravljeno lijevo',
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Brzi ulazak',
         systemSwitch: 'Sistemska konfiguracija',
-        isMock: 'Treba li se rugati',
+        isMock: 'Bilo Mock',
         isHotKey: 'Da li tipka prečaca',
         isBreadCrumb: 'Bilo krušne mrvice',
         isCache: 'Da li u predmemoriju',

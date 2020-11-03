@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Account wachtwoord login',
         byPhoneBtn: 'Inloggen mobiel nummer',
-        accountPlaceholder: 'voer account in',
+        accountPlaceholder: 'Voer de gebruikersnaam in',
         passwordPlaceholder: 'Voer wachtwoord in alstublieft',
-        autoLogin: 'Automatische login',
+        autoLogin: 'automatisch inloggen',
         forgetBtn: 'wachtwoord vergeten',
         loginBtn: 'Log in',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Een gebruiksvriendelijk midden- en back-end front-end ontwikkelingsraamwerk op basis van Vue en Ant Design'
+        sysIntro: 'Een handig midden- en back-end front-end ontwikkelingsraamwerk op basis van Vue en Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Verzoekadres mag niet leeg zijn',
@@ -100,7 +100,7 @@ export default {
         lv: 'Centraal Koerdisch',
         mk: 'Macedonisch',
         'mn-mn': 'Mongools',
-        'ms-my': 'Maleis',
+        'ms-my': 'Maleis-',
         nb: 'Noors',
         'ne-np': 'Nepalees',
         'nl-be': 'Vlaams',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Frontend-logboek',
         customSetting: 'Personalisatie',
         customClean: 'Duidelijke configuratie',
+        cacheClean: 'Maak de cache leeg',
         logout: 'afmelden',
         errorTip: {
             cleanSuccess: 'Succesvol leegmaken'
@@ -152,7 +153,7 @@ export default {
         errorTip: {
             notfoundTip: 'Sorry, de pagina die u heeft bezocht, bestaat niet',
             notrightTip: 'Sorry, u heeft geen toestemming om deze pagina te openen',
-            noserviceTip: 'Sorry, er was een probleem met de server, probeer het later opnieuw'
+            noserviceTip: 'Sorry, er was een probleem met de server. Probeer het later opnieuw'
         },
         btnText: 'Pagina sluiten'
     },
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Snelle toegang',
         systemSwitch: 'Systeem configuratie',
-        isMock: 'Of je wilt bespotten',
+        isMock: 'Of Mock',
         isHotKey: 'Of sneltoets',
         isBreadCrumb: 'Of het nu gaat om broodkruimels',
         isCache: 'Of je wilt cachen',

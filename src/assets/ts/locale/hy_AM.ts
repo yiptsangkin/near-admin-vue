@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Հաշվի գաղտնաբառի մուտք',
         byPhoneBtn: 'Բջջային հեռախոսահամարի մուտք',
-        accountPlaceholder: 'խնդրում ենք մուտքագրել հաշիվ',
+        accountPlaceholder: 'Խնդրում ենք մուտքագրել Մականուն',
         passwordPlaceholder: 'Խնդրում ենք մուտքագրել գաղտնաբառ',
         autoLogin: 'ավտոմատ մուտք',
         forgetBtn: 'մոռանալ գաղտնաբառը',
@@ -55,7 +55,7 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Այս ուղու տակ գտնվող բաղադրիչը չի գտնվել',
-            emptyErr: 'Չկազմակերպված բաղադրիչի ուղի'
+            emptyErr: 'Չկազմակերպված բաղադրիչի ուղին'
         }
     },
     coreMenuObj: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Vue- ի և Ant- ի դիզայնի հիման վրա հեշտ օգտագործման միջին և հետին ծայրի ճակատային զարգացման զարգացման շրջանակ'
+        sysIntro: 'Vue- ի և Ant- ի դիզայնի վրա հիմնված միջին և հետին ծայրի ճակատային զարգացման օգտակար շրջանակ'
     },
     requestInfo: {
         withoutUrl: 'Հարցման հասցեն չի կարող դատարկ լինել',
@@ -136,13 +136,14 @@ export default {
             affixPageCloseError: 'Հաստատված էջը չի թույլատրվում փակել',
             homePageAffixError: 'Գլխավոր էջը հնարավոր չէ կապել'
         },
-        checkSave: 'Youանկանու՞մ եք փակել էջը:(Խնդրում ենք համոզվել, որ կարմիրով նշված էջի պարունակությունը պահված է)',
+        checkSave: 'Youանկանու՞մ եք փակել էջը:(Խնդրում ենք համոզվել, որ կարմիրով նշված էջի բովանդակությունը պահված է)',
         cancelClose: 'Փակ գործողությունը չեղյալ է հայտարարվել'
     },
     personalCenter: {
         frontendLog: 'Առջևի մատյան',
         customSetting: 'Անհատականացում',
         customClean: 'Մաքրել կազմաձևը',
+        cacheClean: 'Դատարկեք քեշը',
         logout: 'դուրս գալ',
         errorTip: {
             cleanSuccess: 'Դատարկվում է հաջողությամբ'
@@ -172,7 +173,7 @@ export default {
             remove: 'Դատարկ'
         },
         time: {
-            plh: 'Խնդրում ենք ընտրել ժամանակային տիրույթ',
+            plh: 'Խնդրում ենք ընտրել ժամային միջակայք',
             range: 'ժամկետը',
             halfDay: 'Կես օր',
             oneDay: 'մեկ օրում',
@@ -185,7 +186,7 @@ export default {
         },
         tableColumns: {
             index: 'Սերիական համար',
-            desc: 'Մատյանների նկարագրությունը',
+            desc: 'Մուտքի նկարագրություն',
             type: 'Մուտքի տեսակը',
             time: 'ժամանակը',
             op: 'գործող'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Արագ մուտք',
         systemSwitch: 'Համակարգի կազմաձևում',
-        isMock: 'Whetherաղրե՞լ',
+        isMock: 'Անկախ ծաղրից',
         isHotKey: 'Անկախ նրանից, թե դյուրանցման ստեղն է',
         isBreadCrumb: 'Անկախ նրանից, թե հացի փշրանքներ',
         isCache: 'Անկախ նրանից, թե քեշ է',

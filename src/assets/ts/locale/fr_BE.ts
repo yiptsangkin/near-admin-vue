@@ -3,8 +3,8 @@ export default {
     country: 'BE',
     loginForm: {
         byAccountBtn: 'Connexion par mot de passe du compte',
-        byPhoneBtn: 'Connexion au numéro de mobile',
-        accountPlaceholder: 'veuillez entrer un compte',
+        byPhoneBtn: 'Connexion au numéro de portable',
+        accountPlaceholder: 'Veuillez saisir votre nom d&#39;utilisateur',
         passwordPlaceholder: 'Veuillez entrer le mot de passe',
         autoLogin: 'connexion automatique',
         forgetBtn: 'mot de passe oublié',
@@ -35,7 +35,7 @@ export default {
             0: 'Cadre de base',
             1: 'Capacité de base',
             '0-0': 'Vue',
-            '0-1': 'Conception de fourmis',
+            '0-1': 'Conception de fourmi',
             '0-2': 'Vue d&#39;administration à proximité',
             '1-0': 'Fonction de cadre',
             '1-0-0': 'Configuration du projet',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Un cadre de développement front-end central et back-end facile à utiliser basé sur Vue et Ant Design'
+        sysIntro: 'Un cadre de développement frontal intermédiaire et principal utile basé sur Vue et Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L&#39;adresse de la demande ne peut pas être vide',
@@ -134,7 +134,7 @@ export default {
         errorTip: {
             homePageCloseError: 'La page d&#39;accueil n&#39;est pas autorisée à se fermer',
             affixPageCloseError: 'La page fixe n&#39;est pas autorisée à se fermer',
-            homePageAffixError: 'Impossible de détacher la page d&#39;accueil'
+            homePageAffixError: 'La page d&#39;accueil ne peut pas être supprimée'
         },
         checkSave: 'Voulez-vous fermer la page?(Veuillez vous assurer que le contenu de la page marquée en rouge a été enregistré)',
         cancelClose: 'Fermer l&#39;opération annulée'
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Journal du frontend',
         customSetting: 'Personnalisation',
         customClean: 'Effacer la configuration',
+        cacheClean: 'Vider le cache',
         logout: 'Déconnexion',
         errorTip: {
             cleanSuccess: 'Vider avec succès'
@@ -221,9 +222,9 @@ export default {
     setting: {
         customEntry: 'Saisie rapide',
         systemSwitch: 'Configuration du système',
-        isMock: 'Que ce soit pour se moquer',
+        isMock: 'Que ce soit simulé',
         isHotKey: 'Si la touche de raccourci',
-        isBreadCrumb: 'Que ce soit des miettes de pain',
+        isBreadCrumb: 'Que des miettes de pain',
         isCache: 'S&#39;il faut mettre en cache',
         isI18n: 'S&#39;internationaliser'
     },

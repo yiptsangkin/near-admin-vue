@@ -4,13 +4,13 @@ export default {
     loginForm: {
         byAccountBtn: 'ಖಾತೆ ಪಾಸ್ವರ್ಡ್ ಲಾಗಿನ್',
         byPhoneBtn: 'ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಲಾಗಿನ್',
-        accountPlaceholder: 'ದಯವಿಟ್ಟು ಖಾತೆಯನ್ನು ನಮೂದಿಸಿ',
+        accountPlaceholder: 'ದಯವಿಟ್ಟು ಬಳಕೆದಾರಹೆಸರನ್ನು ನಮೂದಿಸಿ',
         passwordPlaceholder: 'ದಯವಿಟ್ಟು ಪಾಸ್ವರ್ಡ್ ನಮೂದಿಸಿ',
-        autoLogin: 'ಸ್ವಯಂ ಲಾಗಿನ್',
+        autoLogin: 'ಸ್ವಯಂಚಾಲಿತ ಲಾಗ್-ಇನ್',
         forgetBtn: 'ಪಾಸ್ವರ್ಡ್ ಮರೆತುಬಿಡಿ',
         loginBtn: 'ಲಾಗ್ ಇನ್ ಮಾಡಿ',
         byAccountTip: {
-            emptyErr: 'ಖಾತೆ ಖಾಲಿಯಾಗಿರಬಾರದು'
+            emptyErr: 'ಖಾತೆ ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ'
         },
         byPasswordTip: {
             emptyErr: 'ಪಾಸ್ವರ್ಡ್ ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ'
@@ -54,7 +54,7 @@ export default {
             '1-1-3': '404 ಪುಟ'
         },
         errorTip: {
-            notfoundTip: 'ಈ ಹಾದಿಯಲ್ಲಿರುವ ಘಟಕ ಕಂಡುಬಂದಿಲ್ಲ',
+            notfoundTip: 'ಈ ಮಾರ್ಗದ ಅಡಿಯಲ್ಲಿರುವ ಅಂಶವು ಕಂಡುಬಂದಿಲ್ಲ',
             emptyErr: 'ಕಾನ್ಫಿಗರ್ ಮಾಡದ ಘಟಕ ಮಾರ್ಗ'
         }
     },
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'ವ್ಯೂ ಮತ್ತು ಇರುವೆ ವಿನ್ಯಾಸವನ್ನು ಆಧರಿಸಿ ಬಳಸಲು ಸುಲಭವಾದ ಮಧ್ಯಮ ಮತ್ತು ಹಿಂಭಾಗದ ಮುಂಭಾಗದ ಕೊನೆಯಲ್ಲಿ ಅಭಿವೃದ್ಧಿ ಚೌಕಟ್ಟು'
+        sysIntro: 'ವ್ಯೂ ಮತ್ತು ಇರುವೆ ವಿನ್ಯಾಸವನ್ನು ಆಧರಿಸಿದ ಉಪಯುಕ್ತ ಮಧ್ಯಮ ಮತ್ತು ಹಿಂಭಾಗದ ಮುಂಭಾಗದ ಕೊನೆಯಲ್ಲಿ ಅಭಿವೃದ್ಧಿ ಚೌಕಟ್ಟು'
     },
     requestInfo: {
         withoutUrl: 'ವಿನಂತಿ ವಿಳಾಸ ಖಾಲಿಯಾಗಿರಬಾರದು',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'ಮುಂಭಾಗ ಲಾಗ್',
         customSetting: 'ವೈಯಕ್ತೀಕರಣ',
         customClean: 'ಸಂರಚನೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ',
+        cacheClean: 'ಸಂಗ್ರಹವನ್ನು ಖಾಲಿ ಮಾಡಿ',
         logout: 'ಸೈನ್ .ಟ್ ಮಾಡಿ',
         errorTip: {
             cleanSuccess: 'ಯಶಸ್ವಿಯಾಗಿ ಖಾಲಿ'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'ತ್ವರಿತ ಪ್ರವೇಶ',
         systemSwitch: 'ಸಿಸ್ಟಮ್ ಕಾನ್ಫಿಗರೇಶನ್',
-        isMock: 'ಅಣಕಿಸಬೇಕೆ',
+        isMock: 'ಅಣಕು',
         isHotKey: 'ಶಾರ್ಟ್ಕಟ್ ಕೀ ಆಗಿರಲಿ',
         isBreadCrumb: 'ಬ್ರೆಡ್ ಕ್ರಂಬ್ಸ್ ಆಗಿರಲಿ',
         isCache: 'ಸಂಗ್ರಹಿಸಬೇಕೆ',

@@ -2,9 +2,9 @@ export default {
     locale: 'cs',
     country: 'CZ',
     loginForm: {
-        byAccountBtn: 'Přihlašovací heslo k účtu',
+        byAccountBtn: 'Přihlášení pomocí hesla účtu',
         byPhoneBtn: 'Přihlášení pomocí mobilního čísla',
-        accountPlaceholder: 'zadejte prosím účet',
+        accountPlaceholder: 'Zadejte prosím uživatelské jméno',
         passwordPlaceholder: 'Prosím vložte heslo',
         autoLogin: 'automatické přihlášení',
         forgetBtn: 'zapomenout heslo',
@@ -51,7 +51,7 @@ export default {
             '1-1-0': 'Stránka komponent',
             '1-1-1': 'stránka URL',
             '1-1-2': 'Žádná stránka oprávnění',
-            '1-1-3': 'Stránka 404'
+            '1-1-3': '404 stránka'
         },
         errorTip: {
             notfoundTip: 'Komponenta pod touto cestou nebyla nalezena',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Snadno použitelný střední a back-endový front-end vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Užitečný prostřední a back-endový front-endový vývojový rámec založený na Vue a Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa požadavku nesmí být prázdná',
@@ -142,7 +142,8 @@ export default {
     personalCenter: {
         frontendLog: 'Protokol frontendu',
         customSetting: 'Personalizace',
-        customClean: 'Jasná konfigurace',
+        customClean: 'Vymazat konfiguraci',
+        cacheClean: 'Vymazání vyrovnávací paměti',
         logout: 'odhlásit se',
         errorTip: {
             cleanSuccess: 'Vyprázdněte úspěšně'
@@ -151,7 +152,7 @@ export default {
     errorPage: {
         errorTip: {
             notfoundTip: 'Litujeme, stránka, kterou jste navštívili, neexistuje',
-            notrightTip: 'Litujeme, nemáte přístup k této stránce',
+            notrightTip: 'Omlouváme se, nemáte oprávnění k přístupu na tuto stránku',
             noserviceTip: 'Litujeme, došlo k problému se serverem, zkuste to prosím později'
         },
         btnText: 'Zavřít stránku'
@@ -199,7 +200,7 @@ export default {
     },
     comTable: {
         columns: {
-            title: 'Nastavení sloupců',
+            title: 'Nastavení sloupce',
             all: 'vybrat vše',
             reset: 'Resetovat',
             fixedLeft: 'Opraveno vlevo',
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Rychlý vstup',
         systemSwitch: 'Konfigurace systému',
-        isMock: 'Ať už vysmívat',
+        isMock: 'Ať už Mock',
         isHotKey: 'Zda klávesová zkratka',
         isBreadCrumb: 'Ať už strouhanka',
         isCache: 'Zda do mezipaměti',

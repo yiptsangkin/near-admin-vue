@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Autentificare parolă cont',
         byPhoneBtn: 'Conectare număr mobil',
-        accountPlaceholder: 'vă rugăm să introduceți contul',
+        accountPlaceholder: 'Vă rugăm să introduceți numele de utilizator',
         passwordPlaceholder: 'Te rog introdu parola',
-        autoLogin: 'Logare automata',
+        autoLogin: 'autentificare automată',
         forgetBtn: 'parola uitata',
         loginBtn: 'Autentificare',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Un cadru de dezvoltare front-end mediu și back-end ușor de utilizat bazat pe Vue și Ant Design'
+        sysIntro: 'Un cadru util de dezvoltare front-end middle și back-end bazat pe Vue și Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa cererii nu poate fi goală',
@@ -126,7 +126,7 @@ export default {
         closeAll: 'Inchide toate filele',
         closeCur: 'Inchide fereastra curenta',
         closeOther: 'Închideți alte file',
-        closeRight: 'Închideți eticheta din dreapta',
+        closeRight: 'Închideți eticheta dreaptă',
         singlePage: 'Pagină independentă',
         refreshPage: 'Reîmprospătare pagină',
         affixPage: 'Fixați pagina',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Jurnal frontend',
         customSetting: 'Personalizare',
         customClean: 'Ștergeți configurația',
+        cacheClean: 'Goliți memoria cache',
         logout: 'Sign out',
         errorTip: {
             cleanSuccess: 'Goliți cu succes'
@@ -152,7 +153,7 @@ export default {
         errorTip: {
             notfoundTip: 'Ne pare rău, pagina pe care ați vizitat-o ​​nu există',
             notrightTip: 'Ne pare rău, nu aveți permisiunea de a accesa această pagină',
-            noserviceTip: 'Ne pare rău, a apărut o problemă cu serverul, vă rugăm să încercați din nou mai târziu'
+            noserviceTip: 'Ne pare rău, a apărut o problemă cu serverul, încercați din nou mai târziu'
         },
         btnText: 'Închideți pagina'
     },
@@ -225,7 +226,7 @@ export default {
         isHotKey: 'Dacă este o tastă de comandă rapidă',
         isBreadCrumb: 'Fie pesmet',
         isCache: 'Dacă să cache',
-        isI18n: 'Fie să internaționalizeze'
+        isI18n: 'Fie pentru a internaționaliza'
     },
     pagingInfo: {
         total: 'In total',

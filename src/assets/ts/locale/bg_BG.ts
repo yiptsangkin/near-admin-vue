@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Вход за парола за акаунт',
         byPhoneBtn: 'Вход за мобилен номер',
-        accountPlaceholder: 'моля въведете акаунт',
+        accountPlaceholder: 'Моля, въведете потребителско име',
         passwordPlaceholder: 'Моля, въведете парола',
-        autoLogin: 'автоматично вписване',
+        autoLogin: 'автоматично влизане',
         forgetBtn: 'Забравена парола',
         loginBtn: 'Влизам',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Лесна за използване средна и задна част от предния край, разработена на базата на Vue и Ant Design'
+        sysIntro: 'Полезна рамка за разработка отпред и отзад, базирана на Vue и Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Адресът на заявката не може да бъде празен',
@@ -132,7 +132,7 @@ export default {
         affixPage: 'Закачване на страница',
         cancelAffixPage: 'Освободете',
         errorTip: {
-            homePageCloseError: 'Не се разрешава затваряне на началната страница',
+            homePageCloseError: 'Началната страница няма право да се затваря',
             affixPageCloseError: 'Не е разрешено затварянето на фиксирана страница',
             homePageAffixError: 'Началната страница не може да бъде откачена'
         },
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Дневник на предния панел',
         customSetting: 'Персонализация',
         customClean: 'Ясна конфигурация',
+        cacheClean: 'Изпразнете кеша',
         logout: 'отписване',
         errorTip: {
             cleanSuccess: 'Изпразнете успешно'
@@ -200,7 +201,7 @@ export default {
     comTable: {
         columns: {
             title: 'Настройки на колона',
-            all: 'маркирай всичко',
+            all: 'Избери всичко',
             reset: 'Нулиране',
             fixedLeft: 'Фиксиран вляво',
             fixedRight: 'Фиксирано вдясно',

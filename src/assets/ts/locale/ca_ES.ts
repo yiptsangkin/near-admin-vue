@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Inici de sessió de la contrasenya del compte',
         byPhoneBtn: 'Accés al número de mòbil',
-        accountPlaceholder: 'si us plau, introduïu el compte',
+        accountPlaceholder: 'Introduïu el nom d&#39;usuari',
         passwordPlaceholder: 'Introduïu la contrasenya',
         autoLogin: 'inici de sessió automàtic',
         forgetBtn: 'oblidar la contrasenya',
@@ -49,12 +49,12 @@ export default {
             '1-0-8': 'tecla d&#39;accés directe',
             '1-1': 'Funció de pàgina',
             '1-1-0': 'Pàgina de components',
-            '1-1-1': 'pàgina d&#39;URL',
+            '1-1-1': 'pàgina URL',
             '1-1-2': 'Pàgina sense permís',
             '1-1-3': '404 pàgines'
         },
         errorTip: {
-            notfoundTip: 'No s&#39;ha trobat el component sota aquest camí',
+            notfoundTip: 'El component sota aquest camí no s&#39;ha trobat',
             emptyErr: 'Camí del component no configurat'
         }
     },
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Un marc de desenvolupament de front-end mitjà i posterior fàcil d’utilitzar basat en Vue i Ant Design'
+        sysIntro: 'Un marc de desenvolupament de front-end mitjà i back-end útil basat en Vue i Ant Design'
     },
     requestInfo: {
         withoutUrl: 'L&#39;adreça de sol·licitud no pot estar buida',
@@ -137,12 +137,13 @@ export default {
             homePageAffixError: 'La pàgina d&#39;inici no es pot deixar de fixar'
         },
         checkSave: 'Voleu tancar la pàgina?(Assegureu-vos que s&#39;ha desat el contingut de la pàgina marcada en vermell)',
-        cancelClose: 'S&#39;ha cancel·lat l&#39;operació de tancament'
+        cancelClose: 'L&#39;operació de tancament s&#39;ha cancel·lat'
     },
     personalCenter: {
         frontendLog: 'Registre de frontend',
         customSetting: 'Personalització',
         customClean: 'Esborra la configuració',
+        cacheClean: 'Buideu la memòria cau',
         logout: 'tanca sessió',
         errorTip: {
             cleanSuccess: 'Buida correctament'
@@ -176,7 +177,7 @@ export default {
             range: 'termini',
             halfDay: 'Mig dia',
             oneDay: 'en un dia',
-            weekDay: 'en una setmana',
+            weekDay: 'dins d’una setmana',
             monthDay: 'En un mes'
         },
         type: {
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Entrada ràpida',
         systemSwitch: 'Configuració del sistema',
-        isMock: 'Ja sigui per burlar-se',
+        isMock: 'Ja sigui Mock',
         isHotKey: 'Si la tecla de drecera',
         isBreadCrumb: 'Ja sigui molla de pa',
         isCache: 'Si es desa a la memòria cau',

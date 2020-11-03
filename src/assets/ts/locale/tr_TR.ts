@@ -4,9 +4,9 @@ export default {
     loginForm: {
         byAccountBtn: 'Hesap şifresi girişi',
         byPhoneBtn: 'Cep telefonu numarası girişi',
-        accountPlaceholder: 'lütfen hesabı girin',
+        accountPlaceholder: 'Lütfen Kullanıcı Adı girin',
         passwordPlaceholder: 'Lütfen şifre giriniz',
-        autoLogin: 'otomatik giriş',
+        autoLogin: 'otomatik oturum açma',
         forgetBtn: 'şifreyi unut',
         loginBtn: 'oturum aç',
         byAccountTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Vue ve Ant Design&#39;a dayalı, kullanımı kolay bir orta ve arka uç ön uç geliştirme çerçevesi'
+        sysIntro: 'Vue ve Ant Design&#39;a dayalı kullanışlı bir orta ve arka uç ön uç geliştirme çerçevesi'
     },
     requestInfo: {
         withoutUrl: 'İstek adresi boş olamaz',
@@ -132,7 +132,7 @@ export default {
         affixPage: 'Sayfayı sabitle',
         cancelAffixPage: 'Sabitlemeyi kaldır',
         errorTip: {
-            homePageCloseError: 'Ana sayfanın kapanmasına izin verilmiyor',
+            homePageCloseError: 'Ana sayfa kapatmaya izin vermiyor',
             affixPageCloseError: 'Sabit sayfanın kapanmasına izin verilmez',
             homePageAffixError: 'Ana sayfanın sabitlemesi kaldırılamaz'
         },
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Ön uç günlüğü',
         customSetting: 'Kişiselleştirme',
         customClean: 'Yapılandırmayı temizle',
+        cacheClean: 'önbelleği boşalt',
         logout: 'oturumu Kapat',
         errorTip: {
             cleanSuccess: 'Başarıyla boşaltıldı'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Hızlı giriş',
         systemSwitch: 'Sistem yapılandırması',
-        isMock: 'Alay Edilip Edilmeyeceği',
+        isMock: 'Mock olsun',
         isHotKey: 'Kısayol tuşu olsun',
         isBreadCrumb: 'Ekmek kırıntısı olsun',
         isCache: 'Önbelleğe alınıp alınmayacağı',

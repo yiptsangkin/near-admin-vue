@@ -84,6 +84,7 @@ module.exports = {
         frontendLog: '前端日志',
         customSetting: '个性化设置',
         customClean: '清空配置',
+        cacheClean: '清空缓存',
         logout: '退出登录',
         errorTip: {
             cleanSuccess: '清空成功'

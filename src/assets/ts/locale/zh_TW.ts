@@ -143,6 +143,7 @@ export default {
         frontendLog: '前端日誌',
         customSetting: '個性化設置',
         customClean: '清空配置',
+        cacheClean: '清空緩存',
         logout: '退出登錄',
         errorTip: {
             cleanSuccess: '清空成功'

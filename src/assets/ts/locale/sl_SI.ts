@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Prijava z geslom za račun',
         byPhoneBtn: 'Prijava mobilne številke',
-        accountPlaceholder: 'prosim vnesite račun',
+        accountPlaceholder: 'Vnesite uporabniško ime',
         passwordPlaceholder: 'Vnesite geslo',
         autoLogin: 'samodejna prijava',
         forgetBtn: 'pozabi geslo',
@@ -16,7 +16,7 @@ export default {
             emptyErr: 'geslo ne sme biti prazno'
         },
         byValidTip: {
-            emptyErr: 'Izpolniti je treba preveritveno kodo'
+            emptyErr: 'Izpolniti je treba verifikacijsko kodo'
         },
         sendMsg: {
             repeatErr: 'Ne pošiljajte večkrat',
@@ -50,7 +50,7 @@ export default {
             '1-1': 'Funkcija strani',
             '1-1-0': 'Stran s komponentami',
             '1-1-1': 'url stran',
-            '1-1-2': 'Ni strani z dovoljenjem',
+            '1-1-2': 'Ni strani z dovoljenji',
             '1-1-3': '404 strani'
         },
         errorTip: {
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Enostaven za uporabo srednji in zaledni front-end razvojni okvir, ki temelji na Vue in Ant Design'
+        sysIntro: 'Uporabni srednji in zaledni front-end razvojni okvir, ki temelji na Vue in Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Polje za naslov zahteve ne sme biti prazno',
@@ -133,7 +133,7 @@ export default {
         cancelAffixPage: 'Odpnite',
         errorTip: {
             homePageCloseError: 'Domače strani ni dovoljeno zapreti',
-            affixPageCloseError: 'Fiksne strani ni dovoljeno zapreti',
+            affixPageCloseError: 'Stalne strani ni dovoljeno zapreti',
             homePageAffixError: 'Domače strani ni mogoče odpeti'
         },
         checkSave: 'Ali želite zapreti stran?(Prepričajte se, da je bila vsebina strani, označene z rdečo, shranjena)',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Dnevnik čelne strani',
         customSetting: 'Personalizacija',
         customClean: 'Jasna konfiguracija',
+        cacheClean: 'Izpraznite predpomnilnik',
         logout: 'Odjava',
         errorTip: {
             cleanSuccess: 'Uspešno izpraznite'
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'Hiter vstop',
         systemSwitch: 'Konfiguracija sistema',
-        isMock: 'Ali naj se posmehujem',
+        isMock: 'Ali Mock',
         isHotKey: 'Ali je bližnjična tipka',
         isBreadCrumb: 'Ali krušne drobtine',
         isCache: 'Ali naj se shrani v predpomnilnik',

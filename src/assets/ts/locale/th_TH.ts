@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'เข้าสู่ระบบรหัสผ่านบัญชี',
         byPhoneBtn: 'เข้าสู่ระบบหมายเลขโทรศัพท์มือถือ',
-        accountPlaceholder: 'กรุณาใส่บัญชี',
+        accountPlaceholder: 'กรุณากรอกชื่อผู้ใช้',
         passwordPlaceholder: 'กรุณาใส่รหัสผ่าน',
         autoLogin: 'เข้าสู่ระบบอัตโนมัติ',
         forgetBtn: 'ลืมรหัสผ่าน',
@@ -47,7 +47,7 @@ export default {
             '1-0-6': 'ชุดเครื่องมือ',
             '1-0-7': 'การควบคุมการเข้าถึง',
             '1-0-8': 'คีย์ลัด',
-            '1-1': 'ฟังก์ชันเพจ',
+            '1-1': 'ฟังก์ชั่นหน้า',
             '1-1-0': 'หน้าส่วนประกอบ',
             '1-1-1': 'หน้า url',
             '1-1-2': 'หน้าไม่อนุญาต',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'เฟรมเวิร์กการพัฒนาส่วนหน้าระดับกลางและส่วนหลังที่ใช้งานง่ายตาม Vue และ Ant Design'
+        sysIntro: 'กรอบการพัฒนา front-end ระดับกลางและส่วนหลังที่มีประโยชน์ตาม Vue และ Ant Design'
     },
     requestInfo: {
         withoutUrl: 'ที่อยู่ขอต้องไม่ว่างเปล่า',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'บันทึกส่วนหน้า',
         customSetting: 'ส่วนบุคคล',
         customClean: 'ล้างการกำหนดค่า',
+        cacheClean: 'ล้างแคช',
         logout: 'ออกจากระบบ',
         errorTip: {
             cleanSuccess: 'ว่างเปล่าสำเร็จ'
@@ -152,7 +153,7 @@ export default {
         errorTip: {
             notfoundTip: 'ขออภัยไม่มีหน้าที่คุณเยี่ยมชม',
             notrightTip: 'ขออภัยคุณไม่ได้รับอนุญาตให้เข้าถึงหน้านี้',
-            noserviceTip: 'ขออภัยเกิดปัญหากับเซิร์ฟเวอร์โปรดลองอีกครั้งในภายหลัง'
+            noserviceTip: 'ขออภัยมีปัญหากับเซิร์ฟเวอร์โปรดลองอีกครั้งในภายหลัง'
         },
         btnText: 'ปิดหน้า'
     },
@@ -175,7 +176,7 @@ export default {
             plh: 'โปรดเลือกช่วงเวลา',
             range: 'เวลาที่ จำกัด',
             halfDay: 'ครึ่งวัน',
-            oneDay: 'ในหนึ่งวัน',
+            oneDay: 'ในวันเดียว',
             weekDay: 'ภายในหนึ่งสัปดาห์',
             monthDay: 'ภายในหนึ่งเดือน'
         },
@@ -221,7 +222,7 @@ export default {
     setting: {
         customEntry: 'รายการด่วน',
         systemSwitch: 'การกำหนดค่าระบบ',
-        isMock: 'ไม่ว่าจะล้อเลียน',
+        isMock: 'ไม่ว่าจะเป็น Mock',
         isHotKey: 'ไม่ว่าจะเป็นคีย์ลัด',
         isBreadCrumb: 'ไม่ว่าจะเป็นเกล็ดขนมปัง',
         isCache: 'ไม่ว่าจะแคช',

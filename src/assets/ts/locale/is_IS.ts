@@ -4,10 +4,10 @@ export default {
     loginForm: {
         byAccountBtn: 'Innskráning lykilorðs aðgangs',
         byPhoneBtn: 'Innskráning fyrir farsímanúmer',
-        accountPlaceholder: 'vinsamlegast sláðu inn reikning',
+        accountPlaceholder: 'Vinsamlegast sláðu inn notandanafn',
         passwordPlaceholder: 'Vinsamlegast sláðu inn lykilorð',
-        autoLogin: 'sjálfvirkt innskráning',
-        forgetBtn: 'gleymdu lykilorðinu',
+        autoLogin: 'sjálfvirk innskráning',
+        forgetBtn: 'gleyma lykilorði',
         loginBtn: 'skrá inn',
         byAccountTip: {
             emptyErr: 'Reikningur getur ekki verið tómur'
@@ -29,11 +29,11 @@ export default {
         loginSuccess: 'innskráning tókst'
     },
     menuObj: {
-        basicFeature: 'Grunnfærni',
+        basicFeature: 'Grunngeta',
         cpUse: 'Notkun íhluta',
         childMenu: {
             0: 'Grunnrammi',
-            1: 'Grunnfærni',
+            1: 'Grunngeta',
             '0-0': 'Vue',
             '0-1': 'Maurhönnun',
             '0-2': 'Nálægt Admin Vue',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Auðvelt í notkun miðju- og afturendan ramma fyrir framhlið þróunar byggt á Vue og Ant Design'
+        sysIntro: 'Gagnlegur miðju- og afturendan framþróunarrammi byggður á Vue og Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Heimilisfang beiðni má ekki vera autt',
@@ -88,12 +88,12 @@ export default {
         he: 'Hebreska',
         hi: 'Hindí',
         hr: 'Króatíska',
-        hu: 'ungverska, Ungverji, ungverskt',
+        hu: 'ungverska, Ungverji, ungverskur',
         hy: 'Armenskur',
         id: 'Indónesískt',
         is: 'Íslenska',
         it: 'Ítalska ',
-        ja: 'Japanska',
+        ja: 'Japönsk',
         kn: 'Kannada',
         ko: 'Kóreska',
         'ku-iq': 'Mið-Kúrda',
@@ -120,14 +120,14 @@ export default {
         uk: 'Úkraínska',
         vi: 'Víetnamska',
         'zh-cn': 'Einfölduð kínverska',
-        'zh-tw': 'hefðbundinn kínverskur'
+        'zh-tw': 'hefðbundinn kínverska'
     },
     tagObj: {
         closeAll: 'Lokaðu öllum flipum',
         closeCur: 'Lokaðu núverandi flipa',
         closeOther: 'Lokaðu öðrum flipum',
         closeRight: 'Lokaðu hægri merkimiðanum',
-        singlePage: 'Sjálfstæð blaðsíða',
+        singlePage: 'Óháð blaðsíða',
         refreshPage: 'endurnýja síðu',
         affixPage: 'Pinna síðu',
         cancelAffixPage: 'Losa um',
@@ -143,6 +143,7 @@ export default {
         frontendLog: 'Frontend log',
         customSetting: 'Sérsniðin',
         customClean: 'Hreinsa stillingar',
+        cacheClean: 'Tæmdu skyndiminnið',
         logout: 'Útskrá',
         errorTip: {
             cleanSuccess: 'Tæmt með góðum árangri'
@@ -150,7 +151,7 @@ export default {
     },
     errorPage: {
         errorTip: {
-            notfoundTip: 'Því miður er síðan sem þú heimsóttir ekki til',
+            notfoundTip: 'Því miður er síðan sem þú heimsótt ekki til',
             notrightTip: 'Þú hefur því miður ekki heimild til að komast á þessa síðu',
             noserviceTip: 'Því miður kom upp vandamál við netþjóninn. Reyndu aftur síðar'
         },
@@ -193,7 +194,7 @@ export default {
         request: 'Óska eftir gögnum',
         error: {
             cancel: 'Tóm aðgerð hætt við',
-            confirm: 'Viltu hreinsa þig inn?(Ef loginn er tæmdur er ekki hægt að ná því)'
+            confirm: 'Viltu hreinsa þig inn?(Ef timburinn er tæmdur er ekki hægt að ná því)'
         },
         success: 'Log hefur verið tæmt'
     },
@@ -221,11 +222,11 @@ export default {
     setting: {
         customEntry: 'Fljótleg innganga',
         systemSwitch: 'Kerfisstillingar',
-        isMock: 'Hvort til Mock',
+        isMock: 'Hvort Mock',
         isHotKey: 'Hvort sem flýtilykill',
         isBreadCrumb: 'Hvort sem brauðmolar',
         isCache: 'Hvort sem á að skyndiminni',
-        isI18n: 'Hvort eigi að alþjóðavæða'
+        isI18n: 'Hvort á að alþjóðavæða'
     },
     pagingInfo: {
         total: 'Samtals',
