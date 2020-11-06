@@ -13,15 +13,17 @@
                     <template v-if="item.child && item.child.length > 0">
                         <a-sub-menu :key="`menu-${index}`" :nav-index="`menu-${index}`">
                             <span slot="title" :title="$t(item.name)">
-                                <template v-if="(typeof item.icon) === 'string'">
-                                    <a-icon :type="item.icon" v-if="item.icon"/>
-                                </template>
-                                <template v-else>
-                                    <template v-if="item.icon.type === 'aicon'">
-                                        <a-icon :type="item.icon.value" v-if="item.icon.value"/>
+                                <template v-if="item.icon">
+                                    <template v-if="(typeof item.icon) === 'string'">
+                                        <a-icon :type="item.icon" v-if="item.icon"/>
                                     </template>
                                     <template v-else>
-                                        <span :class="`anticon iconfont ${item.icon.value}`" v-if="item.icon.value"></span>
+                                        <template v-if="item.icon.type === 'aicon'">
+                                            <a-icon :type="item.icon.value" v-if="item.icon.value"/>
+                                        </template>
+                                        <template v-else>
+                                            <span :class="`anticon iconfont ${item.icon.value}`" v-if="item.icon.value"></span>
+                                        </template>
                                     </template>
                                 </template>
                                 <span>{{ $t(item.name) }}</span>
@@ -33,15 +35,17 @@
                                     <template v-if="sitem.child && sitem.child.length > 0">
                                         <a-sub-menu :key="`sub-${index}-${sindex}`" :nav-index="`sub-${index}-${sindex}`">
                                             <span slot="title" :title="$t(sitem.name)">
-                                                <template v-if="(typeof sitem.icon) === 'string'">
-                                                    <a-icon :type="sitem.icon" v-if="sitem.icon"/>
-                                                </template>
-                                                <template v-else>
-                                                    <template v-if="sitem.icon.type === 'aicon'">
-                                                        <a-icon :type="sitem.icon.value" v-if="sitem.icon.value"/>
+                                                <template v-if="sitem.icon">
+                                                    <template v-if="(typeof sitem.icon) === 'string'">
+                                                        <a-icon :type="sitem.icon" v-if="sitem.icon"/>
                                                     </template>
                                                     <template v-else>
-                                                        <span :class="`anticon iconfont ${sitem.icon.value}`" v-if="sitem.icon.value"></span>
+                                                        <template v-if="sitem.icon.type === 'aicon'">
+                                                            <a-icon :type="sitem.icon.value" v-if="sitem.icon.value"/>
+                                                        </template>
+                                                        <template v-else>
+                                                            <span :class="`anticon iconfont ${sitem.icon.value}`" v-if="sitem.icon.value"></span>
+                                                        </template>
                                                     </template>
                                                 </template>
                                                 <span>{{ $t(sitem.name) }}</span>
@@ -76,17 +80,19 @@
                                     <template v-if="sitem.child && sitem.child.length > 0">
                                         <a-sub-menu :key="`sub-${index}-${sindex}`" :nav-index="`sub-${index}-${sindex}`">
                                             <span slot="title" :title="$t(sitem.name)">
-                                                <template v-if="(typeof sitem.icon) === 'string'">
-                                                    <a-icon :type="sitem.icon" v-if="sitem.icon"/>
-                                                </template>
-                                                <template v-else>
-                                                    <template v-if="sitem.icon.type === 'aicon'">
-                                                        <a-icon :type="sitem.icon.value" v-if="sitem.icon.value"/>
+                                                 <template v-if="sitem.icon">
+                                                    <template v-if="(typeof sitem.icon) === 'string'">
+                                                        <a-icon :type="sitem.icon" v-if="sitem.icon"/>
                                                     </template>
                                                     <template v-else>
-                                                        <span :class="`anticon iconfont ${sitem.icon.value}`" v-if="sitem.icon.value"></span>
+                                                        <template v-if="sitem.icon.type === 'aicon'">
+                                                            <a-icon :type="sitem.icon.value" v-if="sitem.icon.value"/>
+                                                        </template>
+                                                        <template v-else>
+                                                            <span :class="`anticon iconfont ${sitem.icon.value}`" v-if="sitem.icon.value"></span>
+                                                        </template>
                                                     </template>
-                                                </template>
+                                                 </template>
                                                 <span>{{ $t(sitem.name) }}</span>
                                             </span>
                                             <template v-for="(ssitem, ssindex) in sitem.child || []">
