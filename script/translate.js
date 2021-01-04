@@ -114,7 +114,8 @@ try {
             const finalResult = await translate(srcResult, {
                 tld: 'cn',
                 from: baseFile.locale || 'auto',
-                to: localeCode || 'zh-cn'
+                to: localeCode || 'zh-cn',
+                client: 'gtx'
             })
             let translatedList = []
             finalResult.data.forEach(function (item) {

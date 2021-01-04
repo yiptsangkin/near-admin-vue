@@ -2,14 +2,16 @@
     <div>
         <a-select
                 @focus="showDropdownMenu"
-                @change="closeDropdownMenu"
                 ref="multi-select"
                 :open="multiSelectVisible"
                 v-bind="$attrs"
                 v-model="selectedValue"
                 :style="computedParentWidth()"
-                :option-label-prop="$attrs.optionLabelProp ? $attrs.optionLabelProp : 'value'"
+                :option-label-prop="$attrs.optionLabelProp ? $attrs.optionLabelProp : 'label'"
                 :dropdown-match-select-width="$attrs.dropdownMatchSelectWidth || false"
+                @select="emitSelect"
+                @search="emitSearch"
+                @blur="hideDropdownMenu"
         >
             <div ref="multi-dropdown" class="multi-dropdown" slot="dropdownRender" slot-scope="options">
                 <a-row class="multi-title" type="flex">
@@ -29,7 +31,7 @@
                     @change="changePage"
                 ></a-pagination>
             </div>
-            <a-select-option v-for="(item, index) in targetOption" :key="index" :value="item[valueProps]">
+            <a-select-option v-for="(item, index) in targetOption" :key="index" :value="item[valueProps]" :title="item[titleProps]" :label="item[labelProps]">
                 <a-row class="multi-option" type="flex">
                     <a-col class="multi-option-index" style="width: 50px" v-if="showSortIndex">
                         {{ pagingInfo ? ((pagingInfo.currentPage - 1) * pagingInfo.pageSize + index + 1) : index + 1 }}</a-col>
@@ -71,11 +73,19 @@
                 type: Object as () => PagingInfo
             },
             value: {
-                default: null
+                default: undefined
             },
             valueProps: {
                 type: String,
                 default: 'value'
+            },
+            titleProps: {
+                type: String,
+                default: 'value'
+            },
+            labelProps: {
+                type: String,
+                default: 'label'
             },
             showSortIndex: {
                 type: Boolean,
@@ -92,10 +102,6 @@
                 render: (h: any, ctx: any) => ctx.props.vnodes,
             }
         },
-        created () {
-            const self = this as any
-            self.init()
-        },
         model: {
             prop: 'value',
             event: 'change'
@@ -103,7 +109,25 @@
         data () {
             return {
                 dict,
-                multiSelectVisible: false
+                multiSelectVisible: false,
+                cacheSearchText: undefined,
+                pageSwitch: 0
+            }
+        },
+        watch: {
+            optionsList: {
+                handler () {
+                    const self = this as any
+                    self.placementWatcher()
+                },
+                immediate: true
+            },
+            multiSelectVisible: {
+                handler () {
+                    const self = this as any
+                    self.placementWatcher()
+                },
+                immediate: true
             }
         },
         computed: {
@@ -131,12 +155,6 @@
             }
         },
         methods: {
-            init () {
-                const self = this as any
-                // blur control
-                self.initGlobalClickClose()
-                // page control
-            },
             computedWidth (width?: number | string ) {
                 if (width) {
                     return `width: ${width}${typeof width === 'number' ? 'px;' : ''}`
@@ -145,10 +163,10 @@
                 }
             },
             computedParentWidth (isFullWidth?: boolean) {
-                const self = this
+                const self = this as any
                 if ((self.optionColumns.length && self.$attrs.dropdownMatchSelectWidth) || isFullWidth) {
                     let totalWidth = 0
-                    self.optionColumns.forEach((item) => {
+                    self.optionColumns.forEach((item: any) => {
                         if (item.width) {
                             if (typeof item.width === 'number') {
                                 totalWidth += item.width
@@ -168,30 +186,16 @@
             },
             changePage (current: any) {
                 const self = this
+                self.pageSwitch++
                 self.$emit('changepage', current)
             },
             showDropdownMenu () {
                 const self = this as any
                 self.multiSelectVisible = true
             },
-            closeDropdownMenu () {
-                const self = this as any
-                self.multiSelectVisible = false
-                self.$refs['multi-select'].blur()
-            },
-            initGlobalClickClose () {
-                const self = this as any
-                document.addEventListener('click', (e) => {
-                    const multiSelect = self.$refs['multi-select'] ? self.$refs['multi-select'].$el : null
-                    const multiDropdown = self.$refs['multi-dropdown']
-                    if (!(multiSelect && multiSelect.contains(e.target)) && !(multiDropdown && multiDropdown.contains(e.target))) {
-                        self.multiSelectVisible = false
-                    }
-                })
-            },
             initPageControl (optionList: any[]) {
                 // if is remote, not need to control page, else control static data.
-                const self = this
+                const self = this as any
                 if (self.remote) {
                     return optionList
                 } else {
@@ -206,6 +210,46 @@
                         return optionList
                     }
                 }
+            },
+            emitSelect (val: any) {
+                const self = this as any
+                if (self.pageSwitch === 1) {
+                    self.multiSelectVisible = true
+                } else {
+                    self.multiSelectVisible = false
+                    self.pageSwitch = 0
+                }
+                self.$emit('select', val)
+            },
+            emitSearch (val: any) {
+                const self = this as any
+                self.cacheSearchText = val
+                self.$emit('search', val)
+            },
+            placementWatcher () {
+                const self = this as any
+                self.$nextTick(() => {
+                    const multiSelect = self.$refs['multi-select'] ? self.$refs['multi-select'].$el : null
+                    const multiDropdown = self.$refs['multi-dropdown']
+                    if (multiDropdown) {
+                        self.$nextTick(() => {
+                            const selectWidth = parseInt(getComputedStyle(multiSelect).width, 10)
+                            const dropdownWidth = parseInt(getComputedStyle(multiDropdown).width, 10)
+                            const dropdownLeft = parseInt(getComputedStyle(multiDropdown.parentElement).left, 10)
+                            const windowInnerWidth = window.innerWidth
+                            if (dropdownLeft + dropdownWidth > windowInnerWidth) {
+                                // select overflow
+                                setTimeout(() => {
+                                    multiDropdown.parentElement.style.left = `${dropdownLeft - dropdownWidth + selectWidth}px`
+                                }, 0)
+                            }
+                        })
+                    }
+                })
+            },
+            hideDropdownMenu () {
+                const self = this as any
+                self.multiSelectVisible = false
             }
         }
     })
