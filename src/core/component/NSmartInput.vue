@@ -6,6 +6,7 @@
             @blur="blurFormatValue"
             @pressEnter="nextFocus"
     >
+        <slot name="prefix" slot="prefix"></slot>
     </a-input>
 </template>
 
