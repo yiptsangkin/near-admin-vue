@@ -149,6 +149,7 @@
                         class: 'n-com-table-large'
                     }
                 },
+                originColumsProps: [],
                 sizePicked: ['small'],
                 columnsPicked: [],
                 selectedColumns: [],
@@ -176,6 +177,7 @@
                         pk: utils.randomCharacter(6)
                     })
                 })
+                self.originColumsProps = [...newList]
                 self.selectedColumns = newList
                 self.tbColumns = newList
                 self.indeterminate = false
@@ -218,14 +220,37 @@
                         if (ftype !== 'cancel') {
                             if (item.fixed === ftype) {
                                 self.$set(self.tbColumns[index], 'fixed', '')
+                                self.$set(self.originColumsProps[index], 'fixed', '')
                             } else {
                                 self.$set(self.tbColumns[index], 'fixed', ftype)
+                                self.$set(self.originColumsProps[index], 'fixed', ftype)
                             }
                         } else {
                             self.$set(self.tbColumns[index], 'fixed', '')
+                            self.$set(self.originColumsProps[index], 'fixed', '')
                         }
                     }
                 })
+                self.resortColums()
+            },
+            resortColums() {
+                const self = this as any
+                const hmap = { left: [], notFixed: [], right: [] } as any
+                for (let i = 0; i < self.originColumsProps.length; i++) {
+                    const currentItem = self.originColumsProps[i]
+                    if ('fixed' in currentItem) {
+                        if (currentItem.fixed === 'left') {
+                            hmap['left'].push(currentItem)
+                        } else if (currentItem.fixed === 'right') {
+                            hmap['right'].push(currentItem)
+                        } else {
+                            hmap['notFixed'].push(currentItem)
+                        }
+                    } else {
+                        hmap['notFixed'].push(currentItem)
+                    }
+                }
+                self.tbColumns = [].concat(hmap['left'], hmap['notFixed'], hmap['right'])
             },
             rowClass (record: any, index: any) {
                 const classList = []
