@@ -236,21 +236,20 @@
             resortColums() {
                 const self = this as any
                 const hmap = { left: [], notFixed: [], right: [] } as any
-                for (let i = 0; i < self.originColumsProps.length; i++) {
-                    const currentItem = self.originColumsProps[i]
+                for (const currentItem of self.originColumsProps) {
                     if ('fixed' in currentItem) {
                         if (currentItem.fixed === 'left') {
-                            hmap['left'].push(currentItem)
+                            hmap.left.push(currentItem)
                         } else if (currentItem.fixed === 'right') {
-                            hmap['right'].push(currentItem)
+                            hmap.right.push(currentItem)
                         } else {
-                            hmap['notFixed'].push(currentItem)
+                            hmap.notFixed.push(currentItem)
                         }
                     } else {
-                        hmap['notFixed'].push(currentItem)
+                        hmap.notFixed.push(currentItem)
                     }
                 }
-                self.tbColumns = [].concat(hmap['left'], hmap['notFixed'], hmap['right'])
+                self.tbColumns = [].concat(hmap.left, hmap.notFixed, hmap.right)
             },
             rowClass (record: any, index: any) {
                 const classList = []

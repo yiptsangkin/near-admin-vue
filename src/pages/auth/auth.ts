@@ -45,6 +45,7 @@ Vue.component(Dropdown.name, Dropdown)
 Vue.component(Menu.name, Menu)
 Vue.component(Menu.Item.name, Menu.Item)
 Vue.component(Form.name, Form)
+Vue.component(Input.Password.name, Input.Password)
 
 // import antd directive
 Vue.prototype.$message = message

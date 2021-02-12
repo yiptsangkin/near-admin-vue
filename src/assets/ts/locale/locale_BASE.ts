@@ -4,8 +4,8 @@ module.exports = {
     loginForm: {
         byAccountBtn: '账户密码登录',
         byPhoneBtn: '手机号登录',
-        accountPlaceholder: '请输入账号',
-        passwordPlaceholder: '请输入密码',
+        accountPlaceholder: '请输入账号（默认账号ADMIN）',
+        passwordPlaceholder: '请输入密码（默认密码123456）',
         autoLogin: '自动登录',
         forgetBtn: '忘记密码',
         loginBtn: '登录',

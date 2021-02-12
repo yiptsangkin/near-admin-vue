@@ -1,15 +1,15 @@
 <template>
     <div class="n-login-by-account">
-        <a-form-model :model="formModel" ref="formModel" :rules="formModel.rules">
+        <a-form-model class="n-form" :model="formModel" ref="formModel" :rules="formModel.rules">
             <a-form-model-item prop="account.value">
-                <a-input v-model="formModel.account.value" autocomplete="autocomplete" name="name" :placeholder="$t(formModel.account.placeholder)">
+                <n-smart-input @pressEnter="toLogin" v-model="formModel.account.value" autocomplete="autocomplete" name="name" :placeholder="$t(formModel.account.placeholder)" :input-formatter="fUserCode">
                     <a-icon slot="prefix" :type="formModel.account.prefixIconType" class="primary-color"/>
-                </a-input>
+                </n-smart-input>
             </a-form-model-item>
             <a-form-model-item prop="password.value">
-                <a-input autocomplete="current-password" v-model="formModel.password.value" :placeholder="$t(formModel.password.placeholder)" :type="formModel.password.inputType">
+                <a-input-password @pressEnter="toLogin" autocomplete="current-password" v-model="formModel.password.value" :placeholder="$t(formModel.password.placeholder)" :type="formModel.password.inputType" visibility-toggle>
                     <a-icon slot="prefix" :type="formModel.password.prefixIconType" class="primary-color"/>
-                </a-input>
+                </a-input-password>
             </a-form-model-item>
         </a-form-model>
     </div>
@@ -18,8 +18,10 @@
 <script lang="ts">
     import Vue from 'vue'
     import dict from '@custom/dict'
+    import utils from '@corets/utils'
     import {CommonInput} from '@corets/formtype'
     import {mapGetters} from 'vuex'
+    import NSmartInput from '@corecp/NSmartInput.vue'
 
     interface FormModel {
         account: CommonInput,
@@ -56,10 +58,14 @@
             }
             return data
         },
+
+        components: {
+            NSmartInput
+        },
         computed: {
-          ...mapGetters([
-              'locale'
-          ])
+            ...mapGetters([
+                'locale'
+            ])
         },
         watch: {
             locale () {
@@ -92,7 +98,12 @@
                         }
                     ]
                 }
-            }
+            },
+            toLogin () {
+                const self = this as any
+                self.$emit('login')
+            },
+            fUserCode: utils.fUserCode
         }
     })
 </script>

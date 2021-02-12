@@ -923,6 +923,9 @@ const fPhone = (val: string) => {
 const fEmail = (val: string) => {
     return val.match(/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/g)?.join('')
 }
+const fUserCode = (val: string) => {
+    return val.toUpperCase().match(/[A-Z_0-9\.@]/g)?.join('')
+}
 
 const formatMoment = (obj: any, format = 'YYYY-MM-DD') => {
     const temObj = Object.assign({}, obj)
@@ -964,6 +967,7 @@ export default {
     fNumber,
     fPhone,
     fEmail,
+    fUserCode,
     refToCamel,
     getGapDate,
     getParents,

@@ -4,8 +4,8 @@ export default {
     loginForm: {
         byAccountBtn: '賬戶密碼登錄',
         byPhoneBtn: '手機號登錄',
-        accountPlaceholder: '請輸入賬號',
-        passwordPlaceholder: '請輸入密碼',
+        accountPlaceholder: '請輸入賬號（默認賬號ADMIN）',
+        passwordPlaceholder: '請輸入密碼（默認密碼123456）',
         autoLogin: '自動登錄',
         forgetBtn: '忘記密碼',
         loginBtn: '登錄',

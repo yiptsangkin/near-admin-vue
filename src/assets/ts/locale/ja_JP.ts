@@ -4,8 +4,8 @@ export default {
     loginForm: {
         byAccountBtn: 'アカウントパスワードログイン',
         byPhoneBtn: '携帯電話番号ログイン',
-        accountPlaceholder: 'アカウントを入力してください',
-        passwordPlaceholder: 'パスワードを入力してください',
+        accountPlaceholder: 'アカウントを入力してください（デフォルトのアカウントADMIN）',
+        passwordPlaceholder: 'パスワードを入力してください（デフォルトのパスワード123456）',
         autoLogin: '自動ログイン',
         forgetBtn: 'パスワードをお忘れですか',
         loginBtn: 'ログインする',

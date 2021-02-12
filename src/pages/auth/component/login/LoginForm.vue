@@ -3,7 +3,7 @@
         <div class="n-login-tabs-wrp">
             <a-tabs v-model="activatedKey" :default-active-key="defaultKey" class="n-login-tabs">
                 <a-tab-pane :title="$t(item.name)" :tab="$t(item.name)" v-for="(item, index) in tabPaneList" :key="item.key">
-                    <component :ref="`form-detail-${index+1}`" :is="item.component"></component>
+                    <component @login="toLogin" :ref="`form-detail-${index+1}`" :is="item.component"></component>
                 </a-tab-pane>
             </a-tabs>
             <login-bottom @login="toLogin"></login-bottom>

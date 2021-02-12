@@ -30,7 +30,7 @@ export const checkLoginByAccount = (req: any): ComRespone => {
     )
     console.log(`%c${JSON.stringify(req, null, 4)}`, 'color: #dbaf05')
     const body = JSON.parse(req.body || '{}')
-    if (body.username === 'admin' && body.password === '123456') {
+    if (body.username === 'ADMIN' && body.password === '123456') {
         return {
             code: 0,
             data: {},
