@@ -4,6 +4,7 @@
             v-bind="$attrs"
             @input="formatValue"
             @blur="blurFormatValue"
+            @pressEnter="nextFocus"
     >
     </a-input>
 </template>
@@ -61,6 +62,9 @@
             blurFormatValue (e: any) {
                 const self = this as any
                 self.selectedValue = self.blurFormatter(e.currentTarget.value)
+            },
+            nextFocus (val: any) {
+                utils.nextFocus()
             }
         }
     })

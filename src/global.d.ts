@@ -15,3 +15,7 @@ declare module 'nprogress'
 
 declare  module 'js-md5'
 
+declare module 'vue-draggable-resizable'
+
+declare module 'vue-introjs'
+

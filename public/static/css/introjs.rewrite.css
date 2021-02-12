@@ -1,0 +1,8 @@
+.container-public-query{
+    max-width: 1000px!important;
+}
+
+.introjs-tooltip{
+    max-width: 600px;
+    min-width: 400px;
+}

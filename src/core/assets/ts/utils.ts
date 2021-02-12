@@ -1,11 +1,16 @@
 import Logline from 'logline'
-import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams} from '@corets/type';
+import {HadKey, ReqType, LoglineParams, CpInfo, NavList, GetLoglineParams, UserInfo} from '@corets/type';
 import axios, {AxiosRequestConfig} from 'axios'
 import dict from '@custom/dict'
 import Vue from 'vue'
 import md5 from 'js-md5'
-import comConfig from '@custom/config';
+import qs from 'qs'
+import comConfig from '@custom/config'
 const coreLocale = require('@corets/locale_BASE')
+import {
+    message
+} from 'ant-design-vue'
+import moment from 'moment'
 
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
@@ -30,9 +35,9 @@ axios.interceptors.response.use(
             // try to get cache by params cache id
             let params
             if (response.config.method === 'get' || response.config.method === 'delete') {
-                params = response.config.params ? JSON.stringify(response.config.params) : ''
+                params = response.config.params ? (typeof response.config.params === 'string' ? response.config.params : JSON.stringify(response.config.params)) : ''
             } else {
-                params = response.config.data ? JSON.stringify(response.config.data) : ''
+                params = response.config.data ? (typeof response.config.data === 'string' ? response.config.data : JSON.stringify(response.config.data)) : ''
             }
             const url = response.config.url
             const cacheId = `near_cache_${md5([params, url].join('@cache@'))}`
@@ -45,6 +50,20 @@ axios.interceptors.response.use(
         return Promise.reject(error)
     }
 )
+
+const showErrorMessage = (errors: any) => {
+    const errorsType = typeof errors
+    if (errorsType === 'string') {
+        message.error(errors)
+    } else {
+        const errorsList = []
+        for (const key of Object.keys(errors)) {
+            const item = errors[key]
+            errorsList.push(`${key}：${item}`)
+        }
+        message.error(errorsList.join('；'))
+    }
+}
 
 const setReqCache = (cacheId: string, data: any) => {
     let dataString
@@ -202,16 +221,20 @@ const sendReq = async (params: ReqType) => {
     params.timeout = params.timeout || 20000
     params.method = params.method || 'POST'
     params.responseType = params.responseType || 'json'
+    // if formdata, transfer data
+    if (params.headers['Content-Type'] === 'application/x-www-form-urlencoded') {
+        params.data = qs.stringify(params.data)
+    }
     const rCfg: AxiosRequestConfig = {
         headers: params.headers,
         responseType: params.responseType,
         timeout: params.timeout
     }
-    const data = params.data ? JSON.stringify(params.data) : ''
-    const url = params.url
-    const cacheId = `near_cache_${md5([data, url].join('@cache@'))}`
     let result: any
     if (params.headers['local-cache']) {
+        const data = params.data ? JSON.stringify(params.data) : ''
+        const url = params.url
+        const cacheId = `near_cache_${md5([data, url].join('@cache@'))}`
         result = getReqCache(cacheId, url)
     }
     if (params.method === 'POST') {
@@ -241,6 +264,7 @@ const sendReq = async (params: ReqType) => {
                 if (params.fail) {
                     params.fail(resData)
                 } else {
+                    showErrorMessage(resData.errors)
                     console.log('request fail')
                 }
             }
@@ -289,6 +313,7 @@ const sendReq = async (params: ReqType) => {
                 if (params.fail) {
                     params.fail(resData)
                 } else {
+                    showErrorMessage(resData.errors)
                     console.log('request fail')
                 }
             }
@@ -336,6 +361,7 @@ const sendReq = async (params: ReqType) => {
                 if (params.fail) {
                     params.fail(resData)
                 } else {
+                    showErrorMessage(resData.errors)
                     console.log('request fail')
                 }
             }
@@ -384,6 +410,7 @@ const sendReq = async (params: ReqType) => {
                 if (params.fail) {
                     params.fail(resData)
                 } else {
+                    showErrorMessage(resData.errors)
                     console.log('request fail')
                 }
             }
@@ -794,6 +821,119 @@ const getMenuRootCp = (menuList: NavList[], isObj?: boolean, replaceField = {tit
     return rightPathList
 }
 
+const getUrlParam = (name: string) => {
+    const reg = new RegExp(`(^|&)${name}=([^&]*)(&|$)`, 'i')
+    const r = window.location.search.substr(1).match(reg)
+    if (r !== null) {
+        return unescape(r[2])
+    }
+    return null
+}
+
+const getCurrentToken = () => {
+    let userInfo: any = localStorage.getItem('userInfo') || '{}'
+    userInfo = JSON.parse(userInfo)
+    const urlToken = getUrlParam('token') || getUrlParam('ssoTokenId')
+    return userInfo.oauthToken || urlToken
+}
+
+const buildFilterConds = (obj: any) => {
+    const filterConds = []
+    for (const key of Object.keys(obj)) {
+        if (obj[key]) {
+            filterConds.push({
+                fieldName: key,
+                fieldStringValue: obj[key]
+            })
+        }
+    }
+    return filterConds
+}
+
+const nextFocus = (dom = document.activeElement) => {
+    const parentNode = getParents(dom, '.n-form')
+    const inputSelectList = parentNode.querySelectorAll('.ant-input, .ant-select')
+    for (let i = 0; i < inputSelectList.length; i++) {
+        const item: any = inputSelectList[i]
+        const nextItem: any = inputSelectList[i + 1]
+        if (item === dom) {
+            if (nextItem) {
+                if (/disabled/g.test(nextItem.getAttribute('class'))) {
+                    nextFocus(nextItem)
+                } else {
+                    nextItem.focus()
+                    nextItem.click()
+                    break
+                }
+            } else {
+                item.blur()
+            }
+        }
+    }
+}
+
+const getParents = (el: any, parentSelect: string): any => {
+    const parentNode = el?.parentNode || document
+    const childNode = parentNode.querySelector(parentSelect)
+    if (childNode) {
+        return childNode
+    } else {
+        return getParents(parentNode, parentSelect)
+    }
+}
+
+const refToCamel = (val: string) => {
+    const refList = val.split('-')
+    refList.forEach((item, index) => {
+        if (index !== 0) {
+            const firstCase = item[0]?.toUpperCase()
+            refList[index] = `${firstCase}${item.substr(1, item.length - 1)}`
+        }
+    })
+    return refList.join('')
+}
+
+const getGapDate = ({date = new Date(), gap = 7, gapType = 'days', format = 'YYYY-MM-DD HH:mm:ss', isString = false, isStart = true}: {date?: Date, gap?: any, gapType?: any, format?: string, isString?: boolean, isStart?: boolean} = {}) => {
+    let startMomentDate: any
+    let endMomentDate: any
+    if (isStart) {
+        startMomentDate = moment(date).startOf('day')
+        endMomentDate = moment(date).endOf('day')
+    } else {
+        startMomentDate = moment(date)
+        endMomentDate = moment(date)
+    }
+    if (isString) {
+        return [startMomentDate.subtract(gap as any, gapType).format(format), endMomentDate.format(format)]
+    } else {
+        return [startMomentDate.subtract(gap as any, gapType), endMomentDate]
+    }
+}
+
+const fUpperCase = (val: string) => {
+    return val.toUpperCase()
+}
+const fNumber = (val: string) => {
+    return val.match(/[0-9]/g)?.join('').substr(0, 11)
+}
+
+const fPhone = (val: string) => {
+    return val.match(/^1[3-9]\d{9}$/g)?.join('')
+}
+const fEmail = (val: string) => {
+    return val.match(/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/g)?.join('')
+}
+
+const formatMoment = (obj: any, format = 'YYYY-MM-DD') => {
+    const temObj = Object.assign({}, obj)
+    for (const key of Object.keys(temObj)) {
+        if (temObj[key]?._isAMomentObject) {
+            temObj[key] = temObj[key].format(format)
+        }
+    }
+    return temObj
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -815,5 +955,17 @@ export default {
     exportExcel,
     getObjAttrByStr,
     getLocaleIfI18nOff,
-    getMenuRootCp
+    getMenuRootCp,
+    getUrlParam,
+    getCurrentToken,
+    buildFilterConds,
+    nextFocus,
+    fUpperCase,
+    fNumber,
+    fPhone,
+    fEmail,
+    refToCamel,
+    getGapDate,
+    getParents,
+    formatMoment
 }

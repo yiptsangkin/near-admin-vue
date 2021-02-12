@@ -217,8 +217,8 @@
                     self.multiSelectVisible = true
                 } else {
                     self.multiSelectVisible = false
-                    self.pageSwitch = 0
                 }
+                self.pageSwitch = 0
                 self.$emit('select', val)
             },
             emitSearch (val: any) {
@@ -249,7 +249,10 @@
             },
             hideDropdownMenu () {
                 const self = this as any
-                self.multiSelectVisible = false
+                if (self.pageSwitch !== 1) {
+                    self.multiSelectVisible = false
+                    self.pageSwitch = 0
+                }
             }
         }
     })

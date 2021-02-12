@@ -1,8 +1,8 @@
 <template>
-    <div class="n-search-panel-wrp">
+    <div :class="['n-search-panel-wrp', customClass]">
         <div class="n-search-panel-btn-wrp">
-            <a-button size="small" class="n-search-panel-btn" @click="shrink">
-                {{ isShrink ? $t(dict.localeObj.searchPanel.btn.unshrink) : $t(dict.localeObj.searchPanel.btn.shrink) }}
+            <a-button size="small" class="n-search-panel-btn" @click="shrink" v-if="moreNum">
+                {{ isShrink ? `${$t(dict.localeObj.searchPanel.btn.unshrink)}${moreNum ? '···' : ''} ` : $t(dict.localeObj.searchPanel.btn.shrink) }}
             </a-button>
             <a-button size="small" class="n-search-panel-btn" @click="reset">
                 {{ $t(dict.localeObj.searchPanel.btn.reset) }}
@@ -10,6 +10,7 @@
             <a-button type="primary" size="small" class="n-search-panel-btn" @click="search">
                 {{ $t(dict.localeObj.searchPanel.btn.search) }}
             </a-button>
+            <slot name="n-search-btn"></slot>
         </div>
         <slot name="n-search-ctx" :shrink-switch="isShrink"></slot>
     </div>
@@ -23,9 +24,19 @@
     export default Vue.extend({
         name: 'NSearchPanel',
         mixins: [CoreBase, Base],
+        props: {
+            customClass: {
+                type: String,
+                default: ''
+            },
+            moreNum: {
+                type: Number,
+                default: 0
+            }
+        },
         data () {
             return {
-                isShrink: false
+                isShrink: true
             }
         },
         methods: {

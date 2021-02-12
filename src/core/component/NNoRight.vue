@@ -24,7 +24,7 @@
         mixins: [CoreBase],
         data() {
             return {
-                iconUrl: '/static/images/manage/403.png',
+                iconUrl: '/iport-new/static/images/manage/403.png',
                 dict
             }
         },

@@ -1,6 +1,6 @@
 // for translate i18n file to target lang by machine
-const translate = require('google-translate-open-api').default
-const {parseMultiple, getAllCode} = require('google-translate-open-api')
+const translate = require('@vitalets/google-translate-api')
+const {getAllCode} = require('google-translate-open-api')
 const prompts = require('prompts')
 const fs = require('fs')
 const chalk = require('chalk')
@@ -44,6 +44,16 @@ const withBaseFile = function (str) {
     return ['locale_BASE.ts', 'locale_MAP.ts'].indexOf(str) === -1
 }
 
+const transferLangLocale = function (locale) {
+    if (locale === 'zh-cn') {
+        return 'zh-CN'
+    } else if (locale === 'zh-tw') {
+        return 'zh-TW'
+    } else {
+        return locale
+    }
+}
+
 const curPath = process.cwd().replace('/script',  '')
 const corePath = `${curPath}/src/core/assets/ts`
 const basePath = `${curPath}/src/assets/ts/locale`
@@ -65,6 +75,7 @@ try {
     let choices = []
     if (isFile) {
         localeConfig = require(optPath)
+        console.log(localeConfig, ableLang)
         for (let key in localeConfig) {
             if (ableLang.indexOf(localeConfig[key].locale) !== -1) {
                 choices.push({
@@ -111,16 +122,15 @@ try {
                 obj: targetFile
             })
             // translate all string
-            const finalResult = await translate(srcResult, {
-                tld: 'cn',
-                from: baseFile.locale || 'auto',
-                to: localeCode || 'zh-cn',
-                client: 'gtx'
+            const finalResult = await translate(srcResult.join('\n'), {
+                from: transferLangLocale(baseFile.locale || 'auto'),
+                to: transferLangLocale(localeCode || 'zh-cn'),
+                tld: 'cn'
             })
-            let translatedList = []
-            finalResult.data.forEach(function (item) {
-                translatedList = translatedList.concat(parseMultiple(item))
-            })
+            const translatedList = finalResult.text.split('\n')
+            for (let i = 0; i < translatedList.length; i++) {
+                translatedList[i] = translatedList[i].replace(/'/g, '\\\'')
+            }
             targetFile.locale = localeCode
             targetFile.country = item.split('_')[1]
             let resultText = JSON.stringify(targetFile,null, 4)

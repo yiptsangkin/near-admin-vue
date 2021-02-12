@@ -1,11 +1,11 @@
 <template>
     <div class="logline-src">
         <!-- search pannel -->
-        <n-search-panel @search="getLog" @reset="resetFiled">
+        <n-search-panel @search="getLog" @reset="resetFiled" :more-num="1">
             <div class="com-search-ctx" slot="n-search-ctx" slot-scope="{shrinkSwitch}">
                 <a-form-model class="n-form" ref="n-form" :colon="false" layout="inline" :model="loglineForm.model">
                     <a-row>
-                        <a-col :xs="24" :sm="12" :md="6" :lg="6" v-if="!shrinkSwitch">
+                        <a-col :xs="24" :sm="12" :md="8" :lg="6" v-if="!shrinkSwitch">
                             <a-form-model-item :label="$t(dict.localeObj.logline.time.range)" prop="dateRange">
                                 <a-select allow-clear v-model="loglineForm.model.dateRange" :placeholder="$t(dict.localeObj.logline.time.plh)">
                                     <a-select-option :key="index" v-for="(item, index) in loglineForm.external.dateRangeList" :value="item.value">
@@ -21,13 +21,15 @@
         <!-- result table -->
         <div class="n-logline-table">
             <n-common-table :table-obj="loglineTable" @btnevent="btnEvent">
-                <a-table slot-scope="{sizeClass, selectColumns, rowClass}"
+                <a-table slot-scope="{sizeClass, selectColumns, rowClass, resizeTitle}"
                          :class="sizeClass" row-key="idx" slot="n-com-table"
                          :columns="selectColumns"
+                         bordered
                          :data-source="loglineTable.data"
                          :scroll="{ x: '100%' }"
                          :pagination="loglineTable.pagingInfo"
                          :row-class-name="rowClass"
+                         :components="resizeTitle"
                          @change="pageChange"
                 >
                     <a-tooltip placement="topLeft" slot="title-1">
@@ -137,7 +139,7 @@
                             dataIndex: 'number',
                             key: 'number',
                             ellipsis: true,
-                            width: 60,
+                            width: 65,
                             slots: {
                                 title: 'title-1'
                             },

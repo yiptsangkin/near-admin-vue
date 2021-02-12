@@ -8,6 +8,7 @@ import plugin from '@corets/plugin'
 import AsyncComputed from 'vue-async-computed'
 import VueCodemirror from 'vue-codemirror'
 import directives from '@custom/directives'
+import VueIntro from 'vue-introjs'
 
 // antd component
 import {
@@ -109,6 +110,9 @@ Vue.use(plugin)
 
 // codemirror
 Vue.use(VueCodemirror)
+
+// introjs
+Vue.use(VueIntro)
 
 new Vue({
     render: (h) => h(App),
