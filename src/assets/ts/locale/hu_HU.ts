@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Hasznos középső és háttérbeli front-end fejlesztési keretrendszer, amely a Vue and Ant Design alapján készült'
+        sysIntro: 'Hasznos közép- és háttér-front-end fejlesztési keretrendszer, amely a Vue and Ant Design-on alapul'
     },
     requestInfo: {
         withoutUrl: 'A kérelem címe nem lehet üres',
@@ -136,7 +136,7 @@ export default {
             affixPageCloseError: 'A javított oldal nem zárható be',
             homePageAffixError: 'A kezdőlap nem rögzíthető'
         },
-        checkSave: 'Bezárja az oldalt? (Kérjük, ellenőrizze, hogy a pirossal jelölt oldal tartalma mentve van-e)',
+        checkSave: 'Bezárja az oldalt? (Kérjük, ellenőrizze, hogy a pirossal jelölt oldal tartalma mentve van-e',
         cancelClose: 'A bezárás megszakítva'
     },
     personalCenter: {
@@ -199,6 +199,9 @@ export default {
         success: 'A napló kiürült'
     },
     comTable: {
+        delete: {
+            title: 'Konfiguráció törlése'
+        },
         columns: {
             title: 'Oszlopbeállítások',
             all: 'mindet kiválaszt',

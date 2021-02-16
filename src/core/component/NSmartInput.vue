@@ -33,6 +33,10 @@
             },
             value: {
                 default: undefined
+            },
+            isNextFocus: {
+              type: Boolean,
+              default: true
             }
         },
         model: {
@@ -65,7 +69,11 @@
                 self.selectedValue = self.blurFormatter(e.currentTarget.value)
             },
             nextFocus (val: any) {
-                utils.nextFocus()
+                const self = this as any
+                if (self.isNextFocus) {
+                    utils.nextFocus()
+                }
+
             }
         }
     })

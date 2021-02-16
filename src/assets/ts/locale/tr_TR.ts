@@ -199,6 +199,9 @@ export default {
         success: 'Günlük boşaltıldı'
     },
     comTable: {
+        delete: {
+            title: 'Yapılandırmayı temizle'
+        },
         columns: {
             title: 'Sütun ayarları',
             all: 'hepsini seç',

@@ -199,6 +199,9 @@ export default {
         success: 'ಲಾಗ್ ಖಾಲಿಯಾಗಿದೆ'
     },
     comTable: {
+        delete: {
+            title: 'ಸಂರಚನೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ'
+        },
         columns: {
             title: 'ಕಾಲಮ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು',
             all: 'ಎಲ್ಲವನ್ನು ಆರಿಸು',

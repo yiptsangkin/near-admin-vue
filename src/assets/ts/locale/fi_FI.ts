@@ -42,7 +42,7 @@ export default {
             '1-0-1': 'Käyttöliittymän loki',
             '1-0-2': 'Paikallinen pilkka',
             '1-0-3': 'globalisaatio',
-            '1-0-4': 'Data-sanakirja',
+            '1-0-4': 'Data Dictionary',
             '1-0-5': 'EventBus',
             '1-0-6': 'Työkalusarja',
             '1-0-7': 'Kulunvalvonta',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Hyödyllinen Vue- ja Ant-suunnitteluun perustuva keski- ja takapaneelin käyttöliittymäkehitys'
+        sysIntro: 'Hyödyllinen Vue- ja Ant-muotoiluun perustuva keski- ja takapään kehityskehys'
     },
     requestInfo: {
         withoutUrl: 'Pyyntöosoite ei voi olla tyhjä',
@@ -199,6 +199,9 @@ export default {
         success: 'Loki on tyhjennetty'
     },
     comTable: {
+        delete: {
+            title: 'Tyhjennä kokoonpano'
+        },
         columns: {
             title: 'Sarakeasetukset',
             all: 'Valitse kaikki',

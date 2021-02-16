@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Zaloguj się za pomocą hasła do konta',
         byPhoneBtn: 'Logowanie na numer telefonu komórkowego',
-        accountPlaceholder: 'Wprowadź konto (domyślne konto ADMINISTRATORA)',
+        accountPlaceholder: 'Proszę podać konto (domyślne konto ADMINISTRATORA)',
         passwordPlaceholder: 'Wprowadź hasło (domyślne hasło 123456)',
         autoLogin: 'automatyczne logowanie',
         forgetBtn: 'Zapomniałeś hasła',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Przydatny framework do programowania front-end dla środkowego i końcowego zaplecza oparty na Vue i Ant Design'
+        sysIntro: 'Przydatna platforma programistyczna front-end dla środkowego i zaplecza oparta na Vue i Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adres żądania nie może być pusty',
@@ -199,6 +199,9 @@ export default {
         success: 'Dziennik został opróżniony'
     },
     comTable: {
+        delete: {
+            title: 'Przejrzysta konfiguracja'
+        },
         columns: {
             title: 'Ustawienia kolumn',
             all: 'Zaznacz wszystko',

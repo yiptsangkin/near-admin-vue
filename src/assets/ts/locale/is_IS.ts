@@ -199,6 +199,9 @@ export default {
         success: 'Log hefur verið tæmt'
     },
     comTable: {
+        delete: {
+            title: 'Hreinsa stillingar'
+        },
         columns: {
             title: 'Dálkastillingar',
             all: 'velja allt',

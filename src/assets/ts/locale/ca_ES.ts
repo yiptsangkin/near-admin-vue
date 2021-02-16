@@ -199,6 +199,9 @@ export default {
         success: 'El registre s’ha buidat'
     },
     comTable: {
+        delete: {
+            title: 'Esborra la configuració'
+        },
         columns: {
             title: 'Configuració de la columna',
             all: 'seleccionar tot',

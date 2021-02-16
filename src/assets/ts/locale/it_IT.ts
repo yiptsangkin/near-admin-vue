@@ -55,7 +55,7 @@ export default {
         },
         errorTip: {
             notfoundTip: 'Il componente in questo percorso non è stato trovato',
-            emptyErr: 'Percorso del componente non configurato'
+            emptyErr: 'Percorso componente non configurato'
         }
     },
     coreMenuObj: {
@@ -199,6 +199,9 @@ export default {
         success: 'Il registro è stato svuotato'
     },
     comTable: {
+        delete: {
+            title: 'Configurazione chiara'
+        },
         columns: {
             title: 'Impostazioni delle colonne',
             all: 'seleziona tutto',

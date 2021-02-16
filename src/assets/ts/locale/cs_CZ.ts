@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Užitečný prostřední a back-endový front-endový vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Užitečný prostřední a back-endový front-end vývojový rámec založený na Vue a Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa požadavku nesmí být prázdná',
@@ -199,8 +199,11 @@ export default {
         success: 'Protokol byl vyprázdněn'
     },
     comTable: {
+        delete: {
+            title: 'Jasná konfigurace'
+        },
         columns: {
-            title: 'Nastavení sloupců',
+            title: 'Nastavení sloupce',
             all: 'vybrat vše',
             reset: 'Resetovat',
             fixedLeft: 'Opraveno vlevo',

@@ -70,6 +70,13 @@
                     </a-menu>
                 </a-dropdown>
                 <a-divider type="vertical"/>
+                <a-tooltip placement="top">
+                    <template slot="title">
+                        <span>{{ $t(dict.localeObj.comTable.delete.title) }}</span>
+                    </template>
+                    <a-icon @click="removeConfig" type="delete" />
+                </a-tooltip>
+                <a-divider type="vertical"/>
             </template>
         </n-common-operation-bar>
         <div :class="['n-common-table', sizeMap[sizePicked[0]].class]"
@@ -93,6 +100,7 @@
     import dict from '@custom/dict'
     import NCommonOperationBar from '@corecp/NCommonOperationBar.vue'
     import VueDraggableResizable from 'vue-draggable-resizable'
+    import md5 from 'js-md5'
 
     Vue.component('vue-draggable-resizable', VueDraggableResizable)
 
@@ -131,6 +139,14 @@
                 },
                 immediate: true,
                 deep: true
+            },
+            tbColumns: {
+                handler (nv, ov) {
+                    const self = this as any
+                    self.cacheTbColumns()
+                },
+                immediate: true,
+                deep: true
             }
         },
         data () {
@@ -149,7 +165,7 @@
                         class: 'n-com-table-large'
                     }
                 },
-                originColumsProps: [],
+                originColumnsProps: [],
                 sizePicked: ['small'],
                 columnsPicked: [],
                 selectedColumns: [],
@@ -167,21 +183,56 @@
             self.init(true)
         },
         methods: {
-            init (isChecked: boolean) {
+            init (isChecked: boolean, isCheckAll?: boolean) {
                 const self = this as any
                 const newList: any[] = []
-                self.tableObj.columns.forEach((item: any) => {
-                    newList.push({
-                        ...item,
-                        isChecked,
-                        pk: utils.randomCharacter(6)
+                const cacheTbColumns: any = self.getCacheTbColumns() || []
+                if (cacheTbColumns.length > 0 && !isCheckAll) {
+                    const selectKeys: any[] = cacheTbColumns.map((item: any) => {
+                        return item.key
                     })
-                })
-                self.originColumsProps = [...newList]
-                self.selectedColumns = newList
-                self.tbColumns = newList
+                    self.tableObj.columns.forEach((item: any) => {
+                        const pk = utils.randomCharacter(6)
+                        const selectIdx = selectKeys.indexOf(item.key)
+                        if (selectIdx !== -1) {
+                            newList.push({
+                                ...item,
+                                isChecked: true,
+                                pk: cacheTbColumns[selectIdx].pk,
+                                fixed: cacheTbColumns[selectIdx].fixed,
+                                width: cacheTbColumns[selectIdx].width
+                            })
+                        } else {
+                            newList.push({
+                                ...item,
+                                isChecked: false,
+                                pk
+                            })
+                        }
+                    })
+                    self.tbColumns = newList.filter((item) => {
+                        return item.isChecked
+                    })
+                    if (cacheTbColumns.length === self.tableObj.columns.length) {
+                        self.checkAll = true
+                    } else {
+                        self.checkAll = false
+                    }
+                } else {
+                    self.tableObj.columns.forEach((item: any) => {
+                        const pk = utils.randomCharacter(6)
+                        newList.push({
+                            ...item,
+                            isChecked,
+                            pk
+                        })
+                    })
+                    self.tbColumns = [...newList]
+                    self.checkAll = isChecked
+                }
+                self.selectedColumns = [...newList]
+                self.originColumnsProps = [...newList]
                 self.indeterminate = false
-                self.checkAll = isChecked
                 self.getCommonTableHeight()
                 self.setResizable()
             },
@@ -205,11 +256,11 @@
             changeAllCheck (e: any) {
                 const self = this
                 if (!e.target.checked) {
-                    self.init(false)
+                    self.init(false, true)
                     self.indeterminate = false
                     self.tbColumns = []
                 } else {
-                    self.init(true)
+                    self.init(true, true)
                 }
             },
             fixedAction (idx: number, ftype: string) {
@@ -220,14 +271,17 @@
                         if (ftype !== 'cancel') {
                             if (item.fixed === ftype) {
                                 self.$set(self.tbColumns[index], 'fixed', '')
-                                self.$set(self.originColumsProps[index], 'fixed', '')
+                                self.$set(self.originColumnsProps[index], 'fixed', '')
+                                self.$set(self.selectedColumns[idx], 'fixed', '')
                             } else {
                                 self.$set(self.tbColumns[index], 'fixed', ftype)
-                                self.$set(self.originColumsProps[index], 'fixed', ftype)
+                                self.$set(self.originColumnsProps[index], 'fixed', ftype)
+                                self.$set(self.selectedColumns[idx], 'fixed', ftype)
                             }
                         } else {
                             self.$set(self.tbColumns[index], 'fixed', '')
-                            self.$set(self.originColumsProps[index], 'fixed', '')
+                            self.$set(self.originColumnsProps[index], 'fixed', '')
+                            self.$set(self.selectedColumns[idx], 'fixed', '')
                         }
                     }
                 })
@@ -236,7 +290,7 @@
             resortColums() {
                 const self = this as any
                 const hmap = { left: [], notFixed: [], right: [] } as any
-                for (const currentItem of self.originColumsProps) {
+                for (const currentItem of self.originColumnsProps) {
                     if ('fixed' in currentItem) {
                         if (currentItem.fixed === 'left') {
                             hmap.left.push(currentItem)
@@ -285,6 +339,29 @@
                 } else {
                     self.innerHeight = 240
                 }
+            },
+            cacheTbColumns () {
+                const self = this as any
+                window.localStorage.setItem(`near_table_cache_${md5(JSON.stringify(self.tableObj.columns))}`, JSON.stringify(self.tbColumns))
+            },
+            getCacheTbColumns () {
+                const self = this as any
+                const temColumns = window.localStorage.getItem(`near_table_cache_${md5(JSON.stringify(self.tableObj.columns))}`)
+                if (temColumns) {
+                    return JSON.parse(temColumns)
+                } else {
+                    return false
+                }
+            },
+            removeConfig () {
+                const self = this as any
+                localStorage.removeItem(`near_table_cache_${md5(JSON.stringify(self.tableObj.columns))}`)
+                self.$message.success(
+                        self.$t(dict.localeObj.personalCenter.errorTip.cleanSuccess) as string,
+                        2
+                ).then(() => {
+                    window.location.reload()
+                })
             },
             setResizable () {
                 const self = this as any

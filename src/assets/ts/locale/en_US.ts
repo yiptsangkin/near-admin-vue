@@ -126,7 +126,7 @@ export default {
         closeAll: 'Close all tabs',
         closeCur: 'Close current tab',
         closeOther: 'Close other tabs',
-        closeRight: 'Close right label',
+        closeRight: 'Close right tab',
         singlePage: 'Independent page',
         refreshPage: 'refresh page',
         affixPage: 'Pin page',
@@ -199,6 +199,9 @@ export default {
         success: 'Log has been emptied'
     },
     comTable: {
+        delete: {
+            title: 'Clear configuration'
+        },
         columns: {
             title: 'Column settings',
             all: 'select all',

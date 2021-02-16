@@ -39,7 +39,7 @@ export default {
             '0-2': 'Dekat Admin Vue',
             '1-0': 'Fungsi kerangka kerja',
             '1-0-0': 'Konfigurasi proyek',
-            '1-0-1': 'Log frontend',
+            '1-0-1': 'Log bagian depan',
             '1-0-2': 'Tiruan lokal',
             '1-0-3': 'globalisasi',
             '1-0-4': 'Kamus data',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Framework pengembangan front-end middle dan back-end yang berguna berdasarkan Vue dan Ant Design'
+        sysIntro: 'Framework pengembangan front-end middle dan back-end yang berguna berdasarkan Vue and Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Alamat permintaan tidak boleh kosong',
@@ -140,7 +140,7 @@ export default {
         cancelClose: 'Operasi penutupan dibatalkan'
     },
     personalCenter: {
-        frontendLog: 'Log frontend',
+        frontendLog: 'Log bagian depan',
         customSetting: 'Personalisasi',
         customClean: 'Hapus konfigurasi',
         cacheClean: 'Mengosongkan cache',
@@ -199,6 +199,9 @@ export default {
         success: 'Log telah dikosongkan'
     },
     comTable: {
+        delete: {
+            title: 'Hapus konfigurasi'
+        },
         columns: {
             title: 'Pengaturan kolom',
             all: 'Pilih Semua',

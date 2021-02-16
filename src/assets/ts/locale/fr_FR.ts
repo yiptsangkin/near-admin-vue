@@ -35,7 +35,7 @@ export default {
             0: 'Cadre de base',
             1: 'Capacité de base',
             '0-0': 'Vue',
-            '0-1': 'Conception de fourmis',
+            '0-1': 'Conception de fourmi',
             '0-2': 'Vue d\'administration à proximité',
             '1-0': 'Fonction de cadre',
             '1-0-0': 'Configuration du projet',
@@ -60,7 +60,7 @@ export default {
     },
     coreMenuObj: {
         defaultMenu: {
-            home: 'Accueil'
+            home: 'Maison'
         }
     },
     sysInfo: {
@@ -76,7 +76,7 @@ export default {
         ca: 'catalan',
         cs: 'tchèque',
         da: 'danois',
-        de: 'allemand',
+        de: 'Allemand',
         el: 'grec',
         'en-gb': 'Anglais',
         en: 'Anglais',
@@ -170,7 +170,7 @@ export default {
         detail: 'Détails du journal',
         btnList: {
             export: 'Exportation',
-            remove: 'Vide'
+            remove: 'Vider'
         },
         time: {
             plh: 'Veuillez sélectionner une période',
@@ -199,6 +199,9 @@ export default {
         success: 'Le journal a été vidé'
     },
     comTable: {
+        delete: {
+            title: 'Effacer la configuration'
+        },
         columns: {
             title: 'Paramètres de colonne',
             all: 'tout sélectionner',

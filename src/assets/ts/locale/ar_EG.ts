@@ -71,7 +71,7 @@ export default {
         networkErr: 'فشل طلب الشبكة ، يرجى المحاولة مرة أخرى في وقت لاحق'
     },
     localeMap: {
-        ar: 'عربى',
+        ar: 'عربي',
         bg: 'البلغارية',
         ca: 'الكاتالونية',
         cs: 'التشيكية',
@@ -161,7 +161,7 @@ export default {
         btn: {
             search: 'استعلام',
             shrink: 'ضع بعيدا',
-            reset: 'إعادة تعيين',
+            reset: 'إعادة ضبط',
             unshrink: 'تتكشف'
         }
     },
@@ -169,7 +169,7 @@ export default {
         list: 'قائمة السجل',
         detail: 'تفاصيل السجل',
         btnList: {
-            export: 'تصدير',
+            export: 'يصدر',
             remove: 'فارغة'
         },
         time: {
@@ -199,10 +199,13 @@ export default {
         success: 'تم إفراغ السجل'
     },
     comTable: {
+        delete: {
+            title: 'تكوين واضح'
+        },
         columns: {
             title: 'إعدادات العمود',
             all: 'اختر الكل',
-            reset: 'إعادة تعيين',
+            reset: 'إعادة ضبط',
             fixedLeft: 'ثابت اليسار',
             fixedRight: 'حق ثابت',
             cancelFixed: 'فك'
@@ -222,7 +225,7 @@ export default {
     setting: {
         customEntry: 'دخول سريع',
         systemSwitch: 'أعدادات النظام',
-        isMock: 'سواء وهمية',
+        isMock: 'سواء كانت وهمية',
         isHotKey: 'سواء مفتاح الاختصار',
         isBreadCrumb: 'سواء فتات الخبز',
         isCache: 'سواء لذاكرة التخزين المؤقت',

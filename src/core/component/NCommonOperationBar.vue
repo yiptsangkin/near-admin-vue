@@ -25,20 +25,17 @@
 
     export default Vue.extend({
         name: 'NCommonOperationBar',
-
         props: {
             operationObj: {
                 type: Object as () => OperationBar
             }
         },
-
         data () {
             return {
                 dict,
                 isShrink: false
             }
         },
-
         methods: {
             shrinkContent () {
                 const self = this as any

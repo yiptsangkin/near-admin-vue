@@ -88,6 +88,9 @@ export default {
         success: 'logline.success'
     },
     comTable: {
+        delete: {
+            title: 'comTable.delete.title'
+        },
         columns: {
             title: 'comTable.columns.title',
             all: 'comTable.columns.all',

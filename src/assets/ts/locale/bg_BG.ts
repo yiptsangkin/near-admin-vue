@@ -199,6 +199,9 @@ export default {
         success: 'Дневникът е изпразнен'
     },
     comTable: {
+        delete: {
+            title: 'Ясна конфигурация'
+        },
         columns: {
             title: 'Настройки на колона',
             all: 'Избери всичко',
@@ -222,7 +225,7 @@ export default {
     setting: {
         customEntry: 'Бързо влизане',
         systemSwitch: 'Системна конфигурация',
-        isMock: 'Дали подигравка',
+        isMock: 'Дали Mock',
         isHotKey: 'Дали клавиш за бърз достъп',
         isBreadCrumb: 'Дали трохи от хляб',
         isCache: 'Дали да кеширам',

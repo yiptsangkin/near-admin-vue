@@ -4,7 +4,7 @@ export default {
     loginForm: {
         byAccountBtn: 'Prijava lozinke računa',
         byPhoneBtn: 'Prijava broja mobitela',
-        accountPlaceholder: 'Unesite račun (zadani račun ADMINISTRATOR)',
+        accountPlaceholder: 'Molimo unesite račun (zadani račun ADMINISTRATOR)',
         passwordPlaceholder: 'Unesite lozinku (zadana lozinka 123456)',
         autoLogin: 'automatska prijava',
         forgetBtn: 'Zaboravili ste lozinku',
@@ -199,6 +199,9 @@ export default {
         success: 'Dnevnik je ispražnjen'
     },
     comTable: {
+        delete: {
+            title: 'Jasna konfiguracija'
+        },
         columns: {
             title: 'Postavke stupca',
             all: 'Odaberi sve',

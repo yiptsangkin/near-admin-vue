@@ -199,6 +199,9 @@ export default {
         success: 'ログが空になりました'
     },
     comTable: {
+        delete: {
+            title: '明確な構成'
+        },
         columns: {
             title: '列の設定',
             all: 'すべて選択',

@@ -199,6 +199,9 @@ export default {
         success: 'Protokoll wurde geleert'
     },
     comTable: {
+        delete: {
+            title: 'Konfiguration löschen'
+        },
         columns: {
             title: 'Spalteneinstellungen',
             all: 'Wählen Sie Alle',

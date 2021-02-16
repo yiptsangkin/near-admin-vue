@@ -170,7 +170,7 @@ export default {
         detail: 'लॉग विवरण',
         btnList: {
             export: 'निर्यात',
-            remove: 'खाली होना'
+            remove: 'खाली'
         },
         time: {
             plh: 'कृपया समय सीमा चुनें',
@@ -199,6 +199,9 @@ export default {
         success: 'लॉग खाली कर दिया गया है'
     },
     comTable: {
+        delete: {
+            title: 'स्पष्ट विन्यास'
+        },
         columns: {
             title: 'स्तंभ सेटिंग्स',
             all: 'सभी का चयन करे',
@@ -210,7 +213,7 @@ export default {
         size: {
             title: 'पंक्ति की ऊंचाई',
             small: 'संकीर्ण',
-            normal: 'में है',
+            normal: 'में',
             large: 'चौड़ाई'
         },
         fullscreen: 'पूर्ण स्क्रीन',

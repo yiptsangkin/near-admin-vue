@@ -78,8 +78,8 @@ export default {
         da: 'dinamarquês',
         de: 'alemão',
         el: 'grego',
-        'en-gb': 'Inglês',
-        en: 'Inglês',
+        'en-gb': 'inglês',
+        en: 'inglês',
         es: 'espanhol',
         et: 'estoniano',
         fa: 'persa',
@@ -130,7 +130,7 @@ export default {
         singlePage: 'Página independente',
         refreshPage: 'atualizar a página',
         affixPage: 'Fixar página',
-        cancelAffixPage: 'Liberar',
+        cancelAffixPage: 'Soltar',
         errorTip: {
             homePageCloseError: 'A página inicial não pode fechar',
             affixPageCloseError: 'A página fixa não pode fechar',
@@ -199,13 +199,16 @@ export default {
         success: 'O registro foi esvaziado'
     },
     comTable: {
+        delete: {
+            title: 'Limpar configuração'
+        },
         columns: {
             title: 'Configurações de coluna',
             all: 'selecionar tudo',
             reset: 'Redefinir',
             fixedLeft: 'Esquerda fixa',
             fixedRight: 'Direito fixo',
-            cancelFixed: 'Liberar'
+            cancelFixed: 'Soltar'
         },
         size: {
             title: 'Altura da linha',
@@ -217,7 +220,7 @@ export default {
         unFullscreen: 'Cancelar tela inteira'
     },
     normalBtn: {
-        detail: 'Visão'
+        detail: 'Visualizar'
     },
     setting: {
         customEntry: 'Entrada rápida',

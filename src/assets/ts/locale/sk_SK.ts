@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Užitočný prostredný a back-end front-endový vývojový rámec založený na Vue a Ant Design'
+        sysIntro: 'Užitočný prostredný a back-endový front-endový vývojový rámec založený na Vue a Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Adresa žiadosti nemôže byť prázdna',
@@ -199,6 +199,9 @@ export default {
         success: 'Denník bol vyprázdnený'
     },
     comTable: {
+        delete: {
+            title: 'Vymazať konfiguráciu'
+        },
         columns: {
             title: 'Nastavenia stĺpca',
             all: 'vybrať všetko',

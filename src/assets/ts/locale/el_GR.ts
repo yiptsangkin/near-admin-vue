@@ -199,6 +199,9 @@ export default {
         success: 'Το αρχείο καταγραφής αδειάστηκε'
     },
     comTable: {
+        delete: {
+            title: 'Εκκαθάριση διαμόρφωσης'
+        },
         columns: {
             title: 'Ρυθμίσεις στήλης',
             all: 'επιλογή όλων',

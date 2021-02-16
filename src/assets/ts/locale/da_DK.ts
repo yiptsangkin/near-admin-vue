@@ -199,6 +199,9 @@ export default {
         success: 'Loggen er tømt'
     },
     comTable: {
+        delete: {
+            title: 'Ryd konfiguration'
+        },
         columns: {
             title: 'Kolonneindstillinger',
             all: 'Vælg alle',

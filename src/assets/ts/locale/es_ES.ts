@@ -78,8 +78,8 @@ export default {
         da: 'danés',
         de: 'alemán',
         el: 'griego',
-        'en-gb': 'Inglés',
-        en: 'Inglés',
+        'en-gb': 'inglés',
+        en: 'inglés',
         es: 'Español',
         et: 'Estonio',
         fa: 'persa',
@@ -199,6 +199,9 @@ export default {
         success: 'El registro se ha vaciado'
     },
     comTable: {
+        delete: {
+            title: 'Configuración clara'
+        },
         columns: {
             title: 'Configuración de columna',
             all: 'seleccionar todo',
@@ -217,7 +220,7 @@ export default {
         unFullscreen: 'Cancelar pantalla completa'
     },
     normalBtn: {
-        detail: 'Ver'
+        detail: 'Vista'
     },
     setting: {
         customEntry: 'Entrada rapida',

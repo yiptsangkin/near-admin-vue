@@ -167,7 +167,7 @@ export default {
     },
     logline: {
         list: '로그 목록',
-        detail: '로그 세부 사항',
+        detail: '로그 세부 정보',
         btnList: {
             export: '수출',
             remove: '빈'
@@ -199,6 +199,9 @@ export default {
         success: '로그가 비었습니다.'
     },
     comTable: {
+        delete: {
+            title: '명확한 구성'
+        },
         columns: {
             title: '열 설정',
             all: '모두 선택',

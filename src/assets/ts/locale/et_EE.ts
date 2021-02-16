@@ -199,6 +199,9 @@ export default {
         success: 'Logi on tühjendatud'
     },
     comTable: {
+        delete: {
+            title: 'Kustuta konfiguratsioon'
+        },
         columns: {
             title: 'Veeruseaded',
             all: 'Vali kõik',

@@ -20,7 +20,7 @@ export default {
         },
         sendMsg: {
             repeatErr: 'Не отправлять повторно',
-            success: 'Успешно',
+            success: 'Успешный',
             codeTip: 'Ваш проверочный код'
         },
         phonePlaceholder: 'Пожалуйста, введите номер телефона',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Полезный фреймворк для разработки промежуточного и внутреннего интерфейса на основе Vue и Ant Design.'
+        sysIntro: 'Полезный фреймворк для разработки среднего и внутреннего интерфейса на основе Vue и Ant Design.'
     },
     requestInfo: {
         withoutUrl: 'Адрес запроса не может быть пустым',
@@ -101,7 +101,7 @@ export default {
         mk: 'македонский',
         'mn-mn': 'Монгольский',
         'ms-my': 'малайский',
-        nb: 'Норвежский',
+        nb: 'норвежский язык',
         'ne-np': 'Непальский',
         'nl-be': 'Фламандский',
         nl: 'нидерландский язык',
@@ -199,12 +199,15 @@ export default {
         success: 'Журнал был очищен'
     },
     comTable: {
+        delete: {
+            title: 'Очистить конфигурацию'
+        },
         columns: {
             title: 'Настройки столбца',
             all: 'выбрать все',
             reset: 'Перезагрузить',
             fixedLeft: 'Фиксированный слева',
-            fixedRight: 'Фиксированное право',
+            fixedRight: 'Фиксированная правая',
             cancelFixed: 'Открепить'
         },
         size: {
@@ -217,7 +220,7 @@ export default {
         unFullscreen: 'Отменить полноэкранный режим'
     },
     normalBtn: {
-        detail: 'Посмотреть'
+        detail: 'Вид'
     },
     setting: {
         customEntry: 'Быстрый вход',
@@ -225,7 +228,7 @@ export default {
         isMock: 'Ли насмешка',
         isHotKey: 'Быстрая клавиша',
         isBreadCrumb: 'Будь то панировочные сухари',
-        isCache: 'Кэшировать ли',
+        isCache: 'Кэшировать',
         isI18n: 'Следует ли интернационализировать'
     },
     pagingInfo: {

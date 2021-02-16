@@ -199,6 +199,9 @@ export default {
         success: 'Jurnalul a fost golit'
     },
     comTable: {
+        delete: {
+            title: 'Ștergeți configurația'
+        },
         columns: {
             title: 'Setări coloană',
             all: 'selectează tot',

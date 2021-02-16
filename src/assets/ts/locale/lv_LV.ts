@@ -132,7 +132,7 @@ export default {
         affixPage: 'Piespraust lapu',
         cancelAffixPage: 'Atspraust',
         errorTip: {
-            homePageCloseError: 'Mājas lapu nav atļauts aizvērt',
+            homePageCloseError: 'Mājas lapu nedrīkst aizvērt',
             affixPageCloseError: 'Fiksēto lapu nav atļauts aizvērt',
             homePageAffixError: 'Mājas lapu nevar atspraust'
         },
@@ -199,6 +199,9 @@ export default {
         success: 'Žurnāls ir iztukšots'
     },
     comTable: {
+        delete: {
+            title: 'Notīrīt konfigurāciju'
+        },
         columns: {
             title: 'Kolonnu iestatījumi',
             all: 'izvēlēties visus',

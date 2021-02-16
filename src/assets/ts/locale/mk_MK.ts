@@ -199,6 +199,9 @@ export default {
         success: 'Дневникот е испразнет'
     },
     comTable: {
+        delete: {
+            title: 'Исчистете ја конфигурацијата'
+        },
         columns: {
             title: 'Поставки на колоната',
             all: 'Селектирај се',

@@ -199,6 +199,9 @@ export default {
         success: 'Log is geleegd'
     },
     comTable: {
+        delete: {
+            title: 'Duidelijke configuratie'
+        },
         columns: {
             title: 'Kolom instellingen',
             all: 'selecteer alles',

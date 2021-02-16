@@ -20,7 +20,7 @@ export default {
         },
         sendMsg: {
             repeatErr: 'மீண்டும் மீண்டும் அனுப்ப வேண்டாம்',
-            success: 'வெற்றி பெற்றது',
+            success: 'வெற்றி',
             codeTip: 'உங்கள் சரிபார்ப்புக் குறியீடு'
         },
         phonePlaceholder: 'தொலைபேசி எண்ணை உள்ளிடவும்',
@@ -199,6 +199,9 @@ export default {
         success: 'பதிவு காலியாகிவிட்டது'
     },
     comTable: {
+        delete: {
+            title: 'உள்ளமைவை அழி'
+        },
         columns: {
             title: 'நெடுவரிசை அமைப்புகள்',
             all: 'அனைத்தையும் தெரிவுசெய்',

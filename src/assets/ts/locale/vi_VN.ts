@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Khung phát triển front-end hữu ích giữa và back-end dựa trên Vue và Ant Design'
+        sysIntro: 'Một khung phát triển front-end hữu ích giữa và back-end dựa trên Vue và Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Địa chỉ yêu cầu không được để trống',
@@ -199,6 +199,9 @@ export default {
         success: 'Nhật ký đã được làm trống'
     },
     comTable: {
+        delete: {
+            title: 'Xóa cấu hình'
+        },
         columns: {
             title: 'Cài đặt cột',
             all: 'chọn tất cả',

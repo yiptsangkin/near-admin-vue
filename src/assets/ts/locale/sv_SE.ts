@@ -2,7 +2,7 @@ export default {
     locale: 'sv',
     country: 'SE',
     loginForm: {
-        byAccountBtn: 'Inloggning för lösenordskonto',
+        byAccountBtn: 'Inloggning på konto lösenord',
         byPhoneBtn: 'Inloggning på mobilnummer',
         accountPlaceholder: 'Ange kontot (standard ADMIN-konto)',
         passwordPlaceholder: 'Ange lösenordet (standardlösenord 123456)',
@@ -64,7 +64,7 @@ export default {
         }
     },
     sysInfo: {
-        sysIntro: 'Ett användbart fram- och utvecklingsramverk för mitten och baksidan baserat på Vue och Ant Design'
+        sysIntro: 'Ett lättanvänt utvecklingsramverk för mellersta och bakre front-end baserat på Vue och Ant Design'
     },
     requestInfo: {
         withoutUrl: 'Begäran kan inte vara tom',
@@ -199,6 +199,9 @@ export default {
         success: 'Loggen har tömts'
     },
     comTable: {
+        delete: {
+            title: 'Rensa konfigurationen'
+        },
         columns: {
             title: 'Kolumninställningar',
             all: 'Välj alla',

@@ -199,6 +199,9 @@ export default {
         success: 'ورود به سیستم خالی شده است'
     },
     comTable: {
+        delete: {
+            title: 'پیکربندی را پاک کنید'
+        },
         columns: {
             title: 'تنظیمات ستون',
             all: 'انتخاب همه',

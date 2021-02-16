@@ -199,6 +199,9 @@ export default {
         success: 'Журнал спорожнено'
     },
     comTable: {
+        delete: {
+            title: 'Чітка конфігурація'
+        },
         columns: {
             title: 'Налаштування стовпців',
             all: 'вибрати все',

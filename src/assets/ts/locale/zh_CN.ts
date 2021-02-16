@@ -199,6 +199,9 @@ export default {
         success: '日志已清空'
     },
     comTable: {
+        delete: {
+            title: '清除配置'
+        },
         columns: {
             title: '列设置',
             all: '全选',
