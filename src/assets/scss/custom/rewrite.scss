@@ -19,3 +19,18 @@
     }
   }
 }
+
+.ant-menu.ant-menu-vertical.mx400{
+  max-height: 400px!important;
+  overflow: scroll;
+}
+
+.n-table-drag{
+  .ant-row-flex-space-between{
+    align-items: baseline;
+  }
+}
+
+.n-table-drag-column{
+  padding: 8px 14px 8px 10px;
+}

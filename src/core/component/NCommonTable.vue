@@ -24,10 +24,11 @@
                             </a-menu-item>
                         </a-menu>
                         <a-divider class="n-h-divider"/>
-                        <a-menu multiple :selectedKeys="[]">
-                            <a-menu-item v-for="(item, index) in selectedColumns" :key="index">
-                                <a-row type="flex" justify="space-between">
+                        <a-menu multiple :selectedKeys="[]" class="mx400">
+                            <vue-draggable v-model="selectedColumns" class="n-table-drag" @end="changeSort">
+                                <a-row class="n-table-drag-column" type="flex" justify="space-between" v-for="(item, index) in selectedColumns" :key="index">
                                     <a-col>
+                                        <a-icon type="more" />
                                         <a-checkbox @change="changeColumns" v-model="item.isChecked" size="small">{{ $t(item.name) }}</a-checkbox>
                                     </a-col>
                                     <a-col class="n-pin-wrp">
@@ -51,7 +52,7 @@
                                         </a-tooltip>
                                     </a-col>
                                 </a-row>
-                            </a-menu-item>
+                            </vue-draggable>
                         </a-menu>
                     </a-menu>
                 </a-dropdown>
@@ -101,6 +102,7 @@
     import NCommonOperationBar from '@corecp/NCommonOperationBar.vue'
     import VueDraggableResizable from 'vue-draggable-resizable'
     import md5 from 'js-md5'
+    import VueDraggable from 'vuedraggable'
 
     Vue.component('vue-draggable-resizable', VueDraggableResizable)
 
@@ -117,7 +119,8 @@
             }
         },
         components: {
-            NCommonOperationBar
+            NCommonOperationBar,
+            VueDraggable
         },
         watch: {
             'tableObj.data': {
@@ -188,23 +191,24 @@
                 const newList: any[] = []
                 const cacheTbColumns: any = self.getCacheTbColumns() || []
                 if (cacheTbColumns.length > 0 && !isCheckAll) {
-                    const selectKeys: any[] = cacheTbColumns.map((item: any) => {
+                    const selectKeys: any[] = self.tableObj.columns.map((item: any) => {
                         return item.key
                     })
-                    self.tableObj.columns.forEach((item: any) => {
+                    cacheTbColumns.forEach((item: any) => {
                         const pk = utils.randomCharacter(6)
                         const selectIdx = selectKeys.indexOf(item.key)
+                        const citem = self.tableObj.columns[selectIdx]
                         if (selectIdx !== -1) {
                             newList.push({
-                                ...item,
+                                ...citem,
                                 isChecked: true,
-                                pk: cacheTbColumns[selectIdx].pk,
-                                fixed: cacheTbColumns[selectIdx].fixed,
-                                width: cacheTbColumns[selectIdx].width
+                                pk: item.pk,
+                                fixed: item.fixed,
+                                width: item.width
                             })
                         } else {
                             newList.push({
-                                ...item,
+                                ...citem,
                                 isChecked: false,
                                 pk
                             })
@@ -323,6 +327,20 @@
                 const self = this as any
                 self.isShrink = isShrink
             },
+            changeSort () {
+                const self = this as any
+                const tbColumnsKeys = self.tbColumns.map((item: any) => {
+                    return item.key
+                })
+                const newTbColumns: any[] = []
+                self.selectedColumns.forEach((item: any) => {
+                    const columnIdx = tbColumnsKeys.indexOf(item.key)
+                    if (columnIdx !== -1) {
+                        newTbColumns.push(self.tbColumns[columnIdx])
+                    }
+                })
+                self.tbColumns = newTbColumns
+            },
             getCommonTableHeight () {
                 const self = this as any
                 let oneLineDist = 35
@@ -342,7 +360,7 @@
             },
             cacheTbColumns () {
                 const self = this as any
-                window.localStorage.setItem(`near_table_cache_${md5(JSON.stringify(self.tableObj.columns))}`, JSON.stringify(self.tbColumns))
+                window.localStorage.setItem(`near_table_cache_${md5(JSON.stringify(self.tableObj.columns))}`, JSON.stringify(self.selectedColumns))
             },
             getCacheTbColumns () {
                 const self = this as any
