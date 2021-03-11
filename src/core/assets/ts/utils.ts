@@ -937,6 +937,50 @@ const formatMoment = (obj: any, format = 'YYYY-MM-DD') => {
     return temObj
 }
 
+const uniqueMethod = (data: any, attr?: any, attrs?: string[], keyReplaceField: any = {}, valueReplaceField: any = {}) => {
+    if (!attr) {
+        if (Array.isArray(data)) {
+            return [...new Set(data)]
+        }
+    } else {
+        const result = new Map()
+        const filterData = data.filter((item: any) => {
+            return !result.has(item[attr]) && result.set(item[attr], item)
+        })
+        if (!attrs) {
+            return filterData
+        } else {
+            return filterData.map((item: any) => {
+                const temObj: any = {}
+                attrs.forEach((citem: any) => {
+                    const temKeys: any = keyReplaceField[citem] || citem
+                    if (Array.isArray(temKeys)) {
+                        temKeys.forEach((ditem: any) => {
+                            if (!temObj[ditem]) {
+                                if (valueReplaceField[ditem]) {
+                                    temObj[ditem] = valueReplaceField[ditem][item[citem]] || item[citem] || ''
+                                } else {
+                                    temObj[ditem] = item[citem] || ''
+                                }
+                            }
+                        })
+                    } else {
+                        if (!temObj[temKeys]) {
+                            if (valueReplaceField[temKeys]) {
+                                temObj[temKeys] = valueReplaceField[temKeys][item[citem]] || item[citem] || ''
+                            } else {
+                                temObj[temKeys] = item[citem] || ''
+                            }
+                        }
+                    }
+
+                })
+                return temObj
+            })
+        }
+    }
+}
+
 export default {
     loglineObj,
     setPageTitle,
@@ -971,5 +1015,6 @@ export default {
     refToCamel,
     getGapDate,
     getParents,
-    formatMoment
+    formatMoment,
+    uniqueMethod
 }

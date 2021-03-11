@@ -79,6 +79,7 @@
                 </a-tooltip>
                 <a-divider type="vertical"/>
             </template>
+            <slot name="n-customer-bar-btn" slot="n-customer-bar-btn"></slot>
         </n-common-operation-bar>
         <div :class="['n-common-table', sizeMap[sizePicked[0]].class]"
              ref="n-com-slot-table">
@@ -126,10 +127,14 @@
             'tableObj.data': {
                 handler (nv, ov) {
                     const self = this as any
+                    // resize table height
                     if (self.$scopedSlots['n-com-table']) {
                         self.$nextTick(() => {
                             self.getCommonTableHeight()
                         })
+                    }
+                    if (self.hasFilterable) {
+                        self.init(true)
                     }
                 },
                 immediate: true,
@@ -178,7 +183,8 @@
                 indeterminate: false,
                 isShrink: false,
                 tableHeight: '100%',
-                resizeTitle: undefined
+                resizeTitle: undefined,
+                hasFilterable: undefined
             }
         },
         created () {
@@ -188,7 +194,7 @@
         methods: {
             init (isChecked: boolean, isCheckAll?: boolean) {
                 const self = this as any
-                const newList: any[] = []
+                let newList: any[] = []
                 const cacheTbColumns: any = self.getCacheTbColumns() || []
                 if (cacheTbColumns.length > 0 && !isCheckAll) {
                     const selectKeys: any[] = self.tableObj.columns.map((item: any) => {
@@ -214,6 +220,7 @@
                             })
                         }
                     })
+                    newList = self.filterDeal(newList)
                     self.tbColumns = newList.filter((item) => {
                         return item.isChecked
                     })
@@ -231,6 +238,7 @@
                             pk
                         })
                     })
+                    newList = self.filterDeal(newList)
                     self.tbColumns = [...newList]
                     self.checkAll = isChecked
                 }
@@ -256,6 +264,32 @@
                     self.checkAll = true
                 }
                 self.tbColumns = pickedList
+            },
+            filterDeal (columnsList: any) {
+                const self = this as any
+                if (self.hasFilterable === undefined) {
+                    const filterAbleList = self.tbColumns.filter((item: any) => {
+                        return item.filterable
+                    })
+                    if (filterAbleList.length > 0) {
+                        self.hasFilterable  = true
+                    }
+                }
+                if (self.hasFilterable) {
+                    columnsList.forEach((item: any) => {
+                        if (item.filterable) {
+                            item.filters = utils.uniqueMethod(self.tableObj.data, item.key, [item.key, item.key], {[item.key]: ['text', 'value']}, {text: {Y: '成功', N: '失败'}})
+                            item.onFilter = (value: any, record: any) => {
+                                if (value) {
+                                    return record[item.key]?.includes(value)
+                                } else {
+                                    return (record[item.key] === undefined || record[item.key] === null)
+                                }
+                            }
+                        }
+                    })
+                }
+                return columnsList
             },
             changeAllCheck (e: any) {
                 const self = this

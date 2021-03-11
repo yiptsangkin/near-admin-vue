@@ -1,12 +1,12 @@
 <template>
     <a-input
-            v-model="selectedValue"
+            v-model="inputValue"
             v-bind="$attrs"
             @input="formatValue"
             @blur="blurFormatValue"
             @pressEnter="nextFocus"
     >
-        <slot name="prefix" slot="prefix"></slot>
+        <slot name="n-customer-bar-btn" slot="n-customer-bar-btn"></slot>
     </a-input>
 </template>
 
@@ -20,14 +20,12 @@
             inputFormatter: {
                 type: Function,
                 default (val: any) {
-                    const self = this as any
                     return val
                 }
             },
             blurFormatter: {
                 type: Function,
                 default (val: any) {
-                    const self = this as any
                     return val
                 }
             },
@@ -44,7 +42,7 @@
             event: 'change'
         },
         computed: {
-            selectedValue: {
+            inputValue: {
                 get () {
                     const self = this as any
                     return self.value
@@ -55,6 +53,12 @@
                 }
             }
         },
+        watch: {
+            value (nv: any, ov: any) {
+                const self = this as any
+                self.$emit('change', self.inputFormatter(nv))
+            }
+        },
         data () {
             return {
             }
@@ -62,11 +66,11 @@
         methods: {
             formatValue (e: any) {
                 const self = this as any
-                self.selectedValue = self.inputFormatter(e.currentTarget.value)
+                self.inputValue = self.inputFormatter(e.currentTarget.value)
             },
             blurFormatValue (e: any) {
                 const self = this as any
-                self.selectedValue = self.blurFormatter(e.currentTarget.value)
+                self.inputValue = self.blurFormatter(e.currentTarget.value)
             },
             nextFocus (val: any) {
                 const self = this as any

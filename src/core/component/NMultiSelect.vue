@@ -128,6 +128,15 @@
                     self.placementWatcher()
                 },
                 immediate: true
+            },
+            '$attrs.disabled': {
+                handler (nv) {
+                    if (nv) {
+                        const self = this as any
+                        self.multiSelectVisible = false
+                    }
+                },
+                immediate: true
             }
         },
         computed: {
